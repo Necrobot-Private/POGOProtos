@@ -25,21 +25,22 @@ namespace POGOProtos.Networking.Responses {
             "CjpQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0NhdGNoUG9rZW1v",
             "blJlc3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9u",
             "c2VzGipQT0dPUHJvdG9zL0RhdGEvQ2FwdHVyZS9DYXB0dXJlQXdhcmQucHJv",
-            "dG8i3AMKFENhdGNoUG9rZW1vblJlc3BvbnNlElEKBnN0YXR1cxgBIAEoDjJB",
+            "dG8i+AMKFENhdGNoUG9rZW1vblJlc3BvbnNlElEKBnN0YXR1cxgBIAEoDjJB",
             "LlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXNwb25zZXMuQ2F0Y2hQb2tlbW9u",
             "UmVzcG9uc2UuQ2F0Y2hTdGF0dXMSFAoMbWlzc19wZXJjZW50GAIgASgBEhsK",
             "E2NhcHR1cmVkX3Bva2Vtb25faWQYAyABKAYSPAoNY2FwdHVyZV9hd2FyZBgE",
             "IAEoCzIlLlBPR09Qcm90b3MuRGF0YS5DYXB0dXJlLkNhcHR1cmVBd2FyZBJb",
             "Cg5jYXB0dXJlX3JlYXNvbhgFIAEoDjJDLlBPR09Qcm90b3MuTmV0d29ya2lu",
             "Zy5SZXNwb25zZXMuQ2F0Y2hQb2tlbW9uUmVzcG9uc2UuQ2FwdHVyZVJlYXNv",
-            "biJlCgtDYXRjaFN0YXR1cxIPCgtDQVRDSF9FUlJPUhAAEhEKDUNBVENIX1NV",
-            "Q0NFU1MQARIQCgxDQVRDSF9FU0NBUEUQAhIOCgpDQVRDSF9GTEVFEAMSEAoM",
-            "Q0FUQ0hfTUlTU0VEEAQiPAoNQ2FwdHVyZVJlYXNvbhIJCgVVTlNFVBAAEgsK",
-            "B0RFRkFVTFQQARITCg9FTEVNRU5UQUxfQkFER0UQAmIGcHJvdG8z"));
+            "bhIaChJkaXNwbGF5X3Bva2VkZXhfaWQYBiABKAUiZQoLQ2F0Y2hTdGF0dXMS",
+            "DwoLQ0FUQ0hfRVJST1IQABIRCg1DQVRDSF9TVUNDRVNTEAESEAoMQ0FUQ0hf",
+            "RVNDQVBFEAISDgoKQ0FUQ0hfRkxFRRADEhAKDENBVENIX01JU1NFRBAEIjwK",
+            "DUNhcHR1cmVSZWFzb24SCQoFVU5TRVQQABILCgdERUZBVUxUEAESEwoPRUxF",
+            "TUVOVEFMX0JBREdFEAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Capture.CaptureAwardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.CatchPokemonResponse), global::POGOProtos.Networking.Responses.CatchPokemonResponse.Parser, new[]{ "Status", "MissPercent", "CapturedPokemonId", "CaptureAward", "CaptureReason" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.CatchPokemonResponse.Types.CatchStatus), typeof(global::POGOProtos.Networking.Responses.CatchPokemonResponse.Types.CaptureReason) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.CatchPokemonResponse), global::POGOProtos.Networking.Responses.CatchPokemonResponse.Parser, new[]{ "Status", "MissPercent", "CapturedPokemonId", "CaptureAward", "CaptureReason", "DisplayPokedexId" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.CatchPokemonResponse.Types.CatchStatus), typeof(global::POGOProtos.Networking.Responses.CatchPokemonResponse.Types.CaptureReason) }, null)
           }));
     }
     #endregion
@@ -75,6 +76,7 @@ namespace POGOProtos.Networking.Responses {
       capturedPokemonId_ = other.capturedPokemonId_;
       CaptureAward = other.captureAward_ != null ? other.CaptureAward.Clone() : null;
       captureReason_ = other.captureReason_;
+      displayPokedexId_ = other.displayPokedexId_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -137,6 +139,17 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
+    /// <summary>Field number for the "display_pokedex_id" field.</summary>
+    public const int DisplayPokedexIdFieldNumber = 6;
+    private int displayPokedexId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int DisplayPokedexId {
+      get { return displayPokedexId_; }
+      set {
+        displayPokedexId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CatchPokemonResponse);
@@ -155,6 +168,7 @@ namespace POGOProtos.Networking.Responses {
       if (CapturedPokemonId != other.CapturedPokemonId) return false;
       if (!object.Equals(CaptureAward, other.CaptureAward)) return false;
       if (CaptureReason != other.CaptureReason) return false;
+      if (DisplayPokedexId != other.DisplayPokedexId) return false;
       return true;
     }
 
@@ -166,6 +180,7 @@ namespace POGOProtos.Networking.Responses {
       if (CapturedPokemonId != 0UL) hash ^= CapturedPokemonId.GetHashCode();
       if (captureAward_ != null) hash ^= CaptureAward.GetHashCode();
       if (CaptureReason != 0) hash ^= CaptureReason.GetHashCode();
+      if (DisplayPokedexId != 0) hash ^= DisplayPokedexId.GetHashCode();
       return hash;
     }
 
@@ -196,6 +211,10 @@ namespace POGOProtos.Networking.Responses {
         output.WriteRawTag(40);
         output.WriteEnum((int) CaptureReason);
       }
+      if (DisplayPokedexId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(DisplayPokedexId);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -215,6 +234,9 @@ namespace POGOProtos.Networking.Responses {
       }
       if (CaptureReason != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CaptureReason);
+      }
+      if (DisplayPokedexId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DisplayPokedexId);
       }
       return size;
     }
@@ -241,6 +263,9 @@ namespace POGOProtos.Networking.Responses {
       }
       if (other.CaptureReason != 0) {
         CaptureReason = other.CaptureReason;
+      }
+      if (other.DisplayPokedexId != 0) {
+        DisplayPokedexId = other.DisplayPokedexId;
       }
     }
 
@@ -273,6 +298,10 @@ namespace POGOProtos.Networking.Responses {
           }
           case 40: {
             captureReason_ = (global::POGOProtos.Networking.Responses.CatchPokemonResponse.Types.CaptureReason) input.ReadEnum();
+            break;
+          }
+          case 48: {
+            DisplayPokedexId = input.ReadInt32();
             break;
           }
         }
