@@ -312,9 +312,9 @@
     <Compile Include="Settings\SfidaSettings.g.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\$(SolutionDir)\LICENSE.md" />
+    <None Include="LICENSE.md" />
     <None Include="packages.config" />
-    <None Include="..\..\$(SolutionDir)\README.md" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
