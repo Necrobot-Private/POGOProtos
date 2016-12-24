@@ -25,17 +25,17 @@ namespace POGOProtos.Networking.Responses {
             "CkZQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0xpc3RBdmF0YXJD",
             "dXN0b21pemF0aW9uc1Jlc3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdv",
             "cmtpbmcuUmVzcG9uc2VzGjBQT0dPUHJvdG9zL0RhdGEvQXZhdGFyL0F2YXRh",
-            "ckN1c3RvbWl6YXRpb24ucHJvdG8i9gEKIExpc3RBdmF0YXJDdXN0b21pemF0",
+            "ckN1c3RvbWl6YXRpb24ucHJvdG8i9wEKIExpc3RBdmF0YXJDdXN0b21pemF0",
             "aW9uc1Jlc3BvbnNlElgKBnJlc3VsdBgBIAEoDjJILlBPR09Qcm90b3MuTmV0",
             "d29ya2luZy5SZXNwb25zZXMuTGlzdEF2YXRhckN1c3RvbWl6YXRpb25zUmVz",
-            "cG9uc2UuUmVzdWx0EkkKFGF2YXRhcl9jdXN0b21pemF0aW9uGAIgASgLMisu",
-            "UE9HT1Byb3Rvcy5EYXRhLkF2YXRhci5BdmF0YXJDdXN0b21pemF0aW9uIi0K",
-            "BlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARILCgdGQUlMVVJFEAJi",
-            "BnByb3RvMw=="));
+            "cG9uc2UuUmVzdWx0EkoKFWF2YXRhcl9jdXN0b21pemF0aW9ucxgCIAEoCzIr",
+            "LlBPR09Qcm90b3MuRGF0YS5BdmF0YXIuQXZhdGFyQ3VzdG9taXphdGlvbiIt",
+            "CgZSZXN1bHQSCQoFVU5TRVQQABILCgdTVUNDRVNTEAESCwoHRkFJTFVSRRAC",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Avatar.AvatarCustomizationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse), global::POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Parser, new[]{ "Result", "AvatarCustomization" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse), global::POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Parser, new[]{ "Result", "AvatarCustomizations" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -67,7 +67,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ListAvatarCustomizationsResponse(ListAvatarCustomizationsResponse other) : this() {
       result_ = other.result_;
-      AvatarCustomization = other.avatarCustomization_ != null ? other.AvatarCustomization.Clone() : null;
+      AvatarCustomizations = other.avatarCustomizations_ != null ? other.AvatarCustomizations.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -86,14 +86,14 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
-    /// <summary>Field number for the "avatar_customization" field.</summary>
-    public const int AvatarCustomizationFieldNumber = 2;
-    private global::POGOProtos.Data.Avatar.AvatarCustomization avatarCustomization_;
+    /// <summary>Field number for the "avatar_customizations" field.</summary>
+    public const int AvatarCustomizationsFieldNumber = 2;
+    private global::POGOProtos.Data.Avatar.AvatarCustomization avatarCustomizations_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::POGOProtos.Data.Avatar.AvatarCustomization AvatarCustomization {
-      get { return avatarCustomization_; }
+    public global::POGOProtos.Data.Avatar.AvatarCustomization AvatarCustomizations {
+      get { return avatarCustomizations_; }
       set {
-        avatarCustomization_ = value;
+        avatarCustomizations_ = value;
       }
     }
 
@@ -111,7 +111,7 @@ namespace POGOProtos.Networking.Responses {
         return true;
       }
       if (Result != other.Result) return false;
-      if (!object.Equals(AvatarCustomization, other.AvatarCustomization)) return false;
+      if (!object.Equals(AvatarCustomizations, other.AvatarCustomizations)) return false;
       return true;
     }
 
@@ -119,7 +119,7 @@ namespace POGOProtos.Networking.Responses {
     public override int GetHashCode() {
       int hash = 1;
       if (Result != 0) hash ^= Result.GetHashCode();
-      if (avatarCustomization_ != null) hash ^= AvatarCustomization.GetHashCode();
+      if (avatarCustomizations_ != null) hash ^= AvatarCustomizations.GetHashCode();
       return hash;
     }
 
@@ -134,9 +134,9 @@ namespace POGOProtos.Networking.Responses {
         output.WriteRawTag(8);
         output.WriteEnum((int) Result);
       }
-      if (avatarCustomization_ != null) {
+      if (avatarCustomizations_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(AvatarCustomization);
+        output.WriteMessage(AvatarCustomizations);
       }
     }
 
@@ -146,8 +146,8 @@ namespace POGOProtos.Networking.Responses {
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
       }
-      if (avatarCustomization_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AvatarCustomization);
+      if (avatarCustomizations_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AvatarCustomizations);
       }
       return size;
     }
@@ -160,11 +160,11 @@ namespace POGOProtos.Networking.Responses {
       if (other.Result != 0) {
         Result = other.Result;
       }
-      if (other.avatarCustomization_ != null) {
-        if (avatarCustomization_ == null) {
-          avatarCustomization_ = new global::POGOProtos.Data.Avatar.AvatarCustomization();
+      if (other.avatarCustomizations_ != null) {
+        if (avatarCustomizations_ == null) {
+          avatarCustomizations_ = new global::POGOProtos.Data.Avatar.AvatarCustomization();
         }
-        AvatarCustomization.MergeFrom(other.AvatarCustomization);
+        AvatarCustomizations.MergeFrom(other.AvatarCustomizations);
       }
     }
 
@@ -181,10 +181,10 @@ namespace POGOProtos.Networking.Responses {
             break;
           }
           case 18: {
-            if (avatarCustomization_ == null) {
-              avatarCustomization_ = new global::POGOProtos.Data.Avatar.AvatarCustomization();
+            if (avatarCustomizations_ == null) {
+              avatarCustomizations_ = new global::POGOProtos.Data.Avatar.AvatarCustomization();
             }
-            input.ReadMessage(avatarCustomization_);
+            input.ReadMessage(avatarCustomizations_);
             break;
           }
         }

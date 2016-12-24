@@ -23,7 +23,7 @@ namespace POGOProtos.Networking.Requests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
-            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyqhDQoLUmVx",
+            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyrBDQoLUmVx",
             "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASEQoNUExBWUVSX1VQREFURRAB",
             "Eg4KCkdFVF9QTEFZRVIQAhIRCg1HRVRfSU5WRU5UT1JZEAQSFQoRRE9XTkxP",
             "QURfU0VUVElOR1MQBRIbChdET1dOTE9BRF9JVEVNX1RFTVBMQVRFUxAGEiIK",
@@ -61,7 +61,8 @@ namespace POGOProtos.Networking.Requests {
             "EKAGEhUKEFNGSURBX0FDVElPTl9MT0cQoQYSGAoTU0ZJREFfQ0VSVElGSUNB",
             "VElPThCiBhIRCgxTRklEQV9VUERBVEUQowYSEQoMU0ZJREFfQUNUSU9OEKQG",
             "EhEKDFNGSURBX0RPV1NFUhClBhISCg1TRklEQV9DQVBUVVJFEKYGEh8KGkxJ",
-            "U1RfQVZBVEFSX0NVU1RPTUlaQVRJT05TEKcGYgZwcm90bzM="));
+            "U1RfQVZBVEFSX0NVU1RPTUlaQVRJT05TEKcGEh4KGVNFVF9BVkFUQVJfSVRF",
+            "TV9BU19WSUVXRUQQqAZiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Networking.Requests.RequestType), }, null));
@@ -362,6 +363,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("SFIDA_CAPTURE")] SfidaCapture = 806,
     [pbr::OriginalName("LIST_AVATAR_CUSTOMIZATIONS")] ListAvatarCustomizations = 807,
+    [pbr::OriginalName("SET_AVATAR_ITEM_AS_VIEWED")] SetAvatarItemAsViewed = 808,
   }
 
   #endregion

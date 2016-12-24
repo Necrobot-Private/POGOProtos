@@ -43,43 +43,46 @@ namespace POGOProtos.Networking.Responses {
             "aW5ncy5wcm90bxo3UE9HT1Byb3Rvcy9TZXR0aW5ncy9NYXN0ZXIvUG9rZW1v",
             "blVwZ3JhZGVTZXR0aW5ncy5wcm90bxo2UE9HT1Byb3Rvcy9TZXR0aW5ncy9N",
             "YXN0ZXIvRXF1aXBwZWRCYWRnZVNldHRpbmdzLnByb3RvGi5QT0dPUHJvdG9z",
-            "L1NldHRpbmdzL01hc3Rlci9RdWVzdFNldHRpbmdzLnByb3RvIooLCh1Eb3du",
-            "bG9hZEl0ZW1UZW1wbGF0ZXNSZXNwb25zZRIPCgdzdWNjZXNzGAEgASgIEmMK",
-            "Dml0ZW1fdGVtcGxhdGVzGAIgAygLMksuUE9HT1Byb3Rvcy5OZXR3b3JraW5n",
-            "LlJlc3BvbnNlcy5Eb3dubG9hZEl0ZW1UZW1wbGF0ZXNSZXNwb25zZS5JdGVt",
-            "VGVtcGxhdGUSFAoMdGltZXN0YW1wX21zGAMgASgEGtwJCgxJdGVtVGVtcGxh",
-            "dGUSEwoLdGVtcGxhdGVfaWQYASABKAkSRQoQcG9rZW1vbl9zZXR0aW5ncxgC",
-            "IAEoCzIrLlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyLlBva2Vtb25TZXR0",
-            "aW5ncxI/Cg1pdGVtX3NldHRpbmdzGAMgASgLMiguUE9HT1Byb3Rvcy5TZXR0",
-            "aW5ncy5NYXN0ZXIuSXRlbVNldHRpbmdzEj8KDW1vdmVfc2V0dGluZ3MYBCAB",
-            "KAsyKC5QT0dPUHJvdG9zLlNldHRpbmdzLk1hc3Rlci5Nb3ZlU2V0dGluZ3MS",
-            "UAoWbW92ZV9zZXF1ZW5jZV9zZXR0aW5ncxgFIAEoCzIwLlBPR09Qcm90b3Mu",
-            "U2V0dGluZ3MuTWFzdGVyLk1vdmVTZXF1ZW5jZVNldHRpbmdzEkkKDnR5cGVf",
-            "ZWZmZWN0aXZlGAggASgLMjEuUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIu",
-            "VHlwZUVmZmVjdGl2ZVNldHRpbmdzEkEKDmJhZGdlX3NldHRpbmdzGAogASgL",
-            "MikuUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIuQmFkZ2VTZXR0aW5ncxI6",
-            "CgZjYW1lcmEYCyABKAsyKi5QT0dPUHJvdG9zLlNldHRpbmdzLk1hc3Rlci5D",
-            "YW1lcmFTZXR0aW5ncxJFCgxwbGF5ZXJfbGV2ZWwYDCABKAsyLy5QT0dPUHJv",
-            "dG9zLlNldHRpbmdzLk1hc3Rlci5QbGF5ZXJMZXZlbFNldHRpbmdzEj8KCWd5",
-            "bV9sZXZlbBgNIAEoCzIsLlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyLkd5",
-            "bUxldmVsU2V0dGluZ3MSRgoPYmF0dGxlX3NldHRpbmdzGA4gASgLMi0uUE9H",
-            "T1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIuR3ltQmF0dGxlU2V0dGluZ3MSSQoS",
-            "ZW5jb3VudGVyX3NldHRpbmdzGA8gASgLMi0uUE9HT1Byb3Rvcy5TZXR0aW5n",
-            "cy5NYXN0ZXIuRW5jb3VudGVyU2V0dGluZ3MSRAoQaWFwX2l0ZW1fZGlzcGxh",
-            "eRgQIAEoCzIqLlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyLklhcEl0ZW1E",
-            "aXNwbGF5Ej0KDGlhcF9zZXR0aW5ncxgRIAEoCzInLlBPR09Qcm90b3MuU2V0",
-            "dGluZ3MuTWFzdGVyLklhcFNldHRpbmdzEkwKEHBva2Vtb25fdXBncmFkZXMY",
-            "EiABKAsyMi5QT0dPUHJvdG9zLlNldHRpbmdzLk1hc3Rlci5Qb2tlbW9uVXBn",
-            "cmFkZVNldHRpbmdzEkoKD2VxdWlwcGVkX2JhZGdlcxgTIAEoCzIxLlBPR09Q",
-            "cm90b3MuU2V0dGluZ3MuTWFzdGVyLkVxdWlwcGVkQmFkZ2VTZXR0aW5ncxJB",
-            "Cg5xdWVzdF9zZXR0aW5ncxgUIAEoCzIpLlBPR09Qcm90b3MuU2V0dGluZ3Mu",
-            "TWFzdGVyLlF1ZXN0U2V0dGluZ3MSVQoUYXZhdGFyX2N1c3RvbWl6YXRpb24Y",
-            "FSABKAsyNy5QT0dPUHJvdG9zLlNldHRpbmdzLk1hc3Rlci5BdmF0YXJDdXN0",
-            "b21pemF0aW9uU2V0dGluZ3NiBnByb3RvMw=="));
+            "L1NldHRpbmdzL01hc3Rlci9RdWVzdFNldHRpbmdzLnByb3RvIpwMCh1Eb3du",
+            "bG9hZEl0ZW1UZW1wbGF0ZXNSZXNwb25zZRJVCgZyZXN1bHQYASABKA4yRS5Q",
+            "T0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2VzLkRvd25sb2FkSXRlbVRl",
+            "bXBsYXRlc1Jlc3BvbnNlLlJlc3VsdBJjCg5pdGVtX3RlbXBsYXRlcxgCIAMo",
+            "CzJLLlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXNwb25zZXMuRG93bmxvYWRJ",
+            "dGVtVGVtcGxhdGVzUmVzcG9uc2UuSXRlbVRlbXBsYXRlEhQKDHRpbWVzdGFt",
+            "cF9tcxgDIAEoBBITCgtwYWdlX29mZnNldBgEIAEoBRrcCQoMSXRlbVRlbXBs",
+            "YXRlEhMKC3RlbXBsYXRlX2lkGAEgASgJEkUKEHBva2Vtb25fc2V0dGluZ3MY",
+            "AiABKAsyKy5QT0dPUHJvdG9zLlNldHRpbmdzLk1hc3Rlci5Qb2tlbW9uU2V0",
+            "dGluZ3MSPwoNaXRlbV9zZXR0aW5ncxgDIAEoCzIoLlBPR09Qcm90b3MuU2V0",
+            "dGluZ3MuTWFzdGVyLkl0ZW1TZXR0aW5ncxI/Cg1tb3ZlX3NldHRpbmdzGAQg",
+            "ASgLMiguUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIuTW92ZVNldHRpbmdz",
+            "ElAKFm1vdmVfc2VxdWVuY2Vfc2V0dGluZ3MYBSABKAsyMC5QT0dPUHJvdG9z",
+            "LlNldHRpbmdzLk1hc3Rlci5Nb3ZlU2VxdWVuY2VTZXR0aW5ncxJJCg50eXBl",
+            "X2VmZmVjdGl2ZRgIIAEoCzIxLlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVy",
+            "LlR5cGVFZmZlY3RpdmVTZXR0aW5ncxJBCg5iYWRnZV9zZXR0aW5ncxgKIAEo",
+            "CzIpLlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyLkJhZGdlU2V0dGluZ3MS",
+            "OgoGY2FtZXJhGAsgASgLMiouUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIu",
+            "Q2FtZXJhU2V0dGluZ3MSRQoMcGxheWVyX2xldmVsGAwgASgLMi8uUE9HT1By",
+            "b3Rvcy5TZXR0aW5ncy5NYXN0ZXIuUGxheWVyTGV2ZWxTZXR0aW5ncxI/Cgln",
+            "eW1fbGV2ZWwYDSABKAsyLC5QT0dPUHJvdG9zLlNldHRpbmdzLk1hc3Rlci5H",
+            "eW1MZXZlbFNldHRpbmdzEkYKD2JhdHRsZV9zZXR0aW5ncxgOIAEoCzItLlBP",
+            "R09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyLkd5bUJhdHRsZVNldHRpbmdzEkkK",
+            "EmVuY291bnRlcl9zZXR0aW5ncxgPIAEoCzItLlBPR09Qcm90b3MuU2V0dGlu",
+            "Z3MuTWFzdGVyLkVuY291bnRlclNldHRpbmdzEkQKEGlhcF9pdGVtX2Rpc3Bs",
+            "YXkYECABKAsyKi5QT0dPUHJvdG9zLlNldHRpbmdzLk1hc3Rlci5JYXBJdGVt",
+            "RGlzcGxheRI9CgxpYXBfc2V0dGluZ3MYESABKAsyJy5QT0dPUHJvdG9zLlNl",
+            "dHRpbmdzLk1hc3Rlci5JYXBTZXR0aW5ncxJMChBwb2tlbW9uX3VwZ3JhZGVz",
+            "GBIgASgLMjIuUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIuUG9rZW1vblVw",
+            "Z3JhZGVTZXR0aW5ncxJKCg9lcXVpcHBlZF9iYWRnZXMYEyABKAsyMS5QT0dP",
+            "UHJvdG9zLlNldHRpbmdzLk1hc3Rlci5FcXVpcHBlZEJhZGdlU2V0dGluZ3MS",
+            "QQoOcXVlc3Rfc2V0dGluZ3MYFCABKAsyKS5QT0dPUHJvdG9zLlNldHRpbmdz",
+            "Lk1hc3Rlci5RdWVzdFNldHRpbmdzElUKFGF2YXRhcl9jdXN0b21pemF0aW9u",
+            "GBUgASgLMjcuUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIuQXZhdGFyQ3Vz",
+            "dG9taXphdGlvblNldHRpbmdzIjUKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NV",
+            "Q0NFU1MQARIICgRQQUdFEAISCQoFUkVUUlkQA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Settings.Master.AvatarCustomizationSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.ItemSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.MoveSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.BadgeSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.PokemonSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.MoveSequenceSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.TypeEffectiveSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.CameraSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.PlayerLevelSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.GymLevelSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.GymBattleSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.EncounterSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.IapItemDisplayReflection.Descriptor, global::POGOProtos.Settings.Master.IapSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.PokemonUpgradeSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.EquippedBadgeSettingsReflection.Descriptor, global::POGOProtos.Settings.Master.QuestSettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse), global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Parser, new[]{ "Success", "ItemTemplates", "TimestampMs" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate), global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate.Parser, new[]{ "TemplateId", "PokemonSettings", "ItemSettings", "MoveSettings", "MoveSequenceSettings", "TypeEffective", "BadgeSettings", "Camera", "PlayerLevel", "GymLevel", "BattleSettings", "EncounterSettings", "IapItemDisplay", "IapSettings", "PokemonUpgrades", "EquippedBadges", "QuestSettings", "AvatarCustomization" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse), global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Parser, new[]{ "Result", "ItemTemplates", "TimestampMs", "PageOffset" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Types.Result) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate), global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate.Parser, new[]{ "TemplateId", "PokemonSettings", "ItemSettings", "MoveSettings", "MoveSequenceSettings", "TypeEffective", "BadgeSettings", "Camera", "PlayerLevel", "GymLevel", "BattleSettings", "EncounterSettings", "IapItemDisplay", "IapSettings", "PokemonUpgrades", "EquippedBadges", "QuestSettings", "AvatarCustomization" }, null, null, null)})
           }));
     }
     #endregion
@@ -110,9 +113,10 @@ namespace POGOProtos.Networking.Responses {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DownloadItemTemplatesResponse(DownloadItemTemplatesResponse other) : this() {
-      success_ = other.success_;
+      result_ = other.result_;
       itemTemplates_ = other.itemTemplates_.Clone();
       timestampMs_ = other.timestampMs_;
+      pageOffset_ = other.pageOffset_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -120,14 +124,14 @@ namespace POGOProtos.Networking.Responses {
       return new DownloadItemTemplatesResponse(this);
     }
 
-    /// <summary>Field number for the "success" field.</summary>
-    public const int SuccessFieldNumber = 1;
-    private bool success_;
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Types.Result result_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Success {
-      get { return success_; }
+    public global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Types.Result Result {
+      get { return result_; }
       set {
-        success_ = value;
+        result_ = value;
       }
     }
 
@@ -152,6 +156,17 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
+    /// <summary>Field number for the "page_offset" field.</summary>
+    public const int PageOffsetFieldNumber = 4;
+    private int pageOffset_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int PageOffset {
+      get { return pageOffset_; }
+      set {
+        pageOffset_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DownloadItemTemplatesResponse);
@@ -165,18 +180,20 @@ namespace POGOProtos.Networking.Responses {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Success != other.Success) return false;
+      if (Result != other.Result) return false;
       if(!itemTemplates_.Equals(other.itemTemplates_)) return false;
       if (TimestampMs != other.TimestampMs) return false;
+      if (PageOffset != other.PageOffset) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Success != false) hash ^= Success.GetHashCode();
+      if (Result != 0) hash ^= Result.GetHashCode();
       hash ^= itemTemplates_.GetHashCode();
       if (TimestampMs != 0UL) hash ^= TimestampMs.GetHashCode();
+      if (PageOffset != 0) hash ^= PageOffset.GetHashCode();
       return hash;
     }
 
@@ -187,26 +204,33 @@ namespace POGOProtos.Networking.Responses {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Success != false) {
+      if (Result != 0) {
         output.WriteRawTag(8);
-        output.WriteBool(Success);
+        output.WriteEnum((int) Result);
       }
       itemTemplates_.WriteTo(output, _repeated_itemTemplates_codec);
       if (TimestampMs != 0UL) {
         output.WriteRawTag(24);
         output.WriteUInt64(TimestampMs);
       }
+      if (PageOffset != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(PageOffset);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Success != false) {
-        size += 1 + 1;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
       }
       size += itemTemplates_.CalculateSize(_repeated_itemTemplates_codec);
       if (TimestampMs != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(TimestampMs);
+      }
+      if (PageOffset != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageOffset);
       }
       return size;
     }
@@ -216,12 +240,15 @@ namespace POGOProtos.Networking.Responses {
       if (other == null) {
         return;
       }
-      if (other.Success != false) {
-        Success = other.Success;
+      if (other.Result != 0) {
+        Result = other.Result;
       }
       itemTemplates_.Add(other.itemTemplates_);
       if (other.TimestampMs != 0UL) {
         TimestampMs = other.TimestampMs;
+      }
+      if (other.PageOffset != 0) {
+        PageOffset = other.PageOffset;
       }
     }
 
@@ -234,7 +261,7 @@ namespace POGOProtos.Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            Success = input.ReadBool();
+            result_ = (global::POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 18: {
@@ -245,6 +272,10 @@ namespace POGOProtos.Networking.Responses {
             TimestampMs = input.ReadUInt64();
             break;
           }
+          case 32: {
+            PageOffset = input.ReadInt32();
+            break;
+          }
         }
       }
     }
@@ -253,6 +284,13 @@ namespace POGOProtos.Networking.Responses {
     /// <summary>Container for nested types declared in the DownloadItemTemplatesResponse message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
+      public enum Result {
+        [pbr::OriginalName("UNSET")] Unset = 0,
+        [pbr::OriginalName("SUCCESS")] Success = 1,
+        [pbr::OriginalName("PAGE")] Page = 2,
+        [pbr::OriginalName("RETRY")] Retry = 3,
+      }
+
       public sealed partial class ItemTemplate : pb::IMessage<ItemTemplate> {
         private static readonly pb::MessageParser<ItemTemplate> _parser = new pb::MessageParser<ItemTemplate>(() => new ItemTemplate());
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

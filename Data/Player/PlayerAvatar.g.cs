@@ -24,18 +24,19 @@ namespace POGOProtos.Data.Player {
           string.Concat(
             "CilQT0dPUHJvdG9zL0RhdGEvUGxheWVyL1BsYXllckF2YXRhci5wcm90bxIW",
             "UE9HT1Byb3Rvcy5EYXRhLlBsYXllchodUE9HT1Byb3Rvcy9FbnVtcy9HZW5k",
-            "ZXIucHJvdG8ixwIKDFBsYXllckF2YXRhchIMCgRza2luGAIgASgFEgwKBGhh",
+            "ZXIucHJvdG8i9AIKDFBsYXllckF2YXRhchIMCgRza2luGAIgASgFEgwKBGhh",
             "aXIYAyABKAUSDQoFc2hpcnQYBCABKAUSDQoFcGFudHMYBSABKAUSCwoDaGF0",
             "GAYgASgFEg0KBXNob2VzGAcgASgFEigKBmdlbmRlchgIIAEoDjIYLlBPR09Q",
             "cm90b3MuRW51bXMuR2VuZGVyEgwKBGV5ZXMYCSABKAUSEAoIYmFja3BhY2sY",
             "CiABKAUSEwoLYXZhdGFyX2hhaXIYCyABKAkSFAoMYXZhdGFyX3NoaXJ0GAwg",
             "ASgJEhQKDGF2YXRhcl9wYW50cxgNIAEoCRISCgphdmF0YXJfaGF0GA4gASgJ",
             "EhQKDGF2YXRhcl9zaG9lcxgPIAEoCRITCgthdmF0YXJfZXllcxgQIAEoCRIX",
-            "Cg9hdmF0YXJfYmFja3BhY2sYESABKAliBnByb3RvMw=="));
+            "Cg9hdmF0YXJfYmFja3BhY2sYESABKAkSFQoNYXZhdGFyX2dsb3ZlcxgSIAEo",
+            "CRIUCgxhdmF0YXJfc29ja3MYEyABKAliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.GenderReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Player.PlayerAvatar), global::POGOProtos.Data.Player.PlayerAvatar.Parser, new[]{ "Skin", "Hair", "Shirt", "Pants", "Hat", "Shoes", "Gender", "Eyes", "Backpack", "AvatarHair", "AvatarShirt", "AvatarPants", "AvatarHat", "AvatarShoes", "AvatarEyes", "AvatarBackpack" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Player.PlayerAvatar), global::POGOProtos.Data.Player.PlayerAvatar.Parser, new[]{ "Skin", "Hair", "Shirt", "Pants", "Hat", "Shoes", "Gender", "Eyes", "Backpack", "AvatarHair", "AvatarShirt", "AvatarPants", "AvatarHat", "AvatarShoes", "AvatarEyes", "AvatarBackpack", "AvatarGloves", "AvatarSocks" }, null, null, null)
           }));
     }
     #endregion
@@ -82,6 +83,8 @@ namespace POGOProtos.Data.Player {
       avatarShoes_ = other.avatarShoes_;
       avatarEyes_ = other.avatarEyes_;
       avatarBackpack_ = other.avatarBackpack_;
+      avatarGloves_ = other.avatarGloves_;
+      avatarSocks_ = other.avatarSocks_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -265,6 +268,28 @@ namespace POGOProtos.Data.Player {
       }
     }
 
+    /// <summary>Field number for the "avatar_gloves" field.</summary>
+    public const int AvatarGlovesFieldNumber = 18;
+    private string avatarGloves_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AvatarGloves {
+      get { return avatarGloves_; }
+      set {
+        avatarGloves_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "avatar_socks" field.</summary>
+    public const int AvatarSocksFieldNumber = 19;
+    private string avatarSocks_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AvatarSocks {
+      get { return avatarSocks_; }
+      set {
+        avatarSocks_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PlayerAvatar);
@@ -294,6 +319,8 @@ namespace POGOProtos.Data.Player {
       if (AvatarShoes != other.AvatarShoes) return false;
       if (AvatarEyes != other.AvatarEyes) return false;
       if (AvatarBackpack != other.AvatarBackpack) return false;
+      if (AvatarGloves != other.AvatarGloves) return false;
+      if (AvatarSocks != other.AvatarSocks) return false;
       return true;
     }
 
@@ -316,6 +343,8 @@ namespace POGOProtos.Data.Player {
       if (AvatarShoes.Length != 0) hash ^= AvatarShoes.GetHashCode();
       if (AvatarEyes.Length != 0) hash ^= AvatarEyes.GetHashCode();
       if (AvatarBackpack.Length != 0) hash ^= AvatarBackpack.GetHashCode();
+      if (AvatarGloves.Length != 0) hash ^= AvatarGloves.GetHashCode();
+      if (AvatarSocks.Length != 0) hash ^= AvatarSocks.GetHashCode();
       return hash;
     }
 
@@ -390,6 +419,14 @@ namespace POGOProtos.Data.Player {
         output.WriteRawTag(138, 1);
         output.WriteString(AvatarBackpack);
       }
+      if (AvatarGloves.Length != 0) {
+        output.WriteRawTag(146, 1);
+        output.WriteString(AvatarGloves);
+      }
+      if (AvatarSocks.Length != 0) {
+        output.WriteRawTag(154, 1);
+        output.WriteString(AvatarSocks);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -442,6 +479,12 @@ namespace POGOProtos.Data.Player {
       }
       if (AvatarBackpack.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(AvatarBackpack);
+      }
+      if (AvatarGloves.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(AvatarGloves);
+      }
+      if (AvatarSocks.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(AvatarSocks);
       }
       return size;
     }
@@ -498,6 +541,12 @@ namespace POGOProtos.Data.Player {
       }
       if (other.AvatarBackpack.Length != 0) {
         AvatarBackpack = other.AvatarBackpack;
+      }
+      if (other.AvatarGloves.Length != 0) {
+        AvatarGloves = other.AvatarGloves;
+      }
+      if (other.AvatarSocks.Length != 0) {
+        AvatarSocks = other.AvatarSocks;
       }
     }
 
@@ -571,6 +620,14 @@ namespace POGOProtos.Data.Player {
           }
           case 138: {
             AvatarBackpack = input.ReadString();
+            break;
+          }
+          case 146: {
+            AvatarGloves = input.ReadString();
+            break;
+          }
+          case 154: {
+            AvatarSocks = input.ReadString();
             break;
           }
         }

@@ -23,8 +23,9 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch1QT0dPUHJvdG9zL0VudW1zL0ZpbHRlci5wcm90bxIQUE9HT1Byb3Rvcy5F",
-            "bnVtcypJCgZGaWx0ZXISEAoMVU5TRVRfRklMVEVSEAASBwoDQUxMEAESCwoH",
-            "REVGQVVMVBACEgkKBU9XTkVEEAMSDAoIRkVBVFVSRUQQBGIGcHJvdG8z"));
+            "bnVtcypqCgZGaWx0ZXISEAoMVU5TRVRfRklMVEVSEAASBwoDQUxMEAESCwoH",
+            "REVGQVVMVBACEgkKBU9XTkVEEAMSDAoIRkVBVFVSRUQQBBIPCgtQVVJDSEFT",
+            "QUJMRRAFEg4KClVOTE9DS0FCTEUQBmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.Filter), }, null));
@@ -39,6 +40,8 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("DEFAULT")] Default = 2,
     [pbr::OriginalName("OWNED")] Owned = 3,
     [pbr::OriginalName("FEATURED")] Featured = 4,
+    [pbr::OriginalName("PURCHASABLE")] Purchasable = 5,
+    [pbr::OriginalName("UNLOCKABLE")] Unlockable = 6,
   }
 
   #endregion

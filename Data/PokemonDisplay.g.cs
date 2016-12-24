@@ -23,13 +23,17 @@ namespace POGOProtos.Data {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiRQT0dPUHJvdG9zL0RhdGEvUG9rZW1vbkRpc3BsYXkucHJvdG8SD1BPR09Q",
-            "cm90b3MuRGF0YSJyCg5Qb2tlbW9uRGlzcGxheRI4Cgdjb3N0dW1lGAEgASgO",
-            "MicuUE9HT1Byb3Rvcy5EYXRhLlBva2Vtb25EaXNwbGF5LkNvc3R1bWUiJgoH",
-            "Q29zdHVtZRIJCgVVTlNFVBAAEhAKDEhPTElEQVlfMjAxNhABYgZwcm90bzM="));
+            "cm90b3MuRGF0YSL7AQoOUG9rZW1vbkRpc3BsYXkSOAoHY29zdHVtZRgBIAEo",
+            "DjInLlBPR09Qcm90b3MuRGF0YS5Qb2tlbW9uRGlzcGxheS5Db3N0dW1lEjYK",
+            "BmdlbmRlchgCIAEoDjImLlBPR09Qcm90b3MuRGF0YS5Qb2tlbW9uRGlzcGxh",
+            "eS5HZW5kZXISDQoFc2hpbnkYAyABKAgiJgoHQ29zdHVtZRIJCgVVTlNFVBAA",
+            "EhAKDEhPTElEQVlfMjAxNhABIkAKBkdlbmRlchIQCgxHRU5ERVJfVU5TRVQQ",
+            "ABIICgRNQUxFEAESCgoGRkVNQUxFEAISDgoKR0VOREVSTEVTUxADYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.PokemonDisplay), global::POGOProtos.Data.PokemonDisplay.Parser, new[]{ "Costume" }, null, new[]{ typeof(global::POGOProtos.Data.PokemonDisplay.Types.Costume) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.PokemonDisplay), global::POGOProtos.Data.PokemonDisplay.Parser, new[]{ "Costume", "Gender", "Shiny" }, null, new[]{ typeof(global::POGOProtos.Data.PokemonDisplay.Types.Costume), typeof(global::POGOProtos.Data.PokemonDisplay.Types.Gender) }, null)
           }));
     }
     #endregion
@@ -61,6 +65,8 @@ namespace POGOProtos.Data {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PokemonDisplay(PokemonDisplay other) : this() {
       costume_ = other.costume_;
+      gender_ = other.gender_;
+      shiny_ = other.shiny_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -79,6 +85,28 @@ namespace POGOProtos.Data {
       }
     }
 
+    /// <summary>Field number for the "gender" field.</summary>
+    public const int GenderFieldNumber = 2;
+    private global::POGOProtos.Data.PokemonDisplay.Types.Gender gender_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.PokemonDisplay.Types.Gender Gender {
+      get { return gender_; }
+      set {
+        gender_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "shiny" field.</summary>
+    public const int ShinyFieldNumber = 3;
+    private bool shiny_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Shiny {
+      get { return shiny_; }
+      set {
+        shiny_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PokemonDisplay);
@@ -93,6 +121,8 @@ namespace POGOProtos.Data {
         return true;
       }
       if (Costume != other.Costume) return false;
+      if (Gender != other.Gender) return false;
+      if (Shiny != other.Shiny) return false;
       return true;
     }
 
@@ -100,6 +130,8 @@ namespace POGOProtos.Data {
     public override int GetHashCode() {
       int hash = 1;
       if (Costume != 0) hash ^= Costume.GetHashCode();
+      if (Gender != 0) hash ^= Gender.GetHashCode();
+      if (Shiny != false) hash ^= Shiny.GetHashCode();
       return hash;
     }
 
@@ -114,6 +146,14 @@ namespace POGOProtos.Data {
         output.WriteRawTag(8);
         output.WriteEnum((int) Costume);
       }
+      if (Gender != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Gender);
+      }
+      if (Shiny != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(Shiny);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -121,6 +161,12 @@ namespace POGOProtos.Data {
       int size = 0;
       if (Costume != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Costume);
+      }
+      if (Gender != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Gender);
+      }
+      if (Shiny != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -132,6 +178,12 @@ namespace POGOProtos.Data {
       }
       if (other.Costume != 0) {
         Costume = other.Costume;
+      }
+      if (other.Gender != 0) {
+        Gender = other.Gender;
+      }
+      if (other.Shiny != false) {
+        Shiny = other.Shiny;
       }
     }
 
@@ -147,6 +199,14 @@ namespace POGOProtos.Data {
             costume_ = (global::POGOProtos.Data.PokemonDisplay.Types.Costume) input.ReadEnum();
             break;
           }
+          case 16: {
+            gender_ = (global::POGOProtos.Data.PokemonDisplay.Types.Gender) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            Shiny = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -158,6 +218,13 @@ namespace POGOProtos.Data {
       public enum Costume {
         [pbr::OriginalName("UNSET")] Unset = 0,
         [pbr::OriginalName("HOLIDAY_2016")] Holiday2016 = 1,
+      }
+
+      public enum Gender {
+        [pbr::OriginalName("GENDER_UNSET")] Unset = 0,
+        [pbr::OriginalName("MALE")] Male = 1,
+        [pbr::OriginalName("FEMALE")] Female = 2,
+        [pbr::OriginalName("GENDERLESS")] Less = 3,
       }
 
     }
