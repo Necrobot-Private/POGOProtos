@@ -33,7 +33,7 @@ namespace POGOProtos.Networking.Envelopes {
             "c3QSWwoRcGxhdGZvcm1fcmVxdWVzdHMYBiADKAsyQC5QT0dPUHJvdG9zLk5l",
             "dHdvcmtpbmcuRW52ZWxvcGVzLlJlcXVlc3RFbnZlbG9wZS5QbGF0Zm9ybVJl",
             "cXVlc3QSEAoIbGF0aXR1ZGUYByABKAESEQoJbG9uZ2l0dWRlGAggASgBEhAK",
-            "CGFjY3VyYWN5GAkgASgBEkwKCWF1dGhfaW5mbxgKIAEoCzI5LlBPR09Qcm90",
+            "CGFsdGl0dWRlGAkgASgBEkwKCWF1dGhfaW5mbxgKIAEoCzI5LlBPR09Qcm90",
             "b3MuTmV0d29ya2luZy5FbnZlbG9wZXMuUmVxdWVzdEVudmVsb3BlLkF1dGhJ",
             "bmZvEkAKC2F1dGhfdGlja2V0GAsgASgLMisuUE9HT1Byb3Rvcy5OZXR3b3Jr",
             "aW5nLkVudmVsb3Blcy5BdXRoVGlja2V0EiEKGW1zX3NpbmNlX2xhc3RfbG9j",
@@ -47,7 +47,7 @@ namespace POGOProtos.Networking.Envelopes {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Networking.Requests.RequestReflection.Descriptor, global::POGOProtos.Networking.Envelopes.AuthTicketReflection.Descriptor, global::POGOProtos.Networking.Platform.PlatformRequestTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Envelopes.RequestEnvelope), global::POGOProtos.Networking.Envelopes.RequestEnvelope.Parser, new[]{ "StatusCode", "RequestId", "Requests", "PlatformRequests", "Latitude", "Longitude", "Accuracy", "AuthInfo", "AuthTicket", "MsSinceLastLocationfix" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.AuthInfo), global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Parser, new[]{ "Provider", "Token" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT), global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT.Parser, new[]{ "Contents", "Unknown2" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Envelopes.RequestEnvelope), global::POGOProtos.Networking.Envelopes.RequestEnvelope.Parser, new[]{ "StatusCode", "RequestId", "Requests", "PlatformRequests", "Latitude", "Longitude", "Altitude", "AuthInfo", "AuthTicket", "MsSinceLastLocationfix" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.AuthInfo), global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Parser, new[]{ "Provider", "Token" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT), global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT.Parser, new[]{ "Contents", "Unknown2" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.PlatformRequest), global::POGOProtos.Networking.Envelopes.RequestEnvelope.Types.PlatformRequest.Parser, new[]{ "Type", "RequestMessage" }, null, null, null)})
           }));
     }
@@ -85,7 +85,7 @@ namespace POGOProtos.Networking.Envelopes {
       platformRequests_ = other.platformRequests_.Clone();
       latitude_ = other.latitude_;
       longitude_ = other.longitude_;
-      accuracy_ = other.accuracy_;
+      altitude_ = other.altitude_;
       AuthInfo = other.authInfo_ != null ? other.AuthInfo.Clone() : null;
       AuthTicket = other.authTicket_ != null ? other.AuthTicket.Clone() : null;
       msSinceLastLocationfix_ = other.msSinceLastLocationfix_;
@@ -160,17 +160,14 @@ namespace POGOProtos.Networking.Envelopes {
       }
     }
 
-    /// <summary>Field number for the "accuracy" field.</summary>
-    public const int AccuracyFieldNumber = 9;
-    private double accuracy_;
-    /// <summary>
-    ///  Make sure to use this to build POGOProtos.Networking.Envelopes.Signature.location_hash1 and POGOProtos.Networking.Envelopes.Signature.location_hash2
-    /// </summary>
+    /// <summary>Field number for the "altitude" field.</summary>
+    public const int AltitudeFieldNumber = 9;
+    private double altitude_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public double Accuracy {
-      get { return accuracy_; }
+    public double Altitude {
+      get { return altitude_; }
       set {
-        accuracy_ = value;
+        altitude_ = value;
       }
     }
 
@@ -226,7 +223,7 @@ namespace POGOProtos.Networking.Envelopes {
       if(!platformRequests_.Equals(other.platformRequests_)) return false;
       if (Latitude != other.Latitude) return false;
       if (Longitude != other.Longitude) return false;
-      if (Accuracy != other.Accuracy) return false;
+      if (Altitude != other.Altitude) return false;
       if (!object.Equals(AuthInfo, other.AuthInfo)) return false;
       if (!object.Equals(AuthTicket, other.AuthTicket)) return false;
       if (MsSinceLastLocationfix != other.MsSinceLastLocationfix) return false;
@@ -242,7 +239,7 @@ namespace POGOProtos.Networking.Envelopes {
       hash ^= platformRequests_.GetHashCode();
       if (Latitude != 0D) hash ^= Latitude.GetHashCode();
       if (Longitude != 0D) hash ^= Longitude.GetHashCode();
-      if (Accuracy != 0D) hash ^= Accuracy.GetHashCode();
+      if (Altitude != 0D) hash ^= Altitude.GetHashCode();
       if (authInfo_ != null) hash ^= AuthInfo.GetHashCode();
       if (authTicket_ != null) hash ^= AuthTicket.GetHashCode();
       if (MsSinceLastLocationfix != 0L) hash ^= MsSinceLastLocationfix.GetHashCode();
@@ -274,9 +271,9 @@ namespace POGOProtos.Networking.Envelopes {
         output.WriteRawTag(65);
         output.WriteDouble(Longitude);
       }
-      if (Accuracy != 0D) {
+      if (Altitude != 0D) {
         output.WriteRawTag(73);
-        output.WriteDouble(Accuracy);
+        output.WriteDouble(Altitude);
       }
       if (authInfo_ != null) {
         output.WriteRawTag(82);
@@ -309,7 +306,7 @@ namespace POGOProtos.Networking.Envelopes {
       if (Longitude != 0D) {
         size += 1 + 8;
       }
-      if (Accuracy != 0D) {
+      if (Altitude != 0D) {
         size += 1 + 8;
       }
       if (authInfo_ != null) {
@@ -343,8 +340,8 @@ namespace POGOProtos.Networking.Envelopes {
       if (other.Longitude != 0D) {
         Longitude = other.Longitude;
       }
-      if (other.Accuracy != 0D) {
-        Accuracy = other.Accuracy;
+      if (other.Altitude != 0D) {
+        Altitude = other.Altitude;
       }
       if (other.authInfo_ != null) {
         if (authInfo_ == null) {
@@ -396,7 +393,7 @@ namespace POGOProtos.Networking.Envelopes {
             break;
           }
           case 73: {
-            Accuracy = input.ReadDouble();
+            Altitude = input.ReadDouble();
             break;
           }
           case 82: {

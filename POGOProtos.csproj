@@ -173,7 +173,6 @@
     <Compile Include="Networking\Requests\Messages\AttackGymMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CatchPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckAwardedBadgesMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\CheckChallenge.g.cs" />
     <Compile Include="Networking\Requests\Messages\ClaimCodenameMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CollectDailyBonusMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CollectDailyDefenderBonusMessage.g.cs" />
@@ -191,7 +190,6 @@
     <Compile Include="Networking\Requests\Messages\FortRecallPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\FortSearchMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetAssetDigestMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GetBuddyWalked.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetDownloadUrlsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetGymDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetHatchedEggsMessage.g.cs" />
@@ -210,7 +208,6 @@
     <Compile Include="Networking\Requests\Messages\RegisterBackgroundDeviceMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ReleasePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetAvatarMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\SetBuddyPokemon.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetContactSettingsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetFavoritePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetPlayerTeamMessage.g.cs" />
@@ -224,7 +221,6 @@
     <Compile Include="Networking\Requests\Messages\UseItemPotionMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemReviveMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemXpBoostMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\VerifyChallenge.g.cs" />
     <Compile Include="Networking\Requests\Request.g.cs" />
     <Compile Include="Networking\Requests\RequestType.g.cs" />
     <Compile Include="Networking\Responses\AddFortModifierResponse.g.cs" />
