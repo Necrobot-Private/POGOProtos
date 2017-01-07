@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93DACA54-9EB7-41B1-8337-8814B5BDA253}</ProjectGuid>
+    <ProjectGuid>{A03A7BB2-4F0B-467B-84B2-9A76E6AAE6FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>POGOProtos</AssemblyName>
