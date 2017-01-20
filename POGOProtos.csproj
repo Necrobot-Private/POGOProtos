@@ -108,8 +108,10 @@
     <Compile Include="Enums\BadgeType.g.cs" />
     <Compile Include="Enums\CameraInterpolation.g.cs" />
     <Compile Include="Enums\CameraTarget.g.cs" />
+    <Compile Include="Enums\Costume.g.cs" />
     <Compile Include="Enums\EncounterType.g.cs" />
     <Compile Include="Enums\Filter.g.cs" />
+    <Compile Include="Enums\Form.g.cs" />
     <Compile Include="Enums\Gender.g.cs" />
     <Compile Include="Enums\IapItemCategory.g.cs" />
     <Compile Include="Enums\ItemCategory.g.cs" />
@@ -172,7 +174,6 @@
     <Compile Include="Networking\Requests\Messages\CatchPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckAwardedBadgesMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckChallengeMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\CheckCodenameAvailableMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ClaimCodenameMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CollectDailyBonusMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CollectDailyDefenderBonusMessage.g.cs" />
@@ -199,7 +200,6 @@
     <Compile Include="Networking\Requests\Messages\GetMapObjectsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerProfileMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GetSuggestedCodenamesMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\IncenseEncounterMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\LevelUpRewardsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ListAvatarCustomizationsMessage.g.cs" />
@@ -260,7 +260,6 @@
     <Compile Include="Networking\Responses\GetMapObjectsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerProfileResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerResponse.g.cs" />
-    <Compile Include="Networking\Responses\GetSuggestedCodenamesResponse.g.cs" />
     <Compile Include="Networking\Responses\IncenseEncounterResponse.g.cs" />
     <Compile Include="Networking\Responses\LevelUpRewardsResponse.g.cs" />
     <Compile Include="Networking\Responses\ListAvatarCustomizationsResponse.g.cs" />
@@ -302,6 +301,7 @@
     <Compile Include="Settings\Master\CameraSettings.g.cs" />
     <Compile Include="Settings\Master\EncounterSettings.g.cs" />
     <Compile Include="Settings\Master\EquippedBadgeSettings.g.cs" />
+    <Compile Include="Settings\Master\FormSettings.g.cs" />
     <Compile Include="Settings\Master\GymBattleSettings.g.cs" />
     <Compile Include="Settings\Master\GymLevelSettings.g.cs" />
     <Compile Include="Settings\Master\IapItemDisplay.g.cs" />
@@ -324,10 +324,12 @@
     <Compile Include="Settings\Master\PokemonUpgradeSettings.g.cs" />
     <Compile Include="Settings\Master\Pokemon\CameraAttributes.g.cs" />
     <Compile Include="Settings\Master\Pokemon\EncounterAttributes.g.cs" />
+    <Compile Include="Settings\Master\Pokemon\EvolutionBranch.g.cs" />
     <Compile Include="Settings\Master\Pokemon\StatsAttributes.g.cs" />
     <Compile Include="Settings\Master\QuestSettings.g.cs" />
     <Compile Include="Settings\Master\Quest\DailyQuestSettings.g.cs" />
     <Compile Include="Settings\Master\TypeEffectiveSettings.g.cs" />
+    <Compile Include="Settings\NewsSettings.g.cs" />
     <Compile Include="Settings\SfidaSettings.g.cs" />
   </ItemGroup>
   <ItemGroup>
