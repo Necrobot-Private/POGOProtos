@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\AssetDigestEntry.g.cs" />
+    <Compile Include="Data\Avatar\AvatarCustomization.g.cs" />
+    <Compile Include="Data\Avatar\AvatarItem.g.cs" />
     <Compile Include="Data\BackgroundToken.g.cs" />
     <Compile Include="Data\Badge\BadgeCaptureReward.g.cs" />
     <Compile Include="Data\Battle\BattleAction.g.cs" />
@@ -92,12 +94,14 @@
     <Compile Include="Data\Player\DailyBonus.g.cs" />
     <Compile Include="Data\Player\EquippedBadge.g.cs" />
     <Compile Include="Data\Player\PlayerAvatar.g.cs" />
+    <Compile Include="Data\Player\PlayerAvatarType.g.cs" />
     <Compile Include="Data\Player\PlayerCamera.g.cs" />
     <Compile Include="Data\Player\PlayerCurrency.g.cs" />
     <Compile Include="Data\Player\PlayerPublicProfile.g.cs" />
     <Compile Include="Data\Player\PlayerStats.g.cs" />
     <Compile Include="Data\PokedexEntry.g.cs" />
     <Compile Include="Data\PokemonData.g.cs" />
+    <Compile Include="Data\PokemonDisplay.g.cs" />
     <Compile Include="Data\Quests\DailyQuest.g.cs" />
     <Compile Include="Data\Quests\Quest.g.cs" />
     <Compile Include="Enums\ActivityType.g.cs" />
@@ -105,6 +109,7 @@
     <Compile Include="Enums\CameraInterpolation.g.cs" />
     <Compile Include="Enums\CameraTarget.g.cs" />
     <Compile Include="Enums\EncounterType.g.cs" />
+    <Compile Include="Enums\Filter.g.cs" />
     <Compile Include="Enums\Gender.g.cs" />
     <Compile Include="Enums\IapItemCategory.g.cs" />
     <Compile Include="Enums\ItemCategory.g.cs" />
@@ -117,6 +122,7 @@
     <Compile Include="Enums\PokemonRarity.g.cs" />
     <Compile Include="Enums\PokemonType.g.cs" />
     <Compile Include="Enums\QuestType.g.cs" />
+    <Compile Include="Enums\Slot.g.cs" />
     <Compile Include="Enums\TeamColor.g.cs" />
     <Compile Include="Enums\TutorialState.g.cs" />
     <Compile Include="Inventory\AppliedItem.g.cs" />
@@ -165,7 +171,7 @@
     <Compile Include="Networking\Requests\Messages\AttackGymMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CatchPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckAwardedBadgesMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\CheckChallenge.g.cs" />
+    <Compile Include="Networking\Requests\Messages\CheckChallengeMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckCodenameAvailableMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ClaimCodenameMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CollectDailyBonusMessage.g.cs" />
@@ -184,7 +190,7 @@
     <Compile Include="Networking\Requests\Messages\FortRecallPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\FortSearchMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetAssetDigestMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GetBuddyWalked.g.cs" />
+    <Compile Include="Networking\Requests\Messages\GetBuddyWalkedMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetDownloadUrlsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetGymDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetHatchedEggsMessage.g.cs" />
@@ -196,14 +202,16 @@
     <Compile Include="Networking\Requests\Messages\GetSuggestedCodenamesMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\IncenseEncounterMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\LevelUpRewardsMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\ListAvatarCustomizationsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\MarkTutorialCompleteMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\NicknamePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\PlayerUpdateMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RecycleInventoryItemMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RegisterBackgroundDeviceMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ReleasePokemonMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\SetAvatarItemAsViewedMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetAvatarMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\SetBuddyPokemon.g.cs" />
+    <Compile Include="Networking\Requests\Messages\SetBuddyPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetContactSettingsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetFavoritePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetPlayerTeamMessage.g.cs" />
@@ -217,7 +225,7 @@
     <Compile Include="Networking\Requests\Messages\UseItemPotionMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemReviveMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemXpBoostMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\VerifyChallenge.g.cs" />
+    <Compile Include="Networking\Requests\Messages\VerifyChallengeMessage.g.cs" />
     <Compile Include="Networking\Requests\Request.g.cs" />
     <Compile Include="Networking\Requests\RequestType.g.cs" />
     <Compile Include="Networking\Responses\AddFortModifierResponse.g.cs" />
@@ -255,12 +263,14 @@
     <Compile Include="Networking\Responses\GetSuggestedCodenamesResponse.g.cs" />
     <Compile Include="Networking\Responses\IncenseEncounterResponse.g.cs" />
     <Compile Include="Networking\Responses\LevelUpRewardsResponse.g.cs" />
+    <Compile Include="Networking\Responses\ListAvatarCustomizationsResponse.g.cs" />
     <Compile Include="Networking\Responses\MarkTutorialCompleteResponse.g.cs" />
     <Compile Include="Networking\Responses\NicknamePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\PlayerUpdateResponse.g.cs" />
     <Compile Include="Networking\Responses\RecycleInventoryItemResponse.g.cs" />
     <Compile Include="Networking\Responses\RegisterBackgroundDeviceResponse.g.cs" />
     <Compile Include="Networking\Responses\ReleasePokemonResponse.g.cs" />
+    <Compile Include="Networking\Responses\SetAvatarItemAsViewedResponse.g.cs" />
     <Compile Include="Networking\Responses\SetAvatarResponse.g.cs" />
     <Compile Include="Networking\Responses\SetBuddyPokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\SetContactSettingsResponse.g.cs" />
@@ -287,6 +297,7 @@
     <Compile Include="Settings\InventorySettings.g.cs" />
     <Compile Include="Settings\LevelSettings.g.cs" />
     <Compile Include="Settings\MapSettings.g.cs" />
+    <Compile Include="Settings\Master\AvatarCustomizationSettings.g.cs" />
     <Compile Include="Settings\Master\BadgeSettings.g.cs" />
     <Compile Include="Settings\Master\CameraSettings.g.cs" />
     <Compile Include="Settings\Master\EncounterSettings.g.cs" />
