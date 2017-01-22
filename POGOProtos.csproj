@@ -174,7 +174,6 @@
     <Compile Include="Networking\Requests\Messages\CatchPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckAwardedBadgesMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckChallengeMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\CheckCodenameAvailableMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ClaimCodenameMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CollectDailyBonusMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CollectDailyDefenderBonusMessage.g.cs" />
@@ -201,7 +200,6 @@
     <Compile Include="Networking\Requests\Messages\GetMapObjectsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerProfileMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GetSuggestedCodenamesMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\IncenseEncounterMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\LevelUpRewardsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ListAvatarCustomizationsMessage.g.cs" />
@@ -262,7 +260,6 @@
     <Compile Include="Networking\Responses\GetMapObjectsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerProfileResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerResponse.g.cs" />
-    <Compile Include="Networking\Responses\GetSuggestedCodenamesResponse.g.cs" />
     <Compile Include="Networking\Responses\IncenseEncounterResponse.g.cs" />
     <Compile Include="Networking\Responses\LevelUpRewardsResponse.g.cs" />
     <Compile Include="Networking\Responses\ListAvatarCustomizationsResponse.g.cs" />
