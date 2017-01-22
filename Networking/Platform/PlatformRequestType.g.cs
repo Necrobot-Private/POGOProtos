@@ -26,6 +26,7 @@ namespace POGOProtos.Networking.Platform {
             "ZXN0VHlwZS5wcm90bxIeUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlBsYXRmb3Jt",
             "Kq0BChNQbGF0Zm9ybVJlcXVlc3RUeXBlEhAKDE1FVEhPRF9VTlNFVBAAEhYK",
             "EkJVWV9JVEVNX1BPS0VDT0lOUxACEhQKEEJVWV9JVEVNX0FORFJPSUQQAxIQ",
+            "CgxCVVlfSVRFTV9JT1MQBBITCg9HRVRfU1RPUkVfSVRFTVMQBRIcChhTRU5E",
             "X0VOQ1JZUFRFRF9TSUdOQVRVUkUQBhIRCg1VTktOT1dOX1BUUl84EAhiBnBy",
             "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
