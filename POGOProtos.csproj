@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C978ABEE-D07F-426A-8C7E-269791129FDB}</ProjectGuid>
+    <ProjectGuid>{FED6EC35-C1A9-48D4-B662-0265CE0A4B34}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>POGOProtos</RootNamespace>
