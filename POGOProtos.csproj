@@ -165,10 +165,12 @@
     <Compile Include="Networking\Platform\Requests\BuyItemAndroidRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\BuyItemPokeCoinsRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\SendEncryptedSignatureRequest.g.cs" />
+    <Compile Include="Networking\Platform\Requests\UnknownPtr8Request.g.cs" />
     <Compile Include="Networking\Platform\Responses\BuyItemAndroidResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\BuyItemPokeCoinsResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\GetStoreItemsResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\SendEncryptedSignatureResponse.g.cs" />
+    <Compile Include="Networking\Platform\Responses\UnknownPtr8Response.g.cs" />
     <Compile Include="Networking\Requests\Messages\AddFortModifierMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\AttackGymMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CatchPokemonMessage.g.cs" />
