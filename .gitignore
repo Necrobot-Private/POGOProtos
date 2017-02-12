@@ -77,3 +77,7 @@ tmp/
 
 # Backup files
 *~
+
+/.vs/
+/obj/
+/packages/
