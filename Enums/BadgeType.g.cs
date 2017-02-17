@@ -23,7 +23,7 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBQT0dPUHJvdG9zL0VudW1zL0JhZGdlVHlwZS5wcm90bxIQUE9HT1Byb3Rv",
-            "cy5FbnVtcyqyBwoJQmFkZ2VUeXBlEg8KC0JBREdFX1VOU0VUEAASEwoPQkFE",
+            "cy5FbnVtcyrSBwoJQmFkZ2VUeXBlEg8KC0JBREdFX1VOU0VUEAASEwoPQkFE",
             "R0VfVFJBVkVMX0tNEAESGQoVQkFER0VfUE9LRURFWF9FTlRSSUVTEAISFwoT",
             "QkFER0VfQ0FQVFVSRV9UT1RBTBADEhcKE0JBREdFX0RFRkVBVEVEX0ZPUlQQ",
             "BBIXChNCQURHRV9FVk9MVkVEX1RPVEFMEAUSFwoTQkFER0VfSEFUQ0hFRF9U",
@@ -44,7 +44,8 @@ namespace POGOProtos.Enums {
             "EgoOQkFER0VfVFlQRV9JQ0UQIBIVChFCQURHRV9UWVBFX0RSQUdPThAhEhMK",
             "D0JBREdFX1RZUEVfREFSSxAiEhQKEEJBREdFX1RZUEVfRkFJUlkQIxIXChNC",
             "QURHRV9TTUFMTF9SQVRUQVRBECQSEQoNQkFER0VfUElLQUNIVRAlEg8KC0JB",
-            "REdFX1VOT1dOECZiBnByb3RvMw=="));
+            "REdFX1VOT1dOECYSHgoaQkFER0VfUE9LRURFWF9FTlRSSUVTX0dFTjIQJ2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.BadgeType), }, null));
@@ -93,6 +94,7 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("BADGE_SMALL_RATTATA")] BadgeSmallRattata = 36,
     [pbr::OriginalName("BADGE_PIKACHU")] BadgePikachu = 37,
     [pbr::OriginalName("BADGE_UNOWN")] BadgeUnown = 38,
+    [pbr::OriginalName("BADGE_POKEDEX_ENTRIES_GEN2")] BadgePokedexEntriesGen2 = 39,
   }
 
   #endregion

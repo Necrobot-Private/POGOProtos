@@ -31,8 +31,8 @@ namespace POGOProtos.Enums {
             "B1VOT1dOX1AQEBILCgdVTk9XTl9REBESCwoHVU5PV05fUhASEgsKB1VOT1dO",
             "X1MQExILCgdVTk9XTl9UEBQSCwoHVU5PV05fVRAVEgsKB1VOT1dOX1YQFhIL",
             "CgdVTk9XTl9XEBcSCwoHVU5PV05fWBAYEgsKB1VOT1dOX1kQGRILCgdVTk9X",
-            "Tl9aEBoSFwoTVU5PV05fUVVFU1RJT05fTUFSSxAbEhsKF1VOT1dOX0VYQ0xB",
-            "TUFUSU9OX1BPSU5UEBxiBnByb3RvMw=="));
+            "Tl9aEBoSGwoXVU5PV05fRVhDTEFNQVRJT05fUE9JTlQQGxIXChNVTk9XTl9R",
+            "VUVTVElPTl9NQVJLEBxiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.Form), }, null));
@@ -69,8 +69,8 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("UNOWN_X")] UnownX = 24,
     [pbr::OriginalName("UNOWN_Y")] UnownY = 25,
     [pbr::OriginalName("UNOWN_Z")] UnownZ = 26,
-    [pbr::OriginalName("UNOWN_QUESTION_MARK")] UnownQuestionMark = 27,
-    [pbr::OriginalName("UNOWN_EXCLAMATION_POINT")] UnownExclamationPoint = 28,
+    [pbr::OriginalName("UNOWN_EXCLAMATION_POINT")] UnownExclamationPoint = 27,
+    [pbr::OriginalName("UNOWN_QUESTION_MARK")] UnownQuestionMark = 28,
   }
 
   #endregion
