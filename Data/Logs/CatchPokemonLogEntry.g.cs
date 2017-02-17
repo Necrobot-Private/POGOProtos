@@ -24,17 +24,19 @@ namespace POGOProtos.Data.Logs {
           string.Concat(
             "Ci9QT0dPUHJvdG9zL0RhdGEvTG9ncy9DYXRjaFBva2Vtb25Mb2dFbnRyeS5w",
             "cm90bxIUUE9HT1Byb3Rvcy5EYXRhLkxvZ3MaIFBPR09Qcm90b3MvRW51bXMv",
-            "UG9rZW1vbklkLnByb3RvIowCChRDYXRjaFBva2Vtb25Mb2dFbnRyeRJBCgZy",
-            "ZXN1bHQYASABKA4yMS5QT0dPUHJvdG9zLkRhdGEuTG9ncy5DYXRjaFBva2Vt",
-            "b25Mb2dFbnRyeS5SZXN1bHQSLwoKcG9rZW1vbl9pZBgCIAEoDjIbLlBPR09Q",
-            "cm90b3MuRW51bXMuUG9rZW1vbklkEhUKDWNvbWJhdF9wb2ludHMYAyABKAUS",
-            "FwoPcG9rZW1vbl9kYXRhX2lkGAQgASgGIlAKBlJlc3VsdBIJCgVVTlNFVBAA",
-            "EhQKEFBPS0VNT05fQ0FQVFVSRUQQARIQCgxQT0tFTU9OX0ZMRUQQAhITCg9Q",
-            "T0tFTU9OX0hBVENIRUQQA2IGcHJvdG8z"));
+            "UG9rZW1vbklkLnByb3RvGiRQT0dPUHJvdG9zL0RhdGEvUG9rZW1vbkRpc3Bs",
+            "YXkucHJvdG8ixgIKFENhdGNoUG9rZW1vbkxvZ0VudHJ5EkEKBnJlc3VsdBgB",
+            "IAEoDjIxLlBPR09Qcm90b3MuRGF0YS5Mb2dzLkNhdGNoUG9rZW1vbkxvZ0Vu",
+            "dHJ5LlJlc3VsdBIvCgpwb2tlbW9uX2lkGAIgASgOMhsuUE9HT1Byb3Rvcy5F",
+            "bnVtcy5Qb2tlbW9uSWQSFQoNY29tYmF0X3BvaW50cxgDIAEoBRIXCg9wb2tl",
+            "bW9uX2RhdGFfaWQYBCABKAYSOAoPcG9rZW1vbl9kaXNwbGF5GAUgASgLMh8u",
+            "UE9HT1Byb3Rvcy5EYXRhLlBva2Vtb25EaXNwbGF5IlAKBlJlc3VsdBIJCgVV",
+            "TlNFVBAAEhQKEFBPS0VNT05fQ0FQVFVSRUQQARIQCgxQT0tFTU9OX0ZMRUQQ",
+            "AhITCg9QT0tFTU9OX0hBVENIRUQQA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Enums.PokemonIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Data.PokemonDisplayReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.CatchPokemonLogEntry), global::POGOProtos.Data.Logs.CatchPokemonLogEntry.Parser, new[]{ "Result", "PokemonId", "CombatPoints", "PokemonDataId" }, null, new[]{ typeof(global::POGOProtos.Data.Logs.CatchPokemonLogEntry.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.CatchPokemonLogEntry), global::POGOProtos.Data.Logs.CatchPokemonLogEntry.Parser, new[]{ "Result", "PokemonId", "CombatPoints", "PokemonDataId", "PokemonDisplay" }, null, new[]{ typeof(global::POGOProtos.Data.Logs.CatchPokemonLogEntry.Types.Result) }, null)
           }));
     }
     #endregion
@@ -69,6 +71,7 @@ namespace POGOProtos.Data.Logs {
       pokemonId_ = other.pokemonId_;
       combatPoints_ = other.combatPoints_;
       pokemonDataId_ = other.pokemonDataId_;
+      PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -120,6 +123,17 @@ namespace POGOProtos.Data.Logs {
       }
     }
 
+    /// <summary>Field number for the "pokemon_display" field.</summary>
+    public const int PokemonDisplayFieldNumber = 5;
+    private global::POGOProtos.Data.PokemonDisplay pokemonDisplay_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.PokemonDisplay PokemonDisplay {
+      get { return pokemonDisplay_; }
+      set {
+        pokemonDisplay_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CatchPokemonLogEntry);
@@ -137,6 +151,7 @@ namespace POGOProtos.Data.Logs {
       if (PokemonId != other.PokemonId) return false;
       if (CombatPoints != other.CombatPoints) return false;
       if (PokemonDataId != other.PokemonDataId) return false;
+      if (!object.Equals(PokemonDisplay, other.PokemonDisplay)) return false;
       return true;
     }
 
@@ -147,6 +162,7 @@ namespace POGOProtos.Data.Logs {
       if (PokemonId != 0) hash ^= PokemonId.GetHashCode();
       if (CombatPoints != 0) hash ^= CombatPoints.GetHashCode();
       if (PokemonDataId != 0UL) hash ^= PokemonDataId.GetHashCode();
+      if (pokemonDisplay_ != null) hash ^= PokemonDisplay.GetHashCode();
       return hash;
     }
 
@@ -173,6 +189,10 @@ namespace POGOProtos.Data.Logs {
         output.WriteRawTag(33);
         output.WriteFixed64(PokemonDataId);
       }
+      if (pokemonDisplay_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(PokemonDisplay);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -189,6 +209,9 @@ namespace POGOProtos.Data.Logs {
       }
       if (PokemonDataId != 0UL) {
         size += 1 + 8;
+      }
+      if (pokemonDisplay_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PokemonDisplay);
       }
       return size;
     }
@@ -209,6 +232,12 @@ namespace POGOProtos.Data.Logs {
       }
       if (other.PokemonDataId != 0UL) {
         PokemonDataId = other.PokemonDataId;
+      }
+      if (other.pokemonDisplay_ != null) {
+        if (pokemonDisplay_ == null) {
+          pokemonDisplay_ = new global::POGOProtos.Data.PokemonDisplay();
+        }
+        PokemonDisplay.MergeFrom(other.PokemonDisplay);
       }
     }
 
@@ -234,6 +263,13 @@ namespace POGOProtos.Data.Logs {
           }
           case 33: {
             PokemonDataId = input.ReadFixed64();
+            break;
+          }
+          case 42: {
+            if (pokemonDisplay_ == null) {
+              pokemonDisplay_ = new global::POGOProtos.Data.PokemonDisplay();
+            }
+            input.ReadMessage(pokemonDisplay_);
             break;
           }
         }
