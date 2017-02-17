@@ -23,13 +23,13 @@ namespace POGOProtos.Data.Avatar {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL0RhdGEvQXZhdGFyL0F2YXRhckN1c3RvbWl6YXRpb24u",
-            "cHJvdG8SFlBPR09Qcm90b3MuRGF0YS5BdmF0YXIi9AEKE0F2YXRhckN1c3Rv",
+            "cHJvdG8SFlBPR09Qcm90b3MuRGF0YS5BdmF0YXIijQIKE0F2YXRhckN1c3Rv",
             "bWl6YXRpb24SGgoSYXZhdGFyX3RlbXBsYXRlX2lkGAEgASgJEkEKBmxhYmVs",
             "cxgCIAMoDjIxLlBPR09Qcm90b3MuRGF0YS5BdmF0YXIuQXZhdGFyQ3VzdG9t",
-            "aXphdGlvbi5MYWJlbCJ+CgVMYWJlbBIPCgtVTlNFVF9MQUJFTBAAEgsKB0RF",
-            "RkFVTFQQARIJCgVPV05FRBACEgwKCEZFQVRVUkVEEAMSBwoDTkVXEAQSCAoE",
-            "U0FMRRAFEg8KC1BVUkNIQVNBQkxFEAYSDgoKVU5MT0NLQUJMRRAHEgoKBlZJ",
-            "RVdFRBAIYgZwcm90bzM="));
+            "aXphdGlvbi5MYWJlbCKWAQoFTGFiZWwSDwoLVU5TRVRfTEFCRUwQABILCgdE",
+            "RUZBVUxUEAESCQoFT1dORUQQAhIMCghGRUFUVVJFRBADEgcKA05FVxAEEggK",
+            "BFNBTEUQBRIPCgtQVVJDSEFTQUJMRRAGEg4KClVOTE9DS0FCTEUQBxIKCgZW",
+            "SUVXRUQQCBIWChJMT0NLRURfUFVSQ0hBU0FCTEUQCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -190,6 +190,7 @@ namespace POGOProtos.Data.Avatar {
         [pbr::OriginalName("PURCHASABLE")] Purchasable = 6,
         [pbr::OriginalName("UNLOCKABLE")] Unlockable = 7,
         [pbr::OriginalName("VIEWED")] Viewed = 8,
+        [pbr::OriginalName("LOCKED_PURCHASABLE")] LockedPurchasable = 9,
       }
 
     }
