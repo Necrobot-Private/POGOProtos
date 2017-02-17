@@ -23,8 +23,9 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch9QT0dPUHJvdG9zL0VudW1zL1BsYXRmb3JtLnByb3RvEhBQT0dPUHJvdG9z",
-            "LkVudW1zKkEKCFBsYXRmb3JtEgkKBVVOU0VUEAASBwoDSU9TEAESCwoHQU5E",
-            "Uk9JRBACEgcKA09TWBADEgsKB1dJTkRPV1MQBGIGcHJvdG8z"));
+            "LkVudW1zKlIKCFBsYXRmb3JtEgkKBVVOU0VUEAASBwoDSU9TEAESCwoHQU5E",
+            "Uk9JRBACEgcKA09TWBADEgsKB1dJTkRPV1MQBBIPCgtBUFBMRV9XQVRDSBAF",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.Platform), }, null));
@@ -39,6 +40,7 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("ANDROID")] Android = 2,
     [pbr::OriginalName("OSX")] Osx = 3,
     [pbr::OriginalName("WINDOWS")] Windows = 4,
+    [pbr::OriginalName("APPLE_WATCH")] AppleWatch = 5,
   }
 
   #endregion

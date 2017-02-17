@@ -25,18 +25,19 @@ namespace POGOProtos.Networking.Responses {
             "CjxQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0xldmVsVXBSZXdh",
             "cmRzUmVzcG9uc2UucHJvdG8SH1BPR09Qcm90b3MuTmV0d29ya2luZy5SZXNw",
             "b25zZXMaJlBPR09Qcm90b3MvSW52ZW50b3J5L0l0ZW0vSXRlbUlkLnByb3Rv",
-            "GilQT0dPUHJvdG9zL0ludmVudG9yeS9JdGVtL0l0ZW1Bd2FyZC5wcm90byKX",
+            "GilQT0dPUHJvdG9zL0ludmVudG9yeS9JdGVtL0l0ZW1Bd2FyZC5wcm90byK0",
             "AgoWTGV2ZWxVcFJld2FyZHNSZXNwb25zZRJOCgZyZXN1bHQYASABKA4yPi5Q",
             "T0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2VzLkxldmVsVXBSZXdhcmRz",
             "UmVzcG9uc2UuUmVzdWx0EjsKDWl0ZW1zX2F3YXJkZWQYAiADKAsyJC5QT0dP",
             "UHJvdG9zLkludmVudG9yeS5JdGVtLkl0ZW1Bd2FyZBI5Cg5pdGVtc191bmxv",
             "Y2tlZBgEIAMoDjIhLlBPR09Qcm90b3MuSW52ZW50b3J5Lkl0ZW0uSXRlbUlk",
-            "IjUKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARITCg9BV0FSREVE",
-            "X0FMUkVBRFkQAmIGcHJvdG8z"));
+            "EhsKE2F2YXRhcl90ZW1wbGF0ZV9pZHMYBSADKAkiNQoGUmVzdWx0EgkKBVVO",
+            "U0VUEAASCwoHU1VDQ0VTUxABEhMKD0FXQVJERURfQUxSRUFEWRACYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemAwardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.LevelUpRewardsResponse), global::POGOProtos.Networking.Responses.LevelUpRewardsResponse.Parser, new[]{ "Result", "ItemsAwarded", "ItemsUnlocked" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.LevelUpRewardsResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.LevelUpRewardsResponse), global::POGOProtos.Networking.Responses.LevelUpRewardsResponse.Parser, new[]{ "Result", "ItemsAwarded", "ItemsUnlocked", "AvatarTemplateIds" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.LevelUpRewardsResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -70,6 +71,7 @@ namespace POGOProtos.Networking.Responses {
       result_ = other.result_;
       itemsAwarded_ = other.itemsAwarded_.Clone();
       itemsUnlocked_ = other.itemsUnlocked_.Clone();
+      avatarTemplateIds_ = other.avatarTemplateIds_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -108,6 +110,16 @@ namespace POGOProtos.Networking.Responses {
       get { return itemsUnlocked_; }
     }
 
+    /// <summary>Field number for the "avatar_template_ids" field.</summary>
+    public const int AvatarTemplateIdsFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _repeated_avatarTemplateIds_codec
+        = pb::FieldCodec.ForString(42);
+    private readonly pbc::RepeatedField<string> avatarTemplateIds_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> AvatarTemplateIds {
+      get { return avatarTemplateIds_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LevelUpRewardsResponse);
@@ -124,6 +136,7 @@ namespace POGOProtos.Networking.Responses {
       if (Result != other.Result) return false;
       if(!itemsAwarded_.Equals(other.itemsAwarded_)) return false;
       if(!itemsUnlocked_.Equals(other.itemsUnlocked_)) return false;
+      if(!avatarTemplateIds_.Equals(other.avatarTemplateIds_)) return false;
       return true;
     }
 
@@ -133,6 +146,7 @@ namespace POGOProtos.Networking.Responses {
       if (Result != 0) hash ^= Result.GetHashCode();
       hash ^= itemsAwarded_.GetHashCode();
       hash ^= itemsUnlocked_.GetHashCode();
+      hash ^= avatarTemplateIds_.GetHashCode();
       return hash;
     }
 
@@ -149,6 +163,7 @@ namespace POGOProtos.Networking.Responses {
       }
       itemsAwarded_.WriteTo(output, _repeated_itemsAwarded_codec);
       itemsUnlocked_.WriteTo(output, _repeated_itemsUnlocked_codec);
+      avatarTemplateIds_.WriteTo(output, _repeated_avatarTemplateIds_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -159,6 +174,7 @@ namespace POGOProtos.Networking.Responses {
       }
       size += itemsAwarded_.CalculateSize(_repeated_itemsAwarded_codec);
       size += itemsUnlocked_.CalculateSize(_repeated_itemsUnlocked_codec);
+      size += avatarTemplateIds_.CalculateSize(_repeated_avatarTemplateIds_codec);
       return size;
     }
 
@@ -172,6 +188,7 @@ namespace POGOProtos.Networking.Responses {
       }
       itemsAwarded_.Add(other.itemsAwarded_);
       itemsUnlocked_.Add(other.itemsUnlocked_);
+      avatarTemplateIds_.Add(other.avatarTemplateIds_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -193,6 +210,10 @@ namespace POGOProtos.Networking.Responses {
           case 34:
           case 32: {
             itemsUnlocked_.AddEntriesFrom(input, _repeated_itemsUnlocked_codec);
+            break;
+          }
+          case 42: {
+            avatarTemplateIds_.AddEntriesFrom(input, _repeated_avatarTemplateIds_codec);
             break;
           }
         }
