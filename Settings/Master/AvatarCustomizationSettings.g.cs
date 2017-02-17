@@ -26,7 +26,7 @@ namespace POGOProtos.Settings.Master {
             "aW9uU2V0dGluZ3MucHJvdG8SGlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVy",
             "Gi1QT0dPUHJvdG9zL0RhdGEvUGxheWVyL1BsYXllckF2YXRhclR5cGUucHJv",
             "dG8aIFBPR09Qcm90b3MvRW51bXMvQmFkZ2VUeXBlLnByb3RvGhtQT0dPUHJv",
-            "dG9zL0VudW1zL1Nsb3QucHJvdG8i6QUKG0F2YXRhckN1c3RvbWl6YXRpb25T",
+            "dG9zL0VudW1zL1Nsb3QucHJvdG8imAYKG0F2YXRhckN1c3RvbWl6YXRpb25T",
             "ZXR0aW5ncxIPCgdlbmFibGVkGAEgASgIEj0KC2F2YXRhcl90eXBlGAIgASgO",
             "MiguUE9HT1Byb3Rvcy5EYXRhLlBsYXllci5QbGF5ZXJBdmF0YXJUeXBlEiQK",
             "BHNsb3QYAyADKA4yFi5QT0dPUHJvdG9zLkVudW1zLlNsb3QSEwoLYnVuZGxl",
@@ -39,15 +39,16 @@ namespace POGOProtos.Settings.Master {
             "emF0aW9uUHJvbW9UeXBlEjYKEXVubG9ja19iYWRnZV90eXBlGAogASgOMhsu",
             "UE9HT1Byb3Rvcy5FbnVtcy5CYWRnZVR5cGUSDwoHaWFwX3NrdRgLIAEoCRIa",
             "ChJ1bmxvY2tfYmFkZ2VfbGV2ZWwYDCABKAUSEQoJaWNvbl9uYW1lGA0gASgJ",
-            "IkwKHEF2YXRhckN1c3RvbWl6YXRpb25Qcm9tb1R5cGUSFAoQVU5TRVRfUFJP",
-            "TU9fVFlQRRAAEggKBFNBTEUQARIMCghGRUFUVVJFRBACImcKHUF2YXRhckN1",
-            "c3RvbWl6YXRpb25VbmxvY2tUeXBlEhUKEVVOU0VUX1VOTE9DS19UWVBFEAAS",
-            "CwoHREVGQVVMVBABEhAKDE1FREFMX1JFV0FSRBACEhAKDElBUF9DTE9USElO",
-            "RxADYgZwcm90bzM="));
+            "EhsKE3VubG9ja19wbGF5ZXJfbGV2ZWwYDiABKAUiTAocQXZhdGFyQ3VzdG9t",
+            "aXphdGlvblByb21vVHlwZRIUChBVTlNFVF9QUk9NT19UWVBFEAASCAoEU0FM",
+            "RRABEgwKCEZFQVRVUkVEEAIieQodQXZhdGFyQ3VzdG9taXphdGlvblVubG9j",
+            "a1R5cGUSFQoRVU5TRVRfVU5MT0NLX1RZUEUQABILCgdERUZBVUxUEAESEAoM",
+            "TUVEQUxfUkVXQVJEEAISEAoMSUFQX0NMT1RISU5HEAMSEAoMTEVWRUxfUkVX",
+            "QVJEEARiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.PlayerAvatarTypeReflection.Descriptor, global::POGOProtos.Enums.BadgeTypeReflection.Descriptor, global::POGOProtos.Enums.SlotReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.AvatarCustomizationSettings), global::POGOProtos.Settings.Master.AvatarCustomizationSettings.Parser, new[]{ "Enabled", "AvatarType", "Slot", "BundleName", "AssetName", "GroupName", "SortOrder", "UnlockType", "PromoType", "UnlockBadgeType", "IapSku", "UnlockBadgeLevel", "IconName" }, null, new[]{ typeof(global::POGOProtos.Settings.Master.AvatarCustomizationSettings.Types.AvatarCustomizationPromoType), typeof(global::POGOProtos.Settings.Master.AvatarCustomizationSettings.Types.AvatarCustomizationUnlockType) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.AvatarCustomizationSettings), global::POGOProtos.Settings.Master.AvatarCustomizationSettings.Parser, new[]{ "Enabled", "AvatarType", "Slot", "BundleName", "AssetName", "GroupName", "SortOrder", "UnlockType", "PromoType", "UnlockBadgeType", "IapSku", "UnlockBadgeLevel", "IconName", "UnlockPlayerLevel" }, null, new[]{ typeof(global::POGOProtos.Settings.Master.AvatarCustomizationSettings.Types.AvatarCustomizationPromoType), typeof(global::POGOProtos.Settings.Master.AvatarCustomizationSettings.Types.AvatarCustomizationUnlockType) }, null)
           }));
     }
     #endregion
@@ -91,6 +92,7 @@ namespace POGOProtos.Settings.Master {
       iapSku_ = other.iapSku_;
       unlockBadgeLevel_ = other.unlockBadgeLevel_;
       iconName_ = other.iconName_;
+      unlockPlayerLevel_ = other.unlockPlayerLevel_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -239,6 +241,17 @@ namespace POGOProtos.Settings.Master {
       }
     }
 
+    /// <summary>Field number for the "unlock_player_level" field.</summary>
+    public const int UnlockPlayerLevelFieldNumber = 14;
+    private int unlockPlayerLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int UnlockPlayerLevel {
+      get { return unlockPlayerLevel_; }
+      set {
+        unlockPlayerLevel_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AvatarCustomizationSettings);
@@ -265,6 +278,7 @@ namespace POGOProtos.Settings.Master {
       if (IapSku != other.IapSku) return false;
       if (UnlockBadgeLevel != other.UnlockBadgeLevel) return false;
       if (IconName != other.IconName) return false;
+      if (UnlockPlayerLevel != other.UnlockPlayerLevel) return false;
       return true;
     }
 
@@ -284,6 +298,7 @@ namespace POGOProtos.Settings.Master {
       if (IapSku.Length != 0) hash ^= IapSku.GetHashCode();
       if (UnlockBadgeLevel != 0) hash ^= UnlockBadgeLevel.GetHashCode();
       if (IconName.Length != 0) hash ^= IconName.GetHashCode();
+      if (UnlockPlayerLevel != 0) hash ^= UnlockPlayerLevel.GetHashCode();
       return hash;
     }
 
@@ -340,6 +355,10 @@ namespace POGOProtos.Settings.Master {
         output.WriteRawTag(106);
         output.WriteString(IconName);
       }
+      if (UnlockPlayerLevel != 0) {
+        output.WriteRawTag(112);
+        output.WriteInt32(UnlockPlayerLevel);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -379,6 +398,9 @@ namespace POGOProtos.Settings.Master {
       }
       if (IconName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IconName);
+      }
+      if (UnlockPlayerLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UnlockPlayerLevel);
       }
       return size;
     }
@@ -422,6 +444,9 @@ namespace POGOProtos.Settings.Master {
       }
       if (other.IconName.Length != 0) {
         IconName = other.IconName;
+      }
+      if (other.UnlockPlayerLevel != 0) {
+        UnlockPlayerLevel = other.UnlockPlayerLevel;
       }
     }
 
@@ -487,6 +512,10 @@ namespace POGOProtos.Settings.Master {
             IconName = input.ReadString();
             break;
           }
+          case 112: {
+            UnlockPlayerLevel = input.ReadInt32();
+            break;
+          }
         }
       }
     }
@@ -506,6 +535,7 @@ namespace POGOProtos.Settings.Master {
         [pbr::OriginalName("DEFAULT")] Default = 1,
         [pbr::OriginalName("MEDAL_REWARD")] MedalReward = 2,
         [pbr::OriginalName("IAP_CLOTHING")] IapClothing = 3,
+        [pbr::OriginalName("LEVEL_REWARD")] LevelReward = 4,
       }
 
     }
