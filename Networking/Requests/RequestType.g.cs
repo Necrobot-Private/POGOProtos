@@ -23,47 +23,41 @@ namespace POGOProtos.Networking.Requests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
-            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyraDQoLUmVx",
-            "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASEQoNUExBWUVSX1VQREFURRAB",
-            "Eg4KCkdFVF9QTEFZRVIQAhIRCg1HRVRfSU5WRU5UT1JZEAQSFQoRRE9XTkxP",
-            "QURfU0VUVElOR1MQBRIbChdET1dOTE9BRF9JVEVNX1RFTVBMQVRFUxAGEiIK",
-            "HkRPV05MT0FEX1JFTU9URV9DT05GSUdfVkVSU0lPThAHEh4KGlJFR0lTVEVS",
-            "X0JBQ0tHUk9VTkRfREVWSUNFEAgSDwoLRk9SVF9TRUFSQ0gQZRINCglFTkNP",
-            "VU5URVIQZhIRCg1DQVRDSF9QT0tFTU9OEGcSEAoMRk9SVF9ERVRBSUxTEGgS",
-            "DAoISVRFTV9VU0UQaRITCg9HRVRfTUFQX09CSkVDVFMQahIXChNGT1JUX0RF",
-            "UExPWV9QT0tFTU9OEG4SFwoTRk9SVF9SRUNBTExfUE9LRU1PThBvEhMKD1JF",
-            "TEVBU0VfUE9LRU1PThBwEhMKD1VTRV9JVEVNX1BPVElPThBxEhQKEFVTRV9J",
-            "VEVNX0NBUFRVUkUQchIRCg1VU0VfSVRFTV9GTEVFEHMSEwoPVVNFX0lURU1f",
-            "UkVWSVZFEHQSEAoMVFJBREVfU0VBUkNIEHUSDwoLVFJBREVfT0ZGRVIQdhIS",
-            "Cg5UUkFERV9SRVNQT05TRRB3EhAKDFRSQURFX1JFU1VMVBB4EhYKEkdFVF9Q",
-            "TEFZRVJfUFJPRklMRRB5EhEKDUdFVF9JVEVNX1BBQ0sQehIRCg1CVVlfSVRF",
-            "TV9QQUNLEHsSEAoMQlVZX0dFTV9QQUNLEHwSEgoORVZPTFZFX1BPS0VNT04Q",
-            "fRIUChBHRVRfSEFUQ0hFRF9FR0dTEH4SHwobRU5DT1VOVEVSX1RVVE9SSUFM",
-            "X0NPTVBMRVRFEH8SFQoQTEVWRUxfVVBfUkVXQVJEUxCAARIZChRDSEVDS19B",
-            "V0FSREVEX0JBREdFUxCBARIRCgxVU0VfSVRFTV9HWU0QhQESFAoPR0VUX0dZ",
-            "TV9ERVRBSUxTEIYBEhUKEFNUQVJUX0dZTV9CQVRUTEUQhwESDwoKQVRUQUNL",
-            "X0dZTRCIARIbChZSRUNZQ0xFX0lOVkVOVE9SWV9JVEVNEIkBEhgKE0NPTExF",
-            "Q1RfREFJTFlfQk9OVVMQigESFgoRVVNFX0lURU1fWFBfQk9PU1QQiwESGwoW",
-            "VVNFX0lURU1fRUdHX0lOQ1VCQVRPUhCMARIQCgtVU0VfSU5DRU5TRRCNARIY",
-            "ChNHRVRfSU5DRU5TRV9QT0tFTU9OEI4BEhYKEUlOQ0VOU0VfRU5DT1VOVEVS",
-            "EI8BEhYKEUFERF9GT1JUX01PRElGSUVSEJABEhMKDkRJU0tfRU5DT1VOVEVS",
-            "EJEBEiEKHENPTExFQ1RfREFJTFlfREVGRU5ERVJfQk9OVVMQkgESFAoPVVBH",
-            "UkFERV9QT0tFTU9OEJMBEhkKFFNFVF9GQVZPUklURV9QT0tFTU9OEJQBEhUK",
-            "EE5JQ0tOQU1FX1BPS0VNT04QlQESEAoLRVFVSVBfQkFER0UQlgESGQoUU0VU",
-            "X0NPTlRBQ1RfU0VUVElOR1MQlwESFgoRU0VUX0JVRERZX1BPS0VNT04QmAES",
-            "FQoQR0VUX0JVRERZX1dBTEtFRBCZARIXChJVU0VfSVRFTV9FTkNPVU5URVIQ",
-            "mgESFQoQR0VUX0FTU0VUX0RJR0VTVBCsAhIWChFHRVRfRE9XTkxPQURfVVJM",
-            "UxCtAhITCg5DTEFJTV9DT0RFTkFNRRCTAxIPCgpTRVRfQVZBVEFSEJQDEhQK",
-            "D1NFVF9QTEFZRVJfVEVBTRCVAxIbChZNQVJLX1RVVE9SSUFMX0NPTVBMRVRF",
-            "EJYDEhYKEUxPQURfU1BBV05fUE9JTlRTEPQDEhQKD0NIRUNLX0NIQUxMRU5H",
-            "RRDYBBIVChBWRVJJRllfQ0hBTExFTkdFENkEEgkKBEVDSE8QmgUSGwoWREVC",
-            "VUdfVVBEQVRFX0lOVkVOVE9SWRC8BRIYChNERUJVR19ERUxFVEVfUExBWUVS",
-            "EL0FEhcKElNGSURBX1JFR0lTVFJBVElPThCgBhIVChBTRklEQV9BQ1RJT05f",
-            "TE9HEKEGEhgKE1NGSURBX0NFUlRJRklDQVRJT04QogYSEQoMU0ZJREFfVVBE",
-            "QVRFEKMGEhEKDFNGSURBX0FDVElPThCkBhIRCgxTRklEQV9ET1dTRVIQpQYS",
-            "EgoNU0ZJREFfQ0FQVFVSRRCmBhIfChpMSVNUX0FWQVRBUl9DVVNUT01JWkFU",
-            "SU9OUxCnBhIeChlTRVRfQVZBVEFSX0lURU1fQVNfVklFV0VEEKgGYgZwcm90",
-            "bzM="));
+            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyrpCwoLUmVx",
+            "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASDgoKR0VUX1BMQVlFUhACEhEK",
+            "DUdFVF9JTlZFTlRPUlkQBBIVChFET1dOTE9BRF9TRVRUSU5HUxAFEhsKF0RP",
+            "V05MT0FEX0lURU1fVEVNUExBVEVTEAYSIgoeRE9XTkxPQURfUkVNT1RFX0NP",
+            "TkZJR19WRVJTSU9OEAcSHgoaUkVHSVNURVJfQkFDS0dST1VORF9ERVZJQ0UQ",
+            "CBIPCgtGT1JUX1NFQVJDSBBlEg0KCUVOQ09VTlRFUhBmEhEKDUNBVENIX1BP",
+            "S0VNT04QZxIQCgxGT1JUX0RFVEFJTFMQaBITCg9HRVRfTUFQX09CSkVDVFMQ",
+            "ahIXChNGT1JUX0RFUExPWV9QT0tFTU9OEG4SFwoTRk9SVF9SRUNBTExfUE9L",
+            "RU1PThBvEhMKD1JFTEVBU0VfUE9LRU1PThBwEhMKD1VTRV9JVEVNX1BPVElP",
+            "ThBxEhQKEFVTRV9JVEVNX0NBUFRVUkUQchIRCg1VU0VfSVRFTV9GTEVFEHMS",
+            "EwoPVVNFX0lURU1fUkVWSVZFEHQSFgoSR0VUX1BMQVlFUl9QUk9GSUxFEHkS",
+            "EgoORVZPTFZFX1BPS0VNT04QfRIUChBHRVRfSEFUQ0hFRF9FR0dTEH4SHwob",
+            "RU5DT1VOVEVSX1RVVE9SSUFMX0NPTVBMRVRFEH8SFQoQTEVWRUxfVVBfUkVX",
+            "QVJEUxCAARIZChRDSEVDS19BV0FSREVEX0JBREdFUxCBARIRCgxVU0VfSVRF",
+            "TV9HWU0QhQESFAoPR0VUX0dZTV9ERVRBSUxTEIYBEhUKEFNUQVJUX0dZTV9C",
+            "QVRUTEUQhwESDwoKQVRUQUNLX0dZTRCIARIbChZSRUNZQ0xFX0lOVkVOVE9S",
+            "WV9JVEVNEIkBEhgKE0NPTExFQ1RfREFJTFlfQk9OVVMQigESFgoRVVNFX0lU",
+            "RU1fWFBfQk9PU1QQiwESGwoWVVNFX0lURU1fRUdHX0lOQ1VCQVRPUhCMARIQ",
+            "CgtVU0VfSU5DRU5TRRCNARIYChNHRVRfSU5DRU5TRV9QT0tFTU9OEI4BEhYK",
+            "EUlOQ0VOU0VfRU5DT1VOVEVSEI8BEhYKEUFERF9GT1JUX01PRElGSUVSEJAB",
+            "EhMKDkRJU0tfRU5DT1VOVEVSEJEBEiEKHENPTExFQ1RfREFJTFlfREVGRU5E",
+            "RVJfQk9OVVMQkgESFAoPVVBHUkFERV9QT0tFTU9OEJMBEhkKFFNFVF9GQVZP",
+            "UklURV9QT0tFTU9OEJQBEhUKEE5JQ0tOQU1FX1BPS0VNT04QlQESEAoLRVFV",
+            "SVBfQkFER0UQlgESGQoUU0VUX0NPTlRBQ1RfU0VUVElOR1MQlwESFgoRU0VU",
+            "X0JVRERZX1BPS0VNT04QmAESFQoQR0VUX0JVRERZX1dBTEtFRBCZARIXChJV",
+            "U0VfSVRFTV9FTkNPVU5URVIQmgESFQoQR0VUX0FTU0VUX0RJR0VTVBCsAhIW",
+            "ChFHRVRfRE9XTkxPQURfVVJMUxCtAhITCg5DTEFJTV9DT0RFTkFNRRCTAxIP",
+            "CgpTRVRfQVZBVEFSEJQDEhQKD1NFVF9QTEFZRVJfVEVBTRCVAxIbChZNQVJL",
+            "X1RVVE9SSUFMX0NPTVBMRVRFEJYDEhQKD0NIRUNLX0NIQUxMRU5HRRDYBBIV",
+            "ChBWRVJJRllfQ0hBTExFTkdFENkEEgkKBEVDSE8QmgUSFwoSU0ZJREFfUkVH",
+            "SVNUUkFUSU9OEKAGEhUKEFNGSURBX0FDVElPTl9MT0cQoQYSGAoTU0ZJREFf",
+            "Q0VSVElGSUNBVElPThCiBhIRCgxTRklEQV9VUERBVEUQowYSEQoMU0ZJREFf",
+            "QUNUSU9OEKQGEhEKDFNGSURBX0RPV1NFUhClBhISCg1TRklEQV9DQVBUVVJF",
+            "EKYGEh8KGkxJU1RfQVZBVEFSX0NVU1RPTUlaQVRJT05TEKcGEh4KGVNFVF9B",
+            "VkFUQVJfSVRFTV9BU19WSUVXRUQQqAZiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Networking.Requests.RequestType), }, null));
@@ -77,10 +71,6 @@ namespace POGOProtos.Networking.Requests {
     ///  No implementation required
     /// </summary>
     [pbr::OriginalName("METHOD_UNSET")] MethodUnset = 0,
-    /// <summary>
-    ///  Implemented [R &amp; M]
-    /// </summary>
-    [pbr::OriginalName("PLAYER_UPDATE")] PlayerUpdate = 1,
     /// <summary>
     ///  Implemented [R &amp; M]
     /// </summary>
@@ -122,10 +112,6 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("FORT_DETAILS")] FortDetails = 104,
     /// <summary>
-    ///  Can't find this one
-    /// </summary>
-    [pbr::OriginalName("ITEM_USE")] ItemUse = 105,
-    /// <summary>
     ///  Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_MAP_OBJECTS")] GetMapObjects = 106,
@@ -158,37 +144,9 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("USE_ITEM_REVIVE")] UseItemRevive = 116,
     /// <summary>
-    ///  Not yet implemented in the game
-    /// </summary>
-    [pbr::OriginalName("TRADE_SEARCH")] TradeSearch = 117,
-    /// <summary>
-    ///  Not yet implemented in the game
-    /// </summary>
-    [pbr::OriginalName("TRADE_OFFER")] TradeOffer = 118,
-    /// <summary>
-    ///  Not yet implemented in the game
-    /// </summary>
-    [pbr::OriginalName("TRADE_RESPONSE")] TradeResponse = 119,
-    /// <summary>
-    ///  Not yet implemented in the game
-    /// </summary>
-    [pbr::OriginalName("TRADE_RESULT")] TradeResult = 120,
-    /// <summary>
     ///  Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_PLAYER_PROFILE")] GetPlayerProfile = 121,
-    /// <summary>
-    ///  Can't find this one
-    /// </summary>
-    [pbr::OriginalName("GET_ITEM_PACK")] GetItemPack = 122,
-    /// <summary>
-    ///  Can't find this one
-    /// </summary>
-    [pbr::OriginalName("BUY_ITEM_PACK")] BuyItemPack = 123,
-    /// <summary>
-    ///  Can't find this one
-    /// </summary>
-    [pbr::OriginalName("BUY_GEM_PACK")] BuyGemPack = 124,
     /// <summary>
     ///  Implemented [R &amp; M]
     /// </summary>
@@ -322,10 +280,6 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("MARK_TUTORIAL_COMPLETE")] MarkTutorialComplete = 406,
     /// <summary>
-    ///  Can't find this one
-    /// </summary>
-    [pbr::OriginalName("LOAD_SPAWN_POINTS")] LoadSpawnPoints = 500,
-    /// <summary>
     ///  Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("CHECK_CHALLENGE")] CheckChallenge = 600,
@@ -337,8 +291,6 @@ namespace POGOProtos.Networking.Requests {
     ///  Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("ECHO")] Echo = 666,
-    [pbr::OriginalName("DEBUG_UPDATE_INVENTORY")] DebugUpdateInventory = 700,
-    [pbr::OriginalName("DEBUG_DELETE_PLAYER")] DebugDeletePlayer = 701,
     /// <summary>
     ///  Not yet released.
     /// </summary>

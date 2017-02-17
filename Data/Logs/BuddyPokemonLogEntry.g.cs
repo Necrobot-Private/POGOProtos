@@ -24,15 +24,18 @@ namespace POGOProtos.Data.Logs {
           string.Concat(
             "Ci9QT0dPUHJvdG9zL0RhdGEvTG9ncy9CdWRkeVBva2Vtb25Mb2dFbnRyeS5w",
             "cm90bxIUUE9HT1Byb3Rvcy5EYXRhLkxvZ3MaIFBPR09Qcm90b3MvRW51bXMv",
-            "UG9rZW1vbklkLnByb3RvIsABChRCdWRkeVBva2Vtb25Mb2dFbnRyeRJBCgZy",
-            "ZXN1bHQYASABKA4yMS5QT0dPUHJvdG9zLkRhdGEuTG9ncy5CdWRkeVBva2Vt",
-            "b25Mb2dFbnRyeS5SZXN1bHQSLwoKcG9rZW1vbl9pZBgCIAEoDjIbLlBPR09Q",
-            "cm90b3MuRW51bXMuUG9rZW1vbklkEg4KBmFtb3VudBgDIAEoBSIkCgZSZXN1",
-            "bHQSCQoFVU5TRVQQABIPCgtDQU5EWV9GT1VORBABYgZwcm90bzM="));
+            "UG9rZW1vbklkLnByb3RvGiRQT0dPUHJvdG9zL0RhdGEvUG9rZW1vbkRpc3Bs",
+            "YXkucHJvdG8iiwIKFEJ1ZGR5UG9rZW1vbkxvZ0VudHJ5EkEKBnJlc3VsdBgB",
+            "IAEoDjIxLlBPR09Qcm90b3MuRGF0YS5Mb2dzLkJ1ZGR5UG9rZW1vbkxvZ0Vu",
+            "dHJ5LlJlc3VsdBIvCgpwb2tlbW9uX2lkGAIgASgOMhsuUE9HT1Byb3Rvcy5F",
+            "bnVtcy5Qb2tlbW9uSWQSDgoGYW1vdW50GAMgASgFEjgKD3Bva2Vtb25fZGlz",
+            "cGxheRgEIAEoCzIfLlBPR09Qcm90b3MuRGF0YS5Qb2tlbW9uRGlzcGxheRIP",
+            "Cgdwb2tlbW9uGAUgASgGIiQKBlJlc3VsdBIJCgVVTlNFVBAAEg8KC0NBTkRZ",
+            "X0ZPVU5EEAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Enums.PokemonIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Data.PokemonDisplayReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.BuddyPokemonLogEntry), global::POGOProtos.Data.Logs.BuddyPokemonLogEntry.Parser, new[]{ "Result", "PokemonId", "Amount" }, null, new[]{ typeof(global::POGOProtos.Data.Logs.BuddyPokemonLogEntry.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.BuddyPokemonLogEntry), global::POGOProtos.Data.Logs.BuddyPokemonLogEntry.Parser, new[]{ "Result", "PokemonId", "Amount", "PokemonDisplay", "Pokemon" }, null, new[]{ typeof(global::POGOProtos.Data.Logs.BuddyPokemonLogEntry.Types.Result) }, null)
           }));
     }
     #endregion
@@ -66,6 +69,8 @@ namespace POGOProtos.Data.Logs {
       result_ = other.result_;
       pokemonId_ = other.pokemonId_;
       amount_ = other.amount_;
+      PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
+      pokemon_ = other.pokemon_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -106,6 +111,28 @@ namespace POGOProtos.Data.Logs {
       }
     }
 
+    /// <summary>Field number for the "pokemon_display" field.</summary>
+    public const int PokemonDisplayFieldNumber = 4;
+    private global::POGOProtos.Data.PokemonDisplay pokemonDisplay_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.PokemonDisplay PokemonDisplay {
+      get { return pokemonDisplay_; }
+      set {
+        pokemonDisplay_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pokemon" field.</summary>
+    public const int PokemonFieldNumber = 5;
+    private ulong pokemon_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong Pokemon {
+      get { return pokemon_; }
+      set {
+        pokemon_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as BuddyPokemonLogEntry);
@@ -122,6 +149,8 @@ namespace POGOProtos.Data.Logs {
       if (Result != other.Result) return false;
       if (PokemonId != other.PokemonId) return false;
       if (Amount != other.Amount) return false;
+      if (!object.Equals(PokemonDisplay, other.PokemonDisplay)) return false;
+      if (Pokemon != other.Pokemon) return false;
       return true;
     }
 
@@ -131,6 +160,8 @@ namespace POGOProtos.Data.Logs {
       if (Result != 0) hash ^= Result.GetHashCode();
       if (PokemonId != 0) hash ^= PokemonId.GetHashCode();
       if (Amount != 0) hash ^= Amount.GetHashCode();
+      if (pokemonDisplay_ != null) hash ^= PokemonDisplay.GetHashCode();
+      if (Pokemon != 0UL) hash ^= Pokemon.GetHashCode();
       return hash;
     }
 
@@ -153,6 +184,14 @@ namespace POGOProtos.Data.Logs {
         output.WriteRawTag(24);
         output.WriteInt32(Amount);
       }
+      if (pokemonDisplay_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PokemonDisplay);
+      }
+      if (Pokemon != 0UL) {
+        output.WriteRawTag(41);
+        output.WriteFixed64(Pokemon);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -166,6 +205,12 @@ namespace POGOProtos.Data.Logs {
       }
       if (Amount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Amount);
+      }
+      if (pokemonDisplay_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PokemonDisplay);
+      }
+      if (Pokemon != 0UL) {
+        size += 1 + 8;
       }
       return size;
     }
@@ -183,6 +228,15 @@ namespace POGOProtos.Data.Logs {
       }
       if (other.Amount != 0) {
         Amount = other.Amount;
+      }
+      if (other.pokemonDisplay_ != null) {
+        if (pokemonDisplay_ == null) {
+          pokemonDisplay_ = new global::POGOProtos.Data.PokemonDisplay();
+        }
+        PokemonDisplay.MergeFrom(other.PokemonDisplay);
+      }
+      if (other.Pokemon != 0UL) {
+        Pokemon = other.Pokemon;
       }
     }
 
@@ -204,6 +258,17 @@ namespace POGOProtos.Data.Logs {
           }
           case 24: {
             Amount = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            if (pokemonDisplay_ == null) {
+              pokemonDisplay_ = new global::POGOProtos.Data.PokemonDisplay();
+            }
+            input.ReadMessage(pokemonDisplay_);
+            break;
+          }
+          case 41: {
+            Pokemon = input.ReadFixed64();
             break;
           }
         }
