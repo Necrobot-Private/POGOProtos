@@ -336,7 +336,7 @@
     <Compile Include="Settings\NewsSettings.g.cs" />
     <Compile Include="Settings\SfidaSettings.g.cs" />
   </ItemGroup>
-  <ItemGroup>
+ <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
