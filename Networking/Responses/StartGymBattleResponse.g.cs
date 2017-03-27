@@ -26,7 +26,7 @@ namespace POGOProtos.Networking.Responses {
             "dGxlUmVzcG9uc2UucHJvdG8SH1BPR09Qcm90b3MuTmV0d29ya2luZy5SZXNw",
             "b25zZXMaJlBPR09Qcm90b3MvRGF0YS9CYXR0bGUvQmF0dGxlTG9nLnByb3Rv",
             "Gi5QT0dPUHJvdG9zL0RhdGEvQmF0dGxlL0JhdHRsZVBhcnRpY2lwYW50LnBy",
-            "b3RvIuwFChZTdGFydEd5bUJhdHRsZVJlc3BvbnNlEk4KBnJlc3VsdBgBIAEo",
+            "b3RvIogGChZTdGFydEd5bUJhdHRsZVJlc3BvbnNlEk4KBnJlc3VsdBgBIAEo",
             "DjI+LlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXNwb25zZXMuU3RhcnRHeW1C",
             "YXR0bGVSZXNwb25zZS5SZXN1bHQSIQoZYmF0dGxlX3N0YXJ0X3RpbWVzdGFt",
             "cF9tcxgCIAEoAxIfChdiYXR0bGVfZW5kX3RpbWVzdGFtcF9tcxgDIAEoAxIR",
@@ -34,7 +34,7 @@ namespace POGOProtos.Networking.Responses {
             "dG9zLkRhdGEuQmF0dGxlLkJhdHRsZVBhcnRpY2lwYW50EjUKCmJhdHRsZV9s",
             "b2cYBiABKAsyIS5QT0dPUHJvdG9zLkRhdGEuQmF0dGxlLkJhdHRsZUxvZxI7",
             "CghhdHRhY2tlchgHIAEoCzIpLlBPR09Qcm90b3MuRGF0YS5CYXR0bGUuQmF0",
-            "dGxlUGFydGljaXBhbnQi+QIKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NF",
+            "dGxlUGFydGljaXBhbnQilQMKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NF",
             "U1MQARIXChNFUlJPUl9HWU1fTk9UX0ZPVU5EEAISFQoRRVJST1JfR1lNX05F",
             "VVRSQUwQAxIYChRFUlJPUl9HWU1fV1JPTkdfVEVBTRAEEhMKD0VSUk9SX0dZ",
             "TV9FTVBUWRAFEhoKFkVSUk9SX0lOVkFMSURfREVGRU5ERVIQBhIpCiVFUlJP",
@@ -42,7 +42,8 @@ namespace POGOProtos.Networking.Responses {
             "QUxMX1BPS0VNT05fRkFJTlRFRBAIEhoKFkVSUk9SX1RPT19NQU5ZX0JBVFRM",
             "RVMQCRIaChZFUlJPUl9UT09fTUFOWV9QTEFZRVJTEAoSHAoYRVJST1JfR1lN",
             "X0JBVFRMRV9MT0NLT1VUEAsSJAogRVJST1JfUExBWUVSX0JFTE9XX01JTklN",
-            "VU1fTEVWRUwQDBIWChJFUlJPUl9OT1RfSU5fUkFOR0UQDWIGcHJvdG8z"));
+            "VU1fTEVWRUwQDBIWChJFUlJPUl9OT1RfSU5fUkFOR0UQDRIaChZFUlJPUl9Q",
+            "T0lfSU5BQ0NFU1NJQkxFEA5iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattleLogReflection.Descriptor, global::POGOProtos.Data.Battle.BattleParticipantReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -373,6 +374,7 @@ namespace POGOProtos.Networking.Responses {
         [pbr::OriginalName("ERROR_GYM_BATTLE_LOCKOUT")] ErrorGymBattleLockout = 11,
         [pbr::OriginalName("ERROR_PLAYER_BELOW_MINIMUM_LEVEL")] ErrorPlayerBelowMinimumLevel = 12,
         [pbr::OriginalName("ERROR_NOT_IN_RANGE")] ErrorNotInRange = 13,
+        [pbr::OriginalName("ERROR_POI_INACCESSIBLE")] ErrorPoiInaccessible = 14,
       }
 
     }
