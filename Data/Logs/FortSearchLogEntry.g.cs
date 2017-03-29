@@ -23,17 +23,19 @@ namespace POGOProtos.Data.Logs {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci1QT0dPUHJvdG9zL0RhdGEvTG9ncy9Gb3J0U2VhcmNoTG9nRW50cnkucHJv",
-            "dG8SFFBPR09Qcm90b3MuRGF0YS5Mb2dzGihQT0dPUHJvdG9zL0ludmVudG9y",
-            "eS9JdGVtL0l0ZW1EYXRhLnByb3RvIsoBChJGb3J0U2VhcmNoTG9nRW50cnkS",
-            "PwoGcmVzdWx0GAEgASgOMi8uUE9HT1Byb3Rvcy5EYXRhLkxvZ3MuRm9ydFNl",
-            "YXJjaExvZ0VudHJ5LlJlc3VsdBIPCgdmb3J0X2lkGAIgASgJEjIKBWl0ZW1z",
-            "GAMgAygLMiMuUE9HT1Byb3Rvcy5JbnZlbnRvcnkuSXRlbS5JdGVtRGF0YRIM",
-            "CgRlZ2dzGAQgASgFIiAKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQ",
-            "AWIGcHJvdG8z"));
+            "dG8SFFBPR09Qcm90b3MuRGF0YS5Mb2dzGiFQT0dPUHJvdG9zL0RhdGEvUG9r",
+            "ZW1vbkRhdGEucHJvdG8aKFBPR09Qcm90b3MvSW52ZW50b3J5L0l0ZW0vSXRl",
+            "bURhdGEucHJvdG8i/gEKEkZvcnRTZWFyY2hMb2dFbnRyeRI/CgZyZXN1bHQY",
+            "ASABKA4yLy5QT0dPUHJvdG9zLkRhdGEuTG9ncy5Gb3J0U2VhcmNoTG9nRW50",
+            "cnkuUmVzdWx0Eg8KB2ZvcnRfaWQYAiABKAkSMgoFaXRlbXMYAyADKAsyIy5Q",
+            "T0dPUHJvdG9zLkludmVudG9yeS5JdGVtLkl0ZW1EYXRhEgwKBGVnZ3MYBCAB",
+            "KAUSMgoMcG9rZW1vbl9lZ2dzGAUgAygLMhwuUE9HT1Byb3Rvcy5EYXRhLlBv",
+            "a2Vtb25EYXRhIiAKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQAWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Inventory.Item.ItemDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.PokemonDataReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.FortSearchLogEntry), global::POGOProtos.Data.Logs.FortSearchLogEntry.Parser, new[]{ "Result", "FortId", "Items", "Eggs" }, null, new[]{ typeof(global::POGOProtos.Data.Logs.FortSearchLogEntry.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.FortSearchLogEntry), global::POGOProtos.Data.Logs.FortSearchLogEntry.Parser, new[]{ "Result", "FortId", "Items", "Eggs", "PokemonEggs" }, null, new[]{ typeof(global::POGOProtos.Data.Logs.FortSearchLogEntry.Types.Result) }, null)
           }));
     }
     #endregion
@@ -68,6 +70,7 @@ namespace POGOProtos.Data.Logs {
       fortId_ = other.fortId_;
       items_ = other.items_.Clone();
       eggs_ = other.eggs_;
+      pokemonEggs_ = other.pokemonEggs_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -118,6 +121,16 @@ namespace POGOProtos.Data.Logs {
       }
     }
 
+    /// <summary>Field number for the "pokemon_eggs" field.</summary>
+    public const int PokemonEggsFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.PokemonData> _repeated_pokemonEggs_codec
+        = pb::FieldCodec.ForMessage(42, global::POGOProtos.Data.PokemonData.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.PokemonData> pokemonEggs_ = new pbc::RepeatedField<global::POGOProtos.Data.PokemonData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Data.PokemonData> PokemonEggs {
+      get { return pokemonEggs_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FortSearchLogEntry);
@@ -135,6 +148,7 @@ namespace POGOProtos.Data.Logs {
       if (FortId != other.FortId) return false;
       if(!items_.Equals(other.items_)) return false;
       if (Eggs != other.Eggs) return false;
+      if(!pokemonEggs_.Equals(other.pokemonEggs_)) return false;
       return true;
     }
 
@@ -145,6 +159,7 @@ namespace POGOProtos.Data.Logs {
       if (FortId.Length != 0) hash ^= FortId.GetHashCode();
       hash ^= items_.GetHashCode();
       if (Eggs != 0) hash ^= Eggs.GetHashCode();
+      hash ^= pokemonEggs_.GetHashCode();
       return hash;
     }
 
@@ -168,6 +183,7 @@ namespace POGOProtos.Data.Logs {
         output.WriteRawTag(32);
         output.WriteInt32(Eggs);
       }
+      pokemonEggs_.WriteTo(output, _repeated_pokemonEggs_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -183,6 +199,7 @@ namespace POGOProtos.Data.Logs {
       if (Eggs != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Eggs);
       }
+      size += pokemonEggs_.CalculateSize(_repeated_pokemonEggs_codec);
       return size;
     }
 
@@ -201,6 +218,7 @@ namespace POGOProtos.Data.Logs {
       if (other.Eggs != 0) {
         Eggs = other.Eggs;
       }
+      pokemonEggs_.Add(other.pokemonEggs_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -225,6 +243,10 @@ namespace POGOProtos.Data.Logs {
           }
           case 32: {
             Eggs = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            pokemonEggs_.AddEntriesFrom(input, _repeated_pokemonEggs_codec);
             break;
           }
         }
