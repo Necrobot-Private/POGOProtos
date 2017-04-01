@@ -4,13 +4,12 @@
 #region Designer generated code
 
 using pb = global::Google.Protobuf;
-using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
-using scg = global::System.Collections.Generic;
-namespace POGOProtos.Settings {
+namespace POGOProtos.Settings
+{
 
-  /// <summary>Holder for reflection information generated from POGOProtos/Settings/SfidaSettings.proto</summary>
-  public static partial class SfidaSettingsReflection {
+    /// <summary>Holder for reflection information generated from POGOProtos/Settings/SfidaSettings.proto</summary>
+    public static partial class SfidaSettingsReflection {
 
     #region Descriptor
     /// <summary>File descriptor for POGOProtos/Settings/SfidaSettings.proto</summary>
