@@ -1542,6 +1542,7 @@ message FortSearchOutProto
 		IN_COOLDOWN_PERIOD = 3;
 		INVENTORY_FULL = 4;
 		EXCEEDED_DAILY_LIMIT = 5;
+		POI_INACCESSIBLE = 6;
 	}
 }
 
@@ -1605,6 +1606,7 @@ message FortDeployOutProto
 		ERROR_POKEMON_IS_BUDDY = 9;
 		ERROR_FORT_DEPLOY_LOCKOUT = 10;
 		ERROR_PLAYER_HAS_NO_NICKNAME = 11;
+		ERROR_POI_INACCESSIBLE = 12;
 	}
 }
 
@@ -1651,6 +1653,7 @@ message AddFortModifierOutProto
 		FORT_ALREADY_HAS_MODIFIER = 2;
 		TOO_FAR_AWAY = 3;
 		NO_ITEM_IN_INVENTORY = 4;
+		POI_INACCESSIBLE = 5;
 	}
 }
 
@@ -2269,6 +2272,7 @@ message StartGymBattleOutProto
 		ERROR_GYM_BATTLE_LOCKOUT = 11;
 		ERROR_PLAYER_BELOW_MINIMUM_LEVEL = 12;
 		ERROR_NOT_IN_RANGE = 13;
+		ERROR_POI_INACCESSIBLE = 14;
 	}
 }
 
@@ -2697,6 +2701,7 @@ message FortSearchLogEntry
 	string fort_id = 2;
 	repeated ItemProto items = 3;
 	int32 eggs = 4;
+	repeated PokemonProto pokemon_eggs = 5;
 
 	enum Result
 	{
@@ -2777,6 +2782,35 @@ message LevelUpRewardsOutProto
 		SUCCESS = 1;
 		AWARDED_ALREADY = 2;
 	}
+}
+
+message RedeemedItemProto
+{
+	Item item = 1;
+	int32 item_count = 2;
+}
+
+message RedeemedAvatarItemProto
+{
+	string avatar_template_id = 1;
+	int32 item_count = 2;
+}
+
+message PokeCandyProto
+{
+	fixed64 pokemon_id = 1;
+	int32 candy_count = 2;
+}
+
+message RedeemPasscodeRewardProto
+{
+	repeated RedeemedItemProto items = 1;
+	repeated RedeemedAvatarItemProto avatar_items = 2;
+	repeated PokemonProto egg_pokemon = 3;
+	repeated PokemonProto pokemon = 4;
+	repeated PokeCandyProto poke_candy = 5;
+	int32 stardust = 6;
+	int32 pokecoins = 7;
 }
 
 message PokemonFortProto
@@ -2884,6 +2918,7 @@ message ClientPlayerProto
 	BuddyPokemonProto buddy_pokemon_proto = 16;
 	int64 battle_lockout_end_ms = 17;
 	PlayerAvatarProto secondary_player_avatar_proto = 18;
+	bool name_is_blacklisted = 19;
 }
 
 message CurrencyQuantityProto
@@ -3007,6 +3042,7 @@ message NicknamePokemonOutProto
 message ClaimCodenameRequestProto
 {
 	string codename = 1;
+	bool force = 2;
 }
 
 message CodenameResultProto
@@ -3238,6 +3274,8 @@ message GlobalSettingsProto
 	int32 max_pokemon_types = 10;
 	SfidaGlobalSettingsProto sfida_settings = 11;
 	NewsSettingProto news_settings = 12;
+	TranslationSettingsProto translation_settings = 13;
+	PasscodeSettingsProto passcode_settings = 14;
 }
 
 message FortSettingsProto
@@ -3315,9 +3353,19 @@ message NewsProto
 	repeated string exclusive_countries = 2;
 }
 
+message TranslationSettingsProto
+{
+	repeated string translation_bundle_ids = 1;
+}
+
 message SfidaGlobalSettingsProto
 {
 	float low_battery_threshold = 1;
+}
+
+message PasscodeSettingsProto
+{
+	bool show_passcode_in_store = 1;
 }
 
 message DownloadSettingsActionProto

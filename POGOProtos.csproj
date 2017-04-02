@@ -104,6 +104,10 @@
     <Compile Include="Data\PokemonDisplay.g.cs" />
     <Compile Include="Data\Quests\DailyQuest.g.cs" />
     <Compile Include="Data\Quests\Quest.g.cs" />
+    <Compile Include="Data\RedeemPasscodeReward.g.cs" />
+    <Compile Include="Data\Redeem\PokeCandy.g.cs" />
+    <Compile Include="Data\Redeem\RedeemedAvatarItem.g.cs" />
+    <Compile Include="Data\Redeem\RedeemedItem.g.cs" />
     <Compile Include="Enums\ActivityType.g.cs" />
     <Compile Include="Enums\BadgeType.g.cs" />
     <Compile Include="Enums\CameraInterpolation.g.cs" />
@@ -334,7 +338,9 @@
     <Compile Include="Settings\Master\Quest\DailyQuestSettings.g.cs" />
     <Compile Include="Settings\Master\TypeEffectiveSettings.g.cs" />
     <Compile Include="Settings\NewsSettings.g.cs" />
+    <Compile Include="Settings\PasscodeSettings.g.cs" />
     <Compile Include="Settings\SfidaSettings.g.cs" />
+    <Compile Include="Settings\TranslationSettings.g.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

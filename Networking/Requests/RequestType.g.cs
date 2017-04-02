@@ -319,7 +319,13 @@ namespace POGOProtos.Networking.Requests {
     ///  Not yet released.
     /// </summary>
     [pbr::OriginalName("SFIDA_CAPTURE")] SfidaCapture = 806,
+    /// <summary>
+    ///  Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("LIST_AVATAR_CUSTOMIZATIONS")] ListAvatarCustomizations = 807,
+    /// <summary>
+    ///  Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("SET_AVATAR_ITEM_AS_VIEWED")] SetAvatarItemAsViewed = 808,
   }
 
