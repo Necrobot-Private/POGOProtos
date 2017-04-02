@@ -25,14 +25,14 @@ namespace POGOProtos.Networking.Responses {
             "Cj1QT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0FkZEZvcnRNb2Rp",
             "ZmllclJlc3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVz",
             "cG9uc2VzGjlQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0ZvcnRE",
-            "ZXRhaWxzUmVzcG9uc2UucHJvdG8iqwIKF0FkZEZvcnRNb2RpZmllclJlc3Bv",
+            "ZXRhaWxzUmVzcG9uc2UucHJvdG8iwgIKF0FkZEZvcnRNb2RpZmllclJlc3Bv",
             "bnNlEk8KBnJlc3VsdBgBIAEoDjI/LlBPR09Qcm90b3MuTmV0d29ya2luZy5S",
             "ZXNwb25zZXMuQWRkRm9ydE1vZGlmaWVyUmVzcG9uc2UuUmVzdWx0EkoKDGZv",
             "cnRfZGV0YWlscxgCIAEoCzI0LlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXNw",
-            "b25zZXMuRm9ydERldGFpbHNSZXNwb25zZSJzCgZSZXN1bHQSEQoNTk9fUkVT",
-            "VUxUX1NFVBAAEgsKB1NVQ0NFU1MQARIdChlGT1JUX0FMUkVBRFlfSEFTX01P",
-            "RElGSUVSEAISEAoMVE9PX0ZBUl9BV0FZEAMSGAoUTk9fSVRFTV9JTl9JTlZF",
-            "TlRPUlkQBGIGcHJvdG8z"));
+            "b25zZXMuRm9ydERldGFpbHNSZXNwb25zZSKJAQoGUmVzdWx0EhEKDU5PX1JF",
+            "U1VMVF9TRVQQABILCgdTVUNDRVNTEAESHQoZRk9SVF9BTFJFQURZX0hBU19N",
+            "T0RJRklFUhACEhAKDFRPT19GQVJfQVdBWRADEhgKFE5PX0lURU1fSU5fSU5W",
+            "RU5UT1JZEAQSFAoQUE9JX0lOQUNDRVNTSUJMRRAFYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Networking.Responses.FortDetailsResponseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -202,6 +202,7 @@ namespace POGOProtos.Networking.Responses {
         [pbr::OriginalName("FORT_ALREADY_HAS_MODIFIER")] FortAlreadyHasModifier = 2,
         [pbr::OriginalName("TOO_FAR_AWAY")] TooFarAway = 3,
         [pbr::OriginalName("NO_ITEM_IN_INVENTORY")] NoItemInInventory = 4,
+        [pbr::OriginalName("POI_INACCESSIBLE")] PoiInaccessible = 5,
       }
 
     }
