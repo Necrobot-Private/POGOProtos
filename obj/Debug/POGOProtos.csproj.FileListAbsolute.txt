@@ -1,0 +1,13 @@
+C:\Users\msntc\Repos\RocketBot\POGOProtos\bin\Debug\POGOProtos.dll
+C:\Users\msntc\Repos\RocketBot\POGOProtos\bin\Debug\POGOProtos.pdb
+C:\Users\msntc\Repos\RocketBot\POGOProtos\bin\Debug\Google.Protobuf.dll
+C:\Users\msntc\Repos\RocketBot\POGOProtos\bin\Debug\Google.Protobuf.xml
+C:\Users\msntc\Repos\RocketBot\POGOProtos\obj\Debug\POGOProtos.dll
+C:\Users\msntc\Repos\RocketBot\POGOProtos\obj\Debug\POGOProtos.pdb
+C:\Users\msntc\Repos\RocketBot\POGOProtos\obj\Debug\POGOProtos.csprojResolveAssemblyReference.cache
+C:\Users\msntc\Source\Repos\RocketBot\POGOProtos\bin\Debug\POGOProtos.dll
+C:\Users\msntc\Source\Repos\RocketBot\POGOProtos\bin\Debug\POGOProtos.pdb
+C:\Users\msntc\Source\Repos\RocketBot\POGOProtos\bin\Debug\Google.Protobuf.dll
+C:\Users\msntc\Source\Repos\RocketBot\POGOProtos\bin\Debug\Google.Protobuf.xml
+C:\Users\msntc\Source\Repos\RocketBot\POGOProtos\obj\Debug\POGOProtos.dll
+C:\Users\msntc\Source\Repos\RocketBot\POGOProtos\obj\Debug\POGOProtos.pdb
