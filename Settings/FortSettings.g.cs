@@ -23,16 +23,17 @@ namespace POGOProtos.Settings {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiZQT0dPUHJvdG9zL1NldHRpbmdzL0ZvcnRTZXR0aW5ncy5wcm90bxITUE9H",
-            "T1Byb3Rvcy5TZXR0aW5ncyLkAQoMRm9ydFNldHRpbmdzEiAKGGludGVyYWN0",
+            "T1Byb3Rvcy5TZXR0aW5ncyL6AQoMRm9ydFNldHRpbmdzEiAKGGludGVyYWN0",
             "aW9uX3JhbmdlX21ldGVycxgBIAEoARIiChptYXhfdG90YWxfZGVwbG95ZWRf",
             "cG9rZW1vbhgCIAEoBRIjChttYXhfcGxheWVyX2RlcGxveWVkX3Bva2Vtb24Y",
             "AyABKAUSIQoZZGVwbG95X3N0YW1pbmFfbXVsdGlwbGllchgEIAEoARIgChhk",
             "ZXBsb3lfYXR0YWNrX211bHRpcGxpZXIYBSABKAESJAocZmFyX2ludGVyYWN0",
-            "aW9uX3JhbmdlX21ldGVycxgGIAEoAWIGcHJvdG8z"));
+            "aW9uX3JhbmdlX21ldGVycxgGIAEoARIUCgxkaXNhYmxlX2d5bXMYByABKAhi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.FortSettings), global::POGOProtos.Settings.FortSettings.Parser, new[]{ "InteractionRangeMeters", "MaxTotalDeployedPokemon", "MaxPlayerDeployedPokemon", "DeployStaminaMultiplier", "DeployAttackMultiplier", "FarInteractionRangeMeters" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.FortSettings), global::POGOProtos.Settings.FortSettings.Parser, new[]{ "InteractionRangeMeters", "MaxTotalDeployedPokemon", "MaxPlayerDeployedPokemon", "DeployStaminaMultiplier", "DeployAttackMultiplier", "FarInteractionRangeMeters", "DisableGyms" }, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +70,7 @@ namespace POGOProtos.Settings {
       deployStaminaMultiplier_ = other.deployStaminaMultiplier_;
       deployAttackMultiplier_ = other.deployAttackMultiplier_;
       farInteractionRangeMeters_ = other.farInteractionRangeMeters_;
+      disableGyms_ = other.disableGyms_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -142,6 +144,17 @@ namespace POGOProtos.Settings {
       }
     }
 
+    /// <summary>Field number for the "disable_gyms" field.</summary>
+    public const int DisableGymsFieldNumber = 7;
+    private bool disableGyms_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool DisableGyms {
+      get { return disableGyms_; }
+      set {
+        disableGyms_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FortSettings);
@@ -161,6 +174,7 @@ namespace POGOProtos.Settings {
       if (DeployStaminaMultiplier != other.DeployStaminaMultiplier) return false;
       if (DeployAttackMultiplier != other.DeployAttackMultiplier) return false;
       if (FarInteractionRangeMeters != other.FarInteractionRangeMeters) return false;
+      if (DisableGyms != other.DisableGyms) return false;
       return true;
     }
 
@@ -173,6 +187,7 @@ namespace POGOProtos.Settings {
       if (DeployStaminaMultiplier != 0D) hash ^= DeployStaminaMultiplier.GetHashCode();
       if (DeployAttackMultiplier != 0D) hash ^= DeployAttackMultiplier.GetHashCode();
       if (FarInteractionRangeMeters != 0D) hash ^= FarInteractionRangeMeters.GetHashCode();
+      if (DisableGyms != false) hash ^= DisableGyms.GetHashCode();
       return hash;
     }
 
@@ -207,6 +222,10 @@ namespace POGOProtos.Settings {
         output.WriteRawTag(49);
         output.WriteDouble(FarInteractionRangeMeters);
       }
+      if (DisableGyms != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(DisableGyms);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -229,6 +248,9 @@ namespace POGOProtos.Settings {
       }
       if (FarInteractionRangeMeters != 0D) {
         size += 1 + 8;
+      }
+      if (DisableGyms != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -255,6 +277,9 @@ namespace POGOProtos.Settings {
       }
       if (other.FarInteractionRangeMeters != 0D) {
         FarInteractionRangeMeters = other.FarInteractionRangeMeters;
+      }
+      if (other.DisableGyms != false) {
+        DisableGyms = other.DisableGyms;
       }
     }
 
@@ -288,6 +313,10 @@ namespace POGOProtos.Settings {
           }
           case 49: {
             FarInteractionRangeMeters = input.ReadDouble();
+            break;
+          }
+          case 56: {
+            DisableGyms = input.ReadBool();
             break;
           }
         }
