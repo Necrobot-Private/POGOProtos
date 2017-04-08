@@ -23,7 +23,7 @@ namespace POGOProtos.Networking.Requests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
-            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyrpCwoLUmVx",
+            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyqaDAoLUmVx",
             "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASDgoKR0VUX1BMQVlFUhACEhEK",
             "DUdFVF9JTlZFTlRPUlkQBBIVChFET1dOTE9BRF9TRVRUSU5HUxAFEhsKF0RP",
             "V05MT0FEX0lURU1fVEVNUExBVEVTEAYSIgoeRE9XTkxPQURfUkVNT1RFX0NP",
@@ -57,7 +57,8 @@ namespace POGOProtos.Networking.Requests {
             "Q0VSVElGSUNBVElPThCiBhIRCgxTRklEQV9VUERBVEUQowYSEQoMU0ZJREFf",
             "QUNUSU9OEKQGEhEKDFNGSURBX0RPV1NFUhClBhISCg1TRklEQV9DQVBUVVJF",
             "EKYGEh8KGkxJU1RfQVZBVEFSX0NVU1RPTUlaQVRJT05TEKcGEh4KGVNFVF9B",
-            "VkFUQVJfSVRFTV9BU19WSUVXRUQQqAZiBnByb3RvMw=="));
+            "VkFUQVJfSVRFTV9BU19WSUVXRUQQqAYSDgoJR0VUX0lOQk9YEKkGEh8KGlVQ",
+            "REFURV9OT1RJRklDQVRJT05fU1RBVFVTEKoGYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Networking.Requests.RequestType), }, null));
@@ -68,265 +69,273 @@ namespace POGOProtos.Networking.Requests {
   #region Enums
   public enum RequestType {
     /// <summary>
-    ///  No implementation required
+    /// No implementation required
     /// </summary>
     [pbr::OriginalName("METHOD_UNSET")] MethodUnset = 0,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_PLAYER")] GetPlayer = 2,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_INVENTORY")] GetInventory = 4,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("DOWNLOAD_SETTINGS")] DownloadSettings = 5,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("DOWNLOAD_ITEM_TEMPLATES")] DownloadItemTemplates = 6,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("DOWNLOAD_REMOTE_CONFIG_VERSION")] DownloadRemoteConfigVersion = 7,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("REGISTER_BACKGROUND_DEVICE")] RegisterBackgroundDevice = 8,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("FORT_SEARCH")] FortSearch = 101,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("ENCOUNTER")] Encounter = 102,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("CATCH_POKEMON")] CatchPokemon = 103,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("FORT_DETAILS")] FortDetails = 104,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_MAP_OBJECTS")] GetMapObjects = 106,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("FORT_DEPLOY_POKEMON")] FortDeployPokemon = 110,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("FORT_RECALL_POKEMON")] FortRecallPokemon = 111,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("RELEASE_POKEMON")] ReleasePokemon = 112,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_POTION")] UseItemPotion = 113,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_CAPTURE")] UseItemCapture = 114,
     /// <summary>
-    ///  Can't find this one
+    /// Can't find this one
     /// </summary>
     [pbr::OriginalName("USE_ITEM_FLEE")] UseItemFlee = 115,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_REVIVE")] UseItemRevive = 116,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_PLAYER_PROFILE")] GetPlayerProfile = 121,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("EVOLVE_POKEMON")] EvolvePokemon = 125,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_HATCHED_EGGS")] GetHatchedEggs = 126,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("ENCOUNTER_TUTORIAL_COMPLETE")] EncounterTutorialComplete = 127,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("LEVEL_UP_REWARDS")] LevelUpRewards = 128,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("CHECK_AWARDED_BADGES")] CheckAwardedBadges = 129,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_GYM")] UseItemGym = 133,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_GYM_DETAILS")] GetGymDetails = 134,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("START_GYM_BATTLE")] StartGymBattle = 135,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("ATTACK_GYM")] AttackGym = 136,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("RECYCLE_INVENTORY_ITEM")] RecycleInventoryItem = 137,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("COLLECT_DAILY_BONUS")] CollectDailyBonus = 138,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_XP_BOOST")] UseItemXpBoost = 139,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_EGG_INCUBATOR")] UseItemEggIncubator = 140,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_INCENSE")] UseIncense = 141,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_INCENSE_POKEMON")] GetIncensePokemon = 142,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("INCENSE_ENCOUNTER")] IncenseEncounter = 143,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("ADD_FORT_MODIFIER")] AddFortModifier = 144,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("DISK_ENCOUNTER")] DiskEncounter = 145,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("COLLECT_DAILY_DEFENDER_BONUS")] CollectDailyDefenderBonus = 146,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("UPGRADE_POKEMON")] UpgradePokemon = 147,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SET_FAVORITE_POKEMON")] SetFavoritePokemon = 148,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("NICKNAME_POKEMON")] NicknamePokemon = 149,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("EQUIP_BADGE")] EquipBadge = 150,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SET_CONTACT_SETTINGS")] SetContactSettings = 151,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SET_BUDDY_POKEMON")] SetBuddyPokemon = 152,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_BUDDY_WALKED")] GetBuddyWalked = 153,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_ENCOUNTER")] UseItemEncounter = 154,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_ASSET_DIGEST")] GetAssetDigest = 300,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_DOWNLOAD_URLS")] GetDownloadUrls = 301,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("CLAIM_CODENAME")] ClaimCodename = 403,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SET_AVATAR")] SetAvatar = 404,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SET_PLAYER_TEAM")] SetPlayerTeam = 405,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("MARK_TUTORIAL_COMPLETE")] MarkTutorialComplete = 406,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("CHECK_CHALLENGE")] CheckChallenge = 600,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("VERIFY_CHALLENGE")] VerifyChallenge = 601,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("ECHO")] Echo = 666,
     /// <summary>
-    ///  Not yet released.
+    /// Not yet released.
     /// </summary>
     [pbr::OriginalName("SFIDA_REGISTRATION")] SfidaRegistration = 800,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SFIDA_ACTION_LOG")] SfidaActionLog = 801,
     /// <summary>
-    ///  Not yet released.
+    /// Not yet released.
     /// </summary>
     [pbr::OriginalName("SFIDA_CERTIFICATION")] SfidaCertification = 802,
     /// <summary>
-    ///  Not yet released.
+    /// Not yet released.
     /// </summary>
     [pbr::OriginalName("SFIDA_UPDATE")] SfidaUpdate = 803,
     /// <summary>
-    ///  Not yet released.
+    /// Not yet released.
     /// </summary>
     [pbr::OriginalName("SFIDA_ACTION")] SfidaAction = 804,
     /// <summary>
-    ///  Not yet released.
+    /// Not yet released.
     /// </summary>
     [pbr::OriginalName("SFIDA_DOWSER")] SfidaDowser = 805,
     /// <summary>
-    ///  Not yet released.
+    /// Not yet released.
     /// </summary>
     [pbr::OriginalName("SFIDA_CAPTURE")] SfidaCapture = 806,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("LIST_AVATAR_CUSTOMIZATIONS")] ListAvatarCustomizations = 807,
     /// <summary>
-    ///  Implemented [R &amp; M]
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SET_AVATAR_ITEM_AS_VIEWED")] SetAvatarItemAsViewed = 808,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_INBOX")] GetInbox = 809,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("UPDATE_NOTIFICATION_STATUS")] UpdateNotificationStatus = 810,
   }
 
   #endregion
