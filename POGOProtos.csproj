@@ -120,7 +120,6 @@
     <Compile Include="Enums\IapItemCategory.g.cs" />
     <Compile Include="Enums\ItemCategory.g.cs" />
     <Compile Include="Enums\ItemEffect.g.cs" />
-    <Compile Include="Enums\NotificationState.g.cs" />
     <Compile Include="Enums\Platform.g.cs" />
     <Compile Include="Enums\PokemonFamilyId.g.cs" />
     <Compile Include="Enums\PokemonId.g.cs" />
@@ -202,7 +201,6 @@
     <Compile Include="Networking\Requests\Messages\GetDownloadUrlsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetGymDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetHatchedEggsMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GetInboxMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetIncensePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetInventoryMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetMapObjectsMessage.g.cs" />
@@ -224,7 +222,6 @@
     <Compile Include="Networking\Requests\Messages\SetPlayerTeamMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SfidaActionLogMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\StartGymBattleMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\UpdateNotificationMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UpgradePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseIncenseMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemCaptureMessage.g.cs" />
@@ -264,7 +261,6 @@
     <Compile Include="Networking\Responses\GetDownloadUrlsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetGymDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetHatchedEggsResponse.g.cs" />
-    <Compile Include="Networking\Responses\GetInboxResponse.g.cs" />
     <Compile Include="Networking\Responses\GetIncensePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\GetInventoryResponse.g.cs" />
     <Compile Include="Networking\Responses\GetMapObjectsResponse.g.cs" />
@@ -286,7 +282,6 @@
     <Compile Include="Networking\Responses\SetPlayerTeamResponse.g.cs" />
     <Compile Include="Networking\Responses\SfidaActionLogResponse.g.cs" />
     <Compile Include="Networking\Responses\StartGymBattleResponse.g.cs" />
-    <Compile Include="Networking\Responses\UpdateNotificationResponse.g.cs" />
     <Compile Include="Networking\Responses\UpgradePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\UseIncenseResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemCaptureResponse.g.cs" />
