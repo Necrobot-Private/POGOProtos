@@ -1,7 +1,0 @@
-C:\Users\msntc\Repos\RocketBot\POGOProtos\bin\x86\Debug\POGOProtos.dll
-C:\Users\msntc\Repos\RocketBot\POGOProtos\bin\x86\Debug\POGOProtos.pdb
-C:\Users\msntc\Repos\RocketBot\POGOProtos\bin\x86\Debug\Google.Protobuf.dll
-C:\Users\msntc\Repos\RocketBot\POGOProtos\bin\x86\Debug\Google.Protobuf.xml
-C:\Users\msntc\Repos\RocketBot\POGOProtos\obj\x86\Debug\POGOProtos.csprojResolveAssemblyReference.cache
-C:\Users\msntc\Repos\RocketBot\POGOProtos\obj\x86\Debug\POGOProtos.dll
-C:\Users\msntc\Repos\RocketBot\POGOProtos\obj\x86\Debug\POGOProtos.pdb
