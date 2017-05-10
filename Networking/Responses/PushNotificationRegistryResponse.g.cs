@@ -24,11 +24,11 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CkZQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL1B1c2hOb3RpZmlj",
             "YXRpb25SZWdpc3RyeVJlc3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdv",
-            "cmtpbmcuUmVzcG9uc2VzIqsBCiBQdXNoTm90aWZpY2F0aW9uUmVnaXN0cnlS",
+            "cmtpbmcuUmVzcG9uc2VzIq0BCiBQdXNoTm90aWZpY2F0aW9uUmVnaXN0cnlS",
             "ZXNwb25zZRJYCgZyZXN1bHQYASABKA4ySC5QT0dPUHJvdG9zLk5ldHdvcmtp",
             "bmcuUmVzcG9uc2VzLlB1c2hOb3RpZmljYXRpb25SZWdpc3RyeVJlc3BvbnNl",
-            "LlJlc3VsdCItCgZSZXN1bHQSCQoFVU5TRVQQABILCgdTVUNDRVNTEAESCwoH",
-            "RkFJTFVSRRACYgZwcm90bzM="));
+            "LlJlc3VsdCIvCgZSZXN1bHQSCQoFVU5TRVQQABILCgdTVUNDRVNTEAESDQoJ",
+            "Tk9fQ0hBTkdFEAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -161,7 +161,7 @@ namespace POGOProtos.Networking.Responses {
       public enum Result {
         [pbr::OriginalName("UNSET")] Unset = 0,
         [pbr::OriginalName("SUCCESS")] Success = 1,
-        [pbr::OriginalName("FAILURE")] Failure = 2,
+        [pbr::OriginalName("NO_CHANGE")] NoChange = 2,
       }
 
     }
