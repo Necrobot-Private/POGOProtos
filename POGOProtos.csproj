@@ -298,6 +298,7 @@
     <Compile Include="Networking\Responses\UseItemReviveResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemXpBoostResponse.g.cs" />
     <Compile Include="Networking\Responses\VerifyChallengeResponse.g.cs" />
+	<Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\DownloadSettingsAction.g.cs" />
     <Compile Include="Settings\EventSettings.g.cs" />
     <Compile Include="Settings\FestivalSettings.g.cs" />
