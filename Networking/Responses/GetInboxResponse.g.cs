@@ -24,37 +24,32 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CjZQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0dldEluYm94UmVz",
             "cG9uc2UucHJvdG8SH1BPR09Qcm90b3MuTmV0d29ya2luZy5SZXNwb25zZXMi",
-            "ggkKEEdldEluYm94UmVzcG9uc2USSAoGcmVzdWx0GAEgASgOMjguUE9HT1By",
+            "kAcKEEdldEluYm94UmVzcG9uc2USSAoGcmVzdWx0GAEgASgOMjguUE9HT1By",
             "b3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNlcy5HZXRJbmJveFJlc3BvbnNlLlJl",
             "c3VsdBJMCgVpbmJveBgCIAEoCzI9LlBPR09Qcm90b3MuTmV0d29ya2luZy5S",
-            "ZXNwb25zZXMuR2V0SW5ib3hSZXNwb25zZS5DbGllbnRJbmJveBqmBwoLQ2xp",
+            "ZXNwb25zZXMuR2V0SW5ib3hSZXNwb25zZS5DbGllbnRJbmJveBq0BQoLQ2xp",
             "ZW50SW5ib3gSYQoNbm90aWZpY2F0aW9ucxgBIAMoCzJKLlBPR09Qcm90b3Mu",
             "TmV0d29ya2luZy5SZXNwb25zZXMuR2V0SW5ib3hSZXNwb25zZS5DbGllbnRJ",
             "bmJveC5Ob3RpZmljYXRpb24SaQoRYnVpbHRpbl92YXJpYWJsZXMYAiADKAsy",
             "Ti5QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2VzLkdldEluYm94UmVz",
-            "cG9uc2UuQ2xpZW50SW5ib3guVGVtcGxhdGVWYXJpYWJsZRqXBQoMTm90aWZp",
-            "Y2F0aW9uEhcKD25vdGlmaWNhdGlvbl9pZBgBIAEoCRIOCgZidW5kbGUYAiAB",
-            "KAkSDQoFYXNzZXQYAyABKAkSDAoEaWNvbhgEIAEoCRIRCgl0aXRsZV9rZXkY",
-            "BSABKAkScQoIY2F0ZWdvcnkYBiABKA4yXy5QT0dPUHJvdG9zLk5ldHdvcmtp",
-            "bmcuUmVzcG9uc2VzLkdldEluYm94UmVzcG9uc2UuQ2xpZW50SW5ib3guTm90",
-            "aWZpY2F0aW9uLk5vdGlmaWNhdGlvbkNhdGVnb3J5EhsKE2NyZWF0ZV90aW1l",
-            "c3RhbXBfbXMYByABKAMSGwoTZXhwaXJlX3RpbWVzdGFtcF9tcxgIIAEoAxJh",
-            "Cgl2YXJpYWJsZXMYCSADKAsyTi5QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVz",
-            "cG9uc2VzLkdldEluYm94UmVzcG9uc2UuQ2xpZW50SW5ib3guVGVtcGxhdGVW",
-            "YXJpYWJsZRJgCgZsYWJlbHMYCyADKA4yUC5QT0dPUHJvdG9zLk5ldHdvcmtp",
-            "bmcuUmVzcG9uc2VzLkdldEluYm94UmVzcG9uc2UuQ2xpZW50SW5ib3guTm90",
-            "aWZpY2F0aW9uLkxhYmVsIk8KBUxhYmVsEg8KC1VOU0VUX0xBQkVMEAASCgoG",
-            "VU5SRUFEEAESBwoDTkVXEAISEQoNRVhQSVJJTkdfU09PThADEg0KCUlNTUVE",
-            "SUFURRAEImsKFE5vdGlmaWNhdGlvbkNhdGVnb3J5EhIKDlVOU0VUX0NBVEVH",
-            "T1JZEAASDQoJTUFSS0VUSU5HEAESEAoMQU5OT1VOQ0VNRU5UEAISDgoKQURN",
-            "SU5fTk9URRADEg4KCkdBTUVfRVZFTlQQBBovChBUZW1wbGF0ZVZhcmlhYmxl",
-            "EgwKBG5hbWUYASABKAkSDQoFdmFsdWUYAiABKAkiLQoGUmVzdWx0EgkKBVVO",
-            "U0VUEAASCwoHU1VDQ0VTUxABEgsKB0ZBSUxVUkUQAmIGcHJvdG8z"));
+            "cG9uc2UuQ2xpZW50SW5ib3guVGVtcGxhdGVWYXJpYWJsZRrsAgoMTm90aWZp",
+            "Y2F0aW9uEhcKD25vdGlmaWNhdGlvbl9pZBgBIAEoCRIRCgl0aXRsZV9rZXkY",
+            "AiABKAkSEAoIY2F0ZWdvcnkYAyABKAkSGwoTY3JlYXRlX3RpbWVzdGFtcF9t",
+            "cxgEIAEoAxJhCgl2YXJpYWJsZXMYBSADKAsyTi5QT0dPUHJvdG9zLk5ldHdv",
+            "cmtpbmcuUmVzcG9uc2VzLkdldEluYm94UmVzcG9uc2UuQ2xpZW50SW5ib3gu",
+            "VGVtcGxhdGVWYXJpYWJsZRJgCgZsYWJlbHMYBiADKA4yUC5QT0dPUHJvdG9z",
+            "Lk5ldHdvcmtpbmcuUmVzcG9uc2VzLkdldEluYm94UmVzcG9uc2UuQ2xpZW50",
+            "SW5ib3guTm90aWZpY2F0aW9uLkxhYmVsIjwKBUxhYmVsEg8KC1VOU0VUX0xB",
+            "QkVMEAASCgoGVU5SRUFEEAESBwoDTkVXEAISDQoJSU1NRURJQVRFEAMaaAoQ",
+            "VGVtcGxhdGVWYXJpYWJsZRIMCgRuYW1lGAEgASgJEg8KB2xpdGVyYWwYAiAB",
+            "KAkSCwoDa2V5GAMgASgJEhQKDGxvb2t1cF90YWJsZRgEIAEoCRISCgpieXRl",
+            "X3ZhbHVlGAUgASgMIi0KBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQ",
+            "ARILCgdGQUlMVVJFEAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetInboxResponse), global::POGOProtos.Networking.Responses.GetInboxResponse.Parser, new[]{ "Result", "Inbox" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.Result) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox), global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Parser, new[]{ "Notifications", "BuiltinVariables" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification), global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Parser, new[]{ "NotificationId", "Bundle", "Asset", "Icon", "TitleKey", "Category", "CreateTimestampMs", "ExpireTimestampMs", "Variables", "Labels" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.Label), typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.NotificationCategory) }, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable), global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable.Parser, new[]{ "Name", "Value" }, null, null, null)})})
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetInboxResponse), global::POGOProtos.Networking.Responses.GetInboxResponse.Parser, new[]{ "Result", "Inbox" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.Result) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox), global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Parser, new[]{ "Notifications", "BuiltinVariables" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification), global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Parser, new[]{ "NotificationId", "TitleKey", "Category", "CreateTimestampMs", "Variables", "Labels" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.Label) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable), global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable.Parser, new[]{ "Name", "Literal", "Key", "LookupTable", "ByteValue" }, null, null, null)})})
           }));
     }
     #endregion
@@ -376,13 +371,9 @@ namespace POGOProtos.Networking.Responses {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public Notification(Notification other) : this() {
               notificationId_ = other.notificationId_;
-              bundle_ = other.bundle_;
-              asset_ = other.asset_;
-              icon_ = other.icon_;
               titleKey_ = other.titleKey_;
               category_ = other.category_;
               createTimestampMs_ = other.createTimestampMs_;
-              expireTimestampMs_ = other.expireTimestampMs_;
               variables_ = other.variables_.Clone();
               labels_ = other.labels_.Clone();
             }
@@ -403,41 +394,8 @@ namespace POGOProtos.Networking.Responses {
               }
             }
 
-            /// <summary>Field number for the "bundle" field.</summary>
-            public const int BundleFieldNumber = 2;
-            private string bundle_ = "";
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public string Bundle {
-              get { return bundle_; }
-              set {
-                bundle_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-              }
-            }
-
-            /// <summary>Field number for the "asset" field.</summary>
-            public const int AssetFieldNumber = 3;
-            private string asset_ = "";
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public string Asset {
-              get { return asset_; }
-              set {
-                asset_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-              }
-            }
-
-            /// <summary>Field number for the "icon" field.</summary>
-            public const int IconFieldNumber = 4;
-            private string icon_ = "";
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public string Icon {
-              get { return icon_; }
-              set {
-                icon_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-              }
-            }
-
             /// <summary>Field number for the "title_key" field.</summary>
-            public const int TitleKeyFieldNumber = 5;
+            public const int TitleKeyFieldNumber = 2;
             private string titleKey_ = "";
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public string TitleKey {
@@ -448,18 +406,18 @@ namespace POGOProtos.Networking.Responses {
             }
 
             /// <summary>Field number for the "category" field.</summary>
-            public const int CategoryFieldNumber = 6;
-            private global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.NotificationCategory category_ = 0;
+            public const int CategoryFieldNumber = 3;
+            private string category_ = "";
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.NotificationCategory Category {
+            public string Category {
               get { return category_; }
               set {
-                category_ = value;
+                category_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
               }
             }
 
             /// <summary>Field number for the "create_timestamp_ms" field.</summary>
-            public const int CreateTimestampMsFieldNumber = 7;
+            public const int CreateTimestampMsFieldNumber = 4;
             private long createTimestampMs_;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public long CreateTimestampMs {
@@ -469,21 +427,10 @@ namespace POGOProtos.Networking.Responses {
               }
             }
 
-            /// <summary>Field number for the "expire_timestamp_ms" field.</summary>
-            public const int ExpireTimestampMsFieldNumber = 8;
-            private long expireTimestampMs_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public long ExpireTimestampMs {
-              get { return expireTimestampMs_; }
-              set {
-                expireTimestampMs_ = value;
-              }
-            }
-
             /// <summary>Field number for the "variables" field.</summary>
-            public const int VariablesFieldNumber = 9;
+            public const int VariablesFieldNumber = 5;
             private static readonly pb::FieldCodec<global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable> _repeated_variables_codec
-                = pb::FieldCodec.ForMessage(74, global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable.Parser);
+                = pb::FieldCodec.ForMessage(42, global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable.Parser);
             private readonly pbc::RepeatedField<global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable> variables_ = new pbc::RepeatedField<global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable>();
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public pbc::RepeatedField<global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.TemplateVariable> Variables {
@@ -491,9 +438,9 @@ namespace POGOProtos.Networking.Responses {
             }
 
             /// <summary>Field number for the "labels" field.</summary>
-            public const int LabelsFieldNumber = 11;
+            public const int LabelsFieldNumber = 6;
             private static readonly pb::FieldCodec<global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.Label> _repeated_labels_codec
-                = pb::FieldCodec.ForEnum(90, x => (int) x, x => (global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.Label) x);
+                = pb::FieldCodec.ForEnum(50, x => (int) x, x => (global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.Label) x);
             private readonly pbc::RepeatedField<global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.Label> labels_ = new pbc::RepeatedField<global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.Label>();
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public pbc::RepeatedField<global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.Label> Labels {
@@ -514,13 +461,9 @@ namespace POGOProtos.Networking.Responses {
                 return true;
               }
               if (NotificationId != other.NotificationId) return false;
-              if (Bundle != other.Bundle) return false;
-              if (Asset != other.Asset) return false;
-              if (Icon != other.Icon) return false;
               if (TitleKey != other.TitleKey) return false;
               if (Category != other.Category) return false;
               if (CreateTimestampMs != other.CreateTimestampMs) return false;
-              if (ExpireTimestampMs != other.ExpireTimestampMs) return false;
               if(!variables_.Equals(other.variables_)) return false;
               if(!labels_.Equals(other.labels_)) return false;
               return true;
@@ -530,13 +473,9 @@ namespace POGOProtos.Networking.Responses {
             public override int GetHashCode() {
               int hash = 1;
               if (NotificationId.Length != 0) hash ^= NotificationId.GetHashCode();
-              if (Bundle.Length != 0) hash ^= Bundle.GetHashCode();
-              if (Asset.Length != 0) hash ^= Asset.GetHashCode();
-              if (Icon.Length != 0) hash ^= Icon.GetHashCode();
               if (TitleKey.Length != 0) hash ^= TitleKey.GetHashCode();
-              if (Category != 0) hash ^= Category.GetHashCode();
+              if (Category.Length != 0) hash ^= Category.GetHashCode();
               if (CreateTimestampMs != 0L) hash ^= CreateTimestampMs.GetHashCode();
-              if (ExpireTimestampMs != 0L) hash ^= ExpireTimestampMs.GetHashCode();
               hash ^= variables_.GetHashCode();
               hash ^= labels_.GetHashCode();
               return hash;
@@ -553,33 +492,17 @@ namespace POGOProtos.Networking.Responses {
                 output.WriteRawTag(10);
                 output.WriteString(NotificationId);
               }
-              if (Bundle.Length != 0) {
-                output.WriteRawTag(18);
-                output.WriteString(Bundle);
-              }
-              if (Asset.Length != 0) {
-                output.WriteRawTag(26);
-                output.WriteString(Asset);
-              }
-              if (Icon.Length != 0) {
-                output.WriteRawTag(34);
-                output.WriteString(Icon);
-              }
               if (TitleKey.Length != 0) {
-                output.WriteRawTag(42);
+                output.WriteRawTag(18);
                 output.WriteString(TitleKey);
               }
-              if (Category != 0) {
-                output.WriteRawTag(48);
-                output.WriteEnum((int) Category);
+              if (Category.Length != 0) {
+                output.WriteRawTag(26);
+                output.WriteString(Category);
               }
               if (CreateTimestampMs != 0L) {
-                output.WriteRawTag(56);
+                output.WriteRawTag(32);
                 output.WriteInt64(CreateTimestampMs);
-              }
-              if (ExpireTimestampMs != 0L) {
-                output.WriteRawTag(64);
-                output.WriteInt64(ExpireTimestampMs);
               }
               variables_.WriteTo(output, _repeated_variables_codec);
               labels_.WriteTo(output, _repeated_labels_codec);
@@ -591,26 +514,14 @@ namespace POGOProtos.Networking.Responses {
               if (NotificationId.Length != 0) {
                 size += 1 + pb::CodedOutputStream.ComputeStringSize(NotificationId);
               }
-              if (Bundle.Length != 0) {
-                size += 1 + pb::CodedOutputStream.ComputeStringSize(Bundle);
-              }
-              if (Asset.Length != 0) {
-                size += 1 + pb::CodedOutputStream.ComputeStringSize(Asset);
-              }
-              if (Icon.Length != 0) {
-                size += 1 + pb::CodedOutputStream.ComputeStringSize(Icon);
-              }
               if (TitleKey.Length != 0) {
                 size += 1 + pb::CodedOutputStream.ComputeStringSize(TitleKey);
               }
-              if (Category != 0) {
-                size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Category);
+              if (Category.Length != 0) {
+                size += 1 + pb::CodedOutputStream.ComputeStringSize(Category);
               }
               if (CreateTimestampMs != 0L) {
                 size += 1 + pb::CodedOutputStream.ComputeInt64Size(CreateTimestampMs);
-              }
-              if (ExpireTimestampMs != 0L) {
-                size += 1 + pb::CodedOutputStream.ComputeInt64Size(ExpireTimestampMs);
               }
               size += variables_.CalculateSize(_repeated_variables_codec);
               size += labels_.CalculateSize(_repeated_labels_codec);
@@ -625,26 +536,14 @@ namespace POGOProtos.Networking.Responses {
               if (other.NotificationId.Length != 0) {
                 NotificationId = other.NotificationId;
               }
-              if (other.Bundle.Length != 0) {
-                Bundle = other.Bundle;
-              }
-              if (other.Asset.Length != 0) {
-                Asset = other.Asset;
-              }
-              if (other.Icon.Length != 0) {
-                Icon = other.Icon;
-              }
               if (other.TitleKey.Length != 0) {
                 TitleKey = other.TitleKey;
               }
-              if (other.Category != 0) {
+              if (other.Category.Length != 0) {
                 Category = other.Category;
               }
               if (other.CreateTimestampMs != 0L) {
                 CreateTimestampMs = other.CreateTimestampMs;
-              }
-              if (other.ExpireTimestampMs != 0L) {
-                ExpireTimestampMs = other.ExpireTimestampMs;
               }
               variables_.Add(other.variables_);
               labels_.Add(other.labels_);
@@ -663,39 +562,23 @@ namespace POGOProtos.Networking.Responses {
                     break;
                   }
                   case 18: {
-                    Bundle = input.ReadString();
-                    break;
-                  }
-                  case 26: {
-                    Asset = input.ReadString();
-                    break;
-                  }
-                  case 34: {
-                    Icon = input.ReadString();
-                    break;
-                  }
-                  case 42: {
                     TitleKey = input.ReadString();
                     break;
                   }
-                  case 48: {
-                    category_ = (global::POGOProtos.Networking.Responses.GetInboxResponse.Types.ClientInbox.Types.Notification.Types.NotificationCategory) input.ReadEnum();
+                  case 26: {
+                    Category = input.ReadString();
                     break;
                   }
-                  case 56: {
+                  case 32: {
                     CreateTimestampMs = input.ReadInt64();
                     break;
                   }
-                  case 64: {
-                    ExpireTimestampMs = input.ReadInt64();
-                    break;
-                  }
-                  case 74: {
+                  case 42: {
                     variables_.AddEntriesFrom(input, _repeated_variables_codec);
                     break;
                   }
-                  case 90:
-                  case 88: {
+                  case 50:
+                  case 48: {
                     labels_.AddEntriesFrom(input, _repeated_labels_codec);
                     break;
                   }
@@ -711,16 +594,7 @@ namespace POGOProtos.Networking.Responses {
                 [pbr::OriginalName("UNSET_LABEL")] UnsetLabel = 0,
                 [pbr::OriginalName("UNREAD")] Unread = 1,
                 [pbr::OriginalName("NEW")] New = 2,
-                [pbr::OriginalName("EXPIRING_SOON")] ExpiringSoon = 3,
-                [pbr::OriginalName("IMMEDIATE")] Immediate = 4,
-              }
-
-              public enum NotificationCategory {
-                [pbr::OriginalName("UNSET_CATEGORY")] UnsetCategory = 0,
-                [pbr::OriginalName("MARKETING")] Marketing = 1,
-                [pbr::OriginalName("ANNOUNCEMENT")] Announcement = 2,
-                [pbr::OriginalName("ADMIN_NOTE")] AdminNote = 3,
-                [pbr::OriginalName("GAME_EVENT")] GameEvent = 4,
+                [pbr::OriginalName("IMMEDIATE")] Immediate = 3,
               }
 
             }
@@ -753,7 +627,10 @@ namespace POGOProtos.Networking.Responses {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public TemplateVariable(TemplateVariable other) : this() {
               name_ = other.name_;
-              value_ = other.value_;
+              literal_ = other.literal_;
+              key_ = other.key_;
+              lookupTable_ = other.lookupTable_;
+              byteValue_ = other.byteValue_;
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -772,14 +649,47 @@ namespace POGOProtos.Networking.Responses {
               }
             }
 
-            /// <summary>Field number for the "value" field.</summary>
-            public const int ValueFieldNumber = 2;
-            private string value_ = "";
+            /// <summary>Field number for the "literal" field.</summary>
+            public const int LiteralFieldNumber = 2;
+            private string literal_ = "";
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public string Value {
-              get { return value_; }
+            public string Literal {
+              get { return literal_; }
               set {
-                value_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+                literal_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+              }
+            }
+
+            /// <summary>Field number for the "key" field.</summary>
+            public const int KeyFieldNumber = 3;
+            private string key_ = "";
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public string Key {
+              get { return key_; }
+              set {
+                key_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+              }
+            }
+
+            /// <summary>Field number for the "lookup_table" field.</summary>
+            public const int LookupTableFieldNumber = 4;
+            private string lookupTable_ = "";
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public string LookupTable {
+              get { return lookupTable_; }
+              set {
+                lookupTable_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+              }
+            }
+
+            /// <summary>Field number for the "byte_value" field.</summary>
+            public const int ByteValueFieldNumber = 5;
+            private pb::ByteString byteValue_ = pb::ByteString.Empty;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public pb::ByteString ByteValue {
+              get { return byteValue_; }
+              set {
+                byteValue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
               }
             }
 
@@ -797,7 +707,10 @@ namespace POGOProtos.Networking.Responses {
                 return true;
               }
               if (Name != other.Name) return false;
-              if (Value != other.Value) return false;
+              if (Literal != other.Literal) return false;
+              if (Key != other.Key) return false;
+              if (LookupTable != other.LookupTable) return false;
+              if (ByteValue != other.ByteValue) return false;
               return true;
             }
 
@@ -805,7 +718,10 @@ namespace POGOProtos.Networking.Responses {
             public override int GetHashCode() {
               int hash = 1;
               if (Name.Length != 0) hash ^= Name.GetHashCode();
-              if (Value.Length != 0) hash ^= Value.GetHashCode();
+              if (Literal.Length != 0) hash ^= Literal.GetHashCode();
+              if (Key.Length != 0) hash ^= Key.GetHashCode();
+              if (LookupTable.Length != 0) hash ^= LookupTable.GetHashCode();
+              if (ByteValue.Length != 0) hash ^= ByteValue.GetHashCode();
               return hash;
             }
 
@@ -820,9 +736,21 @@ namespace POGOProtos.Networking.Responses {
                 output.WriteRawTag(10);
                 output.WriteString(Name);
               }
-              if (Value.Length != 0) {
+              if (Literal.Length != 0) {
                 output.WriteRawTag(18);
-                output.WriteString(Value);
+                output.WriteString(Literal);
+              }
+              if (Key.Length != 0) {
+                output.WriteRawTag(26);
+                output.WriteString(Key);
+              }
+              if (LookupTable.Length != 0) {
+                output.WriteRawTag(34);
+                output.WriteString(LookupTable);
+              }
+              if (ByteValue.Length != 0) {
+                output.WriteRawTag(42);
+                output.WriteBytes(ByteValue);
               }
             }
 
@@ -832,8 +760,17 @@ namespace POGOProtos.Networking.Responses {
               if (Name.Length != 0) {
                 size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
               }
-              if (Value.Length != 0) {
-                size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
+              if (Literal.Length != 0) {
+                size += 1 + pb::CodedOutputStream.ComputeStringSize(Literal);
+              }
+              if (Key.Length != 0) {
+                size += 1 + pb::CodedOutputStream.ComputeStringSize(Key);
+              }
+              if (LookupTable.Length != 0) {
+                size += 1 + pb::CodedOutputStream.ComputeStringSize(LookupTable);
+              }
+              if (ByteValue.Length != 0) {
+                size += 1 + pb::CodedOutputStream.ComputeBytesSize(ByteValue);
               }
               return size;
             }
@@ -846,8 +783,17 @@ namespace POGOProtos.Networking.Responses {
               if (other.Name.Length != 0) {
                 Name = other.Name;
               }
-              if (other.Value.Length != 0) {
-                Value = other.Value;
+              if (other.Literal.Length != 0) {
+                Literal = other.Literal;
+              }
+              if (other.Key.Length != 0) {
+                Key = other.Key;
+              }
+              if (other.LookupTable.Length != 0) {
+                LookupTable = other.LookupTable;
+              }
+              if (other.ByteValue.Length != 0) {
+                ByteValue = other.ByteValue;
               }
             }
 
@@ -864,7 +810,19 @@ namespace POGOProtos.Networking.Responses {
                     break;
                   }
                   case 18: {
-                    Value = input.ReadString();
+                    Literal = input.ReadString();
+                    break;
+                  }
+                  case 26: {
+                    Key = input.ReadString();
+                    break;
+                  }
+                  case 34: {
+                    LookupTable = input.ReadString();
+                    break;
+                  }
+                  case 42: {
+                    ByteValue = input.ReadBytes();
                     break;
                   }
                 }

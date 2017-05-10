@@ -24,20 +24,19 @@ namespace POGOProtos.Networking.Requests.Messages {
           string.Concat(
             "Cj1QT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvTWVzc2FnZXMvR2V0",
             "SW5ib3hNZXNzYWdlLnByb3RvEidQT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVx",
-            "dWVzdHMuTWVzc2FnZXMiEQoPR2V0SW5ib3hNZXNzYWdlYgZwcm90bzM="));
+            "dWVzdHMuTWVzc2FnZXMiUAoPR2V0SW5ib3hNZXNzYWdlEhIKCmlzX2hpc3Rv",
+            "cnkYASABKAgSEgoKaXNfcmV2ZXJzZRgCIAEoCBIVCg1ub3RfYmVmb3JlX21z",
+            "GAMgASgDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.GetInboxMessage), global::POGOProtos.Networking.Requests.Messages.GetInboxMessage.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.GetInboxMessage), global::POGOProtos.Networking.Requests.Messages.GetInboxMessage.Parser, new[]{ "IsHistory", "IsReverse", "NotBeforeMs" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  /// <summary>
-  /// No message needed.
-  /// </summary>
   public sealed partial class GetInboxMessage : pb::IMessage<GetInboxMessage> {
     private static readonly pb::MessageParser<GetInboxMessage> _parser = new pb::MessageParser<GetInboxMessage>(() => new GetInboxMessage());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -62,11 +61,47 @@ namespace POGOProtos.Networking.Requests.Messages {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetInboxMessage(GetInboxMessage other) : this() {
+      isHistory_ = other.isHistory_;
+      isReverse_ = other.isReverse_;
+      notBeforeMs_ = other.notBeforeMs_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetInboxMessage Clone() {
       return new GetInboxMessage(this);
+    }
+
+    /// <summary>Field number for the "is_history" field.</summary>
+    public const int IsHistoryFieldNumber = 1;
+    private bool isHistory_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsHistory {
+      get { return isHistory_; }
+      set {
+        isHistory_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_reverse" field.</summary>
+    public const int IsReverseFieldNumber = 2;
+    private bool isReverse_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsReverse {
+      get { return isReverse_; }
+      set {
+        isReverse_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "not_before_ms" field.</summary>
+    public const int NotBeforeMsFieldNumber = 3;
+    private long notBeforeMs_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long NotBeforeMs {
+      get { return notBeforeMs_; }
+      set {
+        notBeforeMs_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -82,12 +117,18 @@ namespace POGOProtos.Networking.Requests.Messages {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (IsHistory != other.IsHistory) return false;
+      if (IsReverse != other.IsReverse) return false;
+      if (NotBeforeMs != other.NotBeforeMs) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (IsHistory != false) hash ^= IsHistory.GetHashCode();
+      if (IsReverse != false) hash ^= IsReverse.GetHashCode();
+      if (NotBeforeMs != 0L) hash ^= NotBeforeMs.GetHashCode();
       return hash;
     }
 
@@ -98,11 +139,32 @@ namespace POGOProtos.Networking.Requests.Messages {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (IsHistory != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsHistory);
+      }
+      if (IsReverse != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IsReverse);
+      }
+      if (NotBeforeMs != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(NotBeforeMs);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (IsHistory != false) {
+        size += 1 + 1;
+      }
+      if (IsReverse != false) {
+        size += 1 + 1;
+      }
+      if (NotBeforeMs != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(NotBeforeMs);
+      }
       return size;
     }
 
@@ -110,6 +172,15 @@ namespace POGOProtos.Networking.Requests.Messages {
     public void MergeFrom(GetInboxMessage other) {
       if (other == null) {
         return;
+      }
+      if (other.IsHistory != false) {
+        IsHistory = other.IsHistory;
+      }
+      if (other.IsReverse != false) {
+        IsReverse = other.IsReverse;
+      }
+      if (other.NotBeforeMs != 0L) {
+        NotBeforeMs = other.NotBeforeMs;
       }
     }
 
@@ -121,6 +192,18 @@ namespace POGOProtos.Networking.Requests.Messages {
           default:
             input.SkipLastField();
             break;
+          case 8: {
+            IsHistory = input.ReadBool();
+            break;
+          }
+          case 16: {
+            IsReverse = input.ReadBool();
+            break;
+          }
+          case 24: {
+            NotBeforeMs = input.ReadInt64();
+            break;
+          }
         }
       }
     }

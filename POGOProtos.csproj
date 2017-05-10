@@ -212,6 +212,7 @@
     <Compile Include="Networking\Requests\Messages\ListAvatarCustomizationsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\MarkTutorialCompleteMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\NicknamePokemonMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\PushNotificationRegistryMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RecycleInventoryItemMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RegisterBackgroundDeviceMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ReleasePokemonMessage.g.cs" />
@@ -274,6 +275,7 @@
     <Compile Include="Networking\Responses\ListAvatarCustomizationsResponse.g.cs" />
     <Compile Include="Networking\Responses\MarkTutorialCompleteResponse.g.cs" />
     <Compile Include="Networking\Responses\NicknamePokemonResponse.g.cs" />
+    <Compile Include="Networking\Responses\PushNotificationRegistryResponse.g.cs" />
     <Compile Include="Networking\Responses\RecycleInventoryItemResponse.g.cs" />
     <Compile Include="Networking\Responses\RegisterBackgroundDeviceResponse.g.cs" />
     <Compile Include="Networking\Responses\ReleasePokemonResponse.g.cs" />
@@ -296,7 +298,6 @@
     <Compile Include="Networking\Responses\UseItemReviveResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemXpBoostResponse.g.cs" />
     <Compile Include="Networking\Responses\VerifyChallengeResponse.g.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\DownloadSettingsAction.g.cs" />
     <Compile Include="Settings\EventSettings.g.cs" />
     <Compile Include="Settings\FestivalSettings.g.cs" />
@@ -342,6 +343,7 @@
     <Compile Include="Settings\Master\Quest\DailyQuestSettings.g.cs" />
     <Compile Include="Settings\Master\TypeEffectiveSettings.g.cs" />
     <Compile Include="Settings\NewsSettings.g.cs" />
+    <Compile Include="Settings\NotificationSettings.g.cs" />
     <Compile Include="Settings\PasscodeSettings.g.cs" />
     <Compile Include="Settings\SfidaSettings.g.cs" />
     <Compile Include="Settings\TranslationSettings.g.cs" />
