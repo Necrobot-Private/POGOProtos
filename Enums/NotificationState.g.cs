@@ -23,9 +23,8 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihQT0dPUHJvdG9zL0VudW1zL05vdGlmaWNhdGlvblN0YXRlLnByb3RvEhBQ",
-            "T0dPUHJvdG9zLkVudW1zKkkKEU5vdGlmaWNhdGlvblN0YXRlEg8KC1VOU0VU",
-            "X1NUQVRFEAASCgoGTElTVEVEEAESCgoGVklFV0VEEAISCwoHREVMRVRFRBAD",
-            "YgZwcm90bzM="));
+            "T0dPUHJvdG9zLkVudW1zKjAKEU5vdGlmaWNhdGlvblN0YXRlEg8KC1VOU0VU",
+            "X1NUQVRFEAASCgoGVklFV0VEEAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.NotificationState), }, null));
@@ -36,9 +35,7 @@ namespace POGOProtos.Enums {
   #region Enums
   public enum NotificationState {
     [pbr::OriginalName("UNSET_STATE")] UnsetState = 0,
-    [pbr::OriginalName("LISTED")] Listed = 1,
-    [pbr::OriginalName("VIEWED")] Viewed = 2,
-    [pbr::OriginalName("DELETED")] Deleted = 3,
+    [pbr::OriginalName("VIEWED")] Viewed = 1,
   }
 
   #endregion
