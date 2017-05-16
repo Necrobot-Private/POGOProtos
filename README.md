@@ -1,4 +1,4 @@
-POGOProtos [![Build status](https://ci.appveyor.com/api/projects/status/o5j4071rx6on2ere/branch/master?svg=true)](https://ci.appveyor.com/project/jjskuld/pogoprotos/branch/master) [![Code Climate](https://codeclimate.com/github/AeonLucid/POGOProtos/badges/gpa.svg)](https://codeclimate.com/github/AeonLucid/POGOProtos) [![Issue Count](https://codeclimate.com/github/AeonLucid/POGOProtos/badges/issue_count.svg)](https://codeclimate.com/github/AeonLucid/POGOProtos)
+POGOProtos [![Build status](https://ci.appveyor.com/api/projects/status/o5j4071rx6on2ere/branch/master?svg=true)](https://ci.appveyor.com/project/jjskuld/pogoprotos/branch/master)
 ===================
 
 This repository contains the [ProtoBuf](https://github.com/google/protobuf) `.proto` files needed to decode the PokémonGo RPC.
