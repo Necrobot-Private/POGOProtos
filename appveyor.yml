@@ -4,7 +4,7 @@ branches:
   - master
 skip_tags: true
 configuration: Release
-platform: x86
+platform: Any CPU
 environment:
   SolutionDirectory: .
 before_build:
