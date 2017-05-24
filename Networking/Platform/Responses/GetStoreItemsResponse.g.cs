@@ -25,28 +25,30 @@ namespace POGOProtos.Networking.Platform.Responses {
             "CkRQT0dPUHJvdG9zL05ldHdvcmtpbmcvUGxhdGZvcm0vUmVzcG9uc2VzL0dl",
             "dFN0b3JlSXRlbXNSZXNwb25zZS5wcm90bxIoUE9HT1Byb3Rvcy5OZXR3b3Jr",
             "aW5nLlBsYXRmb3JtLlJlc3BvbnNlcxolUE9HT1Byb3Rvcy9EYXRhL1BsYXll",
-            "ci9DdXJyZW5jeS5wcm90bxooUE9HT1Byb3Rvcy9JbnZlbnRvcnkvSXRlbS9J",
-            "dGVtRGF0YS5wcm90byK8BQoVR2V0U3RvcmVJdGVtc1Jlc3BvbnNlElYKBnN0",
-            "YXR1cxgBIAEoDjJGLlBPR09Qcm90b3MuTmV0d29ya2luZy5QbGF0Zm9ybS5S",
-            "ZXNwb25zZXMuR2V0U3RvcmVJdGVtc1Jlc3BvbnNlLlN0YXR1cxJYCgVpdGVt",
-            "cxgCIAMoCzJJLlBPR09Qcm90b3MuTmV0d29ya2luZy5QbGF0Zm9ybS5SZXNw",
-            "b25zZXMuR2V0U3RvcmVJdGVtc1Jlc3BvbnNlLlN0b3JlSXRlbRI7ChFwbGF5",
-            "ZXJfY3VycmVuY2llcxgDIAMoCzIgLlBPR09Qcm90b3MuRGF0YS5QbGF5ZXIu",
-            "Q3VycmVuY3kSEAoIdW5rbm93bjQYBCABKAka/gIKCVN0b3JlSXRlbRIPCgdp",
-            "dGVtX2lkGAEgASgJEg4KBmlzX2lhcBgCIAEoCBI5Cg9jdXJyZW5jeV90b19i",
-            "dXkYAyABKAsyIC5QT0dPUHJvdG9zLkRhdGEuUGxheWVyLkN1cnJlbmN5EjkK",
-            "D3lpZWxkc19jdXJyZW5jeRgEIAEoCzIgLlBPR09Qcm90b3MuRGF0YS5QbGF5",
-            "ZXIuQ3VycmVuY3kSOAoLeWllbGRzX2l0ZW0YBSABKAsyIy5QT0dPUHJvdG9z",
-            "LkludmVudG9yeS5JdGVtLkl0ZW1EYXRhEmEKBHRhZ3MYBiADKAsyUy5QT0dP",
+            "ci9DdXJyZW5jeS5wcm90byKJBgoVR2V0U3RvcmVJdGVtc1Jlc3BvbnNlElYK",
+            "BnN0YXR1cxgBIAEoDjJGLlBPR09Qcm90b3MuTmV0d29ya2luZy5QbGF0Zm9y",
+            "bS5SZXNwb25zZXMuR2V0U3RvcmVJdGVtc1Jlc3BvbnNlLlN0YXR1cxJYCgVp",
+            "dGVtcxgCIAMoCzJJLlBPR09Qcm90b3MuTmV0d29ya2luZy5QbGF0Zm9ybS5S",
+            "ZXNwb25zZXMuR2V0U3RvcmVJdGVtc1Jlc3BvbnNlLlN0b3JlSXRlbRI7ChFw",
+            "bGF5ZXJfY3VycmVuY2llcxgDIAMoCzIgLlBPR09Qcm90b3MuRGF0YS5QbGF5",
+            "ZXIuQ3VycmVuY3kSEAoIdW5rbm93bjQYBCABKAka8QIKCVN0b3JlSXRlbRIP",
+            "CgdpdGVtX2lkGAEgASgJEg4KBmlzX2lhcBgCIAEoCBI5Cg9jdXJyZW5jeV90",
+            "b19idXkYAyABKAsyIC5QT0dPUHJvdG9zLkRhdGEuUGxheWVyLkN1cnJlbmN5",
+            "EjkKD3lpZWxkc19jdXJyZW5jeRgEIAEoCzIgLlBPR09Qcm90b3MuRGF0YS5Q",
+            "bGF5ZXIuQ3VycmVuY3kSYgoLeWllbGRzX2l0ZW0YBSABKAsyTS5QT0dPUHJv",
+            "dG9zLk5ldHdvcmtpbmcuUGxhdGZvcm0uUmVzcG9uc2VzLkdldFN0b3JlSXRl",
+            "bXNSZXNwb25zZS5TdG9yZUl0ZW1JbmZvElcKBHRhZ3MYBiADKAsySS5QT0dP",
             "UHJvdG9zLk5ldHdvcmtpbmcuUGxhdGZvcm0uUmVzcG9uc2VzLkdldFN0b3Jl",
-            "SXRlbXNSZXNwb25zZS5TdG9yZUl0ZW0uVGFnc0VudHJ5EhAKCHVua25vd243",
-            "GAcgASgFGisKCVRhZ3NFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiAB",
-            "KAk6AjgBIiEKBlN0YXR1cxINCglVTkRFRklORUQQABIICgRPS0FZEAFiBnBy",
-            "b3RvMw=="));
+            "SXRlbXNSZXNwb25zZS5TdG9yZVRhZ3MSEAoIdW5rbm93bjcYByABKAUaJwoJ",
+            "U3RvcmVUYWdzEgsKA3RhZxgBIAEoCRINCgV2YWx1ZRgCIAEoCRovCg1TdG9y",
+            "ZUl0ZW1JbmZvEg8KB2l0ZW1faWQYASABKAkSDQoFY291bnQYAiABKAUiIQoG",
+            "U3RhdHVzEg0KCVVOREVGSU5FRBAAEggKBE9LQVkQAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.CurrencyReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.CurrencyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Parser, new[]{ "Status", "Items", "PlayerCurrencies", "Unknown4" }, null, new[]{ typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem.Parser, new[]{ "ItemId", "IsIap", "CurrencyToBuy", "YieldsCurrency", "YieldsItem", "Tags", "Unknown7" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })})
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Parser, new[]{ "Status", "Items", "PlayerCurrencies", "Unknown4" }, null, new[]{ typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem.Parser, new[]{ "ItemId", "IsIap", "CurrencyToBuy", "YieldsCurrency", "YieldsItem", "Tags", "Unknown7" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreTags), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreTags.Parser, new[]{ "Tag", "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItemInfo), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItemInfo.Parser, new[]{ "ItemId", "Count" }, null, null, null)})
           }));
     }
     #endregion
@@ -353,12 +355,12 @@ namespace POGOProtos.Networking.Platform.Responses {
 
         /// <summary>Field number for the "yields_item" field.</summary>
         public const int YieldsItemFieldNumber = 5;
-        private global::POGOProtos.Inventory.Item.ItemData yieldsItem_;
+        private global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItemInfo yieldsItem_;
         /// <summary>
         /// The item and count of such item that this IAP will yield
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::POGOProtos.Inventory.Item.ItemData YieldsItem {
+        public global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItemInfo YieldsItem {
           get { return yieldsItem_; }
           set {
             yieldsItem_ = value;
@@ -367,14 +369,14 @@ namespace POGOProtos.Networking.Platform.Responses {
 
         /// <summary>Field number for the "tags" field.</summary>
         public const int TagsFieldNumber = 6;
-        private static readonly pbc::MapField<string, string>.Codec _map_tags_codec
-            = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForString(18), 50);
-        private readonly pbc::MapField<string, string> tags_ = new pbc::MapField<string, string>();
+        private static readonly pb::FieldCodec<global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreTags> _repeated_tags_codec
+            = pb::FieldCodec.ForMessage(50, global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreTags.Parser);
+        private readonly pbc::RepeatedField<global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreTags> tags_ = new pbc::RepeatedField<global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreTags>();
         /// <summary>
         /// Stuff like SORT:12, CATEGORY:ITEMS
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::MapField<string, string> Tags {
+        public pbc::RepeatedField<global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreTags> Tags {
           get { return tags_; }
         }
 
@@ -410,7 +412,7 @@ namespace POGOProtos.Networking.Platform.Responses {
           if (!object.Equals(CurrencyToBuy, other.CurrencyToBuy)) return false;
           if (!object.Equals(YieldsCurrency, other.YieldsCurrency)) return false;
           if (!object.Equals(YieldsItem, other.YieldsItem)) return false;
-          if (!Tags.Equals(other.Tags)) return false;
+          if(!tags_.Equals(other.tags_)) return false;
           if (Unknown7 != other.Unknown7) return false;
           return true;
         }
@@ -423,7 +425,7 @@ namespace POGOProtos.Networking.Platform.Responses {
           if (currencyToBuy_ != null) hash ^= CurrencyToBuy.GetHashCode();
           if (yieldsCurrency_ != null) hash ^= YieldsCurrency.GetHashCode();
           if (yieldsItem_ != null) hash ^= YieldsItem.GetHashCode();
-          hash ^= Tags.GetHashCode();
+          hash ^= tags_.GetHashCode();
           if (Unknown7 != 0) hash ^= Unknown7.GetHashCode();
           return hash;
         }
@@ -455,7 +457,7 @@ namespace POGOProtos.Networking.Platform.Responses {
             output.WriteRawTag(42);
             output.WriteMessage(YieldsItem);
           }
-          tags_.WriteTo(output, _map_tags_codec);
+          tags_.WriteTo(output, _repeated_tags_codec);
           if (Unknown7 != 0) {
             output.WriteRawTag(56);
             output.WriteInt32(Unknown7);
@@ -480,7 +482,7 @@ namespace POGOProtos.Networking.Platform.Responses {
           if (yieldsItem_ != null) {
             size += 1 + pb::CodedOutputStream.ComputeMessageSize(YieldsItem);
           }
-          size += tags_.CalculateSize(_map_tags_codec);
+          size += tags_.CalculateSize(_repeated_tags_codec);
           if (Unknown7 != 0) {
             size += 1 + pb::CodedOutputStream.ComputeInt32Size(Unknown7);
           }
@@ -512,7 +514,7 @@ namespace POGOProtos.Networking.Platform.Responses {
           }
           if (other.yieldsItem_ != null) {
             if (yieldsItem_ == null) {
-              yieldsItem_ = new global::POGOProtos.Inventory.Item.ItemData();
+              yieldsItem_ = new global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItemInfo();
             }
             YieldsItem.MergeFrom(other.YieldsItem);
           }
@@ -554,17 +556,307 @@ namespace POGOProtos.Networking.Platform.Responses {
               }
               case 42: {
                 if (yieldsItem_ == null) {
-                  yieldsItem_ = new global::POGOProtos.Inventory.Item.ItemData();
+                  yieldsItem_ = new global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItemInfo();
                 }
                 input.ReadMessage(yieldsItem_);
                 break;
               }
               case 50: {
-                tags_.AddEntriesFrom(input, _map_tags_codec);
+                tags_.AddEntriesFrom(input, _repeated_tags_codec);
                 break;
               }
               case 56: {
                 Unknown7 = input.ReadInt32();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      public sealed partial class StoreTags : pb::IMessage<StoreTags> {
+        private static readonly pb::MessageParser<StoreTags> _parser = new pb::MessageParser<StoreTags>(() => new StoreTags());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<StoreTags> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public StoreTags() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public StoreTags(StoreTags other) : this() {
+          tag_ = other.tag_;
+          value_ = other.value_;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public StoreTags Clone() {
+          return new StoreTags(this);
+        }
+
+        /// <summary>Field number for the "tag" field.</summary>
+        public const int TagFieldNumber = 1;
+        private string tag_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Tag {
+          get { return tag_; }
+          set {
+            tag_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        /// <summary>Field number for the "value" field.</summary>
+        public const int ValueFieldNumber = 2;
+        private string value_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Value {
+          get { return value_; }
+          set {
+            value_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as StoreTags);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(StoreTags other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Tag != other.Tag) return false;
+          if (Value != other.Value) return false;
+          return true;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (Tag.Length != 0) hash ^= Tag.GetHashCode();
+          if (Value.Length != 0) hash ^= Value.GetHashCode();
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (Tag.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(Tag);
+          }
+          if (Value.Length != 0) {
+            output.WriteRawTag(18);
+            output.WriteString(Value);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (Tag.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Tag);
+          }
+          if (Value.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(StoreTags other) {
+          if (other == null) {
+            return;
+          }
+          if (other.Tag.Length != 0) {
+            Tag = other.Tag;
+          }
+          if (other.Value.Length != 0) {
+            Value = other.Value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                input.SkipLastField();
+                break;
+              case 10: {
+                Tag = input.ReadString();
+                break;
+              }
+              case 18: {
+                Value = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      public sealed partial class StoreItemInfo : pb::IMessage<StoreItemInfo> {
+        private static readonly pb::MessageParser<StoreItemInfo> _parser = new pb::MessageParser<StoreItemInfo>(() => new StoreItemInfo());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<StoreItemInfo> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Descriptor.NestedTypes[2]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public StoreItemInfo() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public StoreItemInfo(StoreItemInfo other) : this() {
+          itemId_ = other.itemId_;
+          count_ = other.count_;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public StoreItemInfo Clone() {
+          return new StoreItemInfo(this);
+        }
+
+        /// <summary>Field number for the "item_id" field.</summary>
+        public const int ItemIdFieldNumber = 1;
+        private string itemId_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string ItemId {
+          get { return itemId_; }
+          set {
+            itemId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        /// <summary>Field number for the "count" field.</summary>
+        public const int CountFieldNumber = 2;
+        private int count_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int Count {
+          get { return count_; }
+          set {
+            count_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as StoreItemInfo);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(StoreItemInfo other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (ItemId != other.ItemId) return false;
+          if (Count != other.Count) return false;
+          return true;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (ItemId.Length != 0) hash ^= ItemId.GetHashCode();
+          if (Count != 0) hash ^= Count.GetHashCode();
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (ItemId.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(ItemId);
+          }
+          if (Count != 0) {
+            output.WriteRawTag(16);
+            output.WriteInt32(Count);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (ItemId.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(ItemId);
+          }
+          if (Count != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Count);
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(StoreItemInfo other) {
+          if (other == null) {
+            return;
+          }
+          if (other.ItemId.Length != 0) {
+            ItemId = other.ItemId;
+          }
+          if (other.Count != 0) {
+            Count = other.Count;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                input.SkipLastField();
+                break;
+              case 10: {
+                ItemId = input.ReadString();
+                break;
+              }
+              case 16: {
+                Count = input.ReadInt32();
                 break;
               }
             }

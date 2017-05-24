@@ -186,6 +186,7 @@
     <Compile Include="Networking\Platform\PlatformRequestType.g.cs" />
     <Compile Include="Networking\Platform\Requests\BuyItemAndroidRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\BuyItemPokeCoinsRequest.g.cs" />
+    <Compile Include="Networking\Platform\Requests\GetStoreItemsRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\SendEncryptedSignatureRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\UnknownPtr8Request.g.cs" />
     <Compile Include="Networking\Platform\Responses\BuyItemAndroidResponse.g.cs" />
