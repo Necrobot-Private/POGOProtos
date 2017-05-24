@@ -25,28 +25,28 @@ namespace POGOProtos.Networking.Platform.Responses {
             "CkRQT0dPUHJvdG9zL05ldHdvcmtpbmcvUGxhdGZvcm0vUmVzcG9uc2VzL0dl",
             "dFN0b3JlSXRlbXNSZXNwb25zZS5wcm90bxIoUE9HT1Byb3Rvcy5OZXR3b3Jr",
             "aW5nLlBsYXRmb3JtLlJlc3BvbnNlcxolUE9HT1Byb3Rvcy9EYXRhL1BsYXll",
-            "ci9DdXJyZW5jeS5wcm90byKJBgoVR2V0U3RvcmVJdGVtc1Jlc3BvbnNlElYK",
+            "ci9DdXJyZW5jeS5wcm90byKFBgoVR2V0U3RvcmVJdGVtc1Jlc3BvbnNlElYK",
             "BnN0YXR1cxgBIAEoDjJGLlBPR09Qcm90b3MuTmV0d29ya2luZy5QbGF0Zm9y",
             "bS5SZXNwb25zZXMuR2V0U3RvcmVJdGVtc1Jlc3BvbnNlLlN0YXR1cxJYCgVp",
             "dGVtcxgCIAMoCzJJLlBPR09Qcm90b3MuTmV0d29ya2luZy5QbGF0Zm9ybS5S",
             "ZXNwb25zZXMuR2V0U3RvcmVJdGVtc1Jlc3BvbnNlLlN0b3JlSXRlbRI7ChFw",
             "bGF5ZXJfY3VycmVuY2llcxgDIAMoCzIgLlBPR09Qcm90b3MuRGF0YS5QbGF5",
-            "ZXIuQ3VycmVuY3kSEAoIdW5rbm93bjQYBCABKAka8QIKCVN0b3JlSXRlbRIP",
-            "CgdpdGVtX2lkGAEgASgJEg4KBmlzX2lhcBgCIAEoCBI5Cg9jdXJyZW5jeV90",
-            "b19idXkYAyABKAsyIC5QT0dPUHJvdG9zLkRhdGEuUGxheWVyLkN1cnJlbmN5",
-            "EjkKD3lpZWxkc19jdXJyZW5jeRgEIAEoCzIgLlBPR09Qcm90b3MuRGF0YS5Q",
-            "bGF5ZXIuQ3VycmVuY3kSYgoLeWllbGRzX2l0ZW0YBSABKAsyTS5QT0dPUHJv",
-            "dG9zLk5ldHdvcmtpbmcuUGxhdGZvcm0uUmVzcG9uc2VzLkdldFN0b3JlSXRl",
-            "bXNSZXNwb25zZS5TdG9yZUl0ZW1JbmZvElcKBHRhZ3MYBiADKAsySS5QT0dP",
-            "UHJvdG9zLk5ldHdvcmtpbmcuUGxhdGZvcm0uUmVzcG9uc2VzLkdldFN0b3Jl",
-            "SXRlbXNSZXNwb25zZS5TdG9yZVRhZ3MSEAoIdW5rbm93bjcYByABKAUaJwoJ",
-            "U3RvcmVUYWdzEgsKA3RhZxgBIAEoCRINCgV2YWx1ZRgCIAEoCRovCg1TdG9y",
-            "ZUl0ZW1JbmZvEg8KB2l0ZW1faWQYASABKAkSDQoFY291bnQYAiABKAUiIQoG",
-            "U3RhdHVzEg0KCVVOREVGSU5FRBAAEggKBE9LQVkQAWIGcHJvdG8z"));
+            "ZXIuQ3VycmVuY3kSDAoEaGFzaBgEIAEoCRrxAgoJU3RvcmVJdGVtEg8KB2l0",
+            "ZW1faWQYASABKAkSDgoGaXNfaWFwGAIgASgIEjkKD2N1cnJlbmN5X3RvX2J1",
+            "eRgDIAEoCzIgLlBPR09Qcm90b3MuRGF0YS5QbGF5ZXIuQ3VycmVuY3kSOQoP",
+            "eWllbGRzX2N1cnJlbmN5GAQgASgLMiAuUE9HT1Byb3Rvcy5EYXRhLlBsYXll",
+            "ci5DdXJyZW5jeRJiCgt5aWVsZHNfaXRlbRgFIAEoCzJNLlBPR09Qcm90b3Mu",
+            "TmV0d29ya2luZy5QbGF0Zm9ybS5SZXNwb25zZXMuR2V0U3RvcmVJdGVtc1Jl",
+            "c3BvbnNlLlN0b3JlSXRlbUluZm8SVwoEdGFncxgGIAMoCzJJLlBPR09Qcm90",
+            "b3MuTmV0d29ya2luZy5QbGF0Zm9ybS5SZXNwb25zZXMuR2V0U3RvcmVJdGVt",
+            "c1Jlc3BvbnNlLlN0b3JlVGFncxIQCgh1bmtub3duNxgHIAEoBRonCglTdG9y",
+            "ZVRhZ3MSCwoDdGFnGAEgASgJEg0KBXZhbHVlGAIgASgJGi8KDVN0b3JlSXRl",
+            "bUluZm8SDwoHaXRlbV9pZBgBIAEoCRINCgVjb3VudBgCIAEoBSIhCgZTdGF0",
+            "dXMSDQoJVU5ERUZJTkVEEAASCAoET0tBWRABYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.CurrencyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Parser, new[]{ "Status", "Items", "PlayerCurrencies", "Unknown4" }, null, new[]{ typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem.Parser, new[]{ "ItemId", "IsIap", "CurrencyToBuy", "YieldsCurrency", "YieldsItem", "Tags", "Unknown7" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Parser, new[]{ "Status", "Items", "PlayerCurrencies", "Hash" }, null, new[]{ typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem.Parser, new[]{ "ItemId", "IsIap", "CurrencyToBuy", "YieldsCurrency", "YieldsItem", "Tags", "Unknown7" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreTags), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreTags.Parser, new[]{ "Tag", "Value" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItemInfo), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItemInfo.Parser, new[]{ "ItemId", "Count" }, null, null, null)})
           }));
@@ -82,7 +82,7 @@ namespace POGOProtos.Networking.Platform.Responses {
       status_ = other.status_;
       items_ = other.items_.Clone();
       playerCurrencies_ = other.playerCurrencies_.Clone();
-      unknown4_ = other.unknown4_;
+      hash_ = other.hash_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -130,17 +130,17 @@ namespace POGOProtos.Networking.Platform.Responses {
       get { return playerCurrencies_; }
     }
 
-    /// <summary>Field number for the "unknown4" field.</summary>
-    public const int Unknown4FieldNumber = 4;
-    private string unknown4_ = "";
+    /// <summary>Field number for the "hash" field.</summary>
+    public const int HashFieldNumber = 4;
+    private string hash_ = "";
     /// <summary>
-    /// Some base64 encoded stuff... (Developer payload?)
+    /// hash?
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Unknown4 {
-      get { return unknown4_; }
+    public string Hash {
+      get { return hash_; }
       set {
-        unknown4_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        hash_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -160,7 +160,7 @@ namespace POGOProtos.Networking.Platform.Responses {
       if (Status != other.Status) return false;
       if(!items_.Equals(other.items_)) return false;
       if(!playerCurrencies_.Equals(other.playerCurrencies_)) return false;
-      if (Unknown4 != other.Unknown4) return false;
+      if (Hash != other.Hash) return false;
       return true;
     }
 
@@ -170,7 +170,7 @@ namespace POGOProtos.Networking.Platform.Responses {
       if (Status != 0) hash ^= Status.GetHashCode();
       hash ^= items_.GetHashCode();
       hash ^= playerCurrencies_.GetHashCode();
-      if (Unknown4.Length != 0) hash ^= Unknown4.GetHashCode();
+      if (Hash.Length != 0) hash ^= Hash.GetHashCode();
       return hash;
     }
 
@@ -187,9 +187,9 @@ namespace POGOProtos.Networking.Platform.Responses {
       }
       items_.WriteTo(output, _repeated_items_codec);
       playerCurrencies_.WriteTo(output, _repeated_playerCurrencies_codec);
-      if (Unknown4.Length != 0) {
+      if (Hash.Length != 0) {
         output.WriteRawTag(34);
-        output.WriteString(Unknown4);
+        output.WriteString(Hash);
       }
     }
 
@@ -201,8 +201,8 @@ namespace POGOProtos.Networking.Platform.Responses {
       }
       size += items_.CalculateSize(_repeated_items_codec);
       size += playerCurrencies_.CalculateSize(_repeated_playerCurrencies_codec);
-      if (Unknown4.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Unknown4);
+      if (Hash.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Hash);
       }
       return size;
     }
@@ -217,8 +217,8 @@ namespace POGOProtos.Networking.Platform.Responses {
       }
       items_.Add(other.items_);
       playerCurrencies_.Add(other.playerCurrencies_);
-      if (other.Unknown4.Length != 0) {
-        Unknown4 = other.Unknown4;
+      if (other.Hash.Length != 0) {
+        Hash = other.Hash;
       }
     }
 
@@ -243,7 +243,7 @@ namespace POGOProtos.Networking.Platform.Responses {
             break;
           }
           case 34: {
-            Unknown4 = input.ReadString();
+            Hash = input.ReadString();
             break;
           }
         }
