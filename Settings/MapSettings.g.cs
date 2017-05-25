@@ -4,13 +4,12 @@
 #region Designer generated code
 
 using pb = global::Google.Protobuf;
-using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
-using scg = global::System.Collections.Generic;
-namespace POGOProtos.Settings {
+namespace POGOProtos.Settings
+{
 
-  /// <summary>Holder for reflection information generated from POGOProtos/Settings/MapSettings.proto</summary>
-  public static partial class MapSettingsReflection {
+    /// <summary>Holder for reflection information generated from POGOProtos/Settings/MapSettings.proto</summary>
+    public static partial class MapSettingsReflection {
 
     #region Descriptor
     /// <summary>File descriptor for POGOProtos/Settings/MapSettings.proto</summary>
