@@ -243,7 +243,6 @@
     <Compile Include="Networking\Requests\Messages\GetDownloadUrlsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetGymBadgeDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetGymDetailsMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GetGymInfoMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetHatchedEggsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetInboxMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetIncensePokemonMessage.g.cs" />
@@ -251,6 +250,7 @@
     <Compile Include="Networking\Requests\Messages\GetMapObjectsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerProfileMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\GymGetInfoMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\IncenseEncounterMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\LevelUpRewardsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ListAvatarCustomizationsMessage.g.cs" />
@@ -310,7 +310,6 @@
     <Compile Include="Networking\Responses\GetDownloadUrlsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetGymBadgeDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetGymDetailsResponse.g.cs" />
-    <Compile Include="Networking\Responses\GetGymInfoResponse.g.cs" />
     <Compile Include="Networking\Responses\GetHatchedEggsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetInboxResponse.g.cs" />
     <Compile Include="Networking\Responses\GetIncensePokemonResponse.g.cs" />
@@ -318,6 +317,7 @@
     <Compile Include="Networking\Responses\GetMapObjectsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerProfileResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerResponse.g.cs" />
+    <Compile Include="Networking\Responses\GymGetInfoResponse.g.cs" />
     <Compile Include="Networking\Responses\IncenseEncounterResponse.g.cs" />
     <Compile Include="Networking\Responses\LevelUpRewardsResponse.g.cs" />
     <Compile Include="Networking\Responses\ListAvatarCustomizationsResponse.g.cs" />
