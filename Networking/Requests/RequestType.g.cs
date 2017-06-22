@@ -23,7 +23,7 @@ namespace POGOProtos.Networking.Requests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
-            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyr5CwoLUmVx",
+            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyriDgoLUmVx",
             "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASDgoKR0VUX1BMQVlFUhACEhEK",
             "DUdFVF9JTlZFTlRPUlkQBBIVChFET1dOTE9BRF9TRVRUSU5HUxAFEhsKF0RP",
             "V05MT0FEX0lURU1fVEVNUExBVEVTEAYSIgoeRE9XTkxPQURfUkVNT1RFX0NP",
@@ -48,17 +48,25 @@ namespace POGOProtos.Networking.Requests {
             "UklURV9QT0tFTU9OEJQBEhUKEE5JQ0tOQU1FX1BPS0VNT04QlQESEAoLRVFV",
             "SVBfQkFER0UQlgESGQoUU0VUX0NPTlRBQ1RfU0VUVElOR1MQlwESFgoRU0VU",
             "X0JVRERZX1BPS0VNT04QmAESFQoQR0VUX0JVRERZX1dBTEtFRBCZARIXChJV",
-            "U0VfSVRFTV9FTkNPVU5URVIQmgESFQoQR0VUX0FTU0VUX0RJR0VTVBCsAhIW",
-            "ChFHRVRfRE9XTkxPQURfVVJMUxCtAhITCg5DTEFJTV9DT0RFTkFNRRCTAxIP",
-            "CgpTRVRfQVZBVEFSEJQDEhQKD1NFVF9QTEFZRVJfVEVBTRCVAxIbChZNQVJL",
-            "X1RVVE9SSUFMX0NPTVBMRVRFEJYDEhQKD0NIRUNLX0NIQUxMRU5HRRDYBBIV",
-            "ChBWRVJJRllfQ0hBTExFTkdFENkEEgkKBEVDSE8QmgUSFwoSU0ZJREFfUkVH",
-            "SVNUUkFUSU9OEKAGEhUKEFNGSURBX0FDVElPTl9MT0cQoQYSGAoTU0ZJREFf",
-            "Q0VSVElGSUNBVElPThCiBhIRCgxTRklEQV9VUERBVEUQowYSEQoMU0ZJREFf",
-            "QUNUSU9OEKQGEhEKDFNGSURBX0RPV1NFUhClBhISCg1TRklEQV9DQVBUVVJF",
-            "EKYGEh8KGkxJU1RfQVZBVEFSX0NVU1RPTUlaQVRJT05TEKcGEh4KGVNFVF9B",
-            "VkFUQVJfSVRFTV9BU19WSUVXRUQQqAYSDgoJR0VUX0lOQk9YEKkGYgZwcm90",
-            "bzM="));
+            "U0VfSVRFTV9FTkNPVU5URVIQmgESDwoKR1lNX0RFUExPWRCbARIRCgxHWU1f",
+            "R0VUX0lORk8QnAESFgoRR1lNX1NUQVJUX1NFU1NJT04QnQESFgoRR1lNX0JB",
+            "VFRMRV9BVFRBQ0sQngESDwoKSk9JTl9MT0JCWRCfARIQCgtMRUFWRV9MT0JC",
+            "WRCgARIZChRTRVRfTE9CQllfVklTSUJJTElUWRChARIWChFTRVRfTE9CQllf",
+            "UE9LRU1PThCiARIVChBHRVRfUkFJRF9ERVRBSUxTEKMBEhUKEEdZTV9GRUVE",
+            "X1BPS0VNT04QpAESFgoRU1RBUlRfUkFJRF9CQVRUTEUQpQESEAoLQVRUQUNL",
+            "X1JBSUQQpgESFQoQR0VUX0FTU0VUX0RJR0VTVBCsAhIWChFHRVRfRE9XTkxP",
+            "QURfVVJMUxCtAhITCg5DTEFJTV9DT0RFTkFNRRCTAxIPCgpTRVRfQVZBVEFS",
+            "EJQDEhQKD1NFVF9QTEFZRVJfVEVBTRCVAxIbChZNQVJLX1RVVE9SSUFMX0NP",
+            "TVBMRVRFEJYDEhQKD0NIRUNLX0NIQUxMRU5HRRDYBBIVChBWRVJJRllfQ0hB",
+            "TExFTkdFENkEEgkKBEVDSE8QmgUSFwoSU0ZJREFfUkVHSVNUUkFUSU9OEKAG",
+            "EhUKEFNGSURBX0FDVElPTl9MT0cQoQYSGAoTU0ZJREFfQ0VSVElGSUNBVElP",
+            "ThCiBhIRCgxTRklEQV9VUERBVEUQowYSEQoMU0ZJREFfQUNUSU9OEKQGEhEK",
+            "DFNGSURBX0RPV1NFUhClBhISCg1TRklEQV9DQVBUVVJFEKYGEh8KGkxJU1Rf",
+            "QVZBVEFSX0NVU1RPTUlaQVRJT05TEKcGEh4KGVNFVF9BVkFUQVJfSVRFTV9B",
+            "U19WSUVXRUQQqAYSDgoJR0VUX0lOQk9YEKkGEhQKD0xJU1RfR1lNX0JBREdF",
+            "UxCrBhIaChVHRVRfR1lNX0JBREdFX0RFVEFJTFMQrAYSGQoUVVNFX0lURU1f",
+            "TU9WRV9SRVJPTEwQrQYSGAoTVVNFX0lURU1fUkFSRV9DQU5EWRCuBmIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Networking.Requests.RequestType), }, null));
@@ -257,6 +265,54 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("USE_ITEM_ENCOUNTER")] UseItemEncounter = 154,
     /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("GYM_DEPLOY")] GymDeploy = 155,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GYM_GET_INFO")] GymGetInfo = 156,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("GYM_START_SESSION")] GymStartSession = 157,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("GYM_BATTLE_ATTACK")] GymBattleAttack = 158,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("JOIN_LOBBY")] JoinLobby = 159,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("LEAVE_LOBBY")] LeaveLobby = 160,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("SET_LOBBY_VISIBILITY")] SetLobbyVisibility = 161,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("SET_LOBBY_POKEMON")] SetLobbyPokemon = 162,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("GET_RAID_DETAILS")] GetRaidDetails = 163,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("GYM_FEED_POKEMON")] GymFeedPokemon = 164,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("START_RAID_BATTLE")] StartRaidBattle = 165,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("ATTACK_RAID")] AttackRaid = 166,
+    /// <summary>
     /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_ASSET_DIGEST")] GetAssetDigest = 300,
@@ -293,7 +349,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("ECHO")] Echo = 666,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SFIDA_REGISTRATION")] SfidaRegistration = 800,
     /// <summary>
@@ -332,6 +388,22 @@ namespace POGOProtos.Networking.Requests {
     /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_INBOX")] GetInbox = 809,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("LIST_GYM_BADGES")] ListGymBadges = 811,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_GYM_BADGE_DETAILS")] GetGymBadgeDetails = 812,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("USE_ITEM_MOVE_REROLL")] UseItemMoveReroll = 813,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
+    [pbr::OriginalName("USE_ITEM_RARE_CANDY")] UseItemRareCandy = 814,
   }
 
   #endregion
