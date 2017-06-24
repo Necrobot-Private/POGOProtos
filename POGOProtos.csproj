@@ -257,6 +257,7 @@
     <Compile Include="Networking\Requests\Messages\ListGymBadgesMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\MarkTutorialCompleteMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\NicknamePokemonMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\PlatformClientActionsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\PushNotificationRegistryMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RecycleInventoryItemMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RegisterBackgroundDeviceMessage.g.cs" />
@@ -324,6 +325,7 @@
     <Compile Include="Networking\Responses\ListGymBadgesResponse.g.cs" />
     <Compile Include="Networking\Responses\MarkTutorialCompleteResponse.g.cs" />
     <Compile Include="Networking\Responses\NicknamePokemonResponse.g.cs" />
+    <Compile Include="Networking\Responses\PlatformClientActionsResponse.g.cs" />
     <Compile Include="Networking\Responses\PushNotificationRegistryResponse.g.cs" />
     <Compile Include="Networking\Responses\RecycleInventoryItemResponse.g.cs" />
     <Compile Include="Networking\Responses\RegisterBackgroundDeviceResponse.g.cs" />
