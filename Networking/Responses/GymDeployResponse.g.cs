@@ -26,13 +26,13 @@ namespace POGOProtos.Networking.Responses {
             "c3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2Vz",
             "Gi9QT0dPUHJvdG9zL0RhdGEvR3ltL0d5bVN0YXR1c0FuZERlZmVuZGVycy5w",
             "cm90bxorUE9HT1Byb3Rvcy9EYXRhL0JhZGdlL0F3YXJkZWRHeW1CYWRnZS5w",
-            "cm90byLQBQoRR3ltRGVwbG95UmVzcG9uc2USSQoGcmVzdWx0GAEgASgOMjku",
+            "cm90byLdBgoRR3ltRGVwbG95UmVzcG9uc2USSQoGcmVzdWx0GAEgASgOMjku",
             "UE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNlcy5HeW1EZXBsb3lSZXNw",
             "b25zZS5SZXN1bHQSTAoYZ3ltX3N0YXR1c19hbmRfZGVmZW5kZXJzGAIgASgL",
             "MiouUE9HT1Byb3Rvcy5EYXRhLkd5bS5HeW1TdGF0dXNBbmREZWZlbmRlcnMS",
             "QQoRYXdhcmRlZF9neW1fYmFkZ2UYAyABKAsyJi5QT0dPUHJvdG9zLkRhdGEu",
             "QmFkZ2UuQXdhcmRlZEd5bUJhZGdlEiYKHmNvb2xkb3duX2NvbXBsZXRlX3Rp",
-            "bWVzdGFtcF9tcxgEIAEoAyK2AwoGUmVzdWx0EhEKDU5PX1JFU1VMVF9TRVQQ",
+            "bWVzdGFtcF9tcxgEIAEoAyLDBAoGUmVzdWx0EhEKDU5PX1JFU1VMVF9TRVQQ",
             "ABILCgdTVUNDRVNTEAESJQohRVJST1JfQUxSRUFEWV9IQVNfUE9LRU1PTl9P",
             "Tl9GT1JUEAISIQodRVJST1JfT1BQT1NJTkdfVEVBTV9PV05TX0ZPUlQQAxIW",
             "ChJFUlJPUl9GT1JUX0lTX0ZVTEwQBBIWChJFUlJPUl9OT1RfSU5fUkFOR0UQ",
@@ -40,9 +40,12 @@ namespace POGOProtos.Networking.Responses {
             "TU9OX05PVF9GVUxMX0hQEAcSJAogRVJST1JfUExBWUVSX0JFTE9XX01JTklN",
             "VU1fTEVWRUwQCBIaChZFUlJPUl9QT0tFTU9OX0lTX0JVRERZEAkSHQoZRVJS",
             "T1JfRk9SVF9ERVBMT1lfTE9DS09VVBAKEiAKHEVSUk9SX1BMQVlFUl9IQVNf",
-            "Tk9fTklDS05BTUUQCxIaChZFUlJPUl9QT0lfSU5BQ0NFU1NJQkxFEAwSGwoX",
-            "RVJST1JfTEVHRU5EQVJZX1BPS0VNT04QDRIZChVFUlJPUl9JTlZBTElEX1BP",
-            "S0VNT04QDmIGcHJvdG8z"));
+            "Tk9fTklDS05BTUUQCxIaChZFUlJPUl9QT0lfSU5BQ0NFU1NJQkxFEAwSFwoT",
+            "RVJST1JfTk9UX0FfUE9LRU1PThANEh8KG0VSUk9SX1RPT19NQU5ZX09GX1NB",
+            "TUVfS0lORBAOEhsKF0VSUk9SX1RPT19NQU5ZX0RFUExPWUVEEA8SHQoZRVJS",
+            "T1JfVEVBTV9ERVBMT1lfTE9DS09VVBAQEhsKF0VSUk9SX0xFR0VOREFSWV9Q",
+            "T0tFTU9OEBESGQoVRVJST1JfSU5WQUxJRF9QT0tFTU9OEBISFQoRRVJST1Jf",
+            "UkFJRF9BQ1RJVkUQE2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Gym.GymStatusAndDefendersReflection.Descriptor, global::POGOProtos.Data.Badge.AwardedGymBadgeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -282,8 +285,13 @@ namespace POGOProtos.Networking.Responses {
         [pbr::OriginalName("ERROR_FORT_DEPLOY_LOCKOUT")] ErrorFortDeployLockout = 10,
         [pbr::OriginalName("ERROR_PLAYER_HAS_NO_NICKNAME")] ErrorPlayerHasNoNickname = 11,
         [pbr::OriginalName("ERROR_POI_INACCESSIBLE")] ErrorPoiInaccessible = 12,
-        [pbr::OriginalName("ERROR_LEGENDARY_POKEMON")] ErrorLegendaryPokemon = 13,
-        [pbr::OriginalName("ERROR_INVALID_POKEMON")] ErrorInvalidPokemon = 14,
+        [pbr::OriginalName("ERROR_NOT_A_POKEMON")] ErrorNotAPokemon = 13,
+        [pbr::OriginalName("ERROR_TOO_MANY_OF_SAME_KIND")] ErrorTooManyOfSameKind = 14,
+        [pbr::OriginalName("ERROR_TOO_MANY_DEPLOYED")] ErrorTooManyDeployed = 15,
+        [pbr::OriginalName("ERROR_TEAM_DEPLOY_LOCKOUT")] ErrorTeamDeployLockout = 16,
+        [pbr::OriginalName("ERROR_LEGENDARY_POKEMON")] ErrorLegendaryPokemon = 17,
+        [pbr::OriginalName("ERROR_INVALID_POKEMON")] ErrorInvalidPokemon = 18,
+        [pbr::OriginalName("ERROR_RAID_ACTIVE")] ErrorRaidActive = 19,
       }
 
     }

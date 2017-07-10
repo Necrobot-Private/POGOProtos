@@ -251,6 +251,7 @@
     <Compile Include="Networking\Requests\Messages\GetPlayerMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerProfileMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymDeployMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\GymFeedPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymGetInfoMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\IncenseEncounterMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\LevelUpRewardsMessage.g.cs" />
@@ -320,6 +321,7 @@
     <Compile Include="Networking\Responses\GetPlayerProfileResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerResponse.g.cs" />
     <Compile Include="Networking\Responses\GymDeployResponse.g.cs" />
+    <Compile Include="Networking\Responses\GymFeedPokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\GymGetInfoResponse.g.cs" />
     <Compile Include="Networking\Responses\IncenseEncounterResponse.g.cs" />
     <Compile Include="Networking\Responses\LevelUpRewardsResponse.g.cs" />
