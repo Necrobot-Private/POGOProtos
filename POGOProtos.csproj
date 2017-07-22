@@ -128,6 +128,7 @@
     <Compile Include="Data\PokemonDisplay.g.cs" />
     <Compile Include="Data\Quests\DailyQuest.g.cs" />
     <Compile Include="Data\Quests\Quest.g.cs" />
+    <Compile Include="Data\Raid\EventInfo.g.cs" />
     <Compile Include="Data\Raid\PlayerRaidInfo.g.cs" />
     <Compile Include="Data\Raid\Raid.g.cs" />
     <Compile Include="Data\Raid\RaidInfo.g.cs" />

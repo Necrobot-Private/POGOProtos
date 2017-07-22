@@ -180,19 +180,19 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("CHECK_AWARDED_BADGES")] CheckAwardedBadges = 129,
     /// <summary>
-    /// Implemented [R &amp; M]
+    /// Removed
     /// </summary>
     [pbr::OriginalName("USE_ITEM_GYM")] UseItemGym = 133,
     /// <summary>
-    /// Implemented [R &amp; M]
+    /// Removed
     /// </summary>
     [pbr::OriginalName("GET_GYM_DETAILS")] GetGymDetails = 134,
     /// <summary>
-    /// Implemented [R &amp; M]
+    /// Removed
     /// </summary>
     [pbr::OriginalName("START_GYM_BATTLE")] StartGymBattle = 135,
     /// <summary>
-    /// Implemented [R &amp; M]
+    /// Removed
     /// </summary>
     [pbr::OriginalName("ATTACK_GYM")] AttackGym = 136,
     /// <summary>
@@ -232,7 +232,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("DISK_ENCOUNTER")] DiskEncounter = 145,
     /// <summary>
-    /// Implemented [R &amp; M]
+    /// Removed
     /// </summary>
     [pbr::OriginalName("COLLECT_DAILY_DEFENDER_BONUS")] CollectDailyDefenderBonus = 146,
     /// <summary>
