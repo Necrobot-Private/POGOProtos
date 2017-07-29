@@ -25,11 +25,13 @@ namespace POGOProtos.Networking.Requests.Messages {
             "CkVQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvTWVzc2FnZXMvVXNl",
             "SXRlbVJhcmVDYW5keU1lc3NhZ2UucHJvdG8SJ1BPR09Qcm90b3MuTmV0d29y",
             "a2luZy5SZXF1ZXN0cy5NZXNzYWdlcxomUE9HT1Byb3Rvcy9JbnZlbnRvcnkv",
-            "SXRlbS9JdGVtSWQucHJvdG8iYQoXVXNlSXRlbVJhcmVDYW5keU1lc3NhZ2US",
-            "MgoHaXRlbV9pZBgBIAEoDjIhLlBPR09Qcm90b3MuSW52ZW50b3J5Lkl0ZW0u",
-            "SXRlbUlkEhIKCnBva2Vtb25faWQYAiABKAZiBnByb3RvMw=="));
+            "SXRlbS9JdGVtSWQucHJvdG8aIFBPR09Qcm90b3MvRW51bXMvUG9rZW1vbklk",
+            "LnByb3RvIn4KF1VzZUl0ZW1SYXJlQ2FuZHlNZXNzYWdlEjIKB2l0ZW1faWQY",
+            "ASABKA4yIS5QT0dPUHJvdG9zLkludmVudG9yeS5JdGVtLkl0ZW1JZBIvCgpw",
+            "b2tlbW9uX2lkGAIgASgOMhsuUE9HT1Byb3Rvcy5FbnVtcy5Qb2tlbW9uSWRi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.UseItemRareCandyMessage), global::POGOProtos.Networking.Requests.Messages.UseItemRareCandyMessage.Parser, new[]{ "ItemId", "PokemonId" }, null, null, null)
           }));
@@ -84,9 +86,9 @@ namespace POGOProtos.Networking.Requests.Messages {
 
     /// <summary>Field number for the "pokemon_id" field.</summary>
     public const int PokemonIdFieldNumber = 2;
-    private ulong pokemonId_;
+    private global::POGOProtos.Enums.PokemonId pokemonId_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong PokemonId {
+    public global::POGOProtos.Enums.PokemonId PokemonId {
       get { return pokemonId_; }
       set {
         pokemonId_ = value;
@@ -115,7 +117,7 @@ namespace POGOProtos.Networking.Requests.Messages {
     public override int GetHashCode() {
       int hash = 1;
       if (ItemId != 0) hash ^= ItemId.GetHashCode();
-      if (PokemonId != 0UL) hash ^= PokemonId.GetHashCode();
+      if (PokemonId != 0) hash ^= PokemonId.GetHashCode();
       return hash;
     }
 
@@ -130,9 +132,9 @@ namespace POGOProtos.Networking.Requests.Messages {
         output.WriteRawTag(8);
         output.WriteEnum((int) ItemId);
       }
-      if (PokemonId != 0UL) {
-        output.WriteRawTag(17);
-        output.WriteFixed64(PokemonId);
+      if (PokemonId != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) PokemonId);
       }
     }
 
@@ -142,8 +144,8 @@ namespace POGOProtos.Networking.Requests.Messages {
       if (ItemId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ItemId);
       }
-      if (PokemonId != 0UL) {
-        size += 1 + 8;
+      if (PokemonId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PokemonId);
       }
       return size;
     }
@@ -156,7 +158,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       if (other.ItemId != 0) {
         ItemId = other.ItemId;
       }
-      if (other.PokemonId != 0UL) {
+      if (other.PokemonId != 0) {
         PokemonId = other.PokemonId;
       }
     }
@@ -173,8 +175,8 @@ namespace POGOProtos.Networking.Requests.Messages {
             itemId_ = (global::POGOProtos.Inventory.Item.ItemId) input.ReadEnum();
             break;
           }
-          case 17: {
-            PokemonId = input.ReadFixed64();
+          case 16: {
+            pokemonId_ = (global::POGOProtos.Enums.PokemonId) input.ReadEnum();
             break;
           }
         }
