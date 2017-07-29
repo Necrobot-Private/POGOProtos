@@ -24,17 +24,19 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "Cj5QT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL1VzZUl0ZW1SYXJl",
             "Q2FuZHlSZXNwb25zZS5wcm90bxIfUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJl",
-            "c3BvbnNlcyKWAgoYVXNlSXRlbVJhcmVDYW5keVJlc3BvbnNlElAKBnJlc3Vs",
-            "dBgBIAEoDjJALlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXNwb25zZXMuVXNl",
-            "SXRlbVJhcmVDYW5keVJlc3BvbnNlLlJlc3VsdBISCgpwb2tlbW9uX2lkGAIg",
-            "ASgGEhsKE3VwZGF0ZWRfY2FuZHlfY291bnQYAyABKAUidwoGUmVzdWx0EgkK",
-            "BVVOU0VUEAASCwoHU1VDQ0VTUxABEhYKEklOVkFMSURfUE9LRU1PTl9JRBAC",
-            "Eg0KCU5PX1BMQVlFUhADEhMKD1dST05HX0lURU1fVFlQRRAEEhkKFUlURU1f",
-            "Tk9UX0lOX0lOVkVOVE9SWRAFYgZwcm90bzM="));
+            "c3BvbnNlcxohUE9HT1Byb3Rvcy9EYXRhL1Bva2Vtb25EYXRhLnByb3RvIroC",
+            "ChhVc2VJdGVtUmFyZUNhbmR5UmVzcG9uc2USUAoGcmVzdWx0GAEgASgOMkAu",
+            "UE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNlcy5Vc2VJdGVtUmFyZUNh",
+            "bmR5UmVzcG9uc2UuUmVzdWx0EjYKEHVwZ3JhZGVkX3Bva2Vtb24YAiABKAsy",
+            "HC5QT0dPUHJvdG9zLkRhdGEuUG9rZW1vbkRhdGESGwoTdXBkYXRlZF9jYW5k",
+            "eV9jb3VudBgDIAEoBSJ3CgZSZXN1bHQSCQoFVU5TRVQQABILCgdTVUNDRVNT",
+            "EAESFgoSSU5WQUxJRF9QT0tFTU9OX0lEEAISDQoJTk9fUExBWUVSEAMSEwoP",
+            "V1JPTkdfSVRFTV9UWVBFEAQSGQoVSVRFTV9OT1RfSU5fSU5WRU5UT1JZEAVi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.PokemonDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.UseItemRareCandyResponse), global::POGOProtos.Networking.Responses.UseItemRareCandyResponse.Parser, new[]{ "Result", "PokemonId", "UpdatedCandyCount" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.UseItemRareCandyResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.UseItemRareCandyResponse), global::POGOProtos.Networking.Responses.UseItemRareCandyResponse.Parser, new[]{ "Result", "UpgradedPokemon", "UpdatedCandyCount" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.UseItemRareCandyResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -66,7 +68,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UseItemRareCandyResponse(UseItemRareCandyResponse other) : this() {
       result_ = other.result_;
-      pokemonId_ = other.pokemonId_;
+      UpgradedPokemon = other.upgradedPokemon_ != null ? other.UpgradedPokemon.Clone() : null;
       updatedCandyCount_ = other.updatedCandyCount_;
     }
 
@@ -86,14 +88,14 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
-    /// <summary>Field number for the "pokemon_id" field.</summary>
-    public const int PokemonIdFieldNumber = 2;
-    private ulong pokemonId_;
+    /// <summary>Field number for the "upgraded_pokemon" field.</summary>
+    public const int UpgradedPokemonFieldNumber = 2;
+    private global::POGOProtos.Data.PokemonData upgradedPokemon_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong PokemonId {
-      get { return pokemonId_; }
+    public global::POGOProtos.Data.PokemonData UpgradedPokemon {
+      get { return upgradedPokemon_; }
       set {
-        pokemonId_ = value;
+        upgradedPokemon_ = value;
       }
     }
 
@@ -122,7 +124,7 @@ namespace POGOProtos.Networking.Responses {
         return true;
       }
       if (Result != other.Result) return false;
-      if (PokemonId != other.PokemonId) return false;
+      if (!object.Equals(UpgradedPokemon, other.UpgradedPokemon)) return false;
       if (UpdatedCandyCount != other.UpdatedCandyCount) return false;
       return true;
     }
@@ -131,7 +133,7 @@ namespace POGOProtos.Networking.Responses {
     public override int GetHashCode() {
       int hash = 1;
       if (Result != 0) hash ^= Result.GetHashCode();
-      if (PokemonId != 0UL) hash ^= PokemonId.GetHashCode();
+      if (upgradedPokemon_ != null) hash ^= UpgradedPokemon.GetHashCode();
       if (UpdatedCandyCount != 0) hash ^= UpdatedCandyCount.GetHashCode();
       return hash;
     }
@@ -147,9 +149,9 @@ namespace POGOProtos.Networking.Responses {
         output.WriteRawTag(8);
         output.WriteEnum((int) Result);
       }
-      if (PokemonId != 0UL) {
-        output.WriteRawTag(17);
-        output.WriteFixed64(PokemonId);
+      if (upgradedPokemon_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(UpgradedPokemon);
       }
       if (UpdatedCandyCount != 0) {
         output.WriteRawTag(24);
@@ -163,8 +165,8 @@ namespace POGOProtos.Networking.Responses {
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
       }
-      if (PokemonId != 0UL) {
-        size += 1 + 8;
+      if (upgradedPokemon_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpgradedPokemon);
       }
       if (UpdatedCandyCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UpdatedCandyCount);
@@ -180,8 +182,11 @@ namespace POGOProtos.Networking.Responses {
       if (other.Result != 0) {
         Result = other.Result;
       }
-      if (other.PokemonId != 0UL) {
-        PokemonId = other.PokemonId;
+      if (other.upgradedPokemon_ != null) {
+        if (upgradedPokemon_ == null) {
+          upgradedPokemon_ = new global::POGOProtos.Data.PokemonData();
+        }
+        UpgradedPokemon.MergeFrom(other.UpgradedPokemon);
       }
       if (other.UpdatedCandyCount != 0) {
         UpdatedCandyCount = other.UpdatedCandyCount;
@@ -200,8 +205,11 @@ namespace POGOProtos.Networking.Responses {
             result_ = (global::POGOProtos.Networking.Responses.UseItemRareCandyResponse.Types.Result) input.ReadEnum();
             break;
           }
-          case 17: {
-            PokemonId = input.ReadFixed64();
+          case 18: {
+            if (upgradedPokemon_ == null) {
+              upgradedPokemon_ = new global::POGOProtos.Data.PokemonData();
+            }
+            input.ReadMessage(upgradedPokemon_);
             break;
           }
           case 24: {
