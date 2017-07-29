@@ -268,7 +268,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("USE_ITEM_ENCOUNTER")] UseItemEncounter = 154,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GYM_DEPLOY")] GymDeploy = 155,
     /// <summary>
@@ -304,7 +304,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("GET_RAID_DETAILS")] GetRaidDetails = 163,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GYM_FEED_POKEMON")] GymFeedPokemon = 164,
     /// <summary>
@@ -400,11 +400,11 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("GET_GYM_BADGE_DETAILS")] GetGymBadgeDetails = 812,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_MOVE_REROLL")] UseItemMoveReroll = 813,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_RARE_CANDY")] UseItemRareCandy = 814,
     [pbr::OriginalName("REGISTER_PUSH_NOTIFICATION")] RegisterPushNotification = 5000,
