@@ -281,7 +281,9 @@
     <Compile Include="Networking\Requests\Messages\UseItemEggIncubatorMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemEncounterMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemGymMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\UseItemMoveRerollMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemPotionMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\UseItemRareCandyMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemReviveMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemXpBoostMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\VerifyChallengeMessage.g.cs" />
@@ -351,7 +353,9 @@
     <Compile Include="Networking\Responses\UseItemEggIncubatorResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemEncounterResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemGymResponse.g.cs" />
+    <Compile Include="Networking\Responses\UseItemMoveRerollResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemPotionResponse.g.cs" />
+    <Compile Include="Networking\Responses\UseItemRareCandyResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemReviveResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemXpBoostResponse.g.cs" />
     <Compile Include="Networking\Responses\VerifyChallengeResponse.g.cs" />
