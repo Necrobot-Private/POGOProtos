@@ -250,7 +250,7 @@
     <Compile Include="Networking\Requests\Messages\GetHatchedEggsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetInboxMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetIncensePokemonMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GetInventoryMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\GetHoloInventoryMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetMapObjectsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerProfileMessage.g.cs" />
@@ -323,7 +323,7 @@
     <Compile Include="Networking\Responses\GetHatchedEggsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetInboxResponse.g.cs" />
     <Compile Include="Networking\Responses\GetIncensePokemonResponse.g.cs" />
-    <Compile Include="Networking\Responses\GetInventoryResponse.g.cs" />
+    <Compile Include="Networking\Responses\GetHoloInventoryResponse.g.cs" />
     <Compile Include="Networking\Responses\GetMapObjectsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerProfileResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerResponse.g.cs" />
