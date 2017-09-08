@@ -67,8 +67,8 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Google.Protobuf, Version=3.3.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)\packages\Google.Protobuf.3.3.0\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf, Version=3.4.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\Google.Protobuf.3.4.0\lib\net451\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -222,6 +222,7 @@
     <Compile Include="Networking\Platform\Responses\UnknownPtr8Response.g.cs" />
     <Compile Include="Networking\Requests\Messages\AddFortModifierMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\AttackGymMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\AwardFreeRaidTicketMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CatchPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckAwardedBadgesMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckChallengeMessage.g.cs" />
@@ -293,6 +294,7 @@
     <Compile Include="Networking\Requests\RequestType.g.cs" />
     <Compile Include="Networking\Responses\AddFortModifierResponse.g.cs" />
     <Compile Include="Networking\Responses\AttackGymResponse.g.cs" />
+    <Compile Include="Networking\Responses\AwardFreeRaidTicketResponse.g.cs" />
     <Compile Include="Networking\Responses\CatchPokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\CheckAwardedBadgesResponse.g.cs" />
     <Compile Include="Networking\Responses\CheckChallengeResponse.g.cs" />

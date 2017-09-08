@@ -23,7 +23,7 @@ namespace POGOProtos.Networking.Requests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
-            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyrwDwoLUmVx",
+            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyqyEAoLUmVx",
             "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASDgoKR0VUX1BMQVlFUhACEhEK",
             "DUdFVF9JTlZFTlRPUlkQBBIVChFET1dOTE9BRF9TRVRUSU5HUxAFEhsKF0RP",
             "V05MT0FEX0lURU1fVEVNUExBVEVTEAYSIgoeRE9XTkxPQURfUkVNT1RFX0NP",
@@ -65,11 +65,12 @@ namespace POGOProtos.Networking.Requests {
             "QVZBVEFSX0NVU1RPTUlaQVRJT05TEKcGEh4KGVNFVF9BVkFUQVJfSVRFTV9B",
             "U19WSUVXRUQQqAYSDgoJR0VUX0lOQk9YEKkGEhQKD0xJU1RfR1lNX0JBREdF",
             "UxCrBhIaChVHRVRfR1lNX0JBREdFX0RFVEFJTFMQrAYSGQoUVVNFX0lURU1f",
-            "TU9WRV9SRVJPTEwQrQYSGAoTVVNFX0lURU1fUkFSRV9DQU5EWRCuBhIfChpS",
-            "RUdJU1RFUl9QVVNIX05PVElGSUNBVElPThCIJxIhChxVTlJFR0lTVEVSX1BV",
-            "U0hfTk9USUZJQ0FUSU9OEIknEh8KGlVQREFURV9OT1RJRklDQVRJT05fU1RB",
-            "VFVTEIonEicKIk9QVF9PVVRfUFVTSF9OT1RJRklDQVRJT05fQ0FURUdPUlkQ",
-            "iydiBnByb3RvMw=="));
+            "TU9WRV9SRVJPTEwQrQYSGAoTVVNFX0lURU1fUkFSRV9DQU5EWRCuBhIbChZB",
+            "V0FSRF9GUkVFX1JBSURfVElDS0VUEK8GEh8KGlJFR0lTVEVSX1BVU0hfTk9U",
+            "SUZJQ0FUSU9OEIgnEiEKHFVOUkVHSVNURVJfUFVTSF9OT1RJRklDQVRJT04Q",
+            "iScSHwoaVVBEQVRFX05PVElGSUNBVElPTl9TVEFUVVMQiicSJwoiT1BUX09V",
+            "VF9QVVNIX05PVElGSUNBVElPTl9DQVRFR09SWRCLJxIjCh5ET1dOTE9BRF9H",
+            "QU1FX01BU1RFUl9URU1QTEFURVMQjCdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Networking.Requests.RequestType), }, null));
@@ -407,10 +408,18 @@ namespace POGOProtos.Networking.Requests {
     /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_RARE_CANDY")] UseItemRareCandy = 814,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("AWARD_FREE_RAID_TICKET")] AwardFreeRaidTicket = 815,
     [pbr::OriginalName("REGISTER_PUSH_NOTIFICATION")] RegisterPushNotification = 5000,
     [pbr::OriginalName("UNREGISTER_PUSH_NOTIFICATION")] UnregisterPushNotification = 5001,
     [pbr::OriginalName("UPDATE_NOTIFICATION_STATUS")] UpdateNotificationStatus = 5002,
     [pbr::OriginalName("OPT_OUT_PUSH_NOTIFICATION_CATEGORY")] OptOutPushNotificationCategory = 5003,
+    /// <summary>
+    ///GET_INVENTORY = 5005;
+    /// </summary>
+    [pbr::OriginalName("DOWNLOAD_GAME_MASTER_TEMPLATES")] DownloadGameMasterTemplates = 5004,
   }
 
   #endregion
