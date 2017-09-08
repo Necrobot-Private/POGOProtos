@@ -302,7 +302,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("SET_LOBBY_POKEMON")] SetLobbyPokemon = 162,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_RAID_DETAILS")] GetRaidDetails = 163,
     /// <summary>
@@ -410,7 +410,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("USE_ITEM_RARE_CANDY")] UseItemRareCandy = 814,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("AWARD_FREE_RAID_TICKET")] AwardFreeRaidTicket = 815,
     [pbr::OriginalName("REGISTER_PUSH_NOTIFICATION")] RegisterPushNotification = 5000,
