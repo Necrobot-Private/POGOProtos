@@ -304,7 +304,6 @@
     <Compile Include="Networking\Responses\CatchPokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\CheckAwardedBadgesResponse.g.cs" />
     <Compile Include="Networking\Responses\CheckChallengeResponse.g.cs" />
-    <Compile Include="Networking\Responses\CheckCodenameAvailableResponse.g.cs" />
     <Compile Include="Networking\Responses\ClaimCodenameResponse.g.cs" />
     <Compile Include="Networking\Responses\CollectDailyBonusResponse.g.cs" />
     <Compile Include="Networking\Responses\CollectDailyDefenderBonusResponse.g.cs" />
