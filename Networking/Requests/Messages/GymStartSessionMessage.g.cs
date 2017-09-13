@@ -26,7 +26,7 @@ namespace POGOProtos.Networking.Requests.Messages {
             "U3RhcnRTZXNzaW9uTWVzc2FnZS5wcm90bxInUE9HT1Byb3Rvcy5OZXR3b3Jr",
             "aW5nLlJlcXVlc3RzLk1lc3NhZ2VzIpwBChZHeW1TdGFydFNlc3Npb25NZXNz",
             "YWdlEg4KBmd5bV9pZBgBIAEoCRIcChRhdHRhY2tpbmdfcG9rZW1vbl9pZBgC",
-            "IAMoAxIcChRkZWZlbmRpbmdfcG9rZW1vbl9pZBgDIAEoAxIaChJwbGF5ZXJf",
+            "IAMoBhIcChRkZWZlbmRpbmdfcG9rZW1vbl9pZBgDIAEoBhIaChJwbGF5ZXJf",
             "bGF0X2RlZ3JlZXMYBCABKAESGgoScGxheWVyX2xuZ19kZWdyZWVzGAUgASgB",
             "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
@@ -88,19 +88,19 @@ namespace POGOProtos.Networking.Requests.Messages {
 
     /// <summary>Field number for the "attacking_pokemon_id" field.</summary>
     public const int AttackingPokemonIdFieldNumber = 2;
-    private static readonly pb::FieldCodec<long> _repeated_attackingPokemonId_codec
-        = pb::FieldCodec.ForInt64(18);
-    private readonly pbc::RepeatedField<long> attackingPokemonId_ = new pbc::RepeatedField<long>();
+    private static readonly pb::FieldCodec<ulong> _repeated_attackingPokemonId_codec
+        = pb::FieldCodec.ForFixed64(18);
+    private readonly pbc::RepeatedField<ulong> attackingPokemonId_ = new pbc::RepeatedField<ulong>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<long> AttackingPokemonId {
+    public pbc::RepeatedField<ulong> AttackingPokemonId {
       get { return attackingPokemonId_; }
     }
 
     /// <summary>Field number for the "defending_pokemon_id" field.</summary>
     public const int DefendingPokemonIdFieldNumber = 3;
-    private long defendingPokemonId_;
+    private ulong defendingPokemonId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long DefendingPokemonId {
+    public ulong DefendingPokemonId {
       get { return defendingPokemonId_; }
       set {
         defendingPokemonId_ = value;
@@ -155,7 +155,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       int hash = 1;
       if (GymId.Length != 0) hash ^= GymId.GetHashCode();
       hash ^= attackingPokemonId_.GetHashCode();
-      if (DefendingPokemonId != 0L) hash ^= DefendingPokemonId.GetHashCode();
+      if (DefendingPokemonId != 0UL) hash ^= DefendingPokemonId.GetHashCode();
       if (PlayerLatDegrees != 0D) hash ^= PlayerLatDegrees.GetHashCode();
       if (PlayerLngDegrees != 0D) hash ^= PlayerLngDegrees.GetHashCode();
       return hash;
@@ -173,9 +173,9 @@ namespace POGOProtos.Networking.Requests.Messages {
         output.WriteString(GymId);
       }
       attackingPokemonId_.WriteTo(output, _repeated_attackingPokemonId_codec);
-      if (DefendingPokemonId != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(DefendingPokemonId);
+      if (DefendingPokemonId != 0UL) {
+        output.WriteRawTag(25);
+        output.WriteFixed64(DefendingPokemonId);
       }
       if (PlayerLatDegrees != 0D) {
         output.WriteRawTag(33);
@@ -194,8 +194,8 @@ namespace POGOProtos.Networking.Requests.Messages {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(GymId);
       }
       size += attackingPokemonId_.CalculateSize(_repeated_attackingPokemonId_codec);
-      if (DefendingPokemonId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(DefendingPokemonId);
+      if (DefendingPokemonId != 0UL) {
+        size += 1 + 8;
       }
       if (PlayerLatDegrees != 0D) {
         size += 1 + 8;
@@ -215,7 +215,7 @@ namespace POGOProtos.Networking.Requests.Messages {
         GymId = other.GymId;
       }
       attackingPokemonId_.Add(other.attackingPokemonId_);
-      if (other.DefendingPokemonId != 0L) {
+      if (other.DefendingPokemonId != 0UL) {
         DefendingPokemonId = other.DefendingPokemonId;
       }
       if (other.PlayerLatDegrees != 0D) {
@@ -239,12 +239,12 @@ namespace POGOProtos.Networking.Requests.Messages {
             break;
           }
           case 18:
-          case 16: {
+          case 17: {
             attackingPokemonId_.AddEntriesFrom(input, _repeated_attackingPokemonId_codec);
             break;
           }
-          case 24: {
-            DefendingPokemonId = input.ReadInt64();
+          case 25: {
+            DefendingPokemonId = input.ReadFixed64();
             break;
           }
           case 33: {
