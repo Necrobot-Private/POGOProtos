@@ -278,11 +278,11 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("GYM_GET_INFO")] GymGetInfo = 156,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GYM_START_SESSION")] GymStartSession = 157,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GYM_BATTLE_ATTACK")] GymBattleAttack = 158,
     /// <summary>
