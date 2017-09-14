@@ -39,6 +39,6 @@ using System.Runtime.InteropServices;
 // übernehmen, indem Sie "*" eingeben:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("2.15.0.0")]
+[assembly: AssemblyVersion("2.16.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: AssemblyInformationalVersion("v2.15.0.0")]
+[assembly: AssemblyInformationalVersion("v2.16.0.0")]
