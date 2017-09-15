@@ -270,6 +270,8 @@
     <Compile Include="Networking\Requests\Messages\GymGetInfoMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymStartSessionMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\IncenseEncounterMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\JoinLobbyMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\LeaveLobbyMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\LevelUpRewardsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ListAvatarCustomizationsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ListGymBadgesMessage.g.cs" />
@@ -285,6 +287,8 @@
     <Compile Include="Networking\Requests\Messages\SetBuddyPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetContactSettingsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetFavoritePokemonMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\SetLobbyPokemonMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\SetLobbyVisibilityMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetPlayerTeamMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SfidaActionLogMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SfidaRegistrationMessage.g.cs" />
@@ -347,6 +351,8 @@
     <Compile Include="Networking\Responses\GymGetInfoResponse.g.cs" />
     <Compile Include="Networking\Responses\GymStartSessionResponse.g.cs" />
     <Compile Include="Networking\Responses\IncenseEncounterResponse.g.cs" />
+    <Compile Include="Networking\Responses\JoinLobbyResponse.g.cs" />
+    <Compile Include="Networking\Responses\LeaveLobbyResponse.g.cs" />
     <Compile Include="Networking\Responses\LevelUpRewardsResponse.g.cs" />
     <Compile Include="Networking\Responses\ListAvatarCustomizationsResponse.g.cs" />
     <Compile Include="Networking\Responses\ListGymBadgesResponse.g.cs" />
@@ -362,6 +368,8 @@
     <Compile Include="Networking\Responses\SetBuddyPokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\SetContactSettingsResponse.g.cs" />
     <Compile Include="Networking\Responses\SetFavoritePokemonResponse.g.cs" />
+    <Compile Include="Networking\Responses\SetLobbyPokemonResponse.g.cs" />
+    <Compile Include="Networking\Responses\SetLobbyVisibilityResponse.g.cs" />
     <Compile Include="Networking\Responses\SetPlayerTeamResponse.g.cs" />
     <Compile Include="Networking\Responses\SfidaActionLogResponse.g.cs" />
     <Compile Include="Networking\Responses\SfidaRegistrationResponse.g.cs" />

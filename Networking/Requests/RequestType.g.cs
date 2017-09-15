@@ -182,19 +182,19 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("CHECK_AWARDED_BADGES")] CheckAwardedBadges = 129,
     /// <summary>
-    /// Removed
+    /// Removed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_GYM")] UseItemGym = 133,
     /// <summary>
-    /// Removed
+    /// Removed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_GYM_DETAILS")] GetGymDetails = 134,
     /// <summary>
-    /// Removed
+    /// Removed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("START_GYM_BATTLE")] StartGymBattle = 135,
     /// <summary>
-    /// Removed
+    /// Removed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("ATTACK_GYM")] AttackGym = 136,
     /// <summary>
@@ -234,7 +234,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("DISK_ENCOUNTER")] DiskEncounter = 145,
     /// <summary>
-    /// Removed
+    /// Removed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("COLLECT_DAILY_DEFENDER_BONUS")] CollectDailyDefenderBonus = 146,
     /// <summary>
@@ -286,19 +286,19 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("GYM_BATTLE_ATTACK")] GymBattleAttack = 158,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("JOIN_LOBBY")] JoinLobby = 159,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("LEAVE_LOBBY")] LeaveLobby = 160,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SET_LOBBY_VISIBILITY")] SetLobbyVisibility = 161,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("SET_LOBBY_POKEMON")] SetLobbyPokemon = 162,
     /// <summary>
@@ -413,11 +413,29 @@ namespace POGOProtos.Networking.Requests {
     /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("AWARD_FREE_RAID_TICKET")] AwardFreeRaidTicket = 815,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("REGISTER_PUSH_NOTIFICATION")] RegisterPushNotification = 5000,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
     [pbr::OriginalName("UNREGISTER_PUSH_NOTIFICATION")] UnregisterPushNotification = 5001,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("UPDATE_NOTIFICATION_STATUS")] UpdateNotificationStatus = 5002,
+    /// <summary>
+    /// Not yet released.
+    /// </summary>
     [pbr::OriginalName("OPT_OUT_PUSH_NOTIFICATION_CATEGORY")] OptOutPushNotificationCategory = 5003,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("DOWNLOAD_GAME_MASTER_TEMPLATES")] DownloadGameMasterTemplates = 5004,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("GET_INVENTORY")] GetInventory = 5005,
   }
 
