@@ -182,19 +182,19 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("CHECK_AWARDED_BADGES")] CheckAwardedBadges = 129,
     /// <summary>
-    /// Removed - Implemented [R &amp; M]
+    /// UnUsed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("USE_ITEM_GYM")] UseItemGym = 133,
     /// <summary>
-    /// Removed - Implemented [R &amp; M]
+    /// UnUsed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_GYM_DETAILS")] GetGymDetails = 134,
     /// <summary>
-    /// Removed - Implemented [R &amp; M]
+    /// UnUsed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("START_GYM_BATTLE")] StartGymBattle = 135,
     /// <summary>
-    /// Removed - Implemented [R &amp; M]
+    /// UnUsed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("ATTACK_GYM")] AttackGym = 136,
     /// <summary>
@@ -234,7 +234,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("DISK_ENCOUNTER")] DiskEncounter = 145,
     /// <summary>
-    /// Removed - Implemented [R &amp; M]
+    /// UnUsed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("COLLECT_DAILY_DEFENDER_BONUS")] CollectDailyDefenderBonus = 146,
     /// <summary>
@@ -310,11 +310,11 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("GYM_FEED_POKEMON")] GymFeedPokemon = 164,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("START_RAID_BATTLE")] StartRaidBattle = 165,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("ATTACK_RAID")] AttackRaid = 166,
     /// <summary>

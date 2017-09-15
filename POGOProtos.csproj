@@ -229,6 +229,7 @@
     <Compile Include="Networking\Platform\Responses\UnknownPtr8Response.g.cs" />
     <Compile Include="Networking\Requests\Messages\AddFortModifierMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\AttackGymMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\AttackRaidBattleMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\AwardFreeRaidTicketMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CatchPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CheckAwardedBadgesMessage.g.cs" />
@@ -293,6 +294,7 @@
     <Compile Include="Networking\Requests\Messages\SfidaActionLogMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SfidaRegistrationMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\StartGymBattleMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\StartRaidBattleMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UpdateNotificationMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UpgradePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseIncenseMessage.g.cs" />
@@ -310,6 +312,7 @@
     <Compile Include="Networking\Requests\RequestType.g.cs" />
     <Compile Include="Networking\Responses\AddFortModifierResponse.g.cs" />
     <Compile Include="Networking\Responses\AttackGymResponse.g.cs" />
+    <Compile Include="Networking\Responses\AttackRaidBattleResponse.g.cs" />
     <Compile Include="Networking\Responses\AwardFreeRaidTicketResponse.g.cs" />
     <Compile Include="Networking\Responses\CatchPokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\CheckAwardedBadgesResponse.g.cs" />
@@ -374,6 +377,7 @@
     <Compile Include="Networking\Responses\SfidaActionLogResponse.g.cs" />
     <Compile Include="Networking\Responses\SfidaRegistrationResponse.g.cs" />
     <Compile Include="Networking\Responses\StartGymBattleResponse.g.cs" />
+    <Compile Include="Networking\Responses\StartRaidBattleResponse.g.cs" />
     <Compile Include="Networking\Responses\UpdateNotificationResponse.g.cs" />
     <Compile Include="Networking\Responses\UpgradePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\UseIncenseResponse.g.cs" />
