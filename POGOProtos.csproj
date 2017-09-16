@@ -216,7 +216,6 @@
     <Compile Include="Networking\Envelopes\AuthTicket.g.cs" />
     <Compile Include="Networking\Envelopes\RequestEnvelope.g.cs" />
     <Compile Include="Networking\Envelopes\ResponseEnvelope.g.cs" />
-    <Compile Include="Networking\Envelopes\SignalLog.g.cs" />
     <Compile Include="Networking\Envelopes\Signature.g.cs" />
     <Compile Include="Networking\Platform\PlatformRequestType.g.cs" />
     <Compile Include="Networking\Platform\Requests\BuyItemAndroidRequest.g.cs" />
