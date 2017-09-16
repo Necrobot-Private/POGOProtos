@@ -100,6 +100,7 @@
     <Compile Include="Data\BuddyPokemon.g.cs" />
     <Compile Include="Data\Capture\CaptureAward.g.cs" />
     <Compile Include="Data\Capture\CaptureProbability.g.cs" />
+    <Compile Include="Data\ClientInbox.g.cs" />
     <Compile Include="Data\ClientVersion.g.cs" />
     <Compile Include="Data\DownloadUrlEntry.g.cs" />
     <Compile Include="Data\FoodValue.g.cs" />
@@ -112,6 +113,9 @@
     <Compile Include="Data\Logs\CatchPokemonLogEntry.g.cs" />
     <Compile Include="Data\Logs\FortSearchLogEntry.g.cs" />
     <Compile Include="Data\Logs\RaidRewardsLogEntry.g.cs" />
+    <Compile Include="Data\News.g.cs" />
+    <Compile Include="Data\Notification.g.cs" />
+    <Compile Include="Data\OptOut.g.cs" />
     <Compile Include="Data\PlayerBadge.g.cs" />
     <Compile Include="Data\PlayerData.g.cs" />
     <Compile Include="Data\Player\ContactSettings.g.cs" />
@@ -127,6 +131,7 @@
     <Compile Include="Data\PokedexEntry.g.cs" />
     <Compile Include="Data\PokemonData.g.cs" />
     <Compile Include="Data\PokemonDisplay.g.cs" />
+    <Compile Include="Data\PtcToken.g.cs" />
     <Compile Include="Data\Quests\DailyQuest.g.cs" />
     <Compile Include="Data\Quests\Quest.g.cs" />
     <Compile Include="Data\Raid\EventInfo.g.cs" />
@@ -140,6 +145,7 @@
     <Compile Include="Data\Redeem\PokeCandy.g.cs" />
     <Compile Include="Data\Redeem\RedeemedAvatarItem.g.cs" />
     <Compile Include="Data\Redeem\RedeemedItem.g.cs" />
+    <Compile Include="Data\TemplateVariable.g.cs" />
     <Compile Include="Enums\ActivityType.g.cs" />
     <Compile Include="Enums\BadgeType.g.cs" />
     <Compile Include="Enums\CameraInterpolation.g.cs" />
