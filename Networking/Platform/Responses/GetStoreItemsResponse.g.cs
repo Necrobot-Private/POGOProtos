@@ -94,7 +94,7 @@ namespace POGOProtos.Networking.Platform.Responses {
     public const int StatusFieldNumber = 1;
     private global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status status_ = 0;
     /// <summary>
-    ///unconfirmed
+    /// Unconfirmed
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status Status {
