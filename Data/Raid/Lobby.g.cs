@@ -24,18 +24,18 @@ namespace POGOProtos.Data.Raid {
           string.Concat(
             "CiBQT0dPUHJvdG9zL0RhdGEvUmFpZC9Mb2JieS5wcm90bxIUUE9HT1Byb3Rv",
             "cy5EYXRhLlJhaWQaLlBPR09Qcm90b3MvRGF0YS9CYXR0bGUvQmF0dGxlUGFy",
-            "dGljaXBhbnQucHJvdG8iowIKBUxvYmJ5EhAKCGxvYmJ5X2lkGAEgAygFEjoK",
+            "dGljaXBhbnQucHJvdG8iwQIKBUxvYmJ5EhAKCGxvYmJ5X2lkGAEgAygFEjoK",
             "B3BsYXllcnMYAiADKAsyKS5QT0dPUHJvdG9zLkRhdGEuQmF0dGxlLkJhdHRs",
             "ZVBhcnRpY2lwYW50EhoKEnBsYXllcl9qb2luX2VuZF9tcxgDIAEoAxIgChhw",
             "b2tlbW9uX3NlbGVjdGlvbl9lbmRfbXMYBCABKAMSHAoUcmFpZF9iYXR0bGVf",
             "c3RhcnRfbXMYBSABKAMSGgoScmFpZF9iYXR0bGVfZW5kX21zGAYgASgDEhYK",
             "DnJhaWRfYmF0dGxlX2lkGAggASgJEhYKDm93bmVyX25pY2tuYW1lGAkgASgJ",
-            "Eg8KB3ByaXZhdGUYCiABKAgSEwoLY3JlYXRpb25fbXMYCyABKANiBnByb3Rv",
-            "Mw=="));
+            "Eg8KB3ByaXZhdGUYCiABKAgSEwoLY3JlYXRpb25fbXMYCyABKAMSHAoUYmF0",
+            "dGxlX3BsZmVfaW5zdGFuY2UYDCABKAViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattleParticipantReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Raid.Lobby), global::POGOProtos.Data.Raid.Lobby.Parser, new[]{ "LobbyId", "Players", "PlayerJoinEndMs", "PokemonSelectionEndMs", "RaidBattleStartMs", "RaidBattleEndMs", "RaidBattleId", "OwnerNickname", "Private", "CreationMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Raid.Lobby), global::POGOProtos.Data.Raid.Lobby.Parser, new[]{ "LobbyId", "Players", "PlayerJoinEndMs", "PokemonSelectionEndMs", "RaidBattleStartMs", "RaidBattleEndMs", "RaidBattleId", "OwnerNickname", "Private", "CreationMs", "BattlePlfeInstance" }, null, null, null)
           }));
     }
     #endregion
@@ -76,6 +76,7 @@ namespace POGOProtos.Data.Raid {
       ownerNickname_ = other.ownerNickname_;
       private_ = other.private_;
       creationMs_ = other.creationMs_;
+      battlePlfeInstance_ = other.battlePlfeInstance_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -191,6 +192,17 @@ namespace POGOProtos.Data.Raid {
       }
     }
 
+    /// <summary>Field number for the "battle_plfe_instance" field.</summary>
+    public const int BattlePlfeInstanceFieldNumber = 12;
+    private int battlePlfeInstance_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int BattlePlfeInstance {
+      get { return battlePlfeInstance_; }
+      set {
+        battlePlfeInstance_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Lobby);
@@ -214,6 +226,7 @@ namespace POGOProtos.Data.Raid {
       if (OwnerNickname != other.OwnerNickname) return false;
       if (Private != other.Private) return false;
       if (CreationMs != other.CreationMs) return false;
+      if (BattlePlfeInstance != other.BattlePlfeInstance) return false;
       return true;
     }
 
@@ -230,6 +243,7 @@ namespace POGOProtos.Data.Raid {
       if (OwnerNickname.Length != 0) hash ^= OwnerNickname.GetHashCode();
       if (Private != false) hash ^= Private.GetHashCode();
       if (CreationMs != 0L) hash ^= CreationMs.GetHashCode();
+      if (BattlePlfeInstance != 0) hash ^= BattlePlfeInstance.GetHashCode();
       return hash;
     }
 
@@ -274,6 +288,10 @@ namespace POGOProtos.Data.Raid {
         output.WriteRawTag(88);
         output.WriteInt64(CreationMs);
       }
+      if (BattlePlfeInstance != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(BattlePlfeInstance);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -304,6 +322,9 @@ namespace POGOProtos.Data.Raid {
       }
       if (CreationMs != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(CreationMs);
+      }
+      if (BattlePlfeInstance != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BattlePlfeInstance);
       }
       return size;
     }
@@ -338,6 +359,9 @@ namespace POGOProtos.Data.Raid {
       }
       if (other.CreationMs != 0L) {
         CreationMs = other.CreationMs;
+      }
+      if (other.BattlePlfeInstance != 0) {
+        BattlePlfeInstance = other.BattlePlfeInstance;
       }
     }
 
@@ -388,6 +412,10 @@ namespace POGOProtos.Data.Raid {
           }
           case 88: {
             CreationMs = input.ReadInt64();
+            break;
+          }
+          case 96: {
+            BattlePlfeInstance = input.ReadInt32();
             break;
           }
         }
