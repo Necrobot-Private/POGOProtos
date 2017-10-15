@@ -111,6 +111,7 @@
     <Compile Include="Data\Logs\BuddyPokemonLogEntry.g.cs" />
     <Compile Include="Data\Logs\CatchPokemonLogEntry.g.cs" />
     <Compile Include="Data\Logs\FortSearchLogEntry.g.cs" />
+    <Compile Include="Data\Logs\PasscodeRewardsLogEntry.g.cs" />
     <Compile Include="Data\Logs\RaidRewardsLogEntry.g.cs" />
     <Compile Include="Data\PlayerBadge.g.cs" />
     <Compile Include="Data\PlayerData.g.cs" />

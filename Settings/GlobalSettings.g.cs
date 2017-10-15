@@ -34,7 +34,7 @@ namespace POGOProtos.Settings {
             "U2V0dGluZ3MvTm90aWZpY2F0aW9uU2V0dGluZ3MucHJvdG8aKlBPR09Qcm90",
             "b3MvU2V0dGluZ3MvUGFzc2NvZGVTZXR0aW5ncy5wcm90bxonUE9HT1Byb3Rv",
             "cy9TZXR0aW5ncy9TZmlkYVNldHRpbmdzLnByb3RvGi1QT0dPUHJvdG9zL1Nl",
-            "dHRpbmdzL1RyYW5zbGF0aW9uU2V0dGluZ3MucHJvdG8ivQYKDkdsb2JhbFNl",
+            "dHRpbmdzL1RyYW5zbGF0aW9uU2V0dGluZ3MucHJvdG8i2wYKDkdsb2JhbFNl",
             "dHRpbmdzEjgKDWZvcnRfc2V0dGluZ3MYAiABKAsyIS5QT0dPUHJvdG9zLlNl",
             "dHRpbmdzLkZvcnRTZXR0aW5ncxI2CgxtYXBfc2V0dGluZ3MYAyABKAsyIC5Q",
             "T0dPUHJvdG9zLlNldHRpbmdzLk1hcFNldHRpbmdzEjoKDmxldmVsX3NldHRp",
@@ -53,11 +53,12 @@ namespace POGOProtos.Settings {
             "aW5ncxJAChFwYXNzY29kZV9zZXR0aW5ncxgOIAEoCzIlLlBPR09Qcm90b3Mu",
             "U2V0dGluZ3MuUGFzc2NvZGVTZXR0aW5ncxJIChVub3RpZmljYXRpb25fc2V0",
             "dGluZ3MYDyABKAsyKS5QT0dPUHJvdG9zLlNldHRpbmdzLk5vdGlmaWNhdGlv",
-            "blNldHRpbmdzYgZwcm90bzM="));
+            "blNldHRpbmdzEhwKFGNsaWVudF9hcHBfYmxhY2tsaXN0GBAgAygJYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Settings.EventSettingsReflection.Descriptor, global::POGOProtos.Settings.FestivalSettingsReflection.Descriptor, global::POGOProtos.Settings.FortSettingsReflection.Descriptor, global::POGOProtos.Settings.GpsSettingsReflection.Descriptor, global::POGOProtos.Settings.InventorySettingsReflection.Descriptor, global::POGOProtos.Settings.LevelSettingsReflection.Descriptor, global::POGOProtos.Settings.MapSettingsReflection.Descriptor, global::POGOProtos.Settings.NewsSettingsReflection.Descriptor, global::POGOProtos.Settings.NotificationSettingsReflection.Descriptor, global::POGOProtos.Settings.PasscodeSettingsReflection.Descriptor, global::POGOProtos.Settings.SfidaSettingsReflection.Descriptor, global::POGOProtos.Settings.TranslationSettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.GlobalSettings), global::POGOProtos.Settings.GlobalSettings.Parser, new[]{ "FortSettings", "MapSettings", "LevelSettings", "InventorySettings", "MinimumClientVersion", "GpsSettings", "FestivalSettings", "EventSettings", "MaxPokemonTypes", "SfidaSettings", "NewsSettings", "TranslationSettings", "PasscodeSettings", "NotificationSettings" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.GlobalSettings), global::POGOProtos.Settings.GlobalSettings.Parser, new[]{ "FortSettings", "MapSettings", "LevelSettings", "InventorySettings", "MinimumClientVersion", "GpsSettings", "FestivalSettings", "EventSettings", "MaxPokemonTypes", "SfidaSettings", "NewsSettings", "TranslationSettings", "PasscodeSettings", "NotificationSettings", "ClientAppBlacklist" }, null, null, null)
           }));
     }
     #endregion
@@ -102,6 +103,7 @@ namespace POGOProtos.Settings {
       TranslationSettings = other.translationSettings_ != null ? other.TranslationSettings.Clone() : null;
       PasscodeSettings = other.passcodeSettings_ != null ? other.PasscodeSettings.Clone() : null;
       NotificationSettings = other.notificationSettings_ != null ? other.NotificationSettings.Clone() : null;
+      clientAppBlacklist_ = other.clientAppBlacklist_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -263,6 +265,16 @@ namespace POGOProtos.Settings {
       }
     }
 
+    /// <summary>Field number for the "client_app_blacklist" field.</summary>
+    public const int ClientAppBlacklistFieldNumber = 16;
+    private static readonly pb::FieldCodec<string> _repeated_clientAppBlacklist_codec
+        = pb::FieldCodec.ForString(130);
+    private readonly pbc::RepeatedField<string> clientAppBlacklist_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> ClientAppBlacklist {
+      get { return clientAppBlacklist_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GlobalSettings);
@@ -290,6 +302,7 @@ namespace POGOProtos.Settings {
       if (!object.Equals(TranslationSettings, other.TranslationSettings)) return false;
       if (!object.Equals(PasscodeSettings, other.PasscodeSettings)) return false;
       if (!object.Equals(NotificationSettings, other.NotificationSettings)) return false;
+      if(!clientAppBlacklist_.Equals(other.clientAppBlacklist_)) return false;
       return true;
     }
 
@@ -310,6 +323,7 @@ namespace POGOProtos.Settings {
       if (translationSettings_ != null) hash ^= TranslationSettings.GetHashCode();
       if (passcodeSettings_ != null) hash ^= PasscodeSettings.GetHashCode();
       if (notificationSettings_ != null) hash ^= NotificationSettings.GetHashCode();
+      hash ^= clientAppBlacklist_.GetHashCode();
       return hash;
     }
 
@@ -376,6 +390,7 @@ namespace POGOProtos.Settings {
         output.WriteRawTag(122);
         output.WriteMessage(NotificationSettings);
       }
+      clientAppBlacklist_.WriteTo(output, _repeated_clientAppBlacklist_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -423,6 +438,7 @@ namespace POGOProtos.Settings {
       if (notificationSettings_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NotificationSettings);
       }
+      size += clientAppBlacklist_.CalculateSize(_repeated_clientAppBlacklist_codec);
       return size;
     }
 
@@ -509,6 +525,7 @@ namespace POGOProtos.Settings {
         }
         NotificationSettings.MergeFrom(other.NotificationSettings);
       }
+      clientAppBlacklist_.Add(other.clientAppBlacklist_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -609,6 +626,10 @@ namespace POGOProtos.Settings {
               notificationSettings_ = new global::POGOProtos.Settings.NotificationSettings();
             }
             input.ReadMessage(notificationSettings_);
+            break;
+          }
+          case 130: {
+            clientAppBlacklist_.AddEntriesFrom(input, _repeated_clientAppBlacklist_codec);
             break;
           }
         }
