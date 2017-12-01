@@ -281,6 +281,7 @@
     <Compile Include="Networking\Requests\Messages\NicknamePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\PlatformClientActionsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RecycleInventoryItemMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\RedeemPasscodeMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RegisterBackgroundDeviceMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ReleasePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetAvatarItemAsViewedMessage.g.cs" />
@@ -363,6 +364,7 @@
     <Compile Include="Networking\Responses\NicknamePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\PlatformClientActionsResponse.g.cs" />
     <Compile Include="Networking\Responses\RecycleInventoryItemResponse.g.cs" />
+    <Compile Include="Networking\Responses\RedeemPasscodeResponse.g.cs" />
     <Compile Include="Networking\Responses\RegisterBackgroundDeviceResponse.g.cs" />
     <Compile Include="Networking\Responses\ReleasePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\SetAvatarItemAsViewedResponse.g.cs" />
@@ -391,6 +393,7 @@
     <Compile Include="Networking\Responses\UseItemXpBoostResponse.g.cs" />
     <Compile Include="Networking\Responses\VerifyChallengeResponse.g.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\ClientPerformanceSettings.g.cs" />
     <Compile Include="Settings\DownloadSettingsAction.g.cs" />
     <Compile Include="Settings\EventSettings.g.cs" />
     <Compile Include="Settings\FestivalSettings.g.cs" />
