@@ -67,8 +67,8 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Google.Protobuf, Version=3.4.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)\packages\Google.Protobuf.3.4.1\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf, Version=3.5.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\Google.Protobuf.3.5.0\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -170,6 +170,7 @@
     <Compile Include="Enums\TeamColor.g.cs" />
     <Compile Include="Enums\TutorialState.g.cs" />
     <Compile Include="Enums\VariableName.g.cs" />
+    <Compile Include="Enums\WeatherCondition.g.cs" />
     <Compile Include="Inventory\AppliedItem.g.cs" />
     <Compile Include="Inventory\AppliedItems.g.cs" />
     <Compile Include="Inventory\Candy.g.cs" />
@@ -209,6 +210,10 @@
     <Compile Include="Map\Pokemon\NearbyPokemon.g.cs" />
     <Compile Include="Map\Pokemon\WildPokemon.g.cs" />
     <Compile Include="Map\SpawnPoint.g.cs" />
+    <Compile Include="Map\Weather\ClientWeather.g.cs" />
+    <Compile Include="Map\Weather\DisplayWeather.g.cs" />
+    <Compile Include="Map\Weather\GameplayWeather.g.cs" />
+    <Compile Include="Map\Weather\WeatherAlert.g.cs" />
     <Compile Include="Networking\Envelopes\AuthTicket.g.cs" />
     <Compile Include="Networking\Envelopes\RequestEnvelope.g.cs" />
     <Compile Include="Networking\Envelopes\ResponseEnvelope.g.cs" />
@@ -307,6 +312,7 @@
     <Compile Include="Networking\Requests\Messages\UseItemPotionMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemRareCandyMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemReviveMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\UseItemStardustBoostMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseItemXpBoostMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\VerifyChallengeMessage.g.cs" />
     <Compile Include="Networking\Requests\Request.g.cs" />
@@ -390,6 +396,7 @@
     <Compile Include="Networking\Responses\UseItemPotionResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemRareCandyResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemReviveResponse.g.cs" />
+    <Compile Include="Networking\Responses\UseItemStardustBoostResponse.g.cs" />
     <Compile Include="Networking\Responses\UseItemXpBoostResponse.g.cs" />
     <Compile Include="Networking\Responses\VerifyChallengeResponse.g.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -426,6 +433,7 @@
     <Compile Include="Settings\Master\Item\PokeballAttributes.g.cs" />
     <Compile Include="Settings\Master\Item\PotionAttributes.g.cs" />
     <Compile Include="Settings\Master\Item\ReviveAttributes.g.cs" />
+    <Compile Include="Settings\Master\Item\StardustBoostAttributes.g.cs" />
     <Compile Include="Settings\Master\MoveSequenceSettings.g.cs" />
     <Compile Include="Settings\Master\MoveSettings.g.cs" />
     <Compile Include="Settings\Master\PlayerLevelSettings.g.cs" />
@@ -439,6 +447,8 @@
     <Compile Include="Settings\Master\QuestSettings.g.cs" />
     <Compile Include="Settings\Master\Quest\DailyQuestSettings.g.cs" />
     <Compile Include="Settings\Master\TypeEffectiveSettings.g.cs" />
+    <Compile Include="Settings\Master\WeatherAffinity.g.cs" />
+    <Compile Include="Settings\Master\WeatherBonus.g.cs" />
     <Compile Include="Settings\NewsSettings.g.cs" />
     <Compile Include="Settings\NotificationSettings.g.cs" />
     <Compile Include="Settings\PasscodeSettings.g.cs" />

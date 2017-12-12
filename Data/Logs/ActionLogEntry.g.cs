@@ -314,19 +314,34 @@ namespace POGOProtos.Data.Logs {
       }
       switch (other.ActionCase) {
         case ActionOneofCase.CatchPokemon:
-          CatchPokemon = other.CatchPokemon;
+          if (CatchPokemon == null) {
+            CatchPokemon = new global::POGOProtos.Data.Logs.CatchPokemonLogEntry();
+          }
+          CatchPokemon.MergeFrom(other.CatchPokemon);
           break;
         case ActionOneofCase.FortSearch:
-          FortSearch = other.FortSearch;
+          if (FortSearch == null) {
+            FortSearch = new global::POGOProtos.Data.Logs.FortSearchLogEntry();
+          }
+          FortSearch.MergeFrom(other.FortSearch);
           break;
         case ActionOneofCase.BuddyPokemon:
-          BuddyPokemon = other.BuddyPokemon;
+          if (BuddyPokemon == null) {
+            BuddyPokemon = new global::POGOProtos.Data.Logs.BuddyPokemonLogEntry();
+          }
+          BuddyPokemon.MergeFrom(other.BuddyPokemon);
           break;
         case ActionOneofCase.RaidRewards:
-          RaidRewards = other.RaidRewards;
+          if (RaidRewards == null) {
+            RaidRewards = new global::POGOProtos.Data.Logs.RaidRewardsLogEntry();
+          }
+          RaidRewards.MergeFrom(other.RaidRewards);
           break;
         case ActionOneofCase.PasscodeRewards:
-          PasscodeRewards = other.PasscodeRewards;
+          if (PasscodeRewards == null) {
+            PasscodeRewards = new global::POGOProtos.Data.Logs.PasscodeRewardsLogEntry();
+          }
+          PasscodeRewards.MergeFrom(other.PasscodeRewards);
           break;
       }
 
