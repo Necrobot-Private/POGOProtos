@@ -80,6 +80,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\ARPlusEncounterValues.g.cs" />
     <Compile Include="Data\AssetDigestEntry.g.cs" />
     <Compile Include="Data\Avatar\AvatarCustomization.g.cs" />
     <Compile Include="Data\Avatar\AvatarItem.g.cs" />
@@ -437,6 +438,7 @@
     <Compile Include="Settings\Master\MoveSequenceSettings.g.cs" />
     <Compile Include="Settings\Master\MoveSettings.g.cs" />
     <Compile Include="Settings\Master\PlayerLevelSettings.g.cs" />
+    <Compile Include="Settings\Master\PokemonScaleSetting.g.cs" />
     <Compile Include="Settings\Master\PokemonSettings.g.cs" />
     <Compile Include="Settings\Master\PokemonUpgradeSettings.g.cs" />
     <Compile Include="Settings\Master\Pokemon\CameraAttributes.g.cs" />
