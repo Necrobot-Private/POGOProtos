@@ -23,48 +23,50 @@ namespace POGOProtos.Settings.Master {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9Qb2tlbW9uU2V0dGluZ3Mu",
-            "cHJvdG8SGlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyGiBQT0dPUHJvdG9z",
-            "L0VudW1zL1Bva2Vtb25JZC5wcm90bxokUE9HT1Byb3Rvcy9FbnVtcy9Qb2tl",
-            "bW9uUmFyaXR5LnByb3RvGiJQT0dPUHJvdG9zL0VudW1zL1Bva2Vtb25UeXBl",
-            "LnByb3RvGiJQT0dPUHJvdG9zL0VudW1zL1Bva2Vtb25Nb3ZlLnByb3RvGiZQ",
-            "T0dPUHJvdG9zL0VudW1zL1Bva2Vtb25GYW1pbHlJZC5wcm90bxo4UE9HT1By",
-            "b3Rvcy9TZXR0aW5ncy9NYXN0ZXIvUG9rZW1vbi9TdGF0c0F0dHJpYnV0ZXMu",
-            "cHJvdG8aOVBPR09Qcm90b3MvU2V0dGluZ3MvTWFzdGVyL1Bva2Vtb24vQ2Ft",
-            "ZXJhQXR0cmlidXRlcy5wcm90bxo8UE9HT1Byb3Rvcy9TZXR0aW5ncy9NYXN0",
-            "ZXIvUG9rZW1vbi9FbmNvdW50ZXJBdHRyaWJ1dGVzLnByb3RvGjhQT0dPUHJv",
-            "dG9zL1NldHRpbmdzL01hc3Rlci9Qb2tlbW9uL0V2b2x1dGlvbkJyYW5jaC5w",
-            "cm90byLbCQoPUG9rZW1vblNldHRpbmdzEi8KCnBva2Vtb25faWQYASABKA4y",
-            "Gy5QT0dPUHJvdG9zLkVudW1zLlBva2Vtb25JZBITCgttb2RlbF9zY2FsZRgD",
-            "IAEoAhIrCgR0eXBlGAQgASgOMh0uUE9HT1Byb3Rvcy5FbnVtcy5Qb2tlbW9u",
-            "VHlwZRItCgZ0eXBlXzIYBSABKA4yHS5QT0dPUHJvdG9zLkVudW1zLlBva2Vt",
-            "b25UeXBlEkQKBmNhbWVyYRgGIAEoCzI0LlBPR09Qcm90b3MuU2V0dGluZ3Mu",
-            "TWFzdGVyLlBva2Vtb24uQ2FtZXJhQXR0cmlidXRlcxJKCgllbmNvdW50ZXIY",
-            "ByABKAsyNy5QT0dPUHJvdG9zLlNldHRpbmdzLk1hc3Rlci5Qb2tlbW9uLkVu",
-            "Y291bnRlckF0dHJpYnV0ZXMSQgoFc3RhdHMYCCABKAsyMy5QT0dPUHJvdG9z",
-            "LlNldHRpbmdzLk1hc3Rlci5Qb2tlbW9uLlN0YXRzQXR0cmlidXRlcxIyCgtx",
-            "dWlja19tb3ZlcxgJIAMoDjIdLlBPR09Qcm90b3MuRW51bXMuUG9rZW1vbk1v",
-            "dmUSNgoPY2luZW1hdGljX21vdmVzGAogAygOMh0uUE9HT1Byb3Rvcy5FbnVt",
-            "cy5Qb2tlbW9uTW92ZRIWCg5hbmltYXRpb25fdGltZRgLIAMoAhIyCg1ldm9s",
-            "dXRpb25faWRzGAwgAygOMhsuUE9HT1Byb3Rvcy5FbnVtcy5Qb2tlbW9uSWQS",
-            "FgoOZXZvbHV0aW9uX3BpcHMYDSABKAUSLwoGcmFyaXR5GA4gASgOMh8uUE9H",
-            "T1Byb3Rvcy5FbnVtcy5Qb2tlbW9uUmFyaXR5EhgKEHBva2VkZXhfaGVpZ2h0",
-            "X20YDyABKAISGQoRcG9rZWRleF93ZWlnaHRfa2cYECABKAISNgoRcGFyZW50",
-            "X3Bva2Vtb25faWQYESABKA4yGy5QT0dPUHJvdG9zLkVudW1zLlBva2Vtb25J",
-            "ZBIWCg5oZWlnaHRfc3RkX2RldhgSIAEoAhIWCg53ZWlnaHRfc3RkX2RldhgT",
-            "IAEoAhIcChRrbV9kaXN0YW5jZV90b19oYXRjaBgUIAEoAhI0CglmYW1pbHlf",
-            "aWQYFSABKA4yIS5QT0dPUHJvdG9zLkVudW1zLlBva2Vtb25GYW1pbHlJZBIX",
-            "Cg9jYW5keV90b19ldm9sdmUYFiABKAUSGQoRa21fYnVkZHlfZGlzdGFuY2UY",
-            "FyABKAISSQoKYnVkZHlfc2l6ZRgYIAEoDjI1LlBPR09Qcm90b3MuU2V0dGlu",
-            "Z3MuTWFzdGVyLlBva2Vtb25TZXR0aW5ncy5CdWRkeVNpemUSFAoMbW9kZWxf",
-            "aGVpZ2h0GBkgASgCEk0KEGV2b2x1dGlvbl9icmFuY2gYGiADKAsyMy5QT0dP",
-            "UHJvdG9zLlNldHRpbmdzLk1hc3Rlci5Qb2tlbW9uLkV2b2x1dGlvbkJyYW5j",
-            "aBIWCg5tb2RlbF9zY2FsZV92MhgbIAEoAiJiCglCdWRkeVNpemUSEAoMQlVE",
-            "RFlfTUVESVVNEAASEgoOQlVERFlfU0hPVUxERVIQARINCglCVUREWV9CSUcQ",
-            "AhIQCgxCVUREWV9GTFlJTkcQAxIOCgpCVUREWV9CQUJZEARiBnByb3RvMw=="));
+            "cHJvdG8SGlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyGhtQT0dPUHJvdG9z",
+            "L0VudW1zL0Zvcm0ucHJvdG8aIFBPR09Qcm90b3MvRW51bXMvUG9rZW1vbklk",
+            "LnByb3RvGiRQT0dPUHJvdG9zL0VudW1zL1Bva2Vtb25SYXJpdHkucHJvdG8a",
+            "IlBPR09Qcm90b3MvRW51bXMvUG9rZW1vblR5cGUucHJvdG8aIlBPR09Qcm90",
+            "b3MvRW51bXMvUG9rZW1vbk1vdmUucHJvdG8aJlBPR09Qcm90b3MvRW51bXMv",
+            "UG9rZW1vbkZhbWlseUlkLnByb3RvGjhQT0dPUHJvdG9zL1NldHRpbmdzL01h",
+            "c3Rlci9Qb2tlbW9uL1N0YXRzQXR0cmlidXRlcy5wcm90bxo5UE9HT1Byb3Rv",
+            "cy9TZXR0aW5ncy9NYXN0ZXIvUG9rZW1vbi9DYW1lcmFBdHRyaWJ1dGVzLnBy",
+            "b3RvGjxQT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9Qb2tlbW9uL0VuY291",
+            "bnRlckF0dHJpYnV0ZXMucHJvdG8aOFBPR09Qcm90b3MvU2V0dGluZ3MvTWFz",
+            "dGVyL1Bva2Vtb24vRXZvbHV0aW9uQnJhbmNoLnByb3RvIoEKCg9Qb2tlbW9u",
+            "U2V0dGluZ3MSLwoKcG9rZW1vbl9pZBgBIAEoDjIbLlBPR09Qcm90b3MuRW51",
+            "bXMuUG9rZW1vbklkEhMKC21vZGVsX3NjYWxlGAMgASgCEisKBHR5cGUYBCAB",
+            "KA4yHS5QT0dPUHJvdG9zLkVudW1zLlBva2Vtb25UeXBlEi0KBnR5cGVfMhgF",
+            "IAEoDjIdLlBPR09Qcm90b3MuRW51bXMuUG9rZW1vblR5cGUSRAoGY2FtZXJh",
+            "GAYgASgLMjQuUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIuUG9rZW1vbi5D",
+            "YW1lcmFBdHRyaWJ1dGVzEkoKCWVuY291bnRlchgHIAEoCzI3LlBPR09Qcm90",
+            "b3MuU2V0dGluZ3MuTWFzdGVyLlBva2Vtb24uRW5jb3VudGVyQXR0cmlidXRl",
+            "cxJCCgVzdGF0cxgIIAEoCzIzLlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVy",
+            "LlBva2Vtb24uU3RhdHNBdHRyaWJ1dGVzEjIKC3F1aWNrX21vdmVzGAkgAygO",
+            "Mh0uUE9HT1Byb3Rvcy5FbnVtcy5Qb2tlbW9uTW92ZRI2Cg9jaW5lbWF0aWNf",
+            "bW92ZXMYCiADKA4yHS5QT0dPUHJvdG9zLkVudW1zLlBva2Vtb25Nb3ZlEhYK",
+            "DmFuaW1hdGlvbl90aW1lGAsgAygCEjIKDWV2b2x1dGlvbl9pZHMYDCADKA4y",
+            "Gy5QT0dPUHJvdG9zLkVudW1zLlBva2Vtb25JZBIWCg5ldm9sdXRpb25fcGlw",
+            "cxgNIAEoBRIvCgZyYXJpdHkYDiABKA4yHy5QT0dPUHJvdG9zLkVudW1zLlBv",
+            "a2Vtb25SYXJpdHkSGAoQcG9rZWRleF9oZWlnaHRfbRgPIAEoAhIZChFwb2tl",
+            "ZGV4X3dlaWdodF9rZxgQIAEoAhI2ChFwYXJlbnRfcG9rZW1vbl9pZBgRIAEo",
+            "DjIbLlBPR09Qcm90b3MuRW51bXMuUG9rZW1vbklkEhYKDmhlaWdodF9zdGRf",
+            "ZGV2GBIgASgCEhYKDndlaWdodF9zdGRfZGV2GBMgASgCEhwKFGttX2Rpc3Rh",
+            "bmNlX3RvX2hhdGNoGBQgASgCEjQKCWZhbWlseV9pZBgVIAEoDjIhLlBPR09Q",
+            "cm90b3MuRW51bXMuUG9rZW1vbkZhbWlseUlkEhcKD2NhbmR5X3RvX2V2b2x2",
+            "ZRgWIAEoBRIZChFrbV9idWRkeV9kaXN0YW5jZRgXIAEoAhJJCgpidWRkeV9z",
+            "aXplGBggASgOMjUuUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIuUG9rZW1v",
+            "blNldHRpbmdzLkJ1ZGR5U2l6ZRIUCgxtb2RlbF9oZWlnaHQYGSABKAISTQoQ",
+            "ZXZvbHV0aW9uX2JyYW5jaBgaIAMoCzIzLlBPR09Qcm90b3MuU2V0dGluZ3Mu",
+            "TWFzdGVyLlBva2Vtb24uRXZvbHV0aW9uQnJhbmNoEhYKDm1vZGVsX3NjYWxl",
+            "X3YyGBsgASgCEiQKBGZvcm0YHCABKA4yFi5QT0dPUHJvdG9zLkVudW1zLkZv",
+            "cm0iYgoJQnVkZHlTaXplEhAKDEJVRERZX01FRElVTRAAEhIKDkJVRERZX1NI",
+            "T1VMREVSEAESDQoJQlVERFlfQklHEAISEAoMQlVERFlfRkxZSU5HEAMSDgoK",
+            "QlVERFlfQkFCWRAEYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Enums.PokemonRarityReflection.Descriptor, global::POGOProtos.Enums.PokemonTypeReflection.Descriptor, global::POGOProtos.Enums.PokemonMoveReflection.Descriptor, global::POGOProtos.Enums.PokemonFamilyIdReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.StatsAttributesReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.CameraAttributesReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.EncounterAttributesReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.EvolutionBranchReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.FormReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Enums.PokemonRarityReflection.Descriptor, global::POGOProtos.Enums.PokemonTypeReflection.Descriptor, global::POGOProtos.Enums.PokemonMoveReflection.Descriptor, global::POGOProtos.Enums.PokemonFamilyIdReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.StatsAttributesReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.CameraAttributesReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.EncounterAttributesReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.EvolutionBranchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.PokemonSettings), global::POGOProtos.Settings.Master.PokemonSettings.Parser, new[]{ "PokemonId", "ModelScale", "Type", "Type2", "Camera", "Encounter", "Stats", "QuickMoves", "CinematicMoves", "AnimationTime", "EvolutionIds", "EvolutionPips", "Rarity", "PokedexHeightM", "PokedexWeightKg", "ParentPokemonId", "HeightStdDev", "WeightStdDev", "KmDistanceToHatch", "FamilyId", "CandyToEvolve", "KmBuddyDistance", "BuddySize", "ModelHeight", "EvolutionBranch", "ModelScaleV2" }, null, new[]{ typeof(global::POGOProtos.Settings.Master.PokemonSettings.Types.BuddySize) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.PokemonSettings), global::POGOProtos.Settings.Master.PokemonSettings.Parser, new[]{ "PokemonId", "ModelScale", "Type", "Type2", "Camera", "Encounter", "Stats", "QuickMoves", "CinematicMoves", "AnimationTime", "EvolutionIds", "EvolutionPips", "Rarity", "PokedexHeightM", "PokedexWeightKg", "ParentPokemonId", "HeightStdDev", "WeightStdDev", "KmDistanceToHatch", "FamilyId", "CandyToEvolve", "KmBuddyDistance", "BuddySize", "ModelHeight", "EvolutionBranch", "ModelScaleV2", "Form" }, null, new[]{ typeof(global::POGOProtos.Settings.Master.PokemonSettings.Types.BuddySize) }, null)
           }));
     }
     #endregion
@@ -121,6 +123,7 @@ namespace POGOProtos.Settings.Master {
       modelHeight_ = other.modelHeight_;
       evolutionBranch_ = other.evolutionBranch_.Clone();
       modelScaleV2_ = other.modelScaleV2_;
+      form_ = other.form_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -409,6 +412,17 @@ namespace POGOProtos.Settings.Master {
       }
     }
 
+    /// <summary>Field number for the "form" field.</summary>
+    public const int FormFieldNumber = 28;
+    private global::POGOProtos.Enums.Form form_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.Form Form {
+      get { return form_; }
+      set {
+        form_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PokemonSettings);
@@ -448,6 +462,7 @@ namespace POGOProtos.Settings.Master {
       if (ModelHeight != other.ModelHeight) return false;
       if(!evolutionBranch_.Equals(other.evolutionBranch_)) return false;
       if (ModelScaleV2 != other.ModelScaleV2) return false;
+      if (Form != other.Form) return false;
       return true;
     }
 
@@ -480,6 +495,7 @@ namespace POGOProtos.Settings.Master {
       if (ModelHeight != 0F) hash ^= ModelHeight.GetHashCode();
       hash ^= evolutionBranch_.GetHashCode();
       if (ModelScaleV2 != 0F) hash ^= ModelScaleV2.GetHashCode();
+      if (Form != 0) hash ^= Form.GetHashCode();
       return hash;
     }
 
@@ -579,6 +595,10 @@ namespace POGOProtos.Settings.Master {
         output.WriteRawTag(221, 1);
         output.WriteFloat(ModelScaleV2);
       }
+      if (Form != 0) {
+        output.WriteRawTag(224, 1);
+        output.WriteEnum((int) Form);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -651,6 +671,9 @@ namespace POGOProtos.Settings.Master {
       size += evolutionBranch_.CalculateSize(_repeated_evolutionBranch_codec);
       if (ModelScaleV2 != 0F) {
         size += 2 + 4;
+      }
+      if (Form != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Form);
       }
       return size;
     }
@@ -736,6 +759,9 @@ namespace POGOProtos.Settings.Master {
       evolutionBranch_.Add(other.evolutionBranch_);
       if (other.ModelScaleV2 != 0F) {
         ModelScaleV2 = other.ModelScaleV2;
+      }
+      if (other.Form != 0) {
+        Form = other.Form;
       }
     }
 
@@ -862,6 +888,10 @@ namespace POGOProtos.Settings.Master {
           }
           case 221: {
             ModelScaleV2 = input.ReadFloat();
+            break;
+          }
+          case 224: {
+            form_ = (global::POGOProtos.Enums.Form) input.ReadEnum();
             break;
           }
         }

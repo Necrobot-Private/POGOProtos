@@ -114,6 +114,8 @@
     <Compile Include="Data\Logs\FortSearchLogEntry.g.cs" />
     <Compile Include="Data\Logs\PasscodeRewardsLogEntry.g.cs" />
     <Compile Include="Data\Logs\RaidRewardsLogEntry.g.cs" />
+    <Compile Include="Data\News\CurrentNews.g.cs" />
+    <Compile Include="Data\News\NewsArticle.g.cs" />
     <Compile Include="Data\PlayerBadge.g.cs" />
     <Compile Include="Data\PlayerData.g.cs" />
     <Compile Include="Data\Player\ContactSettings.g.cs" />
@@ -130,8 +132,11 @@
     <Compile Include="Data\PokemonData.g.cs" />
     <Compile Include="Data\PokemonDisplay.g.cs" />
     <Compile Include="Data\PtcToken.g.cs" />
+    <Compile Include="Data\Quests\CatchPokemonQuest.g.cs" />
     <Compile Include="Data\Quests\DailyQuest.g.cs" />
     <Compile Include="Data\Quests\Quest.g.cs" />
+    <Compile Include="Data\Quests\QuestGoal.g.cs" />
+    <Compile Include="Data\Quests\QuestReward.g.cs" />
     <Compile Include="Data\Raid\EventInfo.g.cs" />
     <Compile Include="Data\Raid\Lobby.g.cs" />
     <Compile Include="Data\Raid\Participation.g.cs" />
@@ -254,6 +259,7 @@
     <Compile Include="Networking\Requests\Messages\EncounterTutorialCompleteMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\EquipBadgeMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\EvolvePokemonMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\FetchAllNewsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\FortDeployPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\FortDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\FortRecallPokemonMessage.g.cs" />
@@ -283,6 +289,7 @@
     <Compile Include="Networking\Requests\Messages\LevelUpRewardsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ListAvatarCustomizationsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ListGymBadgesMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\MarkReadNewsArticleMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\MarkTutorialCompleteMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\NicknamePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\PlatformClientActionsMessage.g.cs" />
@@ -338,6 +345,7 @@
     <Compile Include="Networking\Responses\EncounterTutorialCompleteResponse.g.cs" />
     <Compile Include="Networking\Responses\EquipBadgeResponse.g.cs" />
     <Compile Include="Networking\Responses\EvolvePokemonResponse.g.cs" />
+    <Compile Include="Networking\Responses\FetchAllNewsResponse.g.cs" />
     <Compile Include="Networking\Responses\FortDeployPokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\FortDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\FortRecallPokemonResponse.g.cs" />
@@ -367,6 +375,7 @@
     <Compile Include="Networking\Responses\LevelUpRewardsResponse.g.cs" />
     <Compile Include="Networking\Responses\ListAvatarCustomizationsResponse.g.cs" />
     <Compile Include="Networking\Responses\ListGymBadgesResponse.g.cs" />
+    <Compile Include="Networking\Responses\MarkReadNewsArticleResponse.g.cs" />
     <Compile Include="Networking\Responses\MarkTutorialCompleteResponse.g.cs" />
     <Compile Include="Networking\Responses\NicknamePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\PlatformClientActionsResponse.g.cs" />

@@ -25,13 +25,32 @@ namespace POGOProtos.Data.Quests {
             "CiJQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL1F1ZXN0LnByb3RvEhZQT0dPUHJv",
             "dG9zLkRhdGEuUXVlc3RzGiBQT0dPUHJvdG9zL0VudW1zL1F1ZXN0VHlwZS5w",
             "cm90bxonUE9HT1Byb3Rvcy9EYXRhL1F1ZXN0cy9EYWlseVF1ZXN0LnByb3Rv",
-            "InEKBVF1ZXN0Ei8KCnF1ZXN0X3R5cGUYASABKA4yGy5QT0dPUHJvdG9zLkVu",
-            "dW1zLlF1ZXN0VHlwZRI3CgtkYWlseV9xdWVzdBgCIAEoCzIiLlBPR09Qcm90",
-            "b3MuRGF0YS5RdWVzdHMuRGFpbHlRdWVzdGIGcHJvdG8z"));
+            "Gi5QT0dPUHJvdG9zL0RhdGEvUXVlc3RzL0NhdGNoUG9rZW1vblF1ZXN0LnBy",
+            "b3RvGihQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL1F1ZXN0UmV3YXJkLnByb3Rv",
+            "GiZQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL1F1ZXN0R29hbC5wcm90byKzBgoF",
+            "UXVlc3QSLwoKcXVlc3RfdHlwZRgBIAEoDjIbLlBPR09Qcm90b3MuRW51bXMu",
+            "UXVlc3RUeXBlEjcKC2RhaWx5X3F1ZXN0GAIgASgLMiIuUE9HT1Byb3Rvcy5E",
+            "YXRhLlF1ZXN0cy5EYWlseVF1ZXN0EkAKCm11bHRpX3BhcnQYAyABKAsyLC5Q",
+            "T0dPUHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0Lk11bHRpUGFydFF1ZXN0EkAK",
+            "DWNhdGNoX3Bva2Vtb24YBCABKAsyKS5QT0dPUHJvdG9zLkRhdGEuUXVlc3Rz",
+            "LkNhdGNoUG9rZW1vblF1ZXN0EhIKCnF1ZXN0X3NlZWQYBSABKAMSPAoNcXVl",
+            "c3RfY29udGV4dBgGIAEoDjIlLlBPR09Qcm90b3MuRGF0YS5RdWVzdHMuUXVl",
+            "c3QuQ29udGV4dBITCgt0ZW1wbGF0ZV9pZBgHIAEoCRIQCghwcm9ncmVzcxgI",
+            "IAEoBRIvCgRnb2FsGAkgASgLMiEuUE9HT1Byb3Rvcy5EYXRhLlF1ZXN0cy5R",
+            "dWVzdEdvYWwSNAoGc3RhdHVzGAogASgOMiQuUE9HT1Byb3Rvcy5EYXRhLlF1",
+            "ZXN0cy5RdWVzdC5TdGF0dXMSOgoNcXVlc3RfcmV3YXJkcxgLIAEoCzIjLlBP",
+            "R09Qcm90b3MuRGF0YS5RdWVzdHMuUXVlc3RSZXdhcmQSHQoVY3JlYXRpb25f",
+            "dGltZXN0YW1wX21zGAwgASgDEiAKGGxhc3RfdXBkYXRlX3RpbWVzdGFtcF9t",
+            "cxgNIAEoAxIgChhjb21wZWxldGlvbl90aW1lc3RhbXBfbXMYDiABKAMaQwoO",
+            "TXVsdGlQYXJ0UXVlc3QSMQoKc3ViX3F1ZXN0cxgBIAMoCzIdLlBPR09Qcm90",
+            "b3MuRGF0YS5RdWVzdHMuUXVlc3QiLwoHQ29udGV4dBIPCgtTVE9SWV9RVUVT",
+            "VBAAEhMKD0NIQUxMRU5HRV9RVUVTVBABIkcKBlN0YXR1cxIUChBTVEFUVVNf",
+            "VU5ERUZJTkVEEAASEQoNU1RBVFVTX0FDVElWRRABEhQKEFNUQVRVU19DT01Q",
+            "TEVURUQQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Enums.QuestTypeReflection.Descriptor, global::POGOProtos.Data.Quests.DailyQuestReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.QuestTypeReflection.Descriptor, global::POGOProtos.Data.Quests.DailyQuestReflection.Descriptor, global::POGOProtos.Data.Quests.CatchPokemonQuestReflection.Descriptor, global::POGOProtos.Data.Quests.QuestRewardReflection.Descriptor, global::POGOProtos.Data.Quests.QuestGoalReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest), global::POGOProtos.Data.Quests.Quest.Parser, new[]{ "QuestType", "DailyQuest" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest), global::POGOProtos.Data.Quests.Quest.Parser, new[]{ "QuestType", "DailyQuest", "MultiPart", "CatchPokemon", "QuestSeed", "QuestContext", "TemplateId", "Progress", "Goal", "Status", "QuestRewards", "CreationTimestampMs", "LastUpdateTimestampMs", "CompeletionTimestampMs" }, null, new[]{ typeof(global::POGOProtos.Data.Quests.Quest.Types.Context), typeof(global::POGOProtos.Data.Quests.Quest.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest), global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest.Parser, new[]{ "SubQuests" }, null, null, null)})
           }));
     }
     #endregion
@@ -64,6 +83,18 @@ namespace POGOProtos.Data.Quests {
     public Quest(Quest other) : this() {
       questType_ = other.questType_;
       DailyQuest = other.dailyQuest_ != null ? other.DailyQuest.Clone() : null;
+      MultiPart = other.multiPart_ != null ? other.MultiPart.Clone() : null;
+      CatchPokemon = other.catchPokemon_ != null ? other.CatchPokemon.Clone() : null;
+      questSeed_ = other.questSeed_;
+      questContext_ = other.questContext_;
+      templateId_ = other.templateId_;
+      progress_ = other.progress_;
+      Goal = other.goal_ != null ? other.Goal.Clone() : null;
+      status_ = other.status_;
+      QuestRewards = other.questRewards_ != null ? other.QuestRewards.Clone() : null;
+      creationTimestampMs_ = other.creationTimestampMs_;
+      lastUpdateTimestampMs_ = other.lastUpdateTimestampMs_;
+      compeletionTimestampMs_ = other.compeletionTimestampMs_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -93,6 +124,138 @@ namespace POGOProtos.Data.Quests {
       }
     }
 
+    /// <summary>Field number for the "multi_part" field.</summary>
+    public const int MultiPartFieldNumber = 3;
+    private global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest multiPart_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest MultiPart {
+      get { return multiPart_; }
+      set {
+        multiPart_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "catch_pokemon" field.</summary>
+    public const int CatchPokemonFieldNumber = 4;
+    private global::POGOProtos.Data.Quests.CatchPokemonQuest catchPokemon_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Quests.CatchPokemonQuest CatchPokemon {
+      get { return catchPokemon_; }
+      set {
+        catchPokemon_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "quest_seed" field.</summary>
+    public const int QuestSeedFieldNumber = 5;
+    private long questSeed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long QuestSeed {
+      get { return questSeed_; }
+      set {
+        questSeed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "quest_context" field.</summary>
+    public const int QuestContextFieldNumber = 6;
+    private global::POGOProtos.Data.Quests.Quest.Types.Context questContext_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Quests.Quest.Types.Context QuestContext {
+      get { return questContext_; }
+      set {
+        questContext_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "template_id" field.</summary>
+    public const int TemplateIdFieldNumber = 7;
+    private string templateId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TemplateId {
+      get { return templateId_; }
+      set {
+        templateId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "progress" field.</summary>
+    public const int ProgressFieldNumber = 8;
+    private int progress_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Progress {
+      get { return progress_; }
+      set {
+        progress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "goal" field.</summary>
+    public const int GoalFieldNumber = 9;
+    private global::POGOProtos.Data.Quests.QuestGoal goal_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Quests.QuestGoal Goal {
+      get { return goal_; }
+      set {
+        goal_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 10;
+    private global::POGOProtos.Data.Quests.Quest.Types.Status status_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Quests.Quest.Types.Status Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "quest_rewards" field.</summary>
+    public const int QuestRewardsFieldNumber = 11;
+    private global::POGOProtos.Data.Quests.QuestReward questRewards_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Quests.QuestReward QuestRewards {
+      get { return questRewards_; }
+      set {
+        questRewards_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "creation_timestamp_ms" field.</summary>
+    public const int CreationTimestampMsFieldNumber = 12;
+    private long creationTimestampMs_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long CreationTimestampMs {
+      get { return creationTimestampMs_; }
+      set {
+        creationTimestampMs_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "last_update_timestamp_ms" field.</summary>
+    public const int LastUpdateTimestampMsFieldNumber = 13;
+    private long lastUpdateTimestampMs_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long LastUpdateTimestampMs {
+      get { return lastUpdateTimestampMs_; }
+      set {
+        lastUpdateTimestampMs_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "compeletion_timestamp_ms" field.</summary>
+    public const int CompeletionTimestampMsFieldNumber = 14;
+    private long compeletionTimestampMs_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long CompeletionTimestampMs {
+      get { return compeletionTimestampMs_; }
+      set {
+        compeletionTimestampMs_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Quest);
@@ -108,6 +271,18 @@ namespace POGOProtos.Data.Quests {
       }
       if (QuestType != other.QuestType) return false;
       if (!object.Equals(DailyQuest, other.DailyQuest)) return false;
+      if (!object.Equals(MultiPart, other.MultiPart)) return false;
+      if (!object.Equals(CatchPokemon, other.CatchPokemon)) return false;
+      if (QuestSeed != other.QuestSeed) return false;
+      if (QuestContext != other.QuestContext) return false;
+      if (TemplateId != other.TemplateId) return false;
+      if (Progress != other.Progress) return false;
+      if (!object.Equals(Goal, other.Goal)) return false;
+      if (Status != other.Status) return false;
+      if (!object.Equals(QuestRewards, other.QuestRewards)) return false;
+      if (CreationTimestampMs != other.CreationTimestampMs) return false;
+      if (LastUpdateTimestampMs != other.LastUpdateTimestampMs) return false;
+      if (CompeletionTimestampMs != other.CompeletionTimestampMs) return false;
       return true;
     }
 
@@ -116,6 +291,18 @@ namespace POGOProtos.Data.Quests {
       int hash = 1;
       if (QuestType != 0) hash ^= QuestType.GetHashCode();
       if (dailyQuest_ != null) hash ^= DailyQuest.GetHashCode();
+      if (multiPart_ != null) hash ^= MultiPart.GetHashCode();
+      if (catchPokemon_ != null) hash ^= CatchPokemon.GetHashCode();
+      if (QuestSeed != 0L) hash ^= QuestSeed.GetHashCode();
+      if (QuestContext != 0) hash ^= QuestContext.GetHashCode();
+      if (TemplateId.Length != 0) hash ^= TemplateId.GetHashCode();
+      if (Progress != 0) hash ^= Progress.GetHashCode();
+      if (goal_ != null) hash ^= Goal.GetHashCode();
+      if (Status != 0) hash ^= Status.GetHashCode();
+      if (questRewards_ != null) hash ^= QuestRewards.GetHashCode();
+      if (CreationTimestampMs != 0L) hash ^= CreationTimestampMs.GetHashCode();
+      if (LastUpdateTimestampMs != 0L) hash ^= LastUpdateTimestampMs.GetHashCode();
+      if (CompeletionTimestampMs != 0L) hash ^= CompeletionTimestampMs.GetHashCode();
       return hash;
     }
 
@@ -134,6 +321,54 @@ namespace POGOProtos.Data.Quests {
         output.WriteRawTag(18);
         output.WriteMessage(DailyQuest);
       }
+      if (multiPart_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(MultiPart);
+      }
+      if (catchPokemon_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(CatchPokemon);
+      }
+      if (QuestSeed != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(QuestSeed);
+      }
+      if (QuestContext != 0) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) QuestContext);
+      }
+      if (TemplateId.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(TemplateId);
+      }
+      if (Progress != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(Progress);
+      }
+      if (goal_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Goal);
+      }
+      if (Status != 0) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) Status);
+      }
+      if (questRewards_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(QuestRewards);
+      }
+      if (CreationTimestampMs != 0L) {
+        output.WriteRawTag(96);
+        output.WriteInt64(CreationTimestampMs);
+      }
+      if (LastUpdateTimestampMs != 0L) {
+        output.WriteRawTag(104);
+        output.WriteInt64(LastUpdateTimestampMs);
+      }
+      if (CompeletionTimestampMs != 0L) {
+        output.WriteRawTag(112);
+        output.WriteInt64(CompeletionTimestampMs);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -144,6 +379,42 @@ namespace POGOProtos.Data.Quests {
       }
       if (dailyQuest_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DailyQuest);
+      }
+      if (multiPart_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MultiPart);
+      }
+      if (catchPokemon_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CatchPokemon);
+      }
+      if (QuestSeed != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(QuestSeed);
+      }
+      if (QuestContext != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) QuestContext);
+      }
+      if (TemplateId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TemplateId);
+      }
+      if (Progress != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Progress);
+      }
+      if (goal_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Goal);
+      }
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      if (questRewards_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(QuestRewards);
+      }
+      if (CreationTimestampMs != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CreationTimestampMs);
+      }
+      if (LastUpdateTimestampMs != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(LastUpdateTimestampMs);
+      }
+      if (CompeletionTimestampMs != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CompeletionTimestampMs);
       }
       return size;
     }
@@ -161,6 +432,54 @@ namespace POGOProtos.Data.Quests {
           dailyQuest_ = new global::POGOProtos.Data.Quests.DailyQuest();
         }
         DailyQuest.MergeFrom(other.DailyQuest);
+      }
+      if (other.multiPart_ != null) {
+        if (multiPart_ == null) {
+          multiPart_ = new global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest();
+        }
+        MultiPart.MergeFrom(other.MultiPart);
+      }
+      if (other.catchPokemon_ != null) {
+        if (catchPokemon_ == null) {
+          catchPokemon_ = new global::POGOProtos.Data.Quests.CatchPokemonQuest();
+        }
+        CatchPokemon.MergeFrom(other.CatchPokemon);
+      }
+      if (other.QuestSeed != 0L) {
+        QuestSeed = other.QuestSeed;
+      }
+      if (other.QuestContext != 0) {
+        QuestContext = other.QuestContext;
+      }
+      if (other.TemplateId.Length != 0) {
+        TemplateId = other.TemplateId;
+      }
+      if (other.Progress != 0) {
+        Progress = other.Progress;
+      }
+      if (other.goal_ != null) {
+        if (goal_ == null) {
+          goal_ = new global::POGOProtos.Data.Quests.QuestGoal();
+        }
+        Goal.MergeFrom(other.Goal);
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+      if (other.questRewards_ != null) {
+        if (questRewards_ == null) {
+          questRewards_ = new global::POGOProtos.Data.Quests.QuestReward();
+        }
+        QuestRewards.MergeFrom(other.QuestRewards);
+      }
+      if (other.CreationTimestampMs != 0L) {
+        CreationTimestampMs = other.CreationTimestampMs;
+      }
+      if (other.LastUpdateTimestampMs != 0L) {
+        LastUpdateTimestampMs = other.LastUpdateTimestampMs;
+      }
+      if (other.CompeletionTimestampMs != 0L) {
+        CompeletionTimestampMs = other.CompeletionTimestampMs;
       }
     }
 
@@ -183,9 +502,196 @@ namespace POGOProtos.Data.Quests {
             input.ReadMessage(dailyQuest_);
             break;
           }
+          case 26: {
+            if (multiPart_ == null) {
+              multiPart_ = new global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest();
+            }
+            input.ReadMessage(multiPart_);
+            break;
+          }
+          case 34: {
+            if (catchPokemon_ == null) {
+              catchPokemon_ = new global::POGOProtos.Data.Quests.CatchPokemonQuest();
+            }
+            input.ReadMessage(catchPokemon_);
+            break;
+          }
+          case 40: {
+            QuestSeed = input.ReadInt64();
+            break;
+          }
+          case 48: {
+            questContext_ = (global::POGOProtos.Data.Quests.Quest.Types.Context) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            TemplateId = input.ReadString();
+            break;
+          }
+          case 64: {
+            Progress = input.ReadInt32();
+            break;
+          }
+          case 74: {
+            if (goal_ == null) {
+              goal_ = new global::POGOProtos.Data.Quests.QuestGoal();
+            }
+            input.ReadMessage(goal_);
+            break;
+          }
+          case 80: {
+            status_ = (global::POGOProtos.Data.Quests.Quest.Types.Status) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            if (questRewards_ == null) {
+              questRewards_ = new global::POGOProtos.Data.Quests.QuestReward();
+            }
+            input.ReadMessage(questRewards_);
+            break;
+          }
+          case 96: {
+            CreationTimestampMs = input.ReadInt64();
+            break;
+          }
+          case 104: {
+            LastUpdateTimestampMs = input.ReadInt64();
+            break;
+          }
+          case 112: {
+            CompeletionTimestampMs = input.ReadInt64();
+            break;
+          }
         }
       }
     }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the Quest message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Context {
+        [pbr::OriginalName("STORY_QUEST")] StoryQuest = 0,
+        [pbr::OriginalName("CHALLENGE_QUEST")] ChallengeQuest = 1,
+      }
+
+      public enum Status {
+        [pbr::OriginalName("STATUS_UNDEFINED")] Undefined = 0,
+        [pbr::OriginalName("STATUS_ACTIVE")] Active = 1,
+        [pbr::OriginalName("STATUS_COMPLETED")] Completed = 2,
+      }
+
+      public sealed partial class MultiPartQuest : pb::IMessage<MultiPartQuest> {
+        private static readonly pb::MessageParser<MultiPartQuest> _parser = new pb::MessageParser<MultiPartQuest>(() => new MultiPartQuest());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<MultiPartQuest> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::POGOProtos.Data.Quests.Quest.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public MultiPartQuest() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public MultiPartQuest(MultiPartQuest other) : this() {
+          subQuests_ = other.subQuests_.Clone();
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public MultiPartQuest Clone() {
+          return new MultiPartQuest(this);
+        }
+
+        /// <summary>Field number for the "sub_quests" field.</summary>
+        public const int SubQuestsFieldNumber = 1;
+        private static readonly pb::FieldCodec<global::POGOProtos.Data.Quests.Quest> _repeated_subQuests_codec
+            = pb::FieldCodec.ForMessage(10, global::POGOProtos.Data.Quests.Quest.Parser);
+        private readonly pbc::RepeatedField<global::POGOProtos.Data.Quests.Quest> subQuests_ = new pbc::RepeatedField<global::POGOProtos.Data.Quests.Quest>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::POGOProtos.Data.Quests.Quest> SubQuests {
+          get { return subQuests_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as MultiPartQuest);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(MultiPartQuest other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!subQuests_.Equals(other.subQuests_)) return false;
+          return true;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= subQuests_.GetHashCode();
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          subQuests_.WriteTo(output, _repeated_subQuests_codec);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += subQuests_.CalculateSize(_repeated_subQuests_codec);
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(MultiPartQuest other) {
+          if (other == null) {
+            return;
+          }
+          subQuests_.Add(other.subQuests_);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                input.SkipLastField();
+                break;
+              case 10: {
+                subQuests_.AddEntriesFrom(input, _repeated_subQuests_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
 
   }
 

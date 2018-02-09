@@ -23,9 +23,14 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBQT0dPUHJvdG9zL0VudW1zL1F1ZXN0VHlwZS5wcm90bxIQUE9HT1Byb3Rv",
-            "cy5FbnVtcypqCglRdWVzdFR5cGUSFgoSUVVFU1RfVU5LTk9XTl9UWVBFEAAS",
-            "IAocUVVFU1RfRklSU1RfQ0FUQ0hfT0ZfVEhFX0RBWRABEiMKH1FVRVNUX0ZJ",
-            "UlNUX1BPS0VTVE9QX09GX1RIRV9EQVkQAmIGcHJvdG8z"));
+            "cy5FbnVtcyrIAgoJUXVlc3RUeXBlEhYKElFVRVNUX1VOS05PV05fVFlQRRAA",
+            "EiAKHFFVRVNUX0ZJUlNUX0NBVENIX09GX1RIRV9EQVkQARIjCh9RVUVTVF9G",
+            "SVJTVF9QT0tFU1RPUF9PRl9USEVfREFZEAISFAoQUVVFU1RfTVVMVElfUEFS",
+            "VBADEhcKE1FVRVNUX0NBVENIX1BPS0VNT04QBBIXChNRVUVTVF9TUElOX1BP",
+            "S0VTVE9QEAUSEwoPUVVFU1RfSEFUQ0hfRUdHEAYSFAoQUVVFU1RfV0FMS19C",
+            "VUREWRAHEhYKElFVRVNUX0ZFRURfUE9LRU1PThAIEhgKFFFVRVNUX1dJTl9H",
+            "WU1fQkFUVExFEAkSHgoaUVVFU1RfQ09NUExFVEVfUkFJRF9CQVRUTEUQChIX",
+            "ChNRVUVTVF9MRVZFTFVQX0JBREdFEAtiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.QuestType), }, null));
@@ -38,6 +43,15 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("QUEST_UNKNOWN_TYPE")] QuestUnknownType = 0,
     [pbr::OriginalName("QUEST_FIRST_CATCH_OF_THE_DAY")] QuestFirstCatchOfTheDay = 1,
     [pbr::OriginalName("QUEST_FIRST_POKESTOP_OF_THE_DAY")] QuestFirstPokestopOfTheDay = 2,
+    [pbr::OriginalName("QUEST_MULTI_PART")] QuestMultiPart = 3,
+    [pbr::OriginalName("QUEST_CATCH_POKEMON")] QuestCatchPokemon = 4,
+    [pbr::OriginalName("QUEST_SPIN_POKESTOP")] QuestSpinPokestop = 5,
+    [pbr::OriginalName("QUEST_HATCH_EGG")] QuestHatchEgg = 6,
+    [pbr::OriginalName("QUEST_WALK_BUDDY")] QuestWalkBuddy = 7,
+    [pbr::OriginalName("QUEST_FEED_POKEMON")] QuestFeedPokemon = 8,
+    [pbr::OriginalName("QUEST_WIN_GYM_BATTLE")] QuestWinGymBattle = 9,
+    [pbr::OriginalName("QUEST_COMPLETE_RAID_BATTLE")] QuestCompleteRaidBattle = 10,
+    [pbr::OriginalName("QUEST_LEVELUP_BADGE")] QuestLevelupBadge = 11,
   }
 
   #endregion
