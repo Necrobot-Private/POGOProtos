@@ -24,14 +24,15 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CjdQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0dldFBsYXllclJl",
             "c3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2Vz",
-            "GiBQT0dPUHJvdG9zL0RhdGEvUGxheWVyRGF0YS5wcm90byJ0ChFHZXRQbGF5",
-            "ZXJSZXNwb25zZRIPCgdzdWNjZXNzGAEgASgIEjAKC3BsYXllcl9kYXRhGAIg",
-            "ASgLMhsuUE9HT1Byb3Rvcy5EYXRhLlBsYXllckRhdGESDgoGYmFubmVkGAMg",
-            "ASgIEgwKBHdhcm4YBCABKAhiBnByb3RvMw=="));
+            "GiBQT0dPUHJvdG9zL0RhdGEvUGxheWVyRGF0YS5wcm90byKJAQoRR2V0UGxh",
+            "eWVyUmVzcG9uc2USDwoHc3VjY2VzcxgBIAEoCBIwCgtwbGF5ZXJfZGF0YRgC",
+            "IAEoCzIbLlBPR09Qcm90b3MuRGF0YS5QbGF5ZXJEYXRhEg4KBmJhbm5lZBgD",
+            "IAEoCBIMCgR3YXJuGAQgASgIEhMKC3dhc19jcmVhdGVkGAUgASgIYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.PlayerDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetPlayerResponse), global::POGOProtos.Networking.Responses.GetPlayerResponse.Parser, new[]{ "Success", "PlayerData", "Banned", "Warn" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetPlayerResponse), global::POGOProtos.Networking.Responses.GetPlayerResponse.Parser, new[]{ "Success", "PlayerData", "Banned", "Warn", "WasCreated" }, null, null, null)
           }));
     }
     #endregion
@@ -66,6 +67,7 @@ namespace POGOProtos.Networking.Responses {
       PlayerData = other.playerData_ != null ? other.PlayerData.Clone() : null;
       banned_ = other.banned_;
       warn_ = other.warn_;
+      wasCreated_ = other.wasCreated_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -117,6 +119,17 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
+    /// <summary>Field number for the "was_created" field.</summary>
+    public const int WasCreatedFieldNumber = 5;
+    private bool wasCreated_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool WasCreated {
+      get { return wasCreated_; }
+      set {
+        wasCreated_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GetPlayerResponse);
@@ -134,6 +147,7 @@ namespace POGOProtos.Networking.Responses {
       if (!object.Equals(PlayerData, other.PlayerData)) return false;
       if (Banned != other.Banned) return false;
       if (Warn != other.Warn) return false;
+      if (WasCreated != other.WasCreated) return false;
       return true;
     }
 
@@ -144,6 +158,7 @@ namespace POGOProtos.Networking.Responses {
       if (playerData_ != null) hash ^= PlayerData.GetHashCode();
       if (Banned != false) hash ^= Banned.GetHashCode();
       if (Warn != false) hash ^= Warn.GetHashCode();
+      if (WasCreated != false) hash ^= WasCreated.GetHashCode();
       return hash;
     }
 
@@ -170,6 +185,10 @@ namespace POGOProtos.Networking.Responses {
         output.WriteRawTag(32);
         output.WriteBool(Warn);
       }
+      if (WasCreated != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(WasCreated);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -185,6 +204,9 @@ namespace POGOProtos.Networking.Responses {
         size += 1 + 1;
       }
       if (Warn != false) {
+        size += 1 + 1;
+      }
+      if (WasCreated != false) {
         size += 1 + 1;
       }
       return size;
@@ -209,6 +231,9 @@ namespace POGOProtos.Networking.Responses {
       }
       if (other.Warn != false) {
         Warn = other.Warn;
+      }
+      if (other.WasCreated != false) {
+        WasCreated = other.WasCreated;
       }
     }
 
@@ -237,6 +262,10 @@ namespace POGOProtos.Networking.Responses {
           }
           case 32: {
             Warn = input.ReadBool();
+            break;
+          }
+          case 40: {
+            WasCreated = input.ReadBool();
             break;
           }
         }

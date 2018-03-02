@@ -23,7 +23,7 @@ namespace POGOProtos.Networking.Requests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
-            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyr+EAoLUmVx",
+            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyqwEQoLUmVx",
             "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASDgoKR0VUX1BMQVlFUhACEhYK",
             "EkdFVF9IT0xPX0lOVkVOVE9SWRAEEhUKEURPV05MT0FEX1NFVFRJTkdTEAUS",
             "GwoXRE9XTkxPQURfSVRFTV9URU1QTEFURVMQBhIiCh5ET1dOTE9BRF9SRU1P",
@@ -67,12 +67,13 @@ namespace POGOProtos.Networking.Requests {
             "QVRBUl9JVEVNX0FTX1ZJRVdFRBCoBhIOCglHRVRfSU5CT1gQqQYSFAoPTElT",
             "VF9HWU1fQkFER0VTEKsGEhoKFUdFVF9HWU1fQkFER0VfREVUQUlMUxCsBhIZ",
             "ChRVU0VfSVRFTV9NT1ZFX1JFUk9MTBCtBhIYChNVU0VfSVRFTV9SQVJFX0NB",
-            "TkRZEK4GEhsKFkFXQVJEX0ZSRUVfUkFJRF9USUNLRVQQrwYSHwoaUkVHSVNU",
-            "RVJfUFVTSF9OT1RJRklDQVRJT04QiCcSIQocVU5SRUdJU1RFUl9QVVNIX05P",
-            "VElGSUNBVElPThCJJxIfChpVUERBVEVfTk9USUZJQ0FUSU9OX1NUQVRVUxCK",
-            "JxInCiJPUFRfT1VUX1BVU0hfTk9USUZJQ0FUSU9OX0NBVEVHT1JZEIsnEiMK",
-            "HkRPV05MT0FEX0dBTUVfTUFTVEVSX1RFTVBMQVRFUxCMJxISCg1HRVRfSU5W",
-            "RU5UT1JZEI0nYgZwcm90bzM="));
+            "TkRZEK4GEhsKFkFXQVJEX0ZSRUVfUkFJRF9USUNLRVQQrwYSEwoORkVUQ0hf",
+            "QUxMX05FV1MQsAYSGwoWTUFSS19SRUFEX05FV1NfQVJUSUNMRRCxBhIfChpS",
+            "RUdJU1RFUl9QVVNIX05PVElGSUNBVElPThCIJxIhChxVTlJFR0lTVEVSX1BV",
+            "U0hfTk9USUZJQ0FUSU9OEIknEh8KGlVQREFURV9OT1RJRklDQVRJT05fU1RB",
+            "VFVTEIonEicKIk9QVF9PVVRfUFVTSF9OT1RJRklDQVRJT05fQ0FURUdPUlkQ",
+            "iycSIwoeRE9XTkxPQURfR0FNRV9NQVNURVJfVEVNUExBVEVTEIwnEhIKDUdF",
+            "VF9JTlZFTlRPUlkQjSdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Networking.Requests.RequestType), }, null));
@@ -422,6 +423,14 @@ namespace POGOProtos.Networking.Requests {
     /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("AWARD_FREE_RAID_TICKET")] AwardFreeRaidTicket = 815,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("FETCH_ALL_NEWS")] FetchAllNews = 816,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("MARK_READ_NEWS_ARTICLE")] MarkReadNewsArticle = 817,
     /// <summary>
     /// Implemented [R &amp; M]
     /// </summary>

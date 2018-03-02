@@ -24,15 +24,16 @@ namespace POGOProtos.Networking.Requests.Messages {
           string.Concat(
             "Cj5QT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvTWVzc2FnZXMvR2V0",
             "UGxheWVyTWVzc2FnZS5wcm90bxInUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJl",
-            "cXVlc3RzLk1lc3NhZ2VzIrYBChBHZXRQbGF5ZXJNZXNzYWdlEl0KDXBsYXll",
+            "cXVlc3RzLk1lc3NhZ2VzItABChBHZXRQbGF5ZXJNZXNzYWdlEl0KDXBsYXll",
             "cl9sb2NhbGUYASABKAsyRi5QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVxdWVz",
-            "dHMuTWVzc2FnZXMuR2V0UGxheWVyTWVzc2FnZS5QbGF5ZXJMb2NhbGUaQwoM",
-            "UGxheWVyTG9jYWxlEg8KB2NvdW50cnkYASABKAkSEAoIbGFuZ3VhZ2UYAiAB",
-            "KAkSEAoIdGltZXpvbmUYAyABKAliBnByb3RvMw=="));
+            "dHMuTWVzc2FnZXMuR2V0UGxheWVyTWVzc2FnZS5QbGF5ZXJMb2NhbGUSGAoQ",
+            "cHJldmVudF9jcmVhdGlvbhgCIAEoCBpDCgxQbGF5ZXJMb2NhbGUSDwoHY291",
+            "bnRyeRgBIAEoCRIQCghsYW5ndWFnZRgCIAEoCRIQCgh0aW1lem9uZRgDIAEo",
+            "CWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage), global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage.Parser, new[]{ "PlayerLocale" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage.Types.PlayerLocale), global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage.Types.PlayerLocale.Parser, new[]{ "Country", "Language", "Timezone" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage), global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage.Parser, new[]{ "PlayerLocale", "PreventCreation" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage.Types.PlayerLocale), global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage.Types.PlayerLocale.Parser, new[]{ "Country", "Language", "Timezone" }, null, null, null)})
           }));
     }
     #endregion
@@ -64,6 +65,7 @@ namespace POGOProtos.Networking.Requests.Messages {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetPlayerMessage(GetPlayerMessage other) : this() {
       PlayerLocale = other.playerLocale_ != null ? other.PlayerLocale.Clone() : null;
+      preventCreation_ = other.preventCreation_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -82,6 +84,17 @@ namespace POGOProtos.Networking.Requests.Messages {
       }
     }
 
+    /// <summary>Field number for the "prevent_creation" field.</summary>
+    public const int PreventCreationFieldNumber = 2;
+    private bool preventCreation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PreventCreation {
+      get { return preventCreation_; }
+      set {
+        preventCreation_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GetPlayerMessage);
@@ -96,6 +109,7 @@ namespace POGOProtos.Networking.Requests.Messages {
         return true;
       }
       if (!object.Equals(PlayerLocale, other.PlayerLocale)) return false;
+      if (PreventCreation != other.PreventCreation) return false;
       return true;
     }
 
@@ -103,6 +117,7 @@ namespace POGOProtos.Networking.Requests.Messages {
     public override int GetHashCode() {
       int hash = 1;
       if (playerLocale_ != null) hash ^= PlayerLocale.GetHashCode();
+      if (PreventCreation != false) hash ^= PreventCreation.GetHashCode();
       return hash;
     }
 
@@ -117,6 +132,10 @@ namespace POGOProtos.Networking.Requests.Messages {
         output.WriteRawTag(10);
         output.WriteMessage(PlayerLocale);
       }
+      if (PreventCreation != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(PreventCreation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -124,6 +143,9 @@ namespace POGOProtos.Networking.Requests.Messages {
       int size = 0;
       if (playerLocale_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerLocale);
+      }
+      if (PreventCreation != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -138,6 +160,9 @@ namespace POGOProtos.Networking.Requests.Messages {
           playerLocale_ = new global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage.Types.PlayerLocale();
         }
         PlayerLocale.MergeFrom(other.PlayerLocale);
+      }
+      if (other.PreventCreation != false) {
+        PreventCreation = other.PreventCreation;
       }
     }
 
@@ -154,6 +179,10 @@ namespace POGOProtos.Networking.Requests.Messages {
               playerLocale_ = new global::POGOProtos.Networking.Requests.Messages.GetPlayerMessage.Types.PlayerLocale();
             }
             input.ReadMessage(playerLocale_);
+            break;
+          }
+          case 16: {
+            PreventCreation = input.ReadBool();
             break;
           }
         }
