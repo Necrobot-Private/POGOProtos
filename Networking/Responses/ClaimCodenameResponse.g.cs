@@ -24,20 +24,20 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CjtQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0NsYWltQ29kZW5h",
             "bWVSZXNwb25zZS5wcm90bxIfUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3Bv",
-            "bnNlcxogUE9HT1Byb3Rvcy9EYXRhL1BsYXllckRhdGEucHJvdG8i5QIKFUNs",
+            "bnNlcxogUE9HT1Byb3Rvcy9EYXRhL1BsYXllckRhdGEucHJvdG8iggMKFUNs",
             "YWltQ29kZW5hbWVSZXNwb25zZRIQCghjb2RlbmFtZRgBIAEoCRIUCgx1c2Vy",
             "X21lc3NhZ2UYAiABKAkSFQoNaXNfYXNzaWduYWJsZRgDIAEoCBJNCgZzdGF0",
             "dXMYBCABKA4yPS5QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2VzLkNs",
             "YWltQ29kZW5hbWVSZXNwb25zZS5TdGF0dXMSMwoOdXBkYXRlZF9wbGF5ZXIY",
-            "BSABKAsyGy5QT0dPUHJvdG9zLkRhdGEuUGxheWVyRGF0YSKIAQoGU3RhdHVz",
-            "EgkKBVVOU0VUEAASCwoHU1VDQ0VTUxABEhoKFkNPREVOQU1FX05PVF9BVkFJ",
-            "TEFCTEUQAhIWChJDT0RFTkFNRV9OT1RfVkFMSUQQAxIRCg1DVVJSRU5UX09X",
-            "TkVSEAQSHwobQ09ERU5BTUVfQ0hBTkdFX05PVF9BTExPV0VEEAViBnByb3Rv",
-            "Mw=="));
+            "BSABKAsyGy5QT0dPUHJvdG9zLkRhdGEuUGxheWVyRGF0YRIbChNzdWdnZXN0",
+            "ZWRfY29kZW5hbWVzGAYgAygJIogBCgZTdGF0dXMSCQoFVU5TRVQQABILCgdT",
+            "VUNDRVNTEAESGgoWQ09ERU5BTUVfTk9UX0FWQUlMQUJMRRACEhYKEkNPREVO",
+            "QU1FX05PVF9WQUxJRBADEhEKDUNVUlJFTlRfT1dORVIQBBIfChtDT0RFTkFN",
+            "RV9DSEFOR0VfTk9UX0FMTE9XRUQQBWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.PlayerDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.ClaimCodenameResponse), global::POGOProtos.Networking.Responses.ClaimCodenameResponse.Parser, new[]{ "Codename", "UserMessage", "IsAssignable", "Status", "UpdatedPlayer" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.ClaimCodenameResponse.Types.Status) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.ClaimCodenameResponse), global::POGOProtos.Networking.Responses.ClaimCodenameResponse.Parser, new[]{ "Codename", "UserMessage", "IsAssignable", "Status", "UpdatedPlayer", "SuggestedCodenames" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.ClaimCodenameResponse.Types.Status) }, null)
           }));
     }
     #endregion
@@ -73,6 +73,7 @@ namespace POGOProtos.Networking.Responses {
       isAssignable_ = other.isAssignable_;
       status_ = other.status_;
       UpdatedPlayer = other.updatedPlayer_ != null ? other.UpdatedPlayer.Clone() : null;
+      suggestedCodenames_ = other.suggestedCodenames_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -135,6 +136,16 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
+    /// <summary>Field number for the "suggested_codenames" field.</summary>
+    public const int SuggestedCodenamesFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _repeated_suggestedCodenames_codec
+        = pb::FieldCodec.ForString(50);
+    private readonly pbc::RepeatedField<string> suggestedCodenames_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> SuggestedCodenames {
+      get { return suggestedCodenames_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ClaimCodenameResponse);
@@ -153,6 +164,7 @@ namespace POGOProtos.Networking.Responses {
       if (IsAssignable != other.IsAssignable) return false;
       if (Status != other.Status) return false;
       if (!object.Equals(UpdatedPlayer, other.UpdatedPlayer)) return false;
+      if(!suggestedCodenames_.Equals(other.suggestedCodenames_)) return false;
       return true;
     }
 
@@ -164,6 +176,7 @@ namespace POGOProtos.Networking.Responses {
       if (IsAssignable != false) hash ^= IsAssignable.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
       if (updatedPlayer_ != null) hash ^= UpdatedPlayer.GetHashCode();
+      hash ^= suggestedCodenames_.GetHashCode();
       return hash;
     }
 
@@ -194,6 +207,7 @@ namespace POGOProtos.Networking.Responses {
         output.WriteRawTag(42);
         output.WriteMessage(UpdatedPlayer);
       }
+      suggestedCodenames_.WriteTo(output, _repeated_suggestedCodenames_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -214,6 +228,7 @@ namespace POGOProtos.Networking.Responses {
       if (updatedPlayer_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdatedPlayer);
       }
+      size += suggestedCodenames_.CalculateSize(_repeated_suggestedCodenames_codec);
       return size;
     }
 
@@ -240,6 +255,7 @@ namespace POGOProtos.Networking.Responses {
         }
         UpdatedPlayer.MergeFrom(other.UpdatedPlayer);
       }
+      suggestedCodenames_.Add(other.suggestedCodenames_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -271,6 +287,10 @@ namespace POGOProtos.Networking.Responses {
               updatedPlayer_ = new global::POGOProtos.Data.PlayerData();
             }
             input.ReadMessage(updatedPlayer_);
+            break;
+          }
+          case 50: {
+            suggestedCodenames_.AddEntriesFrom(input, _repeated_suggestedCodenames_codec);
             break;
           }
         }

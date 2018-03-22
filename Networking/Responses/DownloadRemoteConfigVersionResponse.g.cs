@@ -24,16 +24,17 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CklQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0Rvd25sb2FkUmVt",
             "b3RlQ29uZmlnVmVyc2lvblJlc3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5l",
-            "dHdvcmtpbmcuUmVzcG9uc2VzIuwBCiNEb3dubG9hZFJlbW90ZUNvbmZpZ1Zl",
+            "dHdvcmtpbmcuUmVzcG9uc2VzIoMCCiNEb3dubG9hZFJlbW90ZUNvbmZpZ1Zl",
             "cnNpb25SZXNwb25zZRJbCgZyZXN1bHQYASABKA4ySy5QT0dPUHJvdG9zLk5l",
             "dHdvcmtpbmcuUmVzcG9uc2VzLkRvd25sb2FkUmVtb3RlQ29uZmlnVmVyc2lv",
             "blJlc3BvbnNlLlJlc3VsdBIjChtpdGVtX3RlbXBsYXRlc190aW1lc3RhbXBf",
-            "bXMYAiABKAQSIQoZYXNzZXRfZGlnZXN0X3RpbWVzdGFtcF9tcxgDIAEoBCIg",
-            "CgZSZXN1bHQSCQoFVU5TRVQQABILCgdTVUNDRVNTEAFiBnByb3RvMw=="));
+            "bXMYAiABKAQSIQoZYXNzZXRfZGlnZXN0X3RpbWVzdGFtcF9tcxgDIAEoBBIV",
+            "Cg1leHBlcmltZW50X2lkGAQgAygNIiAKBlJlc3VsdBIJCgVVTlNFVBAAEgsK",
+            "B1NVQ0NFU1MQAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse), global::POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Parser, new[]{ "Result", "ItemTemplatesTimestampMs", "AssetDigestTimestampMs" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse), global::POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Parser, new[]{ "Result", "ItemTemplatesTimestampMs", "AssetDigestTimestampMs", "ExperimentId" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -67,6 +68,7 @@ namespace POGOProtos.Networking.Responses {
       result_ = other.result_;
       itemTemplatesTimestampMs_ = other.itemTemplatesTimestampMs_;
       assetDigestTimestampMs_ = other.assetDigestTimestampMs_;
+      experimentId_ = other.experimentId_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -110,6 +112,16 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
+    /// <summary>Field number for the "experiment_id" field.</summary>
+    public const int ExperimentIdFieldNumber = 4;
+    private static readonly pb::FieldCodec<uint> _repeated_experimentId_codec
+        = pb::FieldCodec.ForUInt32(34);
+    private readonly pbc::RepeatedField<uint> experimentId_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> ExperimentId {
+      get { return experimentId_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DownloadRemoteConfigVersionResponse);
@@ -126,6 +138,7 @@ namespace POGOProtos.Networking.Responses {
       if (Result != other.Result) return false;
       if (ItemTemplatesTimestampMs != other.ItemTemplatesTimestampMs) return false;
       if (AssetDigestTimestampMs != other.AssetDigestTimestampMs) return false;
+      if(!experimentId_.Equals(other.experimentId_)) return false;
       return true;
     }
 
@@ -135,6 +148,7 @@ namespace POGOProtos.Networking.Responses {
       if (Result != 0) hash ^= Result.GetHashCode();
       if (ItemTemplatesTimestampMs != 0UL) hash ^= ItemTemplatesTimestampMs.GetHashCode();
       if (AssetDigestTimestampMs != 0UL) hash ^= AssetDigestTimestampMs.GetHashCode();
+      hash ^= experimentId_.GetHashCode();
       return hash;
     }
 
@@ -157,6 +171,7 @@ namespace POGOProtos.Networking.Responses {
         output.WriteRawTag(24);
         output.WriteUInt64(AssetDigestTimestampMs);
       }
+      experimentId_.WriteTo(output, _repeated_experimentId_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -171,6 +186,7 @@ namespace POGOProtos.Networking.Responses {
       if (AssetDigestTimestampMs != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AssetDigestTimestampMs);
       }
+      size += experimentId_.CalculateSize(_repeated_experimentId_codec);
       return size;
     }
 
@@ -188,6 +204,7 @@ namespace POGOProtos.Networking.Responses {
       if (other.AssetDigestTimestampMs != 0UL) {
         AssetDigestTimestampMs = other.AssetDigestTimestampMs;
       }
+      experimentId_.Add(other.experimentId_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -208,6 +225,11 @@ namespace POGOProtos.Networking.Responses {
           }
           case 24: {
             AssetDigestTimestampMs = input.ReadUInt64();
+            break;
+          }
+          case 34:
+          case 32: {
+            experimentId_.AddEntriesFrom(input, _repeated_experimentId_codec);
             break;
           }
         }

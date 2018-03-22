@@ -23,7 +23,7 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNQT0dPUHJvdG9zL0VudW1zL0FjdGl2aXR5VHlwZS5wcm90bxIQUE9HT1By",
-            "b3Rvcy5FbnVtcyqaCAoMQWN0aXZpdHlUeXBlEhQKEEFDVElWSVRZX1VOS05P",
+            "b3Rvcy5FbnVtcyrGCAoMQWN0aXZpdHlUeXBlEhQKEEFDVElWSVRZX1VOS05P",
             "V04QABIaChZBQ1RJVklUWV9DQVRDSF9QT0tFTU9OEAESIQodQUNUSVZJVFlf",
             "Q0FUQ0hfTEVHRU5EX1BPS0VNT04QAhIZChVBQ1RJVklUWV9GTEVFX1BPS0VN",
             "T04QAxIYChRBQ1RJVklUWV9ERUZFQVRfRk9SVBAEEhsKF0FDVElWSVRZX0VW",
@@ -46,7 +46,8 @@ namespace POGOProtos.Enums {
             "X0RFRkVBVF9SQUlEX1BPS0VNT04QGxIXChNBQ1RJVklUWV9GRUVEX0JFUlJZ",
             "EBwSFwoTQUNUSVZJVFlfU0VBUkNIX0dZTRAdEhkKFUFDVElWSVRZX05FV19Q",
             "T0tFU1RPUBAeEhwKGEFDVElWSVRZX0dZTV9CQVRUTEVfTE9TUxAfEiAKHEFD",
-            "VElWSVRZX0NBVENIX0FSX1BMVVNfQk9OVVMQIGIGcHJvdG8z"));
+            "VElWSVRZX0NBVENIX0FSX1BMVVNfQk9OVVMQIBIqCiZBQ1RJVklUWV9DQVRD",
+            "SF9RVUVTVF9QT0tFTU9OX0VOQ09VTlRFUhAhYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.ActivityType), }, null));
@@ -89,6 +90,7 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("ACTIVITY_NEW_POKESTOP")] ActivityNewPokestop = 30,
     [pbr::OriginalName("ACTIVITY_GYM_BATTLE_LOSS")] ActivityGymBattleLoss = 31,
     [pbr::OriginalName("ACTIVITY_CATCH_AR_PLUS_BONUS")] ActivityCatchArPlusBonus = 32,
+    [pbr::OriginalName("ACTIVITY_CATCH_QUEST_POKEMON_ENCOUNTER")] ActivityCatchQuestPokemonEncounter = 33,
   }
 
   #endregion

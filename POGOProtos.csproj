@@ -419,6 +419,7 @@
     <Compile Include="Settings\GpsSettings.g.cs" />
     <Compile Include="Settings\InventorySettings.g.cs" />
     <Compile Include="Settings\LevelSettings.g.cs" />
+    <Compile Include="Settings\LoginSettings.g.cs" />
     <Compile Include="Settings\MapSettings.g.cs" />
     <Compile Include="Settings\Master\AvatarCustomizationSettings.g.cs" />
     <Compile Include="Settings\Master\BadgeSettings.g.cs" />
@@ -430,6 +431,7 @@
     <Compile Include="Settings\Master\GymBadgeGmtSettings.g.cs" />
     <Compile Include="Settings\Master\GymBattleSettings.g.cs" />
     <Compile Include="Settings\Master\GymLevelSettings.g.cs" />
+    <Compile Include="Settings\Master\IapItemCategoryDisplay.g.cs" />
     <Compile Include="Settings\Master\IapItemDisplay.g.cs" />
     <Compile Include="Settings\Master\IapSettings.g.cs" />
     <Compile Include="Settings\Master\ItemSettings.g.cs" />
@@ -460,6 +462,8 @@
     <Compile Include="Settings\Master\TypeEffectiveSettings.g.cs" />
     <Compile Include="Settings\Master\WeatherAffinity.g.cs" />
     <Compile Include="Settings\Master\WeatherBonus.g.cs" />
+    <Compile Include="Settings\MetricsGlobalSettings.g.cs" />
+    <Compile Include="Settings\NewsGlobalSettings.g.cs" />
     <Compile Include="Settings\NewsSettings.g.cs" />
     <Compile Include="Settings\NotificationSettings.g.cs" />
     <Compile Include="Settings\PasscodeSettings.g.cs" />

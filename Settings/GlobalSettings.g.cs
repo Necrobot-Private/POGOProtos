@@ -35,32 +35,40 @@ namespace POGOProtos.Settings {
             "b3MvU2V0dGluZ3MvUGFzc2NvZGVTZXR0aW5ncy5wcm90bxonUE9HT1Byb3Rv",
             "cy9TZXR0aW5ncy9TZmlkYVNldHRpbmdzLnByb3RvGi1QT0dPUHJvdG9zL1Nl",
             "dHRpbmdzL1RyYW5zbGF0aW9uU2V0dGluZ3MucHJvdG8aM1BPR09Qcm90b3Mv",
-            "U2V0dGluZ3MvQ2xpZW50UGVyZm9ybWFuY2VTZXR0aW5ncy5wcm90byKpBwoO",
-            "R2xvYmFsU2V0dGluZ3MSOAoNZm9ydF9zZXR0aW5ncxgCIAEoCzIhLlBPR09Q",
-            "cm90b3MuU2V0dGluZ3MuRm9ydFNldHRpbmdzEjYKDG1hcF9zZXR0aW5ncxgD",
-            "IAEoCzIgLlBPR09Qcm90b3MuU2V0dGluZ3MuTWFwU2V0dGluZ3MSOgoObGV2",
-            "ZWxfc2V0dGluZ3MYBCABKAsyIi5QT0dPUHJvdG9zLlNldHRpbmdzLkxldmVs",
-            "U2V0dGluZ3MSQgoSaW52ZW50b3J5X3NldHRpbmdzGAUgASgLMiYuUE9HT1By",
-            "b3Rvcy5TZXR0aW5ncy5JbnZlbnRvcnlTZXR0aW5ncxIeChZtaW5pbXVtX2Ns",
-            "aWVudF92ZXJzaW9uGAYgASgJEjYKDGdwc19zZXR0aW5ncxgHIAEoCzIgLlBP",
-            "R09Qcm90b3MuU2V0dGluZ3MuR3BzU2V0dGluZ3MSQAoRZmVzdGl2YWxfc2V0",
-            "dGluZ3MYCCABKAsyJS5QT0dPUHJvdG9zLlNldHRpbmdzLkZlc3RpdmFsU2V0",
-            "dGluZ3MSOgoOZXZlbnRfc2V0dGluZ3MYCSABKAsyIi5QT0dPUHJvdG9zLlNl",
-            "dHRpbmdzLkV2ZW50U2V0dGluZ3MSGQoRbWF4X3Bva2Vtb25fdHlwZXMYCiAB",
-            "KAUSOgoOc2ZpZGFfc2V0dGluZ3MYCyABKAsyIi5QT0dPUHJvdG9zLlNldHRp",
-            "bmdzLlNmaWRhU2V0dGluZ3MSOAoNbmV3c19zZXR0aW5ncxgMIAEoCzIhLlBP",
-            "R09Qcm90b3MuU2V0dGluZ3MuTmV3c1NldHRpbmdzEkYKFHRyYW5zbGF0aW9u",
-            "X3NldHRpbmdzGA0gASgLMiguUE9HT1Byb3Rvcy5TZXR0aW5ncy5UcmFuc2xh",
-            "dGlvblNldHRpbmdzEkAKEXBhc3Njb2RlX3NldHRpbmdzGA4gASgLMiUuUE9H",
-            "T1Byb3Rvcy5TZXR0aW5ncy5QYXNzY29kZVNldHRpbmdzEkgKFW5vdGlmaWNh",
-            "dGlvbl9zZXR0aW5ncxgPIAEoCzIpLlBPR09Qcm90b3MuU2V0dGluZ3MuTm90",
-            "aWZpY2F0aW9uU2V0dGluZ3MSHAoUY2xpZW50X2FwcF9ibGFja2xpc3QYECAD",
-            "KAkSTAoUY2xpZW50X3BlcmZfc2V0dGluZ3MYESABKAsyLi5QT0dPUHJvdG9z",
-            "LlNldHRpbmdzLkNsaWVudFBlcmZvcm1hbmNlU2V0dGluZ3NiBnByb3RvMw=="));
+            "U2V0dGluZ3MvQ2xpZW50UGVyZm9ybWFuY2VTZXR0aW5ncy5wcm90bxosUE9H",
+            "T1Byb3Rvcy9TZXR0aW5ncy9OZXdzR2xvYmFsU2V0dGluZ3MucHJvdG8aL1BP",
+            "R09Qcm90b3MvU2V0dGluZ3MvTWV0cmljc0dsb2JhbFNldHRpbmdzLnByb3Rv",
+            "GidQT0dPUHJvdG9zL1NldHRpbmdzL0xvZ2luU2V0dGluZ3MucHJvdG8i+QgK",
+            "Dkdsb2JhbFNldHRpbmdzEjgKDWZvcnRfc2V0dGluZ3MYAiABKAsyIS5QT0dP",
+            "UHJvdG9zLlNldHRpbmdzLkZvcnRTZXR0aW5ncxI2CgxtYXBfc2V0dGluZ3MY",
+            "AyABKAsyIC5QT0dPUHJvdG9zLlNldHRpbmdzLk1hcFNldHRpbmdzEjoKDmxl",
+            "dmVsX3NldHRpbmdzGAQgASgLMiIuUE9HT1Byb3Rvcy5TZXR0aW5ncy5MZXZl",
+            "bFNldHRpbmdzEkIKEmludmVudG9yeV9zZXR0aW5ncxgFIAEoCzImLlBPR09Q",
+            "cm90b3MuU2V0dGluZ3MuSW52ZW50b3J5U2V0dGluZ3MSHgoWbWluaW11bV9j",
+            "bGllbnRfdmVyc2lvbhgGIAEoCRI2CgxncHNfc2V0dGluZ3MYByABKAsyIC5Q",
+            "T0dPUHJvdG9zLlNldHRpbmdzLkdwc1NldHRpbmdzEkAKEWZlc3RpdmFsX3Nl",
+            "dHRpbmdzGAggASgLMiUuUE9HT1Byb3Rvcy5TZXR0aW5ncy5GZXN0aXZhbFNl",
+            "dHRpbmdzEjoKDmV2ZW50X3NldHRpbmdzGAkgASgLMiIuUE9HT1Byb3Rvcy5T",
+            "ZXR0aW5ncy5FdmVudFNldHRpbmdzEhkKEW1heF9wb2tlbW9uX3R5cGVzGAog",
+            "ASgFEjoKDnNmaWRhX3NldHRpbmdzGAsgASgLMiIuUE9HT1Byb3Rvcy5TZXR0",
+            "aW5ncy5TZmlkYVNldHRpbmdzEjgKDW5ld3Nfc2V0dGluZ3MYDCABKAsyIS5Q",
+            "T0dPUHJvdG9zLlNldHRpbmdzLk5ld3NTZXR0aW5ncxJGChR0cmFuc2xhdGlv",
+            "bl9zZXR0aW5ncxgNIAEoCzIoLlBPR09Qcm90b3MuU2V0dGluZ3MuVHJhbnNs",
+            "YXRpb25TZXR0aW5ncxJAChFwYXNzY29kZV9zZXR0aW5ncxgOIAEoCzIlLlBP",
+            "R09Qcm90b3MuU2V0dGluZ3MuUGFzc2NvZGVTZXR0aW5ncxJIChVub3RpZmlj",
+            "YXRpb25fc2V0dGluZ3MYDyABKAsyKS5QT0dPUHJvdG9zLlNldHRpbmdzLk5v",
+            "dGlmaWNhdGlvblNldHRpbmdzEhwKFGNsaWVudF9hcHBfYmxhY2tsaXN0GBAg",
+            "AygJEkwKFGNsaWVudF9wZXJmX3NldHRpbmdzGBEgASgLMi4uUE9HT1Byb3Rv",
+            "cy5TZXR0aW5ncy5DbGllbnRQZXJmb3JtYW5jZVNldHRpbmdzEkUKFG5ld3Nf",
+            "Z2xvYmFsX3NldHRpbmdzGBIgASgLMicuUE9HT1Byb3Rvcy5TZXR0aW5ncy5O",
+            "ZXdzR2xvYmFsU2V0dGluZ3MSSwoXbWV0cmljc19nbG9iYWxfc2V0dGluZ3MY",
+            "FSABKAsyKi5QT0dPUHJvdG9zLlNldHRpbmdzLk1ldHJpY3NHbG9iYWxTZXR0",
+            "aW5ncxI6Cg5sb2dpbl9zZXR0aW5ncxgWIAEoCzIiLlBPR09Qcm90b3MuU2V0",
+            "dGluZ3MuTG9naW5TZXR0aW5nc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Settings.EventSettingsReflection.Descriptor, global::POGOProtos.Settings.FestivalSettingsReflection.Descriptor, global::POGOProtos.Settings.FortSettingsReflection.Descriptor, global::POGOProtos.Settings.GpsSettingsReflection.Descriptor, global::POGOProtos.Settings.InventorySettingsReflection.Descriptor, global::POGOProtos.Settings.LevelSettingsReflection.Descriptor, global::POGOProtos.Settings.MapSettingsReflection.Descriptor, global::POGOProtos.Settings.NewsSettingsReflection.Descriptor, global::POGOProtos.Settings.NotificationSettingsReflection.Descriptor, global::POGOProtos.Settings.PasscodeSettingsReflection.Descriptor, global::POGOProtos.Settings.SfidaSettingsReflection.Descriptor, global::POGOProtos.Settings.TranslationSettingsReflection.Descriptor, global::POGOProtos.Settings.ClientPerformanceSettingsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Settings.EventSettingsReflection.Descriptor, global::POGOProtos.Settings.FestivalSettingsReflection.Descriptor, global::POGOProtos.Settings.FortSettingsReflection.Descriptor, global::POGOProtos.Settings.GpsSettingsReflection.Descriptor, global::POGOProtos.Settings.InventorySettingsReflection.Descriptor, global::POGOProtos.Settings.LevelSettingsReflection.Descriptor, global::POGOProtos.Settings.MapSettingsReflection.Descriptor, global::POGOProtos.Settings.NewsSettingsReflection.Descriptor, global::POGOProtos.Settings.NotificationSettingsReflection.Descriptor, global::POGOProtos.Settings.PasscodeSettingsReflection.Descriptor, global::POGOProtos.Settings.SfidaSettingsReflection.Descriptor, global::POGOProtos.Settings.TranslationSettingsReflection.Descriptor, global::POGOProtos.Settings.ClientPerformanceSettingsReflection.Descriptor, global::POGOProtos.Settings.NewsGlobalSettingsReflection.Descriptor, global::POGOProtos.Settings.MetricsGlobalSettingsReflection.Descriptor, global::POGOProtos.Settings.LoginSettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.GlobalSettings), global::POGOProtos.Settings.GlobalSettings.Parser, new[]{ "FortSettings", "MapSettings", "LevelSettings", "InventorySettings", "MinimumClientVersion", "GpsSettings", "FestivalSettings", "EventSettings", "MaxPokemonTypes", "SfidaSettings", "NewsSettings", "TranslationSettings", "PasscodeSettings", "NotificationSettings", "ClientAppBlacklist", "ClientPerfSettings" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.GlobalSettings), global::POGOProtos.Settings.GlobalSettings.Parser, new[]{ "FortSettings", "MapSettings", "LevelSettings", "InventorySettings", "MinimumClientVersion", "GpsSettings", "FestivalSettings", "EventSettings", "MaxPokemonTypes", "SfidaSettings", "NewsSettings", "TranslationSettings", "PasscodeSettings", "NotificationSettings", "ClientAppBlacklist", "ClientPerfSettings", "NewsGlobalSettings", "MetricsGlobalSettings", "LoginSettings" }, null, null, null)
           }));
     }
     #endregion
@@ -107,6 +115,9 @@ namespace POGOProtos.Settings {
       NotificationSettings = other.notificationSettings_ != null ? other.NotificationSettings.Clone() : null;
       clientAppBlacklist_ = other.clientAppBlacklist_.Clone();
       ClientPerfSettings = other.clientPerfSettings_ != null ? other.ClientPerfSettings.Clone() : null;
+      NewsGlobalSettings = other.newsGlobalSettings_ != null ? other.NewsGlobalSettings.Clone() : null;
+      MetricsGlobalSettings = other.metricsGlobalSettings_ != null ? other.MetricsGlobalSettings.Clone() : null;
+      LoginSettings = other.loginSettings_ != null ? other.LoginSettings.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -289,6 +300,39 @@ namespace POGOProtos.Settings {
       }
     }
 
+    /// <summary>Field number for the "news_global_settings" field.</summary>
+    public const int NewsGlobalSettingsFieldNumber = 18;
+    private global::POGOProtos.Settings.NewsGlobalSettings newsGlobalSettings_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Settings.NewsGlobalSettings NewsGlobalSettings {
+      get { return newsGlobalSettings_; }
+      set {
+        newsGlobalSettings_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "metrics_global_settings" field.</summary>
+    public const int MetricsGlobalSettingsFieldNumber = 21;
+    private global::POGOProtos.Settings.MetricsGlobalSettings metricsGlobalSettings_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Settings.MetricsGlobalSettings MetricsGlobalSettings {
+      get { return metricsGlobalSettings_; }
+      set {
+        metricsGlobalSettings_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "login_settings" field.</summary>
+    public const int LoginSettingsFieldNumber = 22;
+    private global::POGOProtos.Settings.LoginSettings loginSettings_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Settings.LoginSettings LoginSettings {
+      get { return loginSettings_; }
+      set {
+        loginSettings_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GlobalSettings);
@@ -318,6 +362,9 @@ namespace POGOProtos.Settings {
       if (!object.Equals(NotificationSettings, other.NotificationSettings)) return false;
       if(!clientAppBlacklist_.Equals(other.clientAppBlacklist_)) return false;
       if (!object.Equals(ClientPerfSettings, other.ClientPerfSettings)) return false;
+      if (!object.Equals(NewsGlobalSettings, other.NewsGlobalSettings)) return false;
+      if (!object.Equals(MetricsGlobalSettings, other.MetricsGlobalSettings)) return false;
+      if (!object.Equals(LoginSettings, other.LoginSettings)) return false;
       return true;
     }
 
@@ -340,6 +387,9 @@ namespace POGOProtos.Settings {
       if (notificationSettings_ != null) hash ^= NotificationSettings.GetHashCode();
       hash ^= clientAppBlacklist_.GetHashCode();
       if (clientPerfSettings_ != null) hash ^= ClientPerfSettings.GetHashCode();
+      if (newsGlobalSettings_ != null) hash ^= NewsGlobalSettings.GetHashCode();
+      if (metricsGlobalSettings_ != null) hash ^= MetricsGlobalSettings.GetHashCode();
+      if (loginSettings_ != null) hash ^= LoginSettings.GetHashCode();
       return hash;
     }
 
@@ -411,6 +461,18 @@ namespace POGOProtos.Settings {
         output.WriteRawTag(138, 1);
         output.WriteMessage(ClientPerfSettings);
       }
+      if (newsGlobalSettings_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(NewsGlobalSettings);
+      }
+      if (metricsGlobalSettings_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(MetricsGlobalSettings);
+      }
+      if (loginSettings_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(LoginSettings);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -461,6 +523,15 @@ namespace POGOProtos.Settings {
       size += clientAppBlacklist_.CalculateSize(_repeated_clientAppBlacklist_codec);
       if (clientPerfSettings_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ClientPerfSettings);
+      }
+      if (newsGlobalSettings_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(NewsGlobalSettings);
+      }
+      if (metricsGlobalSettings_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(MetricsGlobalSettings);
+      }
+      if (loginSettings_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LoginSettings);
       }
       return size;
     }
@@ -554,6 +625,24 @@ namespace POGOProtos.Settings {
           clientPerfSettings_ = new global::POGOProtos.Settings.ClientPerformanceSettings();
         }
         ClientPerfSettings.MergeFrom(other.ClientPerfSettings);
+      }
+      if (other.newsGlobalSettings_ != null) {
+        if (newsGlobalSettings_ == null) {
+          newsGlobalSettings_ = new global::POGOProtos.Settings.NewsGlobalSettings();
+        }
+        NewsGlobalSettings.MergeFrom(other.NewsGlobalSettings);
+      }
+      if (other.metricsGlobalSettings_ != null) {
+        if (metricsGlobalSettings_ == null) {
+          metricsGlobalSettings_ = new global::POGOProtos.Settings.MetricsGlobalSettings();
+        }
+        MetricsGlobalSettings.MergeFrom(other.MetricsGlobalSettings);
+      }
+      if (other.loginSettings_ != null) {
+        if (loginSettings_ == null) {
+          loginSettings_ = new global::POGOProtos.Settings.LoginSettings();
+        }
+        LoginSettings.MergeFrom(other.LoginSettings);
       }
     }
 
@@ -666,6 +755,27 @@ namespace POGOProtos.Settings {
               clientPerfSettings_ = new global::POGOProtos.Settings.ClientPerformanceSettings();
             }
             input.ReadMessage(clientPerfSettings_);
+            break;
+          }
+          case 146: {
+            if (newsGlobalSettings_ == null) {
+              newsGlobalSettings_ = new global::POGOProtos.Settings.NewsGlobalSettings();
+            }
+            input.ReadMessage(newsGlobalSettings_);
+            break;
+          }
+          case 170: {
+            if (metricsGlobalSettings_ == null) {
+              metricsGlobalSettings_ = new global::POGOProtos.Settings.MetricsGlobalSettings();
+            }
+            input.ReadMessage(metricsGlobalSettings_);
+            break;
+          }
+          case 178: {
+            if (loginSettings_ == null) {
+              loginSettings_ = new global::POGOProtos.Settings.LoginSettings();
+            }
+            input.ReadMessage(loginSettings_);
             break;
           }
         }

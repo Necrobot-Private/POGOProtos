@@ -23,7 +23,7 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChtQT0dPUHJvdG9zL0VudW1zL0Zvcm0ucHJvdG8SEFBPR09Qcm90b3MuRW51",
-            "bXMquwQKBEZvcm0SDgoKRk9STV9VTlNFVBAAEgsKB1VOT1dOX0EQARILCgdV",
+            "bXMqswUKBEZvcm0SDgoKRk9STV9VTlNFVBAAEgsKB1VOT1dOX0EQARILCgdV",
             "Tk9XTl9CEAISCwoHVU5PV05fQxADEgsKB1VOT1dOX0QQBBILCgdVTk9XTl9F",
             "EAUSCwoHVU5PV05fRhAGEgsKB1VOT1dOX0cQBxILCgdVTk9XTl9IEAgSCwoH",
             "VU5PV05fSRAJEgsKB1VOT1dOX0oQChILCgdVTk9XTl9LEAsSCwoHVU5PV05f",
@@ -35,7 +35,10 @@ namespace POGOProtos.Enums {
             "VUVTVElPTl9NQVJLEBwSEwoPQ0FTVEZPUk1fTk9STUFMEB0SEgoOQ0FTVEZP",
             "Uk1fU1VOTlkQHhISCg5DQVNURk9STV9SQUlOWRAfEhIKDkNBU1RGT1JNX1NO",
             "T1dZECASEQoNREVPWFlTX05PUk1BTBAhEhEKDURFT1hZU19BVFRBQ0sQIhIS",
-            "Cg5ERU9YWVNfREVGRU5TRRAjEhAKDERFT1hZU19TUEVFRBAkYgZwcm90bzM="));
+            "Cg5ERU9YWVNfREVGRU5TRRAjEhAKDERFT1hZU19TUEVFRBAkEg0KCVNQSU5E",
+            "QV8wMBAlEg0KCVNQSU5EQV8wMRAmEg0KCVNQSU5EQV8wMhAnEg0KCVNQSU5E",
+            "QV8wMxAoEg0KCVNQSU5EQV8wNBApEg0KCVNQSU5EQV8wNRAqEg0KCVNQSU5E",
+            "QV8wNhArEg0KCVNQSU5EQV8wNxAsYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.Form), }, null));
@@ -82,6 +85,14 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("DEOXYS_ATTACK")] DeoxysAttack = 34,
     [pbr::OriginalName("DEOXYS_DEFENSE")] DeoxysDefense = 35,
     [pbr::OriginalName("DEOXYS_SPEED")] DeoxysSpeed = 36,
+    [pbr::OriginalName("SPINDA_00")] Spinda00 = 37,
+    [pbr::OriginalName("SPINDA_01")] Spinda01 = 38,
+    [pbr::OriginalName("SPINDA_02")] Spinda02 = 39,
+    [pbr::OriginalName("SPINDA_03")] Spinda03 = 40,
+    [pbr::OriginalName("SPINDA_04")] Spinda04 = 41,
+    [pbr::OriginalName("SPINDA_05")] Spinda05 = 42,
+    [pbr::OriginalName("SPINDA_06")] Spinda06 = 43,
+    [pbr::OriginalName("SPINDA_07")] Spinda07 = 44,
   }
 
   #endregion

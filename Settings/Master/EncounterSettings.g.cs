@@ -23,7 +23,7 @@ namespace POGOProtos.Settings.Master {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJQT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9FbmNvdW50ZXJTZXR0aW5n",
-            "cy5wcm90bxIaUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIilwQKEUVuY291",
+            "cy5wcm90bxIaUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIi0wUKEUVuY291",
             "bnRlclNldHRpbmdzEhwKFHNwaW5fYm9udXNfdGhyZXNob2xkGAEgASgCEiEK",
             "GWV4Y2VsbGVudF90aHJvd190aHJlc2hvbGQYAiABKAISHQoVZ3JlYXRfdGhy",
             "b3dfdGhyZXNob2xkGAMgASgCEhwKFG5pY2VfdGhyb3dfdGhyZXNob2xkGAQg",
@@ -35,11 +35,16 @@ namespace POGOProtos.Settings.Master {
             "X2F3YXJlbmVzc19tYXhfbXVsdGlwbGllchgLIAEoAhIwCihhcl9oaWdoX2F3",
             "YXJlbmVzc19taW5fcGVuYWx0eV9tdWx0aXBsaWVyGAwgASgCEicKH2FyX3Bs",
             "dXNfYXR0ZW1wdHNfdW50aWxfZmxlZV9tYXgYDSABKAUSLAokYXJfcGx1c19h",
-            "dHRlbXB0c191bnRpbF9mbGVlX2luZmluaXRlGA4gASgFYgZwcm90bzM="));
+            "dHRlbXB0c191bnRpbF9mbGVlX2luZmluaXRlGA4gASgFEiQKHGVzY2FwZWRf",
+            "Ym9udXNfbXVsdGlwbGllcl9tYXgYDyABKAISMworZXNjYXBlZF9ib251c19t",
+            "dWx0aXBsaWVyX2J5X2V4Y2VsbGVudF90aHJvdxgQIAEoAhIvCidlc2NhcGVk",
+            "X2JvbnVzX211bHRpcGxpZXJfYnlfZ3JlYXRfdGhyb3cYESABKAISLgomZXNj",
+            "YXBlZF9ib251c19tdWx0aXBsaWVyX2J5X25pY2VfdGhyb3cYEiABKAJiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.EncounterSettings), global::POGOProtos.Settings.Master.EncounterSettings.Parser, new[]{ "SpinBonusThreshold", "ExcellentThrowThreshold", "GreatThrowThreshold", "NiceThrowThreshold", "MilestoneThreshold", "ArPlusModeEnabled", "ArCloseProximityThreshold", "ArLowAwarenessThreshold", "ArCloseProximityMultiplier", "ArAwarenessPenaltyThreshold", "ArLowAwarenessMaxMultiplier", "ArHighAwarenessMinPenaltyMultiplier", "ArPlusAttemptsUntilFleeMax", "ArPlusAttemptsUntilFleeInfinite" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.EncounterSettings), global::POGOProtos.Settings.Master.EncounterSettings.Parser, new[]{ "SpinBonusThreshold", "ExcellentThrowThreshold", "GreatThrowThreshold", "NiceThrowThreshold", "MilestoneThreshold", "ArPlusModeEnabled", "ArCloseProximityThreshold", "ArLowAwarenessThreshold", "ArCloseProximityMultiplier", "ArAwarenessPenaltyThreshold", "ArLowAwarenessMaxMultiplier", "ArHighAwarenessMinPenaltyMultiplier", "ArPlusAttemptsUntilFleeMax", "ArPlusAttemptsUntilFleeInfinite", "EscapedBonusMultiplierMax", "EscapedBonusMultiplierByExcellentThrow", "EscapedBonusMultiplierByGreatThrow", "EscapedBonusMultiplierByNiceThrow" }, null, null, null)
           }));
     }
     #endregion
@@ -84,6 +89,10 @@ namespace POGOProtos.Settings.Master {
       arHighAwarenessMinPenaltyMultiplier_ = other.arHighAwarenessMinPenaltyMultiplier_;
       arPlusAttemptsUntilFleeMax_ = other.arPlusAttemptsUntilFleeMax_;
       arPlusAttemptsUntilFleeInfinite_ = other.arPlusAttemptsUntilFleeInfinite_;
+      escapedBonusMultiplierMax_ = other.escapedBonusMultiplierMax_;
+      escapedBonusMultiplierByExcellentThrow_ = other.escapedBonusMultiplierByExcellentThrow_;
+      escapedBonusMultiplierByGreatThrow_ = other.escapedBonusMultiplierByGreatThrow_;
+      escapedBonusMultiplierByNiceThrow_ = other.escapedBonusMultiplierByNiceThrow_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -245,6 +254,50 @@ namespace POGOProtos.Settings.Master {
       }
     }
 
+    /// <summary>Field number for the "escaped_bonus_multiplier_max" field.</summary>
+    public const int EscapedBonusMultiplierMaxFieldNumber = 15;
+    private float escapedBonusMultiplierMax_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float EscapedBonusMultiplierMax {
+      get { return escapedBonusMultiplierMax_; }
+      set {
+        escapedBonusMultiplierMax_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "escaped_bonus_multiplier_by_excellent_throw" field.</summary>
+    public const int EscapedBonusMultiplierByExcellentThrowFieldNumber = 16;
+    private float escapedBonusMultiplierByExcellentThrow_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float EscapedBonusMultiplierByExcellentThrow {
+      get { return escapedBonusMultiplierByExcellentThrow_; }
+      set {
+        escapedBonusMultiplierByExcellentThrow_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "escaped_bonus_multiplier_by_great_throw" field.</summary>
+    public const int EscapedBonusMultiplierByGreatThrowFieldNumber = 17;
+    private float escapedBonusMultiplierByGreatThrow_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float EscapedBonusMultiplierByGreatThrow {
+      get { return escapedBonusMultiplierByGreatThrow_; }
+      set {
+        escapedBonusMultiplierByGreatThrow_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "escaped_bonus_multiplier_by_nice_throw" field.</summary>
+    public const int EscapedBonusMultiplierByNiceThrowFieldNumber = 18;
+    private float escapedBonusMultiplierByNiceThrow_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float EscapedBonusMultiplierByNiceThrow {
+      get { return escapedBonusMultiplierByNiceThrow_; }
+      set {
+        escapedBonusMultiplierByNiceThrow_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as EncounterSettings);
@@ -272,6 +325,10 @@ namespace POGOProtos.Settings.Master {
       if (ArHighAwarenessMinPenaltyMultiplier != other.ArHighAwarenessMinPenaltyMultiplier) return false;
       if (ArPlusAttemptsUntilFleeMax != other.ArPlusAttemptsUntilFleeMax) return false;
       if (ArPlusAttemptsUntilFleeInfinite != other.ArPlusAttemptsUntilFleeInfinite) return false;
+      if (EscapedBonusMultiplierMax != other.EscapedBonusMultiplierMax) return false;
+      if (EscapedBonusMultiplierByExcellentThrow != other.EscapedBonusMultiplierByExcellentThrow) return false;
+      if (EscapedBonusMultiplierByGreatThrow != other.EscapedBonusMultiplierByGreatThrow) return false;
+      if (EscapedBonusMultiplierByNiceThrow != other.EscapedBonusMultiplierByNiceThrow) return false;
       return true;
     }
 
@@ -292,6 +349,10 @@ namespace POGOProtos.Settings.Master {
       if (ArHighAwarenessMinPenaltyMultiplier != 0F) hash ^= ArHighAwarenessMinPenaltyMultiplier.GetHashCode();
       if (ArPlusAttemptsUntilFleeMax != 0) hash ^= ArPlusAttemptsUntilFleeMax.GetHashCode();
       if (ArPlusAttemptsUntilFleeInfinite != 0) hash ^= ArPlusAttemptsUntilFleeInfinite.GetHashCode();
+      if (EscapedBonusMultiplierMax != 0F) hash ^= EscapedBonusMultiplierMax.GetHashCode();
+      if (EscapedBonusMultiplierByExcellentThrow != 0F) hash ^= EscapedBonusMultiplierByExcellentThrow.GetHashCode();
+      if (EscapedBonusMultiplierByGreatThrow != 0F) hash ^= EscapedBonusMultiplierByGreatThrow.GetHashCode();
+      if (EscapedBonusMultiplierByNiceThrow != 0F) hash ^= EscapedBonusMultiplierByNiceThrow.GetHashCode();
       return hash;
     }
 
@@ -358,6 +419,22 @@ namespace POGOProtos.Settings.Master {
         output.WriteRawTag(112);
         output.WriteInt32(ArPlusAttemptsUntilFleeInfinite);
       }
+      if (EscapedBonusMultiplierMax != 0F) {
+        output.WriteRawTag(125);
+        output.WriteFloat(EscapedBonusMultiplierMax);
+      }
+      if (EscapedBonusMultiplierByExcellentThrow != 0F) {
+        output.WriteRawTag(133, 1);
+        output.WriteFloat(EscapedBonusMultiplierByExcellentThrow);
+      }
+      if (EscapedBonusMultiplierByGreatThrow != 0F) {
+        output.WriteRawTag(141, 1);
+        output.WriteFloat(EscapedBonusMultiplierByGreatThrow);
+      }
+      if (EscapedBonusMultiplierByNiceThrow != 0F) {
+        output.WriteRawTag(149, 1);
+        output.WriteFloat(EscapedBonusMultiplierByNiceThrow);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -404,6 +481,18 @@ namespace POGOProtos.Settings.Master {
       }
       if (ArPlusAttemptsUntilFleeInfinite != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ArPlusAttemptsUntilFleeInfinite);
+      }
+      if (EscapedBonusMultiplierMax != 0F) {
+        size += 1 + 4;
+      }
+      if (EscapedBonusMultiplierByExcellentThrow != 0F) {
+        size += 2 + 4;
+      }
+      if (EscapedBonusMultiplierByGreatThrow != 0F) {
+        size += 2 + 4;
+      }
+      if (EscapedBonusMultiplierByNiceThrow != 0F) {
+        size += 2 + 4;
       }
       return size;
     }
@@ -454,6 +543,18 @@ namespace POGOProtos.Settings.Master {
       }
       if (other.ArPlusAttemptsUntilFleeInfinite != 0) {
         ArPlusAttemptsUntilFleeInfinite = other.ArPlusAttemptsUntilFleeInfinite;
+      }
+      if (other.EscapedBonusMultiplierMax != 0F) {
+        EscapedBonusMultiplierMax = other.EscapedBonusMultiplierMax;
+      }
+      if (other.EscapedBonusMultiplierByExcellentThrow != 0F) {
+        EscapedBonusMultiplierByExcellentThrow = other.EscapedBonusMultiplierByExcellentThrow;
+      }
+      if (other.EscapedBonusMultiplierByGreatThrow != 0F) {
+        EscapedBonusMultiplierByGreatThrow = other.EscapedBonusMultiplierByGreatThrow;
+      }
+      if (other.EscapedBonusMultiplierByNiceThrow != 0F) {
+        EscapedBonusMultiplierByNiceThrow = other.EscapedBonusMultiplierByNiceThrow;
       }
     }
 
@@ -519,6 +620,22 @@ namespace POGOProtos.Settings.Master {
           }
           case 112: {
             ArPlusAttemptsUntilFleeInfinite = input.ReadInt32();
+            break;
+          }
+          case 125: {
+            EscapedBonusMultiplierMax = input.ReadFloat();
+            break;
+          }
+          case 133: {
+            EscapedBonusMultiplierByExcellentThrow = input.ReadFloat();
+            break;
+          }
+          case 141: {
+            EscapedBonusMultiplierByGreatThrow = input.ReadFloat();
+            break;
+          }
+          case 149: {
+            EscapedBonusMultiplierByNiceThrow = input.ReadFloat();
             break;
           }
         }

@@ -31,7 +31,7 @@ namespace POGOProtos.Map.Fort {
             "YXkucHJvdG8aIlBPR09Qcm90b3MvTWFwL0ZvcnQvRm9ydFR5cGUucHJvdG8a",
             "JVBPR09Qcm90b3MvTWFwL0ZvcnQvRm9ydFNwb25zb3IucHJvdG8aK1BPR09Q",
             "cm90b3MvTWFwL0ZvcnQvRm9ydFJlbmRlcmluZ1R5cGUucHJvdG8aJlBPR09Q",
-            "cm90b3MvTWFwL0ZvcnQvRm9ydEx1cmVJbmZvLnByb3RvIsAHCghGb3J0RGF0",
+            "cm90b3MvTWFwL0ZvcnQvRm9ydEx1cmVJbmZvLnByb3RvItQHCghGb3J0RGF0",
             "YRIKCgJpZBgBIAEoCRIiChpsYXN0X21vZGlmaWVkX3RpbWVzdGFtcF9tcxgC",
             "IAEoAxIQCghsYXRpdHVkZRgDIAEoARIRCglsb25naXR1ZGUYBCABKAESMgoN",
             "b3duZWRfYnlfdGVhbRgFIAEoDjIbLlBPR09Qcm90b3MuRW51bXMuVGVhbUNv",
@@ -53,11 +53,11 @@ namespace POGOProtos.Map.Fort {
             "bGF5Eg8KB3Zpc2l0ZWQYFiABKAgSJwofc2FtZV90ZWFtX2RlcGxveV9sb2Nr",
             "b3V0X2VuZF9tcxgXIAEoAxIVCg1hbGxvd19jaGVja2luGBggASgIEhEKCWlt",
             "YWdlX3VybBgZIAEoCRIQCghpbl9ldmVudBgaIAEoCBISCgpiYW5uZXJfdXJs",
-            "GBsgASgJYgZwcm90bzM="));
+            "GBsgASgJEhIKCnBhcnRuZXJfaWQYHCABKAliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.PokemonDisplayReflection.Descriptor, global::POGOProtos.Data.Raid.RaidInfoReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Enums.TeamColorReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, global::POGOProtos.Map.Fort.GymDisplayReflection.Descriptor, global::POGOProtos.Map.Fort.FortTypeReflection.Descriptor, global::POGOProtos.Map.Fort.FortSponsorReflection.Descriptor, global::POGOProtos.Map.Fort.FortRenderingTypeReflection.Descriptor, global::POGOProtos.Map.Fort.FortLureInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Map.Fort.FortData), global::POGOProtos.Map.Fort.FortData.Parser, new[]{ "Id", "LastModifiedTimestampMs", "Latitude", "Longitude", "OwnedByTeam", "GuardPokemonId", "GuardPokemonCp", "Enabled", "Type", "GymPoints", "IsInBattle", "ActiveFortModifier", "LureInfo", "CooldownCompleteTimestampMs", "Sponsor", "RenderingType", "DeployLockoutEndMs", "GuardPokemonDisplay", "Closed", "RaidInfo", "GymDisplay", "Visited", "SameTeamDeployLockoutEndMs", "AllowCheckin", "ImageUrl", "InEvent", "BannerUrl" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Map.Fort.FortData), global::POGOProtos.Map.Fort.FortData.Parser, new[]{ "Id", "LastModifiedTimestampMs", "Latitude", "Longitude", "OwnedByTeam", "GuardPokemonId", "GuardPokemonCp", "Enabled", "Type", "GymPoints", "IsInBattle", "ActiveFortModifier", "LureInfo", "CooldownCompleteTimestampMs", "Sponsor", "RenderingType", "DeployLockoutEndMs", "GuardPokemonDisplay", "Closed", "RaidInfo", "GymDisplay", "Visited", "SameTeamDeployLockoutEndMs", "AllowCheckin", "ImageUrl", "InEvent", "BannerUrl", "PartnerId" }, null, null, null)
           }));
     }
     #endregion
@@ -115,6 +115,7 @@ namespace POGOProtos.Map.Fort {
       imageUrl_ = other.imageUrl_;
       inEvent_ = other.inEvent_;
       bannerUrl_ = other.bannerUrl_;
+      partnerId_ = other.partnerId_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -442,6 +443,17 @@ namespace POGOProtos.Map.Fort {
       }
     }
 
+    /// <summary>Field number for the "partner_id" field.</summary>
+    public const int PartnerIdFieldNumber = 28;
+    private string partnerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PartnerId {
+      get { return partnerId_; }
+      set {
+        partnerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FortData);
@@ -482,6 +494,7 @@ namespace POGOProtos.Map.Fort {
       if (ImageUrl != other.ImageUrl) return false;
       if (InEvent != other.InEvent) return false;
       if (BannerUrl != other.BannerUrl) return false;
+      if (PartnerId != other.PartnerId) return false;
       return true;
     }
 
@@ -515,6 +528,7 @@ namespace POGOProtos.Map.Fort {
       if (ImageUrl.Length != 0) hash ^= ImageUrl.GetHashCode();
       if (InEvent != false) hash ^= InEvent.GetHashCode();
       if (BannerUrl.Length != 0) hash ^= BannerUrl.GetHashCode();
+      if (PartnerId.Length != 0) hash ^= PartnerId.GetHashCode();
       return hash;
     }
 
@@ -630,6 +644,10 @@ namespace POGOProtos.Map.Fort {
         output.WriteRawTag(218, 1);
         output.WriteString(BannerUrl);
       }
+      if (PartnerId.Length != 0) {
+        output.WriteRawTag(226, 1);
+        output.WriteString(PartnerId);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -713,6 +731,9 @@ namespace POGOProtos.Map.Fort {
       }
       if (BannerUrl.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(BannerUrl);
+      }
+      if (PartnerId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PartnerId);
       }
       return size;
     }
@@ -812,6 +833,9 @@ namespace POGOProtos.Map.Fort {
       }
       if (other.BannerUrl.Length != 0) {
         BannerUrl = other.BannerUrl;
+      }
+      if (other.PartnerId.Length != 0) {
+        PartnerId = other.PartnerId;
       }
     }
 
@@ -942,6 +966,10 @@ namespace POGOProtos.Map.Fort {
           }
           case 218: {
             BannerUrl = input.ReadString();
+            break;
+          }
+          case 226: {
+            PartnerId = input.ReadString();
             break;
           }
         }

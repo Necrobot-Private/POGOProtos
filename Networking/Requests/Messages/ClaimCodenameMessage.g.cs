@@ -24,12 +24,13 @@ namespace POGOProtos.Networking.Requests.Messages {
           string.Concat(
             "CkJQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvTWVzc2FnZXMvQ2xh",
             "aW1Db2RlbmFtZU1lc3NhZ2UucHJvdG8SJ1BPR09Qcm90b3MuTmV0d29ya2lu",
-            "Zy5SZXF1ZXN0cy5NZXNzYWdlcyI3ChRDbGFpbUNvZGVuYW1lTWVzc2FnZRIQ",
-            "Cghjb2RlbmFtZRgBIAEoCRINCgVmb3JjZRgCIAEoCGIGcHJvdG8z"));
+            "Zy5SZXF1ZXN0cy5NZXNzYWdlcyJdChRDbGFpbUNvZGVuYW1lTWVzc2FnZRIQ",
+            "Cghjb2RlbmFtZRgBIAEoCRINCgVmb3JjZRgCIAEoCBIkChxnZW5lcmF0ZV9z",
+            "dWdnZXN0ZWRfY29kZW5hbWVzGAMgASgIYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage), global::POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage.Parser, new[]{ "Codename", "Force" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage), global::POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage.Parser, new[]{ "Codename", "Force", "GenerateSuggestedCodenames" }, null, null, null)
           }));
     }
     #endregion
@@ -62,6 +63,7 @@ namespace POGOProtos.Networking.Requests.Messages {
     public ClaimCodenameMessage(ClaimCodenameMessage other) : this() {
       codename_ = other.codename_;
       force_ = other.force_;
+      generateSuggestedCodenames_ = other.generateSuggestedCodenames_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -91,6 +93,17 @@ namespace POGOProtos.Networking.Requests.Messages {
       }
     }
 
+    /// <summary>Field number for the "generate_suggested_codenames" field.</summary>
+    public const int GenerateSuggestedCodenamesFieldNumber = 3;
+    private bool generateSuggestedCodenames_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool GenerateSuggestedCodenames {
+      get { return generateSuggestedCodenames_; }
+      set {
+        generateSuggestedCodenames_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ClaimCodenameMessage);
@@ -106,6 +119,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       }
       if (Codename != other.Codename) return false;
       if (Force != other.Force) return false;
+      if (GenerateSuggestedCodenames != other.GenerateSuggestedCodenames) return false;
       return true;
     }
 
@@ -114,6 +128,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       int hash = 1;
       if (Codename.Length != 0) hash ^= Codename.GetHashCode();
       if (Force != false) hash ^= Force.GetHashCode();
+      if (GenerateSuggestedCodenames != false) hash ^= GenerateSuggestedCodenames.GetHashCode();
       return hash;
     }
 
@@ -132,6 +147,10 @@ namespace POGOProtos.Networking.Requests.Messages {
         output.WriteRawTag(16);
         output.WriteBool(Force);
       }
+      if (GenerateSuggestedCodenames != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(GenerateSuggestedCodenames);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -141,6 +160,9 @@ namespace POGOProtos.Networking.Requests.Messages {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Codename);
       }
       if (Force != false) {
+        size += 1 + 1;
+      }
+      if (GenerateSuggestedCodenames != false) {
         size += 1 + 1;
       }
       return size;
@@ -156,6 +178,9 @@ namespace POGOProtos.Networking.Requests.Messages {
       }
       if (other.Force != false) {
         Force = other.Force;
+      }
+      if (other.GenerateSuggestedCodenames != false) {
+        GenerateSuggestedCodenames = other.GenerateSuggestedCodenames;
       }
     }
 
@@ -173,6 +198,10 @@ namespace POGOProtos.Networking.Requests.Messages {
           }
           case 16: {
             Force = input.ReadBool();
+            break;
+          }
+          case 24: {
+            GenerateSuggestedCodenames = input.ReadBool();
             break;
           }
         }

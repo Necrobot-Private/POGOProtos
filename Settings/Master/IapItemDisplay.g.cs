@@ -25,15 +25,15 @@ namespace POGOProtos.Settings.Master {
             "Ci9QT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9JYXBJdGVtRGlzcGxheS5w",
             "cm90bxIaUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIaJlBPR09Qcm90b3Mv",
             "RW51bXMvSWFwSXRlbUNhdGVnb3J5LnByb3RvGiZQT0dPUHJvdG9zL0ludmVu",
-            "dG9yeS9JdGVtL0l0ZW1JZC5wcm90byKvAQoOSWFwSXRlbURpc3BsYXkSCwoD",
+            "dG9yeS9JdGVtL0l0ZW1JZC5wcm90byK/AQoOSWFwSXRlbURpc3BsYXkSCwoD",
             "c2t1GAEgASgJEjcKCGNhdGVnb3J5GAIgASgOMiUuUE9HT1Byb3Rvcy5FbnVt",
-            "cy5Ib2xvSWFwSXRlbUNhdGVnb3J5EhIKCnNvcnRfb3JkZXIYAyABKAUSMwoI",
-            "aXRlbV9pZHMYBCADKA4yIS5QT0dPUHJvdG9zLkludmVudG9yeS5JdGVtLkl0",
-            "ZW1JZBIOCgZjb3VudHMYBSADKAViBnByb3RvMw=="));
+            "cy5Ib2xvSWFwSXRlbUNhdGVnb3J5EhIKCnNvcnRfb3JkZXIYAyABKAUSDgoG",
+            "aGlkZGVuGAYgASgIEgwKBHNhbGUYByABKAgSEQoJc3ByaXRlX2lkGAggASgJ",
+            "Eg0KBXRpdGxlGAkgASgJEhMKC2Rlc2NyaXB0aW9uGAogASgJYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.IapItemCategoryReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.IapItemDisplay), global::POGOProtos.Settings.Master.IapItemDisplay.Parser, new[]{ "Sku", "Category", "SortOrder", "ItemIds", "Counts" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.IapItemDisplay), global::POGOProtos.Settings.Master.IapItemDisplay.Parser, new[]{ "Sku", "Category", "SortOrder", "Hidden", "Sale", "SpriteId", "Title", "Description" }, null, null, null)
           }));
     }
     #endregion
@@ -67,8 +67,11 @@ namespace POGOProtos.Settings.Master {
       sku_ = other.sku_;
       category_ = other.category_;
       sortOrder_ = other.sortOrder_;
-      itemIds_ = other.itemIds_.Clone();
-      counts_ = other.counts_.Clone();
+      hidden_ = other.hidden_;
+      sale_ = other.sale_;
+      spriteId_ = other.spriteId_;
+      title_ = other.title_;
+      description_ = other.description_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -109,24 +112,63 @@ namespace POGOProtos.Settings.Master {
       }
     }
 
-    /// <summary>Field number for the "item_ids" field.</summary>
-    public const int ItemIdsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::POGOProtos.Inventory.Item.ItemId> _repeated_itemIds_codec
-        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::POGOProtos.Inventory.Item.ItemId) x);
-    private readonly pbc::RepeatedField<global::POGOProtos.Inventory.Item.ItemId> itemIds_ = new pbc::RepeatedField<global::POGOProtos.Inventory.Item.ItemId>();
+    /// <summary>Field number for the "hidden" field.</summary>
+    public const int HiddenFieldNumber = 6;
+    private bool hidden_;
+    /// <summary>
+    /// repeated POGOProtos.Inventory.Item.ItemId item_ids = 4;
+    /// repeated int32 counts = 5;
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::POGOProtos.Inventory.Item.ItemId> ItemIds {
-      get { return itemIds_; }
+    public bool Hidden {
+      get { return hidden_; }
+      set {
+        hidden_ = value;
+      }
     }
 
-    /// <summary>Field number for the "counts" field.</summary>
-    public const int CountsFieldNumber = 5;
-    private static readonly pb::FieldCodec<int> _repeated_counts_codec
-        = pb::FieldCodec.ForInt32(42);
-    private readonly pbc::RepeatedField<int> counts_ = new pbc::RepeatedField<int>();
+    /// <summary>Field number for the "sale" field.</summary>
+    public const int SaleFieldNumber = 7;
+    private bool sale_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Counts {
-      get { return counts_; }
+    public bool Sale {
+      get { return sale_; }
+      set {
+        sale_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sprite_id" field.</summary>
+    public const int SpriteIdFieldNumber = 8;
+    private string spriteId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SpriteId {
+      get { return spriteId_; }
+      set {
+        spriteId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "title" field.</summary>
+    public const int TitleFieldNumber = 9;
+    private string title_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Title {
+      get { return title_; }
+      set {
+        title_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 10;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -145,8 +187,11 @@ namespace POGOProtos.Settings.Master {
       if (Sku != other.Sku) return false;
       if (Category != other.Category) return false;
       if (SortOrder != other.SortOrder) return false;
-      if(!itemIds_.Equals(other.itemIds_)) return false;
-      if(!counts_.Equals(other.counts_)) return false;
+      if (Hidden != other.Hidden) return false;
+      if (Sale != other.Sale) return false;
+      if (SpriteId != other.SpriteId) return false;
+      if (Title != other.Title) return false;
+      if (Description != other.Description) return false;
       return true;
     }
 
@@ -156,8 +201,11 @@ namespace POGOProtos.Settings.Master {
       if (Sku.Length != 0) hash ^= Sku.GetHashCode();
       if (Category != 0) hash ^= Category.GetHashCode();
       if (SortOrder != 0) hash ^= SortOrder.GetHashCode();
-      hash ^= itemIds_.GetHashCode();
-      hash ^= counts_.GetHashCode();
+      if (Hidden != false) hash ^= Hidden.GetHashCode();
+      if (Sale != false) hash ^= Sale.GetHashCode();
+      if (SpriteId.Length != 0) hash ^= SpriteId.GetHashCode();
+      if (Title.Length != 0) hash ^= Title.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
       return hash;
     }
 
@@ -180,8 +228,26 @@ namespace POGOProtos.Settings.Master {
         output.WriteRawTag(24);
         output.WriteInt32(SortOrder);
       }
-      itemIds_.WriteTo(output, _repeated_itemIds_codec);
-      counts_.WriteTo(output, _repeated_counts_codec);
+      if (Hidden != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(Hidden);
+      }
+      if (Sale != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(Sale);
+      }
+      if (SpriteId.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(SpriteId);
+      }
+      if (Title.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(Title);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(Description);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -196,8 +262,21 @@ namespace POGOProtos.Settings.Master {
       if (SortOrder != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(SortOrder);
       }
-      size += itemIds_.CalculateSize(_repeated_itemIds_codec);
-      size += counts_.CalculateSize(_repeated_counts_codec);
+      if (Hidden != false) {
+        size += 1 + 1;
+      }
+      if (Sale != false) {
+        size += 1 + 1;
+      }
+      if (SpriteId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SpriteId);
+      }
+      if (Title.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
       return size;
     }
 
@@ -215,8 +294,21 @@ namespace POGOProtos.Settings.Master {
       if (other.SortOrder != 0) {
         SortOrder = other.SortOrder;
       }
-      itemIds_.Add(other.itemIds_);
-      counts_.Add(other.counts_);
+      if (other.Hidden != false) {
+        Hidden = other.Hidden;
+      }
+      if (other.Sale != false) {
+        Sale = other.Sale;
+      }
+      if (other.SpriteId.Length != 0) {
+        SpriteId = other.SpriteId;
+      }
+      if (other.Title.Length != 0) {
+        Title = other.Title;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -239,14 +331,24 @@ namespace POGOProtos.Settings.Master {
             SortOrder = input.ReadInt32();
             break;
           }
-          case 34:
-          case 32: {
-            itemIds_.AddEntriesFrom(input, _repeated_itemIds_codec);
+          case 48: {
+            Hidden = input.ReadBool();
             break;
           }
-          case 42:
-          case 40: {
-            counts_.AddEntriesFrom(input, _repeated_counts_codec);
+          case 56: {
+            Sale = input.ReadBool();
+            break;
+          }
+          case 66: {
+            SpriteId = input.ReadString();
+            break;
+          }
+          case 74: {
+            Title = input.ReadString();
+            break;
+          }
+          case 82: {
+            Description = input.ReadString();
             break;
           }
         }

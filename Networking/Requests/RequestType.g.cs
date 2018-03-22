@@ -23,7 +23,7 @@ namespace POGOProtos.Networking.Requests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
-            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyqwEQoLUmVx",
+            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyrvEQoLUmVx",
             "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASDgoKR0VUX1BMQVlFUhACEhYK",
             "EkdFVF9IT0xPX0lOVkVOVE9SWRAEEhUKEURPV05MT0FEX1NFVFRJTkdTEAUS",
             "GwoXRE9XTkxPQURfSVRFTV9URU1QTEFURVMQBhIiCh5ET1dOTE9BRF9SRU1P",
@@ -58,22 +58,23 @@ namespace POGOProtos.Networking.Requests {
             "TV9TVEFSRFVTVF9CT09TVBCoARIVChBHRVRfQVNTRVRfRElHRVNUEKwCEhYK",
             "EUdFVF9ET1dOTE9BRF9VUkxTEK0CEhMKDkNMQUlNX0NPREVOQU1FEJMDEg8K",
             "ClNFVF9BVkFUQVIQlAMSFAoPU0VUX1BMQVlFUl9URUFNEJUDEhsKFk1BUktf",
-            "VFVUT1JJQUxfQ09NUExFVEUQlgMSFAoPQ0hFQ0tfQ0hBTExFTkdFENgEEhUK",
-            "EFZFUklGWV9DSEFMTEVOR0UQ2QQSCQoERUNITxCaBRIXChJTRklEQV9SRUdJ",
-            "U1RSQVRJT04QoAYSFQoQU0ZJREFfQUNUSU9OX0xPRxChBhIYChNTRklEQV9D",
-            "RVJUSUZJQ0FUSU9OEKIGEhEKDFNGSURBX1VQREFURRCjBhIRCgxTRklEQV9B",
-            "Q1RJT04QpAYSEQoMU0ZJREFfRE9XU0VSEKUGEhIKDVNGSURBX0NBUFRVUkUQ",
-            "pgYSHwoaTElTVF9BVkFUQVJfQ1VTVE9NSVpBVElPTlMQpwYSHgoZU0VUX0FW",
-            "QVRBUl9JVEVNX0FTX1ZJRVdFRBCoBhIOCglHRVRfSU5CT1gQqQYSFAoPTElT",
-            "VF9HWU1fQkFER0VTEKsGEhoKFUdFVF9HWU1fQkFER0VfREVUQUlMUxCsBhIZ",
-            "ChRVU0VfSVRFTV9NT1ZFX1JFUk9MTBCtBhIYChNVU0VfSVRFTV9SQVJFX0NB",
-            "TkRZEK4GEhsKFkFXQVJEX0ZSRUVfUkFJRF9USUNLRVQQrwYSEwoORkVUQ0hf",
-            "QUxMX05FV1MQsAYSGwoWTUFSS19SRUFEX05FV1NfQVJUSUNMRRCxBhIfChpS",
-            "RUdJU1RFUl9QVVNIX05PVElGSUNBVElPThCIJxIhChxVTlJFR0lTVEVSX1BV",
-            "U0hfTk9USUZJQ0FUSU9OEIknEh8KGlVQREFURV9OT1RJRklDQVRJT05fU1RB",
-            "VFVTEIonEicKIk9QVF9PVVRfUFVTSF9OT1RJRklDQVRJT05fQ0FURUdPUlkQ",
-            "iycSIwoeRE9XTkxPQURfR0FNRV9NQVNURVJfVEVNUExBVEVTEIwnEhIKDUdF",
-            "VF9JTlZFTlRPUlkQjSdiBnByb3RvMw=="));
+            "VFVUT1JJQUxfQ09NUExFVEUQlgMSHwoaVVBEQVRFX1BFUkZPUk1BTkNFX01F",
+            "VFJJQ1MQlwMSFAoPQ0hFQ0tfQ0hBTExFTkdFENgEEhUKEFZFUklGWV9DSEFM",
+            "TEVOR0UQ2QQSCQoERUNITxCaBRIXChJTRklEQV9SRUdJU1RSQVRJT04QoAYS",
+            "FQoQU0ZJREFfQUNUSU9OX0xPRxChBhIYChNTRklEQV9DRVJUSUZJQ0FUSU9O",
+            "EKIGEhEKDFNGSURBX1VQREFURRCjBhIRCgxTRklEQV9BQ1RJT04QpAYSEQoM",
+            "U0ZJREFfRE9XU0VSEKUGEhIKDVNGSURBX0NBUFRVUkUQpgYSHwoaTElTVF9B",
+            "VkFUQVJfQ1VTVE9NSVpBVElPTlMQpwYSHgoZU0VUX0FWQVRBUl9JVEVNX0FT",
+            "X1ZJRVdFRBCoBhIOCglHRVRfSU5CT1gQqQYSFAoPTElTVF9HWU1fQkFER0VT",
+            "EKsGEhoKFUdFVF9HWU1fQkFER0VfREVUQUlMUxCsBhIZChRVU0VfSVRFTV9N",
+            "T1ZFX1JFUk9MTBCtBhIYChNVU0VfSVRFTV9SQVJFX0NBTkRZEK4GEhsKFkFX",
+            "QVJEX0ZSRUVfUkFJRF9USUNLRVQQrwYSEwoORkVUQ0hfQUxMX05FV1MQsAYS",
+            "GwoWTUFSS19SRUFEX05FV1NfQVJUSUNMRRCxBhIcChdHRVRfUExBWUVSX0RJ",
+            "U1BMQVlfSU5GTxCyBhIfChpSRUdJU1RFUl9QVVNIX05PVElGSUNBVElPThCI",
+            "JxIhChxVTlJFR0lTVEVSX1BVU0hfTk9USUZJQ0FUSU9OEIknEh8KGlVQREFU",
+            "RV9OT1RJRklDQVRJT05fU1RBVFVTEIonEicKIk9QVF9PVVRfUFVTSF9OT1RJ",
+            "RklDQVRJT05fQ0FURUdPUlkQiycSIwoeRE9XTkxPQURfR0FNRV9NQVNURVJf",
+            "VEVNUExBVEVTEIwnEhIKDUdFVF9JTlZFTlRPUlkQjSdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Networking.Requests.RequestType), }, null));
@@ -352,6 +353,10 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("MARK_TUTORIAL_COMPLETE")] MarkTutorialComplete = 406,
     /// <summary>
+    /// ???
+    /// </summary>
+    [pbr::OriginalName("UPDATE_PERFORMANCE_METRICS")] UpdatePerformanceMetrics = 407,
+    /// <summary>
     /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("CHECK_CHALLENGE")] CheckChallenge = 600,
@@ -431,6 +436,10 @@ namespace POGOProtos.Networking.Requests {
     /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("MARK_READ_NEWS_ARTICLE")] MarkReadNewsArticle = 817,
+    /// <summary>
+    /// ???
+    /// </summary>
+    [pbr::OriginalName("GET_PLAYER_DISPLAY_INFO")] GetPlayerDisplayInfo = 818,
     /// <summary>
     /// Implemented [R &amp; M]
     /// </summary>

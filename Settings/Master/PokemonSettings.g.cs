@@ -33,7 +33,7 @@ namespace POGOProtos.Settings.Master {
             "cy9TZXR0aW5ncy9NYXN0ZXIvUG9rZW1vbi9DYW1lcmFBdHRyaWJ1dGVzLnBy",
             "b3RvGjxQT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9Qb2tlbW9uL0VuY291",
             "bnRlckF0dHJpYnV0ZXMucHJvdG8aOFBPR09Qcm90b3MvU2V0dGluZ3MvTWFz",
-            "dGVyL1Bva2Vtb24vRXZvbHV0aW9uQnJhbmNoLnByb3RvIoEKCg9Qb2tlbW9u",
+            "dGVyL1Bva2Vtb24vRXZvbHV0aW9uQnJhbmNoLnByb3RvIsQLCg9Qb2tlbW9u",
             "U2V0dGluZ3MSLwoKcG9rZW1vbl9pZBgBIAEoDjIbLlBPR09Qcm90b3MuRW51",
             "bXMuUG9rZW1vbklkEhMKC21vZGVsX3NjYWxlGAMgASgCEisKBHR5cGUYBCAB",
             "KA4yHS5QT0dPUHJvdG9zLkVudW1zLlBva2Vtb25UeXBlEi0KBnR5cGVfMhgF",
@@ -60,13 +60,17 @@ namespace POGOProtos.Settings.Master {
             "ZXZvbHV0aW9uX2JyYW5jaBgaIAMoCzIzLlBPR09Qcm90b3MuU2V0dGluZ3Mu",
             "TWFzdGVyLlBva2Vtb24uRXZvbHV0aW9uQnJhbmNoEhYKDm1vZGVsX3NjYWxl",
             "X3YyGBsgASgCEiQKBGZvcm0YHCABKA4yFi5QT0dPUHJvdG9zLkVudW1zLkZv",
-            "cm0iYgoJQnVkZHlTaXplEhAKDEJVRERZX01FRElVTRAAEhIKDkJVRERZX1NI",
-            "T1VMREVSEAESDQoJQlVERFlfQklHEAISEAoMQlVERFlfRkxZSU5HEAMSDgoK",
-            "QlVERFlfQkFCWRAEYgZwcm90bzM="));
+            "cm0SNwoQZXZlbnRfcXVpY2tfbW92ZRgdIAEoDjIdLlBPR09Qcm90b3MuRW51",
+            "bXMuUG9rZW1vbk1vdmUSOwoUZXZlbnRfY2luZW1hdGljX21vdmUYHiABKA4y",
+            "HS5QT0dPUHJvdG9zLkVudW1zLlBva2Vtb25Nb3ZlEhkKEWJ1ZGR5X29mZnNl",
+            "dF9tYWxlGB8gAygCEhsKE2J1ZGR5X29mZnNldF9mZW1hbGUYICADKAISEwoL",
+            "YnVkZHlfc2NhbGUYISABKAIiYgoJQnVkZHlTaXplEhAKDEJVRERZX01FRElV",
+            "TRAAEhIKDkJVRERZX1NIT1VMREVSEAESDQoJQlVERFlfQklHEAISEAoMQlVE",
+            "RFlfRkxZSU5HEAMSDgoKQlVERFlfQkFCWRAEYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.FormReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Enums.PokemonRarityReflection.Descriptor, global::POGOProtos.Enums.PokemonTypeReflection.Descriptor, global::POGOProtos.Enums.PokemonMoveReflection.Descriptor, global::POGOProtos.Enums.PokemonFamilyIdReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.StatsAttributesReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.CameraAttributesReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.EncounterAttributesReflection.Descriptor, global::POGOProtos.Settings.Master.Pokemon.EvolutionBranchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.PokemonSettings), global::POGOProtos.Settings.Master.PokemonSettings.Parser, new[]{ "PokemonId", "ModelScale", "Type", "Type2", "Camera", "Encounter", "Stats", "QuickMoves", "CinematicMoves", "AnimationTime", "EvolutionIds", "EvolutionPips", "Rarity", "PokedexHeightM", "PokedexWeightKg", "ParentPokemonId", "HeightStdDev", "WeightStdDev", "KmDistanceToHatch", "FamilyId", "CandyToEvolve", "KmBuddyDistance", "BuddySize", "ModelHeight", "EvolutionBranch", "ModelScaleV2", "Form" }, null, new[]{ typeof(global::POGOProtos.Settings.Master.PokemonSettings.Types.BuddySize) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.PokemonSettings), global::POGOProtos.Settings.Master.PokemonSettings.Parser, new[]{ "PokemonId", "ModelScale", "Type", "Type2", "Camera", "Encounter", "Stats", "QuickMoves", "CinematicMoves", "AnimationTime", "EvolutionIds", "EvolutionPips", "Rarity", "PokedexHeightM", "PokedexWeightKg", "ParentPokemonId", "HeightStdDev", "WeightStdDev", "KmDistanceToHatch", "FamilyId", "CandyToEvolve", "KmBuddyDistance", "BuddySize", "ModelHeight", "EvolutionBranch", "ModelScaleV2", "Form", "EventQuickMove", "EventCinematicMove", "BuddyOffsetMale", "BuddyOffsetFemale", "BuddyScale" }, null, new[]{ typeof(global::POGOProtos.Settings.Master.PokemonSettings.Types.BuddySize) }, null)
           }));
     }
     #endregion
@@ -124,6 +128,11 @@ namespace POGOProtos.Settings.Master {
       evolutionBranch_ = other.evolutionBranch_.Clone();
       modelScaleV2_ = other.modelScaleV2_;
       form_ = other.form_;
+      eventQuickMove_ = other.eventQuickMove_;
+      eventCinematicMove_ = other.eventCinematicMove_;
+      buddyOffsetMale_ = other.buddyOffsetMale_.Clone();
+      buddyOffsetFemale_ = other.buddyOffsetFemale_.Clone();
+      buddyScale_ = other.buddyScale_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -423,6 +432,59 @@ namespace POGOProtos.Settings.Master {
       }
     }
 
+    /// <summary>Field number for the "event_quick_move" field.</summary>
+    public const int EventQuickMoveFieldNumber = 29;
+    private global::POGOProtos.Enums.PokemonMove eventQuickMove_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.PokemonMove EventQuickMove {
+      get { return eventQuickMove_; }
+      set {
+        eventQuickMove_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "event_cinematic_move" field.</summary>
+    public const int EventCinematicMoveFieldNumber = 30;
+    private global::POGOProtos.Enums.PokemonMove eventCinematicMove_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.PokemonMove EventCinematicMove {
+      get { return eventCinematicMove_; }
+      set {
+        eventCinematicMove_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "buddy_offset_male" field.</summary>
+    public const int BuddyOffsetMaleFieldNumber = 31;
+    private static readonly pb::FieldCodec<float> _repeated_buddyOffsetMale_codec
+        = pb::FieldCodec.ForFloat(250);
+    private readonly pbc::RepeatedField<float> buddyOffsetMale_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<float> BuddyOffsetMale {
+      get { return buddyOffsetMale_; }
+    }
+
+    /// <summary>Field number for the "buddy_offset_female" field.</summary>
+    public const int BuddyOffsetFemaleFieldNumber = 32;
+    private static readonly pb::FieldCodec<float> _repeated_buddyOffsetFemale_codec
+        = pb::FieldCodec.ForFloat(258);
+    private readonly pbc::RepeatedField<float> buddyOffsetFemale_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<float> BuddyOffsetFemale {
+      get { return buddyOffsetFemale_; }
+    }
+
+    /// <summary>Field number for the "buddy_scale" field.</summary>
+    public const int BuddyScaleFieldNumber = 33;
+    private float buddyScale_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float BuddyScale {
+      get { return buddyScale_; }
+      set {
+        buddyScale_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PokemonSettings);
@@ -463,6 +525,11 @@ namespace POGOProtos.Settings.Master {
       if(!evolutionBranch_.Equals(other.evolutionBranch_)) return false;
       if (ModelScaleV2 != other.ModelScaleV2) return false;
       if (Form != other.Form) return false;
+      if (EventQuickMove != other.EventQuickMove) return false;
+      if (EventCinematicMove != other.EventCinematicMove) return false;
+      if(!buddyOffsetMale_.Equals(other.buddyOffsetMale_)) return false;
+      if(!buddyOffsetFemale_.Equals(other.buddyOffsetFemale_)) return false;
+      if (BuddyScale != other.BuddyScale) return false;
       return true;
     }
 
@@ -496,6 +563,11 @@ namespace POGOProtos.Settings.Master {
       hash ^= evolutionBranch_.GetHashCode();
       if (ModelScaleV2 != 0F) hash ^= ModelScaleV2.GetHashCode();
       if (Form != 0) hash ^= Form.GetHashCode();
+      if (EventQuickMove != 0) hash ^= EventQuickMove.GetHashCode();
+      if (EventCinematicMove != 0) hash ^= EventCinematicMove.GetHashCode();
+      hash ^= buddyOffsetMale_.GetHashCode();
+      hash ^= buddyOffsetFemale_.GetHashCode();
+      if (BuddyScale != 0F) hash ^= BuddyScale.GetHashCode();
       return hash;
     }
 
@@ -599,6 +671,20 @@ namespace POGOProtos.Settings.Master {
         output.WriteRawTag(224, 1);
         output.WriteEnum((int) Form);
       }
+      if (EventQuickMove != 0) {
+        output.WriteRawTag(232, 1);
+        output.WriteEnum((int) EventQuickMove);
+      }
+      if (EventCinematicMove != 0) {
+        output.WriteRawTag(240, 1);
+        output.WriteEnum((int) EventCinematicMove);
+      }
+      buddyOffsetMale_.WriteTo(output, _repeated_buddyOffsetMale_codec);
+      buddyOffsetFemale_.WriteTo(output, _repeated_buddyOffsetFemale_codec);
+      if (BuddyScale != 0F) {
+        output.WriteRawTag(141, 2);
+        output.WriteFloat(BuddyScale);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -674,6 +760,17 @@ namespace POGOProtos.Settings.Master {
       }
       if (Form != 0) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Form);
+      }
+      if (EventQuickMove != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EventQuickMove);
+      }
+      if (EventCinematicMove != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EventCinematicMove);
+      }
+      size += buddyOffsetMale_.CalculateSize(_repeated_buddyOffsetMale_codec);
+      size += buddyOffsetFemale_.CalculateSize(_repeated_buddyOffsetFemale_codec);
+      if (BuddyScale != 0F) {
+        size += 2 + 4;
       }
       return size;
     }
@@ -762,6 +859,17 @@ namespace POGOProtos.Settings.Master {
       }
       if (other.Form != 0) {
         Form = other.Form;
+      }
+      if (other.EventQuickMove != 0) {
+        EventQuickMove = other.EventQuickMove;
+      }
+      if (other.EventCinematicMove != 0) {
+        EventCinematicMove = other.EventCinematicMove;
+      }
+      buddyOffsetMale_.Add(other.buddyOffsetMale_);
+      buddyOffsetFemale_.Add(other.buddyOffsetFemale_);
+      if (other.BuddyScale != 0F) {
+        BuddyScale = other.BuddyScale;
       }
     }
 
@@ -892,6 +1000,28 @@ namespace POGOProtos.Settings.Master {
           }
           case 224: {
             form_ = (global::POGOProtos.Enums.Form) input.ReadEnum();
+            break;
+          }
+          case 232: {
+            eventQuickMove_ = (global::POGOProtos.Enums.PokemonMove) input.ReadEnum();
+            break;
+          }
+          case 240: {
+            eventCinematicMove_ = (global::POGOProtos.Enums.PokemonMove) input.ReadEnum();
+            break;
+          }
+          case 250:
+          case 253: {
+            buddyOffsetMale_.AddEntriesFrom(input, _repeated_buddyOffsetMale_codec);
+            break;
+          }
+          case 258:
+          case 261: {
+            buddyOffsetFemale_.AddEntriesFrom(input, _repeated_buddyOffsetFemale_codec);
+            break;
+          }
+          case 269: {
+            BuddyScale = input.ReadFloat();
             break;
           }
         }
