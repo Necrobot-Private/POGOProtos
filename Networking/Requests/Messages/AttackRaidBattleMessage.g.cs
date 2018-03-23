@@ -24,15 +24,17 @@ namespace POGOProtos.Networking.Requests.Messages {
           string.Concat(
             "CkVQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvTWVzc2FnZXMvQXR0",
             "YWNrUmFpZEJhdHRsZU1lc3NhZ2UucHJvdG8SJ1BPR09Qcm90b3MuTmV0d29y",
-            "a2luZy5SZXF1ZXN0cy5NZXNzYWdlcyKkAQoXQXR0YWNrUmFpZEJhdHRsZU1l",
-            "c3NhZ2USDgoGZ3ltX2lkGAEgASgJEhEKCXJhaWRfc2VlZBgCIAEoAxIQCghs",
-            "b2JieV9pZBgEIAMoBRIcChRhdHRhY2tpbmdfcG9rZW1vbl9pZBgFIAMoBhIa",
-            "ChJwbGF5ZXJfbGF0X2RlZ3JlZXMYBiABKAESGgoScGxheWVyX2xuZ19kZWdy",
-            "ZWVzGAcgASgBYgZwcm90bzM="));
+            "a2luZy5SZXF1ZXN0cy5NZXNzYWdlcxopUE9HT1Byb3Rvcy9EYXRhL0JhdHRs",
+            "ZS9CYXR0bGVBY3Rpb24ucHJvdG8i1wEKF0F0dGFja1JhaWRCYXR0bGVNZXNz",
+            "YWdlEg4KBmd5bV9pZBgBIAEoCRIRCgliYXR0bGVfaWQYAiABKAkSPgoQYXR0",
+            "YWNrZXJfYWN0aW9ucxgDIAMoCzIkLlBPR09Qcm90b3MuRGF0YS5CYXR0bGUu",
+            "QmF0dGxlQWN0aW9uEkMKFWxhc3RfcmV0cmlldmVkX2FjdGlvbhgEIAEoCzIk",
+            "LlBPR09Qcm90b3MuRGF0YS5CYXR0bGUuQmF0dGxlQWN0aW9uEhQKDHRpbWVz",
+            "dGFtcF9tcxgFIAEoA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattleActionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.AttackRaidBattleMessage), global::POGOProtos.Networking.Requests.Messages.AttackRaidBattleMessage.Parser, new[]{ "GymId", "RaidSeed", "LobbyId", "AttackingPokemonId", "PlayerLatDegrees", "PlayerLngDegrees" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.AttackRaidBattleMessage), global::POGOProtos.Networking.Requests.Messages.AttackRaidBattleMessage.Parser, new[]{ "GymId", "BattleId", "AttackerActions", "LastRetrievedAction", "TimestampMs" }, null, null, null)
           }));
     }
     #endregion
@@ -64,11 +66,10 @@ namespace POGOProtos.Networking.Requests.Messages {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AttackRaidBattleMessage(AttackRaidBattleMessage other) : this() {
       gymId_ = other.gymId_;
-      raidSeed_ = other.raidSeed_;
-      lobbyId_ = other.lobbyId_.Clone();
-      attackingPokemonId_ = other.attackingPokemonId_.Clone();
-      playerLatDegrees_ = other.playerLatDegrees_;
-      playerLngDegrees_ = other.playerLngDegrees_;
+      battleId_ = other.battleId_;
+      attackerActions_ = other.attackerActions_.Clone();
+      LastRetrievedAction = other.lastRetrievedAction_ != null ? other.LastRetrievedAction.Clone() : null;
+      timestampMs_ = other.timestampMs_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -79,6 +80,14 @@ namespace POGOProtos.Networking.Requests.Messages {
     /// <summary>Field number for the "gym_id" field.</summary>
     public const int GymIdFieldNumber = 1;
     private string gymId_ = "";
+    /// <summary>
+    ///string gym_id = 1;
+    ///int64 raid_seed = 2;
+    ///repeated int32 lobby_id = 4;
+    ///repeated fixed64 attacking_pokemon_id = 5;
+    ///double player_lat_degrees = 6;
+    ///double player_lng_degrees = 7;
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string GymId {
       get { return gymId_; }
@@ -87,56 +96,46 @@ namespace POGOProtos.Networking.Requests.Messages {
       }
     }
 
-    /// <summary>Field number for the "raid_seed" field.</summary>
-    public const int RaidSeedFieldNumber = 2;
-    private long raidSeed_;
+    /// <summary>Field number for the "battle_id" field.</summary>
+    public const int BattleIdFieldNumber = 2;
+    private string battleId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long RaidSeed {
-      get { return raidSeed_; }
+    public string BattleId {
+      get { return battleId_; }
       set {
-        raidSeed_ = value;
+        battleId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "lobby_id" field.</summary>
-    public const int LobbyIdFieldNumber = 4;
-    private static readonly pb::FieldCodec<int> _repeated_lobbyId_codec
-        = pb::FieldCodec.ForInt32(34);
-    private readonly pbc::RepeatedField<int> lobbyId_ = new pbc::RepeatedField<int>();
+    /// <summary>Field number for the "attacker_actions" field.</summary>
+    public const int AttackerActionsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Battle.BattleAction> _repeated_attackerActions_codec
+        = pb::FieldCodec.ForMessage(26, global::POGOProtos.Data.Battle.BattleAction.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Battle.BattleAction> attackerActions_ = new pbc::RepeatedField<global::POGOProtos.Data.Battle.BattleAction>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> LobbyId {
-      get { return lobbyId_; }
+    public pbc::RepeatedField<global::POGOProtos.Data.Battle.BattleAction> AttackerActions {
+      get { return attackerActions_; }
     }
 
-    /// <summary>Field number for the "attacking_pokemon_id" field.</summary>
-    public const int AttackingPokemonIdFieldNumber = 5;
-    private static readonly pb::FieldCodec<ulong> _repeated_attackingPokemonId_codec
-        = pb::FieldCodec.ForFixed64(42);
-    private readonly pbc::RepeatedField<ulong> attackingPokemonId_ = new pbc::RepeatedField<ulong>();
+    /// <summary>Field number for the "last_retrieved_action" field.</summary>
+    public const int LastRetrievedActionFieldNumber = 4;
+    private global::POGOProtos.Data.Battle.BattleAction lastRetrievedAction_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<ulong> AttackingPokemonId {
-      get { return attackingPokemonId_; }
-    }
-
-    /// <summary>Field number for the "player_lat_degrees" field.</summary>
-    public const int PlayerLatDegreesFieldNumber = 6;
-    private double playerLatDegrees_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public double PlayerLatDegrees {
-      get { return playerLatDegrees_; }
+    public global::POGOProtos.Data.Battle.BattleAction LastRetrievedAction {
+      get { return lastRetrievedAction_; }
       set {
-        playerLatDegrees_ = value;
+        lastRetrievedAction_ = value;
       }
     }
 
-    /// <summary>Field number for the "player_lng_degrees" field.</summary>
-    public const int PlayerLngDegreesFieldNumber = 7;
-    private double playerLngDegrees_;
+    /// <summary>Field number for the "timestamp_ms" field.</summary>
+    public const int TimestampMsFieldNumber = 5;
+    private long timestampMs_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public double PlayerLngDegrees {
-      get { return playerLngDegrees_; }
+    public long TimestampMs {
+      get { return timestampMs_; }
       set {
-        playerLngDegrees_ = value;
+        timestampMs_ = value;
       }
     }
 
@@ -154,11 +153,10 @@ namespace POGOProtos.Networking.Requests.Messages {
         return true;
       }
       if (GymId != other.GymId) return false;
-      if (RaidSeed != other.RaidSeed) return false;
-      if(!lobbyId_.Equals(other.lobbyId_)) return false;
-      if(!attackingPokemonId_.Equals(other.attackingPokemonId_)) return false;
-      if (PlayerLatDegrees != other.PlayerLatDegrees) return false;
-      if (PlayerLngDegrees != other.PlayerLngDegrees) return false;
+      if (BattleId != other.BattleId) return false;
+      if(!attackerActions_.Equals(other.attackerActions_)) return false;
+      if (!object.Equals(LastRetrievedAction, other.LastRetrievedAction)) return false;
+      if (TimestampMs != other.TimestampMs) return false;
       return true;
     }
 
@@ -166,11 +164,10 @@ namespace POGOProtos.Networking.Requests.Messages {
     public override int GetHashCode() {
       int hash = 1;
       if (GymId.Length != 0) hash ^= GymId.GetHashCode();
-      if (RaidSeed != 0L) hash ^= RaidSeed.GetHashCode();
-      hash ^= lobbyId_.GetHashCode();
-      hash ^= attackingPokemonId_.GetHashCode();
-      if (PlayerLatDegrees != 0D) hash ^= PlayerLatDegrees.GetHashCode();
-      if (PlayerLngDegrees != 0D) hash ^= PlayerLngDegrees.GetHashCode();
+      if (BattleId.Length != 0) hash ^= BattleId.GetHashCode();
+      hash ^= attackerActions_.GetHashCode();
+      if (lastRetrievedAction_ != null) hash ^= LastRetrievedAction.GetHashCode();
+      if (TimestampMs != 0L) hash ^= TimestampMs.GetHashCode();
       return hash;
     }
 
@@ -185,19 +182,18 @@ namespace POGOProtos.Networking.Requests.Messages {
         output.WriteRawTag(10);
         output.WriteString(GymId);
       }
-      if (RaidSeed != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(RaidSeed);
+      if (BattleId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(BattleId);
       }
-      lobbyId_.WriteTo(output, _repeated_lobbyId_codec);
-      attackingPokemonId_.WriteTo(output, _repeated_attackingPokemonId_codec);
-      if (PlayerLatDegrees != 0D) {
-        output.WriteRawTag(49);
-        output.WriteDouble(PlayerLatDegrees);
+      attackerActions_.WriteTo(output, _repeated_attackerActions_codec);
+      if (lastRetrievedAction_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(LastRetrievedAction);
       }
-      if (PlayerLngDegrees != 0D) {
-        output.WriteRawTag(57);
-        output.WriteDouble(PlayerLngDegrees);
+      if (TimestampMs != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(TimestampMs);
       }
     }
 
@@ -207,16 +203,15 @@ namespace POGOProtos.Networking.Requests.Messages {
       if (GymId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(GymId);
       }
-      if (RaidSeed != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RaidSeed);
+      if (BattleId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BattleId);
       }
-      size += lobbyId_.CalculateSize(_repeated_lobbyId_codec);
-      size += attackingPokemonId_.CalculateSize(_repeated_attackingPokemonId_codec);
-      if (PlayerLatDegrees != 0D) {
-        size += 1 + 8;
+      size += attackerActions_.CalculateSize(_repeated_attackerActions_codec);
+      if (lastRetrievedAction_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LastRetrievedAction);
       }
-      if (PlayerLngDegrees != 0D) {
-        size += 1 + 8;
+      if (TimestampMs != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TimestampMs);
       }
       return size;
     }
@@ -229,16 +224,18 @@ namespace POGOProtos.Networking.Requests.Messages {
       if (other.GymId.Length != 0) {
         GymId = other.GymId;
       }
-      if (other.RaidSeed != 0L) {
-        RaidSeed = other.RaidSeed;
+      if (other.BattleId.Length != 0) {
+        BattleId = other.BattleId;
       }
-      lobbyId_.Add(other.lobbyId_);
-      attackingPokemonId_.Add(other.attackingPokemonId_);
-      if (other.PlayerLatDegrees != 0D) {
-        PlayerLatDegrees = other.PlayerLatDegrees;
+      attackerActions_.Add(other.attackerActions_);
+      if (other.lastRetrievedAction_ != null) {
+        if (lastRetrievedAction_ == null) {
+          lastRetrievedAction_ = new global::POGOProtos.Data.Battle.BattleAction();
+        }
+        LastRetrievedAction.MergeFrom(other.LastRetrievedAction);
       }
-      if (other.PlayerLngDegrees != 0D) {
-        PlayerLngDegrees = other.PlayerLngDegrees;
+      if (other.TimestampMs != 0L) {
+        TimestampMs = other.TimestampMs;
       }
     }
 
@@ -254,26 +251,23 @@ namespace POGOProtos.Networking.Requests.Messages {
             GymId = input.ReadString();
             break;
           }
-          case 16: {
-            RaidSeed = input.ReadInt64();
+          case 18: {
+            BattleId = input.ReadString();
             break;
           }
-          case 34:
-          case 32: {
-            lobbyId_.AddEntriesFrom(input, _repeated_lobbyId_codec);
+          case 26: {
+            attackerActions_.AddEntriesFrom(input, _repeated_attackerActions_codec);
             break;
           }
-          case 42:
-          case 41: {
-            attackingPokemonId_.AddEntriesFrom(input, _repeated_attackingPokemonId_codec);
+          case 34: {
+            if (lastRetrievedAction_ == null) {
+              lastRetrievedAction_ = new global::POGOProtos.Data.Battle.BattleAction();
+            }
+            input.ReadMessage(lastRetrievedAction_);
             break;
           }
-          case 49: {
-            PlayerLatDegrees = input.ReadDouble();
-            break;
-          }
-          case 57: {
-            PlayerLngDegrees = input.ReadDouble();
+          case 40: {
+            TimestampMs = input.ReadInt64();
             break;
           }
         }

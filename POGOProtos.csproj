@@ -278,7 +278,7 @@
     <Compile Include="Networking\Requests\Messages\GetPlayerMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerProfileMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetRaidDetailsMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GymBattleAttakMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\GymBattleAttackMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymDeployMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymFeedPokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymGetInfoMessage.g.cs" />

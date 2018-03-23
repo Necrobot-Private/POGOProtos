@@ -24,14 +24,14 @@ namespace POGOProtos.Settings.Master {
           string.Concat(
             "Ci9QT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9JYXBJdGVtRGlzcGxheS5w",
             "cm90bxIaUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIaJlBPR09Qcm90b3Mv",
-            "RW51bXMvSWFwSXRlbUNhdGVnb3J5LnByb3RvGiZQT0dPUHJvdG9zL0ludmVu",
-            "dG9yeS9JdGVtL0l0ZW1JZC5wcm90byK/AQoOSWFwSXRlbURpc3BsYXkSCwoD",
-            "c2t1GAEgASgJEjcKCGNhdGVnb3J5GAIgASgOMiUuUE9HT1Byb3Rvcy5FbnVt",
-            "cy5Ib2xvSWFwSXRlbUNhdGVnb3J5EhIKCnNvcnRfb3JkZXIYAyABKAUSDgoG",
-            "aGlkZGVuGAYgASgIEgwKBHNhbGUYByABKAgSEQoJc3ByaXRlX2lkGAggASgJ",
-            "Eg0KBXRpdGxlGAkgASgJEhMKC2Rlc2NyaXB0aW9uGAogASgJYgZwcm90bzM="));
+            "RW51bXMvSWFwSXRlbUNhdGVnb3J5LnByb3RvIr8BCg5JYXBJdGVtRGlzcGxh",
+            "eRILCgNza3UYASABKAkSNwoIY2F0ZWdvcnkYAiABKA4yJS5QT0dPUHJvdG9z",
+            "LkVudW1zLkhvbG9JYXBJdGVtQ2F0ZWdvcnkSEgoKc29ydF9vcmRlchgDIAEo",
+            "BRIOCgZoaWRkZW4YBiABKAgSDAoEc2FsZRgHIAEoCBIRCglzcHJpdGVfaWQY",
+            "CCABKAkSDQoFdGl0bGUYCSABKAkSEwoLZGVzY3JpcHRpb24YCiABKAliBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Enums.IapItemCategoryReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.IapItemCategoryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.IapItemDisplay), global::POGOProtos.Settings.Master.IapItemDisplay.Parser, new[]{ "Sku", "Category", "SortOrder", "Hidden", "Sale", "SpriteId", "Title", "Description" }, null, null, null)
           }));

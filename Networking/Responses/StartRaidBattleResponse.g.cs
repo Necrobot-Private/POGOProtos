@@ -24,17 +24,19 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "Cj1QT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL1N0YXJ0UmFpZEJh",
             "dHRsZVJlc3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVz",
-            "cG9uc2VzGiNQT0dPUHJvdG9zL0RhdGEvQmF0dGxlL0JhdHRsZS5wcm90byKz",
+            "cG9uc2VzGiNQT0dPUHJvdG9zL0RhdGEvQmF0dGxlL0JhdHRsZS5wcm90byLs",
             "AwoXU3RhcnRSYWlkQmF0dGxlUmVzcG9uc2USTwoGcmVzdWx0GAEgASgOMj8u",
             "UE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNlcy5TdGFydFJhaWRCYXR0",
             "bGVSZXNwb25zZS5SZXN1bHQSLgoGYmF0dGxlGAIgASgLMh4uUE9HT1Byb3Rv",
-            "cy5EYXRhLkJhdHRsZS5CYXR0bGUilgIKBlJlc3VsdBIJCgVVTlNFVBAAEgsK",
+            "cy5EYXRhLkJhdHRsZS5CYXR0bGUizwIKBlJlc3VsdBIJCgVVTlNFVBAAEgsK",
             "B1NVQ0NFU1MQARIXChNFUlJPUl9HWU1fTk9UX0ZPVU5EEAISGgoWRVJST1Jf",
             "UkFJRF9VTkFWQUlMQUJMRRADEhgKFEVSUk9SX1JBSURfQ09NUExFVEVEEAQS",
             "GwoXRVJST1JfSU5WQUxJRF9BVFRBQ0tFUlMQBRIkCiBFUlJPUl9QTEFZRVJf",
             "QkVMT1dfTUlOSU1VTV9MRVZFTBAGEhYKEkVSUk9SX05PVF9JTl9SQU5HRRAH",
             "EhoKFkVSUk9SX1BPSV9JTkFDQ0VTU0lCTEUQCBIZChVFUlJPUl9MT0JCWV9O",
-            "T1RfRk9VTkQQCRITCg9FUlJPUl9OT19USUNLRVQQCmIGcHJvdG8z"));
+            "T1RfRk9VTkQQCRITCg9FUlJPUl9OT19USUNLRVQQChIYChRFUlJPUl9JTlZB",
+            "TElEX1NFUlZFUhALEh0KGUVSUk9SX05FVkVSX0pPSU5FRF9CQVRUTEUQDGIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -210,6 +212,8 @@ namespace POGOProtos.Networking.Responses {
         [pbr::OriginalName("ERROR_POI_INACCESSIBLE")] ErrorPoiInaccessible = 8,
         [pbr::OriginalName("ERROR_LOBBY_NOT_FOUND")] ErrorLobbyNotFound = 9,
         [pbr::OriginalName("ERROR_NO_TICKET")] ErrorNoTicket = 10,
+        [pbr::OriginalName("ERROR_INVALID_SERVER")] ErrorInvalidServer = 11,
+        [pbr::OriginalName("ERROR_NEVER_JOINED_BATTLE")] ErrorNeverJoinedBattle = 12,
       }
 
     }
