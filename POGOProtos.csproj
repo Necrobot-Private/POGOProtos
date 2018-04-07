@@ -111,6 +111,9 @@
     <Compile Include="Data\Logs\ActionLogEntry.g.cs" />
     <Compile Include="Data\Logs\BuddyPokemonLogEntry.g.cs" />
     <Compile Include="Data\Logs\CatchPokemonLogEntry.g.cs" />
+    <Compile Include="Data\Logs\CompleteQuestLogEntry.g.cs" />
+    <Compile Include="Data\Logs\CompleteQuestPokemonEncounterLogEntry.g.cs" />
+    <Compile Include="Data\Logs\CompleteQuestStampCardLogEntry.g.cs" />
     <Compile Include="Data\Logs\FortSearchLogEntry.g.cs" />
     <Compile Include="Data\Logs\PasscodeRewardsLogEntry.g.cs" />
     <Compile Include="Data\Logs\RaidRewardsLogEntry.g.cs" />
@@ -133,10 +136,17 @@
     <Compile Include="Data\PokemonDisplay.g.cs" />
     <Compile Include="Data\PtcToken.g.cs" />
     <Compile Include="Data\Quests\CatchPokemonQuest.g.cs" />
+    <Compile Include="Data\Quests\ClientQuest.g.cs" />
     <Compile Include="Data\Quests\DailyQuest.g.cs" />
     <Compile Include="Data\Quests\Quest.g.cs" />
+    <Compile Include="Data\Quests\QuestCondition.g.cs" />
+    <Compile Include="Data\Quests\QuestDialog.g.cs" />
     <Compile Include="Data\Quests\QuestGoal.g.cs" />
+    <Compile Include="Data\Quests\QuestPokemonEncounter.g.cs" />
     <Compile Include="Data\Quests\QuestReward.g.cs" />
+    <Compile Include="Data\Quests\Quests.g.cs" />
+    <Compile Include="Data\Quests\QuestStamp.g.cs" />
+    <Compile Include="Data\Quests\QuestStampCard.g.cs" />
     <Compile Include="Data\Raid\EventInfo.g.cs" />
     <Compile Include="Data\Raid\Lobby.g.cs" />
     <Compile Include="Data\Raid\Participation.g.cs" />
@@ -249,6 +259,8 @@
     <Compile Include="Networking\Requests\Messages\ClaimCodenameMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CollectDailyBonusMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\CollectDailyDefenderBonusMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\CompleteQuestMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\CompleteQuestStampCardMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\DiskEncounterMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\DownloadGmTemplatesMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\DownloadItemTemplatesMessage.g.cs" />
@@ -275,8 +287,10 @@
     <Compile Include="Networking\Requests\Messages\GetIncensePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetInventoryMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetMapObjectsMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\GetNewQuestsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetPlayerProfileMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\GetQuestDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetRaidDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymBattleAttackMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymDeployMessage.g.cs" />
@@ -293,10 +307,12 @@
     <Compile Include="Networking\Requests\Messages\MarkTutorialCompleteMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\NicknamePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\PlatformClientActionsMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\QuestEncounterMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RecycleInventoryItemMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RedeemPasscodeMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RegisterBackgroundDeviceMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\ReleasePokemonMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\RemoveQuestMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetAvatarItemAsViewedMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetAvatarMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetBuddyPokemonMessage.g.cs" />
@@ -335,6 +351,8 @@
     <Compile Include="Networking\Responses\ClaimCodenameResponse.g.cs" />
     <Compile Include="Networking\Responses\CollectDailyBonusResponse.g.cs" />
     <Compile Include="Networking\Responses\CollectDailyDefenderBonusResponse.g.cs" />
+    <Compile Include="Networking\Responses\CompleteQuestResponse.g.cs" />
+    <Compile Include="Networking\Responses\CompleteQuestStampCardResponse.g.cs" />
     <Compile Include="Networking\Responses\DiskEncounterResponse.g.cs" />
     <Compile Include="Networking\Responses\DownloadGmTemplatesResponse.g.cs" />
     <Compile Include="Networking\Responses\DownloadItemTemplatesResponse.g.cs" />
@@ -361,8 +379,10 @@
     <Compile Include="Networking\Responses\GetIncensePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\GetInventoryResponse.g.cs" />
     <Compile Include="Networking\Responses\GetMapObjectsResponse.g.cs" />
+    <Compile Include="Networking\Responses\GetNewQuestsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerProfileResponse.g.cs" />
     <Compile Include="Networking\Responses\GetPlayerResponse.g.cs" />
+    <Compile Include="Networking\Responses\GetQuestDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetRaidDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\GymBattleAttackResponse.g.cs" />
     <Compile Include="Networking\Responses\GymDeployResponse.g.cs" />
@@ -379,10 +399,12 @@
     <Compile Include="Networking\Responses\MarkTutorialCompleteResponse.g.cs" />
     <Compile Include="Networking\Responses\NicknamePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\PlatformClientActionsResponse.g.cs" />
+    <Compile Include="Networking\Responses\QuestEncounterResponse.g.cs" />
     <Compile Include="Networking\Responses\RecycleInventoryItemResponse.g.cs" />
     <Compile Include="Networking\Responses\RedeemPasscodeResponse.g.cs" />
     <Compile Include="Networking\Responses\RegisterBackgroundDeviceResponse.g.cs" />
     <Compile Include="Networking\Responses\ReleasePokemonResponse.g.cs" />
+    <Compile Include="Networking\Responses\RemoveQuestResponse.g.cs" />
     <Compile Include="Networking\Responses\SetAvatarItemAsViewedResponse.g.cs" />
     <Compile Include="Networking\Responses\SetAvatarResponse.g.cs" />
     <Compile Include="Networking\Responses\SetBuddyPokemonResponse.g.cs" />
@@ -448,6 +470,7 @@
     <Compile Include="Settings\Master\Item\StardustBoostAttributes.g.cs" />
     <Compile Include="Settings\Master\MoveSequenceSettings.g.cs" />
     <Compile Include="Settings\Master\MoveSettings.g.cs" />
+    <Compile Include="Settings\Master\OnboardingSettings.g.cs" />
     <Compile Include="Settings\Master\PlayerLevelSettings.g.cs" />
     <Compile Include="Settings\Master\PokemonScaleSetting.g.cs" />
     <Compile Include="Settings\Master\PokemonSettings.g.cs" />
@@ -467,6 +490,7 @@
     <Compile Include="Settings\NewsSettings.g.cs" />
     <Compile Include="Settings\NotificationSettings.g.cs" />
     <Compile Include="Settings\PasscodeSettings.g.cs" />
+    <Compile Include="Settings\QuestGlobalSettings.g.cs" />
     <Compile Include="Settings\SfidaSettings.g.cs" />
     <Compile Include="Settings\TranslationSettings.g.cs" />
   </ItemGroup>
