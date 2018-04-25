@@ -13,6 +13,7 @@ We are following [semantic versioning](http://semver.org/) for POGOProtos.  Ever
 
 | Version      | Android       | iOS           | Extra                     |
 |--------------|---------------|---------------|---------------------------|
+| 2.25.0       | 0.99.2        | 1.69.2        |                           |
 | 2.24.0       | 0.97.2        | 1.67.2        |                           |
 | 2.23.1       | 0.95.3        | 1.65.3        | Updated protobuf to 3.5.1 |
 | 2.23.0       | 0.95.3        | 1.65.3        |                           |
@@ -119,9 +120,10 @@ If you don't want to compile POGOProtos but instead use it directly, check out t
 
 | Language         | Source                                                  |
 |------------------|---------------------------------------------------------|
-| NodeJS           | https://github.com/pogosandbox/node-pogo-protos         |
+| NodeJS           | https://github.com/pogosandbox/pogobuf                  |
+| NodeJS (pure JS) | https://github.com/pogosandbox/node-pogo-protos         |
 | .NET             | https://github.com/Furtif/POGOProtos.Core               |
-| .NET             | https://github.com/Necrobot-Private/POGOProtos          |
+| .NET             | https://github.com/TheUnnamedOrganisation/POGOProtos    |
 | PHP              | https://github.com/jaspervdm/pogoprotos-php             |
 | Go               | https://github.com/pkmngo-odi/pogo-protos               |
 | Haskell          | https://github.com/relrod/pokemon-go-protobuf-types     |
