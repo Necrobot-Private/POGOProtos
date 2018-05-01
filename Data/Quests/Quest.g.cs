@@ -29,7 +29,7 @@ namespace POGOProtos.Data.Quests {
             "cm90bxonUE9HT1Byb3Rvcy9EYXRhL1F1ZXN0cy9EYWlseVF1ZXN0LnByb3Rv",
             "Gi5QT0dPUHJvdG9zL0RhdGEvUXVlc3RzL0NhdGNoUG9rZW1vblF1ZXN0LnBy",
             "b3RvGihQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL1F1ZXN0UmV3YXJkLnByb3Rv",
-            "GiZQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL1F1ZXN0R29hbC5wcm90byLSBwoF",
+            "GiZQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL1F1ZXN0R29hbC5wcm90byL4BwoF",
             "UXVlc3QSLwoKcXVlc3RfdHlwZRgBIAEoDjIbLlBPR09Qcm90b3MuRW51bXMu",
             "UXVlc3RUeXBlEjcKC2RhaWx5X3F1ZXN0GAIgASgLMiIuUE9HT1Byb3Rvcy5E",
             "YXRhLlF1ZXN0cy5EYWlseVF1ZXN0EkAKCm11bHRpX3BhcnQYAyABKAsyLC5Q",
@@ -47,15 +47,16 @@ namespace POGOProtos.Data.Quests {
             "c3RhbXBfbXMYbiABKAMSDwoHZm9ydF9pZBhvIAEoCRIXCg9hZG1pbl9nZW5l",
             "cmF0ZWQYcCABKAgSJAocc3RhbXBfY291bnRfb3ZlcnJpZGVfZW5hYmxlZBhx",
             "IAEoCBIcChRzdGFtcF9jb3VudF9vdmVycmlkZRhyIAEoBRISCgpzMl9jZWxs",
-            "X2lkGHMgASgDGkMKDk11bHRpUGFydFF1ZXN0EjEKCnN1Yl9xdWVzdHMYASAD",
-            "KAsyHS5QT0dPUHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0IjoKB0NvbnRleHQS",
-            "CQoFVU5TRVQQABIPCgtTVE9SWV9RVUVTVBABEhMKD0NIQUxMRU5HRV9RVUVT",
-            "VBACIkcKBlN0YXR1cxIUChBTVEFUVVNfVU5ERUZJTkVEEAASEQoNU1RBVFVT",
-            "X0FDVElWRRABEhQKEFNUQVRVU19DT01QTEVURUQQAmIGcHJvdG8z"));
+            "X2lkGHMgASgDEiQKHHN0b3J5X3F1ZXN0X3RlbXBsYXRlX3ZlcnNpb24YdCAB",
+            "KAUaQwoOTXVsdGlQYXJ0UXVlc3QSMQoKc3ViX3F1ZXN0cxgBIAMoCzIdLlBP",
+            "R09Qcm90b3MuRGF0YS5RdWVzdHMuUXVlc3QiOgoHQ29udGV4dBIJCgVVTlNF",
+            "VBAAEg8KC1NUT1JZX1FVRVNUEAESEwoPQ0hBTExFTkdFX1FVRVNUEAIiRwoG",
+            "U3RhdHVzEhQKEFNUQVRVU19VTkRFRklORUQQABIRCg1TVEFUVVNfQUNUSVZF",
+            "EAESFAoQU1RBVFVTX0NPTVBMRVRFRBACYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.QuestTypeReflection.Descriptor, global::POGOProtos.Data.Quests.DailyQuestReflection.Descriptor, global::POGOProtos.Data.Quests.CatchPokemonQuestReflection.Descriptor, global::POGOProtos.Data.Quests.QuestRewardReflection.Descriptor, global::POGOProtos.Data.Quests.QuestGoalReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest), global::POGOProtos.Data.Quests.Quest.Parser, new[]{ "QuestType", "DailyQuest", "MultiPart", "CatchPokemon", "QuestId", "QuestSeed", "QuestContext", "TemplateId", "Progress", "Goal", "Status", "QuestRewards", "CreationTimestampMs", "LastUpdateTimestampMs", "CompeletionTimestampMs", "FortId", "AdminGenerated", "StampCountOverrideEnabled", "StampCountOverride", "S2CellId" }, null, new[]{ typeof(global::POGOProtos.Data.Quests.Quest.Types.Context), typeof(global::POGOProtos.Data.Quests.Quest.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest), global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest.Parser, new[]{ "SubQuests" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest), global::POGOProtos.Data.Quests.Quest.Parser, new[]{ "QuestType", "DailyQuest", "MultiPart", "CatchPokemon", "QuestId", "QuestSeed", "QuestContext", "TemplateId", "Progress", "Goal", "Status", "QuestRewards", "CreationTimestampMs", "LastUpdateTimestampMs", "CompeletionTimestampMs", "FortId", "AdminGenerated", "StampCountOverrideEnabled", "StampCountOverride", "S2CellId", "StoryQuestTemplateVersion" }, null, new[]{ typeof(global::POGOProtos.Data.Quests.Quest.Types.Context), typeof(global::POGOProtos.Data.Quests.Quest.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest), global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest.Parser, new[]{ "SubQuests" }, null, null, null)})
           }));
     }
     #endregion
@@ -107,6 +108,7 @@ namespace POGOProtos.Data.Quests {
       stampCountOverrideEnabled_ = other.stampCountOverrideEnabled_;
       stampCountOverride_ = other.stampCountOverride_;
       s2CellId_ = other.s2CellId_;
+      storyQuestTemplateVersion_ = other.storyQuestTemplateVersion_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -334,6 +336,17 @@ namespace POGOProtos.Data.Quests {
       }
     }
 
+    /// <summary>Field number for the "story_quest_template_version" field.</summary>
+    public const int StoryQuestTemplateVersionFieldNumber = 116;
+    private int storyQuestTemplateVersion_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int StoryQuestTemplateVersion {
+      get { return storyQuestTemplateVersion_; }
+      set {
+        storyQuestTemplateVersion_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Quest);
@@ -367,6 +380,7 @@ namespace POGOProtos.Data.Quests {
       if (StampCountOverrideEnabled != other.StampCountOverrideEnabled) return false;
       if (StampCountOverride != other.StampCountOverride) return false;
       if (S2CellId != other.S2CellId) return false;
+      if (StoryQuestTemplateVersion != other.StoryQuestTemplateVersion) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -393,6 +407,7 @@ namespace POGOProtos.Data.Quests {
       if (StampCountOverrideEnabled != false) hash ^= StampCountOverrideEnabled.GetHashCode();
       if (StampCountOverride != 0) hash ^= StampCountOverride.GetHashCode();
       if (S2CellId != 0L) hash ^= S2CellId.GetHashCode();
+      if (StoryQuestTemplateVersion != 0) hash ^= StoryQuestTemplateVersion.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -483,6 +498,10 @@ namespace POGOProtos.Data.Quests {
         output.WriteRawTag(152, 7);
         output.WriteInt64(S2CellId);
       }
+      if (StoryQuestTemplateVersion != 0) {
+        output.WriteRawTag(160, 7);
+        output.WriteInt32(StoryQuestTemplateVersion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -548,6 +567,9 @@ namespace POGOProtos.Data.Quests {
       }
       if (S2CellId != 0L) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(S2CellId);
+      }
+      if (StoryQuestTemplateVersion != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(StoryQuestTemplateVersion);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -629,6 +651,9 @@ namespace POGOProtos.Data.Quests {
       }
       if (other.S2CellId != 0L) {
         S2CellId = other.S2CellId;
+      }
+      if (other.StoryQuestTemplateVersion != 0) {
+        StoryQuestTemplateVersion = other.StoryQuestTemplateVersion;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -731,6 +756,10 @@ namespace POGOProtos.Data.Quests {
           }
           case 920: {
             S2CellId = input.ReadInt64();
+            break;
+          }
+          case 928: {
+            StoryQuestTemplateVersion = input.ReadInt32();
             break;
           }
         }

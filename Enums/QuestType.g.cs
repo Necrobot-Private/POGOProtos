@@ -25,7 +25,7 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBQT0dPUHJvdG9zL0VudW1zL1F1ZXN0VHlwZS5wcm90bxIQUE9HT1Byb3Rv",
-            "cy5FbnVtcyqmBAoJUXVlc3RUeXBlEhYKElFVRVNUX1VOS05PV05fVFlQRRAA",
+            "cy5FbnVtcyrWBAoJUXVlc3RUeXBlEhYKElFVRVNUX1VOS05PV05fVFlQRRAA",
             "EiAKHFFVRVNUX0ZJUlNUX0NBVENIX09GX1RIRV9EQVkQARIjCh9RVUVTVF9G",
             "SVJTVF9QT0tFU1RPUF9PRl9USEVfREFZEAISFAoQUVVFU1RfTVVMVElfUEFS",
             "VBADEhcKE1FVRVNUX0NBVENIX1BPS0VNT04QBBIXChNRVUVTVF9TUElOX1BP",
@@ -37,7 +37,8 @@ namespace POGOProtos.Enums {
             "VU5URVIQDRIZChVRVUVTVF9VUEdSQURFX1BPS0VNT04QDhIYChRRVUVTVF9F",
             "Vk9MVkVfUE9LRU1PThAPEhQKEFFVRVNUX0xBTkRfVEhST1cQEBIZChVRVUVT",
             "VF9HRVRfQlVERFlfQ0FORFkQERIUChBRVUVTVF9CQURHRV9SQU5LEBISFgoS",
-            "UVVFU1RfUExBWUVSX0xFVkVMEBNiBnByb3RvMw=="));
+            "UVVFU1RfUExBWUVSX0xFVkVMEBMSEwoPUVVFU1RfSk9JTl9SQUlEEBQSGQoV",
+            "UVVFU1RfQ09NUExFVEVfQkFUVExFEBViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.QuestType), }, null));
@@ -67,6 +68,8 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("QUEST_GET_BUDDY_CANDY")] QuestGetBuddyCandy = 17,
     [pbr::OriginalName("QUEST_BADGE_RANK")] QuestBadgeRank = 18,
     [pbr::OriginalName("QUEST_PLAYER_LEVEL")] QuestPlayerLevel = 19,
+    [pbr::OriginalName("QUEST_JOIN_RAID")] QuestJoinRaid = 20,
+    [pbr::OriginalName("QUEST_COMPLETE_BATTLE")] QuestCompleteBattle = 21,
   }
 
   #endregion

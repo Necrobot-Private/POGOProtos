@@ -25,14 +25,14 @@ namespace POGOProtos.Settings.Master {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNQT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9PbmJvYXJkaW5nU2V0dGlu",
-            "Z3MucHJvdG8SGlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyIloKEk9uYm9h",
+            "Z3MucHJvdG8SGlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyInoKEk9uYm9h",
             "cmRpbmdTZXR0aW5ncxIhChlza2lwX2F2YXRhcl9jdXN0b21pemF0aW9uGAEg",
-            "ASgIEiEKGWRpc2FibGVfaW5pdGlhbF9hcl9wcm9tcHQYAiABKAhiBnByb3Rv",
-            "Mw=="));
+            "ASgIEiEKGWRpc2FibGVfaW5pdGlhbF9hcl9wcm9tcHQYAiABKAgSHgoWYXJf",
+            "cHJvbXB0X3BsYXllcl9sZXZlbBgDIAEoDWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.OnboardingSettings), global::POGOProtos.Settings.Master.OnboardingSettings.Parser, new[]{ "SkipAvatarCustomization", "DisableInitialArPrompt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.OnboardingSettings), global::POGOProtos.Settings.Master.OnboardingSettings.Parser, new[]{ "SkipAvatarCustomization", "DisableInitialArPrompt", "ArPromptPlayerLevel" }, null, null, null)
           }));
     }
     #endregion
@@ -66,6 +66,7 @@ namespace POGOProtos.Settings.Master {
     public OnboardingSettings(OnboardingSettings other) : this() {
       skipAvatarCustomization_ = other.skipAvatarCustomization_;
       disableInitialArPrompt_ = other.disableInitialArPrompt_;
+      arPromptPlayerLevel_ = other.arPromptPlayerLevel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -96,6 +97,17 @@ namespace POGOProtos.Settings.Master {
       }
     }
 
+    /// <summary>Field number for the "ar_prompt_player_level" field.</summary>
+    public const int ArPromptPlayerLevelFieldNumber = 3;
+    private uint arPromptPlayerLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint ArPromptPlayerLevel {
+      get { return arPromptPlayerLevel_; }
+      set {
+        arPromptPlayerLevel_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as OnboardingSettings);
@@ -111,6 +123,7 @@ namespace POGOProtos.Settings.Master {
       }
       if (SkipAvatarCustomization != other.SkipAvatarCustomization) return false;
       if (DisableInitialArPrompt != other.DisableInitialArPrompt) return false;
+      if (ArPromptPlayerLevel != other.ArPromptPlayerLevel) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -119,6 +132,7 @@ namespace POGOProtos.Settings.Master {
       int hash = 1;
       if (SkipAvatarCustomization != false) hash ^= SkipAvatarCustomization.GetHashCode();
       if (DisableInitialArPrompt != false) hash ^= DisableInitialArPrompt.GetHashCode();
+      if (ArPromptPlayerLevel != 0) hash ^= ArPromptPlayerLevel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -140,6 +154,10 @@ namespace POGOProtos.Settings.Master {
         output.WriteRawTag(16);
         output.WriteBool(DisableInitialArPrompt);
       }
+      if (ArPromptPlayerLevel != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(ArPromptPlayerLevel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -153,6 +171,9 @@ namespace POGOProtos.Settings.Master {
       }
       if (DisableInitialArPrompt != false) {
         size += 1 + 1;
+      }
+      if (ArPromptPlayerLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ArPromptPlayerLevel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -171,6 +192,9 @@ namespace POGOProtos.Settings.Master {
       if (other.DisableInitialArPrompt != false) {
         DisableInitialArPrompt = other.DisableInitialArPrompt;
       }
+      if (other.ArPromptPlayerLevel != 0) {
+        ArPromptPlayerLevel = other.ArPromptPlayerLevel;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -188,6 +212,10 @@ namespace POGOProtos.Settings.Master {
           }
           case 16: {
             DisableInitialArPrompt = input.ReadBool();
+            break;
+          }
+          case 24: {
+            ArPromptPlayerLevel = input.ReadUInt32();
             break;
           }
         }

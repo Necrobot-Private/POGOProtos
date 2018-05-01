@@ -30,7 +30,7 @@ namespace POGOProtos.Data.Quests {
             "cHJvdG8aIFBPR09Qcm90b3MvRW51bXMvUG9rZW1vbklkLnByb3RvGiJQT0dP",
             "UHJvdG9zL0VudW1zL1Bva2Vtb25UeXBlLnByb3RvGiBQT0dPUHJvdG9zL0Vu",
             "dW1zL1JhaWRMZXZlbC5wcm90bxomUE9HT1Byb3Rvcy9JbnZlbnRvcnkvSXRl",
-            "bS9JdGVtSWQucHJvdG8ijxUKDlF1ZXN0Q29uZGl0aW9uEkIKBHR5cGUYASAB",
+            "bS9JdGVtSWQucHJvdG8inhYKDlF1ZXN0Q29uZGl0aW9uEkIKBHR5cGUYASAB",
             "KA4yNC5QT0dPUHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0Q29uZGl0aW9uLkNv",
             "bmRpdGlvblR5cGUSUQoRd2l0aF9wb2tlbW9uX3R5cGUYAiABKAsyNi5QT0dP",
             "UHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0Q29uZGl0aW9uLldpdGhQb2tlbW9u",
@@ -61,40 +61,43 @@ namespace POGOProtos.Data.Quests {
             "eXBlGA8gASgLMjQuUE9HT1Byb3Rvcy5EYXRhLlF1ZXN0cy5RdWVzdENvbmRp",
             "dGlvbi5XaXRoQmFkZ2VUeXBlElEKEXdpdGhfcGxheWVyX2xldmVsGBAgASgL",
             "MjYuUE9HT1Byb3Rvcy5EYXRhLlF1ZXN0cy5RdWVzdENvbmRpdGlvbi5XaXRo",
-            "UGxheWVyTGV2ZWwaRgoPV2l0aFBva2Vtb25UeXBlEjMKDHBva2Vtb25fdHlw",
-            "ZRgBIAMoDjIdLlBPR09Qcm90b3MuRW51bXMuUG9rZW1vblR5cGUaEgoQV2l0",
-            "aFdlYXRoZXJCb29zdBpeChNXaXRoUG9rZW1vbkNhdGVnb3J5EhUKDWNhdGVn",
-            "b3J5X25hbWUYASABKAkSMAoLcG9rZW1vbl9pZHMYAiADKA4yGy5QT0dPUHJv",
-            "dG9zLkVudW1zLlBva2Vtb25JZBoXChVXaXRoRGFpbHlDYXB0dXJlQm9udXMa",
-            "FAoSV2l0aERhaWx5U3BpbkJvbnVzGhMKEVdpdGhXaW5SYWlkU3RhdHVzGkAK",
-            "DVdpdGhSYWlkTGV2ZWwSLwoKcmFpZF9sZXZlbBgBIAMoDjIbLlBPR09Qcm90",
-            "b3MuRW51bXMuUmFpZExldmVsGlAKDVdpdGhUaHJvd1R5cGUSMgoKdGhyb3df",
-            "dHlwZRgBIAEoDjIeLlBPR09Qcm90b3MuRW51bXMuQWN0aXZpdHlUeXBlEgsK",
-            "A2hpdBgCIAEoCBoPCg1XaXRoQ3VydmVCYWxsGhgKFldpdGhXaW5HeW1CYXR0",
-            "bGVTdGF0dXMaHgocV2l0aFN1cGVyRWZmZWN0aXZlQ2hhcmdlTW92ZRo7CghX",
-            "aXRoSXRlbRIvCgRpdGVtGAEgASgOMiEuUE9HT1Byb3Rvcy5JbnZlbnRvcnku",
-            "SXRlbS5JdGVtSWQaFAoSV2l0aFVuaXF1ZVBva2VzdG9wGqABChBXaXRoUXVl",
-            "c3RDb250ZXh0ElAKB2NvbnRleHQYASABKA4yPy5QT0dPUHJvdG9zLkRhdGEu",
-            "UXVlc3RzLlF1ZXN0Q29uZGl0aW9uLldpdGhRdWVzdENvbnRleHQuQ29udGV4",
-            "dCI6CgdDb250ZXh0EgkKBVVOU0VUEAASDwoLU1RPUllfUVVFU1QQARITCg9D",
-            "SEFMTEVOR0VfUVVFU1QQAhpkCg1XaXRoQmFkZ2VUeXBlEi8KCmJhZGdlX3R5",
-            "cGUYASADKA4yGy5QT0dPUHJvdG9zLkVudW1zLkJhZGdlVHlwZRISCgpiYWRn",
-            "ZV9yYW5rGAIgASgFEg4KBmFtb3VudBgDIAEoBRogCg9XaXRoUGxheWVyTGV2",
-            "ZWwSDQoFbGV2ZWwYASABKAUiwgMKDUNvbmRpdGlvblR5cGUSCQoFVU5TRVQQ",
-            "ABIVChFXSVRIX1BPS0VNT05fVFlQRRABEhkKFVdJVEhfUE9LRU1PTl9DQVRF",
-            "R09SWRACEhYKEldJVEhfV0VBVEhFUl9CT09TVBADEhwKGFdJVEhfREFJTFlf",
-            "Q0FQVFVSRV9CT05VUxAEEhkKFVdJVEhfREFJTFlfU1BJTl9CT05VUxAFEhgK",
-            "FFdJVEhfV0lOX1JBSURfU1RBVFVTEAYSEwoPV0lUSF9SQUlEX0xFVkVMEAcS",
-            "EwoPV0lUSF9USFJPV19UWVBFEAgSHgoaV0lUSF9XSU5fR1lNX0JBVFRMRV9T",
-            "VEFUVVMQCRIfChtXSVRIX1NVUEVSX0VGRkVDVElWRV9DSEFSR0UQChINCglX",
-            "SVRIX0lURU0QCxIYChRXSVRIX1VOSVFVRV9QT0tFU1RPUBAMEhYKEldJVEhf",
-            "UVVFU1RfQ09OVEVYVBANEhwKGFdJVEhfVEhST1dfVFlQRV9JTl9BX1JPVxAO",
-            "EhMKD1dJVEhfQ1VSVkVfQkFMTBAPEhMKD1dJVEhfQkFER0VfVFlQRRAQEhUK",
-            "EVdJVEhfUExBWUVSX0xFVkVMEBFiBnByb3RvMw=="));
+            "UGxheWVyTGV2ZWwSWgoWd2l0aF93aW5fYmF0dGxlX3N0YXR1cxgRIAEoCzI6",
+            "LlBPR09Qcm90b3MuRGF0YS5RdWVzdHMuUXVlc3RDb25kaXRpb24uV2l0aFdp",
+            "bkJhdHRsZVN0YXR1cxpGCg9XaXRoUG9rZW1vblR5cGUSMwoMcG9rZW1vbl90",
+            "eXBlGAEgAygOMh0uUE9HT1Byb3Rvcy5FbnVtcy5Qb2tlbW9uVHlwZRoSChBX",
+            "aXRoV2VhdGhlckJvb3N0Gl4KE1dpdGhQb2tlbW9uQ2F0ZWdvcnkSFQoNY2F0",
+            "ZWdvcnlfbmFtZRgBIAEoCRIwCgtwb2tlbW9uX2lkcxgCIAMoDjIbLlBPR09Q",
+            "cm90b3MuRW51bXMuUG9rZW1vbklkGhcKFVdpdGhEYWlseUNhcHR1cmVCb251",
+            "cxoUChJXaXRoRGFpbHlTcGluQm9udXMaEwoRV2l0aFdpblJhaWRTdGF0dXMa",
+            "QAoNV2l0aFJhaWRMZXZlbBIvCgpyYWlkX2xldmVsGAEgAygOMhsuUE9HT1By",
+            "b3Rvcy5FbnVtcy5SYWlkTGV2ZWwaUAoNV2l0aFRocm93VHlwZRIyCgp0aHJv",
+            "d190eXBlGAEgASgOMh4uUE9HT1Byb3Rvcy5FbnVtcy5BY3Rpdml0eVR5cGUS",
+            "CwoDaGl0GAIgASgIGg8KDVdpdGhDdXJ2ZUJhbGwaGAoWV2l0aFdpbkd5bUJh",
+            "dHRsZVN0YXR1cxoeChxXaXRoU3VwZXJFZmZlY3RpdmVDaGFyZ2VNb3ZlGjsK",
+            "CFdpdGhJdGVtEi8KBGl0ZW0YASABKA4yIS5QT0dPUHJvdG9zLkludmVudG9y",
+            "eS5JdGVtLkl0ZW1JZBoUChJXaXRoVW5pcXVlUG9rZXN0b3AaoAEKEFdpdGhR",
+            "dWVzdENvbnRleHQSUAoHY29udGV4dBgBIAEoDjI/LlBPR09Qcm90b3MuRGF0",
+            "YS5RdWVzdHMuUXVlc3RDb25kaXRpb24uV2l0aFF1ZXN0Q29udGV4dC5Db250",
+            "ZXh0IjoKB0NvbnRleHQSCQoFVU5TRVQQABIPCgtTVE9SWV9RVUVTVBABEhMK",
+            "D0NIQUxMRU5HRV9RVUVTVBACGmQKDVdpdGhCYWRnZVR5cGUSLwoKYmFkZ2Vf",
+            "dHlwZRgBIAMoDjIbLlBPR09Qcm90b3MuRW51bXMuQmFkZ2VUeXBlEhIKCmJh",
+            "ZGdlX3JhbmsYAiABKAUSDgoGYW1vdW50GAMgASgFGiAKD1dpdGhQbGF5ZXJM",
+            "ZXZlbBINCgVsZXZlbBgBIAEoBRoVChNXaXRoV2luQmF0dGxlU3RhdHVzIt4D",
+            "Cg1Db25kaXRpb25UeXBlEgkKBVVOU0VUEAASFQoRV0lUSF9QT0tFTU9OX1RZ",
+            "UEUQARIZChVXSVRIX1BPS0VNT05fQ0FURUdPUlkQAhIWChJXSVRIX1dFQVRI",
+            "RVJfQk9PU1QQAxIcChhXSVRIX0RBSUxZX0NBUFRVUkVfQk9OVVMQBBIZChVX",
+            "SVRIX0RBSUxZX1NQSU5fQk9OVVMQBRIYChRXSVRIX1dJTl9SQUlEX1NUQVRV",
+            "UxAGEhMKD1dJVEhfUkFJRF9MRVZFTBAHEhMKD1dJVEhfVEhST1dfVFlQRRAI",
+            "Eh4KGldJVEhfV0lOX0dZTV9CQVRUTEVfU1RBVFVTEAkSHwobV0lUSF9TVVBF",
+            "Ul9FRkZFQ1RJVkVfQ0hBUkdFEAoSDQoJV0lUSF9JVEVNEAsSGAoUV0lUSF9V",
+            "TklRVUVfUE9LRVNUT1AQDBIWChJXSVRIX1FVRVNUX0NPTlRFWFQQDRIcChhX",
+            "SVRIX1RIUk9XX1RZUEVfSU5fQV9ST1cQDhITCg9XSVRIX0NVUlZFX0JBTEwQ",
+            "DxITCg9XSVRIX0JBREdFX1RZUEUQEBIVChFXSVRIX1BMQVlFUl9MRVZFTBAR",
+            "EhoKFldJVEhfV0lOX0JBVFRMRV9TVEFUVVMQEmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.ActivityTypeReflection.Descriptor, global::POGOProtos.Enums.BadgeTypeReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Enums.PokemonTypeReflection.Descriptor, global::POGOProtos.Enums.RaidLevelReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition), global::POGOProtos.Data.Quests.QuestCondition.Parser, new[]{ "Type", "WithPokemonType", "WithPokemonCategory", "WithWeatherBoost", "WithDailyCaptureBonus", "WithDailySpinBonus", "WithWinRaidStatus", "WithRaidLevel", "WithThrowType", "WithWinGymBattleStatus", "WithSuperEffectiveChargeMove", "WithItem", "WithUniquePokestop", "WithQuestContext", "WithBadgeType", "WithPlayerLevel" }, null, new[]{ typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.ConditionType) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithPokemonType), global::POGOProtos.Data.Quests.QuestCondition.Types.WithPokemonType.Parser, new[]{ "PokemonType" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition), global::POGOProtos.Data.Quests.QuestCondition.Parser, new[]{ "Type", "WithPokemonType", "WithPokemonCategory", "WithWeatherBoost", "WithDailyCaptureBonus", "WithDailySpinBonus", "WithWinRaidStatus", "WithRaidLevel", "WithThrowType", "WithWinGymBattleStatus", "WithSuperEffectiveChargeMove", "WithItem", "WithUniquePokestop", "WithQuestContext", "WithBadgeType", "WithPlayerLevel", "WithWinBattleStatus" }, null, new[]{ typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.ConditionType) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithPokemonType), global::POGOProtos.Data.Quests.QuestCondition.Types.WithPokemonType.Parser, new[]{ "PokemonType" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithWeatherBoost), global::POGOProtos.Data.Quests.QuestCondition.Types.WithWeatherBoost.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithPokemonCategory), global::POGOProtos.Data.Quests.QuestCondition.Types.WithPokemonCategory.Parser, new[]{ "CategoryName", "PokemonIds" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithDailyCaptureBonus), global::POGOProtos.Data.Quests.QuestCondition.Types.WithDailyCaptureBonus.Parser, null, null, null, null),
@@ -109,7 +112,8 @@ namespace POGOProtos.Data.Quests {
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithUniquePokestop), global::POGOProtos.Data.Quests.QuestCondition.Types.WithUniquePokestop.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithQuestContext), global::POGOProtos.Data.Quests.QuestCondition.Types.WithQuestContext.Parser, new[]{ "Context" }, null, new[]{ typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithQuestContext.Types.Context) }, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithBadgeType), global::POGOProtos.Data.Quests.QuestCondition.Types.WithBadgeType.Parser, new[]{ "BadgeType", "BadgeRank", "Amount" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithPlayerLevel), global::POGOProtos.Data.Quests.QuestCondition.Types.WithPlayerLevel.Parser, new[]{ "Level" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithPlayerLevel), global::POGOProtos.Data.Quests.QuestCondition.Types.WithPlayerLevel.Parser, new[]{ "Level" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.QuestCondition.Types.WithWinBattleStatus), global::POGOProtos.Data.Quests.QuestCondition.Types.WithWinBattleStatus.Parser, null, null, null, null)})
           }));
     }
     #endregion
@@ -157,6 +161,7 @@ namespace POGOProtos.Data.Quests {
       WithQuestContext = other.withQuestContext_ != null ? other.WithQuestContext.Clone() : null;
       WithBadgeType = other.withBadgeType_ != null ? other.WithBadgeType.Clone() : null;
       WithPlayerLevel = other.withPlayerLevel_ != null ? other.WithPlayerLevel.Clone() : null;
+      WithWinBattleStatus = other.withWinBattleStatus_ != null ? other.WithWinBattleStatus.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -341,6 +346,17 @@ namespace POGOProtos.Data.Quests {
       }
     }
 
+    /// <summary>Field number for the "with_win_battle_status" field.</summary>
+    public const int WithWinBattleStatusFieldNumber = 17;
+    private global::POGOProtos.Data.Quests.QuestCondition.Types.WithWinBattleStatus withWinBattleStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Quests.QuestCondition.Types.WithWinBattleStatus WithWinBattleStatus {
+      get { return withWinBattleStatus_; }
+      set {
+        withWinBattleStatus_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as QuestCondition);
@@ -370,6 +386,7 @@ namespace POGOProtos.Data.Quests {
       if (!object.Equals(WithQuestContext, other.WithQuestContext)) return false;
       if (!object.Equals(WithBadgeType, other.WithBadgeType)) return false;
       if (!object.Equals(WithPlayerLevel, other.WithPlayerLevel)) return false;
+      if (!object.Equals(WithWinBattleStatus, other.WithWinBattleStatus)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -392,6 +409,7 @@ namespace POGOProtos.Data.Quests {
       if (withQuestContext_ != null) hash ^= WithQuestContext.GetHashCode();
       if (withBadgeType_ != null) hash ^= WithBadgeType.GetHashCode();
       if (withPlayerLevel_ != null) hash ^= WithPlayerLevel.GetHashCode();
+      if (withWinBattleStatus_ != null) hash ^= WithWinBattleStatus.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -469,6 +487,10 @@ namespace POGOProtos.Data.Quests {
         output.WriteRawTag(130, 1);
         output.WriteMessage(WithPlayerLevel);
       }
+      if (withWinBattleStatus_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(WithWinBattleStatus);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -524,6 +546,9 @@ namespace POGOProtos.Data.Quests {
       }
       if (withPlayerLevel_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(WithPlayerLevel);
+      }
+      if (withWinBattleStatus_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(WithWinBattleStatus);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -628,6 +653,12 @@ namespace POGOProtos.Data.Quests {
           withPlayerLevel_ = new global::POGOProtos.Data.Quests.QuestCondition.Types.WithPlayerLevel();
         }
         WithPlayerLevel.MergeFrom(other.WithPlayerLevel);
+      }
+      if (other.withWinBattleStatus_ != null) {
+        if (withWinBattleStatus_ == null) {
+          withWinBattleStatus_ = new global::POGOProtos.Data.Quests.QuestCondition.Types.WithWinBattleStatus();
+        }
+        WithWinBattleStatus.MergeFrom(other.WithWinBattleStatus);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -749,6 +780,13 @@ namespace POGOProtos.Data.Quests {
             input.ReadMessage(withPlayerLevel_);
             break;
           }
+          case 138: {
+            if (withWinBattleStatus_ == null) {
+              withWinBattleStatus_ = new global::POGOProtos.Data.Quests.QuestCondition.Types.WithWinBattleStatus();
+            }
+            input.ReadMessage(withWinBattleStatus_);
+            break;
+          }
         }
       }
     }
@@ -776,6 +814,7 @@ namespace POGOProtos.Data.Quests {
         [pbr::OriginalName("WITH_CURVE_BALL")] WithCurveBall = 15,
         [pbr::OriginalName("WITH_BADGE_TYPE")] WithBadgeType = 16,
         [pbr::OriginalName("WITH_PLAYER_LEVEL")] WithPlayerLevel = 17,
+        [pbr::OriginalName("WITH_WIN_BATTLE_STATUS")] WithWinBattleStatus = 18,
       }
 
       public sealed partial class WithPokemonType : pb::IMessage<WithPokemonType> {
@@ -2709,6 +2748,107 @@ namespace POGOProtos.Data.Quests {
                 Level = input.ReadInt32();
                 break;
               }
+            }
+          }
+        }
+
+      }
+
+      public sealed partial class WithWinBattleStatus : pb::IMessage<WithWinBattleStatus> {
+        private static readonly pb::MessageParser<WithWinBattleStatus> _parser = new pb::MessageParser<WithWinBattleStatus>(() => new WithWinBattleStatus());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<WithWinBattleStatus> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::POGOProtos.Data.Quests.QuestCondition.Descriptor.NestedTypes[16]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public WithWinBattleStatus() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public WithWinBattleStatus(WithWinBattleStatus other) : this() {
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public WithWinBattleStatus Clone() {
+          return new WithWinBattleStatus(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as WithWinBattleStatus);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(WithWinBattleStatus other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(WithWinBattleStatus other) {
+          if (other == null) {
+            return;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
             }
           }
         }

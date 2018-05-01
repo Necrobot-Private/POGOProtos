@@ -163,6 +163,7 @@
     <Compile Include="Enums\BadgeType.g.cs" />
     <Compile Include="Enums\CameraInterpolation.g.cs" />
     <Compile Include="Enums\CameraTarget.g.cs" />
+    <Compile Include="Enums\ClientTelemetryIds.g.cs" />
     <Compile Include="Enums\Costume.g.cs" />
     <Compile Include="Enums\EncounterType.g.cs" />
     <Compile Include="Enums\Filter.g.cs" />
