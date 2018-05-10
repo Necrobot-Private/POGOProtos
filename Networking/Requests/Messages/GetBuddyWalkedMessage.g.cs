@@ -38,6 +38,8 @@ namespace POGOProtos.Networking.Requests.Messages {
 
   }
   #region Messages
+  /// <summary>
+  /// </summary>
   public sealed partial class GetBuddyWalkedMessage : pb::IMessage<GetBuddyWalkedMessage> {
     private static readonly pb::MessageParser<GetBuddyWalkedMessage> _parser = new pb::MessageParser<GetBuddyWalkedMessage>(() => new GetBuddyWalkedMessage());
     private pb::UnknownFieldSet _unknownFields;

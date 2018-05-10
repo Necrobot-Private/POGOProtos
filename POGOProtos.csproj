@@ -135,7 +135,6 @@
     <Compile Include="Data\PokedexEntry.g.cs" />
     <Compile Include="Data\PokemonData.g.cs" />
     <Compile Include="Data\PokemonDisplay.g.cs" />
-    <Compile Include="Data\PtcToken.g.cs" />
     <Compile Include="Data\Quests\CatchPokemonQuest.g.cs" />
     <Compile Include="Data\Quests\ClientQuest.g.cs" />
     <Compile Include="Data\Quests\DailyQuest.g.cs" />
@@ -242,14 +241,12 @@
     <Compile Include="Networking\Platform\Requests\BuyItemPokeCoinsRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\GetStoreItemsRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\JoinEventRequest.g.cs" />
-    <Compile Include="Networking\Platform\Requests\PlatEightRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\SendEncryptedSignatureRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\UnknownPtr8Request.g.cs" />
     <Compile Include="Networking\Platform\Responses\BuyItemAndroidResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\BuyItemPokeCoinsResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\GetStoreItemsResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\JoinEventResponse.g.cs" />
-    <Compile Include="Networking\Platform\Responses\PlatEightResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\SendEncryptedSignatureResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\UnknownPtr8Response.g.cs" />
     <Compile Include="Networking\Requests\Messages\AddFortModifierMessage.g.cs" />

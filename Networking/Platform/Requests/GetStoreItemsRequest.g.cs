@@ -38,6 +38,8 @@ namespace POGOProtos.Networking.Platform.Requests {
 
   }
   #region Messages
+  /// <summary>
+  /// </summary>
   public sealed partial class GetStoreItemsRequest : pb::IMessage<GetStoreItemsRequest> {
     private static readonly pb::MessageParser<GetStoreItemsRequest> _parser = new pb::MessageParser<GetStoreItemsRequest>(() => new GetStoreItemsRequest());
     private pb::UnknownFieldSet _unknownFields;
