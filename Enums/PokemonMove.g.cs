@@ -25,7 +25,7 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiJQT0dPUHJvdG9zL0VudW1zL1Bva2Vtb25Nb3ZlLnByb3RvEhBQT0dPUHJv",
-            "dG9zLkVudW1zKu8fCgtQb2tlbW9uTW92ZRIOCgpNT1ZFX1VOU0VUEAASEQoN",
+            "dG9zLkVudW1zKoUgCgtQb2tlbW9uTW92ZRIOCgpNT1ZFX1VOU0VUEAASEQoN",
             "VEhVTkRFUl9TSE9DSxABEhAKDFFVSUNLX0FUVEFDSxACEgsKB1NDUkFUQ0gQ",
             "AxIJCgVFTUJFUhAEEg0KCVZJTkVfV0hJUBAFEgoKBlRBQ0tMRRAGEg4KClJB",
             "Wk9SX0xFQUYQBxINCglUQUtFX0RPV04QCBINCglXQVRFUl9HVU4QCRIICgRC",
@@ -115,8 +115,8 @@ namespace POGOProtos.Enums {
             "EhEKDE9SSUdJTl9QVUxTRRChAhIVChBQUkVDSVBJQ0VfQkxBREVTEKICEhEK",
             "DFBSRVNFTlRfRkFTVBCjAhIWChFXRUFUSEVSX0JBTExfRklSRRCkAhIVChBX",
             "RUFUSEVSX0JBTExfSUNFEKUCEhYKEVdFQVRIRVJfQkFMTF9ST0NLEKYCEhcK",
-            "EldFQVRIRVJfQkFMTF9XQVRFUhCnAhIRCgxGUkVOWllfUExBTlQQqAJiBnBy",
-            "b3RvMw=="));
+            "EldFQVRIRVJfQkFMTF9XQVRFUhCnAhIRCgxGUkVOWllfUExBTlQQqAISFAoP",
+            "U01BQ0tfRE9XTl9GQVNUEKkCYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.PokemonMove), }, null));
@@ -361,6 +361,7 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("WEATHER_BALL_ROCK")] WeatherBallRock = 294,
     [pbr::OriginalName("WEATHER_BALL_WATER")] WeatherBallWater = 295,
     [pbr::OriginalName("FRENZY_PLANT")] FrenzyPlant = 296,
+    [pbr::OriginalName("SMACK_DOWN_FAST")] SmackDownFast = 297,
   }
 
   #endregion

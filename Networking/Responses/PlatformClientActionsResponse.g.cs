@@ -374,7 +374,6 @@ namespace POGOProtos.Networking.Responses {
   }
 
   /// <summary>
-  /// ???
   /// </summary>
   public sealed partial class OptOutPushNotificationCategoryResponse : pb::IMessage<OptOutPushNotificationCategoryResponse> {
     private static readonly pb::MessageParser<OptOutPushNotificationCategoryResponse> _parser = new pb::MessageParser<OptOutPushNotificationCategoryResponse>(() => new OptOutPushNotificationCategoryResponse());

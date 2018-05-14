@@ -27,12 +27,12 @@ namespace POGOProtos.Networking.Responses {
             "CjtQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0NvbXBsZXRlUXVl",
             "c3RSZXNwb25zZS5wcm90bxIfUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3Bv",
             "bnNlcxooUE9HT1Byb3Rvcy9EYXRhL1F1ZXN0cy9DbGllbnRRdWVzdC5wcm90",
-            "bxonUE9HT1Byb3Rvcy9EYXRhL1F1ZXN0cy9RdWVzdFN0YW1wLnByb3RvIrwE",
+            "bxonUE9HT1Byb3Rvcy9EYXRhL1F1ZXN0cy9RdWVzdFN0YW1wLnByb3RvItYE",
             "ChVDb21wbGV0ZVF1ZXN0UmVzcG9uc2USTQoGc3RhdHVzGAEgASgOMj0uUE9H",
             "T1Byb3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNlcy5Db21wbGV0ZVF1ZXN0UmVz",
             "cG9uc2UuU3RhdHVzEjIKBXF1ZXN0GAIgASgLMiMuUE9HT1Byb3Rvcy5EYXRh",
             "LlF1ZXN0cy5DbGllbnRRdWVzdBIxCgVzdGFtcBgDIAMoCzIiLlBPR09Qcm90",
-            "b3MuRGF0YS5RdWVzdHMuUXVlc3RTdGFtcCLsAgoGU3RhdHVzEgkKBVVOU0VU",
+            "b3MuRGF0YS5RdWVzdHMuUXVlc3RTdGFtcCKGAwoGU3RhdHVzEgkKBVVOU0VU",
             "EAASCwoHU1VDQ0VTUxABEhkKFUVSUk9SX1FVRVNUX05PVF9GT1VORBACEiEK",
             "HUVSUk9SX1FVRVNUX1NUSUxMX0lOX1BST0dSRVNTEAMSIQodRVJST1JfUVVF",
             "U1RfQUxSRUFEWV9DT01QTEVURUQQBBIcChhFUlJPUl9TVUJRVUVTVF9OT1Rf",
@@ -40,7 +40,8 @@ namespace POGOProtos.Networking.Responses {
             "EiQKIEVSUk9SX1NVQlFVRVNUX0FMUkVBRFlfQ09NUExFVEVEEAcSJQohRVJS",
             "T1JfTVVMVElQQVJUX1NUSUxMX0lOX1BST0dSRVNTEAgSJQohRVJST1JfTVVM",
             "VElQQVJUX0FMUkVBRFlfQ09NUExFVEVEEAkSMQotRVJST1JfUkVERUVNX0NP",
-            "TVBMRVRFRF9RVUVTVF9TVEFNUF9DQVJEX0ZJUlNUEApiBnByb3RvMw=="));
+            "TVBMRVRFRF9RVUVTVF9TVEFNUF9DQVJEX0ZJUlNUEAoSGAoURVJST1JfSU5W",
+            "RU5UT1JZX0ZVTEwQC2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Quests.ClientQuestReflection.Descriptor, global::POGOProtos.Data.Quests.QuestStampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -248,6 +249,7 @@ namespace POGOProtos.Networking.Responses {
         [pbr::OriginalName("ERROR_MULTIPART_STILL_IN_PROGRESS")] ErrorMultipartStillInProgress = 8,
         [pbr::OriginalName("ERROR_MULTIPART_ALREADY_COMPLETED")] ErrorMultipartAlreadyCompleted = 9,
         [pbr::OriginalName("ERROR_REDEEM_COMPLETED_QUEST_STAMP_CARD_FIRST")] ErrorRedeemCompletedQuestStampCardFirst = 10,
+        [pbr::OriginalName("ERROR_INVENTORY_FULL")] ErrorInventoryFull = 11,
       }
 
     }

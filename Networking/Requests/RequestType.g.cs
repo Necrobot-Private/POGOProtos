@@ -490,7 +490,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("DOWNLOAD_GAME_MASTER_TEMPLATES")] DownloadGameMasterTemplates = 5004,
     /// <summary>
-    /// Implemented [R &amp; M]
+    /// UnUsed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_INVENTORY")] GetInventory = 5005,
   }

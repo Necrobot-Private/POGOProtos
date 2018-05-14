@@ -108,6 +108,7 @@
     <Compile Include="Data\Gym\GymMembership.g.cs" />
     <Compile Include="Data\Gym\GymState.g.cs" />
     <Compile Include="Data\Gym\GymStatusAndDefenders.g.cs" />
+    <Compile Include="Data\Login\LoginDetail.g.cs" />
     <Compile Include="Data\Logs\ActionLogEntry.g.cs" />
     <Compile Include="Data\Logs\BuddyPokemonLogEntry.g.cs" />
     <Compile Include="Data\Logs\CatchPokemonLogEntry.g.cs" />
@@ -134,7 +135,6 @@
     <Compile Include="Data\PokedexEntry.g.cs" />
     <Compile Include="Data\PokemonData.g.cs" />
     <Compile Include="Data\PokemonDisplay.g.cs" />
-    <Compile Include="Data\PtcToken.g.cs" />
     <Compile Include="Data\Quests\CatchPokemonQuest.g.cs" />
     <Compile Include="Data\Quests\ClientQuest.g.cs" />
     <Compile Include="Data\Quests\DailyQuest.g.cs" />
@@ -162,6 +162,7 @@
     <Compile Include="Enums\BadgeType.g.cs" />
     <Compile Include="Enums\CameraInterpolation.g.cs" />
     <Compile Include="Enums\CameraTarget.g.cs" />
+    <Compile Include="Enums\ClientTelemetryIds.g.cs" />
     <Compile Include="Enums\Costume.g.cs" />
     <Compile Include="Enums\EncounterType.g.cs" />
     <Compile Include="Enums\Filter.g.cs" />
@@ -169,6 +170,7 @@
     <Compile Include="Enums\Gender.g.cs" />
     <Compile Include="Enums\GymBadgeType.g.cs" />
     <Compile Include="Enums\IapItemCategory.g.cs" />
+    <Compile Include="Enums\IdentityProvider.g.cs" />
     <Compile Include="Enums\ItemCategory.g.cs" />
     <Compile Include="Enums\ItemEffect.g.cs" />
     <Compile Include="Enums\NotificationCategory.g.cs" />
@@ -239,17 +241,16 @@
     <Compile Include="Networking\Platform\Requests\BuyItemPokeCoinsRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\GetStoreItemsRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\JoinEventRequest.g.cs" />
-    <Compile Include="Networking\Platform\Requests\PlatEightRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\SendEncryptedSignatureRequest.g.cs" />
     <Compile Include="Networking\Platform\Requests\UnknownPtr8Request.g.cs" />
     <Compile Include="Networking\Platform\Responses\BuyItemAndroidResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\BuyItemPokeCoinsResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\GetStoreItemsResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\JoinEventResponse.g.cs" />
-    <Compile Include="Networking\Platform\Responses\PlatEightResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\SendEncryptedSignatureResponse.g.cs" />
     <Compile Include="Networking\Platform\Responses\UnknownPtr8Response.g.cs" />
     <Compile Include="Networking\Requests\Messages\AddFortModifierMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\AddLoginActionMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\AttackGymMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\AttackRaidBattleMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\AwardFreeRaidTicketMessage.g.cs" />
@@ -325,6 +326,7 @@
     <Compile Include="Networking\Requests\Messages\SfidaRegistrationMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\StartGymBattleMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\StartRaidBattleMessage.g.cs" />
+    <Compile Include="Networking\Requests\Messages\SubmitNewPoiMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UpdateNotificationMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UpgradePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\UseIncenseMessage.g.cs" />
@@ -342,6 +344,7 @@
     <Compile Include="Networking\Requests\Request.g.cs" />
     <Compile Include="Networking\Requests\RequestType.g.cs" />
     <Compile Include="Networking\Responses\AddFortModifierResponse.g.cs" />
+    <Compile Include="Networking\Responses\AddLoginActionResponse.g.cs" />
     <Compile Include="Networking\Responses\AttackGymResponse.g.cs" />
     <Compile Include="Networking\Responses\AttackRaidBattleResponse.g.cs" />
     <Compile Include="Networking\Responses\AwardFreeRaidTicketResponse.g.cs" />
@@ -417,6 +420,7 @@
     <Compile Include="Networking\Responses\SfidaRegistrationResponse.g.cs" />
     <Compile Include="Networking\Responses\StartGymBattleResponse.g.cs" />
     <Compile Include="Networking\Responses\StartRaidBattleResponse.g.cs" />
+    <Compile Include="Networking\Responses\SubmitNewPoiResponse.g.cs" />
     <Compile Include="Networking\Responses\UpdateNotificationResponse.g.cs" />
     <Compile Include="Networking\Responses\UpgradePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\UseIncenseResponse.g.cs" />

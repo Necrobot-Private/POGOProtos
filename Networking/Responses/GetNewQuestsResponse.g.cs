@@ -27,15 +27,17 @@ namespace POGOProtos.Networking.Responses {
             "CjpQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0dldE5ld1F1ZXN0",
             "c1Jlc3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9u",
             "c2VzGihQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL0NsaWVudFF1ZXN0LnByb3Rv",
-            "ItYBChRHZXROZXdRdWVzdHNSZXNwb25zZRJMCgZzdGF0dXMYASABKA4yPC5Q",
+            "IpsCChRHZXROZXdRdWVzdHNSZXNwb25zZRJMCgZzdGF0dXMYASABKA4yPC5Q",
             "T0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2VzLkdldE5ld1F1ZXN0c1Jl",
             "c3BvbnNlLlN0YXR1cxIzCgZxdWVzdHMYAiADKAsyIy5QT0dPUHJvdG9zLkRh",
-            "dGEuUXVlc3RzLkNsaWVudFF1ZXN0IjsKBlN0YXR1cxIJCgVVTlNFVBAAEgsK",
-            "B1NVQ0NFU1MQARIZChVFUlJPUl9JTlZBTElEX0RJU1BMQVkQAmIGcHJvdG8z"));
+            "dGEuUXVlc3RzLkNsaWVudFF1ZXN0EkMKFnZlcnNpb25fY2hhbmdlZF9xdWVz",
+            "dHMYAyADKAsyIy5QT0dPUHJvdG9zLkRhdGEuUXVlc3RzLkNsaWVudFF1ZXN0",
+            "IjsKBlN0YXR1cxIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARIZChVFUlJPUl9J",
+            "TlZBTElEX0RJU1BMQVkQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Quests.ClientQuestReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetNewQuestsResponse), global::POGOProtos.Networking.Responses.GetNewQuestsResponse.Parser, new[]{ "Status", "Quests" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.GetNewQuestsResponse.Types.Status) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetNewQuestsResponse), global::POGOProtos.Networking.Responses.GetNewQuestsResponse.Parser, new[]{ "Status", "Quests", "VersionChangedQuests" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.GetNewQuestsResponse.Types.Status) }, null)
           }));
     }
     #endregion
@@ -69,6 +71,7 @@ namespace POGOProtos.Networking.Responses {
     public GetNewQuestsResponse(GetNewQuestsResponse other) : this() {
       status_ = other.status_;
       quests_ = other.quests_.Clone();
+      versionChangedQuests_ = other.versionChangedQuests_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -98,6 +101,16 @@ namespace POGOProtos.Networking.Responses {
       get { return quests_; }
     }
 
+    /// <summary>Field number for the "version_changed_quests" field.</summary>
+    public const int VersionChangedQuestsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Quests.ClientQuest> _repeated_versionChangedQuests_codec
+        = pb::FieldCodec.ForMessage(26, global::POGOProtos.Data.Quests.ClientQuest.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Quests.ClientQuest> versionChangedQuests_ = new pbc::RepeatedField<global::POGOProtos.Data.Quests.ClientQuest>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Data.Quests.ClientQuest> VersionChangedQuests {
+      get { return versionChangedQuests_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GetNewQuestsResponse);
@@ -113,6 +126,7 @@ namespace POGOProtos.Networking.Responses {
       }
       if (Status != other.Status) return false;
       if(!quests_.Equals(other.quests_)) return false;
+      if(!versionChangedQuests_.Equals(other.versionChangedQuests_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -121,6 +135,7 @@ namespace POGOProtos.Networking.Responses {
       int hash = 1;
       if (Status != 0) hash ^= Status.GetHashCode();
       hash ^= quests_.GetHashCode();
+      hash ^= versionChangedQuests_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -139,6 +154,7 @@ namespace POGOProtos.Networking.Responses {
         output.WriteEnum((int) Status);
       }
       quests_.WriteTo(output, _repeated_quests_codec);
+      versionChangedQuests_.WriteTo(output, _repeated_versionChangedQuests_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -151,6 +167,7 @@ namespace POGOProtos.Networking.Responses {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       size += quests_.CalculateSize(_repeated_quests_codec);
+      size += versionChangedQuests_.CalculateSize(_repeated_versionChangedQuests_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -166,6 +183,7 @@ namespace POGOProtos.Networking.Responses {
         Status = other.Status;
       }
       quests_.Add(other.quests_);
+      versionChangedQuests_.Add(other.versionChangedQuests_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -183,6 +201,10 @@ namespace POGOProtos.Networking.Responses {
           }
           case 18: {
             quests_.AddEntriesFrom(input, _repeated_quests_codec);
+            break;
+          }
+          case 26: {
+            versionChangedQuests_.AddEntriesFrom(input, _repeated_versionChangedQuests_codec);
             break;
           }
         }
