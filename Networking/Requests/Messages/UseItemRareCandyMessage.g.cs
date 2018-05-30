@@ -28,14 +28,14 @@ namespace POGOProtos.Networking.Requests.Messages {
             "SXRlbVJhcmVDYW5keU1lc3NhZ2UucHJvdG8SJ1BPR09Qcm90b3MuTmV0d29y",
             "a2luZy5SZXF1ZXN0cy5NZXNzYWdlcxomUE9HT1Byb3Rvcy9JbnZlbnRvcnkv",
             "SXRlbS9JdGVtSWQucHJvdG8aIFBPR09Qcm90b3MvRW51bXMvUG9rZW1vbklk",
-            "LnByb3RvIn4KF1VzZUl0ZW1SYXJlQ2FuZHlNZXNzYWdlEjIKB2l0ZW1faWQY",
-            "ASABKA4yIS5QT0dPUHJvdG9zLkludmVudG9yeS5JdGVtLkl0ZW1JZBIvCgpw",
-            "b2tlbW9uX2lkGAIgASgOMhsuUE9HT1Byb3Rvcy5FbnVtcy5Qb2tlbW9uSWRi",
-            "BnByb3RvMw=="));
+            "LnByb3RvIpMBChdVc2VJdGVtUmFyZUNhbmR5TWVzc2FnZRIyCgdpdGVtX2lk",
+            "GAEgASgOMiEuUE9HT1Byb3Rvcy5JbnZlbnRvcnkuSXRlbS5JdGVtSWQSLwoK",
+            "cG9rZW1vbl9pZBgCIAEoDjIbLlBPR09Qcm90b3MuRW51bXMuUG9rZW1vbklk",
+            "EhMKC2NhbmR5X2NvdW50GAMgASgFYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.UseItemRareCandyMessage), global::POGOProtos.Networking.Requests.Messages.UseItemRareCandyMessage.Parser, new[]{ "ItemId", "PokemonId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.UseItemRareCandyMessage), global::POGOProtos.Networking.Requests.Messages.UseItemRareCandyMessage.Parser, new[]{ "ItemId", "PokemonId", "CandyCount" }, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +69,7 @@ namespace POGOProtos.Networking.Requests.Messages {
     public UseItemRareCandyMessage(UseItemRareCandyMessage other) : this() {
       itemId_ = other.itemId_;
       pokemonId_ = other.pokemonId_;
+      candyCount_ = other.candyCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -99,6 +100,17 @@ namespace POGOProtos.Networking.Requests.Messages {
       }
     }
 
+    /// <summary>Field number for the "candy_count" field.</summary>
+    public const int CandyCountFieldNumber = 3;
+    private int candyCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CandyCount {
+      get { return candyCount_; }
+      set {
+        candyCount_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as UseItemRareCandyMessage);
@@ -114,6 +126,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       }
       if (ItemId != other.ItemId) return false;
       if (PokemonId != other.PokemonId) return false;
+      if (CandyCount != other.CandyCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -122,6 +135,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       int hash = 1;
       if (ItemId != 0) hash ^= ItemId.GetHashCode();
       if (PokemonId != 0) hash ^= PokemonId.GetHashCode();
+      if (CandyCount != 0) hash ^= CandyCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -143,6 +157,10 @@ namespace POGOProtos.Networking.Requests.Messages {
         output.WriteRawTag(16);
         output.WriteEnum((int) PokemonId);
       }
+      if (CandyCount != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(CandyCount);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -156,6 +174,9 @@ namespace POGOProtos.Networking.Requests.Messages {
       }
       if (PokemonId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PokemonId);
+      }
+      if (CandyCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CandyCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -174,6 +195,9 @@ namespace POGOProtos.Networking.Requests.Messages {
       if (other.PokemonId != 0) {
         PokemonId = other.PokemonId;
       }
+      if (other.CandyCount != 0) {
+        CandyCount = other.CandyCount;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -191,6 +215,10 @@ namespace POGOProtos.Networking.Requests.Messages {
           }
           case 16: {
             pokemonId_ = (global::POGOProtos.Enums.PokemonId) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            CandyCount = input.ReadInt32();
             break;
           }
         }

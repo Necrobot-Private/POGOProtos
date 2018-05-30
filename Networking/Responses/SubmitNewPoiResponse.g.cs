@@ -26,15 +26,15 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CjpQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL1N1Ym1pdE5ld1Bv",
             "aVJlc3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9u",
-            "c2VzIrMBChRTdWJtaXROZXdQb2lSZXNwb25zZRJMCgZzdGF0dXMYASABKA4y",
+            "c2VzIsgBChRTdWJtaXROZXdQb2lSZXNwb25zZRJMCgZzdGF0dXMYASABKA4y",
             "PC5QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2VzLlN1Ym1pdE5ld1Bv",
-            "aVJlc3BvbnNlLlN0YXR1cxIeChZnZW9zdG9yZV9lcnJvcl9tZXNzYWdlGAIg",
-            "ASgJIi0KBlN0YXR1cxIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARILCgdGQUlM",
-            "VVJFEAJiBnByb3RvMw=="));
+            "aVJlc3BvbnNlLlN0YXR1cyJiCgZTdGF0dXMSCQoFVU5TRVQQABILCgdTVUND",
+            "RVNTEAESCwoHRkFJTFVSRRACEhIKDklOVEVSTkFMX0VSUk9SEAMSHwobVE9P",
+            "X01BTllfUkVDRU5UX1NVQk1JU1NJT05TEARiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.SubmitNewPoiResponse), global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Parser, new[]{ "Status", "GeostoreErrorMessage" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Types.Status) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.SubmitNewPoiResponse), global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Parser, new[]{ "Status" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Types.Status) }, null)
           }));
     }
     #endregion
@@ -67,7 +67,6 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SubmitNewPoiResponse(SubmitNewPoiResponse other) : this() {
       status_ = other.status_;
-      geostoreErrorMessage_ = other.geostoreErrorMessage_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -87,17 +86,6 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
-    /// <summary>Field number for the "geostore_error_message" field.</summary>
-    public const int GeostoreErrorMessageFieldNumber = 2;
-    private string geostoreErrorMessage_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string GeostoreErrorMessage {
-      get { return geostoreErrorMessage_; }
-      set {
-        geostoreErrorMessage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SubmitNewPoiResponse);
@@ -112,7 +100,6 @@ namespace POGOProtos.Networking.Responses {
         return true;
       }
       if (Status != other.Status) return false;
-      if (GeostoreErrorMessage != other.GeostoreErrorMessage) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -120,7 +107,6 @@ namespace POGOProtos.Networking.Responses {
     public override int GetHashCode() {
       int hash = 1;
       if (Status != 0) hash ^= Status.GetHashCode();
-      if (GeostoreErrorMessage.Length != 0) hash ^= GeostoreErrorMessage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -138,10 +124,6 @@ namespace POGOProtos.Networking.Responses {
         output.WriteRawTag(8);
         output.WriteEnum((int) Status);
       }
-      if (GeostoreErrorMessage.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(GeostoreErrorMessage);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -152,9 +134,6 @@ namespace POGOProtos.Networking.Responses {
       int size = 0;
       if (Status != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
-      }
-      if (GeostoreErrorMessage.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(GeostoreErrorMessage);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -169,9 +148,6 @@ namespace POGOProtos.Networking.Responses {
       }
       if (other.Status != 0) {
         Status = other.Status;
-      }
-      if (other.GeostoreErrorMessage.Length != 0) {
-        GeostoreErrorMessage = other.GeostoreErrorMessage;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -188,10 +164,6 @@ namespace POGOProtos.Networking.Responses {
             status_ = (global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Types.Status) input.ReadEnum();
             break;
           }
-          case 18: {
-            GeostoreErrorMessage = input.ReadString();
-            break;
-          }
         }
       }
     }
@@ -204,6 +176,8 @@ namespace POGOProtos.Networking.Responses {
         [pbr::OriginalName("UNSET")] Unset = 0,
         [pbr::OriginalName("SUCCESS")] Success = 1,
         [pbr::OriginalName("FAILURE")] Failure = 2,
+        [pbr::OriginalName("INTERNAL_ERROR")] InternalError = 3,
+        [pbr::OriginalName("TOO_MANY_RECENT_SUBMISSIONS")] TooManyRecentSubmissions = 4,
       }
 
     }

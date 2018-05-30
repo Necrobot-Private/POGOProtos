@@ -26,14 +26,15 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "Cj5QT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL1VzZUl0ZW1SYXJl",
             "Q2FuZHlSZXNwb25zZS5wcm90bxIfUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJl",
-            "c3BvbnNlcxogUE9HT1Byb3Rvcy9FbnVtcy9Qb2tlbW9uSWQucHJvdG8iswIK",
+            "c3BvbnNlcxogUE9HT1Byb3Rvcy9FbnVtcy9Qb2tlbW9uSWQucHJvdG8iygIK",
             "GFVzZUl0ZW1SYXJlQ2FuZHlSZXNwb25zZRJQCgZyZXN1bHQYASABKA4yQC5Q",
             "T0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2VzLlVzZUl0ZW1SYXJlQ2Fu",
             "ZHlSZXNwb25zZS5SZXN1bHQSLwoKcG9rZW1vbl9pZBgCIAEoDjIbLlBPR09Q",
             "cm90b3MuRW51bXMuUG9rZW1vbklkEhsKE3VwZGF0ZWRfY2FuZHlfY291bnQY",
-            "AyABKAUidwoGUmVzdWx0EgkKBVVOU0VUEAASCwoHU1VDQ0VTUxABEhYKEklO",
-            "VkFMSURfUE9LRU1PTl9JRBACEg0KCU5PX1BMQVlFUhADEhMKD1dST05HX0lU",
-            "RU1fVFlQRRAEEhkKFUlURU1fTk9UX0lOX0lOVkVOVE9SWRAFYgZwcm90bzM="));
+            "AyABKAUijQEKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARIWChJJ",
+            "TlZBTElEX1BPS0VNT05fSUQQAhINCglOT19QTEFZRVIQAxITCg9XUk9OR19J",
+            "VEVNX1RZUEUQBBIZChVJVEVNX05PVF9JTl9JTlZFTlRPUlkQBRIUChBOT1Rf",
+            "RU5PVUdIX0lURU1TEAZiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -238,6 +239,7 @@ namespace POGOProtos.Networking.Responses {
         [pbr::OriginalName("NO_PLAYER")] NoPlayer = 3,
         [pbr::OriginalName("WRONG_ITEM_TYPE")] WrongItemType = 4,
         [pbr::OriginalName("ITEM_NOT_IN_INVENTORY")] ItemNotInInventory = 5,
+        [pbr::OriginalName("NOT_ENOUGH_ITEMS")] NotEnoughItems = 6,
       }
 
     }

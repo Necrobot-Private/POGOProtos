@@ -104,6 +104,7 @@
     <Compile Include="Data\ClientVersion.g.cs" />
     <Compile Include="Data\DownloadUrlEntry.g.cs" />
     <Compile Include="Data\FoodValue.g.cs" />
+    <Compile Include="Data\Gym\GymBattle.g.cs" />
     <Compile Include="Data\Gym\GymDefender.g.cs" />
     <Compile Include="Data\Gym\GymMembership.g.cs" />
     <Compile Include="Data\Gym\GymState.g.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Data\Player\EquippedBadge.g.cs" />
     <Compile Include="Data\Player\PlayerAvatar.g.cs" />
     <Compile Include="Data\Player\PlayerAvatarType.g.cs" />
+    <Compile Include="Data\Player\PlayerBadge.g.cs" />
     <Compile Include="Data\Player\PlayerCamera.g.cs" />
     <Compile Include="Data\Player\PlayerCurrency.g.cs" />
     <Compile Include="Data\Player\PlayerPublicProfile.g.cs" />
@@ -160,6 +162,7 @@
     <Compile Include="Data\Redeem\RedeemedItem.g.cs" />
     <Compile Include="Enums\ActivityType.g.cs" />
     <Compile Include="Enums\BadgeType.g.cs" />
+    <Compile Include="Enums\BuddySize.g.cs" />
     <Compile Include="Enums\CameraInterpolation.g.cs" />
     <Compile Include="Enums\CameraTarget.g.cs" />
     <Compile Include="Enums\ClientTelemetryIds.g.cs" />
@@ -452,6 +455,7 @@
     <Compile Include="Settings\Master\CameraSettings.g.cs" />
     <Compile Include="Settings\Master\EncounterSettings.g.cs" />
     <Compile Include="Settings\Master\EquippedBadgeSettings.g.cs" />
+    <Compile Include="Settings\Master\EventBadgeSettings.g.cs" />
     <Compile Include="Settings\Master\FormSettings.g.cs" />
     <Compile Include="Settings\Master\GenderSettings.g.cs" />
     <Compile Include="Settings\Master\GymBadgeGmtSettings.g.cs" />
@@ -489,13 +493,13 @@
     <Compile Include="Settings\Master\TypeEffectiveSettings.g.cs" />
     <Compile Include="Settings\Master\WeatherAffinity.g.cs" />
     <Compile Include="Settings\Master\WeatherBonus.g.cs" />
-    <Compile Include="Settings\MetricsGlobalSettings.g.cs" />
     <Compile Include="Settings\NewsGlobalSettings.g.cs" />
     <Compile Include="Settings\NewsSettings.g.cs" />
     <Compile Include="Settings\NotificationSettings.g.cs" />
     <Compile Include="Settings\PasscodeSettings.g.cs" />
     <Compile Include="Settings\QuestGlobalSettings.g.cs" />
     <Compile Include="Settings\SfidaSettings.g.cs" />
+    <Compile Include="Settings\TelemetryGlobalSettings.g.cs" />
     <Compile Include="Settings\TranslationSettings.g.cs" />
   </ItemGroup>
   <ItemGroup>

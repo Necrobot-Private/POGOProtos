@@ -25,7 +25,7 @@ namespace POGOProtos.Networking.Requests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
-            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyr6EgoLUmVx",
+            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyqnFAoLUmVx",
             "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASDgoKR0VUX1BMQVlFUhACEhYK",
             "EkdFVF9IT0xPX0lOVkVOVE9SWRAEEhUKEURPV05MT0FEX1NFVFRJTkdTEAUS",
             "GwoXRE9XTkxPQURfSVRFTV9URU1QTEFURVMQBhIiCh5ET1dOTE9BRF9SRU1P",
@@ -79,7 +79,11 @@ namespace POGOProtos.Networking.Requests {
             "T04QiCcSIQocVU5SRUdJU1RFUl9QVVNIX05PVElGSUNBVElPThCJJxIfChpV",
             "UERBVEVfTk9USUZJQ0FUSU9OX1NUQVRVUxCKJxInCiJPUFRfT1VUX1BVU0hf",
             "Tk9USUZJQ0FUSU9OX0NBVEVHT1JZEIsnEiMKHkRPV05MT0FEX0dBTUVfTUFT",
-            "VEVSX1RFTVBMQVRFUxCMJxISCg1HRVRfSU5WRU5UT1JZEI0nYgZwcm90bzM="));
+            "VEVSX1RFTVBMQVRFUxCMJxISCg1HRVRfSU5WRU5UT1JZEI0nEhQKD1JFREVF",
+            "TV9QQVNTQ09ERRCOJxIJCgRQSU5HEI8nEhUKEEFERF9MT0dJTl9BQ1RJT04Q",
+            "kCcSGAoTUkVNT1ZFX0xPR0lOX0FDVElPThCRJxIWChFMSVNUX0xPR0lOX0FD",
+            "VElPThCSJxIQCgtBRERfTkVXX1BPSRCTJxIYChNQUk9YWV9TT0NJQUxfQUNU",
+            "SU9OEJQnEhUKEENMSUVOVF9URUxFTUVUUlkQlSdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Networking.Requests.RequestType), }, null));
@@ -493,6 +497,14 @@ namespace POGOProtos.Networking.Requests {
     /// UnUsed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_INVENTORY")] GetInventory = 5005,
+    [pbr::OriginalName("REDEEM_PASSCODE")] RedeemPasscode = 5006,
+    [pbr::OriginalName("PING")] Ping = 5007,
+    [pbr::OriginalName("ADD_LOGIN_ACTION")] AddLoginAction = 5008,
+    [pbr::OriginalName("REMOVE_LOGIN_ACTION")] RemoveLoginAction = 5009,
+    [pbr::OriginalName("LIST_LOGIN_ACTION")] ListLoginAction = 5010,
+    [pbr::OriginalName("ADD_NEW_POI")] AddNewPoi = 5011,
+    [pbr::OriginalName("PROXY_SOCIAL_ACTION")] ProxySocialAction = 5012,
+    [pbr::OriginalName("CLIENT_TELEMETRY")] ClientTelemetry = 5013,
   }
 
   #endregion

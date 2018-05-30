@@ -26,17 +26,18 @@ namespace POGOProtos.Settings.Master.Pokemon {
           string.Concat(
             "CjhQT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9Qb2tlbW9uL0V2b2x1dGlv",
             "bkJyYW5jaC5wcm90bxIiUE9HT1Byb3Rvcy5TZXR0aW5ncy5NYXN0ZXIuUG9r",
-            "ZW1vbhogUE9HT1Byb3Rvcy9FbnVtcy9Qb2tlbW9uSWQucHJvdG8aJlBPR09Q",
-            "cm90b3MvSW52ZW50b3J5L0l0ZW0vSXRlbUlkLnByb3RvIsMBCg9Fdm9sdXRp",
-            "b25CcmFuY2gSLgoJZXZvbHV0aW9uGAEgASgOMhsuUE9HT1Byb3Rvcy5FbnVt",
-            "cy5Qb2tlbW9uSWQSRQoaZXZvbHV0aW9uX2l0ZW1fcmVxdWlyZW1lbnQYAiAB",
-            "KA4yIS5QT0dPUHJvdG9zLkludmVudG9yeS5JdGVtLkl0ZW1JZBISCgpjYW5k",
-            "eV9jb3N0GAMgASgFEiUKHWttX2J1ZGR5X2Rpc3RhbmNlX3JlcXVpcmVtZW50",
-            "GAQgASgCYgZwcm90bzM="));
+            "ZW1vbhobUE9HT1Byb3Rvcy9FbnVtcy9Gb3JtLnByb3RvGiBQT0dPUHJvdG9z",
+            "L0VudW1zL1Bva2Vtb25JZC5wcm90bxomUE9HT1Byb3Rvcy9JbnZlbnRvcnkv",
+            "SXRlbS9JdGVtSWQucHJvdG8i6QEKD0V2b2x1dGlvbkJyYW5jaBIuCglldm9s",
+            "dXRpb24YASABKA4yGy5QT0dPUHJvdG9zLkVudW1zLlBva2Vtb25JZBJFChpl",
+            "dm9sdXRpb25faXRlbV9yZXF1aXJlbWVudBgCIAEoDjIhLlBPR09Qcm90b3Mu",
+            "SW52ZW50b3J5Lkl0ZW0uSXRlbUlkEhIKCmNhbmR5X2Nvc3QYAyABKAUSJQod",
+            "a21fYnVkZHlfZGlzdGFuY2VfcmVxdWlyZW1lbnQYBCABKAISJAoEZm9ybRgF",
+            "IAEoDjIWLlBPR09Qcm90b3MuRW51bXMuRm9ybWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.FormReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.Pokemon.EvolutionBranch), global::POGOProtos.Settings.Master.Pokemon.EvolutionBranch.Parser, new[]{ "Evolution", "EvolutionItemRequirement", "CandyCost", "KmBuddyDistanceRequirement" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.Pokemon.EvolutionBranch), global::POGOProtos.Settings.Master.Pokemon.EvolutionBranch.Parser, new[]{ "Evolution", "EvolutionItemRequirement", "CandyCost", "KmBuddyDistanceRequirement", "Form" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +73,7 @@ namespace POGOProtos.Settings.Master.Pokemon {
       evolutionItemRequirement_ = other.evolutionItemRequirement_;
       candyCost_ = other.candyCost_;
       kmBuddyDistanceRequirement_ = other.kmBuddyDistanceRequirement_;
+      form_ = other.form_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -124,6 +126,17 @@ namespace POGOProtos.Settings.Master.Pokemon {
       }
     }
 
+    /// <summary>Field number for the "form" field.</summary>
+    public const int FormFieldNumber = 5;
+    private global::POGOProtos.Enums.Form form_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.Form Form {
+      get { return form_; }
+      set {
+        form_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as EvolutionBranch);
@@ -141,6 +154,7 @@ namespace POGOProtos.Settings.Master.Pokemon {
       if (EvolutionItemRequirement != other.EvolutionItemRequirement) return false;
       if (CandyCost != other.CandyCost) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(KmBuddyDistanceRequirement, other.KmBuddyDistanceRequirement)) return false;
+      if (Form != other.Form) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -151,6 +165,7 @@ namespace POGOProtos.Settings.Master.Pokemon {
       if (EvolutionItemRequirement != 0) hash ^= EvolutionItemRequirement.GetHashCode();
       if (CandyCost != 0) hash ^= CandyCost.GetHashCode();
       if (KmBuddyDistanceRequirement != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(KmBuddyDistanceRequirement);
+      if (Form != 0) hash ^= Form.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -180,6 +195,10 @@ namespace POGOProtos.Settings.Master.Pokemon {
         output.WriteRawTag(37);
         output.WriteFloat(KmBuddyDistanceRequirement);
       }
+      if (Form != 0) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Form);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -199,6 +218,9 @@ namespace POGOProtos.Settings.Master.Pokemon {
       }
       if (KmBuddyDistanceRequirement != 0F) {
         size += 1 + 4;
+      }
+      if (Form != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Form);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -222,6 +244,9 @@ namespace POGOProtos.Settings.Master.Pokemon {
       }
       if (other.KmBuddyDistanceRequirement != 0F) {
         KmBuddyDistanceRequirement = other.KmBuddyDistanceRequirement;
+      }
+      if (other.Form != 0) {
+        Form = other.Form;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -248,6 +273,10 @@ namespace POGOProtos.Settings.Master.Pokemon {
           }
           case 37: {
             KmBuddyDistanceRequirement = input.ReadFloat();
+            break;
+          }
+          case 40: {
+            form_ = (global::POGOProtos.Enums.Form) input.ReadEnum();
             break;
           }
         }
