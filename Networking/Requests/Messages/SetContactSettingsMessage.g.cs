@@ -65,7 +65,7 @@ namespace POGOProtos.Networking.Requests.Messages {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetContactSettingsMessage(SetContactSettingsMessage other) : this() {
-      ContactSettings = other.contactSettings_ != null ? other.ContactSettings.Clone() : null;
+      contactSettings_ = other.contactSettings_ != null ? other.contactSettings_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

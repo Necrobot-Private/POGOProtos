@@ -75,7 +75,7 @@ namespace POGOProtos.Inventory {
       pokemonCandy_ = other.pokemonCandy_;
       count_ = other.count_;
       experience_ = other.experience_;
-      PokemonEgg = other.pokemonEgg_ != null ? other.PokemonEgg.Clone() : null;
+      pokemonEgg_ = other.pokemonEgg_ != null ? other.pokemonEgg_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

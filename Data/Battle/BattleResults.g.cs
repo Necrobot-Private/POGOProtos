@@ -81,12 +81,12 @@ namespace POGOProtos.Data.Battle {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BattleResults(BattleResults other) : this() {
-      GymState = other.gymState_ != null ? other.GymState.Clone() : null;
+      gymState_ = other.gymState_ != null ? other.gymState_.Clone() : null;
       attackers_ = other.attackers_.Clone();
       playerXpAwarded_ = other.playerXpAwarded_.Clone();
       nextDefenderPokemonId_ = other.nextDefenderPokemonId_;
       gymPointsDelta_ = other.gymPointsDelta_;
-      GymStatus = other.gymStatus_ != null ? other.GymStatus.Clone() : null;
+      gymStatus_ = other.gymStatus_ != null ? other.gymStatus_.Clone() : null;
       participation_ = other.participation_.Clone();
       raidItemRewards_ = other.raidItemRewards_.Clone();
       postRaidEncounter_ = other.postRaidEncounter_.Clone();

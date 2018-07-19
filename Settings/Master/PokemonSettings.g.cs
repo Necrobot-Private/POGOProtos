@@ -108,9 +108,9 @@ namespace POGOProtos.Settings.Master {
       modelScale_ = other.modelScale_;
       type_ = other.type_;
       type2_ = other.type2_;
-      Camera = other.camera_ != null ? other.Camera.Clone() : null;
-      Encounter = other.encounter_ != null ? other.Encounter.Clone() : null;
-      Stats = other.stats_ != null ? other.Stats.Clone() : null;
+      camera_ = other.camera_ != null ? other.camera_.Clone() : null;
+      encounter_ = other.encounter_ != null ? other.encounter_.Clone() : null;
+      stats_ = other.stats_ != null ? other.stats_.Clone() : null;
       quickMoves_ = other.quickMoves_.Clone();
       cinematicMoves_ = other.cinematicMoves_.Clone();
       animationTime_ = other.animationTime_.Clone();

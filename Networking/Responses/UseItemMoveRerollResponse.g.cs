@@ -71,7 +71,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UseItemMoveRerollResponse(UseItemMoveRerollResponse other) : this() {
       result_ = other.result_;
-      UpgradedPokemon = other.upgradedPokemon_ != null ? other.UpgradedPokemon.Clone() : null;
+      upgradedPokemon_ = other.upgradedPokemon_ != null ? other.upgradedPokemon_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

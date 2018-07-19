@@ -70,10 +70,10 @@ namespace POGOProtos.Data.Raid {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RaidEncounter(RaidEncounter other) : this() {
-      Pokemon = other.pokemon_ != null ? other.Pokemon.Clone() : null;
+      pokemon_ = other.pokemon_ != null ? other.pokemon_.Clone() : null;
       encounterId_ = other.encounterId_;
       spawnpointId_ = other.spawnpointId_;
-      CaptureProbabilities = other.captureProbabilities_ != null ? other.CaptureProbabilities.Clone() : null;
+      captureProbabilities_ = other.captureProbabilities_ != null ? other.captureProbabilities_.Clone() : null;
       throwsRemaining_ = other.throwsRemaining_;
       raidLevel_ = other.raidLevel_;
       fortId_ = other.fortId_;

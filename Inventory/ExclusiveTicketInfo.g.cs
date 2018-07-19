@@ -78,7 +78,7 @@ namespace POGOProtos.Inventory {
       gymName_ = other.gymName_;
       spawnTimeMs_ = other.spawnTimeMs_;
       isCancelled_ = other.isCancelled_;
-      RaidPokemon = other.raidPokemon_ != null ? other.RaidPokemon.Clone() : null;
+      raidPokemon_ = other.raidPokemon_ != null ? other.raidPokemon_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

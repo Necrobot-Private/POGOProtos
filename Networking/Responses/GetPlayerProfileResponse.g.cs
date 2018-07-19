@@ -75,7 +75,7 @@ namespace POGOProtos.Networking.Responses {
       result_ = other.result_;
       startTime_ = other.startTime_;
       badges_ = other.badges_.Clone();
-      GymBadges = other.gymBadges_ != null ? other.GymBadges.Clone() : null;
+      gymBadges_ = other.gymBadges_ != null ? other.gymBadges_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

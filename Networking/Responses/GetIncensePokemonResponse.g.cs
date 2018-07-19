@@ -80,7 +80,7 @@ namespace POGOProtos.Networking.Responses {
       encounterLocation_ = other.encounterLocation_;
       encounterId_ = other.encounterId_;
       disappearTimestampMs_ = other.disappearTimestampMs_;
-      PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
+      pokemonDisplay_ = other.pokemonDisplay_ != null ? other.pokemonDisplay_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

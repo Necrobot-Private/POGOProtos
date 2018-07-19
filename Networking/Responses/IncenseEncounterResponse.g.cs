@@ -76,8 +76,8 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public IncenseEncounterResponse(IncenseEncounterResponse other) : this() {
       result_ = other.result_;
-      PokemonData = other.pokemonData_ != null ? other.PokemonData.Clone() : null;
-      CaptureProbability = other.captureProbability_ != null ? other.CaptureProbability.Clone() : null;
+      pokemonData_ = other.pokemonData_ != null ? other.pokemonData_.Clone() : null;
+      captureProbability_ = other.captureProbability_ != null ? other.captureProbability_.Clone() : null;
       activeItem_ = other.activeItem_;
       arplusAttemptsUntilFlee_ = other.arplusAttemptsUntilFlee_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);

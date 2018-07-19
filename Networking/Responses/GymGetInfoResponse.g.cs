@@ -78,16 +78,16 @@ namespace POGOProtos.Networking.Responses {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GymGetInfoResponse(GymGetInfoResponse other) : this() {
-      GymStatusAndDefenders = other.gymStatusAndDefenders_ != null ? other.GymStatusAndDefenders.Clone() : null;
+      gymStatusAndDefenders_ = other.gymStatusAndDefenders_ != null ? other.gymStatusAndDefenders_.Clone() : null;
       name_ = other.name_;
       url_ = other.url_;
       result_ = other.result_;
       description_ = other.description_;
       secondaryUrl_ = other.secondaryUrl_;
-      AwardedGymBadge = other.awardedGymBadge_ != null ? other.AwardedGymBadge.Clone() : null;
+      awardedGymBadge_ = other.awardedGymBadge_ != null ? other.awardedGymBadge_.Clone() : null;
       checkinImageUrl_ = other.checkinImageUrl_;
-      EventInfo = other.eventInfo_ != null ? other.EventInfo.Clone() : null;
-      DisplayWeather = other.displayWeather_ != null ? other.DisplayWeather.Clone() : null;
+      eventInfo_ = other.eventInfo_ != null ? other.eventInfo_.Clone() : null;
+      displayWeather_ = other.displayWeather_ != null ? other.displayWeather_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

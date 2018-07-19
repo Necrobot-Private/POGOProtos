@@ -30,29 +30,31 @@ namespace POGOProtos.Networking.Responses {
             "dG9zL0RhdGEvUXVlc3RzL0NsaWVudFF1ZXN0LnByb3RvGilQT0dPUHJvdG9z",
             "L0ludmVudG9yeS9JdGVtL0l0ZW1Bd2FyZC5wcm90bxofUE9HT1Byb3Rvcy9J",
             "bnZlbnRvcnkvTG9vdC5wcm90bxorUE9HT1Byb3Rvcy9EYXRhL0JhZGdlL0F3",
-            "YXJkZWRHeW1CYWRnZS5wcm90byKjBgoSRm9ydFNlYXJjaFJlc3BvbnNlEkoK",
-            "BnJlc3VsdBgBIAEoDjI6LlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXNwb25z",
-            "ZXMuRm9ydFNlYXJjaFJlc3BvbnNlLlJlc3VsdBI7Cg1pdGVtc19hd2FyZGVk",
-            "GAIgAygLMiQuUE9HT1Byb3Rvcy5JbnZlbnRvcnkuSXRlbS5JdGVtQXdhcmQS",
-            "FAoMZ2Vtc19hd2FyZGVkGAMgASgFEjYKEHBva2Vtb25fZGF0YV9lZ2cYBCAB",
-            "KAsyHC5QT0dPUHJvdG9zLkRhdGEuUG9rZW1vbkRhdGESGgoSZXhwZXJpZW5j",
-            "ZV9hd2FyZGVkGAUgASgFEiYKHmNvb2xkb3duX2NvbXBsZXRlX3RpbWVzdGFt",
-            "cF9tcxgGIAEoAxIiChpjaGFpbl9oYWNrX3NlcXVlbmNlX251bWJlchgHIAEo",
-            "BRJBChFhd2FyZGVkX2d5bV9iYWRnZRgIIAEoCzImLlBPR09Qcm90b3MuRGF0",
-            "YS5CYWRnZS5Bd2FyZGVkR3ltQmFkZ2USKAoEbG9vdBgJIAEoCzIaLlBPR09Q",
-            "cm90b3MuSW52ZW50b3J5Lkxvb3QSLgoKYm9udXNfbG9vdBgKIAEoCzIaLlBP",
-            "R09Qcm90b3MuSW52ZW50b3J5Lkxvb3QSFAoMcmFpZF90aWNrZXRzGAsgASgF",
-            "EjMKD3RlYW1fYm9udXNfbG9vdBgMIAEoCzIaLlBPR09Qcm90b3MuSW52ZW50",
-            "b3J5Lkxvb3QSDwoHZm9ydF9pZBgNIAEoCRI8Cg9jaGFsbGVuZ2VfcXVlc3QY",
-            "DiABKAsyIy5QT0dPUHJvdG9zLkRhdGEuUXVlc3RzLkNsaWVudFF1ZXN0IpYB",
-            "CgZSZXN1bHQSEQoNTk9fUkVTVUxUX1NFVBAAEgsKB1NVQ0NFU1MQARIQCgxP",
-            "VVRfT0ZfUkFOR0UQAhIWChJJTl9DT09MRE9XTl9QRVJJT0QQAxISCg5JTlZF",
-            "TlRPUllfRlVMTBAEEhgKFEVYQ0VFREVEX0RBSUxZX0xJTUlUEAUSFAoQUE9J",
-            "X0lOQUNDRVNTSUJMRRAGYgZwcm90bzM="));
+            "YXJkZWRHeW1CYWRnZS5wcm90bxoiUE9HT1Byb3Rvcy9EYXRhL0dpZnQvR2lm",
+            "dEJveC5wcm90byLUBgoSRm9ydFNlYXJjaFJlc3BvbnNlEkoKBnJlc3VsdBgB",
+            "IAEoDjI6LlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXNwb25zZXMuRm9ydFNl",
+            "YXJjaFJlc3BvbnNlLlJlc3VsdBI7Cg1pdGVtc19hd2FyZGVkGAIgAygLMiQu",
+            "UE9HT1Byb3Rvcy5JbnZlbnRvcnkuSXRlbS5JdGVtQXdhcmQSFAoMZ2Vtc19h",
+            "d2FyZGVkGAMgASgFEjYKEHBva2Vtb25fZGF0YV9lZ2cYBCABKAsyHC5QT0dP",
+            "UHJvdG9zLkRhdGEuUG9rZW1vbkRhdGESGgoSZXhwZXJpZW5jZV9hd2FyZGVk",
+            "GAUgASgFEiYKHmNvb2xkb3duX2NvbXBsZXRlX3RpbWVzdGFtcF9tcxgGIAEo",
+            "AxIiChpjaGFpbl9oYWNrX3NlcXVlbmNlX251bWJlchgHIAEoBRJBChFhd2Fy",
+            "ZGVkX2d5bV9iYWRnZRgIIAEoCzImLlBPR09Qcm90b3MuRGF0YS5CYWRnZS5B",
+            "d2FyZGVkR3ltQmFkZ2USKAoEbG9vdBgJIAEoCzIaLlBPR09Qcm90b3MuSW52",
+            "ZW50b3J5Lkxvb3QSLgoKYm9udXNfbG9vdBgKIAEoCzIaLlBPR09Qcm90b3Mu",
+            "SW52ZW50b3J5Lkxvb3QSFAoMcmFpZF90aWNrZXRzGAsgASgFEjMKD3RlYW1f",
+            "Ym9udXNfbG9vdBgMIAEoCzIaLlBPR09Qcm90b3MuSW52ZW50b3J5Lkxvb3QS",
+            "DwoHZm9ydF9pZBgNIAEoCRI8Cg9jaGFsbGVuZ2VfcXVlc3QYDiABKAsyIy5Q",
+            "T0dPUHJvdG9zLkRhdGEuUXVlc3RzLkNsaWVudFF1ZXN0Ei8KCGdpZnRfYm94",
+            "GA8gASgLMh0uUE9HT1Byb3Rvcy5EYXRhLkdpZnQuR2lmdEJveCKWAQoGUmVz",
+            "dWx0EhEKDU5PX1JFU1VMVF9TRVQQABILCgdTVUNDRVNTEAESEAoMT1VUX09G",
+            "X1JBTkdFEAISFgoSSU5fQ09PTERPV05fUEVSSU9EEAMSEgoOSU5WRU5UT1JZ",
+            "X0ZVTEwQBBIYChRFWENFRURFRF9EQUlMWV9MSU1JVBAFEhQKEFBPSV9JTkFD",
+            "Q0VTU0lCTEUQBmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.PokemonDataReflection.Descriptor, global::POGOProtos.Data.Quests.ClientQuestReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemAwardReflection.Descriptor, global::POGOProtos.Inventory.LootReflection.Descriptor, global::POGOProtos.Data.Badge.AwardedGymBadgeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.PokemonDataReflection.Descriptor, global::POGOProtos.Data.Quests.ClientQuestReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemAwardReflection.Descriptor, global::POGOProtos.Inventory.LootReflection.Descriptor, global::POGOProtos.Data.Badge.AwardedGymBadgeReflection.Descriptor, global::POGOProtos.Data.Gift.GiftBoxReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.FortSearchResponse), global::POGOProtos.Networking.Responses.FortSearchResponse.Parser, new[]{ "Result", "ItemsAwarded", "GemsAwarded", "PokemonDataEgg", "ExperienceAwarded", "CooldownCompleteTimestampMs", "ChainHackSequenceNumber", "AwardedGymBadge", "Loot", "BonusLoot", "RaidTickets", "TeamBonusLoot", "FortId", "ChallengeQuest" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.FortSearchResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.FortSearchResponse), global::POGOProtos.Networking.Responses.FortSearchResponse.Parser, new[]{ "Result", "ItemsAwarded", "GemsAwarded", "PokemonDataEgg", "ExperienceAwarded", "CooldownCompleteTimestampMs", "ChainHackSequenceNumber", "AwardedGymBadge", "Loot", "BonusLoot", "RaidTickets", "TeamBonusLoot", "FortId", "ChallengeQuest", "GiftBox" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.FortSearchResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -87,17 +89,18 @@ namespace POGOProtos.Networking.Responses {
       result_ = other.result_;
       itemsAwarded_ = other.itemsAwarded_.Clone();
       gemsAwarded_ = other.gemsAwarded_;
-      PokemonDataEgg = other.pokemonDataEgg_ != null ? other.PokemonDataEgg.Clone() : null;
+      pokemonDataEgg_ = other.pokemonDataEgg_ != null ? other.pokemonDataEgg_.Clone() : null;
       experienceAwarded_ = other.experienceAwarded_;
       cooldownCompleteTimestampMs_ = other.cooldownCompleteTimestampMs_;
       chainHackSequenceNumber_ = other.chainHackSequenceNumber_;
-      AwardedGymBadge = other.awardedGymBadge_ != null ? other.AwardedGymBadge.Clone() : null;
-      Loot = other.loot_ != null ? other.Loot.Clone() : null;
-      BonusLoot = other.bonusLoot_ != null ? other.BonusLoot.Clone() : null;
+      awardedGymBadge_ = other.awardedGymBadge_ != null ? other.awardedGymBadge_.Clone() : null;
+      loot_ = other.loot_ != null ? other.loot_.Clone() : null;
+      bonusLoot_ = other.bonusLoot_ != null ? other.bonusLoot_.Clone() : null;
       raidTickets_ = other.raidTickets_;
-      TeamBonusLoot = other.teamBonusLoot_ != null ? other.TeamBonusLoot.Clone() : null;
+      teamBonusLoot_ = other.teamBonusLoot_ != null ? other.teamBonusLoot_.Clone() : null;
       fortId_ = other.fortId_;
-      ChallengeQuest = other.challengeQuest_ != null ? other.ChallengeQuest.Clone() : null;
+      challengeQuest_ = other.challengeQuest_ != null ? other.challengeQuest_.Clone() : null;
+      giftBox_ = other.giftBox_ != null ? other.giftBox_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -259,6 +262,17 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
+    /// <summary>Field number for the "gift_box" field.</summary>
+    public const int GiftBoxFieldNumber = 15;
+    private global::POGOProtos.Data.Gift.GiftBox giftBox_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Gift.GiftBox GiftBox {
+      get { return giftBox_; }
+      set {
+        giftBox_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FortSearchResponse);
@@ -286,6 +300,7 @@ namespace POGOProtos.Networking.Responses {
       if (!object.Equals(TeamBonusLoot, other.TeamBonusLoot)) return false;
       if (FortId != other.FortId) return false;
       if (!object.Equals(ChallengeQuest, other.ChallengeQuest)) return false;
+      if (!object.Equals(GiftBox, other.GiftBox)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -306,6 +321,7 @@ namespace POGOProtos.Networking.Responses {
       if (teamBonusLoot_ != null) hash ^= TeamBonusLoot.GetHashCode();
       if (FortId.Length != 0) hash ^= FortId.GetHashCode();
       if (challengeQuest_ != null) hash ^= ChallengeQuest.GetHashCode();
+      if (giftBox_ != null) hash ^= GiftBox.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -372,6 +388,10 @@ namespace POGOProtos.Networking.Responses {
         output.WriteRawTag(114);
         output.WriteMessage(ChallengeQuest);
       }
+      if (giftBox_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(GiftBox);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -419,6 +439,9 @@ namespace POGOProtos.Networking.Responses {
       }
       if (challengeQuest_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChallengeQuest);
+      }
+      if (giftBox_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GiftBox);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -488,6 +511,12 @@ namespace POGOProtos.Networking.Responses {
           challengeQuest_ = new global::POGOProtos.Data.Quests.ClientQuest();
         }
         ChallengeQuest.MergeFrom(other.ChallengeQuest);
+      }
+      if (other.giftBox_ != null) {
+        if (giftBox_ == null) {
+          giftBox_ = new global::POGOProtos.Data.Gift.GiftBox();
+        }
+        GiftBox.MergeFrom(other.GiftBox);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -572,6 +601,13 @@ namespace POGOProtos.Networking.Responses {
               challengeQuest_ = new global::POGOProtos.Data.Quests.ClientQuest();
             }
             input.ReadMessage(challengeQuest_);
+            break;
+          }
+          case 122: {
+            if (giftBox_ == null) {
+              giftBox_ = new global::POGOProtos.Data.Gift.GiftBox();
+            }
+            input.ReadMessage(giftBox_);
             break;
           }
         }

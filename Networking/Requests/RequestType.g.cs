@@ -25,7 +25,7 @@ namespace POGOProtos.Networking.Requests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
-            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyqnFAoLUmVx",
+            "cHJvdG8SHlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cyqBGgoLUmVx",
             "dWVzdFR5cGUSEAoMTUVUSE9EX1VOU0VUEAASDgoKR0VUX1BMQVlFUhACEhYK",
             "EkdFVF9IT0xPX0lOVkVOVE9SWRAEEhUKEURPV05MT0FEX1NFVFRJTkdTEAUS",
             "GwoXRE9XTkxPQURfSVRFTV9URU1QTEFURVMQBhIiCh5ET1dOTE9BRF9SRU1P",
@@ -75,15 +75,32 @@ namespace POGOProtos.Networking.Requests {
             "U1BMQVlfSU5GTxCyBhITCg5HRVRfTkVXX1FVRVNUUxCEBxIWChFHRVRfUVVF",
             "U1RfREVUQUlMUxCFBxITCg5DT01QTEVURV9RVUVTVBCGBxIRCgxSRU1PVkVf",
             "UVVFU1QQhwcSFAoPUVVFU1RfRU5DT1VOVEVSEIgHEh4KGUNPTVBMRVRFX1FV",
-            "RVNUX1NUQU1QX0NBUkQQiQcSHwoaUkVHSVNURVJfUFVTSF9OT1RJRklDQVRJ",
-            "T04QiCcSIQocVU5SRUdJU1RFUl9QVVNIX05PVElGSUNBVElPThCJJxIfChpV",
-            "UERBVEVfTk9USUZJQ0FUSU9OX1NUQVRVUxCKJxInCiJPUFRfT1VUX1BVU0hf",
-            "Tk9USUZJQ0FUSU9OX0NBVEVHT1JZEIsnEiMKHkRPV05MT0FEX0dBTUVfTUFT",
-            "VEVSX1RFTVBMQVRFUxCMJxISCg1HRVRfSU5WRU5UT1JZEI0nEhQKD1JFREVF",
-            "TV9QQVNTQ09ERRCOJxIJCgRQSU5HEI8nEhUKEEFERF9MT0dJTl9BQ1RJT04Q",
-            "kCcSGAoTUkVNT1ZFX0xPR0lOX0FDVElPThCRJxIWChFMSVNUX0xPR0lOX0FD",
-            "VElPThCSJxIQCgtBRERfTkVXX1BPSRCTJxIYChNQUk9YWV9TT0NJQUxfQUNU",
-            "SU9OEJQnEhUKEENMSUVOVF9URUxFTUVUUlkQlSdiBnByb3RvMw=="));
+            "RVNUX1NUQU1QX0NBUkQQiQcSDgoJU0VORF9HSUZUELYHEg4KCU9QRU5fR0lG",
+            "VBC3BxIRCgxHSUZUX0RFVEFJTFMQuAcSEAoLREVMRVRFX0dJRlQQuQcSGQoU",
+            "U0FWRV9QTEFZRVJfU05BUFNIT1QQugcSJQogR0VUX0ZSSUVORFNISVBfTUlM",
+            "RVNUT05FX1JFV0FSRFMQuwcSFAoPQ0hFQ0tfU0VORF9HSUZUELwHEhEKDE9Q",
+            "RU5fVFJBRElORxDKBxITCg5VUERBVEVfVFJBRElORxDLBxIUCg9DT05GSVJN",
+            "X1RSQURJTkcQzAcSEwoOQ0FOQ0VMX1RSQURJTkcQzQcSEAoLR0VUX1RSQURJ",
+            "TkcQzgcSGQoUQUNDRVBUX0ZSSUVORF9JTlZJVEUQzwcSGQoUQ0FOQ0VMX0ZS",
+            "SUVORF9JTlZJVEUQ0AcSGgoVREVDTElORV9GUklFTkRfSU5WSVRFENEHEhQK",
+            "D0dFVF9GUklFTkRfQ09ERRDSBxIXChJHRVRfRlJJRU5EX0RFVEFJTFMQ0wcS",
+            "FAoPR0VUX0ZSSUVORF9MSVNUENQHEiAKG0dFVF9JTkNPTUlOR19GUklFTkRf",
+            "SU5WSVRFUxDVBxIgChtHRVRfT1VUR09JTkdfRlJJRU5EX0lOVklURVMQ1gcS",
+            "EwoOR0VUX1VQTE9BRF9VUkwQ1wcSGwoWSU5WSVRFX0ZBQ0VCT09LX0ZSSUVO",
+            "RBDYBxIRCgxJU19NWV9GUklFTkQQ2QcSEgoNUkVNT1ZFX0ZSSUVORBDaBxIS",
+            "Cg1TRUFSQ0hfUExBWUVSENsHEhcKElNFTkRfRlJJRU5EX0lOVklURRDcBxIb",
+            "ChZHRVRfRlJJRU5EU0hJUF9SRVdBUkRTEN0HEhcKEkdFVF9HSVRCT1hfREVU",
+            "QUlMUxDeBxIfChpSRUdJU1RFUl9QVVNIX05PVElGSUNBVElPThCIJxIhChxV",
+            "TlJFR0lTVEVSX1BVU0hfTk9USUZJQ0FUSU9OEIknEh8KGlVQREFURV9OT1RJ",
+            "RklDQVRJT05fU1RBVFVTEIonEicKIk9QVF9PVVRfUFVTSF9OT1RJRklDQVRJ",
+            "T05fQ0FURUdPUlkQiycSIwoeRE9XTkxPQURfR0FNRV9NQVNURVJfVEVNUExB",
+            "VEVTEIwnEhIKDUdFVF9JTlZFTlRPUlkQjScSFAoPUkVERUVNX1BBU1NDT0RF",
+            "EI4nEgkKBFBJTkcQjycSFQoQQUREX0xPR0lOX0FDVElPThCQJxIYChNSRU1P",
+            "VkVfTE9HSU5fQUNUSU9OEJEnEhYKEUxJU1RfTE9HSU5fQUNUSU9OEJInEhMK",
+            "DlNVQk1JVF9ORVdfUE9JEJMnEhgKE1BST1hZX1NPQ0lBTF9BQ1RJT04QlCcS",
+            "FQoQQ0xJRU5UX1RFTEVNRVRSWRCVJxIeChlHRVRfQVZBSUxBQkxFX1NVQk1J",
+            "U1NJT05TEJYnEhwKF1VQTE9BRF9QT0lfUEhPVE9fQllfVVJMEJcnYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Networking.Requests.RequestType), }, null));
@@ -330,7 +347,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("ATTACK_RAID")] AttackRaid = 166,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("AWARD_POKECOIN")] AwardPokecoin = 167,
     /// <summary>
@@ -362,7 +379,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("MARK_TUTORIAL_COMPLETE")] MarkTutorialComplete = 406,
     /// <summary>
-    /// Not yet released.
+    /// Can't find this one
     /// </summary>
     [pbr::OriginalName("UPDATE_PERFORMANCE_METRICS")] UpdatePerformanceMetrics = 407,
     /// <summary>
@@ -386,23 +403,23 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("SFIDA_ACTION_LOG")] SfidaActionLog = 801,
     /// <summary>
-    /// Not yet released.
+    /// Can't find this one
     /// </summary>
     [pbr::OriginalName("SFIDA_CERTIFICATION")] SfidaCertification = 802,
     /// <summary>
-    /// Not yet released.
+    /// Can't find this one
     /// </summary>
     [pbr::OriginalName("SFIDA_UPDATE")] SfidaUpdate = 803,
     /// <summary>
-    /// Not yet released.
+    /// Can't find this one
     /// </summary>
     [pbr::OriginalName("SFIDA_ACTION")] SfidaAction = 804,
     /// <summary>
-    /// Not yet released.
+    /// Can't find this one
     /// </summary>
     [pbr::OriginalName("SFIDA_DOWSER")] SfidaDowser = 805,
     /// <summary>
-    /// Not yet released.
+    /// Can't find this one
     /// </summary>
     [pbr::OriginalName("SFIDA_CAPTURE")] SfidaCapture = 806,
     /// <summary>
@@ -446,7 +463,7 @@ namespace POGOProtos.Networking.Requests {
     /// </summary>
     [pbr::OriginalName("MARK_READ_NEWS_ARTICLE")] MarkReadNewsArticle = 817,
     /// <summary>
-    /// Not yet released.
+    /// Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_PLAYER_DISPLAY_INFO")] GetPlayerDisplayInfo = 818,
     /// <summary>
@@ -476,9 +493,121 @@ namespace POGOProtos.Networking.Requests {
     /// <summary>
     /// Implemented [R &amp; M]
     /// </summary>
+    [pbr::OriginalName("SEND_GIFT")] SendGift = 950,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("OPEN_GIFT")] OpenGift = 951,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GIFT_DETAILS")] GiftDetails = 952,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("DELETE_GIFT")] DeleteGift = 953,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("SAVE_PLAYER_SNAPSHOT")] SavePlayerSnapshot = 954,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_FRIENDSHIP_MILESTONE_REWARDS")] GetFriendshipMilestoneRewards = 955,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("CHECK_SEND_GIFT")] CheckSendGift = 956,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("OPEN_TRADING")] OpenTrading = 970,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("UPDATE_TRADING")] UpdateTrading = 971,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("CONFIRM_TRADING")] ConfirmTrading = 972,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("CANCEL_TRADING")] CancelTrading = 973,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_TRADING")] GetTrading = 974,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("ACCEPT_FRIEND_INVITE")] AcceptFriendInvite = 975,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("CANCEL_FRIEND_INVITE")] CancelFriendInvite = 976,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("DECLINE_FRIEND_INVITE")] DeclineFriendInvite = 977,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_FRIEND_CODE")] GetFriendCode = 978,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_FRIEND_DETAILS")] GetFriendDetails = 979,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_FRIEND_LIST")] GetFriendList = 980,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_INCOMING_FRIEND_INVITES")] GetIncomingFriendInvites = 981,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_OUTGOING_FRIEND_INVITES")] GetOutgoingFriendInvites = 982,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_UPLOAD_URL")] GetUploadUrl = 983,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("INVITE_FACEBOOK_FRIEND")] InviteFacebookFriend = 984,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("IS_MY_FRIEND")] IsMyFriend = 985,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("REMOVE_FRIEND")] RemoveFriend = 986,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("SEARCH_PLAYER")] SearchPlayer = 987,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("SEND_FRIEND_INVITE")] SendFriendInvite = 988,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_FRIENDSHIP_REWARDS")] GetFriendshipRewards = 989,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_GITBOX_DETAILS")] GetGitboxDetails = 990,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("REGISTER_PUSH_NOTIFICATION")] RegisterPushNotification = 5000,
     /// <summary>
-    /// Not yet released.
+    /// Can't find this one
     /// </summary>
     [pbr::OriginalName("UNREGISTER_PUSH_NOTIFICATION")] UnregisterPushNotification = 5001,
     /// <summary>
@@ -497,14 +626,46 @@ namespace POGOProtos.Networking.Requests {
     /// UnUsed - Implemented [R &amp; M]
     /// </summary>
     [pbr::OriginalName("GET_INVENTORY")] GetInventory = 5005,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("REDEEM_PASSCODE")] RedeemPasscode = 5006,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("PING")] Ping = 5007,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("ADD_LOGIN_ACTION")] AddLoginAction = 5008,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("REMOVE_LOGIN_ACTION")] RemoveLoginAction = 5009,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("LIST_LOGIN_ACTION")] ListLoginAction = 5010,
-    [pbr::OriginalName("ADD_NEW_POI")] AddNewPoi = 5011,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("SUBMIT_NEW_POI")] SubmitNewPoi = 5011,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("PROXY_SOCIAL_ACTION")] ProxySocialAction = 5012,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
     [pbr::OriginalName("CLIENT_TELEMETRY")] ClientTelemetry = 5013,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("GET_AVAILABLE_SUBMISSIONS")] GetAvailableSubmissions = 5014,
+    /// <summary>
+    /// Implemented [R &amp; M]
+    /// </summary>
+    [pbr::OriginalName("UPLOAD_POI_PHOTO_BY_URL")] UploadPoiPhotoByUrl = 5015,
   }
 
   #endregion

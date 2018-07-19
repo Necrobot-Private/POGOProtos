@@ -73,7 +73,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public EvolvePokemonResponse(EvolvePokemonResponse other) : this() {
       result_ = other.result_;
-      EvolvedPokemonData = other.evolvedPokemonData_ != null ? other.EvolvedPokemonData.Clone() : null;
+      evolvedPokemonData_ = other.evolvedPokemonData_ != null ? other.evolvedPokemonData_.Clone() : null;
       experienceAwarded_ = other.experienceAwarded_;
       candyAwarded_ = other.candyAwarded_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);

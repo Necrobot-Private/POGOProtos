@@ -34,27 +34,33 @@ namespace POGOProtos.Data.Logs {
             "T1Byb3Rvcy9EYXRhL0xvZ3MvQ29tcGxldGVRdWVzdExvZ0VudHJ5LnByb3Rv",
             "GjlQT0dPUHJvdG9zL0RhdGEvTG9ncy9Db21wbGV0ZVF1ZXN0U3RhbXBDYXJk",
             "TG9nRW50cnkucHJvdG8aQFBPR09Qcm90b3MvRGF0YS9Mb2dzL0NvbXBsZXRl",
-            "UXVlc3RQb2tlbW9uRW5jb3VudGVyTG9nRW50cnkucHJvdG8iowUKDkFjdGlv",
-            "bkxvZ0VudHJ5EhQKDHRpbWVzdGFtcF9tcxgBIAEoAxINCgVzZmlkYRgCIAEo",
-            "CBJDCg1jYXRjaF9wb2tlbW9uGAMgASgLMiouUE9HT1Byb3Rvcy5EYXRhLkxv",
-            "Z3MuQ2F0Y2hQb2tlbW9uTG9nRW50cnlIABI/Cgtmb3J0X3NlYXJjaBgEIAEo",
-            "CzIoLlBPR09Qcm90b3MuRGF0YS5Mb2dzLkZvcnRTZWFyY2hMb2dFbnRyeUgA",
-            "EkMKDWJ1ZGR5X3Bva2Vtb24YBSABKAsyKi5QT0dPUHJvdG9zLkRhdGEuTG9n",
-            "cy5CdWRkeVBva2Vtb25Mb2dFbnRyeUgAEkEKDHJhaWRfcmV3YXJkcxgGIAEo",
-            "CzIpLlBPR09Qcm90b3MuRGF0YS5Mb2dzLlJhaWRSZXdhcmRzTG9nRW50cnlI",
-            "ABJJChBwYXNzY29kZV9yZXdhcmRzGAcgASgLMi0uUE9HT1Byb3Rvcy5EYXRh",
-            "LkxvZ3MuUGFzc2NvZGVSZXdhcmRzTG9nRW50cnlIABJFCg5jb21wbGV0ZV9x",
-            "dWVzdBgIIAEoCzIrLlBPR09Qcm90b3MuRGF0YS5Mb2dzLkNvbXBsZXRlUXVl",
-            "c3RMb2dFbnRyeUgAElkKGWNvbXBsZXRlX3F1ZXN0X3N0YW1wX2NhcmQYCSAB",
-            "KAsyNC5QT0dPUHJvdG9zLkRhdGEuTG9ncy5Db21wbGV0ZVF1ZXN0U3RhbXBD",
-            "YXJkTG9nRW50cnlIABJnCiBjb21wbGV0ZV9xdWVzdF9wb2tlbW9uX2VuY291",
-            "bnRlchgKIAEoCzI7LlBPR09Qcm90b3MuRGF0YS5Mb2dzLkNvbXBsZXRlUXVl",
-            "c3RQb2tlbW9uRW5jb3VudGVyTG9nRW50cnlIAEIICgZBY3Rpb25iBnByb3Rv",
-            "Mw=="));
+            "UXVlc3RQb2tlbW9uRW5jb3VudGVyTG9nRW50cnkucHJvdG8aK1BPR09Qcm90",
+            "b3MvRGF0YS9Mb2dzL09wZW5HaWZ0TG9nRW50cnkucHJvdG8aK1BPR09Qcm90",
+            "b3MvRGF0YS9Mb2dzL1NlbmRHaWZ0TG9nRW50cnkucHJvdG8aKlBPR09Qcm90",
+            "b3MvRGF0YS9Mb2dzL1RyYWRpbmdMb2dFbnRyeS5wcm90byLXBgoOQWN0aW9u",
+            "TG9nRW50cnkSFAoMdGltZXN0YW1wX21zGAEgASgDEg0KBXNmaWRhGAIgASgI",
+            "EkMKDWNhdGNoX3Bva2Vtb24YAyABKAsyKi5QT0dPUHJvdG9zLkRhdGEuTG9n",
+            "cy5DYXRjaFBva2Vtb25Mb2dFbnRyeUgAEj8KC2ZvcnRfc2VhcmNoGAQgASgL",
+            "MiguUE9HT1Byb3Rvcy5EYXRhLkxvZ3MuRm9ydFNlYXJjaExvZ0VudHJ5SAAS",
+            "QwoNYnVkZHlfcG9rZW1vbhgFIAEoCzIqLlBPR09Qcm90b3MuRGF0YS5Mb2dz",
+            "LkJ1ZGR5UG9rZW1vbkxvZ0VudHJ5SAASQQoMcmFpZF9yZXdhcmRzGAYgASgL",
+            "MikuUE9HT1Byb3Rvcy5EYXRhLkxvZ3MuUmFpZFJld2FyZHNMb2dFbnRyeUgA",
+            "EkkKEHBhc3Njb2RlX3Jld2FyZHMYByABKAsyLS5QT0dPUHJvdG9zLkRhdGEu",
+            "TG9ncy5QYXNzY29kZVJld2FyZHNMb2dFbnRyeUgAEkUKDmNvbXBsZXRlX3F1",
+            "ZXN0GAggASgLMisuUE9HT1Byb3Rvcy5EYXRhLkxvZ3MuQ29tcGxldGVRdWVz",
+            "dExvZ0VudHJ5SAASWQoZY29tcGxldGVfcXVlc3Rfc3RhbXBfY2FyZBgJIAEo",
+            "CzI0LlBPR09Qcm90b3MuRGF0YS5Mb2dzLkNvbXBsZXRlUXVlc3RTdGFtcENh",
+            "cmRMb2dFbnRyeUgAEmcKIGNvbXBsZXRlX3F1ZXN0X3Bva2Vtb25fZW5jb3Vu",
+            "dGVyGAogASgLMjsuUE9HT1Byb3Rvcy5EYXRhLkxvZ3MuQ29tcGxldGVRdWVz",
+            "dFBva2Vtb25FbmNvdW50ZXJMb2dFbnRyeUgAEjsKCW9wZW5fZ2lmdBgMIAEo",
+            "CzImLlBPR09Qcm90b3MuRGF0YS5Mb2dzLk9wZW5HaWZ0TG9nRW50cnlIABI7",
+            "CglzZW5kX2dpZnQYDSABKAsyJi5QT0dPUHJvdG9zLkRhdGEuTG9ncy5TZW5k",
+            "R2lmdExvZ0VudHJ5SAASOAoHdHJhZGluZxgOIAEoCzIlLlBPR09Qcm90b3Mu",
+            "RGF0YS5Mb2dzLlRyYWRpbmdMb2dFbnRyeUgAQggKBkFjdGlvbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.Logs.CatchPokemonLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.FortSearchLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.BuddyPokemonLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.RaidRewardsLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.PasscodeRewardsLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.CompleteQuestLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.CompleteQuestStampCardLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntryReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Logs.CatchPokemonLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.FortSearchLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.BuddyPokemonLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.RaidRewardsLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.PasscodeRewardsLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.CompleteQuestLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.CompleteQuestStampCardLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.OpenGiftLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.SendGiftLogEntryReflection.Descriptor, global::POGOProtos.Data.Logs.TradingLogEntryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.ActionLogEntry), global::POGOProtos.Data.Logs.ActionLogEntry.Parser, new[]{ "TimestampMs", "Sfida", "CatchPokemon", "FortSearch", "BuddyPokemon", "RaidRewards", "PasscodeRewards", "CompleteQuest", "CompleteQuestStampCard", "CompleteQuestPokemonEncounter" }, new[]{ "Action" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.ActionLogEntry), global::POGOProtos.Data.Logs.ActionLogEntry.Parser, new[]{ "TimestampMs", "Sfida", "CatchPokemon", "FortSearch", "BuddyPokemon", "RaidRewards", "PasscodeRewards", "CompleteQuest", "CompleteQuestStampCard", "CompleteQuestPokemonEncounter", "OpenGift", "SendGift", "Trading" }, new[]{ "Action" }, null, null)
           }));
     }
     #endregion
@@ -112,6 +118,15 @@ namespace POGOProtos.Data.Logs {
           break;
         case ActionOneofCase.CompleteQuestPokemonEncounter:
           CompleteQuestPokemonEncounter = other.CompleteQuestPokemonEncounter.Clone();
+          break;
+        case ActionOneofCase.OpenGift:
+          OpenGift = other.OpenGift.Clone();
+          break;
+        case ActionOneofCase.SendGift:
+          SendGift = other.SendGift.Clone();
+          break;
+        case ActionOneofCase.Trading:
+          Trading = other.Trading.Clone();
           break;
       }
 
@@ -233,6 +248,39 @@ namespace POGOProtos.Data.Logs {
       }
     }
 
+    /// <summary>Field number for the "open_gift" field.</summary>
+    public const int OpenGiftFieldNumber = 12;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Logs.OpenGiftLogEntry OpenGift {
+      get { return actionCase_ == ActionOneofCase.OpenGift ? (global::POGOProtos.Data.Logs.OpenGiftLogEntry) action_ : null; }
+      set {
+        action_ = value;
+        actionCase_ = value == null ? ActionOneofCase.None : ActionOneofCase.OpenGift;
+      }
+    }
+
+    /// <summary>Field number for the "send_gift" field.</summary>
+    public const int SendGiftFieldNumber = 13;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Logs.SendGiftLogEntry SendGift {
+      get { return actionCase_ == ActionOneofCase.SendGift ? (global::POGOProtos.Data.Logs.SendGiftLogEntry) action_ : null; }
+      set {
+        action_ = value;
+        actionCase_ = value == null ? ActionOneofCase.None : ActionOneofCase.SendGift;
+      }
+    }
+
+    /// <summary>Field number for the "trading" field.</summary>
+    public const int TradingFieldNumber = 14;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Logs.TradingLogEntry Trading {
+      get { return actionCase_ == ActionOneofCase.Trading ? (global::POGOProtos.Data.Logs.TradingLogEntry) action_ : null; }
+      set {
+        action_ = value;
+        actionCase_ = value == null ? ActionOneofCase.None : ActionOneofCase.Trading;
+      }
+    }
+
     private object action_;
     /// <summary>Enum of possible cases for the "Action" oneof.</summary>
     public enum ActionOneofCase {
@@ -245,6 +293,9 @@ namespace POGOProtos.Data.Logs {
       CompleteQuest = 8,
       CompleteQuestStampCard = 9,
       CompleteQuestPokemonEncounter = 10,
+      OpenGift = 12,
+      SendGift = 13,
+      Trading = 14,
     }
     private ActionOneofCase actionCase_ = ActionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -281,6 +332,9 @@ namespace POGOProtos.Data.Logs {
       if (!object.Equals(CompleteQuest, other.CompleteQuest)) return false;
       if (!object.Equals(CompleteQuestStampCard, other.CompleteQuestStampCard)) return false;
       if (!object.Equals(CompleteQuestPokemonEncounter, other.CompleteQuestPokemonEncounter)) return false;
+      if (!object.Equals(OpenGift, other.OpenGift)) return false;
+      if (!object.Equals(SendGift, other.SendGift)) return false;
+      if (!object.Equals(Trading, other.Trading)) return false;
       if (ActionCase != other.ActionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -298,6 +352,9 @@ namespace POGOProtos.Data.Logs {
       if (actionCase_ == ActionOneofCase.CompleteQuest) hash ^= CompleteQuest.GetHashCode();
       if (actionCase_ == ActionOneofCase.CompleteQuestStampCard) hash ^= CompleteQuestStampCard.GetHashCode();
       if (actionCase_ == ActionOneofCase.CompleteQuestPokemonEncounter) hash ^= CompleteQuestPokemonEncounter.GetHashCode();
+      if (actionCase_ == ActionOneofCase.OpenGift) hash ^= OpenGift.GetHashCode();
+      if (actionCase_ == ActionOneofCase.SendGift) hash ^= SendGift.GetHashCode();
+      if (actionCase_ == ActionOneofCase.Trading) hash ^= Trading.GetHashCode();
       hash ^= (int) actionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -352,6 +409,18 @@ namespace POGOProtos.Data.Logs {
         output.WriteRawTag(82);
         output.WriteMessage(CompleteQuestPokemonEncounter);
       }
+      if (actionCase_ == ActionOneofCase.OpenGift) {
+        output.WriteRawTag(98);
+        output.WriteMessage(OpenGift);
+      }
+      if (actionCase_ == ActionOneofCase.SendGift) {
+        output.WriteRawTag(106);
+        output.WriteMessage(SendGift);
+      }
+      if (actionCase_ == ActionOneofCase.Trading) {
+        output.WriteRawTag(114);
+        output.WriteMessage(Trading);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -389,6 +458,15 @@ namespace POGOProtos.Data.Logs {
       }
       if (actionCase_ == ActionOneofCase.CompleteQuestPokemonEncounter) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CompleteQuestPokemonEncounter);
+      }
+      if (actionCase_ == ActionOneofCase.OpenGift) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OpenGift);
+      }
+      if (actionCase_ == ActionOneofCase.SendGift) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SendGift);
+      }
+      if (actionCase_ == ActionOneofCase.Trading) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Trading);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -455,6 +533,24 @@ namespace POGOProtos.Data.Logs {
             CompleteQuestPokemonEncounter = new global::POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntry();
           }
           CompleteQuestPokemonEncounter.MergeFrom(other.CompleteQuestPokemonEncounter);
+          break;
+        case ActionOneofCase.OpenGift:
+          if (OpenGift == null) {
+            OpenGift = new global::POGOProtos.Data.Logs.OpenGiftLogEntry();
+          }
+          OpenGift.MergeFrom(other.OpenGift);
+          break;
+        case ActionOneofCase.SendGift:
+          if (SendGift == null) {
+            SendGift = new global::POGOProtos.Data.Logs.SendGiftLogEntry();
+          }
+          SendGift.MergeFrom(other.SendGift);
+          break;
+        case ActionOneofCase.Trading:
+          if (Trading == null) {
+            Trading = new global::POGOProtos.Data.Logs.TradingLogEntry();
+          }
+          Trading.MergeFrom(other.Trading);
           break;
       }
 
@@ -547,6 +643,33 @@ namespace POGOProtos.Data.Logs {
             }
             input.ReadMessage(subBuilder);
             CompleteQuestPokemonEncounter = subBuilder;
+            break;
+          }
+          case 98: {
+            global::POGOProtos.Data.Logs.OpenGiftLogEntry subBuilder = new global::POGOProtos.Data.Logs.OpenGiftLogEntry();
+            if (actionCase_ == ActionOneofCase.OpenGift) {
+              subBuilder.MergeFrom(OpenGift);
+            }
+            input.ReadMessage(subBuilder);
+            OpenGift = subBuilder;
+            break;
+          }
+          case 106: {
+            global::POGOProtos.Data.Logs.SendGiftLogEntry subBuilder = new global::POGOProtos.Data.Logs.SendGiftLogEntry();
+            if (actionCase_ == ActionOneofCase.SendGift) {
+              subBuilder.MergeFrom(SendGift);
+            }
+            input.ReadMessage(subBuilder);
+            SendGift = subBuilder;
+            break;
+          }
+          case 114: {
+            global::POGOProtos.Data.Logs.TradingLogEntry subBuilder = new global::POGOProtos.Data.Logs.TradingLogEntry();
+            if (actionCase_ == ActionOneofCase.Trading) {
+              subBuilder.MergeFrom(Trading);
+            }
+            input.ReadMessage(subBuilder);
+            Trading = subBuilder;
             break;
           }
         }

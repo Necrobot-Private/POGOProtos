@@ -68,7 +68,7 @@ namespace POGOProtos.Settings.Master {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public QuestSettings(QuestSettings other) : this() {
       questType_ = other.questType_;
-      DailyQuest = other.dailyQuest_ != null ? other.DailyQuest.Clone() : null;
+      dailyQuest_ = other.dailyQuest_ != null ? other.dailyQuest_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

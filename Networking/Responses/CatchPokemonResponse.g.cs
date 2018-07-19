@@ -80,11 +80,11 @@ namespace POGOProtos.Networking.Responses {
       status_ = other.status_;
       missPercent_ = other.missPercent_;
       capturedPokemonId_ = other.capturedPokemonId_;
-      CaptureAward = other.captureAward_ != null ? other.CaptureAward.Clone() : null;
+      captureAward_ = other.captureAward_ != null ? other.captureAward_.Clone() : null;
       captureReason_ = other.captureReason_;
       displayPokedexId_ = other.displayPokedexId_;
       throwsRemaining_ = other.throwsRemaining_;
-      PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
+      pokemonDisplay_ = other.pokemonDisplay_ != null ? other.pokemonDisplay_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

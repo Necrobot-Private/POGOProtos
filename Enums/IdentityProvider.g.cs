@@ -25,10 +25,10 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CidQT0dPUHJvdG9zL0VudW1zL0lkZW50aXR5UHJvdmlkZXIucHJvdG8SEFBP",
-            "R09Qcm90b3MuRW51bXMqewoQSWRlbnRpdHlQcm92aWRlchIbChdVTlNFVF9J",
-            "REVOVElUWV9QUk9WSURFUhAAEgoKBkdPT0dMRRABEgcKA1BUQxACEgwKCEZB",
-            "Q0VCT09LEAMSDgoKQkFDS0dST1VORBAEEgwKCElOVEVSTkFMEAUSCQoFU0ZJ",
-            "REEQBmIGcHJvdG8z"));
+            "R09Qcm90b3MuRW51bXMqjgEKEElkZW50aXR5UHJvdmlkZXISGwoXVU5TRVRf",
+            "SURFTlRJVFlfUFJPVklERVIQABIKCgZHT09HTEUQARIHCgNQVEMQAhIMCghG",
+            "QUNFQk9PSxADEg4KCkJBQ0tHUk9VTkQQBBIMCghJTlRFUk5BTBAFEgkKBVNG",
+            "SURBEAYSEQoNU1VQRVJfQVdFU09NRRAHYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.IdentityProvider), }, null));
@@ -45,6 +45,7 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("BACKGROUND")] Background = 4,
     [pbr::OriginalName("INTERNAL")] Internal = 5,
     [pbr::OriginalName("SFIDA")] Sfida = 6,
+    [pbr::OriginalName("SUPER_AWESOME")] SuperAwesome = 7,
   }
 
   #endregion

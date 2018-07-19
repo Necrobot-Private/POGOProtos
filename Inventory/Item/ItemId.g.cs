@@ -25,7 +25,7 @@ namespace POGOProtos.Inventory.Item {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiZQT0dPUHJvdG9zL0ludmVudG9yeS9JdGVtL0l0ZW1JZC5wcm90bxIZUE9H",
-            "T1Byb3Rvcy5JbnZlbnRvcnkuSXRlbSqNCQoGSXRlbUlkEhAKDElURU1fVU5L",
+            "T1Byb3Rvcy5JbnZlbnRvcnkuSXRlbSqoCQoGSXRlbUlkEhAKDElURU1fVU5L",
             "Tk9XThAAEhIKDklURU1fUE9LRV9CQUxMEAESEwoPSVRFTV9HUkVBVF9CQUxM",
             "EAISEwoPSVRFTV9VTFRSQV9CQUxMEAMSFAoQSVRFTV9NQVNURVJfQkFMTBAE",
             "EhUKEUlURU1fUFJFTUlFUl9CQUxMEAUSDwoLSVRFTV9QT1RJT04QZRIVChFJ",
@@ -51,7 +51,8 @@ namespace POGOProtos.Inventory.Item {
             "Uk9MTF9TUEVDSUFMX0FUVEFDSxCyCRIUCg9JVEVNX1JBUkVfQ0FORFkQlQoS",
             "GgoVSVRFTV9GUkVFX1JBSURfVElDS0VUEPkKEhoKFUlURU1fUEFJRF9SQUlE",
             "X1RJQ0tFVBD6ChIfChpJVEVNX0xFR0VOREFSWV9SQUlEX1RJQ0tFVBD7ChIU",
-            "Cg9JVEVNX1NUQVJfUElFQ0UQ/ApiBnByb3RvMw=="));
+            "Cg9JVEVNX1NUQVJfUElFQ0UQ/AoSGQoUSVRFTV9GUklFTkRfR0lGVF9CT1gQ",
+            "/QpiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Inventory.Item.ItemId), }, null));
@@ -108,6 +109,7 @@ namespace POGOProtos.Inventory.Item {
     [pbr::OriginalName("ITEM_PAID_RAID_TICKET")] ItemPaidRaidTicket = 1402,
     [pbr::OriginalName("ITEM_LEGENDARY_RAID_TICKET")] ItemLegendaryRaidTicket = 1403,
     [pbr::OriginalName("ITEM_STAR_PIECE")] ItemStarPiece = 1404,
+    [pbr::OriginalName("ITEM_FRIEND_GIFT_BOX")] ItemFriendGiftBox = 1405,
   }
 
   #endregion

@@ -300,9 +300,9 @@ namespace POGOProtos.Networking.Platform.Responses {
         public StoreItem(StoreItem other) : this() {
           itemId_ = other.itemId_;
           isIap_ = other.isIap_;
-          CurrencyToBuy = other.currencyToBuy_ != null ? other.CurrencyToBuy.Clone() : null;
-          YieldsCurrency = other.yieldsCurrency_ != null ? other.YieldsCurrency.Clone() : null;
-          YieldsItem = other.yieldsItem_ != null ? other.YieldsItem.Clone() : null;
+          currencyToBuy_ = other.currencyToBuy_ != null ? other.currencyToBuy_.Clone() : null;
+          yieldsCurrency_ = other.yieldsCurrency_ != null ? other.yieldsCurrency_.Clone() : null;
+          yieldsItem_ = other.yieldsItem_ != null ? other.yieldsItem_.Clone() : null;
           tags_ = other.tags_.Clone();
           unknown7_ = other.unknown7_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);

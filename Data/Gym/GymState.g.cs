@@ -66,7 +66,7 @@ namespace POGOProtos.Data.Gym {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GymState(GymState other) : this() {
-      FortData = other.fortData_ != null ? other.FortData.Clone() : null;
+      fortData_ = other.fortData_ != null ? other.fortData_.Clone() : null;
       memberships_ = other.memberships_.Clone();
       deployLockout_ = other.deployLockout_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);

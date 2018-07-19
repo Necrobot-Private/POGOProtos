@@ -70,7 +70,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetAvatarResponse(SetAvatarResponse other) : this() {
       status_ = other.status_;
-      PlayerData = other.playerData_ != null ? other.PlayerData.Clone() : null;
+      playerData_ = other.playerData_ != null ? other.playerData_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

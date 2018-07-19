@@ -25,7 +25,7 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBQT0dPUHJvdG9zL0VudW1zL0JhZGdlVHlwZS5wcm90bxIQUE9HT1Byb3Rv",
-            "cy5FbnVtcyqHCwoJQmFkZ2VUeXBlEg8KC0JBREdFX1VOU0VUEAASEwoPQkFE",
+            "cy5FbnVtcyqHDQoJQmFkZ2VUeXBlEg8KC0JBREdFX1VOU0VUEAASEwoPQkFE",
             "R0VfVFJBVkVMX0tNEAESGQoVQkFER0VfUE9LRURFWF9FTlRSSUVTEAISFwoT",
             "QkFER0VfQ0FQVFVSRV9UT1RBTBADEhcKE0JBREdFX0RFRkVBVEVEX0ZPUlQQ",
             "BBIXChNCQURHRV9FVk9MVkVEX1RPVEFMEAUSFwoTQkFER0VfSEFUQ0hFRF9U",
@@ -51,12 +51,18 @@ namespace POGOProtos.Enums {
             "QkFUVExFX1dPThApEhUKEUJBREdFX0JFUlJJRVNfRkVEECoSGAoUQkFER0Vf",
             "SE9VUlNfREVGRU5ERUQQKxIWChJCQURHRV9QTEFDRV9IT0xERVIQLBIeChpC",
             "QURHRV9QT0tFREVYX0VOVFJJRVNfR0VOMxAtEhoKFkJBREdFX0NIQUxMRU5H",
-            "RV9RVUVTVFMQLhIXChNCQURHRV9NRVdfRU5DT1VOVEVSEC8SFAoPQkFER0Vf",
-            "RVZFTlRfTUlOENAPEiEKHEJBREdFX0NISUNBR09fRkVTVF9KVUxZXzIwMTcQ",
-            "0Q8SKQokQkFER0VfUElLQUNIVV9PVVRCUkVBS19ZT0tPSEFNQV8yMDE3ENIP",
-            "EiIKHUJBREdFX1NBRkFSSV9aT05FX0VVUk9QRV8yMDE3ENMPEigKI0JBREdF",
-            "X1NBRkFSSV9aT05FX0VVUk9QRV8yMDE3XzEwXzA3ENQPEigKI0JBREdFX1NB",
-            "RkFSSV9aT05FX0VVUk9QRV8yMDE3XzEwXzE0ENUPYgZwcm90bzM="));
+            "RV9RVUVTVFMQLhIXChNCQURHRV9NRVdfRU5DT1VOVEVSEC8SGwoXQkFER0Vf",
+            "TUFYX0xFVkVMX0ZSSUVORFMQMBIRCg1CQURHRV9UUkFESU5HEDESGgoWQkFE",
+            "R0VfVFJBRElOR19ESVNUQU5DRRAyEhQKD0JBREdFX0VWRU5UX01JThDQDxIh",
+            "ChxCQURHRV9DSElDQUdPX0ZFU1RfSlVMWV8yMDE3ENEPEikKJEJBREdFX1BJ",
+            "S0FDSFVfT1VUQlJFQUtfWU9LT0hBTUFfMjAxNxDSDxIiCh1CQURHRV9TQUZB",
+            "UklfWk9ORV9FVVJPUEVfMjAxNxDTDxIoCiNCQURHRV9TQUZBUklfWk9ORV9F",
+            "VVJPUEVfMjAxN18xMF8wNxDUDxIoCiNCQURHRV9TQUZBUklfWk9ORV9FVVJP",
+            "UEVfMjAxN18xMF8xNBDVDxIrCiZCQURHRV9DSElDQUdPX0ZFU1RfSlVMWV8y",
+            "MDE4X1NBVF9OT1JUSBDWDxIrCiZCQURHRV9DSElDQUdPX0ZFU1RfSlVMWV8y",
+            "MDE4X1NBVF9TT1VUSBDXDxIrCiZCQURHRV9DSElDQUdPX0ZFU1RfSlVMWV8y",
+            "MDE4X1NVTl9OT1JUSBDYDxIrCiZCQURHRV9DSElDQUdPX0ZFU1RfSlVMWV8y",
+            "MDE4X1NVTl9TT1VUSBDZD2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.BadgeType), }, null));
@@ -114,12 +120,19 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("BADGE_POKEDEX_ENTRIES_GEN3")] BadgePokedexEntriesGen3 = 45,
     [pbr::OriginalName("BADGE_CHALLENGE_QUESTS")] BadgeChallengeQuests = 46,
     [pbr::OriginalName("BADGE_MEW_ENCOUNTER")] BadgeMewEncounter = 47,
+    [pbr::OriginalName("BADGE_MAX_LEVEL_FRIENDS")] BadgeMaxLevelFriends = 48,
+    [pbr::OriginalName("BADGE_TRADING")] BadgeTrading = 49,
+    [pbr::OriginalName("BADGE_TRADING_DISTANCE")] BadgeTradingDistance = 50,
     [pbr::OriginalName("BADGE_EVENT_MIN")] BadgeEventMin = 2000,
     [pbr::OriginalName("BADGE_CHICAGO_FEST_JULY_2017")] BadgeChicagoFestJuly2017 = 2001,
     [pbr::OriginalName("BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017")] BadgePikachuOutbreakYokohama2017 = 2002,
     [pbr::OriginalName("BADGE_SAFARI_ZONE_EUROPE_2017")] BadgeSafariZoneEurope2017 = 2003,
     [pbr::OriginalName("BADGE_SAFARI_ZONE_EUROPE_2017_10_07")] BadgeSafariZoneEurope20171007 = 2004,
     [pbr::OriginalName("BADGE_SAFARI_ZONE_EUROPE_2017_10_14")] BadgeSafariZoneEurope20171014 = 2005,
+    [pbr::OriginalName("BADGE_CHICAGO_FEST_JULY_2018_SAT_NORTH")] BadgeChicagoFestJuly2018SatNorth = 2006,
+    [pbr::OriginalName("BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH")] BadgeChicagoFestJuly2018SatSouth = 2007,
+    [pbr::OriginalName("BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH")] BadgeChicagoFestJuly2018SunNorth = 2008,
+    [pbr::OriginalName("BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH")] BadgeChicagoFestJuly2018SunSouth = 2009,
   }
 
   #endregion

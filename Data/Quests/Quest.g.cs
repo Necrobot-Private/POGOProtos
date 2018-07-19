@@ -89,15 +89,15 @@ namespace POGOProtos.Data.Quests {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Quest(Quest other) : this() {
       questType_ = other.questType_;
-      DailyQuest = other.dailyQuest_ != null ? other.DailyQuest.Clone() : null;
-      MultiPart = other.multiPart_ != null ? other.MultiPart.Clone() : null;
-      CatchPokemon = other.catchPokemon_ != null ? other.CatchPokemon.Clone() : null;
+      dailyQuest_ = other.dailyQuest_ != null ? other.dailyQuest_.Clone() : null;
+      multiPart_ = other.multiPart_ != null ? other.multiPart_.Clone() : null;
+      catchPokemon_ = other.catchPokemon_ != null ? other.catchPokemon_.Clone() : null;
       questId_ = other.questId_;
       questSeed_ = other.questSeed_;
       questContext_ = other.questContext_;
       templateId_ = other.templateId_;
       progress_ = other.progress_;
-      Goal = other.goal_ != null ? other.Goal.Clone() : null;
+      goal_ = other.goal_ != null ? other.goal_.Clone() : null;
       status_ = other.status_;
       questRewards_ = other.questRewards_.Clone();
       creationTimestampMs_ = other.creationTimestampMs_;

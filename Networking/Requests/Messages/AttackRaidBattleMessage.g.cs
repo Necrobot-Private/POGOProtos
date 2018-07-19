@@ -71,7 +71,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       gymId_ = other.gymId_;
       battleId_ = other.battleId_;
       attackerActions_ = other.attackerActions_.Clone();
-      LastRetrievedAction = other.lastRetrievedAction_ != null ? other.LastRetrievedAction.Clone() : null;
+      lastRetrievedAction_ = other.lastRetrievedAction_ != null ? other.lastRetrievedAction_.Clone() : null;
       timestampMs_ = other.timestampMs_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -84,14 +84,6 @@ namespace POGOProtos.Networking.Requests.Messages {
     /// <summary>Field number for the "gym_id" field.</summary>
     public const int GymIdFieldNumber = 1;
     private string gymId_ = "";
-    /// <summary>
-    ///string gym_id = 1;
-    ///int64 raid_seed = 2;
-    ///repeated int32 lobby_id = 4;
-    ///repeated fixed64 attacking_pokemon_id = 5;
-    ///double player_lat_degrees = 6;
-    ///double player_lng_degrees = 7;
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string GymId {
       get { return gymId_; }

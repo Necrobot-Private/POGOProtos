@@ -126,8 +126,8 @@ namespace POGOProtos.Networking.Envelopes {
       gpsInfo_ = other.gpsInfo_.Clone();
       field6_ = other.field6_.Clone();
       sensorInfo_ = other.sensorInfo_.Clone();
-      DeviceInfo = other.deviceInfo_ != null ? other.DeviceInfo.Clone() : null;
-      ActivityStatus = other.activityStatus_ != null ? other.ActivityStatus.Clone() : null;
+      deviceInfo_ = other.deviceInfo_ != null ? other.deviceInfo_.Clone() : null;
+      activityStatus_ = other.activityStatus_ != null ? other.activityStatus_.Clone() : null;
       locationHash1_ = other.locationHash1_;
       field11_ = other.field11_;
       field12_ = other.field12_;

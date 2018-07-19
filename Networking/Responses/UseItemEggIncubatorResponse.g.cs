@@ -73,7 +73,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UseItemEggIncubatorResponse(UseItemEggIncubatorResponse other) : this() {
       result_ = other.result_;
-      EggIncubator = other.eggIncubator_ != null ? other.EggIncubator.Clone() : null;
+      eggIncubator_ = other.eggIncubator_ != null ? other.eggIncubator_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

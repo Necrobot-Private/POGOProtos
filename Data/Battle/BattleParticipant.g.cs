@@ -28,21 +28,25 @@ namespace POGOProtos.Data.Battle {
             "b3RvEhZQT0dPUHJvdG9zLkRhdGEuQmF0dGxlGi5QT0dPUHJvdG9zL0RhdGEv",
             "QmF0dGxlL0JhdHRsZVBva2Vtb25JbmZvLnByb3RvGjBQT0dPUHJvdG9zL0Rh",
             "dGEvUGxheWVyL1BsYXllclB1YmxpY1Byb2ZpbGUucHJvdG8aKVBPR09Qcm90",
-            "b3MvTWFwL1Bva2Vtb24vTG9iYnlQb2tlbW9uLnByb3RvIr0DChFCYXR0bGVQ",
-            "YXJ0aWNpcGFudBJBCg5hY3RpdmVfcG9rZW1vbhgBIAEoCzIpLlBPR09Qcm90",
-            "b3MuRGF0YS5CYXR0bGUuQmF0dGxlUG9rZW1vbkluZm8SSwoWdHJhaW5lcl9w",
-            "dWJsaWNfcHJvZmlsZRgCIAEoCzIrLlBPR09Qcm90b3MuRGF0YS5QbGF5ZXIu",
-            "UGxheWVyUHVibGljUHJvZmlsZRJCCg9yZXZlcnNlX3Bva2Vtb24YAyADKAsy",
-            "KS5QT0dPUHJvdG9zLkRhdGEuQmF0dGxlLkJhdHRsZVBva2Vtb25JbmZvEkMK",
-            "EGRlZmVhdGVkX3Bva2Vtb24YBCADKAsyKS5QT0dPUHJvdG9zLkRhdGEuQmF0",
-            "dGxlLkJhdHRsZVBva2Vtb25JbmZvEjsKDWxvYmJ5X3Bva2Vtb24YBSADKAsy",
-            "JC5QT0dPUHJvdG9zLk1hcC5Qb2tlbW9uLkxvYmJ5UG9rZW1vbhIUCgxkYW1h",
-            "Z2VfZGVhbHQYBiABKAUSIwobc3VwZXJfZWZmZWN0aXZlX2NoYXJnZV9tb3Zl",
-            "GAcgASgIEhcKD3dlYXRoZXJfYm9vc3RlZBgIIAEoCGIGcHJvdG8z"));
+            "b3MvTWFwL1Bva2Vtb24vTG9iYnlQb2tlbW9uLnByb3RvGi9QT0dPUHJvdG9z",
+            "L0VudW1zL0ZyaWVuZHNoaXBMZXZlbE1pbGVzdG9uZS5wcm90byKoBAoRQmF0",
+            "dGxlUGFydGljaXBhbnQSQQoOYWN0aXZlX3Bva2Vtb24YASABKAsyKS5QT0dP",
+            "UHJvdG9zLkRhdGEuQmF0dGxlLkJhdHRsZVBva2Vtb25JbmZvEksKFnRyYWlu",
+            "ZXJfcHVibGljX3Byb2ZpbGUYAiABKAsyKy5QT0dPUHJvdG9zLkRhdGEuUGxh",
+            "eWVyLlBsYXllclB1YmxpY1Byb2ZpbGUSQgoPcmV2ZXJzZV9wb2tlbW9uGAMg",
+            "AygLMikuUE9HT1Byb3Rvcy5EYXRhLkJhdHRsZS5CYXR0bGVQb2tlbW9uSW5m",
+            "bxJDChBkZWZlYXRlZF9wb2tlbW9uGAQgAygLMikuUE9HT1Byb3Rvcy5EYXRh",
+            "LkJhdHRsZS5CYXR0bGVQb2tlbW9uSW5mbxI7Cg1sb2JieV9wb2tlbW9uGAUg",
+            "AygLMiQuUE9HT1Byb3Rvcy5NYXAuUG9rZW1vbi5Mb2JieVBva2Vtb24SFAoM",
+            "ZGFtYWdlX2RlYWx0GAYgASgFEiMKG3N1cGVyX2VmZmVjdGl2ZV9jaGFyZ2Vf",
+            "bW92ZRgHIAEoCBIXCg93ZWF0aGVyX2Jvb3N0ZWQYCCABKAgSUAocaGlnaGVz",
+            "dF9mcmllbmRzaGlwX21pbGVzdG9uZRgJIAEoDjIqLlBPR09Qcm90b3MuRW51",
+            "bXMuRnJpZW5kc2hpcExldmVsTWlsZXN0b25lEhcKD2ZyaWVuZF9jb2RlbmFt",
+            "ZRgKIAMoCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattlePokemonInfoReflection.Descriptor, global::POGOProtos.Data.Player.PlayerPublicProfileReflection.Descriptor, global::POGOProtos.Map.Pokemon.LobbyPokemonReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattlePokemonInfoReflection.Descriptor, global::POGOProtos.Data.Player.PlayerPublicProfileReflection.Descriptor, global::POGOProtos.Map.Pokemon.LobbyPokemonReflection.Descriptor, global::POGOProtos.Enums.FriendshipLevelMilestoneReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Battle.BattleParticipant), global::POGOProtos.Data.Battle.BattleParticipant.Parser, new[]{ "ActivePokemon", "TrainerPublicProfile", "ReversePokemon", "DefeatedPokemon", "LobbyPokemon", "DamageDealt", "SuperEffectiveChargeMove", "WeatherBoosted" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Battle.BattleParticipant), global::POGOProtos.Data.Battle.BattleParticipant.Parser, new[]{ "ActivePokemon", "TrainerPublicProfile", "ReversePokemon", "DefeatedPokemon", "LobbyPokemon", "DamageDealt", "SuperEffectiveChargeMove", "WeatherBoosted", "HighestFriendshipMilestone", "FriendCodename" }, null, null, null)
           }));
     }
     #endregion
@@ -74,14 +78,16 @@ namespace POGOProtos.Data.Battle {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BattleParticipant(BattleParticipant other) : this() {
-      ActivePokemon = other.activePokemon_ != null ? other.ActivePokemon.Clone() : null;
-      TrainerPublicProfile = other.trainerPublicProfile_ != null ? other.TrainerPublicProfile.Clone() : null;
+      activePokemon_ = other.activePokemon_ != null ? other.activePokemon_.Clone() : null;
+      trainerPublicProfile_ = other.trainerPublicProfile_ != null ? other.trainerPublicProfile_.Clone() : null;
       reversePokemon_ = other.reversePokemon_.Clone();
       defeatedPokemon_ = other.defeatedPokemon_.Clone();
       lobbyPokemon_ = other.lobbyPokemon_.Clone();
       damageDealt_ = other.damageDealt_;
       superEffectiveChargeMove_ = other.superEffectiveChargeMove_;
       weatherBoosted_ = other.weatherBoosted_;
+      highestFriendshipMilestone_ = other.highestFriendshipMilestone_;
+      friendCodename_ = other.friendCodename_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -175,6 +181,27 @@ namespace POGOProtos.Data.Battle {
       }
     }
 
+    /// <summary>Field number for the "highest_friendship_milestone" field.</summary>
+    public const int HighestFriendshipMilestoneFieldNumber = 9;
+    private global::POGOProtos.Enums.FriendshipLevelMilestone highestFriendshipMilestone_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.FriendshipLevelMilestone HighestFriendshipMilestone {
+      get { return highestFriendshipMilestone_; }
+      set {
+        highestFriendshipMilestone_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "friend_codename" field.</summary>
+    public const int FriendCodenameFieldNumber = 10;
+    private static readonly pb::FieldCodec<string> _repeated_friendCodename_codec
+        = pb::FieldCodec.ForString(82);
+    private readonly pbc::RepeatedField<string> friendCodename_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> FriendCodename {
+      get { return friendCodename_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as BattleParticipant);
@@ -196,6 +223,8 @@ namespace POGOProtos.Data.Battle {
       if (DamageDealt != other.DamageDealt) return false;
       if (SuperEffectiveChargeMove != other.SuperEffectiveChargeMove) return false;
       if (WeatherBoosted != other.WeatherBoosted) return false;
+      if (HighestFriendshipMilestone != other.HighestFriendshipMilestone) return false;
+      if(!friendCodename_.Equals(other.friendCodename_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -210,6 +239,8 @@ namespace POGOProtos.Data.Battle {
       if (DamageDealt != 0) hash ^= DamageDealt.GetHashCode();
       if (SuperEffectiveChargeMove != false) hash ^= SuperEffectiveChargeMove.GetHashCode();
       if (WeatherBoosted != false) hash ^= WeatherBoosted.GetHashCode();
+      if (HighestFriendshipMilestone != 0) hash ^= HighestFriendshipMilestone.GetHashCode();
+      hash ^= friendCodename_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -246,6 +277,11 @@ namespace POGOProtos.Data.Battle {
         output.WriteRawTag(64);
         output.WriteBool(WeatherBoosted);
       }
+      if (HighestFriendshipMilestone != 0) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) HighestFriendshipMilestone);
+      }
+      friendCodename_.WriteTo(output, _repeated_friendCodename_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -272,6 +308,10 @@ namespace POGOProtos.Data.Battle {
       if (WeatherBoosted != false) {
         size += 1 + 1;
       }
+      if (HighestFriendshipMilestone != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HighestFriendshipMilestone);
+      }
+      size += friendCodename_.CalculateSize(_repeated_friendCodename_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -307,6 +347,10 @@ namespace POGOProtos.Data.Battle {
       if (other.WeatherBoosted != false) {
         WeatherBoosted = other.WeatherBoosted;
       }
+      if (other.HighestFriendshipMilestone != 0) {
+        HighestFriendshipMilestone = other.HighestFriendshipMilestone;
+      }
+      friendCodename_.Add(other.friendCodename_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -354,6 +398,14 @@ namespace POGOProtos.Data.Battle {
           }
           case 64: {
             WeatherBoosted = input.ReadBool();
+            break;
+          }
+          case 72: {
+            highestFriendshipMilestone_ = (global::POGOProtos.Enums.FriendshipLevelMilestone) input.ReadEnum();
+            break;
+          }
+          case 82: {
+            friendCodename_.AddEntriesFrom(input, _repeated_friendCodename_codec);
             break;
           }
         }

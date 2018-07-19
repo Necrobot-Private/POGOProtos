@@ -75,7 +75,7 @@ namespace POGOProtos.Data.Player {
     public PlayerPublicProfile(PlayerPublicProfile other) : this() {
       name_ = other.name_;
       level_ = other.level_;
-      Avatar = other.avatar_ != null ? other.Avatar.Clone() : null;
+      avatar_ = other.avatar_ != null ? other.avatar_.Clone() : null;
       teamColor_ = other.teamColor_;
       battlesWon_ = other.battlesWon_;
       kmWalked_ = other.kmWalked_;

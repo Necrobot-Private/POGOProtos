@@ -82,7 +82,7 @@ namespace POGOProtos.Networking.Envelopes {
       requestId_ = other.requestId_;
       apiUrl_ = other.apiUrl_;
       platformReturns_ = other.platformReturns_.Clone();
-      AuthTicket = other.authTicket_ != null ? other.AuthTicket.Clone() : null;
+      authTicket_ = other.authTicket_ != null ? other.authTicket_.Clone() : null;
       returns_ = other.returns_.Clone();
       error_ = other.error_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);

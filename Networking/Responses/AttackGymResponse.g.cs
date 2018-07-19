@@ -76,11 +76,11 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AttackGymResponse(AttackGymResponse other) : this() {
       result_ = other.result_;
-      BattleLog = other.battleLog_ != null ? other.BattleLog.Clone() : null;
+      battleLog_ = other.battleLog_ != null ? other.battleLog_.Clone() : null;
       battleId_ = other.battleId_;
-      ActiveDefender = other.activeDefender_ != null ? other.ActiveDefender.Clone() : null;
-      ActiveAttacker = other.activeAttacker_ != null ? other.ActiveAttacker.Clone() : null;
-      BattleUpdate = other.battleUpdate_ != null ? other.BattleUpdate.Clone() : null;
+      activeDefender_ = other.activeDefender_ != null ? other.activeDefender_.Clone() : null;
+      activeAttacker_ = other.activeAttacker_ != null ? other.activeAttacker_.Clone() : null;
+      battleUpdate_ = other.battleUpdate_ != null ? other.battleUpdate_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

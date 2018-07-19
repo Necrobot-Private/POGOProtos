@@ -67,7 +67,7 @@ namespace POGOProtos.Networking.Responses {
     public DownloadSettingsResponse(DownloadSettingsResponse other) : this() {
       error_ = other.error_;
       hash_ = other.hash_;
-      Settings = other.settings_ != null ? other.Settings.Clone() : null;
+      settings_ = other.settings_ != null ? other.settings_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

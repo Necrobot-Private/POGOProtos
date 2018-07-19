@@ -70,7 +70,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetBuddyPokemonResponse(SetBuddyPokemonResponse other) : this() {
       result_ = other.result_;
-      UpdatedBuddy = other.updatedBuddy_ != null ? other.UpdatedBuddy.Clone() : null;
+      updatedBuddy_ = other.updatedBuddy_ != null ? other.updatedBuddy_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

@@ -68,7 +68,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FetchAllNewsResponse(FetchAllNewsResponse other) : this() {
       result_ = other.result_;
-      CurrentNews = other.currentNews_ != null ? other.CurrentNews.Clone() : null;
+      currentNews_ = other.currentNews_ != null ? other.currentNews_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

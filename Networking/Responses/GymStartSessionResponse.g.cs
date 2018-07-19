@@ -77,7 +77,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GymStartSessionResponse(GymStartSessionResponse other) : this() {
       result_ = other.result_;
-      Battle = other.battle_ != null ? other.Battle.Clone() : null;
+      battle_ = other.battle_ != null ? other.battle_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

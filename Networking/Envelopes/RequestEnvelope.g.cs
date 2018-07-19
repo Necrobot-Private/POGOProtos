@@ -89,8 +89,8 @@ namespace POGOProtos.Networking.Envelopes {
       latitude_ = other.latitude_;
       longitude_ = other.longitude_;
       accuracy_ = other.accuracy_;
-      AuthInfo = other.authInfo_ != null ? other.AuthInfo.Clone() : null;
-      AuthTicket = other.authTicket_ != null ? other.AuthTicket.Clone() : null;
+      authInfo_ = other.authInfo_ != null ? other.authInfo_.Clone() : null;
+      authTicket_ = other.authTicket_ != null ? other.authTicket_.Clone() : null;
       msSinceLastLocationfix_ = other.msSinceLastLocationfix_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -462,7 +462,7 @@ namespace POGOProtos.Networking.Envelopes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public AuthInfo(AuthInfo other) : this() {
           provider_ = other.provider_;
-          Token = other.token_ != null ? other.Token.Clone() : null;
+          token_ = other.token_ != null ? other.token_.Clone() : null;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 

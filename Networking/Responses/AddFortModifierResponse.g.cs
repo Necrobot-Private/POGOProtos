@@ -71,7 +71,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AddFortModifierResponse(AddFortModifierResponse other) : this() {
       result_ = other.result_;
-      FortDetails = other.fortDetails_ != null ? other.FortDetails.Clone() : null;
+      fortDetails_ = other.fortDetails_ != null ? other.fortDetails_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

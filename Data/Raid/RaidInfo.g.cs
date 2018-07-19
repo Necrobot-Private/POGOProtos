@@ -72,7 +72,7 @@ namespace POGOProtos.Data.Raid {
       raidSpawnMs_ = other.raidSpawnMs_;
       raidBattleMs_ = other.raidBattleMs_;
       raidEndMs_ = other.raidEndMs_;
-      RaidPokemon = other.raidPokemon_ != null ? other.RaidPokemon.Clone() : null;
+      raidPokemon_ = other.raidPokemon_ != null ? other.raidPokemon_.Clone() : null;
       raidLevel_ = other.raidLevel_;
       complete_ = other.complete_;
       isExclusive_ = other.isExclusive_;

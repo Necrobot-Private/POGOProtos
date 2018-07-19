@@ -68,7 +68,7 @@ namespace POGOProtos.Inventory {
     public RaidTicket(RaidTicket other) : this() {
       ticketId_ = other.ticketId_;
       item_ = other.item_;
-      ExclusiveInfo = other.exclusiveInfo_ != null ? other.ExclusiveInfo.Clone() : null;
+      exclusiveInfo_ = other.exclusiveInfo_ != null ? other.exclusiveInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

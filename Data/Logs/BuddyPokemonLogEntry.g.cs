@@ -72,7 +72,7 @@ namespace POGOProtos.Data.Logs {
       result_ = other.result_;
       pokemonId_ = other.pokemonId_;
       amount_ = other.amount_;
-      PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
+      pokemonDisplay_ = other.pokemonDisplay_ != null ? other.pokemonDisplay_.Clone() : null;
       pokemon_ = other.pokemon_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

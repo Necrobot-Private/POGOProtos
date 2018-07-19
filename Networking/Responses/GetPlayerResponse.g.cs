@@ -67,7 +67,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetPlayerResponse(GetPlayerResponse other) : this() {
       success_ = other.success_;
-      PlayerData = other.playerData_ != null ? other.PlayerData.Clone() : null;
+      playerData_ = other.playerData_ != null ? other.playerData_.Clone() : null;
       banned_ = other.banned_;
       warn_ = other.warn_;
       wasCreated_ = other.wasCreated_;

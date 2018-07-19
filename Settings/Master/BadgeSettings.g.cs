@@ -75,7 +75,7 @@ namespace POGOProtos.Settings.Master {
       targets_ = other.targets_.Clone();
       captureReward_ = other.captureReward_.Clone();
       eventBadge_ = other.eventBadge_;
-      EventBadgeSettings = other.eventBadgeSettings_ != null ? other.EventBadgeSettings.Clone() : null;
+      eventBadgeSettings_ = other.eventBadgeSettings_ != null ? other.eventBadgeSettings_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

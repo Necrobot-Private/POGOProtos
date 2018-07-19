@@ -69,7 +69,7 @@ namespace POGOProtos.Map.Pokemon {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MotivatedPokemon(MotivatedPokemon other) : this() {
-      Pokemon = other.pokemon_ != null ? other.Pokemon.Clone() : null;
+      pokemon_ = other.pokemon_ != null ? other.pokemon_.Clone() : null;
       deployMs_ = other.deployMs_;
       cpWhenDeployed_ = other.cpWhenDeployed_;
       motivationNow_ = other.motivationNow_;

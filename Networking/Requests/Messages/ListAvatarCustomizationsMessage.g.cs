@@ -27,15 +27,16 @@ namespace POGOProtos.Networking.Requests.Messages {
             "Ck1QT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvTWVzc2FnZXMvTGlz",
             "dEF2YXRhckN1c3RvbWl6YXRpb25zTWVzc2FnZS5wcm90bxInUE9HT1Byb3Rv",
             "cy5OZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzGi1QT0dPUHJvdG9zL0Rh",
-            "dGEvUGxheWVyL1BsYXllckF2YXRhclR5cGUucHJvdG8aG1BPR09Qcm90b3Mv",
-            "RW51bXMvU2xvdC5wcm90bxodUE9HT1Byb3Rvcy9FbnVtcy9GaWx0ZXIucHJv",
-            "dG8izwEKH0xpc3RBdmF0YXJDdXN0b21pemF0aW9uc01lc3NhZ2USPQoLYXZh",
-            "dGFyX3R5cGUYASABKA4yKC5QT0dPUHJvdG9zLkRhdGEuUGxheWVyLlBsYXll",
-            "ckF2YXRhclR5cGUSJAoEc2xvdBgCIAMoDjIWLlBPR09Qcm90b3MuRW51bXMu",
-            "U2xvdBIpCgdmaWx0ZXJzGAMgAygOMhguUE9HT1Byb3Rvcy5FbnVtcy5GaWx0",
-            "ZXISDQoFc3RhcnQYBCABKAUSDQoFbGltaXQYBSABKAViBnByb3RvMw=="));
+            "dGEvUGxheWVyL1BsYXllckF2YXRhclR5cGUucHJvdG8aMFBPR09Qcm90b3Mv",
+            "RGF0YS9BdmF0YXIvQXZhdGFyQ3VzdG9taXphdGlvbi5wcm90bxodUE9HT1By",
+            "b3Rvcy9FbnVtcy9GaWx0ZXIucHJvdG8i6QEKH0xpc3RBdmF0YXJDdXN0b21p",
+            "emF0aW9uc01lc3NhZ2USPQoLYXZhdGFyX3R5cGUYASABKA4yKC5QT0dPUHJv",
+            "dG9zLkRhdGEuUGxheWVyLlBsYXllckF2YXRhclR5cGUSPgoEc2xvdBgCIAMo",
+            "DjIwLlBPR09Qcm90b3MuRGF0YS5BdmF0YXIuQXZhdGFyQ3VzdG9taXphdGlv",
+            "bi5TbG90EikKB2ZpbHRlcnMYAyADKA4yGC5QT0dPUHJvdG9zLkVudW1zLkZp",
+            "bHRlchINCgVzdGFydBgEIAEoBRINCgVsaW1pdBgFIAEoBWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.PlayerAvatarTypeReflection.Descriptor, global::POGOProtos.Enums.SlotReflection.Descriptor, global::POGOProtos.Enums.FilterReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.PlayerAvatarTypeReflection.Descriptor, global::POGOProtos.Data.Avatar.AvatarCustomizationReflection.Descriptor, global::POGOProtos.Enums.FilterReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage), global::POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Parser, new[]{ "AvatarType", "Slot", "Filters", "Start", "Limit" }, null, null, null)
           }));
@@ -95,11 +96,11 @@ namespace POGOProtos.Networking.Requests.Messages {
 
     /// <summary>Field number for the "slot" field.</summary>
     public const int SlotFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::POGOProtos.Enums.Slot> _repeated_slot_codec
-        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::POGOProtos.Enums.Slot) x);
-    private readonly pbc::RepeatedField<global::POGOProtos.Enums.Slot> slot_ = new pbc::RepeatedField<global::POGOProtos.Enums.Slot>();
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot> _repeated_slot_codec
+        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot) x);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot> slot_ = new pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::POGOProtos.Enums.Slot> Slot {
+    public pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot> Slot {
       get { return slot_; }
     }
 

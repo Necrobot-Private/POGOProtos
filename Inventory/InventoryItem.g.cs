@@ -68,8 +68,8 @@ namespace POGOProtos.Inventory {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public InventoryItem(InventoryItem other) : this() {
       modifiedTimestampMs_ = other.modifiedTimestampMs_;
-      DeletedItem = other.deletedItem_ != null ? other.DeletedItem.Clone() : null;
-      InventoryItemData = other.inventoryItemData_ != null ? other.InventoryItemData.Clone() : null;
+      deletedItem_ = other.deletedItem_ != null ? other.deletedItem_.Clone() : null;
+      inventoryItemData_ = other.inventoryItemData_ != null ? other.inventoryItemData_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

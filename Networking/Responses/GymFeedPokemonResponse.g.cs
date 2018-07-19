@@ -82,8 +82,8 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GymFeedPokemonResponse(GymFeedPokemonResponse other) : this() {
       result_ = other.result_;
-      GymStatusAndDefenders = other.gymStatusAndDefenders_ != null ? other.GymStatusAndDefenders.Clone() : null;
-      AwardedGymBadge = other.awardedGymBadge_ != null ? other.AwardedGymBadge.Clone() : null;
+      gymStatusAndDefenders_ = other.gymStatusAndDefenders_ != null ? other.gymStatusAndDefenders_.Clone() : null;
+      awardedGymBadge_ = other.awardedGymBadge_ != null ? other.awardedGymBadge_.Clone() : null;
       stardustAwarded_ = other.stardustAwarded_;
       xpAwarded_ = other.xpAwarded_;
       numCandyAwarded_ = other.numCandyAwarded_;

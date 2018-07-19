@@ -66,7 +66,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MarkTutorialCompleteResponse(MarkTutorialCompleteResponse other) : this() {
       success_ = other.success_;
-      PlayerData = other.playerData_ != null ? other.PlayerData.Clone() : null;
+      playerData_ = other.playerData_ != null ? other.playerData_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

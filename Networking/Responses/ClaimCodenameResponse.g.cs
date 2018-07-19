@@ -75,7 +75,7 @@ namespace POGOProtos.Networking.Responses {
       userMessage_ = other.userMessage_;
       isAssignable_ = other.isAssignable_;
       status_ = other.status_;
-      UpdatedPlayer = other.updatedPlayer_ != null ? other.UpdatedPlayer.Clone() : null;
+      updatedPlayer_ = other.updatedPlayer_ != null ? other.updatedPlayer_.Clone() : null;
       suggestedCodenames_ = other.suggestedCodenames_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

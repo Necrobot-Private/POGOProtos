@@ -72,7 +72,7 @@ namespace POGOProtos.Data.Quests {
       quest_ = other.quest_.Clone();
       completedStoryQuest_ = other.completedStoryQuest_.Clone();
       questPokemonEncounter_ = other.questPokemonEncounter_.Clone();
-      StampCard = other.stampCard_ != null ? other.StampCard.Clone() : null;
+      stampCard_ = other.stampCard_ != null ? other.stampCard_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

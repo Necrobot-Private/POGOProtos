@@ -27,28 +27,29 @@ namespace POGOProtos.Settings.Master {
             "CjxQT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9BdmF0YXJDdXN0b21pemF0",
             "aW9uU2V0dGluZ3MucHJvdG8SGlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVy",
             "Gi1QT0dPUHJvdG9zL0RhdGEvUGxheWVyL1BsYXllckF2YXRhclR5cGUucHJv",
-            "dG8aIFBPR09Qcm90b3MvRW51bXMvQmFkZ2VUeXBlLnByb3RvGhtQT0dPUHJv",
-            "dG9zL0VudW1zL1Nsb3QucHJvdG8imAYKG0F2YXRhckN1c3RvbWl6YXRpb25T",
-            "ZXR0aW5ncxIPCgdlbmFibGVkGAEgASgIEj0KC2F2YXRhcl90eXBlGAIgASgO",
-            "MiguUE9HT1Byb3Rvcy5EYXRhLlBsYXllci5QbGF5ZXJBdmF0YXJUeXBlEiQK",
-            "BHNsb3QYAyADKA4yFi5QT0dPUHJvdG9zLkVudW1zLlNsb3QSEwoLYnVuZGxl",
-            "X25hbWUYBCABKAkSEgoKYXNzZXRfbmFtZRgFIAEoCRISCgpncm91cF9uYW1l",
-            "GAYgASgJEhIKCnNvcnRfb3JkZXIYByABKAUSagoLdW5sb2NrX3R5cGUYCCAB",
-            "KA4yVS5QT0dPUHJvdG9zLlNldHRpbmdzLk1hc3Rlci5BdmF0YXJDdXN0b21p",
-            "emF0aW9uU2V0dGluZ3MuQXZhdGFyQ3VzdG9taXphdGlvblVubG9ja1R5cGUS",
-            "aAoKcHJvbW9fdHlwZRgJIAMoDjJULlBPR09Qcm90b3MuU2V0dGluZ3MuTWFz",
-            "dGVyLkF2YXRhckN1c3RvbWl6YXRpb25TZXR0aW5ncy5BdmF0YXJDdXN0b21p",
-            "emF0aW9uUHJvbW9UeXBlEjYKEXVubG9ja19iYWRnZV90eXBlGAogASgOMhsu",
-            "UE9HT1Byb3Rvcy5FbnVtcy5CYWRnZVR5cGUSDwoHaWFwX3NrdRgLIAEoCRIa",
-            "ChJ1bmxvY2tfYmFkZ2VfbGV2ZWwYDCABKAUSEQoJaWNvbl9uYW1lGA0gASgJ",
-            "EhsKE3VubG9ja19wbGF5ZXJfbGV2ZWwYDiABKAUiTAocQXZhdGFyQ3VzdG9t",
-            "aXphdGlvblByb21vVHlwZRIUChBVTlNFVF9QUk9NT19UWVBFEAASCAoEU0FM",
-            "RRABEgwKCEZFQVRVUkVEEAIieQodQXZhdGFyQ3VzdG9taXphdGlvblVubG9j",
-            "a1R5cGUSFQoRVU5TRVRfVU5MT0NLX1RZUEUQABILCgdERUZBVUxUEAESEAoM",
-            "TUVEQUxfUkVXQVJEEAISEAoMSUFQX0NMT1RISU5HEAMSEAoMTEVWRUxfUkVX",
-            "QVJEEARiBnByb3RvMw=="));
+            "dG8aIFBPR09Qcm90b3MvRW51bXMvQmFkZ2VUeXBlLnByb3RvGjBQT0dPUHJv",
+            "dG9zL0RhdGEvQXZhdGFyL0F2YXRhckN1c3RvbWl6YXRpb24ucHJvdG8isgYK",
+            "G0F2YXRhckN1c3RvbWl6YXRpb25TZXR0aW5ncxIPCgdlbmFibGVkGAEgASgI",
+            "Ej0KC2F2YXRhcl90eXBlGAIgASgOMiguUE9HT1Byb3Rvcy5EYXRhLlBsYXll",
+            "ci5QbGF5ZXJBdmF0YXJUeXBlEj4KBHNsb3QYAyADKA4yMC5QT0dPUHJvdG9z",
+            "LkRhdGEuQXZhdGFyLkF2YXRhckN1c3RvbWl6YXRpb24uU2xvdBITCgtidW5k",
+            "bGVfbmFtZRgEIAEoCRISCgphc3NldF9uYW1lGAUgASgJEhIKCmdyb3VwX25h",
+            "bWUYBiABKAkSEgoKc29ydF9vcmRlchgHIAEoBRJqCgt1bmxvY2tfdHlwZRgI",
+            "IAEoDjJVLlBPR09Qcm90b3MuU2V0dGluZ3MuTWFzdGVyLkF2YXRhckN1c3Rv",
+            "bWl6YXRpb25TZXR0aW5ncy5BdmF0YXJDdXN0b21pemF0aW9uVW5sb2NrVHlw",
+            "ZRJoCgpwcm9tb190eXBlGAkgAygOMlQuUE9HT1Byb3Rvcy5TZXR0aW5ncy5N",
+            "YXN0ZXIuQXZhdGFyQ3VzdG9taXphdGlvblNldHRpbmdzLkF2YXRhckN1c3Rv",
+            "bWl6YXRpb25Qcm9tb1R5cGUSNgoRdW5sb2NrX2JhZGdlX3R5cGUYCiABKA4y",
+            "Gy5QT0dPUHJvdG9zLkVudW1zLkJhZGdlVHlwZRIPCgdpYXBfc2t1GAsgASgJ",
+            "EhoKEnVubG9ja19iYWRnZV9sZXZlbBgMIAEoBRIRCglpY29uX25hbWUYDSAB",
+            "KAkSGwoTdW5sb2NrX3BsYXllcl9sZXZlbBgOIAEoBSJMChxBdmF0YXJDdXN0",
+            "b21pemF0aW9uUHJvbW9UeXBlEhQKEFVOU0VUX1BST01PX1RZUEUQABIICgRT",
+            "QUxFEAESDAoIRkVBVFVSRUQQAiJ5Ch1BdmF0YXJDdXN0b21pemF0aW9uVW5s",
+            "b2NrVHlwZRIVChFVTlNFVF9VTkxPQ0tfVFlQRRAAEgsKB0RFRkFVTFQQARIQ",
+            "CgxNRURBTF9SRVdBUkQQAhIQCgxJQVBfQ0xPVEhJTkcQAxIQCgxMRVZFTF9S",
+            "RVdBUkQQBGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.PlayerAvatarTypeReflection.Descriptor, global::POGOProtos.Enums.BadgeTypeReflection.Descriptor, global::POGOProtos.Enums.SlotReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.PlayerAvatarTypeReflection.Descriptor, global::POGOProtos.Enums.BadgeTypeReflection.Descriptor, global::POGOProtos.Data.Avatar.AvatarCustomizationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.AvatarCustomizationSettings), global::POGOProtos.Settings.Master.AvatarCustomizationSettings.Parser, new[]{ "Enabled", "AvatarType", "Slot", "BundleName", "AssetName", "GroupName", "SortOrder", "UnlockType", "PromoType", "UnlockBadgeType", "IapSku", "UnlockBadgeLevel", "IconName", "UnlockPlayerLevel" }, null, new[]{ typeof(global::POGOProtos.Settings.Master.AvatarCustomizationSettings.Types.AvatarCustomizationPromoType), typeof(global::POGOProtos.Settings.Master.AvatarCustomizationSettings.Types.AvatarCustomizationUnlockType) }, null)
           }));
@@ -128,11 +129,11 @@ namespace POGOProtos.Settings.Master {
 
     /// <summary>Field number for the "slot" field.</summary>
     public const int SlotFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::POGOProtos.Enums.Slot> _repeated_slot_codec
-        = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::POGOProtos.Enums.Slot) x);
-    private readonly pbc::RepeatedField<global::POGOProtos.Enums.Slot> slot_ = new pbc::RepeatedField<global::POGOProtos.Enums.Slot>();
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot> _repeated_slot_codec
+        = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot) x);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot> slot_ = new pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::POGOProtos.Enums.Slot> Slot {
+    public pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot> Slot {
       get { return slot_; }
     }
 

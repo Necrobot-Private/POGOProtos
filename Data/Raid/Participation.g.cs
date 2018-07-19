@@ -25,17 +25,20 @@ namespace POGOProtos.Data.Raid {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihQT0dPUHJvdG9zL0RhdGEvUmFpZC9QYXJ0aWNpcGF0aW9uLnByb3RvEhRQ",
-            "T0dPUHJvdG9zLkRhdGEuUmFpZCL3AQoNUGFydGljaXBhdGlvbhIjChtpbmRp",
-            "dmlkdWFsX2RhbWFnZV9wb2tlYmFsbHMYASABKAUSHQoVdGVhbV9kYW1hZ2Vf",
-            "cG9rZWJhbGxzGAIgASgFEh8KF2d5bV9vd25lcnNoaXBfcG9rZWJhbGxzGAMg",
-            "ASgFEhYKDmJhc2VfcG9rZWJhbGxzGAQgASgFEhcKD2JsdWVfcGVyY2VudGFn",
-            "ZRgFIAEoARIWCg5yZWRfcGVyY2VudGFnZRgGIAEoARIZChF5ZWxsb3dfcGVy",
-            "Y2VudGFnZRgHIAEoARIdChVib251c19pdGVtX211bHRpcGxpZXIYCCABKAJi",
-            "BnByb3RvMw=="));
+            "T0dPUHJvdG9zLkRhdGEuUmFpZBovUE9HT1Byb3Rvcy9FbnVtcy9GcmllbmRz",
+            "aGlwTGV2ZWxNaWxlc3RvbmUucHJvdG8i7wIKDVBhcnRpY2lwYXRpb24SIwob",
+            "aW5kaXZpZHVhbF9kYW1hZ2VfcG9rZWJhbGxzGAEgASgFEh0KFXRlYW1fZGFt",
+            "YWdlX3Bva2ViYWxscxgCIAEoBRIfChdneW1fb3duZXJzaGlwX3Bva2ViYWxs",
+            "cxgDIAEoBRIWCg5iYXNlX3Bva2ViYWxscxgEIAEoBRIXCg9ibHVlX3BlcmNl",
+            "bnRhZ2UYBSABKAESFgoOcmVkX3BlcmNlbnRhZ2UYBiABKAESGQoReWVsbG93",
+            "X3BlcmNlbnRhZ2UYByABKAESHQoVYm9udXNfaXRlbV9tdWx0aXBsaWVyGAgg",
+            "ASgCElAKHGhpZ2hlc3RfZnJpZW5kc2hpcF9taWxlc3RvbmUYCSABKA4yKi5Q",
+            "T0dPUHJvdG9zLkVudW1zLkZyaWVuZHNoaXBMZXZlbE1pbGVzdG9uZRIkChxo",
+            "aWdoZXN0X2ZyaWVuZHNoaXBfcG9rZWJhbGxzGAogASgFYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.FriendshipLevelMilestoneReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Raid.Participation), global::POGOProtos.Data.Raid.Participation.Parser, new[]{ "IndividualDamagePokeballs", "TeamDamagePokeballs", "GymOwnershipPokeballs", "BasePokeballs", "BluePercentage", "RedPercentage", "YellowPercentage", "BonusItemMultiplier" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Raid.Participation), global::POGOProtos.Data.Raid.Participation.Parser, new[]{ "IndividualDamagePokeballs", "TeamDamagePokeballs", "GymOwnershipPokeballs", "BasePokeballs", "BluePercentage", "RedPercentage", "YellowPercentage", "BonusItemMultiplier", "HighestFriendshipMilestone", "HighestFriendshipPokeballs" }, null, null, null)
           }));
     }
     #endregion
@@ -75,6 +78,8 @@ namespace POGOProtos.Data.Raid {
       redPercentage_ = other.redPercentage_;
       yellowPercentage_ = other.yellowPercentage_;
       bonusItemMultiplier_ = other.bonusItemMultiplier_;
+      highestFriendshipMilestone_ = other.highestFriendshipMilestone_;
+      highestFriendshipPokeballs_ = other.highestFriendshipPokeballs_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -171,6 +176,28 @@ namespace POGOProtos.Data.Raid {
       }
     }
 
+    /// <summary>Field number for the "highest_friendship_milestone" field.</summary>
+    public const int HighestFriendshipMilestoneFieldNumber = 9;
+    private global::POGOProtos.Enums.FriendshipLevelMilestone highestFriendshipMilestone_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.FriendshipLevelMilestone HighestFriendshipMilestone {
+      get { return highestFriendshipMilestone_; }
+      set {
+        highestFriendshipMilestone_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "highest_friendship_pokeballs" field.</summary>
+    public const int HighestFriendshipPokeballsFieldNumber = 10;
+    private int highestFriendshipPokeballs_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int HighestFriendshipPokeballs {
+      get { return highestFriendshipPokeballs_; }
+      set {
+        highestFriendshipPokeballs_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Participation);
@@ -192,6 +219,8 @@ namespace POGOProtos.Data.Raid {
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RedPercentage, other.RedPercentage)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(YellowPercentage, other.YellowPercentage)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(BonusItemMultiplier, other.BonusItemMultiplier)) return false;
+      if (HighestFriendshipMilestone != other.HighestFriendshipMilestone) return false;
+      if (HighestFriendshipPokeballs != other.HighestFriendshipPokeballs) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -206,6 +235,8 @@ namespace POGOProtos.Data.Raid {
       if (RedPercentage != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RedPercentage);
       if (YellowPercentage != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(YellowPercentage);
       if (BonusItemMultiplier != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(BonusItemMultiplier);
+      if (HighestFriendshipMilestone != 0) hash ^= HighestFriendshipMilestone.GetHashCode();
+      if (HighestFriendshipPokeballs != 0) hash ^= HighestFriendshipPokeballs.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -251,6 +282,14 @@ namespace POGOProtos.Data.Raid {
         output.WriteRawTag(69);
         output.WriteFloat(BonusItemMultiplier);
       }
+      if (HighestFriendshipMilestone != 0) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) HighestFriendshipMilestone);
+      }
+      if (HighestFriendshipPokeballs != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(HighestFriendshipPokeballs);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -282,6 +321,12 @@ namespace POGOProtos.Data.Raid {
       }
       if (BonusItemMultiplier != 0F) {
         size += 1 + 4;
+      }
+      if (HighestFriendshipMilestone != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HighestFriendshipMilestone);
+      }
+      if (HighestFriendshipPokeballs != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HighestFriendshipPokeballs);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -317,6 +362,12 @@ namespace POGOProtos.Data.Raid {
       }
       if (other.BonusItemMultiplier != 0F) {
         BonusItemMultiplier = other.BonusItemMultiplier;
+      }
+      if (other.HighestFriendshipMilestone != 0) {
+        HighestFriendshipMilestone = other.HighestFriendshipMilestone;
+      }
+      if (other.HighestFriendshipPokeballs != 0) {
+        HighestFriendshipPokeballs = other.HighestFriendshipPokeballs;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -359,6 +410,14 @@ namespace POGOProtos.Data.Raid {
           }
           case 69: {
             BonusItemMultiplier = input.ReadFloat();
+            break;
+          }
+          case 72: {
+            highestFriendshipMilestone_ = (global::POGOProtos.Enums.FriendshipLevelMilestone) input.ReadEnum();
+            break;
+          }
+          case 80: {
+            HighestFriendshipPokeballs = input.ReadInt32();
             break;
           }
         }

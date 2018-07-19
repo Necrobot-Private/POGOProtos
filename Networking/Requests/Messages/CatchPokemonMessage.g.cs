@@ -78,7 +78,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       hitPokemon_ = other.hitPokemon_;
       spinModifier_ = other.spinModifier_;
       normalizedHitPosition_ = other.normalizedHitPosition_;
-      ArPlusValues = other.arPlusValues_ != null ? other.ArPlusValues.Clone() : null;
+      arPlusValues_ = other.arPlusValues_ != null ? other.arPlusValues_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

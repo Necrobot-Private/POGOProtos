@@ -72,8 +72,8 @@ namespace POGOProtos.Data.Quests {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ClientQuest(ClientQuest other) : this() {
-      Quest = other.quest_ != null ? other.Quest.Clone() : null;
-      QuestDisplay = other.questDisplay_ != null ? other.QuestDisplay.Clone() : null;
+      quest_ = other.quest_ != null ? other.quest_.Clone() : null;
+      questDisplay_ = other.questDisplay_ != null ? other.questDisplay_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

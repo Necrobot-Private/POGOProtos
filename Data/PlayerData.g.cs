@@ -88,17 +88,17 @@ namespace POGOProtos.Data {
       username_ = other.username_;
       team_ = other.team_;
       tutorialState_ = other.tutorialState_.Clone();
-      Avatar = other.avatar_ != null ? other.Avatar.Clone() : null;
+      avatar_ = other.avatar_ != null ? other.avatar_.Clone() : null;
       maxPokemonStorage_ = other.maxPokemonStorage_;
       maxItemStorage_ = other.maxItemStorage_;
-      DailyBonus = other.dailyBonus_ != null ? other.DailyBonus.Clone() : null;
-      EquippedBadge = other.equippedBadge_ != null ? other.EquippedBadge.Clone() : null;
-      ContactSettings = other.contactSettings_ != null ? other.ContactSettings.Clone() : null;
+      dailyBonus_ = other.dailyBonus_ != null ? other.dailyBonus_.Clone() : null;
+      equippedBadge_ = other.equippedBadge_ != null ? other.equippedBadge_.Clone() : null;
+      contactSettings_ = other.contactSettings_ != null ? other.contactSettings_.Clone() : null;
       currencies_ = other.currencies_.Clone();
       remainingCodenameClaims_ = other.remainingCodenameClaims_;
-      BuddyPokemon = other.buddyPokemon_ != null ? other.BuddyPokemon.Clone() : null;
+      buddyPokemon_ = other.buddyPokemon_ != null ? other.buddyPokemon_.Clone() : null;
       battleLockoutEndMs_ = other.battleLockoutEndMs_;
-      SecondaryPlayerAvatar = other.secondaryPlayerAvatar_ != null ? other.SecondaryPlayerAvatar.Clone() : null;
+      secondaryPlayerAvatar_ = other.secondaryPlayerAvatar_ != null ? other.secondaryPlayerAvatar_.Clone() : null;
       nameIsBlacklisted_ = other.nameIsBlacklisted_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

@@ -72,8 +72,8 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public EncounterTutorialCompleteResponse(EncounterTutorialCompleteResponse other) : this() {
       result_ = other.result_;
-      PokemonData = other.pokemonData_ != null ? other.PokemonData.Clone() : null;
-      CaptureAward = other.captureAward_ != null ? other.CaptureAward.Clone() : null;
+      pokemonData_ = other.pokemonData_ != null ? other.pokemonData_.Clone() : null;
+      captureAward_ = other.captureAward_ != null ? other.captureAward_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
