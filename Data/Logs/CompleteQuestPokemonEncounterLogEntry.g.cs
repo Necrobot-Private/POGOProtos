@@ -76,7 +76,7 @@ namespace POGOProtos.Data.Logs {
       pokedexNumber_ = other.pokedexNumber_;
       combatPoints_ = other.combatPoints_;
       pokemonId_ = other.pokemonId_;
-      PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
+      pokemonDisplay_ = other.pokemonDisplay_ != null ? other.pokemonDisplay_.Clone() : null;
       encounterType_ = other.encounterType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

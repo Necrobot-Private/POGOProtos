@@ -73,7 +73,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UseItemEncounterResponse(UseItemEncounterResponse other) : this() {
       status_ = other.status_;
-      CaptureProbability = other.captureProbability_ != null ? other.CaptureProbability.Clone() : null;
+      captureProbability_ = other.captureProbability_ != null ? other.captureProbability_.Clone() : null;
       activeItem_ = other.activeItem_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

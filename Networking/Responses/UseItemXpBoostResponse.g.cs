@@ -71,7 +71,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UseItemXpBoostResponse(UseItemXpBoostResponse other) : this() {
       result_ = other.result_;
-      AppliedItems = other.appliedItems_ != null ? other.AppliedItems.Clone() : null;
+      appliedItems_ = other.appliedItems_ != null ? other.appliedItems_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

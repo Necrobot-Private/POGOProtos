@@ -70,8 +70,8 @@ namespace POGOProtos.Map.Weather {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ClientWeather(ClientWeather other) : this() {
       s2CellId_ = other.s2CellId_;
-      DisplayWeather = other.displayWeather_ != null ? other.DisplayWeather.Clone() : null;
-      GameplayWeather = other.gameplayWeather_ != null ? other.GameplayWeather.Clone() : null;
+      displayWeather_ = other.displayWeather_ != null ? other.displayWeather_.Clone() : null;
+      gameplayWeather_ = other.gameplayWeather_ != null ? other.gameplayWeather_.Clone() : null;
       alerts_ = other.alerts_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

@@ -87,12 +87,12 @@ namespace POGOProtos.Data.Quests {
     public QuestReward(QuestReward other) : this() {
       type_ = other.type_;
       exp_ = other.exp_;
-      Item = other.item_ != null ? other.Item.Clone() : null;
+      item_ = other.item_ != null ? other.item_.Clone() : null;
       stardust_ = other.stardust_;
-      Candy = other.candy_ != null ? other.Candy.Clone() : null;
+      candy_ = other.candy_ != null ? other.candy_.Clone() : null;
       avatarTemplateId_ = other.avatarTemplateId_;
       questTemplateId_ = other.questTemplateId_;
-      PokemonEncounter = other.pokemonEncounter_ != null ? other.PokemonEncounter.Clone() : null;
+      pokemonEncounter_ = other.pokemonEncounter_ != null ? other.pokemonEncounter_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -757,7 +757,7 @@ namespace POGOProtos.Data.Quests {
         public PokemonEncounterReward(PokemonEncounterReward other) : this() {
           pokemonId_ = other.pokemonId_;
           useQuestPokemonEncounterDistribuition_ = other.useQuestPokemonEncounterDistribuition_;
-          PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
+          pokemonDisplay_ = other.pokemonDisplay_ != null ? other.pokemonDisplay_.Clone() : null;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 

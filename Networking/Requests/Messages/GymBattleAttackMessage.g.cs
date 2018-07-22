@@ -72,7 +72,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       gymId_ = other.gymId_;
       battleId_ = other.battleId_;
       attackerActions_ = other.attackerActions_.Clone();
-      LastRetrievedAction = other.lastRetrievedAction_ != null ? other.LastRetrievedAction.Clone() : null;
+      lastRetrievedAction_ = other.lastRetrievedAction_ != null ? other.lastRetrievedAction_.Clone() : null;
       playerLatDegrees_ = other.playerLatDegrees_;
       playerLngDegrees_ = other.playerLngDegrees_;
       timestampMs_ = other.timestampMs_;

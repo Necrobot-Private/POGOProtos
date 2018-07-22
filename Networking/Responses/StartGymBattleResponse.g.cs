@@ -87,10 +87,10 @@ namespace POGOProtos.Networking.Responses {
       battleStartTimestampMs_ = other.battleStartTimestampMs_;
       battleEndTimestampMs_ = other.battleEndTimestampMs_;
       battleId_ = other.battleId_;
-      Defender = other.defender_ != null ? other.Defender.Clone() : null;
-      BattleLog = other.battleLog_ != null ? other.BattleLog.Clone() : null;
-      Attacker = other.attacker_ != null ? other.Attacker.Clone() : null;
-      Battle = other.battle_ != null ? other.Battle.Clone() : null;
+      defender_ = other.defender_ != null ? other.defender_.Clone() : null;
+      battleLog_ = other.battleLog_ != null ? other.battleLog_.Clone() : null;
+      attacker_ = other.attacker_ != null ? other.attacker_.Clone() : null;
+      battle_ = other.battle_ != null ? other.battle_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

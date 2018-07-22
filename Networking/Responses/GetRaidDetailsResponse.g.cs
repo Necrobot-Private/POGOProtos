@@ -78,11 +78,11 @@ namespace POGOProtos.Networking.Responses {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetRaidDetailsResponse(GetRaidDetailsResponse other) : this() {
-      Lobby = other.lobby_ != null ? other.Lobby.Clone() : null;
-      RaidBattle = other.raidBattle_ != null ? other.RaidBattle.Clone() : null;
+      lobby_ = other.lobby_ != null ? other.lobby_.Clone() : null;
+      raidBattle_ = other.raidBattle_ != null ? other.raidBattle_.Clone() : null;
       playerCanJoinLobby_ = other.playerCanJoinLobby_;
       result_ = other.result_;
-      RaidInfo = other.raidInfo_ != null ? other.RaidInfo.Clone() : null;
+      raidInfo_ = other.raidInfo_ != null ? other.raidInfo_.Clone() : null;
       ticketUsed_ = other.ticketUsed_;
       freeTicketAvailable_ = other.freeTicketAvailable_;
       throwsRemaining_ = other.throwsRemaining_;

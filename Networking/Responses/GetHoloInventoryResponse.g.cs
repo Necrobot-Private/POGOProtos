@@ -66,7 +66,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetHoloInventoryResponse(GetHoloInventoryResponse other) : this() {
       success_ = other.success_;
-      InventoryDelta = other.inventoryDelta_ != null ? other.InventoryDelta.Clone() : null;
+      inventoryDelta_ = other.inventoryDelta_ != null ? other.inventoryDelta_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

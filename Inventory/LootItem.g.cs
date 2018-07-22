@@ -26,16 +26,18 @@ namespace POGOProtos.Inventory {
           string.Concat(
             "CiNQT0dPUHJvdG9zL0ludmVudG9yeS9Mb290SXRlbS5wcm90bxIUUE9HT1By",
             "b3Rvcy5JbnZlbnRvcnkaJlBPR09Qcm90b3MvSW52ZW50b3J5L0l0ZW0vSXRl",
-            "bUlkLnByb3RvGiBQT0dPUHJvdG9zL0VudW1zL1Bva2Vtb25JZC5wcm90byK2",
-            "AQoITG9vdEl0ZW0SLwoEaXRlbRgBIAEoDjIhLlBPR09Qcm90b3MuSW52ZW50",
-            "b3J5Lkl0ZW0uSXRlbUlkEhAKCHN0YXJkdXN0GAIgASgIEhAKCHBva2Vjb2lu",
-            "GAMgASgIEjIKDXBva2Vtb25fY2FuZHkYBCABKA4yGy5QT0dPUHJvdG9zLkVu",
-            "dW1zLlBva2Vtb25JZBINCgVjb3VudBgFIAEoBRISCgpleHBlcmllbmNlGAYg",
-            "ASgIYgZwcm90bzM="));
+            "bUlkLnByb3RvGiBQT0dPUHJvdG9zL0VudW1zL1Bva2Vtb25JZC5wcm90bxoh",
+            "UE9HT1Byb3Rvcy9EYXRhL1Bva2Vtb25EYXRhLnByb3RvIukBCghMb290SXRl",
+            "bRIvCgRpdGVtGAEgASgOMiEuUE9HT1Byb3Rvcy5JbnZlbnRvcnkuSXRlbS5J",
+            "dGVtSWQSEAoIc3RhcmR1c3QYAiABKAgSEAoIcG9rZWNvaW4YAyABKAgSMgoN",
+            "cG9rZW1vbl9jYW5keRgEIAEoDjIbLlBPR09Qcm90b3MuRW51bXMuUG9rZW1v",
+            "bklkEg0KBWNvdW50GAUgASgFEhIKCmV4cGVyaWVuY2UYBiABKAgSMQoLcG9r",
+            "ZW1vbl9lZ2cYByABKAsyHC5QT0dPUHJvdG9zLkRhdGEuUG9rZW1vbkRhdGFi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Data.PokemonDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Inventory.LootItem), global::POGOProtos.Inventory.LootItem.Parser, new[]{ "Item", "Stardust", "Pokecoin", "PokemonCandy", "Count", "Experience" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Inventory.LootItem), global::POGOProtos.Inventory.LootItem.Parser, new[]{ "Item", "Stardust", "Pokecoin", "PokemonCandy", "Count", "Experience", "PokemonEgg" }, null, null, null)
           }));
     }
     #endregion
@@ -73,6 +75,7 @@ namespace POGOProtos.Inventory {
       pokemonCandy_ = other.pokemonCandy_;
       count_ = other.count_;
       experience_ = other.experience_;
+      pokemonEgg_ = other.pokemonEgg_ != null ? other.pokemonEgg_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -147,6 +150,17 @@ namespace POGOProtos.Inventory {
       }
     }
 
+    /// <summary>Field number for the "pokemon_egg" field.</summary>
+    public const int PokemonEggFieldNumber = 7;
+    private global::POGOProtos.Data.PokemonData pokemonEgg_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.PokemonData PokemonEgg {
+      get { return pokemonEgg_; }
+      set {
+        pokemonEgg_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LootItem);
@@ -166,6 +180,7 @@ namespace POGOProtos.Inventory {
       if (PokemonCandy != other.PokemonCandy) return false;
       if (Count != other.Count) return false;
       if (Experience != other.Experience) return false;
+      if (!object.Equals(PokemonEgg, other.PokemonEgg)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -178,6 +193,7 @@ namespace POGOProtos.Inventory {
       if (PokemonCandy != 0) hash ^= PokemonCandy.GetHashCode();
       if (Count != 0) hash ^= Count.GetHashCode();
       if (Experience != false) hash ^= Experience.GetHashCode();
+      if (pokemonEgg_ != null) hash ^= PokemonEgg.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -215,6 +231,10 @@ namespace POGOProtos.Inventory {
         output.WriteRawTag(48);
         output.WriteBool(Experience);
       }
+      if (pokemonEgg_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(PokemonEgg);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -240,6 +260,9 @@ namespace POGOProtos.Inventory {
       }
       if (Experience != false) {
         size += 1 + 1;
+      }
+      if (pokemonEgg_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PokemonEgg);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -269,6 +292,12 @@ namespace POGOProtos.Inventory {
       }
       if (other.Experience != false) {
         Experience = other.Experience;
+      }
+      if (other.pokemonEgg_ != null) {
+        if (pokemonEgg_ == null) {
+          pokemonEgg_ = new global::POGOProtos.Data.PokemonData();
+        }
+        PokemonEgg.MergeFrom(other.PokemonEgg);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -303,6 +332,13 @@ namespace POGOProtos.Inventory {
           }
           case 48: {
             Experience = input.ReadBool();
+            break;
+          }
+          case 58: {
+            if (pokemonEgg_ == null) {
+              pokemonEgg_ = new global::POGOProtos.Data.PokemonData();
+            }
+            input.ReadMessage(pokemonEgg_);
             break;
           }
         }

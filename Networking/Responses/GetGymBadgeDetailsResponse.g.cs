@@ -67,8 +67,8 @@ namespace POGOProtos.Networking.Responses {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetGymBadgeDetailsResponse(GetGymBadgeDetailsResponse other) : this() {
-      GymBadge = other.gymBadge_ != null ? other.GymBadge.Clone() : null;
-      GymDefender = other.gymDefender_ != null ? other.GymDefender.Clone() : null;
+      gymBadge_ = other.gymBadge_ != null ? other.gymBadge_.Clone() : null;
+      gymDefender_ = other.gymDefender_ != null ? other.gymDefender_.Clone() : null;
       success_ = other.success_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

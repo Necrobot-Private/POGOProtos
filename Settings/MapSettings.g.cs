@@ -25,18 +25,19 @@ namespace POGOProtos.Settings {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiVQT0dPUHJvdG9zL1NldHRpbmdzL01hcFNldHRpbmdzLnByb3RvEhNQT0dP",
-            "UHJvdG9zLlNldHRpbmdzIrICCgtNYXBTZXR0aW5ncxIdChVwb2tlbW9uX3Zp",
+            "UHJvdG9zLlNldHRpbmdzIvcCCgtNYXBTZXR0aW5ncxIdChVwb2tlbW9uX3Zp",
             "c2libGVfcmFuZ2UYASABKAESHQoVcG9rZV9uYXZfcmFuZ2VfbWV0ZXJzGAIg",
             "ASgBEh4KFmVuY291bnRlcl9yYW5nZV9tZXRlcnMYAyABKAESKwojZ2V0X21h",
             "cF9vYmplY3RzX21pbl9yZWZyZXNoX3NlY29uZHMYBCABKAISKwojZ2V0X21h",
             "cF9vYmplY3RzX21heF9yZWZyZXNoX3NlY29uZHMYBSABKAISKwojZ2V0X21h",
             "cF9vYmplY3RzX21pbl9kaXN0YW5jZV9tZXRlcnMYBiABKAISGwoTZ29vZ2xl",
             "X21hcHNfYXBpX2tleRgHIAEoCRIhChltaW5fbmVhcmJ5X2hpZGVfc2lnaHRp",
-            "bmdzGAggASgFYgZwcm90bzM="));
+            "bmdzGAggASgFEh4KFmVuYWJsZV9zcGVjaWFsX3dlYXRoZXIYCSABKAgSIwob",
+            "c3BlY2lhbF93ZWF0aGVyX3Byb2JhYmlsaXR5GAogASgCYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.MapSettings), global::POGOProtos.Settings.MapSettings.Parser, new[]{ "PokemonVisibleRange", "PokeNavRangeMeters", "EncounterRangeMeters", "GetMapObjectsMinRefreshSeconds", "GetMapObjectsMaxRefreshSeconds", "GetMapObjectsMinDistanceMeters", "GoogleMapsApiKey", "MinNearbyHideSightings" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.MapSettings), global::POGOProtos.Settings.MapSettings.Parser, new[]{ "PokemonVisibleRange", "PokeNavRangeMeters", "EncounterRangeMeters", "GetMapObjectsMinRefreshSeconds", "GetMapObjectsMaxRefreshSeconds", "GetMapObjectsMinDistanceMeters", "GoogleMapsApiKey", "MinNearbyHideSightings", "EnableSpecialWeather", "SpecialWeatherProbability" }, null, null, null)
           }));
     }
     #endregion
@@ -76,6 +77,8 @@ namespace POGOProtos.Settings {
       getMapObjectsMinDistanceMeters_ = other.getMapObjectsMinDistanceMeters_;
       googleMapsApiKey_ = other.googleMapsApiKey_;
       minNearbyHideSightings_ = other.minNearbyHideSightings_;
+      enableSpecialWeather_ = other.enableSpecialWeather_;
+      specialWeatherProbability_ = other.specialWeatherProbability_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -172,6 +175,28 @@ namespace POGOProtos.Settings {
       }
     }
 
+    /// <summary>Field number for the "enable_special_weather" field.</summary>
+    public const int EnableSpecialWeatherFieldNumber = 9;
+    private bool enableSpecialWeather_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool EnableSpecialWeather {
+      get { return enableSpecialWeather_; }
+      set {
+        enableSpecialWeather_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "special_weather_probability" field.</summary>
+    public const int SpecialWeatherProbabilityFieldNumber = 10;
+    private float specialWeatherProbability_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float SpecialWeatherProbability {
+      get { return specialWeatherProbability_; }
+      set {
+        specialWeatherProbability_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MapSettings);
@@ -193,6 +218,8 @@ namespace POGOProtos.Settings {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GetMapObjectsMinDistanceMeters, other.GetMapObjectsMinDistanceMeters)) return false;
       if (GoogleMapsApiKey != other.GoogleMapsApiKey) return false;
       if (MinNearbyHideSightings != other.MinNearbyHideSightings) return false;
+      if (EnableSpecialWeather != other.EnableSpecialWeather) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SpecialWeatherProbability, other.SpecialWeatherProbability)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -207,6 +234,8 @@ namespace POGOProtos.Settings {
       if (GetMapObjectsMinDistanceMeters != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GetMapObjectsMinDistanceMeters);
       if (GoogleMapsApiKey.Length != 0) hash ^= GoogleMapsApiKey.GetHashCode();
       if (MinNearbyHideSightings != 0) hash ^= MinNearbyHideSightings.GetHashCode();
+      if (EnableSpecialWeather != false) hash ^= EnableSpecialWeather.GetHashCode();
+      if (SpecialWeatherProbability != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SpecialWeatherProbability);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -252,6 +281,14 @@ namespace POGOProtos.Settings {
         output.WriteRawTag(64);
         output.WriteInt32(MinNearbyHideSightings);
       }
+      if (EnableSpecialWeather != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(EnableSpecialWeather);
+      }
+      if (SpecialWeatherProbability != 0F) {
+        output.WriteRawTag(85);
+        output.WriteFloat(SpecialWeatherProbability);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -283,6 +320,12 @@ namespace POGOProtos.Settings {
       }
       if (MinNearbyHideSightings != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MinNearbyHideSightings);
+      }
+      if (EnableSpecialWeather != false) {
+        size += 1 + 1;
+      }
+      if (SpecialWeatherProbability != 0F) {
+        size += 1 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -318,6 +361,12 @@ namespace POGOProtos.Settings {
       }
       if (other.MinNearbyHideSightings != 0) {
         MinNearbyHideSightings = other.MinNearbyHideSightings;
+      }
+      if (other.EnableSpecialWeather != false) {
+        EnableSpecialWeather = other.EnableSpecialWeather;
+      }
+      if (other.SpecialWeatherProbability != 0F) {
+        SpecialWeatherProbability = other.SpecialWeatherProbability;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -360,6 +409,14 @@ namespace POGOProtos.Settings {
           }
           case 64: {
             MinNearbyHideSightings = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            EnableSpecialWeather = input.ReadBool();
+            break;
+          }
+          case 85: {
+            SpecialWeatherProbability = input.ReadFloat();
             break;
           }
         }

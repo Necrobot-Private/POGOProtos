@@ -71,7 +71,7 @@ namespace POGOProtos.Networking.Requests.Messages {
       gymId_ = other.gymId_;
       battleId_ = other.battleId_;
       attackActions_ = other.attackActions_.Clone();
-      LastRetrievedAction = other.lastRetrievedAction_ != null ? other.LastRetrievedAction.Clone() : null;
+      lastRetrievedAction_ = other.lastRetrievedAction_ != null ? other.lastRetrievedAction_.Clone() : null;
       playerLatitude_ = other.playerLatitude_;
       playerLongitude_ = other.playerLongitude_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);

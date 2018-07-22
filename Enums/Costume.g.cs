@@ -25,9 +25,10 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5QT0dPUHJvdG9zL0VudW1zL0Nvc3R1bWUucHJvdG8SEFBPR09Qcm90b3Mu",
-            "RW51bXMqbQoHQ29zdHVtZRIRCg1DT1NUVU1FX1VOU0VUEAASEAoMSE9MSURB",
+            "RW51bXMqfgoHQ29zdHVtZRIRCg1DT1NUVU1FX1VOU0VUEAASEAoMSE9MSURB",
             "WV8yMDE2EAESDwoLQU5OSVZFUlNBUlkQAhIYChRPTkVfWUVBUl9BTk5JVkVS",
-            "U0FSWRADEhIKDkhBTExPV0VFTl8yMDE3EARiBnByb3RvMw=="));
+            "U0FSWRADEhIKDkhBTExPV0VFTl8yMDE3EAQSDwoLU1VNTUVSXzIwMTgQBWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.Costume), }, null));
@@ -42,6 +43,7 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("ANNIVERSARY")] Anniversary = 2,
     [pbr::OriginalName("ONE_YEAR_ANNIVERSARY")] OneYearAnniversary = 3,
     [pbr::OriginalName("HALLOWEEN_2017")] Halloween2017 = 4,
+    [pbr::OriginalName("SUMMER_2018")] Summer2018 = 5,
   }
 
   #endregion

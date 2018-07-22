@@ -73,8 +73,8 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GymBattleAttackResponse(GymBattleAttackResponse other) : this() {
       result_ = other.result_;
-      BattleUpdate = other.battleUpdate_ != null ? other.BattleUpdate.Clone() : null;
-      GymBadge = other.gymBadge_ != null ? other.GymBadge.Clone() : null;
+      battleUpdate_ = other.battleUpdate_ != null ? other.battleUpdate_.Clone() : null;
+      gymBadge_ = other.gymBadge_ != null ? other.gymBadge_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

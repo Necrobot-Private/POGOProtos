@@ -73,7 +73,7 @@ namespace POGOProtos.Map.Pokemon {
       encounterId_ = other.encounterId_;
       fortId_ = other.fortId_;
       fortImageUrl_ = other.fortImageUrl_;
-      PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
+      pokemonDisplay_ = other.pokemonDisplay_ != null ? other.pokemonDisplay_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

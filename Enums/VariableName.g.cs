@@ -25,7 +25,7 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNQT0dPUHJvdG9zL0VudW1zL1ZhcmlhYmxlTmFtZS5wcm90bxIQUE9HT1By",
-            "b3Rvcy5FbnVtcyqvBAoMVmFyaWFibGVOYW1lEhYKElVOU0VUX1ZhcmlhYmxl",
+            "b3Rvcy5FbnVtcyqWBgoMVmFyaWFibGVOYW1lEhYKElVOU0VUX1ZhcmlhYmxl",
             "TmFtZRAAEg0KCUNPREVfTkFNRRABEggKBFRFQU0QAhIJCgVMRVZFTBADEg4K",
             "CkVYUEVSSUVOQ0UQBBIUChBQT0tFQ09JTl9CQUxBTkNFEAUSFAoQU1RBUkRV",
             "U1RfQkFMQU5DRRAGEgkKBUVNQUlMEAcSEAoMTE9HSU5fTUVUSE9EEAgSCwoG",
@@ -37,7 +37,13 @@ namespace POGOProtos.Enums {
             "REdFX0xFVkVMX1VQEPIHEhUKEFBPS0VDT0lOX0FXQVJERUQQ8wcSGwoWUE9L",
             "RUNPSU5fQVdBUkRFRF9UT0RBWRD0BxIXChJNQVhfREFJTFlfUE9LRUNPSU4Q",
             "9QcSEAoLQkFUVExFU19XT04Q9gcSEQoMQkFUVExFU19MT1NUEPcHEhQKD0RF",
-            "UExPWUVEX01JTExJUxD4BxIOCglSQUlEX1NFRUQQ+QdiBnByb3RvMw=="));
+            "UExPWUVEX01JTExJUxD4BxIOCglSQUlEX1NFRUQQ+QcSJQogRVhDTFVTSVZF",
+            "X1JBSURfQ0FOQ0VMTEFUSU9OX0lORk8Q+gcSFAoPR0lGVEJPWF9ERVRBSUxT",
+            "EPsHEhIKDUZSSUVORF9BVkFUQVIQ/AcSEAoLRlJJRU5EX1RFQU0Q/QcSFAoP",
+            "RlJJRU5EX0NPREVOQU1FEP4HEhQKD0dJRlRfTE9PVF9JVEVNUxD/BxINCghH",
+            "SUZUX0VHRxCACBIoCiNGUklFTkRTSElQX01JTEVTVE9ORV9SRVdBUkRfREVU",
+            "QUlMUxCBCBIdChhGUklFTkRTSElQX0xFVkVMX0RJU1BMQVkQgghiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.VariableName), }, null));
@@ -74,6 +80,15 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("BATTLES_LOST")] BattlesLost = 1015,
     [pbr::OriginalName("DEPLOYED_MILLIS")] DeployedMillis = 1016,
     [pbr::OriginalName("RAID_SEED")] RaidSeed = 1017,
+    [pbr::OriginalName("EXCLUSIVE_RAID_CANCELLATION_INFO")] ExclusiveRaidCancellationInfo = 1018,
+    [pbr::OriginalName("GIFTBOX_DETAILS")] GiftboxDetails = 1019,
+    [pbr::OriginalName("FRIEND_AVATAR")] FriendAvatar = 1020,
+    [pbr::OriginalName("FRIEND_TEAM")] FriendTeam = 1021,
+    [pbr::OriginalName("FRIEND_CODENAME")] FriendCodename = 1022,
+    [pbr::OriginalName("GIFT_LOOT_ITEMS")] GiftLootItems = 1023,
+    [pbr::OriginalName("GIFT_EGG")] GiftEgg = 1024,
+    [pbr::OriginalName("FRIENDSHIP_MILESTONE_REWARD_DETAILS")] FriendshipMilestoneRewardDetails = 1025,
+    [pbr::OriginalName("FRIENDSHIP_LEVEL_DISPLAY")] FriendshipLevelDisplay = 1026,
   }
 
   #endregion

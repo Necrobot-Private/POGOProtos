@@ -72,7 +72,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AttackRaidBattleResponse(AttackRaidBattleResponse other) : this() {
       result_ = other.result_;
-      BattleUpdate = other.battleUpdate_ != null ? other.BattleUpdate.Clone() : null;
+      battleUpdate_ = other.battleUpdate_ != null ? other.battleUpdate_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

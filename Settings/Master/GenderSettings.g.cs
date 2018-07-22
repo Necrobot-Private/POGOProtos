@@ -68,7 +68,7 @@ namespace POGOProtos.Settings.Master {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GenderSettings(GenderSettings other) : this() {
       pokemon_ = other.pokemon_;
-      Gender = other.gender_ != null ? other.Gender.Clone() : null;
+      gender_ = other.gender_ != null ? other.gender_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

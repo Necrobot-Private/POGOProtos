@@ -26,29 +26,76 @@ namespace POGOProtos.Networking.Requests.Messages {
           string.Concat(
             "CkpQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVxdWVzdHMvTWVzc2FnZXMvUGxh",
             "dGZvcm1DbGllbnRBY3Rpb25zTWVzc2FnZS5wcm90bxInUE9HT1Byb3Rvcy5O",
-            "ZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzIu0CCh9SZWdpc3RlclB1c2hO",
-            "b3RpZmljYXRpb25NZXNzYWdlEmQKCWFwbl90b2tlbhgBIAEoCzJRLlBPR09Q",
-            "cm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cy5NZXNzYWdlcy5SZWdpc3RlclB1",
-            "c2hOb3RpZmljYXRpb25NZXNzYWdlLkFwblRva2VuEmQKCWdjbV90b2tlbhgC",
-            "IAEoCzJRLlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cy5NZXNzYWdl",
-            "cy5SZWdpc3RlclB1c2hOb3RpZmljYXRpb25NZXNzYWdlLkdjbVRva2VuGlkK",
-            "CEFwblRva2VuEhcKD3JlZ2lzdHJhdGlvbl9pZBgBIAEoCRIZChFidW5kbGVf",
-            "aWRlbnRpZmllchgCIAEoCRIZChFwYXlsb2FkX2J5dGVfc2l6ZRgDIAEoBRoj",
-            "CghHY21Ub2tlbhIXCg9yZWdpc3RyYXRpb25faWQYASABKAki9QEKH1VwZGF0",
-            "ZU5vdGlmaWNhdGlvblN0YXR1c01lc3NhZ2USGAoQbm90aWZpY2F0aW9uX2lk",
-            "cxgBIAMoCRIbChNjcmVhdGVfdGltZXN0YW1wX21zGAIgAygDEmkKBXN0YXRl",
-            "GAMgASgOMlouUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlcXVlc3RzLk1lc3Nh",
-            "Z2VzLlVwZGF0ZU5vdGlmaWNhdGlvblN0YXR1c01lc3NhZ2UuTm90aWZpY2F0",
-            "aW9uU3RhdGUiMAoRTm90aWZpY2F0aW9uU3RhdGUSDwoLVU5TRVRfU1RBVEUQ",
-            "ABIKCgZWSUVXRUQQASI7CiVPcHRPdXRQdXNoTm90aWZpY2F0aW9uQ2F0ZWdv",
-            "cnlNZXNzYWdlEhIKCmNhdGVnb3JpZXMYASADKAliBnByb3RvMw=="));
+            "ZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzGi1QT0dPUHJvdG9zL0RhdGEv",
+            "UGxheWVyL1BsYXllclJlcHV0YXRpb24ucHJvdG8aJ1BPR09Qcm90b3MvRGF0",
+            "YS9Mb2dpbi9Mb2dpbkRldGFpbC5wcm90bxonUE9HT1Byb3Rvcy9FbnVtcy9J",
+            "ZGVudGl0eVByb3ZpZGVyLnByb3RvIu0CCh9SZWdpc3RlclB1c2hOb3RpZmlj",
+            "YXRpb25NZXNzYWdlEmQKCWFwbl90b2tlbhgBIAEoCzJRLlBPR09Qcm90b3Mu",
+            "TmV0d29ya2luZy5SZXF1ZXN0cy5NZXNzYWdlcy5SZWdpc3RlclB1c2hOb3Rp",
+            "ZmljYXRpb25NZXNzYWdlLkFwblRva2VuEmQKCWdjbV90b2tlbhgCIAEoCzJR",
+            "LlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXF1ZXN0cy5NZXNzYWdlcy5SZWdp",
+            "c3RlclB1c2hOb3RpZmljYXRpb25NZXNzYWdlLkdjbVRva2VuGlkKCEFwblRv",
+            "a2VuEhcKD3JlZ2lzdHJhdGlvbl9pZBgBIAEoCRIZChFidW5kbGVfaWRlbnRp",
+            "ZmllchgCIAEoCRIZChFwYXlsb2FkX2J5dGVfc2l6ZRgDIAEoBRojCghHY21U",
+            "b2tlbhIXCg9yZWdpc3RyYXRpb25faWQYASABKAki9QEKH1VwZGF0ZU5vdGlm",
+            "aWNhdGlvblN0YXR1c01lc3NhZ2USGAoQbm90aWZpY2F0aW9uX2lkcxgBIAMo",
+            "CRIbChNjcmVhdGVfdGltZXN0YW1wX21zGAIgAygDEmkKBXN0YXRlGAMgASgO",
+            "MlouUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzLlVw",
+            "ZGF0ZU5vdGlmaWNhdGlvblN0YXR1c01lc3NhZ2UuTm90aWZpY2F0aW9uU3Rh",
+            "dGUiMAoRTm90aWZpY2F0aW9uU3RhdGUSDwoLVU5TRVRfU1RBVEUQABIKCgZW",
+            "SUVXRUQQASI7CiVPcHRPdXRQdXNoTm90aWZpY2F0aW9uQ2F0ZWdvcnlNZXNz",
+            "YWdlEhIKCmNhdGVnb3JpZXMYASADKAkiKQoVUmVkZWVtUGFzc2NvZGVNZXNz",
+            "YWdlEhAKCHBhc3Njb2RlGAEgASgJIqkCChBBZGROZXdQb2lNZXNzYWdlEg0K",
+            "BXRpdGxlGAEgASgJEhgKEGxvbmdfZGVzY3JpcHRpb24YAiABKAkSGgoSaW1h",
+            "Z2VfZ3NfZmlsZV9wYXRoGAMgASgJEg4KBmxhdF9lNhgEIAEoBRIOCgZsbmdf",
+            "ZTYYBSABKAUSGQoRaW1hZ2Vfc2VydmluZ191cmwYBiABKAkSDwoHdXNlcl9p",
+            "ZBgHIAEoCRIXCg9wbGF5ZXJfbGFuZ3VhZ2UYCCABKAkSFgoOZ2FtZV91bmlx",
+            "dWVfaWQYCSABKAkSDgoGYXBwX2lkGAogASgJEkMKEXBsYXllcl9yZXB1dGF0",
+            "aW9uGAsgASgLMiguUE9HT1Byb3Rvcy5EYXRhLlBsYXllci5QbGF5ZXJSZXB1",
+            "dGF0aW9uIkkKGFByb3h5U29jaWFsQWN0aW9uTWVzc2FnZRIOCgZhY3Rpb24Y",
+            "ASABKA0SDAoEaG9zdBgCIAEoCRIPCgdwYXlsb2FkGAMgASgMIo4BCh5HZXRB",
+            "dmFpbGFibGVTdWJtaXNzaW9uc01lc3NhZ2USDwoHdXNlcl9pZBgBIAEoCRJD",
+            "ChFwbGF5ZXJfcmVwdXRhdGlvbhgCIAEoCzIoLlBPR09Qcm90b3MuRGF0YS5Q",
+            "bGF5ZXIuUGxheWVyUmVwdXRhdGlvbhIWCg5nYW1lX3VuaXF1ZV9pZBgDIAEo",
+            "CSLtAQofUHVzaE5vdGlmaWNhdGlvblJlZ2lzdHJ5TWVzc2FnZRJkCglhcG5f",
+            "dG9rZW4YASABKAsyUS5QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVxdWVzdHMu",
+            "TWVzc2FnZXMuUmVnaXN0ZXJQdXNoTm90aWZpY2F0aW9uTWVzc2FnZS5BcG5U",
+            "b2tlbhJkCglnY21fdG9rZW4YAiABKAsyUS5QT0dPUHJvdG9zLk5ldHdvcmtp",
+            "bmcuUmVxdWVzdHMuTWVzc2FnZXMuUmVnaXN0ZXJQdXNoTm90aWZpY2F0aW9u",
+            "TWVzc2FnZS5HY21Ub2tlbiJtChVBZGRMb2dpbkFjdGlvbk1lc3NhZ2USPQoR",
+            "aWRlbnRpdHlfcHJvdmlkZXIYASABKA4yIi5QT0dPUHJvdG9zLkVudW1zLklk",
+            "ZW50aXR5UHJvdmlkZXISFQoNaW5uZXJfbWVzc2FnZRgCIAEoDCJlChhSZW1v",
+            "dmVMb2dpbkFjdGlvbk1lc3NhZ2USDwoHc3VjY2VzcxgBIAEoCBI4Cgxsb2dp",
+            "bl9kZXRhaWwYAiADKAsyIi5QT0dPUHJvdG9zLkRhdGEuTG9naW4uTG9naW5E",
+            "ZXRhaWwirAIKE1N1Ym1pdE5ld1BvaU1lc3NhZ2USDQoFdGl0bGUYASABKAkS",
+            "GAoQbG9uZ19kZXNjcmlwdGlvbhgCIAEoCRIaChJpbWFnZV9nc19maWxlX3Bh",
+            "dGgYAyABKAkSDgoGbGF0X2U2GAQgASgFEg4KBmxuZ19lNhgFIAEoBRIZChFp",
+            "bWFnZV9zZXJ2aW5nX3VybBgGIAEoCRIPCgd1c2VyX2lkGAcgASgJEhcKD3Bs",
+            "YXllcl9sYW5ndWFnZRgIIAEoCRIWCg5nYW1lX3VuaXF1ZV9pZBgJIAEoCRIO",
+            "CgZhcHBfaWQYCiABKAkSQwoRcGxheWVyX3JlcHV0YXRpb24YCyABKAsyKC5Q",
+            "T0dPUHJvdG9zLkRhdGEuUGxheWVyLlBsYXllclJlcHV0YXRpb24iQwoaVXBs",
+            "b2FkUG9pUGhvdG9CeVVybE1lc3NhZ2USEgoKcmVxdWVzdF9pZBgBIAEoCRIR",
+            "CglpbWFnZV91cmwYAiABKAkidAoLUGluZ01lc3NhZ2USGwoTcmVzcG9uc2Vf",
+            "c2l6ZV9ieXRlcxgBIAEoBRIcChRyYW5kb21fcmVxdWVzdF9ieXRlcxgCIAEo",
+            "CRIqCiJ1c2VfY2FjaGVfZm9yX3JhbmRvbV9yZXF1ZXN0X2J5dGVzGAMgASgI",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.PlayerReputationReflection.Descriptor, global::POGOProtos.Data.Login.LoginDetailReflection.Descriptor, global::POGOProtos.Enums.IdentityProviderReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage), global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Parser, new[]{ "ApnToken", "GcmToken" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.ApnToken), global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.ApnToken.Parser, new[]{ "RegistrationId", "BundleIdentifier", "PayloadByteSize" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.GcmToken), global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.GcmToken.Parser, new[]{ "RegistrationId" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.UpdateNotificationStatusMessage), global::POGOProtos.Networking.Requests.Messages.UpdateNotificationStatusMessage.Parser, new[]{ "NotificationIds", "CreateTimestampMs", "State" }, null, new[]{ typeof(global::POGOProtos.Networking.Requests.Messages.UpdateNotificationStatusMessage.Types.NotificationState) }, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.OptOutPushNotificationCategoryMessage), global::POGOProtos.Networking.Requests.Messages.OptOutPushNotificationCategoryMessage.Parser, new[]{ "Categories" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.OptOutPushNotificationCategoryMessage), global::POGOProtos.Networking.Requests.Messages.OptOutPushNotificationCategoryMessage.Parser, new[]{ "Categories" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.RedeemPasscodeMessage), global::POGOProtos.Networking.Requests.Messages.RedeemPasscodeMessage.Parser, new[]{ "Passcode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.AddNewPoiMessage), global::POGOProtos.Networking.Requests.Messages.AddNewPoiMessage.Parser, new[]{ "Title", "LongDescription", "ImageGsFilePath", "LatE6", "LngE6", "ImageServingUrl", "UserId", "PlayerLanguage", "GameUniqueId", "AppId", "PlayerReputation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.ProxySocialActionMessage), global::POGOProtos.Networking.Requests.Messages.ProxySocialActionMessage.Parser, new[]{ "Action", "Host", "Payload" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.GetAvailableSubmissionsMessage), global::POGOProtos.Networking.Requests.Messages.GetAvailableSubmissionsMessage.Parser, new[]{ "UserId", "PlayerReputation", "GameUniqueId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.PushNotificationRegistryMessage), global::POGOProtos.Networking.Requests.Messages.PushNotificationRegistryMessage.Parser, new[]{ "ApnToken", "GcmToken" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.AddLoginActionMessage), global::POGOProtos.Networking.Requests.Messages.AddLoginActionMessage.Parser, new[]{ "IdentityProvider", "InnerMessage" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.RemoveLoginActionMessage), global::POGOProtos.Networking.Requests.Messages.RemoveLoginActionMessage.Parser, new[]{ "Success", "LoginDetail" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.SubmitNewPoiMessage), global::POGOProtos.Networking.Requests.Messages.SubmitNewPoiMessage.Parser, new[]{ "Title", "LongDescription", "ImageGsFilePath", "LatE6", "LngE6", "ImageServingUrl", "UserId", "PlayerLanguage", "GameUniqueId", "AppId", "PlayerReputation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.UploadPoiPhotoByUrlMessage), global::POGOProtos.Networking.Requests.Messages.UploadPoiPhotoByUrlMessage.Parser, new[]{ "RequestId", "ImageUrl" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Requests.Messages.PingMessage), global::POGOProtos.Networking.Requests.Messages.PingMessage.Parser, new[]{ "ResponseSizeBytes", "RandomRequestBytes", "UseCacheForRandomRequestBytes" }, null, null, null)
           }));
     }
     #endregion
@@ -80,8 +127,8 @@ namespace POGOProtos.Networking.Requests.Messages {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RegisterPushNotificationMessage(RegisterPushNotificationMessage other) : this() {
-      ApnToken = other.apnToken_ != null ? other.ApnToken.Clone() : null;
-      GcmToken = other.gcmToken_ != null ? other.GcmToken.Clone() : null;
+      apnToken_ = other.apnToken_ != null ? other.apnToken_.Clone() : null;
+      gcmToken_ = other.gcmToken_ != null ? other.gcmToken_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -840,6 +887,2158 @@ namespace POGOProtos.Networking.Requests.Messages {
             break;
           case 10: {
             categories_.AddEntriesFrom(input, _repeated_categories_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RedeemPasscodeMessage : pb::IMessage<RedeemPasscodeMessage> {
+    private static readonly pb::MessageParser<RedeemPasscodeMessage> _parser = new pb::MessageParser<RedeemPasscodeMessage>(() => new RedeemPasscodeMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RedeemPasscodeMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RedeemPasscodeMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RedeemPasscodeMessage(RedeemPasscodeMessage other) : this() {
+      passcode_ = other.passcode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RedeemPasscodeMessage Clone() {
+      return new RedeemPasscodeMessage(this);
+    }
+
+    /// <summary>Field number for the "passcode" field.</summary>
+    public const int PasscodeFieldNumber = 1;
+    private string passcode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Passcode {
+      get { return passcode_; }
+      set {
+        passcode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RedeemPasscodeMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RedeemPasscodeMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Passcode != other.Passcode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Passcode.Length != 0) hash ^= Passcode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Passcode.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Passcode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Passcode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Passcode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RedeemPasscodeMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Passcode.Length != 0) {
+        Passcode = other.Passcode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Passcode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class AddNewPoiMessage : pb::IMessage<AddNewPoiMessage> {
+    private static readonly pb::MessageParser<AddNewPoiMessage> _parser = new pb::MessageParser<AddNewPoiMessage>(() => new AddNewPoiMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddNewPoiMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddNewPoiMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddNewPoiMessage(AddNewPoiMessage other) : this() {
+      title_ = other.title_;
+      longDescription_ = other.longDescription_;
+      imageGsFilePath_ = other.imageGsFilePath_;
+      latE6_ = other.latE6_;
+      lngE6_ = other.lngE6_;
+      imageServingUrl_ = other.imageServingUrl_;
+      userId_ = other.userId_;
+      playerLanguage_ = other.playerLanguage_;
+      gameUniqueId_ = other.gameUniqueId_;
+      appId_ = other.appId_;
+      playerReputation_ = other.playerReputation_ != null ? other.playerReputation_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddNewPoiMessage Clone() {
+      return new AddNewPoiMessage(this);
+    }
+
+    /// <summary>Field number for the "title" field.</summary>
+    public const int TitleFieldNumber = 1;
+    private string title_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Title {
+      get { return title_; }
+      set {
+        title_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "long_description" field.</summary>
+    public const int LongDescriptionFieldNumber = 2;
+    private string longDescription_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LongDescription {
+      get { return longDescription_; }
+      set {
+        longDescription_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "image_gs_file_path" field.</summary>
+    public const int ImageGsFilePathFieldNumber = 3;
+    private string imageGsFilePath_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ImageGsFilePath {
+      get { return imageGsFilePath_; }
+      set {
+        imageGsFilePath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "lat_e6" field.</summary>
+    public const int LatE6FieldNumber = 4;
+    private int latE6_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int LatE6 {
+      get { return latE6_; }
+      set {
+        latE6_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "lng_e6" field.</summary>
+    public const int LngE6FieldNumber = 5;
+    private int lngE6_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int LngE6 {
+      get { return lngE6_; }
+      set {
+        lngE6_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "image_serving_url" field.</summary>
+    public const int ImageServingUrlFieldNumber = 6;
+    private string imageServingUrl_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ImageServingUrl {
+      get { return imageServingUrl_; }
+      set {
+        imageServingUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "user_id" field.</summary>
+    public const int UserIdFieldNumber = 7;
+    private string userId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string UserId {
+      get { return userId_; }
+      set {
+        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "player_language" field.</summary>
+    public const int PlayerLanguageFieldNumber = 8;
+    private string playerLanguage_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerLanguage {
+      get { return playerLanguage_; }
+      set {
+        playerLanguage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "game_unique_id" field.</summary>
+    public const int GameUniqueIdFieldNumber = 9;
+    private string gameUniqueId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GameUniqueId {
+      get { return gameUniqueId_; }
+      set {
+        gameUniqueId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "app_id" field.</summary>
+    public const int AppIdFieldNumber = 10;
+    private string appId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AppId {
+      get { return appId_; }
+      set {
+        appId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "player_reputation" field.</summary>
+    public const int PlayerReputationFieldNumber = 11;
+    private global::POGOProtos.Data.Player.PlayerReputation playerReputation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Player.PlayerReputation PlayerReputation {
+      get { return playerReputation_; }
+      set {
+        playerReputation_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddNewPoiMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddNewPoiMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Title != other.Title) return false;
+      if (LongDescription != other.LongDescription) return false;
+      if (ImageGsFilePath != other.ImageGsFilePath) return false;
+      if (LatE6 != other.LatE6) return false;
+      if (LngE6 != other.LngE6) return false;
+      if (ImageServingUrl != other.ImageServingUrl) return false;
+      if (UserId != other.UserId) return false;
+      if (PlayerLanguage != other.PlayerLanguage) return false;
+      if (GameUniqueId != other.GameUniqueId) return false;
+      if (AppId != other.AppId) return false;
+      if (!object.Equals(PlayerReputation, other.PlayerReputation)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Title.Length != 0) hash ^= Title.GetHashCode();
+      if (LongDescription.Length != 0) hash ^= LongDescription.GetHashCode();
+      if (ImageGsFilePath.Length != 0) hash ^= ImageGsFilePath.GetHashCode();
+      if (LatE6 != 0) hash ^= LatE6.GetHashCode();
+      if (LngE6 != 0) hash ^= LngE6.GetHashCode();
+      if (ImageServingUrl.Length != 0) hash ^= ImageServingUrl.GetHashCode();
+      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (PlayerLanguage.Length != 0) hash ^= PlayerLanguage.GetHashCode();
+      if (GameUniqueId.Length != 0) hash ^= GameUniqueId.GetHashCode();
+      if (AppId.Length != 0) hash ^= AppId.GetHashCode();
+      if (playerReputation_ != null) hash ^= PlayerReputation.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Title.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Title);
+      }
+      if (LongDescription.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(LongDescription);
+      }
+      if (ImageGsFilePath.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(ImageGsFilePath);
+      }
+      if (LatE6 != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(LatE6);
+      }
+      if (LngE6 != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(LngE6);
+      }
+      if (ImageServingUrl.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(ImageServingUrl);
+      }
+      if (UserId.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(UserId);
+      }
+      if (PlayerLanguage.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(PlayerLanguage);
+      }
+      if (GameUniqueId.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(GameUniqueId);
+      }
+      if (AppId.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(AppId);
+      }
+      if (playerReputation_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(PlayerReputation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Title.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
+      }
+      if (LongDescription.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LongDescription);
+      }
+      if (ImageGsFilePath.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ImageGsFilePath);
+      }
+      if (LatE6 != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LatE6);
+      }
+      if (LngE6 != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LngE6);
+      }
+      if (ImageServingUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ImageServingUrl);
+      }
+      if (UserId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      }
+      if (PlayerLanguage.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerLanguage);
+      }
+      if (GameUniqueId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GameUniqueId);
+      }
+      if (AppId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppId);
+      }
+      if (playerReputation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerReputation);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddNewPoiMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Title.Length != 0) {
+        Title = other.Title;
+      }
+      if (other.LongDescription.Length != 0) {
+        LongDescription = other.LongDescription;
+      }
+      if (other.ImageGsFilePath.Length != 0) {
+        ImageGsFilePath = other.ImageGsFilePath;
+      }
+      if (other.LatE6 != 0) {
+        LatE6 = other.LatE6;
+      }
+      if (other.LngE6 != 0) {
+        LngE6 = other.LngE6;
+      }
+      if (other.ImageServingUrl.Length != 0) {
+        ImageServingUrl = other.ImageServingUrl;
+      }
+      if (other.UserId.Length != 0) {
+        UserId = other.UserId;
+      }
+      if (other.PlayerLanguage.Length != 0) {
+        PlayerLanguage = other.PlayerLanguage;
+      }
+      if (other.GameUniqueId.Length != 0) {
+        GameUniqueId = other.GameUniqueId;
+      }
+      if (other.AppId.Length != 0) {
+        AppId = other.AppId;
+      }
+      if (other.playerReputation_ != null) {
+        if (playerReputation_ == null) {
+          playerReputation_ = new global::POGOProtos.Data.Player.PlayerReputation();
+        }
+        PlayerReputation.MergeFrom(other.PlayerReputation);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Title = input.ReadString();
+            break;
+          }
+          case 18: {
+            LongDescription = input.ReadString();
+            break;
+          }
+          case 26: {
+            ImageGsFilePath = input.ReadString();
+            break;
+          }
+          case 32: {
+            LatE6 = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            LngE6 = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            ImageServingUrl = input.ReadString();
+            break;
+          }
+          case 58: {
+            UserId = input.ReadString();
+            break;
+          }
+          case 66: {
+            PlayerLanguage = input.ReadString();
+            break;
+          }
+          case 74: {
+            GameUniqueId = input.ReadString();
+            break;
+          }
+          case 82: {
+            AppId = input.ReadString();
+            break;
+          }
+          case 90: {
+            if (playerReputation_ == null) {
+              playerReputation_ = new global::POGOProtos.Data.Player.PlayerReputation();
+            }
+            input.ReadMessage(playerReputation_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ProxySocialActionMessage : pb::IMessage<ProxySocialActionMessage> {
+    private static readonly pb::MessageParser<ProxySocialActionMessage> _parser = new pb::MessageParser<ProxySocialActionMessage>(() => new ProxySocialActionMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ProxySocialActionMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProxySocialActionMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProxySocialActionMessage(ProxySocialActionMessage other) : this() {
+      action_ = other.action_;
+      host_ = other.host_;
+      payload_ = other.payload_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProxySocialActionMessage Clone() {
+      return new ProxySocialActionMessage(this);
+    }
+
+    /// <summary>Field number for the "action" field.</summary>
+    public const int ActionFieldNumber = 1;
+    private uint action_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Action {
+      get { return action_; }
+      set {
+        action_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "host" field.</summary>
+    public const int HostFieldNumber = 2;
+    private string host_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Host {
+      get { return host_; }
+      set {
+        host_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "payload" field.</summary>
+    public const int PayloadFieldNumber = 3;
+    private pb::ByteString payload_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Payload {
+      get { return payload_; }
+      set {
+        payload_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ProxySocialActionMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ProxySocialActionMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Action != other.Action) return false;
+      if (Host != other.Host) return false;
+      if (Payload != other.Payload) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Action != 0) hash ^= Action.GetHashCode();
+      if (Host.Length != 0) hash ^= Host.GetHashCode();
+      if (Payload.Length != 0) hash ^= Payload.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Action != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Action);
+      }
+      if (Host.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Host);
+      }
+      if (Payload.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(Payload);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Action != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Action);
+      }
+      if (Host.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Host);
+      }
+      if (Payload.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Payload);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ProxySocialActionMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Action != 0) {
+        Action = other.Action;
+      }
+      if (other.Host.Length != 0) {
+        Host = other.Host;
+      }
+      if (other.Payload.Length != 0) {
+        Payload = other.Payload;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Action = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Host = input.ReadString();
+            break;
+          }
+          case 26: {
+            Payload = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GetAvailableSubmissionsMessage : pb::IMessage<GetAvailableSubmissionsMessage> {
+    private static readonly pb::MessageParser<GetAvailableSubmissionsMessage> _parser = new pb::MessageParser<GetAvailableSubmissionsMessage>(() => new GetAvailableSubmissionsMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetAvailableSubmissionsMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAvailableSubmissionsMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAvailableSubmissionsMessage(GetAvailableSubmissionsMessage other) : this() {
+      userId_ = other.userId_;
+      playerReputation_ = other.playerReputation_ != null ? other.playerReputation_.Clone() : null;
+      gameUniqueId_ = other.gameUniqueId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAvailableSubmissionsMessage Clone() {
+      return new GetAvailableSubmissionsMessage(this);
+    }
+
+    /// <summary>Field number for the "user_id" field.</summary>
+    public const int UserIdFieldNumber = 1;
+    private string userId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string UserId {
+      get { return userId_; }
+      set {
+        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "player_reputation" field.</summary>
+    public const int PlayerReputationFieldNumber = 2;
+    private global::POGOProtos.Data.Player.PlayerReputation playerReputation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Player.PlayerReputation PlayerReputation {
+      get { return playerReputation_; }
+      set {
+        playerReputation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "game_unique_id" field.</summary>
+    public const int GameUniqueIdFieldNumber = 3;
+    private string gameUniqueId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GameUniqueId {
+      get { return gameUniqueId_; }
+      set {
+        gameUniqueId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetAvailableSubmissionsMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetAvailableSubmissionsMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (UserId != other.UserId) return false;
+      if (!object.Equals(PlayerReputation, other.PlayerReputation)) return false;
+      if (GameUniqueId != other.GameUniqueId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (playerReputation_ != null) hash ^= PlayerReputation.GetHashCode();
+      if (GameUniqueId.Length != 0) hash ^= GameUniqueId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (UserId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(UserId);
+      }
+      if (playerReputation_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(PlayerReputation);
+      }
+      if (GameUniqueId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(GameUniqueId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (UserId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      }
+      if (playerReputation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerReputation);
+      }
+      if (GameUniqueId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GameUniqueId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetAvailableSubmissionsMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.UserId.Length != 0) {
+        UserId = other.UserId;
+      }
+      if (other.playerReputation_ != null) {
+        if (playerReputation_ == null) {
+          playerReputation_ = new global::POGOProtos.Data.Player.PlayerReputation();
+        }
+        PlayerReputation.MergeFrom(other.PlayerReputation);
+      }
+      if (other.GameUniqueId.Length != 0) {
+        GameUniqueId = other.GameUniqueId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            UserId = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (playerReputation_ == null) {
+              playerReputation_ = new global::POGOProtos.Data.Player.PlayerReputation();
+            }
+            input.ReadMessage(playerReputation_);
+            break;
+          }
+          case 26: {
+            GameUniqueId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PushNotificationRegistryMessage : pb::IMessage<PushNotificationRegistryMessage> {
+    private static readonly pb::MessageParser<PushNotificationRegistryMessage> _parser = new pb::MessageParser<PushNotificationRegistryMessage>(() => new PushNotificationRegistryMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PushNotificationRegistryMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PushNotificationRegistryMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PushNotificationRegistryMessage(PushNotificationRegistryMessage other) : this() {
+      apnToken_ = other.apnToken_ != null ? other.apnToken_.Clone() : null;
+      gcmToken_ = other.gcmToken_ != null ? other.gcmToken_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PushNotificationRegistryMessage Clone() {
+      return new PushNotificationRegistryMessage(this);
+    }
+
+    /// <summary>Field number for the "apn_token" field.</summary>
+    public const int ApnTokenFieldNumber = 1;
+    private global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.ApnToken apnToken_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.ApnToken ApnToken {
+      get { return apnToken_; }
+      set {
+        apnToken_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gcm_token" field.</summary>
+    public const int GcmTokenFieldNumber = 2;
+    private global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.GcmToken gcmToken_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.GcmToken GcmToken {
+      get { return gcmToken_; }
+      set {
+        gcmToken_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PushNotificationRegistryMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PushNotificationRegistryMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ApnToken, other.ApnToken)) return false;
+      if (!object.Equals(GcmToken, other.GcmToken)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (apnToken_ != null) hash ^= ApnToken.GetHashCode();
+      if (gcmToken_ != null) hash ^= GcmToken.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (apnToken_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ApnToken);
+      }
+      if (gcmToken_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GcmToken);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (apnToken_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ApnToken);
+      }
+      if (gcmToken_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GcmToken);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PushNotificationRegistryMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.apnToken_ != null) {
+        if (apnToken_ == null) {
+          apnToken_ = new global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.ApnToken();
+        }
+        ApnToken.MergeFrom(other.ApnToken);
+      }
+      if (other.gcmToken_ != null) {
+        if (gcmToken_ == null) {
+          gcmToken_ = new global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.GcmToken();
+        }
+        GcmToken.MergeFrom(other.GcmToken);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (apnToken_ == null) {
+              apnToken_ = new global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.ApnToken();
+            }
+            input.ReadMessage(apnToken_);
+            break;
+          }
+          case 18: {
+            if (gcmToken_ == null) {
+              gcmToken_ = new global::POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.Types.GcmToken();
+            }
+            input.ReadMessage(gcmToken_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class AddLoginActionMessage : pb::IMessage<AddLoginActionMessage> {
+    private static readonly pb::MessageParser<AddLoginActionMessage> _parser = new pb::MessageParser<AddLoginActionMessage>(() => new AddLoginActionMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddLoginActionMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddLoginActionMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddLoginActionMessage(AddLoginActionMessage other) : this() {
+      identityProvider_ = other.identityProvider_;
+      innerMessage_ = other.innerMessage_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddLoginActionMessage Clone() {
+      return new AddLoginActionMessage(this);
+    }
+
+    /// <summary>Field number for the "identity_provider" field.</summary>
+    public const int IdentityProviderFieldNumber = 1;
+    private global::POGOProtos.Enums.IdentityProvider identityProvider_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.IdentityProvider IdentityProvider {
+      get { return identityProvider_; }
+      set {
+        identityProvider_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "inner_message" field.</summary>
+    public const int InnerMessageFieldNumber = 2;
+    private pb::ByteString innerMessage_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString InnerMessage {
+      get { return innerMessage_; }
+      set {
+        innerMessage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddLoginActionMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddLoginActionMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IdentityProvider != other.IdentityProvider) return false;
+      if (InnerMessage != other.InnerMessage) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IdentityProvider != 0) hash ^= IdentityProvider.GetHashCode();
+      if (InnerMessage.Length != 0) hash ^= InnerMessage.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IdentityProvider != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) IdentityProvider);
+      }
+      if (InnerMessage.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(InnerMessage);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IdentityProvider != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) IdentityProvider);
+      }
+      if (InnerMessage.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(InnerMessage);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddLoginActionMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IdentityProvider != 0) {
+        IdentityProvider = other.IdentityProvider;
+      }
+      if (other.InnerMessage.Length != 0) {
+        InnerMessage = other.InnerMessage;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            identityProvider_ = (global::POGOProtos.Enums.IdentityProvider) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            InnerMessage = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RemoveLoginActionMessage : pb::IMessage<RemoveLoginActionMessage> {
+    private static readonly pb::MessageParser<RemoveLoginActionMessage> _parser = new pb::MessageParser<RemoveLoginActionMessage>(() => new RemoveLoginActionMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RemoveLoginActionMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveLoginActionMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveLoginActionMessage(RemoveLoginActionMessage other) : this() {
+      success_ = other.success_;
+      loginDetail_ = other.loginDetail_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveLoginActionMessage Clone() {
+      return new RemoveLoginActionMessage(this);
+    }
+
+    /// <summary>Field number for the "success" field.</summary>
+    public const int SuccessFieldNumber = 1;
+    private bool success_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Success {
+      get { return success_; }
+      set {
+        success_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "login_detail" field.</summary>
+    public const int LoginDetailFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Login.LoginDetail> _repeated_loginDetail_codec
+        = pb::FieldCodec.ForMessage(18, global::POGOProtos.Data.Login.LoginDetail.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Login.LoginDetail> loginDetail_ = new pbc::RepeatedField<global::POGOProtos.Data.Login.LoginDetail>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Data.Login.LoginDetail> LoginDetail {
+      get { return loginDetail_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RemoveLoginActionMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RemoveLoginActionMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Success != other.Success) return false;
+      if(!loginDetail_.Equals(other.loginDetail_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Success != false) hash ^= Success.GetHashCode();
+      hash ^= loginDetail_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Success != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Success);
+      }
+      loginDetail_.WriteTo(output, _repeated_loginDetail_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Success != false) {
+        size += 1 + 1;
+      }
+      size += loginDetail_.CalculateSize(_repeated_loginDetail_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RemoveLoginActionMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Success != false) {
+        Success = other.Success;
+      }
+      loginDetail_.Add(other.loginDetail_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Success = input.ReadBool();
+            break;
+          }
+          case 18: {
+            loginDetail_.AddEntriesFrom(input, _repeated_loginDetail_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SubmitNewPoiMessage : pb::IMessage<SubmitNewPoiMessage> {
+    private static readonly pb::MessageParser<SubmitNewPoiMessage> _parser = new pb::MessageParser<SubmitNewPoiMessage>(() => new SubmitNewPoiMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SubmitNewPoiMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SubmitNewPoiMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SubmitNewPoiMessage(SubmitNewPoiMessage other) : this() {
+      title_ = other.title_;
+      longDescription_ = other.longDescription_;
+      imageGsFilePath_ = other.imageGsFilePath_;
+      latE6_ = other.latE6_;
+      lngE6_ = other.lngE6_;
+      imageServingUrl_ = other.imageServingUrl_;
+      userId_ = other.userId_;
+      playerLanguage_ = other.playerLanguage_;
+      gameUniqueId_ = other.gameUniqueId_;
+      appId_ = other.appId_;
+      playerReputation_ = other.playerReputation_ != null ? other.playerReputation_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SubmitNewPoiMessage Clone() {
+      return new SubmitNewPoiMessage(this);
+    }
+
+    /// <summary>Field number for the "title" field.</summary>
+    public const int TitleFieldNumber = 1;
+    private string title_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Title {
+      get { return title_; }
+      set {
+        title_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "long_description" field.</summary>
+    public const int LongDescriptionFieldNumber = 2;
+    private string longDescription_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LongDescription {
+      get { return longDescription_; }
+      set {
+        longDescription_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "image_gs_file_path" field.</summary>
+    public const int ImageGsFilePathFieldNumber = 3;
+    private string imageGsFilePath_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ImageGsFilePath {
+      get { return imageGsFilePath_; }
+      set {
+        imageGsFilePath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "lat_e6" field.</summary>
+    public const int LatE6FieldNumber = 4;
+    private int latE6_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int LatE6 {
+      get { return latE6_; }
+      set {
+        latE6_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "lng_e6" field.</summary>
+    public const int LngE6FieldNumber = 5;
+    private int lngE6_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int LngE6 {
+      get { return lngE6_; }
+      set {
+        lngE6_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "image_serving_url" field.</summary>
+    public const int ImageServingUrlFieldNumber = 6;
+    private string imageServingUrl_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ImageServingUrl {
+      get { return imageServingUrl_; }
+      set {
+        imageServingUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "user_id" field.</summary>
+    public const int UserIdFieldNumber = 7;
+    private string userId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string UserId {
+      get { return userId_; }
+      set {
+        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "player_language" field.</summary>
+    public const int PlayerLanguageFieldNumber = 8;
+    private string playerLanguage_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerLanguage {
+      get { return playerLanguage_; }
+      set {
+        playerLanguage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "game_unique_id" field.</summary>
+    public const int GameUniqueIdFieldNumber = 9;
+    private string gameUniqueId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GameUniqueId {
+      get { return gameUniqueId_; }
+      set {
+        gameUniqueId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "app_id" field.</summary>
+    public const int AppIdFieldNumber = 10;
+    private string appId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AppId {
+      get { return appId_; }
+      set {
+        appId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "player_reputation" field.</summary>
+    public const int PlayerReputationFieldNumber = 11;
+    private global::POGOProtos.Data.Player.PlayerReputation playerReputation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Player.PlayerReputation PlayerReputation {
+      get { return playerReputation_; }
+      set {
+        playerReputation_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SubmitNewPoiMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SubmitNewPoiMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Title != other.Title) return false;
+      if (LongDescription != other.LongDescription) return false;
+      if (ImageGsFilePath != other.ImageGsFilePath) return false;
+      if (LatE6 != other.LatE6) return false;
+      if (LngE6 != other.LngE6) return false;
+      if (ImageServingUrl != other.ImageServingUrl) return false;
+      if (UserId != other.UserId) return false;
+      if (PlayerLanguage != other.PlayerLanguage) return false;
+      if (GameUniqueId != other.GameUniqueId) return false;
+      if (AppId != other.AppId) return false;
+      if (!object.Equals(PlayerReputation, other.PlayerReputation)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Title.Length != 0) hash ^= Title.GetHashCode();
+      if (LongDescription.Length != 0) hash ^= LongDescription.GetHashCode();
+      if (ImageGsFilePath.Length != 0) hash ^= ImageGsFilePath.GetHashCode();
+      if (LatE6 != 0) hash ^= LatE6.GetHashCode();
+      if (LngE6 != 0) hash ^= LngE6.GetHashCode();
+      if (ImageServingUrl.Length != 0) hash ^= ImageServingUrl.GetHashCode();
+      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (PlayerLanguage.Length != 0) hash ^= PlayerLanguage.GetHashCode();
+      if (GameUniqueId.Length != 0) hash ^= GameUniqueId.GetHashCode();
+      if (AppId.Length != 0) hash ^= AppId.GetHashCode();
+      if (playerReputation_ != null) hash ^= PlayerReputation.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Title.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Title);
+      }
+      if (LongDescription.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(LongDescription);
+      }
+      if (ImageGsFilePath.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(ImageGsFilePath);
+      }
+      if (LatE6 != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(LatE6);
+      }
+      if (LngE6 != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(LngE6);
+      }
+      if (ImageServingUrl.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(ImageServingUrl);
+      }
+      if (UserId.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(UserId);
+      }
+      if (PlayerLanguage.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(PlayerLanguage);
+      }
+      if (GameUniqueId.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(GameUniqueId);
+      }
+      if (AppId.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(AppId);
+      }
+      if (playerReputation_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(PlayerReputation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Title.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
+      }
+      if (LongDescription.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LongDescription);
+      }
+      if (ImageGsFilePath.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ImageGsFilePath);
+      }
+      if (LatE6 != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LatE6);
+      }
+      if (LngE6 != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LngE6);
+      }
+      if (ImageServingUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ImageServingUrl);
+      }
+      if (UserId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      }
+      if (PlayerLanguage.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerLanguage);
+      }
+      if (GameUniqueId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GameUniqueId);
+      }
+      if (AppId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppId);
+      }
+      if (playerReputation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerReputation);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SubmitNewPoiMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Title.Length != 0) {
+        Title = other.Title;
+      }
+      if (other.LongDescription.Length != 0) {
+        LongDescription = other.LongDescription;
+      }
+      if (other.ImageGsFilePath.Length != 0) {
+        ImageGsFilePath = other.ImageGsFilePath;
+      }
+      if (other.LatE6 != 0) {
+        LatE6 = other.LatE6;
+      }
+      if (other.LngE6 != 0) {
+        LngE6 = other.LngE6;
+      }
+      if (other.ImageServingUrl.Length != 0) {
+        ImageServingUrl = other.ImageServingUrl;
+      }
+      if (other.UserId.Length != 0) {
+        UserId = other.UserId;
+      }
+      if (other.PlayerLanguage.Length != 0) {
+        PlayerLanguage = other.PlayerLanguage;
+      }
+      if (other.GameUniqueId.Length != 0) {
+        GameUniqueId = other.GameUniqueId;
+      }
+      if (other.AppId.Length != 0) {
+        AppId = other.AppId;
+      }
+      if (other.playerReputation_ != null) {
+        if (playerReputation_ == null) {
+          playerReputation_ = new global::POGOProtos.Data.Player.PlayerReputation();
+        }
+        PlayerReputation.MergeFrom(other.PlayerReputation);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Title = input.ReadString();
+            break;
+          }
+          case 18: {
+            LongDescription = input.ReadString();
+            break;
+          }
+          case 26: {
+            ImageGsFilePath = input.ReadString();
+            break;
+          }
+          case 32: {
+            LatE6 = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            LngE6 = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            ImageServingUrl = input.ReadString();
+            break;
+          }
+          case 58: {
+            UserId = input.ReadString();
+            break;
+          }
+          case 66: {
+            PlayerLanguage = input.ReadString();
+            break;
+          }
+          case 74: {
+            GameUniqueId = input.ReadString();
+            break;
+          }
+          case 82: {
+            AppId = input.ReadString();
+            break;
+          }
+          case 90: {
+            if (playerReputation_ == null) {
+              playerReputation_ = new global::POGOProtos.Data.Player.PlayerReputation();
+            }
+            input.ReadMessage(playerReputation_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class UploadPoiPhotoByUrlMessage : pb::IMessage<UploadPoiPhotoByUrlMessage> {
+    private static readonly pb::MessageParser<UploadPoiPhotoByUrlMessage> _parser = new pb::MessageParser<UploadPoiPhotoByUrlMessage>(() => new UploadPoiPhotoByUrlMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UploadPoiPhotoByUrlMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadPoiPhotoByUrlMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadPoiPhotoByUrlMessage(UploadPoiPhotoByUrlMessage other) : this() {
+      requestId_ = other.requestId_;
+      imageUrl_ = other.imageUrl_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadPoiPhotoByUrlMessage Clone() {
+      return new UploadPoiPhotoByUrlMessage(this);
+    }
+
+    /// <summary>Field number for the "request_id" field.</summary>
+    public const int RequestIdFieldNumber = 1;
+    private string requestId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RequestId {
+      get { return requestId_; }
+      set {
+        requestId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "image_url" field.</summary>
+    public const int ImageUrlFieldNumber = 2;
+    private string imageUrl_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ImageUrl {
+      get { return imageUrl_; }
+      set {
+        imageUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UploadPoiPhotoByUrlMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UploadPoiPhotoByUrlMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RequestId != other.RequestId) return false;
+      if (ImageUrl != other.ImageUrl) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RequestId.Length != 0) hash ^= RequestId.GetHashCode();
+      if (ImageUrl.Length != 0) hash ^= ImageUrl.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (RequestId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(RequestId);
+      }
+      if (ImageUrl.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ImageUrl);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RequestId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RequestId);
+      }
+      if (ImageUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ImageUrl);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UploadPoiPhotoByUrlMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RequestId.Length != 0) {
+        RequestId = other.RequestId;
+      }
+      if (other.ImageUrl.Length != 0) {
+        ImageUrl = other.ImageUrl;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            RequestId = input.ReadString();
+            break;
+          }
+          case 18: {
+            ImageUrl = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PingMessage : pb::IMessage<PingMessage> {
+    private static readonly pb::MessageParser<PingMessage> _parser = new pb::MessageParser<PingMessage>(() => new PingMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PingMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Requests.Messages.PlatformClientActionsMessageReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PingMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PingMessage(PingMessage other) : this() {
+      responseSizeBytes_ = other.responseSizeBytes_;
+      randomRequestBytes_ = other.randomRequestBytes_;
+      useCacheForRandomRequestBytes_ = other.useCacheForRandomRequestBytes_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PingMessage Clone() {
+      return new PingMessage(this);
+    }
+
+    /// <summary>Field number for the "response_size_bytes" field.</summary>
+    public const int ResponseSizeBytesFieldNumber = 1;
+    private int responseSizeBytes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ResponseSizeBytes {
+      get { return responseSizeBytes_; }
+      set {
+        responseSizeBytes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "random_request_bytes" field.</summary>
+    public const int RandomRequestBytesFieldNumber = 2;
+    private string randomRequestBytes_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RandomRequestBytes {
+      get { return randomRequestBytes_; }
+      set {
+        randomRequestBytes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "use_cache_for_random_request_bytes" field.</summary>
+    public const int UseCacheForRandomRequestBytesFieldNumber = 3;
+    private bool useCacheForRandomRequestBytes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UseCacheForRandomRequestBytes {
+      get { return useCacheForRandomRequestBytes_; }
+      set {
+        useCacheForRandomRequestBytes_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PingMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PingMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ResponseSizeBytes != other.ResponseSizeBytes) return false;
+      if (RandomRequestBytes != other.RandomRequestBytes) return false;
+      if (UseCacheForRandomRequestBytes != other.UseCacheForRandomRequestBytes) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ResponseSizeBytes != 0) hash ^= ResponseSizeBytes.GetHashCode();
+      if (RandomRequestBytes.Length != 0) hash ^= RandomRequestBytes.GetHashCode();
+      if (UseCacheForRandomRequestBytes != false) hash ^= UseCacheForRandomRequestBytes.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ResponseSizeBytes != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ResponseSizeBytes);
+      }
+      if (RandomRequestBytes.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(RandomRequestBytes);
+      }
+      if (UseCacheForRandomRequestBytes != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(UseCacheForRandomRequestBytes);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ResponseSizeBytes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ResponseSizeBytes);
+      }
+      if (RandomRequestBytes.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RandomRequestBytes);
+      }
+      if (UseCacheForRandomRequestBytes != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PingMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ResponseSizeBytes != 0) {
+        ResponseSizeBytes = other.ResponseSizeBytes;
+      }
+      if (other.RandomRequestBytes.Length != 0) {
+        RandomRequestBytes = other.RandomRequestBytes;
+      }
+      if (other.UseCacheForRandomRequestBytes != false) {
+        UseCacheForRandomRequestBytes = other.UseCacheForRandomRequestBytes;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ResponseSizeBytes = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            RandomRequestBytes = input.ReadString();
+            break;
+          }
+          case 24: {
+            UseCacheForRandomRequestBytes = input.ReadBool();
             break;
           }
         }

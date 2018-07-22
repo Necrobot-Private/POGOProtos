@@ -107,17 +107,17 @@ namespace POGOProtos.Settings.Master {
       category_ = other.category_;
       dropFreq_ = other.dropFreq_;
       dropTrainerLevel_ = other.dropTrainerLevel_;
-      Pokeball = other.pokeball_ != null ? other.Pokeball.Clone() : null;
-      Potion = other.potion_ != null ? other.Potion.Clone() : null;
-      Revive = other.revive_ != null ? other.Revive.Clone() : null;
-      Battle = other.battle_ != null ? other.Battle.Clone() : null;
-      Food = other.food_ != null ? other.Food.Clone() : null;
-      InventoryUpgrade = other.inventoryUpgrade_ != null ? other.InventoryUpgrade.Clone() : null;
-      XpBoost = other.xpBoost_ != null ? other.XpBoost.Clone() : null;
-      Incense = other.incense_ != null ? other.Incense.Clone() : null;
-      EggIncubator = other.eggIncubator_ != null ? other.EggIncubator.Clone() : null;
-      FortModifier = other.fortModifier_ != null ? other.FortModifier.Clone() : null;
-      StardustBoost = other.stardustBoost_ != null ? other.StardustBoost.Clone() : null;
+      pokeball_ = other.pokeball_ != null ? other.pokeball_.Clone() : null;
+      potion_ = other.potion_ != null ? other.potion_.Clone() : null;
+      revive_ = other.revive_ != null ? other.revive_.Clone() : null;
+      battle_ = other.battle_ != null ? other.battle_.Clone() : null;
+      food_ = other.food_ != null ? other.food_.Clone() : null;
+      inventoryUpgrade_ = other.inventoryUpgrade_ != null ? other.inventoryUpgrade_.Clone() : null;
+      xpBoost_ = other.xpBoost_ != null ? other.xpBoost_.Clone() : null;
+      incense_ = other.incense_ != null ? other.incense_.Clone() : null;
+      eggIncubator_ = other.eggIncubator_ != null ? other.eggIncubator_.Clone() : null;
+      fortModifier_ = other.fortModifier_ != null ? other.fortModifier_.Clone() : null;
+      stardustBoost_ = other.stardustBoost_ != null ? other.stardustBoost_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

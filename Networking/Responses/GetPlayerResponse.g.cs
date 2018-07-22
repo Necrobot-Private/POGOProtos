@@ -26,15 +26,15 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CjdQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0dldFBsYXllclJl",
             "c3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2Vz",
-            "GiBQT0dPUHJvdG9zL0RhdGEvUGxheWVyRGF0YS5wcm90byKJAQoRR2V0UGxh",
+            "GiBQT0dPUHJvdG9zL0RhdGEvUGxheWVyRGF0YS5wcm90byKiAQoRR2V0UGxh",
             "eWVyUmVzcG9uc2USDwoHc3VjY2VzcxgBIAEoCBIwCgtwbGF5ZXJfZGF0YRgC",
             "IAEoCzIbLlBPR09Qcm90b3MuRGF0YS5QbGF5ZXJEYXRhEg4KBmJhbm5lZBgD",
-            "IAEoCBIMCgR3YXJuGAQgASgIEhMKC3dhc19jcmVhdGVkGAUgASgIYgZwcm90",
-            "bzM="));
+            "IAEoCBIMCgR3YXJuGAQgASgIEhMKC3dhc19jcmVhdGVkGAUgASgIEhcKD2hh",
+            "c192YWxpZF9lbWFpbBgGIAEoCGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.PlayerDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetPlayerResponse), global::POGOProtos.Networking.Responses.GetPlayerResponse.Parser, new[]{ "Success", "PlayerData", "Banned", "Warn", "WasCreated" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetPlayerResponse), global::POGOProtos.Networking.Responses.GetPlayerResponse.Parser, new[]{ "Success", "PlayerData", "Banned", "Warn", "WasCreated", "HasValidEmail" }, null, null, null)
           }));
     }
     #endregion
@@ -67,10 +67,11 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetPlayerResponse(GetPlayerResponse other) : this() {
       success_ = other.success_;
-      PlayerData = other.playerData_ != null ? other.PlayerData.Clone() : null;
+      playerData_ = other.playerData_ != null ? other.playerData_.Clone() : null;
       banned_ = other.banned_;
       warn_ = other.warn_;
       wasCreated_ = other.wasCreated_;
+      hasValidEmail_ = other.hasValidEmail_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -134,6 +135,17 @@ namespace POGOProtos.Networking.Responses {
       }
     }
 
+    /// <summary>Field number for the "has_valid_email" field.</summary>
+    public const int HasValidEmailFieldNumber = 6;
+    private bool hasValidEmail_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasValidEmail {
+      get { return hasValidEmail_; }
+      set {
+        hasValidEmail_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GetPlayerResponse);
@@ -152,6 +164,7 @@ namespace POGOProtos.Networking.Responses {
       if (Banned != other.Banned) return false;
       if (Warn != other.Warn) return false;
       if (WasCreated != other.WasCreated) return false;
+      if (HasValidEmail != other.HasValidEmail) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -163,6 +176,7 @@ namespace POGOProtos.Networking.Responses {
       if (Banned != false) hash ^= Banned.GetHashCode();
       if (Warn != false) hash ^= Warn.GetHashCode();
       if (WasCreated != false) hash ^= WasCreated.GetHashCode();
+      if (HasValidEmail != false) hash ^= HasValidEmail.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -196,6 +210,10 @@ namespace POGOProtos.Networking.Responses {
         output.WriteRawTag(40);
         output.WriteBool(WasCreated);
       }
+      if (HasValidEmail != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(HasValidEmail);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -217,6 +235,9 @@ namespace POGOProtos.Networking.Responses {
         size += 1 + 1;
       }
       if (WasCreated != false) {
+        size += 1 + 1;
+      }
+      if (HasValidEmail != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -247,6 +268,9 @@ namespace POGOProtos.Networking.Responses {
       }
       if (other.WasCreated != false) {
         WasCreated = other.WasCreated;
+      }
+      if (other.HasValidEmail != false) {
+        HasValidEmail = other.HasValidEmail;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -280,6 +304,10 @@ namespace POGOProtos.Networking.Responses {
           }
           case 40: {
             WasCreated = input.ReadBool();
+            break;
+          }
+          case 48: {
+            HasValidEmail = input.ReadBool();
             break;
           }
         }

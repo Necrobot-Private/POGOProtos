@@ -25,17 +25,34 @@ namespace POGOProtos.Data.Avatar {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBQT0dPUHJvdG9zL0RhdGEvQXZhdGFyL0F2YXRhckN1c3RvbWl6YXRpb24u",
-            "cHJvdG8SFlBPR09Qcm90b3MuRGF0YS5BdmF0YXIijQIKE0F2YXRhckN1c3Rv",
-            "bWl6YXRpb24SGgoSYXZhdGFyX3RlbXBsYXRlX2lkGAEgASgJEkEKBmxhYmVs",
-            "cxgCIAMoDjIxLlBPR09Qcm90b3MuRGF0YS5BdmF0YXIuQXZhdGFyQ3VzdG9t",
-            "aXphdGlvbi5MYWJlbCKWAQoFTGFiZWwSDwoLVU5TRVRfTEFCRUwQABILCgdE",
-            "RUZBVUxUEAESCQoFT1dORUQQAhIMCghGRUFUVVJFRBADEgcKA05FVxAEEggK",
-            "BFNBTEUQBRIPCgtQVVJDSEFTQUJMRRAGEg4KClVOTE9DS0FCTEUQBxIKCgZW",
-            "SUVXRUQQCBIWChJMT0NLRURfUFVSQ0hBU0FCTEUQCWIGcHJvdG8z"));
+            "cHJvdG8SFlBPR09Qcm90b3MuRGF0YS5BdmF0YXIaLVBPR09Qcm90b3MvRGF0",
+            "YS9QbGF5ZXIvUGxheWVyQXZhdGFyVHlwZS5wcm90bxogUE9HT1Byb3Rvcy9F",
+            "bnVtcy9CYWRnZVR5cGUucHJvdG8iswcKE0F2YXRhckN1c3RvbWl6YXRpb24S",
+            "DwoHZW5hYmxlZBgBIAEoCBI9CgthdmF0YXJfdHlwZRgCIAEoDjIoLlBPR09Q",
+            "cm90b3MuRGF0YS5QbGF5ZXIuUGxheWVyQXZhdGFyVHlwZRI+CgRzbG90GAMg",
+            "AygOMjAuUE9HT1Byb3Rvcy5EYXRhLkF2YXRhci5BdmF0YXJDdXN0b21pemF0",
+            "aW9uLlNsb3QSEwoLYnVuZGxlX25hbWUYBCABKAkSEgoKYXNzZXRfbmFtZRgF",
+            "IAEoCRISCgpncm91cF9uYW1lGAYgASgJEhIKCnNvcnRfb3JkZXIYByABKAUS",
+            "XgoLdW5sb2NrX3R5cGUYCCABKA4ySS5QT0dPUHJvdG9zLkRhdGEuQXZhdGFy",
+            "LkF2YXRhckN1c3RvbWl6YXRpb24uQXZhdGFyQ3VzdG9taXphdGlvblVubG9j",
+            "a1R5cGUSXAoKcHJvbW9fdHlwZRgJIAMoDjJILlBPR09Qcm90b3MuRGF0YS5B",
+            "dmF0YXIuQXZhdGFyQ3VzdG9taXphdGlvbi5BdmF0YXJDdXN0b21pemF0aW9u",
+            "UHJvbW9UeXBlEjYKEXVubG9ja19iYWRnZV90eXBlGAogASgOMhsuUE9HT1By",
+            "b3Rvcy5FbnVtcy5CYWRnZVR5cGUSDwoHaWFwX3NrdRgLIAEoCRIaChJ1bmxv",
+            "Y2tfYmFkZ2VfbGV2ZWwYDCABKAUSEQoJaWNvbl9uYW1lGA0gASgJEhsKE3Vu",
+            "bG9ja19wbGF5ZXJfbGV2ZWwYDiABKAUiTAocQXZhdGFyQ3VzdG9taXphdGlv",
+            "blByb21vVHlwZRIUChBVTlNFVF9QUk9NT19UWVBFEAASCAoEU0FMRRABEgwK",
+            "CEZFQVRVUkVEEAIieQodQXZhdGFyQ3VzdG9taXphdGlvblVubG9ja1R5cGUS",
+            "FQoRVU5TRVRfVU5MT0NLX1RZUEUQABILCgdERUZBVUxUEAESEAoMTUVEQUxf",
+            "UkVXQVJEEAISEAoMSUFQX0NMT1RISU5HEAMSEAoMTEVWRUxfUkVXQVJEEAQi",
+            "ngEKBFNsb3QSDgoKVU5TRVRfU0xPVBAAEggKBEhBSVIQARIJCgVTSElSVBAC",
+            "EgkKBVBBTlRTEAMSBwoDSEFUEAQSCQoFU0hPRVMQBRIICgRFWUVTEAYSDAoI",
+            "QkFDS1BBQ0sQBxIKCgZHTE9WRVMQCBIJCgVTT0NLUxAJEggKBEJFTFQQChIL",
+            "CgdHTEFTU0VTEAsSDAoITkVDS0xBQ0UQDGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.PlayerAvatarTypeReflection.Descriptor, global::POGOProtos.Enums.BadgeTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Avatar.AvatarCustomization), global::POGOProtos.Data.Avatar.AvatarCustomization.Parser, new[]{ "AvatarTemplateId", "Labels" }, null, new[]{ typeof(global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Label) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Avatar.AvatarCustomization), global::POGOProtos.Data.Avatar.AvatarCustomization.Parser, new[]{ "Enabled", "AvatarType", "Slot", "BundleName", "AssetName", "GroupName", "SortOrder", "UnlockType", "PromoType", "UnlockBadgeType", "IapSku", "UnlockBadgeLevel", "IconName", "UnlockPlayerLevel" }, null, new[]{ typeof(global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationPromoType), typeof(global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationUnlockType), typeof(global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot) }, null)
           }));
     }
     #endregion
@@ -67,8 +84,20 @@ namespace POGOProtos.Data.Avatar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AvatarCustomization(AvatarCustomization other) : this() {
-      avatarTemplateId_ = other.avatarTemplateId_;
-      labels_ = other.labels_.Clone();
+      enabled_ = other.enabled_;
+      avatarType_ = other.avatarType_;
+      slot_ = other.slot_.Clone();
+      bundleName_ = other.bundleName_;
+      assetName_ = other.assetName_;
+      groupName_ = other.groupName_;
+      sortOrder_ = other.sortOrder_;
+      unlockType_ = other.unlockType_;
+      promoType_ = other.promoType_.Clone();
+      unlockBadgeType_ = other.unlockBadgeType_;
+      iapSku_ = other.iapSku_;
+      unlockBadgeLevel_ = other.unlockBadgeLevel_;
+      iconName_ = other.iconName_;
+      unlockPlayerLevel_ = other.unlockPlayerLevel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -77,25 +106,156 @@ namespace POGOProtos.Data.Avatar {
       return new AvatarCustomization(this);
     }
 
-    /// <summary>Field number for the "avatar_template_id" field.</summary>
-    public const int AvatarTemplateIdFieldNumber = 1;
-    private string avatarTemplateId_ = "";
+    /// <summary>Field number for the "enabled" field.</summary>
+    public const int EnabledFieldNumber = 1;
+    private bool enabled_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string AvatarTemplateId {
-      get { return avatarTemplateId_; }
+    public bool Enabled {
+      get { return enabled_; }
       set {
-        avatarTemplateId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        enabled_ = value;
       }
     }
 
-    /// <summary>Field number for the "labels" field.</summary>
-    public const int LabelsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Label> _repeated_labels_codec
-        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Label) x);
-    private readonly pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Label> labels_ = new pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Label>();
+    /// <summary>Field number for the "avatar_type" field.</summary>
+    public const int AvatarTypeFieldNumber = 2;
+    private global::POGOProtos.Data.Player.PlayerAvatarType avatarType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Label> Labels {
-      get { return labels_; }
+    public global::POGOProtos.Data.Player.PlayerAvatarType AvatarType {
+      get { return avatarType_; }
+      set {
+        avatarType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "slot" field.</summary>
+    public const int SlotFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot> _repeated_slot_codec
+        = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot) x);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot> slot_ = new pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.Slot> Slot {
+      get { return slot_; }
+    }
+
+    /// <summary>Field number for the "bundle_name" field.</summary>
+    public const int BundleNameFieldNumber = 4;
+    private string bundleName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BundleName {
+      get { return bundleName_; }
+      set {
+        bundleName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "asset_name" field.</summary>
+    public const int AssetNameFieldNumber = 5;
+    private string assetName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AssetName {
+      get { return assetName_; }
+      set {
+        assetName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "group_name" field.</summary>
+    public const int GroupNameFieldNumber = 6;
+    private string groupName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GroupName {
+      get { return groupName_; }
+      set {
+        groupName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "sort_order" field.</summary>
+    public const int SortOrderFieldNumber = 7;
+    private int sortOrder_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int SortOrder {
+      get { return sortOrder_; }
+      set {
+        sortOrder_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "unlock_type" field.</summary>
+    public const int UnlockTypeFieldNumber = 8;
+    private global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationUnlockType unlockType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationUnlockType UnlockType {
+      get { return unlockType_; }
+      set {
+        unlockType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "promo_type" field.</summary>
+    public const int PromoTypeFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationPromoType> _repeated_promoType_codec
+        = pb::FieldCodec.ForEnum(74, x => (int) x, x => (global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationPromoType) x);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationPromoType> promoType_ = new pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationPromoType>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationPromoType> PromoType {
+      get { return promoType_; }
+    }
+
+    /// <summary>Field number for the "unlock_badge_type" field.</summary>
+    public const int UnlockBadgeTypeFieldNumber = 10;
+    private global::POGOProtos.Enums.BadgeType unlockBadgeType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.BadgeType UnlockBadgeType {
+      get { return unlockBadgeType_; }
+      set {
+        unlockBadgeType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "iap_sku" field.</summary>
+    public const int IapSkuFieldNumber = 11;
+    private string iapSku_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string IapSku {
+      get { return iapSku_; }
+      set {
+        iapSku_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "unlock_badge_level" field.</summary>
+    public const int UnlockBadgeLevelFieldNumber = 12;
+    private int unlockBadgeLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int UnlockBadgeLevel {
+      get { return unlockBadgeLevel_; }
+      set {
+        unlockBadgeLevel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "icon_name" field.</summary>
+    public const int IconNameFieldNumber = 13;
+    private string iconName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string IconName {
+      get { return iconName_; }
+      set {
+        iconName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "unlock_player_level" field.</summary>
+    public const int UnlockPlayerLevelFieldNumber = 14;
+    private int unlockPlayerLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int UnlockPlayerLevel {
+      get { return unlockPlayerLevel_; }
+      set {
+        unlockPlayerLevel_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -111,16 +271,40 @@ namespace POGOProtos.Data.Avatar {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (AvatarTemplateId != other.AvatarTemplateId) return false;
-      if(!labels_.Equals(other.labels_)) return false;
+      if (Enabled != other.Enabled) return false;
+      if (AvatarType != other.AvatarType) return false;
+      if(!slot_.Equals(other.slot_)) return false;
+      if (BundleName != other.BundleName) return false;
+      if (AssetName != other.AssetName) return false;
+      if (GroupName != other.GroupName) return false;
+      if (SortOrder != other.SortOrder) return false;
+      if (UnlockType != other.UnlockType) return false;
+      if(!promoType_.Equals(other.promoType_)) return false;
+      if (UnlockBadgeType != other.UnlockBadgeType) return false;
+      if (IapSku != other.IapSku) return false;
+      if (UnlockBadgeLevel != other.UnlockBadgeLevel) return false;
+      if (IconName != other.IconName) return false;
+      if (UnlockPlayerLevel != other.UnlockPlayerLevel) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (AvatarTemplateId.Length != 0) hash ^= AvatarTemplateId.GetHashCode();
-      hash ^= labels_.GetHashCode();
+      if (Enabled != false) hash ^= Enabled.GetHashCode();
+      if (AvatarType != 0) hash ^= AvatarType.GetHashCode();
+      hash ^= slot_.GetHashCode();
+      if (BundleName.Length != 0) hash ^= BundleName.GetHashCode();
+      if (AssetName.Length != 0) hash ^= AssetName.GetHashCode();
+      if (GroupName.Length != 0) hash ^= GroupName.GetHashCode();
+      if (SortOrder != 0) hash ^= SortOrder.GetHashCode();
+      if (UnlockType != 0) hash ^= UnlockType.GetHashCode();
+      hash ^= promoType_.GetHashCode();
+      if (UnlockBadgeType != 0) hash ^= UnlockBadgeType.GetHashCode();
+      if (IapSku.Length != 0) hash ^= IapSku.GetHashCode();
+      if (UnlockBadgeLevel != 0) hash ^= UnlockBadgeLevel.GetHashCode();
+      if (IconName.Length != 0) hash ^= IconName.GetHashCode();
+      if (UnlockPlayerLevel != 0) hash ^= UnlockPlayerLevel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -134,11 +318,56 @@ namespace POGOProtos.Data.Avatar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (AvatarTemplateId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(AvatarTemplateId);
+      if (Enabled != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Enabled);
       }
-      labels_.WriteTo(output, _repeated_labels_codec);
+      if (AvatarType != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) AvatarType);
+      }
+      slot_.WriteTo(output, _repeated_slot_codec);
+      if (BundleName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(BundleName);
+      }
+      if (AssetName.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(AssetName);
+      }
+      if (GroupName.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(GroupName);
+      }
+      if (SortOrder != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(SortOrder);
+      }
+      if (UnlockType != 0) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) UnlockType);
+      }
+      promoType_.WriteTo(output, _repeated_promoType_codec);
+      if (UnlockBadgeType != 0) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) UnlockBadgeType);
+      }
+      if (IapSku.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(IapSku);
+      }
+      if (UnlockBadgeLevel != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(UnlockBadgeLevel);
+      }
+      if (IconName.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(IconName);
+      }
+      if (UnlockPlayerLevel != 0) {
+        output.WriteRawTag(112);
+        output.WriteInt32(UnlockPlayerLevel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -147,10 +376,44 @@ namespace POGOProtos.Data.Avatar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (AvatarTemplateId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(AvatarTemplateId);
+      if (Enabled != false) {
+        size += 1 + 1;
       }
-      size += labels_.CalculateSize(_repeated_labels_codec);
+      if (AvatarType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AvatarType);
+      }
+      size += slot_.CalculateSize(_repeated_slot_codec);
+      if (BundleName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BundleName);
+      }
+      if (AssetName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AssetName);
+      }
+      if (GroupName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GroupName);
+      }
+      if (SortOrder != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SortOrder);
+      }
+      if (UnlockType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) UnlockType);
+      }
+      size += promoType_.CalculateSize(_repeated_promoType_codec);
+      if (UnlockBadgeType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) UnlockBadgeType);
+      }
+      if (IapSku.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(IapSku);
+      }
+      if (UnlockBadgeLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UnlockBadgeLevel);
+      }
+      if (IconName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(IconName);
+      }
+      if (UnlockPlayerLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UnlockPlayerLevel);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -162,10 +425,44 @@ namespace POGOProtos.Data.Avatar {
       if (other == null) {
         return;
       }
-      if (other.AvatarTemplateId.Length != 0) {
-        AvatarTemplateId = other.AvatarTemplateId;
+      if (other.Enabled != false) {
+        Enabled = other.Enabled;
       }
-      labels_.Add(other.labels_);
+      if (other.AvatarType != 0) {
+        AvatarType = other.AvatarType;
+      }
+      slot_.Add(other.slot_);
+      if (other.BundleName.Length != 0) {
+        BundleName = other.BundleName;
+      }
+      if (other.AssetName.Length != 0) {
+        AssetName = other.AssetName;
+      }
+      if (other.GroupName.Length != 0) {
+        GroupName = other.GroupName;
+      }
+      if (other.SortOrder != 0) {
+        SortOrder = other.SortOrder;
+      }
+      if (other.UnlockType != 0) {
+        UnlockType = other.UnlockType;
+      }
+      promoType_.Add(other.promoType_);
+      if (other.UnlockBadgeType != 0) {
+        UnlockBadgeType = other.UnlockBadgeType;
+      }
+      if (other.IapSku.Length != 0) {
+        IapSku = other.IapSku;
+      }
+      if (other.UnlockBadgeLevel != 0) {
+        UnlockBadgeLevel = other.UnlockBadgeLevel;
+      }
+      if (other.IconName.Length != 0) {
+        IconName = other.IconName;
+      }
+      if (other.UnlockPlayerLevel != 0) {
+        UnlockPlayerLevel = other.UnlockPlayerLevel;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -177,13 +474,62 @@ namespace POGOProtos.Data.Avatar {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            AvatarTemplateId = input.ReadString();
+          case 8: {
+            Enabled = input.ReadBool();
             break;
           }
-          case 18:
           case 16: {
-            labels_.AddEntriesFrom(input, _repeated_labels_codec);
+            avatarType_ = (global::POGOProtos.Data.Player.PlayerAvatarType) input.ReadEnum();
+            break;
+          }
+          case 26:
+          case 24: {
+            slot_.AddEntriesFrom(input, _repeated_slot_codec);
+            break;
+          }
+          case 34: {
+            BundleName = input.ReadString();
+            break;
+          }
+          case 42: {
+            AssetName = input.ReadString();
+            break;
+          }
+          case 50: {
+            GroupName = input.ReadString();
+            break;
+          }
+          case 56: {
+            SortOrder = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            unlockType_ = (global::POGOProtos.Data.Avatar.AvatarCustomization.Types.AvatarCustomizationUnlockType) input.ReadEnum();
+            break;
+          }
+          case 74:
+          case 72: {
+            promoType_.AddEntriesFrom(input, _repeated_promoType_codec);
+            break;
+          }
+          case 80: {
+            unlockBadgeType_ = (global::POGOProtos.Enums.BadgeType) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            IapSku = input.ReadString();
+            break;
+          }
+          case 96: {
+            UnlockBadgeLevel = input.ReadInt32();
+            break;
+          }
+          case 106: {
+            IconName = input.ReadString();
+            break;
+          }
+          case 112: {
+            UnlockPlayerLevel = input.ReadInt32();
             break;
           }
         }
@@ -194,17 +540,34 @@ namespace POGOProtos.Data.Avatar {
     /// <summary>Container for nested types declared in the AvatarCustomization message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
-      public enum Label {
-        [pbr::OriginalName("UNSET_LABEL")] UnsetLabel = 0,
+      public enum AvatarCustomizationPromoType {
+        [pbr::OriginalName("UNSET_PROMO_TYPE")] UnsetPromoType = 0,
+        [pbr::OriginalName("SALE")] Sale = 1,
+        [pbr::OriginalName("FEATURED")] Featured = 2,
+      }
+
+      public enum AvatarCustomizationUnlockType {
+        [pbr::OriginalName("UNSET_UNLOCK_TYPE")] UnsetUnlockType = 0,
         [pbr::OriginalName("DEFAULT")] Default = 1,
-        [pbr::OriginalName("OWNED")] Owned = 2,
-        [pbr::OriginalName("FEATURED")] Featured = 3,
-        [pbr::OriginalName("NEW")] New = 4,
-        [pbr::OriginalName("SALE")] Sale = 5,
-        [pbr::OriginalName("PURCHASABLE")] Purchasable = 6,
-        [pbr::OriginalName("UNLOCKABLE")] Unlockable = 7,
-        [pbr::OriginalName("VIEWED")] Viewed = 8,
-        [pbr::OriginalName("LOCKED_PURCHASABLE")] LockedPurchasable = 9,
+        [pbr::OriginalName("MEDAL_REWARD")] MedalReward = 2,
+        [pbr::OriginalName("IAP_CLOTHING")] IapClothing = 3,
+        [pbr::OriginalName("LEVEL_REWARD")] LevelReward = 4,
+      }
+
+      public enum Slot {
+        [pbr::OriginalName("UNSET_SLOT")] UnsetSlot = 0,
+        [pbr::OriginalName("HAIR")] Hair = 1,
+        [pbr::OriginalName("SHIRT")] Shirt = 2,
+        [pbr::OriginalName("PANTS")] Pants = 3,
+        [pbr::OriginalName("HAT")] Hat = 4,
+        [pbr::OriginalName("SHOES")] Shoes = 5,
+        [pbr::OriginalName("EYES")] Eyes = 6,
+        [pbr::OriginalName("BACKPACK")] Backpack = 7,
+        [pbr::OriginalName("GLOVES")] Gloves = 8,
+        [pbr::OriginalName("SOCKS")] Socks = 9,
+        [pbr::OriginalName("BELT")] Belt = 10,
+        [pbr::OriginalName("GLASSES")] Glasses = 11,
+        [pbr::OriginalName("NECKLACE")] Necklace = 12,
       }
 
     }

@@ -28,23 +28,25 @@ namespace POGOProtos.Data.Battle {
             "UE9HT1Byb3Rvcy5EYXRhLkJhdHRsZRoqUE9HT1Byb3Rvcy9EYXRhL0JhdHRs",
             "ZS9CYXR0bGVSZXN1bHRzLnByb3RvGi1QT0dPUHJvdG9zL0RhdGEvQmF0dGxl",
             "L0JhdHRsZUFjdGlvblR5cGUucHJvdG8aLlBPR09Qcm90b3MvRGF0YS9CYXR0",
-            "bGUvQmF0dGxlUGFydGljaXBhbnQucHJvdG8igwQKDEJhdHRsZUFjdGlvbhI2",
-            "CgR0eXBlGAEgASgOMiguUE9HT1Byb3Rvcy5EYXRhLkJhdHRsZS5CYXR0bGVB",
-            "Y3Rpb25UeXBlEhcKD2FjdGlvbl9zdGFydF9tcxgCIAEoAxITCgtkdXJhdGlv",
-            "bl9tcxgDIAEoBRIUCgxlbmVyZ3lfZGVsdGEYBSABKAUSFgoOYXR0YWNrZXJf",
-            "aW5kZXgYBiABKAUSFAoMdGFyZ2V0X2luZGV4GAcgASgFEhkKEWFjdGl2ZV9w",
-            "b2tlbW9uX2lkGAggASgGEkAKDXBsYXllcl9qb2luZWQYCSABKAsyKS5QT0dP",
-            "UHJvdG9zLkRhdGEuQmF0dGxlLkJhdHRsZVBhcnRpY2lwYW50Ej0KDmJhdHRs",
-            "ZV9yZXN1bHRzGAogASgLMiUuUE9HT1Byb3Rvcy5EYXRhLkJhdHRsZS5CYXR0",
-            "bGVSZXN1bHRzEikKIWRhbWFnZV93aW5kb3dzX3N0YXJ0X3RpbWVzdGFtcF9t",
-            "cxgLIAEoAxInCh9kYW1hZ2Vfd2luZG93c19lbmRfdGltZXN0YW1wX21zGAwg",
-            "ASgDEj4KC3BsYXllcl9sZWZ0GA0gASgLMikuUE9HT1Byb3Rvcy5EYXRhLkJh",
-            "dHRsZS5CYXR0bGVQYXJ0aWNpcGFudBIZChF0YXJnZXRfcG9rZW1vbl9pZBgO",
-            "IAEoBmIGcHJvdG8z"));
+            "bGUvQmF0dGxlUGFydGljaXBhbnQucHJvdG8aLlBPR09Qcm90b3MvRGF0YS9G",
+            "cmllbmRzL0xldmVsZWRVcEZyaWVuZHMucHJvdG8iygQKDEJhdHRsZUFjdGlv",
+            "bhI2CgR0eXBlGAEgASgOMiguUE9HT1Byb3Rvcy5EYXRhLkJhdHRsZS5CYXR0",
+            "bGVBY3Rpb25UeXBlEhcKD2FjdGlvbl9zdGFydF9tcxgCIAEoAxITCgtkdXJh",
+            "dGlvbl9tcxgDIAEoBRIUCgxlbmVyZ3lfZGVsdGEYBSABKAUSFgoOYXR0YWNr",
+            "ZXJfaW5kZXgYBiABKAUSFAoMdGFyZ2V0X2luZGV4GAcgASgFEhkKEWFjdGl2",
+            "ZV9wb2tlbW9uX2lkGAggASgEEkAKDXBsYXllcl9qb2luZWQYCSABKAsyKS5Q",
+            "T0dPUHJvdG9zLkRhdGEuQmF0dGxlLkJhdHRsZVBhcnRpY2lwYW50Ej0KDmJh",
+            "dHRsZV9yZXN1bHRzGAogASgLMiUuUE9HT1Byb3Rvcy5EYXRhLkJhdHRsZS5C",
+            "YXR0bGVSZXN1bHRzEikKIWRhbWFnZV93aW5kb3dzX3N0YXJ0X3RpbWVzdGFt",
+            "cF9tcxgLIAEoAxInCh9kYW1hZ2Vfd2luZG93c19lbmRfdGltZXN0YW1wX21z",
+            "GAwgASgDEj4KC3BsYXllcl9sZWZ0GA0gASgLMikuUE9HT1Byb3Rvcy5EYXRh",
+            "LkJhdHRsZS5CYXR0bGVQYXJ0aWNpcGFudBIZChF0YXJnZXRfcG9rZW1vbl9p",
+            "ZBgOIAEoBBJFChJsZXZlbGVkX3VwX2ZyaWVuZHMYDyABKAsyKS5QT0dPUHJv",
+            "dG9zLkRhdGEuRnJpZW5kcy5MZXZlbGVkVXBGcmllbmRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattleResultsReflection.Descriptor, global::POGOProtos.Data.Battle.BattleActionTypeReflection.Descriptor, global::POGOProtos.Data.Battle.BattleParticipantReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattleResultsReflection.Descriptor, global::POGOProtos.Data.Battle.BattleActionTypeReflection.Descriptor, global::POGOProtos.Data.Battle.BattleParticipantReflection.Descriptor, global::POGOProtos.Data.Friends.LeveledUpFriendsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Battle.BattleAction), global::POGOProtos.Data.Battle.BattleAction.Parser, new[]{ "Type", "ActionStartMs", "DurationMs", "EnergyDelta", "AttackerIndex", "TargetIndex", "ActivePokemonId", "PlayerJoined", "BattleResults", "DamageWindowsStartTimestampMs", "DamageWindowsEndTimestampMs", "PlayerLeft", "TargetPokemonId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Battle.BattleAction), global::POGOProtos.Data.Battle.BattleAction.Parser, new[]{ "Type", "ActionStartMs", "DurationMs", "EnergyDelta", "AttackerIndex", "TargetIndex", "ActivePokemonId", "PlayerJoined", "BattleResults", "DamageWindowsStartTimestampMs", "DamageWindowsEndTimestampMs", "PlayerLeft", "TargetPokemonId", "LeveledUpFriends" }, null, null, null)
           }));
     }
     #endregion
@@ -83,12 +85,13 @@ namespace POGOProtos.Data.Battle {
       attackerIndex_ = other.attackerIndex_;
       targetIndex_ = other.targetIndex_;
       activePokemonId_ = other.activePokemonId_;
-      PlayerJoined = other.playerJoined_ != null ? other.PlayerJoined.Clone() : null;
-      BattleResults = other.battleResults_ != null ? other.BattleResults.Clone() : null;
+      playerJoined_ = other.playerJoined_ != null ? other.playerJoined_.Clone() : null;
+      battleResults_ = other.battleResults_ != null ? other.battleResults_.Clone() : null;
       damageWindowsStartTimestampMs_ = other.damageWindowsStartTimestampMs_;
       damageWindowsEndTimestampMs_ = other.damageWindowsEndTimestampMs_;
-      PlayerLeft = other.playerLeft_ != null ? other.PlayerLeft.Clone() : null;
+      playerLeft_ = other.playerLeft_ != null ? other.playerLeft_.Clone() : null;
       targetPokemonId_ = other.targetPokemonId_;
+      leveledUpFriends_ = other.leveledUpFriends_ != null ? other.leveledUpFriends_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -240,6 +243,17 @@ namespace POGOProtos.Data.Battle {
       }
     }
 
+    /// <summary>Field number for the "leveled_up_friends" field.</summary>
+    public const int LeveledUpFriendsFieldNumber = 15;
+    private global::POGOProtos.Data.Friends.LeveledUpFriends leveledUpFriends_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Friends.LeveledUpFriends LeveledUpFriends {
+      get { return leveledUpFriends_; }
+      set {
+        leveledUpFriends_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as BattleAction);
@@ -266,6 +280,7 @@ namespace POGOProtos.Data.Battle {
       if (DamageWindowsEndTimestampMs != other.DamageWindowsEndTimestampMs) return false;
       if (!object.Equals(PlayerLeft, other.PlayerLeft)) return false;
       if (TargetPokemonId != other.TargetPokemonId) return false;
+      if (!object.Equals(LeveledUpFriends, other.LeveledUpFriends)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -285,6 +300,7 @@ namespace POGOProtos.Data.Battle {
       if (DamageWindowsEndTimestampMs != 0L) hash ^= DamageWindowsEndTimestampMs.GetHashCode();
       if (playerLeft_ != null) hash ^= PlayerLeft.GetHashCode();
       if (TargetPokemonId != 0UL) hash ^= TargetPokemonId.GetHashCode();
+      if (leveledUpFriends_ != null) hash ^= LeveledUpFriends.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -323,8 +339,8 @@ namespace POGOProtos.Data.Battle {
         output.WriteInt32(TargetIndex);
       }
       if (ActivePokemonId != 0UL) {
-        output.WriteRawTag(65);
-        output.WriteFixed64(ActivePokemonId);
+        output.WriteRawTag(64);
+        output.WriteUInt64(ActivePokemonId);
       }
       if (playerJoined_ != null) {
         output.WriteRawTag(74);
@@ -347,8 +363,12 @@ namespace POGOProtos.Data.Battle {
         output.WriteMessage(PlayerLeft);
       }
       if (TargetPokemonId != 0UL) {
-        output.WriteRawTag(113);
-        output.WriteFixed64(TargetPokemonId);
+        output.WriteRawTag(112);
+        output.WriteUInt64(TargetPokemonId);
+      }
+      if (leveledUpFriends_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(LeveledUpFriends);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -377,7 +397,7 @@ namespace POGOProtos.Data.Battle {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TargetIndex);
       }
       if (ActivePokemonId != 0UL) {
-        size += 1 + 8;
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ActivePokemonId);
       }
       if (playerJoined_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerJoined);
@@ -395,7 +415,10 @@ namespace POGOProtos.Data.Battle {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerLeft);
       }
       if (TargetPokemonId != 0UL) {
-        size += 1 + 8;
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(TargetPokemonId);
+      }
+      if (leveledUpFriends_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LeveledUpFriends);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -456,6 +479,12 @@ namespace POGOProtos.Data.Battle {
       if (other.TargetPokemonId != 0UL) {
         TargetPokemonId = other.TargetPokemonId;
       }
+      if (other.leveledUpFriends_ != null) {
+        if (leveledUpFriends_ == null) {
+          leveledUpFriends_ = new global::POGOProtos.Data.Friends.LeveledUpFriends();
+        }
+        LeveledUpFriends.MergeFrom(other.LeveledUpFriends);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -491,8 +520,8 @@ namespace POGOProtos.Data.Battle {
             TargetIndex = input.ReadInt32();
             break;
           }
-          case 65: {
-            ActivePokemonId = input.ReadFixed64();
+          case 64: {
+            ActivePokemonId = input.ReadUInt64();
             break;
           }
           case 74: {
@@ -524,8 +553,15 @@ namespace POGOProtos.Data.Battle {
             input.ReadMessage(playerLeft_);
             break;
           }
-          case 113: {
-            TargetPokemonId = input.ReadFixed64();
+          case 112: {
+            TargetPokemonId = input.ReadUInt64();
+            break;
+          }
+          case 122: {
+            if (leveledUpFriends_ == null) {
+              leveledUpFriends_ = new global::POGOProtos.Data.Friends.LeveledUpFriends();
+            }
+            input.ReadMessage(leveledUpFriends_);
             break;
           }
         }

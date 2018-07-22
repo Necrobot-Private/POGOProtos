@@ -27,15 +27,18 @@ namespace POGOProtos.Settings.Master {
             "Ci5QT0dPUHJvdG9zL1NldHRpbmdzL01hc3Rlci9CYWRnZVNldHRpbmdzLnBy",
             "b3RvEhpQT0dPUHJvdG9zLlNldHRpbmdzLk1hc3RlchogUE9HT1Byb3Rvcy9F",
             "bnVtcy9CYWRnZVR5cGUucHJvdG8aLlBPR09Qcm90b3MvRGF0YS9CYWRnZS9C",
-            "YWRnZUNhcHR1cmVSZXdhcmQucHJvdG8ivQEKDUJhZGdlU2V0dGluZ3MSLwoK",
-            "YmFkZ2VfdHlwZRgBIAEoDjIbLlBPR09Qcm90b3MuRW51bXMuQmFkZ2VUeXBl",
-            "EhIKCmJhZGdlX3JhbmsYAiABKAUSDwoHdGFyZ2V0cxgDIAMoBRJBCg5jYXB0",
-            "dXJlX3Jld2FyZBgEIAMoCzIpLlBPR09Qcm90b3MuRGF0YS5CYWRnZS5CYWRn",
-            "ZUNhcHR1cmVSZXdhcmQSEwoLZXZlbnRfYmFkZ2UYBSABKAhiBnByb3RvMw=="));
+            "YWRnZUNhcHR1cmVSZXdhcmQucHJvdG8aM1BPR09Qcm90b3MvU2V0dGluZ3Mv",
+            "TWFzdGVyL0V2ZW50QmFkZ2VTZXR0aW5ncy5wcm90byKLAgoNQmFkZ2VTZXR0",
+            "aW5ncxIvCgpiYWRnZV90eXBlGAEgASgOMhsuUE9HT1Byb3Rvcy5FbnVtcy5C",
+            "YWRnZVR5cGUSEgoKYmFkZ2VfcmFuaxgCIAEoBRIPCgd0YXJnZXRzGAMgAygF",
+            "EkEKDmNhcHR1cmVfcmV3YXJkGAQgAygLMikuUE9HT1Byb3Rvcy5EYXRhLkJh",
+            "ZGdlLkJhZGdlQ2FwdHVyZVJld2FyZBITCgtldmVudF9iYWRnZRgFIAEoCBJM",
+            "ChRldmVudF9iYWRnZV9zZXR0aW5ncxgGIAEoCzIuLlBPR09Qcm90b3MuU2V0",
+            "dGluZ3MuTWFzdGVyLkV2ZW50QmFkZ2VTZXR0aW5nc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Enums.BadgeTypeReflection.Descriptor, global::POGOProtos.Data.Badge.BadgeCaptureRewardReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.BadgeTypeReflection.Descriptor, global::POGOProtos.Data.Badge.BadgeCaptureRewardReflection.Descriptor, global::POGOProtos.Settings.Master.EventBadgeSettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.BadgeSettings), global::POGOProtos.Settings.Master.BadgeSettings.Parser, new[]{ "BadgeType", "BadgeRank", "Targets", "CaptureReward", "EventBadge" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.Master.BadgeSettings), global::POGOProtos.Settings.Master.BadgeSettings.Parser, new[]{ "BadgeType", "BadgeRank", "Targets", "CaptureReward", "EventBadge", "EventBadgeSettings" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +75,7 @@ namespace POGOProtos.Settings.Master {
       targets_ = other.targets_.Clone();
       captureReward_ = other.captureReward_.Clone();
       eventBadge_ = other.eventBadge_;
+      eventBadgeSettings_ = other.eventBadgeSettings_ != null ? other.eventBadgeSettings_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -133,6 +137,17 @@ namespace POGOProtos.Settings.Master {
       }
     }
 
+    /// <summary>Field number for the "event_badge_settings" field.</summary>
+    public const int EventBadgeSettingsFieldNumber = 6;
+    private global::POGOProtos.Settings.Master.EventBadgeSettings eventBadgeSettings_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Settings.Master.EventBadgeSettings EventBadgeSettings {
+      get { return eventBadgeSettings_; }
+      set {
+        eventBadgeSettings_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as BadgeSettings);
@@ -151,6 +166,7 @@ namespace POGOProtos.Settings.Master {
       if(!targets_.Equals(other.targets_)) return false;
       if(!captureReward_.Equals(other.captureReward_)) return false;
       if (EventBadge != other.EventBadge) return false;
+      if (!object.Equals(EventBadgeSettings, other.EventBadgeSettings)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -162,6 +178,7 @@ namespace POGOProtos.Settings.Master {
       hash ^= targets_.GetHashCode();
       hash ^= captureReward_.GetHashCode();
       if (EventBadge != false) hash ^= EventBadge.GetHashCode();
+      if (eventBadgeSettings_ != null) hash ^= EventBadgeSettings.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -189,6 +206,10 @@ namespace POGOProtos.Settings.Master {
         output.WriteRawTag(40);
         output.WriteBool(EventBadge);
       }
+      if (eventBadgeSettings_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(EventBadgeSettings);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -207,6 +228,9 @@ namespace POGOProtos.Settings.Master {
       size += captureReward_.CalculateSize(_repeated_captureReward_codec);
       if (EventBadge != false) {
         size += 1 + 1;
+      }
+      if (eventBadgeSettings_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EventBadgeSettings);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -229,6 +253,12 @@ namespace POGOProtos.Settings.Master {
       captureReward_.Add(other.captureReward_);
       if (other.EventBadge != false) {
         EventBadge = other.EventBadge;
+      }
+      if (other.eventBadgeSettings_ != null) {
+        if (eventBadgeSettings_ == null) {
+          eventBadgeSettings_ = new global::POGOProtos.Settings.Master.EventBadgeSettings();
+        }
+        EventBadgeSettings.MergeFrom(other.EventBadgeSettings);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -260,6 +290,13 @@ namespace POGOProtos.Settings.Master {
           }
           case 40: {
             EventBadge = input.ReadBool();
+            break;
+          }
+          case 50: {
+            if (eventBadgeSettings_ == null) {
+              eventBadgeSettings_ = new global::POGOProtos.Settings.Master.EventBadgeSettings();
+            }
+            input.ReadMessage(eventBadgeSettings_);
             break;
           }
         }

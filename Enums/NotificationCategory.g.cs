@@ -25,11 +25,13 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CitQT0dPUHJvdG9zL0VudW1zL05vdGlmaWNhdGlvbkNhdGVnb3J5LnByb3Rv",
-            "EhBQT0dPUHJvdG9zLkVudW1zKqgBChROb3RpZmljYXRpb25DYXRlZ29yeRIe",
+            "EhBQT0dPUHJvdG9zLkVudW1zKpsCChROb3RpZmljYXRpb25DYXRlZ29yeRIe",
             "ChpVTlNFVF9Ob3RpZmljYXRpb25DYXRlZ29yeRAAEg8KC0dZTV9SRU1PVkFM",
             "EAESEgoOUE9LRU1PTl9IVU5HUlkQAhIPCgtQT0tFTU9OX1dPThADEhkKFUVY",
             "Q0xVU0lWRV9SQUlEX0lOVklURRAEEh8KG0VYQ0xVU0lWRV9SQUlEX0NBTkNF",
-            "TExBVElPThAFYgZwcm90bzM="));
+            "TExBVElPThAFEhQKEEdJRlRCT1hfSU5DT01JTkcQBhIVChFHSUZUQk9YX0RF",
+            "TElWRVJFRBAHEh8KG0ZSSUVORFNISVBfTUlMRVNUT05FX1JFV0FSRBAIEiMK",
+            "H0dZTV9CQVRUTEVfRlJJRU5EU0hJUF9JTkNSRU1FTlQQCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.NotificationCategory), }, null));
@@ -45,6 +47,10 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("POKEMON_WON")] PokemonWon = 3,
     [pbr::OriginalName("EXCLUSIVE_RAID_INVITE")] ExclusiveRaidInvite = 4,
     [pbr::OriginalName("EXCLUSIVE_RAID_CANCELLATION")] ExclusiveRaidCancellation = 5,
+    [pbr::OriginalName("GIFTBOX_INCOMING")] GiftboxIncoming = 6,
+    [pbr::OriginalName("GIFTBOX_DELIVERED")] GiftboxDelivered = 7,
+    [pbr::OriginalName("FRIENDSHIP_MILESTONE_REWARD")] FriendshipMilestoneReward = 8,
+    [pbr::OriginalName("GYM_BATTLE_FRIENDSHIP_INCREMENT")] GymBattleFriendshipIncrement = 9,
   }
 
   #endregion

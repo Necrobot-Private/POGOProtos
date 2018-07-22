@@ -69,7 +69,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RegisterBackgroundDeviceResponse(RegisterBackgroundDeviceResponse other) : this() {
       status_ = other.status_;
-      Token = other.token_ != null ? other.Token.Clone() : null;
+      token_ = other.token_ != null ? other.token_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

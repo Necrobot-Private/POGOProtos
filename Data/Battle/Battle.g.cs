@@ -28,18 +28,21 @@ namespace POGOProtos.Data.Battle {
             "b3Rvcy5EYXRhLkJhdHRsZRouUE9HT1Byb3Rvcy9EYXRhL0JhdHRsZS9CYXR0",
             "bGVQYXJ0aWNpcGFudC5wcm90bxomUE9HT1Byb3Rvcy9EYXRhL0JhdHRsZS9C",
             "YXR0bGVMb2cucHJvdG8aJ1BPR09Qcm90b3MvRW51bXMvV2VhdGhlckNvbmRp",
-            "dGlvbi5wcm90byK7AgoGQmF0dGxlEhcKD2JhdHRsZV9zdGFydF9tcxgBIAEo",
-            "AxIVCg1iYXR0bGVfZW5kX21zGAIgASgDEhEKCWJhdHRsZV9pZBgDIAEoCRI7",
-            "CghkZWZlbmRlchgEIAEoCzIpLlBPR09Qcm90b3MuRGF0YS5CYXR0bGUuQmF0",
-            "dGxlUGFydGljaXBhbnQSNQoKYmF0dGxlX2xvZxgFIAEoCzIhLlBPR09Qcm90",
-            "b3MuRGF0YS5CYXR0bGUuQmF0dGxlTG9nEjsKCGF0dGFja2VyGAYgASgLMiku",
-            "UE9HT1Byb3Rvcy5EYXRhLkJhdHRsZS5CYXR0bGVQYXJ0aWNpcGFudBI9ChF3",
-            "ZWF0aGVyX2NvbmRpdGlvbhgHIAEoDjIiLlBPR09Qcm90b3MuRW51bXMuV2Vh",
-            "dGhlckNvbmRpdGlvbmIGcHJvdG8z"));
+            "dGlvbi5wcm90bxovUE9HT1Byb3Rvcy9FbnVtcy9GcmllbmRzaGlwTGV2ZWxN",
+            "aWxlc3RvbmUucHJvdG8ijQMKBkJhdHRsZRIXCg9iYXR0bGVfc3RhcnRfbXMY",
+            "ASABKAMSFQoNYmF0dGxlX2VuZF9tcxgCIAEoAxIRCgliYXR0bGVfaWQYAyAB",
+            "KAkSOwoIZGVmZW5kZXIYBCABKAsyKS5QT0dPUHJvdG9zLkRhdGEuQmF0dGxl",
+            "LkJhdHRsZVBhcnRpY2lwYW50EjUKCmJhdHRsZV9sb2cYBSABKAsyIS5QT0dP",
+            "UHJvdG9zLkRhdGEuQmF0dGxlLkJhdHRsZUxvZxI7CghhdHRhY2tlchgGIAEo",
+            "CzIpLlBPR09Qcm90b3MuRGF0YS5CYXR0bGUuQmF0dGxlUGFydGljaXBhbnQS",
+            "PQoRd2VhdGhlcl9jb25kaXRpb24YByABKA4yIi5QT0dPUHJvdG9zLkVudW1z",
+            "LldlYXRoZXJDb25kaXRpb24SUAocaGlnaGVzdF9mcmllbmRzaGlwX21pbGVz",
+            "dG9uZRgIIAEoDjIqLlBPR09Qcm90b3MuRW51bXMuRnJpZW5kc2hpcExldmVs",
+            "TWlsZXN0b25lYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattleParticipantReflection.Descriptor, global::POGOProtos.Data.Battle.BattleLogReflection.Descriptor, global::POGOProtos.Enums.WeatherConditionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Battle.BattleParticipantReflection.Descriptor, global::POGOProtos.Data.Battle.BattleLogReflection.Descriptor, global::POGOProtos.Enums.WeatherConditionReflection.Descriptor, global::POGOProtos.Enums.FriendshipLevelMilestoneReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Battle.Battle), global::POGOProtos.Data.Battle.Battle.Parser, new[]{ "BattleStartMs", "BattleEndMs", "BattleId", "Defender", "BattleLog", "Attacker", "WeatherCondition" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Battle.Battle), global::POGOProtos.Data.Battle.Battle.Parser, new[]{ "BattleStartMs", "BattleEndMs", "BattleId", "Defender", "BattleLog", "Attacker", "WeatherCondition", "HighestFriendshipMilestone" }, null, null, null)
           }));
     }
     #endregion
@@ -74,10 +77,11 @@ namespace POGOProtos.Data.Battle {
       battleStartMs_ = other.battleStartMs_;
       battleEndMs_ = other.battleEndMs_;
       battleId_ = other.battleId_;
-      Defender = other.defender_ != null ? other.Defender.Clone() : null;
-      BattleLog = other.battleLog_ != null ? other.BattleLog.Clone() : null;
-      Attacker = other.attacker_ != null ? other.Attacker.Clone() : null;
+      defender_ = other.defender_ != null ? other.defender_.Clone() : null;
+      battleLog_ = other.battleLog_ != null ? other.battleLog_.Clone() : null;
+      attacker_ = other.attacker_ != null ? other.attacker_.Clone() : null;
       weatherCondition_ = other.weatherCondition_;
+      highestFriendshipMilestone_ = other.highestFriendshipMilestone_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -163,6 +167,17 @@ namespace POGOProtos.Data.Battle {
       }
     }
 
+    /// <summary>Field number for the "highest_friendship_milestone" field.</summary>
+    public const int HighestFriendshipMilestoneFieldNumber = 8;
+    private global::POGOProtos.Enums.FriendshipLevelMilestone highestFriendshipMilestone_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.FriendshipLevelMilestone HighestFriendshipMilestone {
+      get { return highestFriendshipMilestone_; }
+      set {
+        highestFriendshipMilestone_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Battle);
@@ -183,6 +198,7 @@ namespace POGOProtos.Data.Battle {
       if (!object.Equals(BattleLog, other.BattleLog)) return false;
       if (!object.Equals(Attacker, other.Attacker)) return false;
       if (WeatherCondition != other.WeatherCondition) return false;
+      if (HighestFriendshipMilestone != other.HighestFriendshipMilestone) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -196,6 +212,7 @@ namespace POGOProtos.Data.Battle {
       if (battleLog_ != null) hash ^= BattleLog.GetHashCode();
       if (attacker_ != null) hash ^= Attacker.GetHashCode();
       if (WeatherCondition != 0) hash ^= WeatherCondition.GetHashCode();
+      if (HighestFriendshipMilestone != 0) hash ^= HighestFriendshipMilestone.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -237,6 +254,10 @@ namespace POGOProtos.Data.Battle {
         output.WriteRawTag(56);
         output.WriteEnum((int) WeatherCondition);
       }
+      if (HighestFriendshipMilestone != 0) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) HighestFriendshipMilestone);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -265,6 +286,9 @@ namespace POGOProtos.Data.Battle {
       }
       if (WeatherCondition != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) WeatherCondition);
+      }
+      if (HighestFriendshipMilestone != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HighestFriendshipMilestone);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -306,6 +330,9 @@ namespace POGOProtos.Data.Battle {
       }
       if (other.WeatherCondition != 0) {
         WeatherCondition = other.WeatherCondition;
+      }
+      if (other.HighestFriendshipMilestone != 0) {
+        HighestFriendshipMilestone = other.HighestFriendshipMilestone;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -353,6 +380,10 @@ namespace POGOProtos.Data.Battle {
           }
           case 56: {
             weatherCondition_ = (global::POGOProtos.Enums.WeatherCondition) input.ReadEnum();
+            break;
+          }
+          case 64: {
+            highestFriendshipMilestone_ = (global::POGOProtos.Enums.FriendshipLevelMilestone) input.ReadEnum();
             break;
           }
         }

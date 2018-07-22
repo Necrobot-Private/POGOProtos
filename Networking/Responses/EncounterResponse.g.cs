@@ -79,10 +79,10 @@ namespace POGOProtos.Networking.Responses {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public EncounterResponse(EncounterResponse other) : this() {
-      WildPokemon = other.wildPokemon_ != null ? other.WildPokemon.Clone() : null;
+      wildPokemon_ = other.wildPokemon_ != null ? other.wildPokemon_.Clone() : null;
       background_ = other.background_;
       status_ = other.status_;
-      CaptureProbability = other.captureProbability_ != null ? other.CaptureProbability.Clone() : null;
+      captureProbability_ = other.captureProbability_ != null ? other.captureProbability_.Clone() : null;
       activeItem_ = other.activeItem_;
       arplusAttemptsUntilFlee_ = other.arplusAttemptsUntilFlee_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);

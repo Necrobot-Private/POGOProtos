@@ -26,23 +26,84 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CkNQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL1BsYXRmb3JtQ2xp",
             "ZW50QWN0aW9uc1Jlc3BvbnNlLnByb3RvEh9QT0dPUHJvdG9zLk5ldHdvcmtp",
-            "bmcuUmVzcG9uc2VzIq0BCiBSZWdpc3RlclB1c2hOb3RpZmljYXRpb25SZXNw",
-            "b25zZRJYCgZyZXN1bHQYASABKA4ySC5QT0dPUHJvdG9zLk5ldHdvcmtpbmcu",
-            "UmVzcG9uc2VzLlJlZ2lzdGVyUHVzaE5vdGlmaWNhdGlvblJlc3BvbnNlLlJl",
-            "c3VsdCIvCgZSZXN1bHQSCQoFVU5TRVQQABILCgdTVUNDRVNTEAESDQoJTk9f",
-            "Q0hBTkdFEAIi7wEKIFVwZGF0ZU5vdGlmaWNhdGlvblN0YXR1c1Jlc3BvbnNl",
-            "EhgKEG5vdGlmaWNhdGlvbl9pZHMYASADKAkSGwoTY3JlYXRlX3RpbWVzdGFt",
-            "cF9tcxgCIAMoAxJiCgVzdGF0ZRgDIAEoDjJTLlBPR09Qcm90b3MuTmV0d29y",
-            "a2luZy5SZXNwb25zZXMuVXBkYXRlTm90aWZpY2F0aW9uU3RhdHVzUmVzcG9u",
-            "c2UuTm90aWZpY2F0aW9uU3RhdGUiMAoRTm90aWZpY2F0aW9uU3RhdGUSDwoL",
-            "VU5TRVRfU1RBVEUQABIKCgZWSUVXRUQQASIoCiZPcHRPdXRQdXNoTm90aWZp",
-            "Y2F0aW9uQ2F0ZWdvcnlSZXNwb25zZWIGcHJvdG8z"));
+            "bmcuUmVzcG9uc2VzGidQT0dPUHJvdG9zL0VudW1zL0lkZW50aXR5UHJvdmlk",
+            "ZXIucHJvdG8aJ1BPR09Qcm90b3MvRGF0YS9Mb2dpbi9Mb2dpbkRldGFpbC5w",
+            "cm90byKtAQogUmVnaXN0ZXJQdXNoTm90aWZpY2F0aW9uUmVzcG9uc2USWAoG",
+            "cmVzdWx0GAEgASgOMkguUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNl",
+            "cy5SZWdpc3RlclB1c2hOb3RpZmljYXRpb25SZXNwb25zZS5SZXN1bHQiLwoG",
+            "UmVzdWx0EgkKBVVOU0VUEAASCwoHU1VDQ0VTUxABEg0KCU5PX0NIQU5HRRAC",
+            "Iu8BCiBVcGRhdGVOb3RpZmljYXRpb25TdGF0dXNSZXNwb25zZRIYChBub3Rp",
+            "ZmljYXRpb25faWRzGAEgAygJEhsKE2NyZWF0ZV90aW1lc3RhbXBfbXMYAiAD",
+            "KAMSYgoFc3RhdGUYAyABKA4yUy5QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVz",
+            "cG9uc2VzLlVwZGF0ZU5vdGlmaWNhdGlvblN0YXR1c1Jlc3BvbnNlLk5vdGlm",
+            "aWNhdGlvblN0YXRlIjAKEU5vdGlmaWNhdGlvblN0YXRlEg8KC1VOU0VUX1NU",
+            "QVRFEAASCgoGVklFV0VEEAEiKAomT3B0T3V0UHVzaE5vdGlmaWNhdGlvbkNh",
+            "dGVnb3J5UmVzcG9uc2UihwMKFlJlZGVlbVBhc3Njb2RlUmVzcG9uc2USTgoG",
+            "cmVzdWx0GAEgASgOMj4uUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNl",
+            "cy5SZWRlZW1QYXNzY29kZVJlc3BvbnNlLlJlc3VsdBJbCg1hY3F1aXJlZF9p",
+            "dGVtGAIgAygLMkQuUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNlcy5S",
+            "ZWRlZW1QYXNzY29kZVJlc3BvbnNlLkFjcXVpcmVkSXRlbRIcChRhY3F1aXJl",
+            "ZF9pdGVtc19wcm90bxgDIAEoDBIQCghwYXNzY29kZRgEIAEoCRorCgxBY3F1",
+            "aXJlZEl0ZW0SDAoEaXRlbRgBIAEoCRINCgVjb3VudBgCIAEoAyJjCgZSZXN1",
+            "bHQSCQoFVU5TRVQQABILCgdTVUNDRVNTEAESEQoNTk9UX0FWQUlMQUJMRRAC",
+            "EhgKFE9WRVJfSU5WRU5UT1JZX0xJTUlUEAMSFAoQQUxSRUFEWV9SRURFRU1F",
+            "RBAEIuYBChFBZGROZXdQb2lSZXNwb25zZRJJCgZzdGF0dXMYASABKA4yOS5Q",
+            "T0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2VzLkFkZE5ld1BvaVJlc3Bv",
+            "bnNlLlN0YXR1cxIPCgdtZXNzYWdlGAIgAygJInUKBlN0YXR1cxIJCgVVTlNF",
+            "VBAAEgsKB1NVQ0NFU1MQARILCgdGQUlMVVJFEAISEgoOSU5URVJOQUxfRVJS",
+            "T1IQAxIfChtUT09fTUFOWV9SRUNFTlRfU1VCTUlTU0lPTlMQBBIRCg1JTlZB",
+            "TElEX0lOUFVUEAUi7gIKGVByb3h5U29jaWFsQWN0aW9uUmVzcG9uc2USUQoG",
+            "c3RhdHVzGAEgASgOMkEuUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNl",
+            "cy5Qcm94eVNvY2lhbEFjdGlvblJlc3BvbnNlLlN0YXR1cxIVCg1hc3NpZ25l",
+            "ZF9ob3N0GAIgASgJEg8KB3BheWxvYWQYAyABKAwi1QEKBlN0YXR1cxIJCgVV",
+            "TlNFVBAAEg0KCUNPTVBMRVRFRBABEhwKGENPTVBMRVRFRF9BTkRfUkVBU1NJ",
+            "R05FRBACEhQKEEFDVElPTl9OT1RfRk9VTkQQAxIUChBBU1NJR05NRU5UX0VS",
+            "Uk9SEAQSHAoYUFJPWFlfVU5BVVRIT1JJWkVEX0VSUk9SEAUSEgoOSU5URVJO",
+            "QUxfRVJST1IQBhIPCgtCQURfUkVRVUVTVBAHEhEKDUFDQ0VTU19ERU5JRUQQ",
+            "CBIRCg1USU1FT1VUX0VSUk9SEAkiVQofR2V0QXZhaWxhYmxlU3VibWlzc2lv",
+            "bnNSZXNwb25zZRIYChBzdWJtaXNzaW9uc19sZWZ0GAEgASgFEhgKEG1pbl9w",
+            "bGF5ZXJfbGV2ZWwYAiABKAUirQEKIFB1c2hOb3RpZmljYXRpb25SZWdpc3Ry",
+            "eVJlc3BvbnNlElgKBnJlc3VsdBgBIAEoDjJILlBPR09Qcm90b3MuTmV0d29y",
+            "a2luZy5SZXNwb25zZXMuUHVzaE5vdGlmaWNhdGlvblJlZ2lzdHJ5UmVzcG9u",
+            "c2UuUmVzdWx0Ii8KBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARIN",
+            "CglOT19DSEFOR0UQAiLrAQoWQWRkTG9naW5BY3Rpb25SZXNwb25zZRIPCgdz",
+            "dWNjZXNzGAEgASgIEjgKDGxvZ2luX2RldGFpbBgCIAMoCzIiLlBPR09Qcm90",
+            "b3MuRGF0YS5Mb2dpbi5Mb2dpbkRldGFpbBJOCgZzdGF0dXMYAyABKA4yPi5Q",
+            "T0dPUHJvdG9zLk5ldHdvcmtpbmcuUmVzcG9uc2VzLkFkZExvZ2luQWN0aW9u",
+            "UmVzcG9uc2UuU3RhdHVzIjYKBlN0YXR1cxIJCgVVTlNFVBAAEhAKDEFVVEhf",
+            "RkFJTFVSRRABEg8KC0xPR0lOX1RBS0VOEAIiUgoRUmVtb3ZlTG9naW5BY3Rp",
+            "b24SPQoRaWRlbnRpdHlfcHJvdmlkZXIYASABKA4yIi5QT0dPUHJvdG9zLkVu",
+            "dW1zLklkZW50aXR5UHJvdmlkZXIi7AEKFFN1Ym1pdE5ld1BvaVJlc3BvbnNl",
+            "EkwKBnN0YXR1cxgBIAEoDjI8LlBPR09Qcm90b3MuTmV0d29ya2luZy5SZXNw",
+            "b25zZXMuU3VibWl0TmV3UG9pUmVzcG9uc2UuU3RhdHVzEg8KB21lc3NhZ2UY",
+            "AiADKAkidQoGU3RhdHVzEgkKBVVOU0VUEAASCwoHU1VDQ0VTUxABEgsKB0ZB",
+            "SUxVUkUQAhISCg5JTlRFUk5BTF9FUlJPUhADEh8KG1RPT19NQU5ZX1JFQ0VO",
+            "VF9TVUJNSVNTSU9OUxAEEhEKDUlOVkFMSURfSU5QVVQQBSKXAgobVXBsb2Fk",
+            "UG9pUGhvdG9CeVVybFJlc3BvbnNlElMKBnN0YXR1cxgBIAEoDjJDLlBPR09Q",
+            "cm90b3MuTmV0d29ya2luZy5SZXNwb25zZXMuVXBsb2FkUG9pUGhvdG9CeVVy",
+            "bFJlc3BvbnNlLlJlc3VsdCKiAQoGUmVzdWx0EgkKBVVOU0VUEAASCwoHU1VD",
+            "Q0VTUxABEhQKEEZFQVRVUkVfRElTQUJMRUQQAhIUChBBTFJFQURZX1VQTE9B",
+            "REVEEAMSEwoPSU1BR0VfTk9UX0ZPVU5EEAQSEQoNSU1BR0VfVE9PX0JJRxAF",
+            "EhYKEklNQUdFX05PVF9TRVJWQUJMRRAGEhQKEFBPUlRBTF9OT1RfRk9VTkQQ",
+            "ByJVCgxQaW5nUmVzcG9uc2USEQoJdXNlcl9pbmZvGAEgASgJEhMKC3NlcnZl",
+            "cl9pbmZvGAIgASgJEh0KFXJhbmRvbV9yZXNwb25zZV9ieXRlcxgDIAEoCWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.IdentityProviderReflection.Descriptor, global::POGOProtos.Data.Login.LoginDetailReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.RegisterPushNotificationResponse), global::POGOProtos.Networking.Responses.RegisterPushNotificationResponse.Parser, new[]{ "Result" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.RegisterPushNotificationResponse.Types.Result) }, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.UpdateNotificationStatusResponse), global::POGOProtos.Networking.Responses.UpdateNotificationStatusResponse.Parser, new[]{ "NotificationIds", "CreateTimestampMs", "State" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.UpdateNotificationStatusResponse.Types.NotificationState) }, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.OptOutPushNotificationCategoryResponse), global::POGOProtos.Networking.Responses.OptOutPushNotificationCategoryResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.OptOutPushNotificationCategoryResponse), global::POGOProtos.Networking.Responses.OptOutPushNotificationCategoryResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.RedeemPasscodeResponse), global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Parser, new[]{ "Result", "AcquiredItem", "AcquiredItemsProto", "Passcode" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.Result) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.AcquiredItem), global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.AcquiredItem.Parser, new[]{ "Item", "Count" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.AddNewPoiResponse), global::POGOProtos.Networking.Responses.AddNewPoiResponse.Parser, new[]{ "Status", "Message" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.AddNewPoiResponse.Types.Status) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.ProxySocialActionResponse), global::POGOProtos.Networking.Responses.ProxySocialActionResponse.Parser, new[]{ "Status", "AssignedHost", "Payload" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.ProxySocialActionResponse.Types.Status) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.GetAvailableSubmissionsResponse), global::POGOProtos.Networking.Responses.GetAvailableSubmissionsResponse.Parser, new[]{ "SubmissionsLeft", "MinPlayerLevel" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.PushNotificationRegistryResponse), global::POGOProtos.Networking.Responses.PushNotificationRegistryResponse.Parser, new[]{ "Result" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.PushNotificationRegistryResponse.Types.Result) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.AddLoginActionResponse), global::POGOProtos.Networking.Responses.AddLoginActionResponse.Parser, new[]{ "Success", "LoginDetail", "Status" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.AddLoginActionResponse.Types.Status) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.RemoveLoginAction), global::POGOProtos.Networking.Responses.RemoveLoginAction.Parser, new[]{ "IdentityProvider" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.SubmitNewPoiResponse), global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Parser, new[]{ "Status", "Message" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Types.Status) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.UploadPoiPhotoByUrlResponse), global::POGOProtos.Networking.Responses.UploadPoiPhotoByUrlResponse.Parser, new[]{ "Status" }, null, new[]{ typeof(global::POGOProtos.Networking.Responses.UploadPoiPhotoByUrlResponse.Types.Result) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Responses.PingResponse), global::POGOProtos.Networking.Responses.PingResponse.Parser, new[]{ "UserInfo", "ServerInfo", "RandomResponseBytes" }, null, null, null)
           }));
     }
     #endregion
@@ -470,6 +531,1868 @@ namespace POGOProtos.Networking.Responses {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RedeemPasscodeResponse : pb::IMessage<RedeemPasscodeResponse> {
+    private static readonly pb::MessageParser<RedeemPasscodeResponse> _parser = new pb::MessageParser<RedeemPasscodeResponse>(() => new RedeemPasscodeResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RedeemPasscodeResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RedeemPasscodeResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RedeemPasscodeResponse(RedeemPasscodeResponse other) : this() {
+      result_ = other.result_;
+      acquiredItem_ = other.acquiredItem_.Clone();
+      acquiredItemsProto_ = other.acquiredItemsProto_;
+      passcode_ = other.passcode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RedeemPasscodeResponse Clone() {
+      return new RedeemPasscodeResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.Result result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.Result Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "acquired_item" field.</summary>
+    public const int AcquiredItemFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.AcquiredItem> _repeated_acquiredItem_codec
+        = pb::FieldCodec.ForMessage(18, global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.AcquiredItem.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.AcquiredItem> acquiredItem_ = new pbc::RepeatedField<global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.AcquiredItem>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.AcquiredItem> AcquiredItem {
+      get { return acquiredItem_; }
+    }
+
+    /// <summary>Field number for the "acquired_items_proto" field.</summary>
+    public const int AcquiredItemsProtoFieldNumber = 3;
+    private pb::ByteString acquiredItemsProto_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString AcquiredItemsProto {
+      get { return acquiredItemsProto_; }
+      set {
+        acquiredItemsProto_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "passcode" field.</summary>
+    public const int PasscodeFieldNumber = 4;
+    private string passcode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Passcode {
+      get { return passcode_; }
+      set {
+        passcode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RedeemPasscodeResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RedeemPasscodeResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      if(!acquiredItem_.Equals(other.acquiredItem_)) return false;
+      if (AcquiredItemsProto != other.AcquiredItemsProto) return false;
+      if (Passcode != other.Passcode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      hash ^= acquiredItem_.GetHashCode();
+      if (AcquiredItemsProto.Length != 0) hash ^= AcquiredItemsProto.GetHashCode();
+      if (Passcode.Length != 0) hash ^= Passcode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      acquiredItem_.WriteTo(output, _repeated_acquiredItem_codec);
+      if (AcquiredItemsProto.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(AcquiredItemsProto);
+      }
+      if (Passcode.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Passcode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      size += acquiredItem_.CalculateSize(_repeated_acquiredItem_codec);
+      if (AcquiredItemsProto.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(AcquiredItemsProto);
+      }
+      if (Passcode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Passcode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RedeemPasscodeResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      acquiredItem_.Add(other.acquiredItem_);
+      if (other.AcquiredItemsProto.Length != 0) {
+        AcquiredItemsProto = other.AcquiredItemsProto;
+      }
+      if (other.Passcode.Length != 0) {
+        Passcode = other.Passcode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            result_ = (global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Types.Result) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            acquiredItem_.AddEntriesFrom(input, _repeated_acquiredItem_codec);
+            break;
+          }
+          case 26: {
+            AcquiredItemsProto = input.ReadBytes();
+            break;
+          }
+          case 34: {
+            Passcode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the RedeemPasscodeResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Result {
+        [pbr::OriginalName("UNSET")] Unset = 0,
+        [pbr::OriginalName("SUCCESS")] Success = 1,
+        [pbr::OriginalName("NOT_AVAILABLE")] NotAvailable = 2,
+        [pbr::OriginalName("OVER_INVENTORY_LIMIT")] OverInventoryLimit = 3,
+        [pbr::OriginalName("ALREADY_REDEEMED")] AlreadyRedeemed = 4,
+      }
+
+      public sealed partial class AcquiredItem : pb::IMessage<AcquiredItem> {
+        private static readonly pb::MessageParser<AcquiredItem> _parser = new pb::MessageParser<AcquiredItem>(() => new AcquiredItem());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<AcquiredItem> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::POGOProtos.Networking.Responses.RedeemPasscodeResponse.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public AcquiredItem() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public AcquiredItem(AcquiredItem other) : this() {
+          item_ = other.item_;
+          count_ = other.count_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public AcquiredItem Clone() {
+          return new AcquiredItem(this);
+        }
+
+        /// <summary>Field number for the "item" field.</summary>
+        public const int ItemFieldNumber = 1;
+        private string item_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Item {
+          get { return item_; }
+          set {
+            item_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        /// <summary>Field number for the "count" field.</summary>
+        public const int CountFieldNumber = 2;
+        private long count_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public long Count {
+          get { return count_; }
+          set {
+            count_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as AcquiredItem);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(AcquiredItem other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Item != other.Item) return false;
+          if (Count != other.Count) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (Item.Length != 0) hash ^= Item.GetHashCode();
+          if (Count != 0L) hash ^= Count.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (Item.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(Item);
+          }
+          if (Count != 0L) {
+            output.WriteRawTag(16);
+            output.WriteInt64(Count);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (Item.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Item);
+          }
+          if (Count != 0L) {
+            size += 1 + pb::CodedOutputStream.ComputeInt64Size(Count);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(AcquiredItem other) {
+          if (other == null) {
+            return;
+          }
+          if (other.Item.Length != 0) {
+            Item = other.Item;
+          }
+          if (other.Count != 0L) {
+            Count = other.Count;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                Item = input.ReadString();
+                break;
+              }
+              case 16: {
+                Count = input.ReadInt64();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class AddNewPoiResponse : pb::IMessage<AddNewPoiResponse> {
+    private static readonly pb::MessageParser<AddNewPoiResponse> _parser = new pb::MessageParser<AddNewPoiResponse>(() => new AddNewPoiResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddNewPoiResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddNewPoiResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddNewPoiResponse(AddNewPoiResponse other) : this() {
+      status_ = other.status_;
+      message_ = other.message_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddNewPoiResponse Clone() {
+      return new AddNewPoiResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::POGOProtos.Networking.Responses.AddNewPoiResponse.Types.Status status_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Networking.Responses.AddNewPoiResponse.Types.Status Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "message" field.</summary>
+    public const int MessageFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_message_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> message_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> Message {
+      get { return message_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddNewPoiResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddNewPoiResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Status != other.Status) return false;
+      if(!message_.Equals(other.message_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Status != 0) hash ^= Status.GetHashCode();
+      hash ^= message_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Status != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Status);
+      }
+      message_.WriteTo(output, _repeated_message_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      size += message_.CalculateSize(_repeated_message_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddNewPoiResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+      message_.Add(other.message_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            status_ = (global::POGOProtos.Networking.Responses.AddNewPoiResponse.Types.Status) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            message_.AddEntriesFrom(input, _repeated_message_codec);
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the AddNewPoiResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Status {
+        [pbr::OriginalName("UNSET")] Unset = 0,
+        [pbr::OriginalName("SUCCESS")] Success = 1,
+        [pbr::OriginalName("FAILURE")] Failure = 2,
+        [pbr::OriginalName("INTERNAL_ERROR")] InternalError = 3,
+        [pbr::OriginalName("TOO_MANY_RECENT_SUBMISSIONS")] TooManyRecentSubmissions = 4,
+        [pbr::OriginalName("INVALID_INPUT")] InvalidInput = 5,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class ProxySocialActionResponse : pb::IMessage<ProxySocialActionResponse> {
+    private static readonly pb::MessageParser<ProxySocialActionResponse> _parser = new pb::MessageParser<ProxySocialActionResponse>(() => new ProxySocialActionResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ProxySocialActionResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProxySocialActionResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProxySocialActionResponse(ProxySocialActionResponse other) : this() {
+      status_ = other.status_;
+      assignedHost_ = other.assignedHost_;
+      payload_ = other.payload_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProxySocialActionResponse Clone() {
+      return new ProxySocialActionResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::POGOProtos.Networking.Responses.ProxySocialActionResponse.Types.Status status_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Networking.Responses.ProxySocialActionResponse.Types.Status Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "assigned_host" field.</summary>
+    public const int AssignedHostFieldNumber = 2;
+    private string assignedHost_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AssignedHost {
+      get { return assignedHost_; }
+      set {
+        assignedHost_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "payload" field.</summary>
+    public const int PayloadFieldNumber = 3;
+    private pb::ByteString payload_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Payload {
+      get { return payload_; }
+      set {
+        payload_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ProxySocialActionResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ProxySocialActionResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Status != other.Status) return false;
+      if (AssignedHost != other.AssignedHost) return false;
+      if (Payload != other.Payload) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Status != 0) hash ^= Status.GetHashCode();
+      if (AssignedHost.Length != 0) hash ^= AssignedHost.GetHashCode();
+      if (Payload.Length != 0) hash ^= Payload.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Status != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Status);
+      }
+      if (AssignedHost.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AssignedHost);
+      }
+      if (Payload.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(Payload);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      if (AssignedHost.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AssignedHost);
+      }
+      if (Payload.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Payload);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ProxySocialActionResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+      if (other.AssignedHost.Length != 0) {
+        AssignedHost = other.AssignedHost;
+      }
+      if (other.Payload.Length != 0) {
+        Payload = other.Payload;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            status_ = (global::POGOProtos.Networking.Responses.ProxySocialActionResponse.Types.Status) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            AssignedHost = input.ReadString();
+            break;
+          }
+          case 26: {
+            Payload = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the ProxySocialActionResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Status {
+        [pbr::OriginalName("UNSET")] Unset = 0,
+        [pbr::OriginalName("COMPLETED")] Completed = 1,
+        [pbr::OriginalName("COMPLETED_AND_REASSIGNED")] CompletedAndReassigned = 2,
+        [pbr::OriginalName("ACTION_NOT_FOUND")] ActionNotFound = 3,
+        [pbr::OriginalName("ASSIGNMENT_ERROR")] AssignmentError = 4,
+        [pbr::OriginalName("PROXY_UNAUTHORIZED_ERROR")] ProxyUnauthorizedError = 5,
+        [pbr::OriginalName("INTERNAL_ERROR")] InternalError = 6,
+        [pbr::OriginalName("BAD_REQUEST")] BadRequest = 7,
+        [pbr::OriginalName("ACCESS_DENIED")] AccessDenied = 8,
+        [pbr::OriginalName("TIMEOUT_ERROR")] TimeoutError = 9,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class GetAvailableSubmissionsResponse : pb::IMessage<GetAvailableSubmissionsResponse> {
+    private static readonly pb::MessageParser<GetAvailableSubmissionsResponse> _parser = new pb::MessageParser<GetAvailableSubmissionsResponse>(() => new GetAvailableSubmissionsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetAvailableSubmissionsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAvailableSubmissionsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAvailableSubmissionsResponse(GetAvailableSubmissionsResponse other) : this() {
+      submissionsLeft_ = other.submissionsLeft_;
+      minPlayerLevel_ = other.minPlayerLevel_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAvailableSubmissionsResponse Clone() {
+      return new GetAvailableSubmissionsResponse(this);
+    }
+
+    /// <summary>Field number for the "submissions_left" field.</summary>
+    public const int SubmissionsLeftFieldNumber = 1;
+    private int submissionsLeft_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int SubmissionsLeft {
+      get { return submissionsLeft_; }
+      set {
+        submissionsLeft_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "min_player_level" field.</summary>
+    public const int MinPlayerLevelFieldNumber = 2;
+    private int minPlayerLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int MinPlayerLevel {
+      get { return minPlayerLevel_; }
+      set {
+        minPlayerLevel_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetAvailableSubmissionsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetAvailableSubmissionsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (SubmissionsLeft != other.SubmissionsLeft) return false;
+      if (MinPlayerLevel != other.MinPlayerLevel) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (SubmissionsLeft != 0) hash ^= SubmissionsLeft.GetHashCode();
+      if (MinPlayerLevel != 0) hash ^= MinPlayerLevel.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (SubmissionsLeft != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(SubmissionsLeft);
+      }
+      if (MinPlayerLevel != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(MinPlayerLevel);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (SubmissionsLeft != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SubmissionsLeft);
+      }
+      if (MinPlayerLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MinPlayerLevel);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetAvailableSubmissionsResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.SubmissionsLeft != 0) {
+        SubmissionsLeft = other.SubmissionsLeft;
+      }
+      if (other.MinPlayerLevel != 0) {
+        MinPlayerLevel = other.MinPlayerLevel;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            SubmissionsLeft = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            MinPlayerLevel = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PushNotificationRegistryResponse : pb::IMessage<PushNotificationRegistryResponse> {
+    private static readonly pb::MessageParser<PushNotificationRegistryResponse> _parser = new pb::MessageParser<PushNotificationRegistryResponse>(() => new PushNotificationRegistryResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PushNotificationRegistryResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PushNotificationRegistryResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PushNotificationRegistryResponse(PushNotificationRegistryResponse other) : this() {
+      result_ = other.result_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PushNotificationRegistryResponse Clone() {
+      return new PushNotificationRegistryResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::POGOProtos.Networking.Responses.PushNotificationRegistryResponse.Types.Result result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Networking.Responses.PushNotificationRegistryResponse.Types.Result Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PushNotificationRegistryResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PushNotificationRegistryResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PushNotificationRegistryResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            result_ = (global::POGOProtos.Networking.Responses.PushNotificationRegistryResponse.Types.Result) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the PushNotificationRegistryResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Result {
+        [pbr::OriginalName("UNSET")] Unset = 0,
+        [pbr::OriginalName("SUCCESS")] Success = 1,
+        [pbr::OriginalName("NO_CHANGE")] NoChange = 2,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class AddLoginActionResponse : pb::IMessage<AddLoginActionResponse> {
+    private static readonly pb::MessageParser<AddLoginActionResponse> _parser = new pb::MessageParser<AddLoginActionResponse>(() => new AddLoginActionResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddLoginActionResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddLoginActionResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddLoginActionResponse(AddLoginActionResponse other) : this() {
+      success_ = other.success_;
+      loginDetail_ = other.loginDetail_.Clone();
+      status_ = other.status_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddLoginActionResponse Clone() {
+      return new AddLoginActionResponse(this);
+    }
+
+    /// <summary>Field number for the "success" field.</summary>
+    public const int SuccessFieldNumber = 1;
+    private bool success_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Success {
+      get { return success_; }
+      set {
+        success_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "login_detail" field.</summary>
+    public const int LoginDetailFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Login.LoginDetail> _repeated_loginDetail_codec
+        = pb::FieldCodec.ForMessage(18, global::POGOProtos.Data.Login.LoginDetail.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Login.LoginDetail> loginDetail_ = new pbc::RepeatedField<global::POGOProtos.Data.Login.LoginDetail>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Data.Login.LoginDetail> LoginDetail {
+      get { return loginDetail_; }
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 3;
+    private global::POGOProtos.Networking.Responses.AddLoginActionResponse.Types.Status status_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Networking.Responses.AddLoginActionResponse.Types.Status Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddLoginActionResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddLoginActionResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Success != other.Success) return false;
+      if(!loginDetail_.Equals(other.loginDetail_)) return false;
+      if (Status != other.Status) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Success != false) hash ^= Success.GetHashCode();
+      hash ^= loginDetail_.GetHashCode();
+      if (Status != 0) hash ^= Status.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Success != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Success);
+      }
+      loginDetail_.WriteTo(output, _repeated_loginDetail_codec);
+      if (Status != 0) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Success != false) {
+        size += 1 + 1;
+      }
+      size += loginDetail_.CalculateSize(_repeated_loginDetail_codec);
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddLoginActionResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Success != false) {
+        Success = other.Success;
+      }
+      loginDetail_.Add(other.loginDetail_);
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Success = input.ReadBool();
+            break;
+          }
+          case 18: {
+            loginDetail_.AddEntriesFrom(input, _repeated_loginDetail_codec);
+            break;
+          }
+          case 24: {
+            status_ = (global::POGOProtos.Networking.Responses.AddLoginActionResponse.Types.Status) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the AddLoginActionResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Status {
+        [pbr::OriginalName("UNSET")] Unset = 0,
+        [pbr::OriginalName("AUTH_FAILURE")] AuthFailure = 1,
+        [pbr::OriginalName("LOGIN_TAKEN")] LoginTaken = 2,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class RemoveLoginAction : pb::IMessage<RemoveLoginAction> {
+    private static readonly pb::MessageParser<RemoveLoginAction> _parser = new pb::MessageParser<RemoveLoginAction>(() => new RemoveLoginAction());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RemoveLoginAction> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveLoginAction() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveLoginAction(RemoveLoginAction other) : this() {
+      identityProvider_ = other.identityProvider_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveLoginAction Clone() {
+      return new RemoveLoginAction(this);
+    }
+
+    /// <summary>Field number for the "identity_provider" field.</summary>
+    public const int IdentityProviderFieldNumber = 1;
+    private global::POGOProtos.Enums.IdentityProvider identityProvider_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Enums.IdentityProvider IdentityProvider {
+      get { return identityProvider_; }
+      set {
+        identityProvider_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RemoveLoginAction);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RemoveLoginAction other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IdentityProvider != other.IdentityProvider) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IdentityProvider != 0) hash ^= IdentityProvider.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IdentityProvider != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) IdentityProvider);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IdentityProvider != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) IdentityProvider);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RemoveLoginAction other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IdentityProvider != 0) {
+        IdentityProvider = other.IdentityProvider;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            identityProvider_ = (global::POGOProtos.Enums.IdentityProvider) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SubmitNewPoiResponse : pb::IMessage<SubmitNewPoiResponse> {
+    private static readonly pb::MessageParser<SubmitNewPoiResponse> _parser = new pb::MessageParser<SubmitNewPoiResponse>(() => new SubmitNewPoiResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SubmitNewPoiResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SubmitNewPoiResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SubmitNewPoiResponse(SubmitNewPoiResponse other) : this() {
+      status_ = other.status_;
+      message_ = other.message_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SubmitNewPoiResponse Clone() {
+      return new SubmitNewPoiResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Types.Status status_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Types.Status Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "message" field.</summary>
+    public const int MessageFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_message_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> message_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> Message {
+      get { return message_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SubmitNewPoiResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SubmitNewPoiResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Status != other.Status) return false;
+      if(!message_.Equals(other.message_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Status != 0) hash ^= Status.GetHashCode();
+      hash ^= message_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Status != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Status);
+      }
+      message_.WriteTo(output, _repeated_message_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      size += message_.CalculateSize(_repeated_message_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SubmitNewPoiResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+      message_.Add(other.message_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            status_ = (global::POGOProtos.Networking.Responses.SubmitNewPoiResponse.Types.Status) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            message_.AddEntriesFrom(input, _repeated_message_codec);
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the SubmitNewPoiResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Status {
+        [pbr::OriginalName("UNSET")] Unset = 0,
+        [pbr::OriginalName("SUCCESS")] Success = 1,
+        [pbr::OriginalName("FAILURE")] Failure = 2,
+        [pbr::OriginalName("INTERNAL_ERROR")] InternalError = 3,
+        [pbr::OriginalName("TOO_MANY_RECENT_SUBMISSIONS")] TooManyRecentSubmissions = 4,
+        [pbr::OriginalName("INVALID_INPUT")] InvalidInput = 5,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class UploadPoiPhotoByUrlResponse : pb::IMessage<UploadPoiPhotoByUrlResponse> {
+    private static readonly pb::MessageParser<UploadPoiPhotoByUrlResponse> _parser = new pb::MessageParser<UploadPoiPhotoByUrlResponse>(() => new UploadPoiPhotoByUrlResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UploadPoiPhotoByUrlResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadPoiPhotoByUrlResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadPoiPhotoByUrlResponse(UploadPoiPhotoByUrlResponse other) : this() {
+      status_ = other.status_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadPoiPhotoByUrlResponse Clone() {
+      return new UploadPoiPhotoByUrlResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::POGOProtos.Networking.Responses.UploadPoiPhotoByUrlResponse.Types.Result status_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Networking.Responses.UploadPoiPhotoByUrlResponse.Types.Result Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UploadPoiPhotoByUrlResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UploadPoiPhotoByUrlResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Status != other.Status) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Status != 0) hash ^= Status.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Status != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UploadPoiPhotoByUrlResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            status_ = (global::POGOProtos.Networking.Responses.UploadPoiPhotoByUrlResponse.Types.Result) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the UploadPoiPhotoByUrlResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Result {
+        [pbr::OriginalName("UNSET")] Unset = 0,
+        [pbr::OriginalName("SUCCESS")] Success = 1,
+        [pbr::OriginalName("FEATURE_DISABLED")] FeatureDisabled = 2,
+        [pbr::OriginalName("ALREADY_UPLOADED")] AlreadyUploaded = 3,
+        [pbr::OriginalName("IMAGE_NOT_FOUND")] ImageNotFound = 4,
+        [pbr::OriginalName("IMAGE_TOO_BIG")] ImageTooBig = 5,
+        [pbr::OriginalName("IMAGE_NOT_SERVABLE")] ImageNotServable = 6,
+        [pbr::OriginalName("PORTAL_NOT_FOUND")] PortalNotFound = 7,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class PingResponse : pb::IMessage<PingResponse> {
+    private static readonly pb::MessageParser<PingResponse> _parser = new pb::MessageParser<PingResponse>(() => new PingResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PingResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::POGOProtos.Networking.Responses.PlatformClientActionsResponseReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PingResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PingResponse(PingResponse other) : this() {
+      userInfo_ = other.userInfo_;
+      serverInfo_ = other.serverInfo_;
+      randomResponseBytes_ = other.randomResponseBytes_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PingResponse Clone() {
+      return new PingResponse(this);
+    }
+
+    /// <summary>Field number for the "user_info" field.</summary>
+    public const int UserInfoFieldNumber = 1;
+    private string userInfo_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string UserInfo {
+      get { return userInfo_; }
+      set {
+        userInfo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "server_info" field.</summary>
+    public const int ServerInfoFieldNumber = 2;
+    private string serverInfo_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ServerInfo {
+      get { return serverInfo_; }
+      set {
+        serverInfo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "random_response_bytes" field.</summary>
+    public const int RandomResponseBytesFieldNumber = 3;
+    private string randomResponseBytes_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RandomResponseBytes {
+      get { return randomResponseBytes_; }
+      set {
+        randomResponseBytes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PingResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PingResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (UserInfo != other.UserInfo) return false;
+      if (ServerInfo != other.ServerInfo) return false;
+      if (RandomResponseBytes != other.RandomResponseBytes) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (UserInfo.Length != 0) hash ^= UserInfo.GetHashCode();
+      if (ServerInfo.Length != 0) hash ^= ServerInfo.GetHashCode();
+      if (RandomResponseBytes.Length != 0) hash ^= RandomResponseBytes.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (UserInfo.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(UserInfo);
+      }
+      if (ServerInfo.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ServerInfo);
+      }
+      if (RandomResponseBytes.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(RandomResponseBytes);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (UserInfo.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserInfo);
+      }
+      if (ServerInfo.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerInfo);
+      }
+      if (RandomResponseBytes.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RandomResponseBytes);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PingResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.UserInfo.Length != 0) {
+        UserInfo = other.UserInfo;
+      }
+      if (other.ServerInfo.Length != 0) {
+        ServerInfo = other.ServerInfo;
+      }
+      if (other.RandomResponseBytes.Length != 0) {
+        RandomResponseBytes = other.RandomResponseBytes;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            UserInfo = input.ReadString();
+            break;
+          }
+          case 18: {
+            ServerInfo = input.ReadString();
+            break;
+          }
+          case 26: {
+            RandomResponseBytes = input.ReadString();
+            break;
+          }
         }
       }
     }

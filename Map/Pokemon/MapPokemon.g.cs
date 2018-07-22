@@ -74,7 +74,7 @@ namespace POGOProtos.Map.Pokemon {
       expirationTimestampMs_ = other.expirationTimestampMs_;
       latitude_ = other.latitude_;
       longitude_ = other.longitude_;
-      PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
+      pokemonDisplay_ = other.pokemonDisplay_ != null ? other.pokemonDisplay_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

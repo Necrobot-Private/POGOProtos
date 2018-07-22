@@ -26,16 +26,17 @@ namespace POGOProtos.Data.Raid {
           string.Concat(
             "Ch9QT0dPUHJvdG9zL0RhdGEvUmFpZC9SYWlkLnByb3RvEhRQT0dPUHJvdG9z",
             "LkRhdGEuUmFpZBogUE9HT1Byb3Rvcy9FbnVtcy9Qb2tlbW9uSWQucHJvdG8i",
-            "8AEKBFJhaWQSEQoJcmFpZF9zZWVkGAEgASgDEhIKCnN0YXJ0ZWRfbXMYAiAB",
+            "kgIKBFJhaWQSEQoJcmFpZF9zZWVkGAEgASgDEhIKCnN0YXJ0ZWRfbXMYAiAB",
             "KAMSFAoMY29tcGxldGVkX21zGAMgASgDEjkKFGVuY291bnRlcl9wb2tlbW9u",
             "X2lkGAQgASgOMhsuUE9HT1Byb3Rvcy5FbnVtcy5Qb2tlbW9uSWQSGAoQY29t",
             "cGxldGVkX2JhdHRsZRgFIAEoCBIYChByZWNlaXZlZF9yZXdhcmRzGAYgASgI",
             "EhoKEmZpbmlzaGVkX2VuY291bnRlchgHIAEoCBIgChhyZWNlaXZlZF9kZWZh",
-            "dWx0X3Jld2FyZHMYCCABKAhiBnByb3RvMw=="));
+            "dWx0X3Jld2FyZHMYCCABKAgSIAoYaW5jcmVtZW50ZWRfcmFpZF9mcmllbmRz",
+            "GAkgASgIYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Raid.Raid), global::POGOProtos.Data.Raid.Raid.Parser, new[]{ "RaidSeed", "StartedMs", "CompletedMs", "EncounterPokemonId", "CompletedBattle", "ReceivedRewards", "FinishedEncounter", "ReceivedDefaultRewards" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Raid.Raid), global::POGOProtos.Data.Raid.Raid.Parser, new[]{ "RaidSeed", "StartedMs", "CompletedMs", "EncounterPokemonId", "CompletedBattle", "ReceivedRewards", "FinishedEncounter", "ReceivedDefaultRewards", "IncrementedRaidFriends" }, null, null, null)
           }));
     }
     #endregion
@@ -75,6 +76,7 @@ namespace POGOProtos.Data.Raid {
       receivedRewards_ = other.receivedRewards_;
       finishedEncounter_ = other.finishedEncounter_;
       receivedDefaultRewards_ = other.receivedDefaultRewards_;
+      incrementedRaidFriends_ = other.incrementedRaidFriends_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -171,6 +173,17 @@ namespace POGOProtos.Data.Raid {
       }
     }
 
+    /// <summary>Field number for the "incremented_raid_friends" field.</summary>
+    public const int IncrementedRaidFriendsFieldNumber = 9;
+    private bool incrementedRaidFriends_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IncrementedRaidFriends {
+      get { return incrementedRaidFriends_; }
+      set {
+        incrementedRaidFriends_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Raid);
@@ -192,6 +205,7 @@ namespace POGOProtos.Data.Raid {
       if (ReceivedRewards != other.ReceivedRewards) return false;
       if (FinishedEncounter != other.FinishedEncounter) return false;
       if (ReceivedDefaultRewards != other.ReceivedDefaultRewards) return false;
+      if (IncrementedRaidFriends != other.IncrementedRaidFriends) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -206,6 +220,7 @@ namespace POGOProtos.Data.Raid {
       if (ReceivedRewards != false) hash ^= ReceivedRewards.GetHashCode();
       if (FinishedEncounter != false) hash ^= FinishedEncounter.GetHashCode();
       if (ReceivedDefaultRewards != false) hash ^= ReceivedDefaultRewards.GetHashCode();
+      if (IncrementedRaidFriends != false) hash ^= IncrementedRaidFriends.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -251,6 +266,10 @@ namespace POGOProtos.Data.Raid {
         output.WriteRawTag(64);
         output.WriteBool(ReceivedDefaultRewards);
       }
+      if (IncrementedRaidFriends != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(IncrementedRaidFriends);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -281,6 +300,9 @@ namespace POGOProtos.Data.Raid {
         size += 1 + 1;
       }
       if (ReceivedDefaultRewards != false) {
+        size += 1 + 1;
+      }
+      if (IncrementedRaidFriends != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -317,6 +339,9 @@ namespace POGOProtos.Data.Raid {
       }
       if (other.ReceivedDefaultRewards != false) {
         ReceivedDefaultRewards = other.ReceivedDefaultRewards;
+      }
+      if (other.IncrementedRaidFriends != false) {
+        IncrementedRaidFriends = other.IncrementedRaidFriends;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -359,6 +384,10 @@ namespace POGOProtos.Data.Raid {
           }
           case 64: {
             ReceivedDefaultRewards = input.ReadBool();
+            break;
+          }
+          case 72: {
+            IncrementedRaidFriends = input.ReadBool();
             break;
           }
         }

@@ -66,7 +66,7 @@ namespace POGOProtos.Data.Gym {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GymStatusAndDefenders(GymStatusAndDefenders other) : this() {
-      PokemonFortProto = other.pokemonFortProto_ != null ? other.PokemonFortProto.Clone() : null;
+      pokemonFortProto_ = other.pokemonFortProto_ != null ? other.pokemonFortProto_.Clone() : null;
       gymDefender_ = other.gymDefender_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

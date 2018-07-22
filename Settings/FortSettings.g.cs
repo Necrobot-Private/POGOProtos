@@ -25,18 +25,20 @@ namespace POGOProtos.Settings {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiZQT0dPUHJvdG9zL1NldHRpbmdzL0ZvcnRTZXR0aW5ncy5wcm90bxITUE9H",
-            "T1Byb3Rvcy5TZXR0aW5ncyLHAgoMRm9ydFNldHRpbmdzEiAKGGludGVyYWN0",
+            "T1Byb3Rvcy5TZXR0aW5ncyKhAwoMRm9ydFNldHRpbmdzEiAKGGludGVyYWN0",
             "aW9uX3JhbmdlX21ldGVycxgBIAEoARIiChptYXhfdG90YWxfZGVwbG95ZWRf",
             "cG9rZW1vbhgCIAEoBRIjChttYXhfcGxheWVyX2RlcGxveWVkX3Bva2Vtb24Y",
             "AyABKAUSIQoZZGVwbG95X3N0YW1pbmFfbXVsdGlwbGllchgEIAEoARIgChhk",
             "ZXBsb3lfYXR0YWNrX211bHRpcGxpZXIYBSABKAESJAocZmFyX2ludGVyYWN0",
             "aW9uX3JhbmdlX21ldGVycxgGIAEoARIUCgxkaXNhYmxlX2d5bXMYByABKAgS",
             "IAoYbWF4X3NhbWVfcG9rZW1vbl9hdF9mb3J0GAggASgFEikKIW1heF9wbGF5",
-            "ZXJfdG90YWxfZGVwbG95ZWRfcG9rZW1vbhgJIAEoBWIGcHJvdG8z"));
+            "ZXJfdG90YWxfZGVwbG95ZWRfcG9rZW1vbhgJIAEoBRItCiVlbmFibGVfaHlw",
+            "ZXJsaW5rc19pbl9wb2lfZGVzY3JpcHRpb25zGAogASgIEikKIWVuYWJsZV9y",
+            "aWdodF90b19sZWZ0X3RleHRfZGlzcGxheRgLIAEoCGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.FortSettings), global::POGOProtos.Settings.FortSettings.Parser, new[]{ "InteractionRangeMeters", "MaxTotalDeployedPokemon", "MaxPlayerDeployedPokemon", "DeployStaminaMultiplier", "DeployAttackMultiplier", "FarInteractionRangeMeters", "DisableGyms", "MaxSamePokemonAtFort", "MaxPlayerTotalDeployedPokemon" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.FortSettings), global::POGOProtos.Settings.FortSettings.Parser, new[]{ "InteractionRangeMeters", "MaxTotalDeployedPokemon", "MaxPlayerDeployedPokemon", "DeployStaminaMultiplier", "DeployAttackMultiplier", "FarInteractionRangeMeters", "DisableGyms", "MaxSamePokemonAtFort", "MaxPlayerTotalDeployedPokemon", "EnableHyperlinksInPoiDescriptions", "EnableRightToLeftTextDisplay" }, null, null, null)
           }));
     }
     #endregion
@@ -77,6 +79,8 @@ namespace POGOProtos.Settings {
       disableGyms_ = other.disableGyms_;
       maxSamePokemonAtFort_ = other.maxSamePokemonAtFort_;
       maxPlayerTotalDeployedPokemon_ = other.maxPlayerTotalDeployedPokemon_;
+      enableHyperlinksInPoiDescriptions_ = other.enableHyperlinksInPoiDescriptions_;
+      enableRightToLeftTextDisplay_ = other.enableRightToLeftTextDisplay_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -184,6 +188,28 @@ namespace POGOProtos.Settings {
       }
     }
 
+    /// <summary>Field number for the "enable_hyperlinks_in_poi_descriptions" field.</summary>
+    public const int EnableHyperlinksInPoiDescriptionsFieldNumber = 10;
+    private bool enableHyperlinksInPoiDescriptions_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool EnableHyperlinksInPoiDescriptions {
+      get { return enableHyperlinksInPoiDescriptions_; }
+      set {
+        enableHyperlinksInPoiDescriptions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "enable_right_to_left_text_display" field.</summary>
+    public const int EnableRightToLeftTextDisplayFieldNumber = 11;
+    private bool enableRightToLeftTextDisplay_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool EnableRightToLeftTextDisplay {
+      get { return enableRightToLeftTextDisplay_; }
+      set {
+        enableRightToLeftTextDisplay_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FortSettings);
@@ -206,6 +232,8 @@ namespace POGOProtos.Settings {
       if (DisableGyms != other.DisableGyms) return false;
       if (MaxSamePokemonAtFort != other.MaxSamePokemonAtFort) return false;
       if (MaxPlayerTotalDeployedPokemon != other.MaxPlayerTotalDeployedPokemon) return false;
+      if (EnableHyperlinksInPoiDescriptions != other.EnableHyperlinksInPoiDescriptions) return false;
+      if (EnableRightToLeftTextDisplay != other.EnableRightToLeftTextDisplay) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -221,6 +249,8 @@ namespace POGOProtos.Settings {
       if (DisableGyms != false) hash ^= DisableGyms.GetHashCode();
       if (MaxSamePokemonAtFort != 0) hash ^= MaxSamePokemonAtFort.GetHashCode();
       if (MaxPlayerTotalDeployedPokemon != 0) hash ^= MaxPlayerTotalDeployedPokemon.GetHashCode();
+      if (EnableHyperlinksInPoiDescriptions != false) hash ^= EnableHyperlinksInPoiDescriptions.GetHashCode();
+      if (EnableRightToLeftTextDisplay != false) hash ^= EnableRightToLeftTextDisplay.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -270,6 +300,14 @@ namespace POGOProtos.Settings {
         output.WriteRawTag(72);
         output.WriteInt32(MaxPlayerTotalDeployedPokemon);
       }
+      if (EnableHyperlinksInPoiDescriptions != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(EnableHyperlinksInPoiDescriptions);
+      }
+      if (EnableRightToLeftTextDisplay != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(EnableRightToLeftTextDisplay);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -304,6 +342,12 @@ namespace POGOProtos.Settings {
       }
       if (MaxPlayerTotalDeployedPokemon != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxPlayerTotalDeployedPokemon);
+      }
+      if (EnableHyperlinksInPoiDescriptions != false) {
+        size += 1 + 1;
+      }
+      if (EnableRightToLeftTextDisplay != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -342,6 +386,12 @@ namespace POGOProtos.Settings {
       }
       if (other.MaxPlayerTotalDeployedPokemon != 0) {
         MaxPlayerTotalDeployedPokemon = other.MaxPlayerTotalDeployedPokemon;
+      }
+      if (other.EnableHyperlinksInPoiDescriptions != false) {
+        EnableHyperlinksInPoiDescriptions = other.EnableHyperlinksInPoiDescriptions;
+      }
+      if (other.EnableRightToLeftTextDisplay != false) {
+        EnableRightToLeftTextDisplay = other.EnableRightToLeftTextDisplay;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -388,6 +438,14 @@ namespace POGOProtos.Settings {
           }
           case 72: {
             MaxPlayerTotalDeployedPokemon = input.ReadInt32();
+            break;
+          }
+          case 80: {
+            EnableHyperlinksInPoiDescriptions = input.ReadBool();
+            break;
+          }
+          case 88: {
+            EnableRightToLeftTextDisplay = input.ReadBool();
             break;
           }
         }

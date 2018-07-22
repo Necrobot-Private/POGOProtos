@@ -26,7 +26,7 @@ namespace POGOProtos.Data.Player {
           string.Concat(
             "CihQT0dPUHJvdG9zL0RhdGEvUGxheWVyL1BsYXllclN0YXRzLnByb3RvEhZQ",
             "T0dPUHJvdG9zLkRhdGEuUGxheWVyGiNQT0dPUHJvdG9zL0VudW1zL0d5bUJh",
-            "ZGdlVHlwZS5wcm90byLVBwoLUGxheWVyU3RhdHMSDQoFbGV2ZWwYASABKAUS",
+            "ZGdlVHlwZS5wcm90byKvCAoLUGxheWVyU3RhdHMSDQoFbGV2ZWwYASABKAUS",
             "EgoKZXhwZXJpZW5jZRgCIAEoAxIVCg1wcmV2X2xldmVsX3hwGAMgASgDEhUK",
             "DW5leHRfbGV2ZWxfeHAYBCABKAMSEQoJa21fd2Fsa2VkGAUgASgCEhwKFHBv",
             "a2Vtb25zX2VuY291bnRlcmVkGAYgASgFEh4KFnVuaXF1ZV9wb2tlZGV4X2Vu",
@@ -48,11 +48,13 @@ namespace POGOProtos.Data.Player {
             "bmRlZF9tcxgfIAEoAxI0CgxldmVudF9iYWRnZXMYICADKA4yHi5QT0dPUHJv",
             "dG9zLkVudW1zLkd5bUJhZGdlVHlwZRIhChlrbV93YWxrZWRfcGFzdF9hY3Rp",
             "dmVfZGF5GCEgASgCEiYKHm51bV9jaGFsbGVuZ2VfcXVlc3RzX2NvbXBsZXRl",
-            "ZBgiIAEoBWIGcHJvdG8z"));
+            "ZBgiIAEoBRISCgpudW1fdHJhZGVzGCMgASgFEh0KFW51bV9tYXhfbGV2ZWxf",
+            "ZnJpZW5kcxgkIAEoBRIlCh10cmFkZV9hY2N1bXVsYXRlZF9kaXN0YW5jZV9r",
+            "bRglIAEoA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.GymBadgeTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Player.PlayerStats), global::POGOProtos.Data.Player.PlayerStats.Parser, new[]{ "Level", "Experience", "PrevLevelXp", "NextLevelXp", "KmWalked", "PokemonsEncountered", "UniquePokedexEntries", "PokemonsCaptured", "Evolutions", "PokeStopVisits", "PokeballsThrown", "EggsHatched", "BigMagikarpCaught", "BattleAttackWon", "BattleAttackTotal", "BattleDefendedWon", "BattleTrainingWon", "BattleTrainingTotal", "PrestigeRaisedTotal", "PrestigeDroppedTotal", "PokemonDeployed", "PokemonCaughtByType", "SmallRattataCaught", "UsedKmPool", "LastKmRefillMs", "NumRaidBattleWon", "NumRaidBattleTotal", "NumLegendaryBattleWon", "NumLegendaryBattleTotal", "NumBerriesFed", "TotalDefendedMs", "EventBadges", "KmWalkedPastActiveDay", "NumChallengeQuestsCompleted" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Player.PlayerStats), global::POGOProtos.Data.Player.PlayerStats.Parser, new[]{ "Level", "Experience", "PrevLevelXp", "NextLevelXp", "KmWalked", "PokemonsEncountered", "UniquePokedexEntries", "PokemonsCaptured", "Evolutions", "PokeStopVisits", "PokeballsThrown", "EggsHatched", "BigMagikarpCaught", "BattleAttackWon", "BattleAttackTotal", "BattleDefendedWon", "BattleTrainingWon", "BattleTrainingTotal", "PrestigeRaisedTotal", "PrestigeDroppedTotal", "PokemonDeployed", "PokemonCaughtByType", "SmallRattataCaught", "UsedKmPool", "LastKmRefillMs", "NumRaidBattleWon", "NumRaidBattleTotal", "NumLegendaryBattleWon", "NumLegendaryBattleTotal", "NumBerriesFed", "TotalDefendedMs", "EventBadges", "KmWalkedPastActiveDay", "NumChallengeQuestsCompleted", "NumTrades", "NumMaxLevelFriends", "TradeAccumulatedDistanceKm" }, null, null, null)
           }));
     }
     #endregion
@@ -118,6 +120,9 @@ namespace POGOProtos.Data.Player {
       eventBadges_ = other.eventBadges_.Clone();
       kmWalkedPastActiveDay_ = other.kmWalkedPastActiveDay_;
       numChallengeQuestsCompleted_ = other.numChallengeQuestsCompleted_;
+      numTrades_ = other.numTrades_;
+      numMaxLevelFriends_ = other.numMaxLevelFriends_;
+      tradeAccumulatedDistanceKm_ = other.tradeAccumulatedDistanceKm_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -498,6 +503,39 @@ namespace POGOProtos.Data.Player {
       }
     }
 
+    /// <summary>Field number for the "num_trades" field.</summary>
+    public const int NumTradesFieldNumber = 35;
+    private int numTrades_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumTrades {
+      get { return numTrades_; }
+      set {
+        numTrades_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "num_max_level_friends" field.</summary>
+    public const int NumMaxLevelFriendsFieldNumber = 36;
+    private int numMaxLevelFriends_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumMaxLevelFriends {
+      get { return numMaxLevelFriends_; }
+      set {
+        numMaxLevelFriends_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "trade_accumulated_distance_km" field.</summary>
+    public const int TradeAccumulatedDistanceKmFieldNumber = 37;
+    private long tradeAccumulatedDistanceKm_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long TradeAccumulatedDistanceKm {
+      get { return tradeAccumulatedDistanceKm_; }
+      set {
+        tradeAccumulatedDistanceKm_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PlayerStats);
@@ -545,6 +583,9 @@ namespace POGOProtos.Data.Player {
       if(!eventBadges_.Equals(other.eventBadges_)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(KmWalkedPastActiveDay, other.KmWalkedPastActiveDay)) return false;
       if (NumChallengeQuestsCompleted != other.NumChallengeQuestsCompleted) return false;
+      if (NumTrades != other.NumTrades) return false;
+      if (NumMaxLevelFriends != other.NumMaxLevelFriends) return false;
+      if (TradeAccumulatedDistanceKm != other.TradeAccumulatedDistanceKm) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -585,6 +626,9 @@ namespace POGOProtos.Data.Player {
       hash ^= eventBadges_.GetHashCode();
       if (KmWalkedPastActiveDay != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(KmWalkedPastActiveDay);
       if (NumChallengeQuestsCompleted != 0) hash ^= NumChallengeQuestsCompleted.GetHashCode();
+      if (NumTrades != 0) hash ^= NumTrades.GetHashCode();
+      if (NumMaxLevelFriends != 0) hash ^= NumMaxLevelFriends.GetHashCode();
+      if (TradeAccumulatedDistanceKm != 0L) hash ^= TradeAccumulatedDistanceKm.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -728,6 +772,18 @@ namespace POGOProtos.Data.Player {
         output.WriteRawTag(144, 2);
         output.WriteInt32(NumChallengeQuestsCompleted);
       }
+      if (NumTrades != 0) {
+        output.WriteRawTag(152, 2);
+        output.WriteInt32(NumTrades);
+      }
+      if (NumMaxLevelFriends != 0) {
+        output.WriteRawTag(160, 2);
+        output.WriteInt32(NumMaxLevelFriends);
+      }
+      if (TradeAccumulatedDistanceKm != 0L) {
+        output.WriteRawTag(168, 2);
+        output.WriteInt64(TradeAccumulatedDistanceKm);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -833,6 +889,15 @@ namespace POGOProtos.Data.Player {
       }
       if (NumChallengeQuestsCompleted != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(NumChallengeQuestsCompleted);
+      }
+      if (NumTrades != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(NumTrades);
+      }
+      if (NumMaxLevelFriends != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(NumMaxLevelFriends);
+      }
+      if (TradeAccumulatedDistanceKm != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(TradeAccumulatedDistanceKm);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -942,6 +1007,15 @@ namespace POGOProtos.Data.Player {
       }
       if (other.NumChallengeQuestsCompleted != 0) {
         NumChallengeQuestsCompleted = other.NumChallengeQuestsCompleted;
+      }
+      if (other.NumTrades != 0) {
+        NumTrades = other.NumTrades;
+      }
+      if (other.NumMaxLevelFriends != 0) {
+        NumMaxLevelFriends = other.NumMaxLevelFriends;
+      }
+      if (other.TradeAccumulatedDistanceKm != 0L) {
+        TradeAccumulatedDistanceKm = other.TradeAccumulatedDistanceKm;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1090,6 +1164,18 @@ namespace POGOProtos.Data.Player {
           }
           case 272: {
             NumChallengeQuestsCompleted = input.ReadInt32();
+            break;
+          }
+          case 280: {
+            NumTrades = input.ReadInt32();
+            break;
+          }
+          case 288: {
+            NumMaxLevelFriends = input.ReadInt32();
+            break;
+          }
+          case 296: {
+            TradeAccumulatedDistanceKm = input.ReadInt64();
             break;
           }
         }

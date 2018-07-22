@@ -30,7 +30,7 @@ namespace POGOProtos.Data.Quests {
             "cHJvdG8aIFBPR09Qcm90b3MvRW51bXMvUG9rZW1vbklkLnByb3RvGiJQT0dP",
             "UHJvdG9zL0VudW1zL1Bva2Vtb25UeXBlLnByb3RvGiBQT0dPUHJvdG9zL0Vu",
             "dW1zL1JhaWRMZXZlbC5wcm90bxomUE9HT1Byb3Rvcy9JbnZlbnRvcnkvSXRl",
-            "bS9JdGVtSWQucHJvdG8inhYKDlF1ZXN0Q29uZGl0aW9uEkIKBHR5cGUYASAB",
+            "bS9JdGVtSWQucHJvdG8isxYKDlF1ZXN0Q29uZGl0aW9uEkIKBHR5cGUYASAB",
             "KA4yNC5QT0dPUHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0Q29uZGl0aW9uLkNv",
             "bmRpdGlvblR5cGUSUQoRd2l0aF9wb2tlbW9uX3R5cGUYAiABKAsyNi5QT0dP",
             "UHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0Q29uZGl0aW9uLldpdGhQb2tlbW9u",
@@ -82,7 +82,7 @@ namespace POGOProtos.Data.Quests {
             "D0NIQUxMRU5HRV9RVUVTVBACGmQKDVdpdGhCYWRnZVR5cGUSLwoKYmFkZ2Vf",
             "dHlwZRgBIAMoDjIbLlBPR09Qcm90b3MuRW51bXMuQmFkZ2VUeXBlEhIKCmJh",
             "ZGdlX3JhbmsYAiABKAUSDgoGYW1vdW50GAMgASgFGiAKD1dpdGhQbGF5ZXJM",
-            "ZXZlbBINCgVsZXZlbBgBIAEoBRoVChNXaXRoV2luQmF0dGxlU3RhdHVzIt4D",
+            "ZXZlbBINCgVsZXZlbBgBIAEoBRoVChNXaXRoV2luQmF0dGxlU3RhdHVzIvMD",
             "Cg1Db25kaXRpb25UeXBlEgkKBVVOU0VUEAASFQoRV0lUSF9QT0tFTU9OX1RZ",
             "UEUQARIZChVXSVRIX1BPS0VNT05fQ0FURUdPUlkQAhIWChJXSVRIX1dFQVRI",
             "RVJfQk9PU1QQAxIcChhXSVRIX0RBSUxZX0NBUFRVUkVfQk9OVVMQBBIZChVX",
@@ -93,7 +93,8 @@ namespace POGOProtos.Data.Quests {
             "TklRVUVfUE9LRVNUT1AQDBIWChJXSVRIX1FVRVNUX0NPTlRFWFQQDRIcChhX",
             "SVRIX1RIUk9XX1RZUEVfSU5fQV9ST1cQDhITCg9XSVRIX0NVUlZFX0JBTEwQ",
             "DxITCg9XSVRIX0JBREdFX1RZUEUQEBIVChFXSVRIX1BMQVlFUl9MRVZFTBAR",
-            "EhoKFldJVEhfV0lOX0JBVFRMRV9TVEFUVVMQEmIGcHJvdG8z"));
+            "EhoKFldJVEhfV0lOX0JBVFRMRV9TVEFUVVMQEhITCg9XSVRIX05FV19GUklF",
+            "TkQQE2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.ActivityTypeReflection.Descriptor, global::POGOProtos.Enums.BadgeTypeReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Enums.PokemonTypeReflection.Descriptor, global::POGOProtos.Enums.RaidLevelReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -146,22 +147,22 @@ namespace POGOProtos.Data.Quests {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public QuestCondition(QuestCondition other) : this() {
       type_ = other.type_;
-      WithPokemonType = other.withPokemonType_ != null ? other.WithPokemonType.Clone() : null;
-      WithPokemonCategory = other.withPokemonCategory_ != null ? other.WithPokemonCategory.Clone() : null;
-      WithWeatherBoost = other.withWeatherBoost_ != null ? other.WithWeatherBoost.Clone() : null;
-      WithDailyCaptureBonus = other.withDailyCaptureBonus_ != null ? other.WithDailyCaptureBonus.Clone() : null;
-      WithDailySpinBonus = other.withDailySpinBonus_ != null ? other.WithDailySpinBonus.Clone() : null;
-      WithWinRaidStatus = other.withWinRaidStatus_ != null ? other.WithWinRaidStatus.Clone() : null;
-      WithRaidLevel = other.withRaidLevel_ != null ? other.WithRaidLevel.Clone() : null;
-      WithThrowType = other.withThrowType_ != null ? other.WithThrowType.Clone() : null;
-      WithWinGymBattleStatus = other.withWinGymBattleStatus_ != null ? other.WithWinGymBattleStatus.Clone() : null;
-      WithSuperEffectiveChargeMove = other.withSuperEffectiveChargeMove_ != null ? other.WithSuperEffectiveChargeMove.Clone() : null;
-      WithItem = other.withItem_ != null ? other.WithItem.Clone() : null;
-      WithUniquePokestop = other.withUniquePokestop_ != null ? other.WithUniquePokestop.Clone() : null;
-      WithQuestContext = other.withQuestContext_ != null ? other.WithQuestContext.Clone() : null;
-      WithBadgeType = other.withBadgeType_ != null ? other.WithBadgeType.Clone() : null;
-      WithPlayerLevel = other.withPlayerLevel_ != null ? other.WithPlayerLevel.Clone() : null;
-      WithWinBattleStatus = other.withWinBattleStatus_ != null ? other.WithWinBattleStatus.Clone() : null;
+      withPokemonType_ = other.withPokemonType_ != null ? other.withPokemonType_.Clone() : null;
+      withPokemonCategory_ = other.withPokemonCategory_ != null ? other.withPokemonCategory_.Clone() : null;
+      withWeatherBoost_ = other.withWeatherBoost_ != null ? other.withWeatherBoost_.Clone() : null;
+      withDailyCaptureBonus_ = other.withDailyCaptureBonus_ != null ? other.withDailyCaptureBonus_.Clone() : null;
+      withDailySpinBonus_ = other.withDailySpinBonus_ != null ? other.withDailySpinBonus_.Clone() : null;
+      withWinRaidStatus_ = other.withWinRaidStatus_ != null ? other.withWinRaidStatus_.Clone() : null;
+      withRaidLevel_ = other.withRaidLevel_ != null ? other.withRaidLevel_.Clone() : null;
+      withThrowType_ = other.withThrowType_ != null ? other.withThrowType_.Clone() : null;
+      withWinGymBattleStatus_ = other.withWinGymBattleStatus_ != null ? other.withWinGymBattleStatus_.Clone() : null;
+      withSuperEffectiveChargeMove_ = other.withSuperEffectiveChargeMove_ != null ? other.withSuperEffectiveChargeMove_.Clone() : null;
+      withItem_ = other.withItem_ != null ? other.withItem_.Clone() : null;
+      withUniquePokestop_ = other.withUniquePokestop_ != null ? other.withUniquePokestop_.Clone() : null;
+      withQuestContext_ = other.withQuestContext_ != null ? other.withQuestContext_.Clone() : null;
+      withBadgeType_ = other.withBadgeType_ != null ? other.withBadgeType_.Clone() : null;
+      withPlayerLevel_ = other.withPlayerLevel_ != null ? other.withPlayerLevel_.Clone() : null;
+      withWinBattleStatus_ = other.withWinBattleStatus_ != null ? other.withWinBattleStatus_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -815,6 +816,7 @@ namespace POGOProtos.Data.Quests {
         [pbr::OriginalName("WITH_BADGE_TYPE")] WithBadgeType = 16,
         [pbr::OriginalName("WITH_PLAYER_LEVEL")] WithPlayerLevel = 17,
         [pbr::OriginalName("WITH_WIN_BATTLE_STATUS")] WithWinBattleStatus = 18,
+        [pbr::OriginalName("WITH_NEW_FRIEND")] WithNewFriend = 19,
       }
 
       public sealed partial class WithPokemonType : pb::IMessage<WithPokemonType> {

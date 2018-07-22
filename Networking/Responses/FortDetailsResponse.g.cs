@@ -79,7 +79,7 @@ namespace POGOProtos.Networking.Responses {
     public FortDetailsResponse(FortDetailsResponse other) : this() {
       fortId_ = other.fortId_;
       teamColor_ = other.teamColor_;
-      PokemonData = other.pokemonData_ != null ? other.PokemonData.Clone() : null;
+      pokemonData_ = other.pokemonData_ != null ? other.pokemonData_.Clone() : null;
       name_ = other.name_;
       imageUrls_ = other.imageUrls_.Clone();
       fp_ = other.fp_;
@@ -92,7 +92,7 @@ namespace POGOProtos.Networking.Responses {
       modifiers_ = other.modifiers_.Clone();
       closeSoon_ = other.closeSoon_;
       checkinImageUrl_ = other.checkinImageUrl_;
-      EventInfo = other.eventInfo_ != null ? other.EventInfo.Clone() : null;
+      eventInfo_ = other.eventInfo_ != null ? other.eventInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

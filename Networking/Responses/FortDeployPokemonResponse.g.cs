@@ -82,9 +82,9 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FortDeployPokemonResponse(FortDeployPokemonResponse other) : this() {
       result_ = other.result_;
-      FortDetails = other.fortDetails_ != null ? other.FortDetails.Clone() : null;
-      PokemonData = other.pokemonData_ != null ? other.PokemonData.Clone() : null;
-      GymState = other.gymState_ != null ? other.GymState.Clone() : null;
+      fortDetails_ = other.fortDetails_ != null ? other.fortDetails_.Clone() : null;
+      pokemonData_ = other.pokemonData_ != null ? other.pokemonData_.Clone() : null;
+      gymState_ = other.gymState_ != null ? other.gymState_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

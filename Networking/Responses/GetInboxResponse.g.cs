@@ -26,7 +26,7 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CjZQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL0dldEluYm94UmVz",
             "cG9uc2UucHJvdG8SH1BPR09Qcm90b3MuTmV0d29ya2luZy5SZXNwb25zZXMi",
-            "qAcKEEdldEluYm94UmVzcG9uc2USSAoGcmVzdWx0GAEgASgOMjguUE9HT1By",
+            "twcKEEdldEluYm94UmVzcG9uc2USSAoGcmVzdWx0GAEgASgOMjguUE9HT1By",
             "b3Rvcy5OZXR3b3JraW5nLlJlc3BvbnNlcy5HZXRJbmJveFJlc3BvbnNlLlJl",
             "c3VsdBJMCgVpbmJveBgCIAEoCzI9LlBPR09Qcm90b3MuTmV0d29ya2luZy5S",
             "ZXNwb25zZXMuR2V0SW5ib3hSZXNwb25zZS5DbGllbnRJbmJveBrMBQoLQ2xp",
@@ -45,9 +45,9 @@ namespace POGOProtos.Networking.Responses {
             "ASgDIjwKBUxhYmVsEg8KC1VOU0VUX0xBQkVMEAASCgoGVU5SRUFEEAESBwoD",
             "TkVXEAISDQoJSU1NRURJQVRFEAMaaAoQVGVtcGxhdGVWYXJpYWJsZRIMCgRu",
             "YW1lGAEgASgJEg8KB2xpdGVyYWwYAiABKAkSCwoDa2V5GAMgASgJEhQKDGxv",
-            "b2t1cF90YWJsZRgEIAEoCRISCgpieXRlX3ZhbHVlGAUgASgMIi0KBlJlc3Vs",
-            "dBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARILCgdGQUlMVVJFEAJiBnByb3Rv",
-            "Mw=="));
+            "b2t1cF90YWJsZRgEIAEoCRISCgpieXRlX3ZhbHVlGAUgASgMIjwKBlJlc3Vs",
+            "dBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARILCgdGQUlMVVJFEAISDQoJVElN",
+            "RURfT1VUEANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -85,7 +85,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetInboxResponse(GetInboxResponse other) : this() {
       result_ = other.result_;
-      Inbox = other.inbox_ != null ? other.Inbox.Clone() : null;
+      inbox_ = other.inbox_ != null ? other.inbox_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -228,6 +228,7 @@ namespace POGOProtos.Networking.Responses {
         [pbr::OriginalName("UNSET")] Unset = 0,
         [pbr::OriginalName("SUCCESS")] Success = 1,
         [pbr::OriginalName("FAILURE")] Failure = 2,
+        [pbr::OriginalName("TIMED_OUT")] TimedOut = 3,
       }
 
       public sealed partial class ClientInbox : pb::IMessage<ClientInbox> {

@@ -65,7 +65,7 @@ namespace POGOProtos.Networking.Requests.Messages {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetAvatarMessage(SetAvatarMessage other) : this() {
-      PlayerAvatar = other.playerAvatar_ != null ? other.PlayerAvatar.Clone() : null;
+      playerAvatar_ = other.playerAvatar_ != null ? other.playerAvatar_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

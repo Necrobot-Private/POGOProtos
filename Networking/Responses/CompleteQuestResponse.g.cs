@@ -78,7 +78,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CompleteQuestResponse(CompleteQuestResponse other) : this() {
       status_ = other.status_;
-      Quest = other.quest_ != null ? other.Quest.Clone() : null;
+      quest_ = other.quest_ != null ? other.quest_.Clone() : null;
       stamp_ = other.stamp_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

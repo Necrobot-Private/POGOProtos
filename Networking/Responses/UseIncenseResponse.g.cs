@@ -69,7 +69,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UseIncenseResponse(UseIncenseResponse other) : this() {
       result_ = other.result_;
-      AppliedIncense = other.appliedIncense_ != null ? other.AppliedIncense.Clone() : null;
+      appliedIncense_ = other.appliedIncense_ != null ? other.appliedIncense_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

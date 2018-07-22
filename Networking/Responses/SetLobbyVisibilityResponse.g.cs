@@ -70,7 +70,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetLobbyVisibilityResponse(SetLobbyVisibilityResponse other) : this() {
       result_ = other.result_;
-      Lobby = other.lobby_ != null ? other.Lobby.Clone() : null;
+      lobby_ = other.lobby_ != null ? other.lobby_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

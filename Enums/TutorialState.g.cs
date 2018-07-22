@@ -25,13 +25,15 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiRQT0dPUHJvdG9zL0VudW1zL1R1dG9yaWFsU3RhdGUucHJvdG8SEFBPR09Q",
-            "cm90b3MuRW51bXMqggIKDVR1dG9yaWFsU3RhdGUSEAoMTEVHQUxfU0NSRUVO",
+            "cm90b3MuRW51bXMq1gIKDVR1dG9yaWFsU3RhdGUSEAoMTEVHQUxfU0NSRUVO",
             "EAASFAoQQVZBVEFSX1NFTEVDVElPThABEhQKEEFDQ09VTlRfQ1JFQVRJT04Q",
             "AhITCg9QT0tFTU9OX0NBUFRVUkUQAxISCg5OQU1FX1NFTEVDVElPThAEEhEK",
             "DVBPS0VNT05fQkVSUlkQBRIMCghVU0VfSVRFTRAGEiIKHkZJUlNUX1RJTUVf",
             "RVhQRVJJRU5DRV9DT01QTEVURRAHEhUKEVBPS0VTVE9QX1RVVE9SSUFMEAgS",
             "EAoMR1lNX1RVVE9SSUFMEAkSHAoYQ0hBTExFTkdFX1FVRVNUX1RVVE9SSUFM",
-            "EApiBnByb3RvMw=="));
+            "EAoSHwobUFJJVkFDWV9QT0xJQ1lfQ09ORklSTUFUSU9OEAsSFAoQVFJBRElO",
+            "R19UVVRPUklBTBAMEhsKF1BPSV9TVUJNSVNTSU9OX1RVVE9SSUFMEA1iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.TutorialState), }, null));
@@ -52,6 +54,9 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("POKESTOP_TUTORIAL")] PokestopTutorial = 8,
     [pbr::OriginalName("GYM_TUTORIAL")] GymTutorial = 9,
     [pbr::OriginalName("CHALLENGE_QUEST_TUTORIAL")] ChallengeQuestTutorial = 10,
+    [pbr::OriginalName("PRIVACY_POLICY_CONFIRMATION")] PrivacyPolicyConfirmation = 11,
+    [pbr::OriginalName("TRADING_TUTORIAL")] TradingTutorial = 12,
+    [pbr::OriginalName("POI_SUBMISSION_TUTORIAL")] PoiSubmissionTutorial = 13,
   }
 
   #endregion

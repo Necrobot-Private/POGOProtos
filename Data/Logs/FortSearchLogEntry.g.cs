@@ -28,22 +28,23 @@ namespace POGOProtos.Data.Logs {
             "dG8SFFBPR09Qcm90b3MuRGF0YS5Mb2dzGiFQT0dPUHJvdG9zL0RhdGEvUG9r",
             "ZW1vbkRhdGEucHJvdG8aKFBPR09Qcm90b3MvSW52ZW50b3J5L0l0ZW0vSXRl",
             "bURhdGEucHJvdG8aIlBPR09Qcm90b3MvTWFwL0ZvcnQvRm9ydFR5cGUucHJv",
-            "dG8i5QMKEkZvcnRTZWFyY2hMb2dFbnRyeRI/CgZyZXN1bHQYASABKA4yLy5Q",
-            "T0dPUHJvdG9zLkRhdGEuTG9ncy5Gb3J0U2VhcmNoTG9nRW50cnkuUmVzdWx0",
-            "Eg8KB2ZvcnRfaWQYAiABKAkSMgoFaXRlbXMYAyADKAsyIy5QT0dPUHJvdG9z",
-            "LkludmVudG9yeS5JdGVtLkl0ZW1EYXRhEgwKBGVnZ3MYBCABKAUSMgoMcG9r",
-            "ZW1vbl9lZ2dzGAUgAygLMhwuUE9HT1Byb3Rvcy5EYXRhLlBva2Vtb25EYXRh",
-            "EjAKCWZvcnRfdHlwZRgGIAEoDjIdLlBPR09Qcm90b3MuTWFwLkZvcnQuRm9y",
-            "dFR5cGUSOgoNYXdhcmRlZF9pdGVtcxgHIAMoCzIjLlBPR09Qcm90b3MuSW52",
-            "ZW50b3J5Lkl0ZW0uSXRlbURhdGESOAoLYm9udXNfaXRlbXMYCCADKAsyIy5Q",
-            "T0dPUHJvdG9zLkludmVudG9yeS5JdGVtLkl0ZW1EYXRhEj0KEHRlYW1fYm9u",
-            "dXNfaXRlbXMYCSADKAsyIy5QT0dPUHJvdG9zLkludmVudG9yeS5JdGVtLkl0",
-            "ZW1EYXRhIiAKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQAWIGcHJv",
-            "dG8z"));
+            "dG8aIlBPR09Qcm90b3MvRGF0YS9HaWZ0L0dpZnRCb3gucHJvdG8imAQKEkZv",
+            "cnRTZWFyY2hMb2dFbnRyeRI/CgZyZXN1bHQYASABKA4yLy5QT0dPUHJvdG9z",
+            "LkRhdGEuTG9ncy5Gb3J0U2VhcmNoTG9nRW50cnkuUmVzdWx0Eg8KB2ZvcnRf",
+            "aWQYAiABKAkSMgoFaXRlbXMYAyADKAsyIy5QT0dPUHJvdG9zLkludmVudG9y",
+            "eS5JdGVtLkl0ZW1EYXRhEgwKBGVnZ3MYBCABKAUSMgoMcG9rZW1vbl9lZ2dz",
+            "GAUgAygLMhwuUE9HT1Byb3Rvcy5EYXRhLlBva2Vtb25EYXRhEjAKCWZvcnRf",
+            "dHlwZRgGIAEoDjIdLlBPR09Qcm90b3MuTWFwLkZvcnQuRm9ydFR5cGUSOgoN",
+            "YXdhcmRlZF9pdGVtcxgHIAMoCzIjLlBPR09Qcm90b3MuSW52ZW50b3J5Lkl0",
+            "ZW0uSXRlbURhdGESOAoLYm9udXNfaXRlbXMYCCADKAsyIy5QT0dPUHJvdG9z",
+            "LkludmVudG9yeS5JdGVtLkl0ZW1EYXRhEj0KEHRlYW1fYm9udXNfaXRlbXMY",
+            "CSADKAsyIy5QT0dPUHJvdG9zLkludmVudG9yeS5JdGVtLkl0ZW1EYXRhEjEK",
+            "CmdpZnRfYm94ZXMYCiADKAsyHS5QT0dPUHJvdG9zLkRhdGEuR2lmdC5HaWZ0",
+            "Qm94IiAKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.PokemonDataReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemDataReflection.Descriptor, global::POGOProtos.Map.Fort.FortTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.PokemonDataReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemDataReflection.Descriptor, global::POGOProtos.Map.Fort.FortTypeReflection.Descriptor, global::POGOProtos.Data.Gift.GiftBoxReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.FortSearchLogEntry), global::POGOProtos.Data.Logs.FortSearchLogEntry.Parser, new[]{ "Result", "FortId", "Items", "Eggs", "PokemonEggs", "FortType", "AwardedItems", "BonusItems", "TeamBonusItems" }, null, new[]{ typeof(global::POGOProtos.Data.Logs.FortSearchLogEntry.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Logs.FortSearchLogEntry), global::POGOProtos.Data.Logs.FortSearchLogEntry.Parser, new[]{ "Result", "FortId", "Items", "Eggs", "PokemonEggs", "FortType", "AwardedItems", "BonusItems", "TeamBonusItems", "GiftBoxes" }, null, new[]{ typeof(global::POGOProtos.Data.Logs.FortSearchLogEntry.Types.Result) }, null)
           }));
     }
     #endregion
@@ -84,6 +85,7 @@ namespace POGOProtos.Data.Logs {
       awardedItems_ = other.awardedItems_.Clone();
       bonusItems_ = other.bonusItems_.Clone();
       teamBonusItems_ = other.teamBonusItems_.Clone();
+      giftBoxes_ = other.giftBoxes_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -186,6 +188,16 @@ namespace POGOProtos.Data.Logs {
       get { return teamBonusItems_; }
     }
 
+    /// <summary>Field number for the "gift_boxes" field.</summary>
+    public const int GiftBoxesFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Gift.GiftBox> _repeated_giftBoxes_codec
+        = pb::FieldCodec.ForMessage(82, global::POGOProtos.Data.Gift.GiftBox.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Gift.GiftBox> giftBoxes_ = new pbc::RepeatedField<global::POGOProtos.Data.Gift.GiftBox>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Data.Gift.GiftBox> GiftBoxes {
+      get { return giftBoxes_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FortSearchLogEntry);
@@ -208,6 +220,7 @@ namespace POGOProtos.Data.Logs {
       if(!awardedItems_.Equals(other.awardedItems_)) return false;
       if(!bonusItems_.Equals(other.bonusItems_)) return false;
       if(!teamBonusItems_.Equals(other.teamBonusItems_)) return false;
+      if(!giftBoxes_.Equals(other.giftBoxes_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -223,6 +236,7 @@ namespace POGOProtos.Data.Logs {
       hash ^= awardedItems_.GetHashCode();
       hash ^= bonusItems_.GetHashCode();
       hash ^= teamBonusItems_.GetHashCode();
+      hash ^= giftBoxes_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -257,6 +271,7 @@ namespace POGOProtos.Data.Logs {
       awardedItems_.WriteTo(output, _repeated_awardedItems_codec);
       bonusItems_.WriteTo(output, _repeated_bonusItems_codec);
       teamBonusItems_.WriteTo(output, _repeated_teamBonusItems_codec);
+      giftBoxes_.WriteTo(output, _repeated_giftBoxes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -282,6 +297,7 @@ namespace POGOProtos.Data.Logs {
       size += awardedItems_.CalculateSize(_repeated_awardedItems_codec);
       size += bonusItems_.CalculateSize(_repeated_bonusItems_codec);
       size += teamBonusItems_.CalculateSize(_repeated_teamBonusItems_codec);
+      size += giftBoxes_.CalculateSize(_repeated_giftBoxes_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -310,6 +326,7 @@ namespace POGOProtos.Data.Logs {
       awardedItems_.Add(other.awardedItems_);
       bonusItems_.Add(other.bonusItems_);
       teamBonusItems_.Add(other.teamBonusItems_);
+      giftBoxes_.Add(other.giftBoxes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -355,6 +372,10 @@ namespace POGOProtos.Data.Logs {
           }
           case 74: {
             teamBonusItems_.AddEntriesFrom(input, _repeated_teamBonusItems_codec);
+            break;
+          }
+          case 82: {
+            giftBoxes_.AddEntriesFrom(input, _repeated_giftBoxes_codec);
             break;
           }
         }

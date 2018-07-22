@@ -72,7 +72,7 @@ namespace POGOProtos.Map.Pokemon {
       latitude_ = other.latitude_;
       longitude_ = other.longitude_;
       spawnPointId_ = other.spawnPointId_;
-      PokemonData = other.pokemonData_ != null ? other.PokemonData.Clone() : null;
+      pokemonData_ = other.pokemonData_ != null ? other.pokemonData_.Clone() : null;
       timeTillHiddenMs_ = other.timeTillHiddenMs_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

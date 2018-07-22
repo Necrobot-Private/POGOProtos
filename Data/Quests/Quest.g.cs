@@ -29,34 +29,39 @@ namespace POGOProtos.Data.Quests {
             "cm90bxonUE9HT1Byb3Rvcy9EYXRhL1F1ZXN0cy9EYWlseVF1ZXN0LnByb3Rv",
             "Gi5QT0dPUHJvdG9zL0RhdGEvUXVlc3RzL0NhdGNoUG9rZW1vblF1ZXN0LnBy",
             "b3RvGihQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL1F1ZXN0UmV3YXJkLnByb3Rv",
-            "GiZQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL1F1ZXN0R29hbC5wcm90byL4BwoF",
-            "UXVlc3QSLwoKcXVlc3RfdHlwZRgBIAEoDjIbLlBPR09Qcm90b3MuRW51bXMu",
-            "UXVlc3RUeXBlEjcKC2RhaWx5X3F1ZXN0GAIgASgLMiIuUE9HT1Byb3Rvcy5E",
-            "YXRhLlF1ZXN0cy5EYWlseVF1ZXN0EkAKCm11bHRpX3BhcnQYAyABKAsyLC5Q",
-            "T0dPUHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0Lk11bHRpUGFydFF1ZXN0EkAK",
-            "DWNhdGNoX3Bva2Vtb24YBCABKAsyKS5QT0dPUHJvdG9zLkRhdGEuUXVlc3Rz",
-            "LkNhdGNoUG9rZW1vblF1ZXN0EhAKCHF1ZXN0X2lkGGQgASgJEhIKCnF1ZXN0",
-            "X3NlZWQYZSABKAMSPAoNcXVlc3RfY29udGV4dBhmIAEoDjIlLlBPR09Qcm90",
-            "b3MuRGF0YS5RdWVzdHMuUXVlc3QuQ29udGV4dBITCgt0ZW1wbGF0ZV9pZBhn",
-            "IAEoCRIQCghwcm9ncmVzcxhoIAEoBRIvCgRnb2FsGGkgASgLMiEuUE9HT1By",
-            "b3Rvcy5EYXRhLlF1ZXN0cy5RdWVzdEdvYWwSNAoGc3RhdHVzGGogASgOMiQu",
-            "UE9HT1Byb3Rvcy5EYXRhLlF1ZXN0cy5RdWVzdC5TdGF0dXMSOgoNcXVlc3Rf",
-            "cmV3YXJkcxhrIAMoCzIjLlBPR09Qcm90b3MuRGF0YS5RdWVzdHMuUXVlc3RS",
-            "ZXdhcmQSHQoVY3JlYXRpb25fdGltZXN0YW1wX21zGGwgASgDEiAKGGxhc3Rf",
-            "dXBkYXRlX3RpbWVzdGFtcF9tcxhtIAEoAxIgChhjb21wZWxldGlvbl90aW1l",
-            "c3RhbXBfbXMYbiABKAMSDwoHZm9ydF9pZBhvIAEoCRIXCg9hZG1pbl9nZW5l",
-            "cmF0ZWQYcCABKAgSJAocc3RhbXBfY291bnRfb3ZlcnJpZGVfZW5hYmxlZBhx",
-            "IAEoCBIcChRzdGFtcF9jb3VudF9vdmVycmlkZRhyIAEoBRISCgpzMl9jZWxs",
-            "X2lkGHMgASgDEiQKHHN0b3J5X3F1ZXN0X3RlbXBsYXRlX3ZlcnNpb24YdCAB",
-            "KAUaQwoOTXVsdGlQYXJ0UXVlc3QSMQoKc3ViX3F1ZXN0cxgBIAMoCzIdLlBP",
-            "R09Qcm90b3MuRGF0YS5RdWVzdHMuUXVlc3QiOgoHQ29udGV4dBIJCgVVTlNF",
-            "VBAAEg8KC1NUT1JZX1FVRVNUEAESEwoPQ0hBTExFTkdFX1FVRVNUEAIiRwoG",
-            "U3RhdHVzEhQKEFNUQVRVU19VTkRFRklORUQQABIRCg1TVEFUVVNfQUNUSVZF",
-            "EAESFAoQU1RBVFVTX0NPTVBMRVRFRBACYgZwcm90bzM="));
+            "GiZQT0dPUHJvdG9zL0RhdGEvUXVlc3RzL1F1ZXN0R29hbC5wcm90bxorUE9H",
+            "T1Byb3Rvcy9EYXRhL1F1ZXN0cy9BZGRGcmllbmRRdWVzdC5wcm90bxouUE9H",
+            "T1Byb3Rvcy9EYXRhL1F1ZXN0cy9UcmFkZVBva2Vtb25RdWVzdC5wcm90byL2",
+            "CAoFUXVlc3QSLwoKcXVlc3RfdHlwZRgBIAEoDjIbLlBPR09Qcm90b3MuRW51",
+            "bXMuUXVlc3RUeXBlEjcKC2RhaWx5X3F1ZXN0GAIgASgLMiIuUE9HT1Byb3Rv",
+            "cy5EYXRhLlF1ZXN0cy5EYWlseVF1ZXN0EkAKCm11bHRpX3BhcnQYAyABKAsy",
+            "LC5QT0dPUHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0Lk11bHRpUGFydFF1ZXN0",
+            "EkAKDWNhdGNoX3Bva2Vtb24YBCABKAsyKS5QT0dPUHJvdG9zLkRhdGEuUXVl",
+            "c3RzLkNhdGNoUG9rZW1vblF1ZXN0EjoKCmFkZF9mcmllbmQYBSABKAsyJi5Q",
+            "T0dPUHJvdG9zLkRhdGEuUXVlc3RzLkFkZEZyaWVuZFF1ZXN0EkAKDXRyYWRl",
+            "X3Bva2Vtb24YBiABKAsyKS5QT0dPUHJvdG9zLkRhdGEuUXVlc3RzLlRyYWRl",
+            "UG9rZW1vblF1ZXN0EhAKCHF1ZXN0X2lkGGQgASgJEhIKCnF1ZXN0X3NlZWQY",
+            "ZSABKAMSPAoNcXVlc3RfY29udGV4dBhmIAEoDjIlLlBPR09Qcm90b3MuRGF0",
+            "YS5RdWVzdHMuUXVlc3QuQ29udGV4dBITCgt0ZW1wbGF0ZV9pZBhnIAEoCRIQ",
+            "Cghwcm9ncmVzcxhoIAEoBRIvCgRnb2FsGGkgASgLMiEuUE9HT1Byb3Rvcy5E",
+            "YXRhLlF1ZXN0cy5RdWVzdEdvYWwSNAoGc3RhdHVzGGogASgOMiQuUE9HT1By",
+            "b3Rvcy5EYXRhLlF1ZXN0cy5RdWVzdC5TdGF0dXMSOgoNcXVlc3RfcmV3YXJk",
+            "cxhrIAMoCzIjLlBPR09Qcm90b3MuRGF0YS5RdWVzdHMuUXVlc3RSZXdhcmQS",
+            "HQoVY3JlYXRpb25fdGltZXN0YW1wX21zGGwgASgDEiAKGGxhc3RfdXBkYXRl",
+            "X3RpbWVzdGFtcF9tcxhtIAEoAxIgChhjb21wZWxldGlvbl90aW1lc3RhbXBf",
+            "bXMYbiABKAMSDwoHZm9ydF9pZBhvIAEoCRIXCg9hZG1pbl9nZW5lcmF0ZWQY",
+            "cCABKAgSJAocc3RhbXBfY291bnRfb3ZlcnJpZGVfZW5hYmxlZBhxIAEoCBIc",
+            "ChRzdGFtcF9jb3VudF9vdmVycmlkZRhyIAEoBRISCgpzMl9jZWxsX2lkGHMg",
+            "ASgDEiQKHHN0b3J5X3F1ZXN0X3RlbXBsYXRlX3ZlcnNpb24YdCABKAUaQwoO",
+            "TXVsdGlQYXJ0UXVlc3QSMQoKc3ViX3F1ZXN0cxgBIAMoCzIdLlBPR09Qcm90",
+            "b3MuRGF0YS5RdWVzdHMuUXVlc3QiOgoHQ29udGV4dBIJCgVVTlNFVBAAEg8K",
+            "C1NUT1JZX1FVRVNUEAESEwoPQ0hBTExFTkdFX1FVRVNUEAIiRwoGU3RhdHVz",
+            "EhQKEFNUQVRVU19VTkRFRklORUQQABIRCg1TVEFUVVNfQUNUSVZFEAESFAoQ",
+            "U1RBVFVTX0NPTVBMRVRFRBACYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Enums.QuestTypeReflection.Descriptor, global::POGOProtos.Data.Quests.DailyQuestReflection.Descriptor, global::POGOProtos.Data.Quests.CatchPokemonQuestReflection.Descriptor, global::POGOProtos.Data.Quests.QuestRewardReflection.Descriptor, global::POGOProtos.Data.Quests.QuestGoalReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Enums.QuestTypeReflection.Descriptor, global::POGOProtos.Data.Quests.DailyQuestReflection.Descriptor, global::POGOProtos.Data.Quests.CatchPokemonQuestReflection.Descriptor, global::POGOProtos.Data.Quests.QuestRewardReflection.Descriptor, global::POGOProtos.Data.Quests.QuestGoalReflection.Descriptor, global::POGOProtos.Data.Quests.AddFriendQuestReflection.Descriptor, global::POGOProtos.Data.Quests.TradePokemonQuestReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest), global::POGOProtos.Data.Quests.Quest.Parser, new[]{ "QuestType", "DailyQuest", "MultiPart", "CatchPokemon", "QuestId", "QuestSeed", "QuestContext", "TemplateId", "Progress", "Goal", "Status", "QuestRewards", "CreationTimestampMs", "LastUpdateTimestampMs", "CompeletionTimestampMs", "FortId", "AdminGenerated", "StampCountOverrideEnabled", "StampCountOverride", "S2CellId", "StoryQuestTemplateVersion" }, null, new[]{ typeof(global::POGOProtos.Data.Quests.Quest.Types.Context), typeof(global::POGOProtos.Data.Quests.Quest.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest), global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest.Parser, new[]{ "SubQuests" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest), global::POGOProtos.Data.Quests.Quest.Parser, new[]{ "QuestType", "DailyQuest", "MultiPart", "CatchPokemon", "AddFriend", "TradePokemon", "QuestId", "QuestSeed", "QuestContext", "TemplateId", "Progress", "Goal", "Status", "QuestRewards", "CreationTimestampMs", "LastUpdateTimestampMs", "CompeletionTimestampMs", "FortId", "AdminGenerated", "StampCountOverrideEnabled", "StampCountOverride", "S2CellId", "StoryQuestTemplateVersion" }, null, new[]{ typeof(global::POGOProtos.Data.Quests.Quest.Types.Context), typeof(global::POGOProtos.Data.Quests.Quest.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest), global::POGOProtos.Data.Quests.Quest.Types.MultiPartQuest.Parser, new[]{ "SubQuests" }, null, null, null)})
           }));
     }
     #endregion
@@ -89,15 +94,17 @@ namespace POGOProtos.Data.Quests {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Quest(Quest other) : this() {
       questType_ = other.questType_;
-      DailyQuest = other.dailyQuest_ != null ? other.DailyQuest.Clone() : null;
-      MultiPart = other.multiPart_ != null ? other.MultiPart.Clone() : null;
-      CatchPokemon = other.catchPokemon_ != null ? other.CatchPokemon.Clone() : null;
+      dailyQuest_ = other.dailyQuest_ != null ? other.dailyQuest_.Clone() : null;
+      multiPart_ = other.multiPart_ != null ? other.multiPart_.Clone() : null;
+      catchPokemon_ = other.catchPokemon_ != null ? other.catchPokemon_.Clone() : null;
+      addFriend_ = other.addFriend_ != null ? other.addFriend_.Clone() : null;
+      tradePokemon_ = other.tradePokemon_ != null ? other.tradePokemon_.Clone() : null;
       questId_ = other.questId_;
       questSeed_ = other.questSeed_;
       questContext_ = other.questContext_;
       templateId_ = other.templateId_;
       progress_ = other.progress_;
-      Goal = other.goal_ != null ? other.Goal.Clone() : null;
+      goal_ = other.goal_ != null ? other.goal_.Clone() : null;
       status_ = other.status_;
       questRewards_ = other.questRewards_.Clone();
       creationTimestampMs_ = other.creationTimestampMs_;
@@ -158,6 +165,28 @@ namespace POGOProtos.Data.Quests {
       get { return catchPokemon_; }
       set {
         catchPokemon_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "add_friend" field.</summary>
+    public const int AddFriendFieldNumber = 5;
+    private global::POGOProtos.Data.Quests.AddFriendQuest addFriend_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Quests.AddFriendQuest AddFriend {
+      get { return addFriend_; }
+      set {
+        addFriend_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "trade_pokemon" field.</summary>
+    public const int TradePokemonFieldNumber = 6;
+    private global::POGOProtos.Data.Quests.TradePokemonQuest tradePokemon_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Quests.TradePokemonQuest TradePokemon {
+      get { return tradePokemon_; }
+      set {
+        tradePokemon_ = value;
       }
     }
 
@@ -364,6 +393,8 @@ namespace POGOProtos.Data.Quests {
       if (!object.Equals(DailyQuest, other.DailyQuest)) return false;
       if (!object.Equals(MultiPart, other.MultiPart)) return false;
       if (!object.Equals(CatchPokemon, other.CatchPokemon)) return false;
+      if (!object.Equals(AddFriend, other.AddFriend)) return false;
+      if (!object.Equals(TradePokemon, other.TradePokemon)) return false;
       if (QuestId != other.QuestId) return false;
       if (QuestSeed != other.QuestSeed) return false;
       if (QuestContext != other.QuestContext) return false;
@@ -391,6 +422,8 @@ namespace POGOProtos.Data.Quests {
       if (dailyQuest_ != null) hash ^= DailyQuest.GetHashCode();
       if (multiPart_ != null) hash ^= MultiPart.GetHashCode();
       if (catchPokemon_ != null) hash ^= CatchPokemon.GetHashCode();
+      if (addFriend_ != null) hash ^= AddFriend.GetHashCode();
+      if (tradePokemon_ != null) hash ^= TradePokemon.GetHashCode();
       if (QuestId.Length != 0) hash ^= QuestId.GetHashCode();
       if (QuestSeed != 0L) hash ^= QuestSeed.GetHashCode();
       if (QuestContext != 0) hash ^= QuestContext.GetHashCode();
@@ -436,6 +469,14 @@ namespace POGOProtos.Data.Quests {
       if (catchPokemon_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(CatchPokemon);
+      }
+      if (addFriend_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(AddFriend);
+      }
+      if (tradePokemon_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(TradePokemon);
       }
       if (QuestId.Length != 0) {
         output.WriteRawTag(162, 6);
@@ -522,6 +563,12 @@ namespace POGOProtos.Data.Quests {
       if (catchPokemon_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CatchPokemon);
       }
+      if (addFriend_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AddFriend);
+      }
+      if (tradePokemon_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TradePokemon);
+      }
       if (QuestId.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(QuestId);
       }
@@ -602,6 +649,18 @@ namespace POGOProtos.Data.Quests {
           catchPokemon_ = new global::POGOProtos.Data.Quests.CatchPokemonQuest();
         }
         CatchPokemon.MergeFrom(other.CatchPokemon);
+      }
+      if (other.addFriend_ != null) {
+        if (addFriend_ == null) {
+          addFriend_ = new global::POGOProtos.Data.Quests.AddFriendQuest();
+        }
+        AddFriend.MergeFrom(other.AddFriend);
+      }
+      if (other.tradePokemon_ != null) {
+        if (tradePokemon_ == null) {
+          tradePokemon_ = new global::POGOProtos.Data.Quests.TradePokemonQuest();
+        }
+        TradePokemon.MergeFrom(other.TradePokemon);
       }
       if (other.QuestId.Length != 0) {
         QuestId = other.QuestId;
@@ -689,6 +748,20 @@ namespace POGOProtos.Data.Quests {
               catchPokemon_ = new global::POGOProtos.Data.Quests.CatchPokemonQuest();
             }
             input.ReadMessage(catchPokemon_);
+            break;
+          }
+          case 42: {
+            if (addFriend_ == null) {
+              addFriend_ = new global::POGOProtos.Data.Quests.AddFriendQuest();
+            }
+            input.ReadMessage(addFriend_);
+            break;
+          }
+          case 50: {
+            if (tradePokemon_ == null) {
+              tradePokemon_ = new global::POGOProtos.Data.Quests.TradePokemonQuest();
+            }
+            input.ReadMessage(tradePokemon_);
             break;
           }
           case 802: {

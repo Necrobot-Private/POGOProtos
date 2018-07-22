@@ -26,19 +26,22 @@ namespace POGOProtos.Data.Player {
           string.Concat(
             "CjBQT0dPUHJvdG9zL0RhdGEvUGxheWVyL1BsYXllclB1YmxpY1Byb2ZpbGUu",
             "cHJvdG8SFlBPR09Qcm90b3MuRGF0YS5QbGF5ZXIaKVBPR09Qcm90b3MvRGF0",
-            "YS9QbGF5ZXIvUGxheWVyQXZhdGFyLnByb3RvGiBQT0dPUHJvdG9zL0VudW1z",
-            "L1RlYW1Db2xvci5wcm90bxojUE9HT1Byb3Rvcy9FbnVtcy9HeW1CYWRnZVR5",
-            "cGUucHJvdG8ikQIKE1BsYXllclB1YmxpY1Byb2ZpbGUSDAoEbmFtZRgBIAEo",
-            "CRINCgVsZXZlbBgCIAEoBRI0CgZhdmF0YXIYAyABKAsyJC5QT0dPUHJvdG9z",
-            "LkRhdGEuUGxheWVyLlBsYXllckF2YXRhchIvCgp0ZWFtX2NvbG9yGAQgASgO",
-            "MhsuUE9HT1Byb3Rvcy5FbnVtcy5UZWFtQ29sb3ISEwoLYmF0dGxlc193b24Y",
-            "BSABKAUSEQoJa21fd2Fsa2VkGAYgASgCEhYKDmNhdWdodF9wb2tlbW9uGAcg",
-            "ASgFEjYKDmd5bV9iYWRnZV90eXBlGAggASgOMh4uUE9HT1Byb3Rvcy5FbnVt",
-            "cy5HeW1CYWRnZVR5cGViBnByb3RvMw=="));
+            "YS9QbGF5ZXIvUGxheWVyQXZhdGFyLnByb3RvGihQT0dPUHJvdG9zL0RhdGEv",
+            "UGxheWVyL1BsYXllckJhZGdlLnByb3RvGiBQT0dPUHJvdG9zL0VudW1zL1Rl",
+            "YW1Db2xvci5wcm90bxojUE9HT1Byb3Rvcy9FbnVtcy9HeW1CYWRnZVR5cGUu",
+            "cHJvdG8i2gIKE1BsYXllclB1YmxpY1Byb2ZpbGUSDAoEbmFtZRgBIAEoCRIN",
+            "CgVsZXZlbBgCIAEoBRI0CgZhdmF0YXIYAyABKAsyJC5QT0dPUHJvdG9zLkRh",
+            "dGEuUGxheWVyLlBsYXllckF2YXRhchIvCgp0ZWFtX2NvbG9yGAQgASgOMhsu",
+            "UE9HT1Byb3Rvcy5FbnVtcy5UZWFtQ29sb3ISEwoLYmF0dGxlc193b24YBSAB",
+            "KAUSEQoJa21fd2Fsa2VkGAYgASgCEhYKDmNhdWdodF9wb2tlbW9uGAcgASgF",
+            "EjYKDmd5bV9iYWRnZV90eXBlGAggASgOMh4uUE9HT1Byb3Rvcy5FbnVtcy5H",
+            "eW1CYWRnZVR5cGUSMwoGYmFkZ2VzGAkgAygLMiMuUE9HT1Byb3Rvcy5EYXRh",
+            "LlBsYXllci5QbGF5ZXJCYWRnZRISCgpleHBlcmllbmNlGAogASgDYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.PlayerAvatarReflection.Descriptor, global::POGOProtos.Enums.TeamColorReflection.Descriptor, global::POGOProtos.Enums.GymBadgeTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.PlayerAvatarReflection.Descriptor, global::POGOProtos.Data.Player.PlayerBadgeReflection.Descriptor, global::POGOProtos.Enums.TeamColorReflection.Descriptor, global::POGOProtos.Enums.GymBadgeTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Player.PlayerPublicProfile), global::POGOProtos.Data.Player.PlayerPublicProfile.Parser, new[]{ "Name", "Level", "Avatar", "TeamColor", "BattlesWon", "KmWalked", "CaughtPokemon", "GymBadgeType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Player.PlayerPublicProfile), global::POGOProtos.Data.Player.PlayerPublicProfile.Parser, new[]{ "Name", "Level", "Avatar", "TeamColor", "BattlesWon", "KmWalked", "CaughtPokemon", "GymBadgeType", "Badges", "Experience" }, null, null, null)
           }));
     }
     #endregion
@@ -72,12 +75,14 @@ namespace POGOProtos.Data.Player {
     public PlayerPublicProfile(PlayerPublicProfile other) : this() {
       name_ = other.name_;
       level_ = other.level_;
-      Avatar = other.avatar_ != null ? other.Avatar.Clone() : null;
+      avatar_ = other.avatar_ != null ? other.avatar_.Clone() : null;
       teamColor_ = other.teamColor_;
       battlesWon_ = other.battlesWon_;
       kmWalked_ = other.kmWalked_;
       caughtPokemon_ = other.caughtPokemon_;
       gymBadgeType_ = other.gymBadgeType_;
+      badges_ = other.badges_.Clone();
+      experience_ = other.experience_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -174,6 +179,27 @@ namespace POGOProtos.Data.Player {
       }
     }
 
+    /// <summary>Field number for the "badges" field.</summary>
+    public const int BadgesFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Player.PlayerBadge> _repeated_badges_codec
+        = pb::FieldCodec.ForMessage(74, global::POGOProtos.Data.Player.PlayerBadge.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Player.PlayerBadge> badges_ = new pbc::RepeatedField<global::POGOProtos.Data.Player.PlayerBadge>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Data.Player.PlayerBadge> Badges {
+      get { return badges_; }
+    }
+
+    /// <summary>Field number for the "experience" field.</summary>
+    public const int ExperienceFieldNumber = 10;
+    private long experience_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Experience {
+      get { return experience_; }
+      set {
+        experience_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PlayerPublicProfile);
@@ -195,6 +221,8 @@ namespace POGOProtos.Data.Player {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(KmWalked, other.KmWalked)) return false;
       if (CaughtPokemon != other.CaughtPokemon) return false;
       if (GymBadgeType != other.GymBadgeType) return false;
+      if(!badges_.Equals(other.badges_)) return false;
+      if (Experience != other.Experience) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -209,6 +237,8 @@ namespace POGOProtos.Data.Player {
       if (KmWalked != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(KmWalked);
       if (CaughtPokemon != 0) hash ^= CaughtPokemon.GetHashCode();
       if (GymBadgeType != 0) hash ^= GymBadgeType.GetHashCode();
+      hash ^= badges_.GetHashCode();
+      if (Experience != 0L) hash ^= Experience.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -254,6 +284,11 @@ namespace POGOProtos.Data.Player {
         output.WriteRawTag(64);
         output.WriteEnum((int) GymBadgeType);
       }
+      badges_.WriteTo(output, _repeated_badges_codec);
+      if (Experience != 0L) {
+        output.WriteRawTag(80);
+        output.WriteInt64(Experience);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -285,6 +320,10 @@ namespace POGOProtos.Data.Player {
       }
       if (GymBadgeType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) GymBadgeType);
+      }
+      size += badges_.CalculateSize(_repeated_badges_codec);
+      if (Experience != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Experience);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -323,6 +362,10 @@ namespace POGOProtos.Data.Player {
       }
       if (other.GymBadgeType != 0) {
         GymBadgeType = other.GymBadgeType;
+      }
+      badges_.Add(other.badges_);
+      if (other.Experience != 0L) {
+        Experience = other.Experience;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -368,6 +411,14 @@ namespace POGOProtos.Data.Player {
           }
           case 64: {
             gymBadgeType_ = (global::POGOProtos.Enums.GymBadgeType) input.ReadEnum();
+            break;
+          }
+          case 74: {
+            badges_.AddEntriesFrom(input, _repeated_badges_codec);
+            break;
+          }
+          case 80: {
+            Experience = input.ReadInt64();
             break;
           }
         }

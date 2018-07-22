@@ -69,7 +69,7 @@ namespace POGOProtos.Networking.Responses {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public EquipBadgeResponse(EquipBadgeResponse other) : this() {
       result_ = other.result_;
-      Equipped = other.equipped_ != null ? other.Equipped.Clone() : null;
+      equipped_ = other.equipped_ != null ? other.equipped_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

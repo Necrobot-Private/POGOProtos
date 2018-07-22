@@ -67,7 +67,7 @@ namespace POGOProtos.Networking.Requests.Messages {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetPlayerMessage(GetPlayerMessage other) : this() {
-      PlayerLocale = other.playerLocale_ != null ? other.PlayerLocale.Clone() : null;
+      playerLocale_ = other.playerLocale_ != null ? other.playerLocale_.Clone() : null;
       preventCreation_ = other.preventCreation_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }

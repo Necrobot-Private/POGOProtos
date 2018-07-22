@@ -25,14 +25,16 @@ namespace POGOProtos.Data.Badge {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CilQT0dPUHJvdG9zL0RhdGEvQmFkZ2UvR3ltQmFkZ2VTdGF0cy5wcm90bxIV",
-            "UE9HT1Byb3Rvcy5EYXRhLkJhZGdlIpABCg1HeW1CYWRnZVN0YXRzEh4KFnRv",
-            "dGFsX3RpbWVfZGVmZW5kZWRfbXMYASABKAQSFwoPbnVtX2JhdHRsZXNfd29u",
-            "GAIgASgNEhgKEG51bV9iYXR0bGVzX2xvc3QYBSABKA0SFwoPbnVtX2JlcnJp",
-            "ZXNfZmVkGAMgASgNEhMKC251bV9kZXBsb3lzGAQgASgNYgZwcm90bzM="));
+            "UE9HT1Byb3Rvcy5EYXRhLkJhZGdlGiNQT0dPUHJvdG9zL0RhdGEvR3ltL0d5",
+            "bUJhdHRsZS5wcm90byLFAQoNR3ltQmFkZ2VTdGF0cxIeChZ0b3RhbF90aW1l",
+            "X2RlZmVuZGVkX21zGAEgASgEEhcKD251bV9iYXR0bGVzX3dvbhgCIAEoDRIY",
+            "ChBudW1fYmF0dGxlc19sb3N0GAUgASgNEhcKD251bV9iZXJyaWVzX2ZlZBgD",
+            "IAEoDRITCgtudW1fZGVwbG95cxgEIAEoDRIzCgtneW1fYmF0dGxlcxgPIAMo",
+            "CzIeLlBPR09Qcm90b3MuRGF0YS5HeW0uR3ltQmF0dGxlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.Gym.GymBattleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Badge.GymBadgeStats), global::POGOProtos.Data.Badge.GymBadgeStats.Parser, new[]{ "TotalTimeDefendedMs", "NumBattlesWon", "NumBattlesLost", "NumBerriesFed", "NumDeploys" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Badge.GymBadgeStats), global::POGOProtos.Data.Badge.GymBadgeStats.Parser, new[]{ "TotalTimeDefendedMs", "NumBattlesWon", "NumBattlesLost", "NumBerriesFed", "NumDeploys", "GymBattles" }, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +71,7 @@ namespace POGOProtos.Data.Badge {
       numBattlesLost_ = other.numBattlesLost_;
       numBerriesFed_ = other.numBerriesFed_;
       numDeploys_ = other.numDeploys_;
+      gymBattles_ = other.gymBattles_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -132,6 +135,16 @@ namespace POGOProtos.Data.Badge {
       }
     }
 
+    /// <summary>Field number for the "gym_battles" field.</summary>
+    public const int GymBattlesFieldNumber = 15;
+    private static readonly pb::FieldCodec<global::POGOProtos.Data.Gym.GymBattle> _repeated_gymBattles_codec
+        = pb::FieldCodec.ForMessage(122, global::POGOProtos.Data.Gym.GymBattle.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Data.Gym.GymBattle> gymBattles_ = new pbc::RepeatedField<global::POGOProtos.Data.Gym.GymBattle>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::POGOProtos.Data.Gym.GymBattle> GymBattles {
+      get { return gymBattles_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GymBadgeStats);
@@ -150,6 +163,7 @@ namespace POGOProtos.Data.Badge {
       if (NumBattlesLost != other.NumBattlesLost) return false;
       if (NumBerriesFed != other.NumBerriesFed) return false;
       if (NumDeploys != other.NumDeploys) return false;
+      if(!gymBattles_.Equals(other.gymBattles_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -161,6 +175,7 @@ namespace POGOProtos.Data.Badge {
       if (NumBattlesLost != 0) hash ^= NumBattlesLost.GetHashCode();
       if (NumBerriesFed != 0) hash ^= NumBerriesFed.GetHashCode();
       if (NumDeploys != 0) hash ^= NumDeploys.GetHashCode();
+      hash ^= gymBattles_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -194,6 +209,7 @@ namespace POGOProtos.Data.Badge {
         output.WriteRawTag(40);
         output.WriteUInt32(NumBattlesLost);
       }
+      gymBattles_.WriteTo(output, _repeated_gymBattles_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -217,6 +233,7 @@ namespace POGOProtos.Data.Badge {
       if (NumDeploys != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NumDeploys);
       }
+      size += gymBattles_.CalculateSize(_repeated_gymBattles_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -243,6 +260,7 @@ namespace POGOProtos.Data.Badge {
       if (other.NumDeploys != 0) {
         NumDeploys = other.NumDeploys;
       }
+      gymBattles_.Add(other.gymBattles_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -272,6 +290,10 @@ namespace POGOProtos.Data.Badge {
           }
           case 40: {
             NumBattlesLost = input.ReadUInt32();
+            break;
+          }
+          case 122: {
+            gymBattles_.AddEntriesFrom(input, _repeated_gymBattles_codec);
             break;
           }
         }

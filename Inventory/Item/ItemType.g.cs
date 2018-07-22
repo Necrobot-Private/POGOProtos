@@ -25,7 +25,7 @@ namespace POGOProtos.Inventory.Item {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihQT0dPUHJvdG9zL0ludmVudG9yeS9JdGVtL0l0ZW1UeXBlLnByb3RvEhlQ",
-            "T0dPUHJvdG9zLkludmVudG9yeS5JdGVtKsADCghJdGVtVHlwZRISCg5JVEVN",
+            "T0dPUHJvdG9zLkludmVudG9yeS5JdGVtKt8DCghJdGVtVHlwZRISCg5JVEVN",
             "X1RZUEVfTk9ORRAAEhYKEklURU1fVFlQRV9QT0tFQkFMTBABEhQKEElURU1f",
             "VFlQRV9QT1RJT04QAhIUChBJVEVNX1RZUEVfUkVWSVZFEAMSEQoNSVRFTV9U",
             "WVBFX01BUBAEEhQKEElURU1fVFlQRV9CQVRUTEUQBRISCg5JVEVNX1RZUEVf",
@@ -35,7 +35,8 @@ namespace POGOProtos.Inventory.Item {
             "TlZFTlRPUllfVVBHUkFERRAMEiMKH0lURU1fVFlQRV9FVk9MVVRJT05fUkVR",
             "VUlSRU1FTlQQDRIZChVJVEVNX1RZUEVfTU9WRV9SRVJPTEwQDhITCg9JVEVN",
             "X1RZUEVfQ0FORFkQDxIZChVJVEVNX1RZUEVfUkFJRF9USUNLRVQQEBIcChhJ",
-            "VEVNX1RZUEVfU1RBUkRVU1RfQk9PU1QQEWIGcHJvdG8z"));
+            "VEVNX1RZUEVfU1RBUkRVU1RfQk9PU1QQERIdChlJVEVNX1RZUEVfRlJJRU5E",
+            "X0dJRlRfQk9YEBJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Inventory.Item.ItemType), }, null));
@@ -63,6 +64,7 @@ namespace POGOProtos.Inventory.Item {
     [pbr::OriginalName("ITEM_TYPE_CANDY")] Candy = 15,
     [pbr::OriginalName("ITEM_TYPE_RAID_TICKET")] RaidTicket = 16,
     [pbr::OriginalName("ITEM_TYPE_STARDUST_BOOST")] StardustBoost = 17,
+    [pbr::OriginalName("ITEM_TYPE_FRIEND_GIFT_BOX")] FriendGiftBox = 18,
   }
 
   #endregion

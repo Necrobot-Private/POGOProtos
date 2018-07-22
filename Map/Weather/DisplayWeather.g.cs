@@ -25,7 +25,7 @@ namespace POGOProtos.Map.Weather {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CitQT0dPUHJvdG9zL01hcC9XZWF0aGVyL0Rpc3BsYXlXZWF0aGVyLnByb3Rv",
-            "EhZQT0dPUHJvdG9zLk1hcC5XZWF0aGVyItkDCg5EaXNwbGF5V2VhdGhlchJI",
+            "EhZQT0dPUHJvdG9zLk1hcC5XZWF0aGVyIqwECg5EaXNwbGF5V2VhdGhlchJI",
             "CgtjbG91ZF9sZXZlbBgBIAEoDjIzLlBPR09Qcm90b3MuTWFwLldlYXRoZXIu",
             "RGlzcGxheVdlYXRoZXIuRGlzcGxheUxldmVsEkcKCnJhaW5fbGV2ZWwYAiAB",
             "KA4yMy5QT0dPUHJvdG9zLk1hcC5XZWF0aGVyLkRpc3BsYXlXZWF0aGVyLkRp",
@@ -34,13 +34,15 @@ namespace POGOProtos.Map.Weather {
             "d19sZXZlbBgEIAEoDjIzLlBPR09Qcm90b3MuTWFwLldlYXRoZXIuRGlzcGxh",
             "eVdlYXRoZXIuRGlzcGxheUxldmVsEkYKCWZvZ19sZXZlbBgFIAEoDjIzLlBP",
             "R09Qcm90b3MuTWFwLldlYXRoZXIuRGlzcGxheVdlYXRoZXIuRGlzcGxheUxl",
-            "dmVsEhYKDndpbmRfZGlyZWN0aW9uGAYgASgFIkIKDERpc3BsYXlMZXZlbBIL",
-            "CgdMRVZFTF8wEAASCwoHTEVWRUxfMRABEgsKB0xFVkVMXzIQAhILCgdMRVZF",
-            "TF8zEANiBnByb3RvMw=="));
+            "dmVsEhYKDndpbmRfZGlyZWN0aW9uGAYgASgFElEKFHNwZWNpYWxfZWZmZWN0",
+            "X2xldmVsGAcgASgOMjMuUE9HT1Byb3Rvcy5NYXAuV2VhdGhlci5EaXNwbGF5",
+            "V2VhdGhlci5EaXNwbGF5TGV2ZWwiQgoMRGlzcGxheUxldmVsEgsKB0xFVkVM",
+            "XzAQABILCgdMRVZFTF8xEAESCwoHTEVWRUxfMhACEgsKB0xFVkVMXzMQA2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Map.Weather.DisplayWeather), global::POGOProtos.Map.Weather.DisplayWeather.Parser, new[]{ "CloudLevel", "RainLevel", "WindLevel", "SnowLevel", "FogLevel", "WindDirection" }, null, new[]{ typeof(global::POGOProtos.Map.Weather.DisplayWeather.Types.DisplayLevel) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Map.Weather.DisplayWeather), global::POGOProtos.Map.Weather.DisplayWeather.Parser, new[]{ "CloudLevel", "RainLevel", "WindLevel", "SnowLevel", "FogLevel", "WindDirection", "SpecialEffectLevel" }, null, new[]{ typeof(global::POGOProtos.Map.Weather.DisplayWeather.Types.DisplayLevel) }, null)
           }));
     }
     #endregion
@@ -78,6 +80,7 @@ namespace POGOProtos.Map.Weather {
       snowLevel_ = other.snowLevel_;
       fogLevel_ = other.fogLevel_;
       windDirection_ = other.windDirection_;
+      specialEffectLevel_ = other.specialEffectLevel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -152,6 +155,17 @@ namespace POGOProtos.Map.Weather {
       }
     }
 
+    /// <summary>Field number for the "special_effect_level" field.</summary>
+    public const int SpecialEffectLevelFieldNumber = 7;
+    private global::POGOProtos.Map.Weather.DisplayWeather.Types.DisplayLevel specialEffectLevel_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Map.Weather.DisplayWeather.Types.DisplayLevel SpecialEffectLevel {
+      get { return specialEffectLevel_; }
+      set {
+        specialEffectLevel_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DisplayWeather);
@@ -171,6 +185,7 @@ namespace POGOProtos.Map.Weather {
       if (SnowLevel != other.SnowLevel) return false;
       if (FogLevel != other.FogLevel) return false;
       if (WindDirection != other.WindDirection) return false;
+      if (SpecialEffectLevel != other.SpecialEffectLevel) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -183,6 +198,7 @@ namespace POGOProtos.Map.Weather {
       if (SnowLevel != 0) hash ^= SnowLevel.GetHashCode();
       if (FogLevel != 0) hash ^= FogLevel.GetHashCode();
       if (WindDirection != 0) hash ^= WindDirection.GetHashCode();
+      if (SpecialEffectLevel != 0) hash ^= SpecialEffectLevel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -220,6 +236,10 @@ namespace POGOProtos.Map.Weather {
         output.WriteRawTag(48);
         output.WriteInt32(WindDirection);
       }
+      if (SpecialEffectLevel != 0) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) SpecialEffectLevel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -245,6 +265,9 @@ namespace POGOProtos.Map.Weather {
       }
       if (WindDirection != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(WindDirection);
+      }
+      if (SpecialEffectLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SpecialEffectLevel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -274,6 +297,9 @@ namespace POGOProtos.Map.Weather {
       }
       if (other.WindDirection != 0) {
         WindDirection = other.WindDirection;
+      }
+      if (other.SpecialEffectLevel != 0) {
+        SpecialEffectLevel = other.SpecialEffectLevel;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -308,6 +334,10 @@ namespace POGOProtos.Map.Weather {
           }
           case 48: {
             WindDirection = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            specialEffectLevel_ = (global::POGOProtos.Map.Weather.DisplayWeather.Types.DisplayLevel) input.ReadEnum();
             break;
           }
         }

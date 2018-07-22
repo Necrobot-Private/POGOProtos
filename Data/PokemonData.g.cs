@@ -28,7 +28,7 @@ namespace POGOProtos.Data {
             "b3MuRGF0YRokUE9HT1Byb3Rvcy9EYXRhL1Bva2Vtb25EaXNwbGF5LnByb3Rv",
             "GiBQT0dPUHJvdG9zL0VudW1zL1Bva2Vtb25JZC5wcm90bxoiUE9HT1Byb3Rv",
             "cy9FbnVtcy9Qb2tlbW9uTW92ZS5wcm90bxomUE9HT1Byb3Rvcy9JbnZlbnRv",
-            "cnkvSXRlbS9JdGVtSWQucHJvdG8ixggKC1Bva2Vtb25EYXRhEgoKAmlkGAEg",
+            "cnkvSXRlbS9JdGVtSWQucHJvdG8i3AkKC1Bva2Vtb25EYXRhEgoKAmlkGAEg",
             "ASgGEi8KCnBva2Vtb25faWQYAiABKA4yGy5QT0dPUHJvdG9zLkVudW1zLlBv",
             "a2Vtb25JZBIKCgJjcBgDIAEoBRIPCgdzdGFtaW5hGAQgASgFEhMKC3N0YW1p",
             "bmFfbWF4GAUgASgFEi0KBm1vdmVfMRgGIAEoDjIdLlBPR09Qcm90b3MuRW51",
@@ -52,11 +52,15 @@ namespace POGOProtos.Data {
             "ASgLMh8uUE9HT1Byb3Rvcy5EYXRhLlBva2Vtb25EaXNwbGF5Eg4KBmlzX2Jh",
             "ZBglIAEoCBIYChBoYXRjaGVkX2Zyb21fZWdnGCYgASgIEhYKDmNvaW5zX3Jl",
             "dHVybmVkGCcgASgFEhwKFGRlcGxveWVkX2R1cmF0aW9uX21zGCggASgDEiYK",
-            "HmRlcGxveWVkX3JldHVybmVkX3RpbWVzdGFtcF9tcxgpIAEoA2IGcHJvdG8z"));
+            "HmRlcGxveWVkX3JldHVybmVkX3RpbWVzdGFtcF9tcxgpIAEoAxIkChxjcF9t",
+            "dWx0aXBsaWVyX2JlZm9yZV90cmFkaW5nGCogASgCEiMKG3RyYWRpbmdfb3Jp",
+            "Z2luYWxfb3duZXJfaGFzaBgrIAEoBRIfChdvcmlnaW5hbF9vd25lcl9uaWNr",
+            "bmFtZRgsIAEoCRIWCg50cmFkZWRfdGltZV9tcxgtIAEoAxIQCghpc19sdWNr",
+            "eRguIAEoCGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.PokemonDisplayReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Enums.PokemonMoveReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.PokemonData), global::POGOProtos.Data.PokemonData.Parser, new[]{ "Id", "PokemonId", "Cp", "Stamina", "StaminaMax", "Move1", "Move2", "DeployedFortId", "OwnerName", "IsEgg", "EggKmWalkedTarget", "EggKmWalkedStart", "Origin", "HeightM", "WeightKg", "IndividualAttack", "IndividualDefense", "IndividualStamina", "CpMultiplier", "Pokeball", "CapturedCellId", "BattlesAttacked", "BattlesDefended", "EggIncubatorId", "CreationTimeMs", "NumUpgrades", "AdditionalCpMultiplier", "Favorite", "Nickname", "FromFort", "BuddyCandyAwarded", "BuddyTotalKmWalked", "DisplayPokemonId", "DisplayCp", "PokemonDisplay", "IsBad", "HatchedFromEgg", "CoinsReturned", "DeployedDurationMs", "DeployedReturnedTimestampMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.PokemonData), global::POGOProtos.Data.PokemonData.Parser, new[]{ "Id", "PokemonId", "Cp", "Stamina", "StaminaMax", "Move1", "Move2", "DeployedFortId", "OwnerName", "IsEgg", "EggKmWalkedTarget", "EggKmWalkedStart", "Origin", "HeightM", "WeightKg", "IndividualAttack", "IndividualDefense", "IndividualStamina", "CpMultiplier", "Pokeball", "CapturedCellId", "BattlesAttacked", "BattlesDefended", "EggIncubatorId", "CreationTimeMs", "NumUpgrades", "AdditionalCpMultiplier", "Favorite", "Nickname", "FromFort", "BuddyCandyAwarded", "BuddyTotalKmWalked", "DisplayPokemonId", "DisplayCp", "PokemonDisplay", "IsBad", "HatchedFromEgg", "CoinsReturned", "DeployedDurationMs", "DeployedReturnedTimestampMs", "CpMultiplierBeforeTrading", "TradingOriginalOwnerHash", "OriginalOwnerNickname", "TradedTimeMs", "IsLucky" }, null, null, null)
           }));
     }
     #endregion
@@ -122,12 +126,17 @@ namespace POGOProtos.Data {
       buddyTotalKmWalked_ = other.buddyTotalKmWalked_;
       displayPokemonId_ = other.displayPokemonId_;
       displayCp_ = other.displayCp_;
-      PokemonDisplay = other.pokemonDisplay_ != null ? other.PokemonDisplay.Clone() : null;
+      pokemonDisplay_ = other.pokemonDisplay_ != null ? other.pokemonDisplay_.Clone() : null;
       isBad_ = other.isBad_;
       hatchedFromEgg_ = other.hatchedFromEgg_;
       coinsReturned_ = other.coinsReturned_;
       deployedDurationMs_ = other.deployedDurationMs_;
       deployedReturnedTimestampMs_ = other.deployedReturnedTimestampMs_;
+      cpMultiplierBeforeTrading_ = other.cpMultiplierBeforeTrading_;
+      tradingOriginalOwnerHash_ = other.tradingOriginalOwnerHash_;
+      originalOwnerNickname_ = other.originalOwnerNickname_;
+      tradedTimeMs_ = other.tradedTimeMs_;
+      isLucky_ = other.isLucky_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -576,6 +585,61 @@ namespace POGOProtos.Data {
       }
     }
 
+    /// <summary>Field number for the "cp_multiplier_before_trading" field.</summary>
+    public const int CpMultiplierBeforeTradingFieldNumber = 42;
+    private float cpMultiplierBeforeTrading_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float CpMultiplierBeforeTrading {
+      get { return cpMultiplierBeforeTrading_; }
+      set {
+        cpMultiplierBeforeTrading_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "trading_original_owner_hash" field.</summary>
+    public const int TradingOriginalOwnerHashFieldNumber = 43;
+    private int tradingOriginalOwnerHash_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int TradingOriginalOwnerHash {
+      get { return tradingOriginalOwnerHash_; }
+      set {
+        tradingOriginalOwnerHash_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "original_owner_nickname" field.</summary>
+    public const int OriginalOwnerNicknameFieldNumber = 44;
+    private string originalOwnerNickname_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string OriginalOwnerNickname {
+      get { return originalOwnerNickname_; }
+      set {
+        originalOwnerNickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "traded_time_ms" field.</summary>
+    public const int TradedTimeMsFieldNumber = 45;
+    private long tradedTimeMs_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long TradedTimeMs {
+      get { return tradedTimeMs_; }
+      set {
+        tradedTimeMs_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_lucky" field.</summary>
+    public const int IsLuckyFieldNumber = 46;
+    private bool isLucky_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsLucky {
+      get { return isLucky_; }
+      set {
+        isLucky_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PokemonData);
@@ -629,6 +693,11 @@ namespace POGOProtos.Data {
       if (CoinsReturned != other.CoinsReturned) return false;
       if (DeployedDurationMs != other.DeployedDurationMs) return false;
       if (DeployedReturnedTimestampMs != other.DeployedReturnedTimestampMs) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CpMultiplierBeforeTrading, other.CpMultiplierBeforeTrading)) return false;
+      if (TradingOriginalOwnerHash != other.TradingOriginalOwnerHash) return false;
+      if (OriginalOwnerNickname != other.OriginalOwnerNickname) return false;
+      if (TradedTimeMs != other.TradedTimeMs) return false;
+      if (IsLucky != other.IsLucky) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -675,6 +744,11 @@ namespace POGOProtos.Data {
       if (CoinsReturned != 0) hash ^= CoinsReturned.GetHashCode();
       if (DeployedDurationMs != 0L) hash ^= DeployedDurationMs.GetHashCode();
       if (DeployedReturnedTimestampMs != 0L) hash ^= DeployedReturnedTimestampMs.GetHashCode();
+      if (CpMultiplierBeforeTrading != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CpMultiplierBeforeTrading);
+      if (TradingOriginalOwnerHash != 0) hash ^= TradingOriginalOwnerHash.GetHashCode();
+      if (OriginalOwnerNickname.Length != 0) hash ^= OriginalOwnerNickname.GetHashCode();
+      if (TradedTimeMs != 0L) hash ^= TradedTimeMs.GetHashCode();
+      if (IsLucky != false) hash ^= IsLucky.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -848,6 +922,26 @@ namespace POGOProtos.Data {
         output.WriteRawTag(200, 2);
         output.WriteInt64(DeployedReturnedTimestampMs);
       }
+      if (CpMultiplierBeforeTrading != 0F) {
+        output.WriteRawTag(213, 2);
+        output.WriteFloat(CpMultiplierBeforeTrading);
+      }
+      if (TradingOriginalOwnerHash != 0) {
+        output.WriteRawTag(216, 2);
+        output.WriteInt32(TradingOriginalOwnerHash);
+      }
+      if (OriginalOwnerNickname.Length != 0) {
+        output.WriteRawTag(226, 2);
+        output.WriteString(OriginalOwnerNickname);
+      }
+      if (TradedTimeMs != 0L) {
+        output.WriteRawTag(232, 2);
+        output.WriteInt64(TradedTimeMs);
+      }
+      if (IsLucky != false) {
+        output.WriteRawTag(240, 2);
+        output.WriteBool(IsLucky);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -975,6 +1069,21 @@ namespace POGOProtos.Data {
       }
       if (DeployedReturnedTimestampMs != 0L) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(DeployedReturnedTimestampMs);
+      }
+      if (CpMultiplierBeforeTrading != 0F) {
+        size += 2 + 4;
+      }
+      if (TradingOriginalOwnerHash != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(TradingOriginalOwnerHash);
+      }
+      if (OriginalOwnerNickname.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(OriginalOwnerNickname);
+      }
+      if (TradedTimeMs != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(TradedTimeMs);
+      }
+      if (IsLucky != false) {
+        size += 2 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1109,6 +1218,21 @@ namespace POGOProtos.Data {
       }
       if (other.DeployedReturnedTimestampMs != 0L) {
         DeployedReturnedTimestampMs = other.DeployedReturnedTimestampMs;
+      }
+      if (other.CpMultiplierBeforeTrading != 0F) {
+        CpMultiplierBeforeTrading = other.CpMultiplierBeforeTrading;
+      }
+      if (other.TradingOriginalOwnerHash != 0) {
+        TradingOriginalOwnerHash = other.TradingOriginalOwnerHash;
+      }
+      if (other.OriginalOwnerNickname.Length != 0) {
+        OriginalOwnerNickname = other.OriginalOwnerNickname;
+      }
+      if (other.TradedTimeMs != 0L) {
+        TradedTimeMs = other.TradedTimeMs;
+      }
+      if (other.IsLucky != false) {
+        IsLucky = other.IsLucky;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1282,6 +1406,26 @@ namespace POGOProtos.Data {
           }
           case 328: {
             DeployedReturnedTimestampMs = input.ReadInt64();
+            break;
+          }
+          case 341: {
+            CpMultiplierBeforeTrading = input.ReadFloat();
+            break;
+          }
+          case 344: {
+            TradingOriginalOwnerHash = input.ReadInt32();
+            break;
+          }
+          case 354: {
+            OriginalOwnerNickname = input.ReadString();
+            break;
+          }
+          case 360: {
+            TradedTimeMs = input.ReadInt64();
+            break;
+          }
+          case 368: {
+            IsLucky = input.ReadBool();
             break;
           }
         }

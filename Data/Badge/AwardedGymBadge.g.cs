@@ -77,7 +77,7 @@ namespace POGOProtos.Data.Badge {
       fortId_ = other.fortId_;
       gymBadgeType_ = other.gymBadgeType_;
       score_ = other.score_;
-      GymBadgeStats = other.gymBadgeStats_ != null ? other.GymBadgeStats.Clone() : null;
+      gymBadgeStats_ = other.gymBadgeStats_ != null ? other.gymBadgeStats_.Clone() : null;
       lastUpdateTimestampMs_ = other.lastUpdateTimestampMs_;
       lastCheckTimestampMs_ = other.lastCheckTimestampMs_;
       earnedPoints_ = other.earnedPoints_;
@@ -88,7 +88,7 @@ namespace POGOProtos.Data.Badge {
       description_ = other.description_;
       latitude_ = other.latitude_;
       longitude_ = other.longitude_;
-      Raids = other.raids_ != null ? other.Raids.Clone() : null;
+      raids_ = other.raids_ != null ? other.raids_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

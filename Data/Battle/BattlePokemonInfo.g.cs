@@ -65,7 +65,7 @@ namespace POGOProtos.Data.Battle {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BattlePokemonInfo(BattlePokemonInfo other) : this() {
-      PokemonData = other.pokemonData_ != null ? other.PokemonData.Clone() : null;
+      pokemonData_ = other.pokemonData_ != null ? other.pokemonData_.Clone() : null;
       currentHealth_ = other.currentHealth_;
       currentEnergy_ = other.currentEnergy_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);

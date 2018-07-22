@@ -69,7 +69,7 @@ namespace POGOProtos.Data.Logs {
     public PasscodeRewardsLogEntry(PasscodeRewardsLogEntry other) : this() {
       result_ = other.result_;
       passcode_ = other.passcode_;
-      Rewards = other.rewards_ != null ? other.Rewards.Clone() : null;
+      rewards_ = other.rewards_ != null ? other.rewards_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 

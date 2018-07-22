@@ -71,9 +71,9 @@ namespace POGOProtos.Data.Gym {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GymDefender(GymDefender other) : this() {
-      MotivatedPokemon = other.motivatedPokemon_ != null ? other.MotivatedPokemon.Clone() : null;
-      DeploymentTotals = other.deploymentTotals_ != null ? other.DeploymentTotals.Clone() : null;
-      TrainerPublicProfile = other.trainerPublicProfile_ != null ? other.TrainerPublicProfile.Clone() : null;
+      motivatedPokemon_ = other.motivatedPokemon_ != null ? other.motivatedPokemon_.Clone() : null;
+      deploymentTotals_ = other.deploymentTotals_ != null ? other.deploymentTotals_.Clone() : null;
+      trainerPublicProfile_ = other.trainerPublicProfile_ != null ? other.trainerPublicProfile_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
