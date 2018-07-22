@@ -25,13 +25,15 @@ namespace POGOProtos.Settings {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5QT0dPUHJvdG9zL1NldHRpbmdzL1NvY2lhbENsaWVudFNldHRpbmdzLnBy",
-            "b3RvEhNQT0dPUHJvdG9zLlNldHRpbmdzImQKFFNvY2lhbENsaWVudFNldHRp",
-            "bmdzEhUKDWVuYWJsZV9zb2NpYWwYASABKAgSGgoSbWF4X2ZyaWVuZF9kZXRh",
-            "aWxzGAIgASgFEhkKEXBsYXllcl9sZXZlbF9nYXRlGAMgASgFYgZwcm90bzM="));
+            "b3RvEhNQT0dPUHJvdG9zLlNldHRpbmdzIq8BChRTb2NpYWxDbGllbnRTZXR0",
+            "aW5ncxIVCg1lbmFibGVfc29jaWFsGAEgASgIEhoKEm1heF9mcmllbmRfZGV0",
+            "YWlscxgCIAEoBRIZChFwbGF5ZXJfbGV2ZWxfZ2F0ZRgDIAEoBRIiChptYXhf",
+            "ZnJpZW5kX25pY2tuYW1lX2xlbmd0aBgEIAEoBRIlCh1lbmFibGVfYWRkX2Zy",
+            "aWVuZF92aWFfcXJfY29kZRgFIAEoCGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.SocialClientSettings), global::POGOProtos.Settings.SocialClientSettings.Parser, new[]{ "EnableSocial", "MaxFriendDetails", "PlayerLevelGate" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Settings.SocialClientSettings), global::POGOProtos.Settings.SocialClientSettings.Parser, new[]{ "EnableSocial", "MaxFriendDetails", "PlayerLevelGate", "MaxFriendNicknameLength", "EnableAddFriendViaQrCode" }, null, null, null)
           }));
     }
     #endregion
@@ -66,6 +68,8 @@ namespace POGOProtos.Settings {
       enableSocial_ = other.enableSocial_;
       maxFriendDetails_ = other.maxFriendDetails_;
       playerLevelGate_ = other.playerLevelGate_;
+      maxFriendNicknameLength_ = other.maxFriendNicknameLength_;
+      enableAddFriendViaQrCode_ = other.enableAddFriendViaQrCode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -107,6 +111,28 @@ namespace POGOProtos.Settings {
       }
     }
 
+    /// <summary>Field number for the "max_friend_nickname_length" field.</summary>
+    public const int MaxFriendNicknameLengthFieldNumber = 4;
+    private int maxFriendNicknameLength_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int MaxFriendNicknameLength {
+      get { return maxFriendNicknameLength_; }
+      set {
+        maxFriendNicknameLength_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "enable_add_friend_via_qr_code" field.</summary>
+    public const int EnableAddFriendViaQrCodeFieldNumber = 5;
+    private bool enableAddFriendViaQrCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool EnableAddFriendViaQrCode {
+      get { return enableAddFriendViaQrCode_; }
+      set {
+        enableAddFriendViaQrCode_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SocialClientSettings);
@@ -123,6 +149,8 @@ namespace POGOProtos.Settings {
       if (EnableSocial != other.EnableSocial) return false;
       if (MaxFriendDetails != other.MaxFriendDetails) return false;
       if (PlayerLevelGate != other.PlayerLevelGate) return false;
+      if (MaxFriendNicknameLength != other.MaxFriendNicknameLength) return false;
+      if (EnableAddFriendViaQrCode != other.EnableAddFriendViaQrCode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -132,6 +160,8 @@ namespace POGOProtos.Settings {
       if (EnableSocial != false) hash ^= EnableSocial.GetHashCode();
       if (MaxFriendDetails != 0) hash ^= MaxFriendDetails.GetHashCode();
       if (PlayerLevelGate != 0) hash ^= PlayerLevelGate.GetHashCode();
+      if (MaxFriendNicknameLength != 0) hash ^= MaxFriendNicknameLength.GetHashCode();
+      if (EnableAddFriendViaQrCode != false) hash ^= EnableAddFriendViaQrCode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -157,6 +187,14 @@ namespace POGOProtos.Settings {
         output.WriteRawTag(24);
         output.WriteInt32(PlayerLevelGate);
       }
+      if (MaxFriendNicknameLength != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(MaxFriendNicknameLength);
+      }
+      if (EnableAddFriendViaQrCode != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(EnableAddFriendViaQrCode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -173,6 +211,12 @@ namespace POGOProtos.Settings {
       }
       if (PlayerLevelGate != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerLevelGate);
+      }
+      if (MaxFriendNicknameLength != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxFriendNicknameLength);
+      }
+      if (EnableAddFriendViaQrCode != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -193,6 +237,12 @@ namespace POGOProtos.Settings {
       }
       if (other.PlayerLevelGate != 0) {
         PlayerLevelGate = other.PlayerLevelGate;
+      }
+      if (other.MaxFriendNicknameLength != 0) {
+        MaxFriendNicknameLength = other.MaxFriendNicknameLength;
+      }
+      if (other.EnableAddFriendViaQrCode != false) {
+        EnableAddFriendViaQrCode = other.EnableAddFriendViaQrCode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -215,6 +265,14 @@ namespace POGOProtos.Settings {
           }
           case 24: {
             PlayerLevelGate = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            MaxFriendNicknameLength = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            EnableAddFriendViaQrCode = input.ReadBool();
             break;
           }
         }

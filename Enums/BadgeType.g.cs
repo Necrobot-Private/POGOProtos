@@ -25,7 +25,7 @@ namespace POGOProtos.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBQT0dPUHJvdG9zL0VudW1zL0JhZGdlVHlwZS5wcm90bxIQUE9HT1Byb3Rv",
-            "cy5FbnVtcyqHDQoJQmFkZ2VUeXBlEg8KC0JBREdFX1VOU0VUEAASEwoPQkFE",
+            "cy5FbnVtcyr5DwoJQmFkZ2VUeXBlEg8KC0JBREdFX1VOU0VUEAASEwoPQkFE",
             "R0VfVFJBVkVMX0tNEAESGQoVQkFER0VfUE9LRURFWF9FTlRSSUVTEAISFwoT",
             "QkFER0VfQ0FQVFVSRV9UT1RBTBADEhcKE0JBREdFX0RFRkVBVEVEX0ZPUlQQ",
             "BBIXChNCQURHRV9FVk9MVkVEX1RPVEFMEAUSFwoTQkFER0VfSEFUQ0hFRF9U",
@@ -62,7 +62,15 @@ namespace POGOProtos.Enums {
             "MDE4X1NBVF9OT1JUSBDWDxIrCiZCQURHRV9DSElDQUdPX0ZFU1RfSlVMWV8y",
             "MDE4X1NBVF9TT1VUSBDXDxIrCiZCQURHRV9DSElDQUdPX0ZFU1RfSlVMWV8y",
             "MDE4X1NVTl9OT1JUSBDYDxIrCiZCQURHRV9DSElDQUdPX0ZFU1RfSlVMWV8y",
-            "MDE4X1NVTl9TT1VUSBDZD2IGcHJvdG8z"));
+            "MDE4X1NVTl9TT1VUSBDZDxIjCh5CQURHRV9BUEFDX1BBUlRORVJfSlVMWV8y",
+            "MDE4XzAQ2g8SIwoeQkFER0VfQVBBQ19QQVJUTkVSX0pVTFlfMjAxOF8xENsP",
+            "EiMKHkJBREdFX0FQQUNfUEFSVE5FUl9KVUxZXzIwMThfMhDcDxIjCh5CQURH",
+            "RV9BUEFDX1BBUlRORVJfSlVMWV8yMDE4XzMQ3Q8SIwoeQkFER0VfQVBBQ19Q",
+            "QVJUTkVSX0pVTFlfMjAxOF80EN4PEiMKHkJBREdFX0FQQUNfUEFSVE5FUl9K",
+            "VUxZXzIwMThfNRDfDxIjCh5CQURHRV9BUEFDX1BBUlRORVJfSlVMWV8yMDE4",
+            "XzYQ4A8SIwoeQkFER0VfQVBBQ19QQVJUTkVSX0pVTFlfMjAxOF83EOEPEiMK",
+            "HkJBREdFX0FQQUNfUEFSVE5FUl9KVUxZXzIwMThfOBDiDxIjCh5CQURHRV9B",
+            "UEFDX1BBUlRORVJfSlVMWV8yMDE4XzkQ4w9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::POGOProtos.Enums.BadgeType), }, null));
@@ -133,6 +141,16 @@ namespace POGOProtos.Enums {
     [pbr::OriginalName("BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH")] BadgeChicagoFestJuly2018SatSouth = 2007,
     [pbr::OriginalName("BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH")] BadgeChicagoFestJuly2018SunNorth = 2008,
     [pbr::OriginalName("BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH")] BadgeChicagoFestJuly2018SunSouth = 2009,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_0")] BadgeApacPartnerJuly20180 = 2010,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_1")] BadgeApacPartnerJuly20181 = 2011,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_2")] BadgeApacPartnerJuly20182 = 2012,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_3")] BadgeApacPartnerJuly20183 = 2013,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_4")] BadgeApacPartnerJuly20184 = 2014,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_5")] BadgeApacPartnerJuly20185 = 2015,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_6")] BadgeApacPartnerJuly20186 = 2016,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_7")] BadgeApacPartnerJuly20187 = 2017,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_8")] BadgeApacPartnerJuly20188 = 2018,
+    [pbr::OriginalName("BADGE_APAC_PARTNER_JULY_2018_9")] BadgeApacPartnerJuly20189 = 2019,
   }
 
   #endregion

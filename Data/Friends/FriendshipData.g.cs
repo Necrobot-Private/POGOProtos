@@ -27,15 +27,16 @@ namespace POGOProtos.Data.Friends {
             "CixQT0dPUHJvdG9zL0RhdGEvRnJpZW5kcy9GcmllbmRzaGlwRGF0YS5wcm90",
             "bxIXUE9HT1Byb3Rvcy5EYXRhLkZyaWVuZHMaMVBPR09Qcm90b3MvRGF0YS9G",
             "cmllbmRzL0ZyaWVuZHNoaXBMZXZlbERhdGEucHJvdG8aKVBPR09Qcm90b3Mv",
-            "RGF0YS9HaWZ0L0dpZnRCb3hEZXRhaWxzLnByb3RvIq4BCg5GcmllbmRzaGlw",
+            "RGF0YS9HaWZ0L0dpZnRCb3hEZXRhaWxzLnByb3RvIsABCg5GcmllbmRzaGlw",
             "RGF0YRJLChVmcmllbmRzaGlwX2xldmVsX2RhdGEYASABKAsyLC5QT0dPUHJv",
             "dG9zLkRhdGEuRnJpZW5kcy5GcmllbmRzaGlwTGV2ZWxEYXRhEj0KD2dpZnRi",
             "b3hfZGV0YWlscxgCIAMoCzIkLlBPR09Qcm90b3MuRGF0YS5HaWZ0LkdpZnRC",
-            "b3hEZXRhaWxzEhAKCGNvZGVuYW1lGAMgASgJYgZwcm90bzM="));
+            "b3hEZXRhaWxzEhAKCGNvZGVuYW1lGAMgASgJEhAKCG5pY2tuYW1lGAQgASgJ",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Friends.FriendshipLevelDataReflection.Descriptor, global::POGOProtos.Data.Gift.GiftBoxDetailsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Friends.FriendshipData), global::POGOProtos.Data.Friends.FriendshipData.Parser, new[]{ "FriendshipLevelData", "GiftboxDetails", "Codename" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Friends.FriendshipData), global::POGOProtos.Data.Friends.FriendshipData.Parser, new[]{ "FriendshipLevelData", "GiftboxDetails", "Codename", "Nickname" }, null, null, null)
           }));
     }
     #endregion
@@ -70,6 +71,7 @@ namespace POGOProtos.Data.Friends {
       friendshipLevelData_ = other.friendshipLevelData_ != null ? other.friendshipLevelData_.Clone() : null;
       giftboxDetails_ = other.giftboxDetails_.Clone();
       codename_ = other.codename_;
+      nickname_ = other.nickname_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -110,6 +112,17 @@ namespace POGOProtos.Data.Friends {
       }
     }
 
+    /// <summary>Field number for the "nickname" field.</summary>
+    public const int NicknameFieldNumber = 4;
+    private string nickname_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Nickname {
+      get { return nickname_; }
+      set {
+        nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FriendshipData);
@@ -126,6 +139,7 @@ namespace POGOProtos.Data.Friends {
       if (!object.Equals(FriendshipLevelData, other.FriendshipLevelData)) return false;
       if(!giftboxDetails_.Equals(other.giftboxDetails_)) return false;
       if (Codename != other.Codename) return false;
+      if (Nickname != other.Nickname) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -135,6 +149,7 @@ namespace POGOProtos.Data.Friends {
       if (friendshipLevelData_ != null) hash ^= FriendshipLevelData.GetHashCode();
       hash ^= giftboxDetails_.GetHashCode();
       if (Codename.Length != 0) hash ^= Codename.GetHashCode();
+      if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -157,6 +172,10 @@ namespace POGOProtos.Data.Friends {
         output.WriteRawTag(26);
         output.WriteString(Codename);
       }
+      if (Nickname.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Nickname);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -171,6 +190,9 @@ namespace POGOProtos.Data.Friends {
       size += giftboxDetails_.CalculateSize(_repeated_giftboxDetails_codec);
       if (Codename.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Codename);
+      }
+      if (Nickname.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -192,6 +214,9 @@ namespace POGOProtos.Data.Friends {
       giftboxDetails_.Add(other.giftboxDetails_);
       if (other.Codename.Length != 0) {
         Codename = other.Codename;
+      }
+      if (other.Nickname.Length != 0) {
+        Nickname = other.Nickname;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -217,6 +242,10 @@ namespace POGOProtos.Data.Friends {
           }
           case 26: {
             Codename = input.ReadString();
+            break;
+          }
+          case 34: {
+            Nickname = input.ReadString();
             break;
           }
         }

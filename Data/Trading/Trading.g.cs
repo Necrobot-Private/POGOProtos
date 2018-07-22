@@ -27,7 +27,7 @@ namespace POGOProtos.Data.Trading {
             "CiVQT0dPUHJvdG9zL0RhdGEvVHJhZGluZy9UcmFkaW5nLnByb3RvEhdQT0dP",
             "UHJvdG9zLkRhdGEuVHJhZGluZxorUE9HT1Byb3Rvcy9EYXRhL1RyYWRpbmcv",
             "VHJhZGluZ1BsYXllci5wcm90bxoxUE9HT1Byb3Rvcy9EYXRhL0ZyaWVuZHMv",
-            "RnJpZW5kc2hpcExldmVsRGF0YS5wcm90byLKAwoHVHJhZGluZxI8CgVzdGF0",
+            "RnJpZW5kc2hpcExldmVsRGF0YS5wcm90byKeBAoHVHJhZGluZxI8CgVzdGF0",
             "ZRgBIAEoDjItLlBPR09Qcm90b3MuRGF0YS5UcmFkaW5nLlRyYWRpbmcuVHJh",
             "ZGluZ1N0YXRlEhUKDWV4cGlyYXRpb25fbXMYAiABKAQSNgoGcGxheWVyGAMg",
             "ASgLMiYuUE9HT1Byb3Rvcy5EYXRhLlRyYWRpbmcuVHJhZGluZ1BsYXllchI2",
@@ -35,13 +35,15 @@ namespace POGOProtos.Data.Trading {
             "aW5nUGxheWVyEhoKEnRyYWRpbmdfczJfY2VsbF9pZBgFIAEoAxIXCg90cmFu",
             "c2FjdGlvbl9sb2cYBiABKAkSSwoVZnJpZW5kc2hpcF9sZXZlbF9kYXRhGAcg",
             "ASgLMiwuUE9HT1Byb3Rvcy5EYXRhLkZyaWVuZHMuRnJpZW5kc2hpcExldmVs",
-            "RGF0YRIaChJpc19zcGVjaWFsX3RyYWRpbmcYCCABKAgiXAoMVHJhZGluZ1N0",
-            "YXRlEgkKBVVOU0VUEAASDgoKUFJJTU9SRElBTBABEggKBFdBSVQQAhIKCgZB",
-            "Q1RJVkUQAxINCglDT05GSVJNRUQQBBIMCghGSU5JU0hFRBAFYgZwcm90bzM="));
+            "RGF0YRIaChJpc19zcGVjaWFsX3RyYWRpbmcYCCABKAgSUgoccHJlX3RyYWRp",
+            "bmdfZnJpZW5kc2hpcF9sZXZlbBgJIAEoCzIsLlBPR09Qcm90b3MuRGF0YS5G",
+            "cmllbmRzLkZyaWVuZHNoaXBMZXZlbERhdGEiXAoMVHJhZGluZ1N0YXRlEgkK",
+            "BVVOU0VUEAASDgoKUFJJTU9SRElBTBABEggKBFdBSVQQAhIKCgZBQ1RJVkUQ",
+            "AxINCglDT05GSVJNRUQQBBIMCghGSU5JU0hFRBAFYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Trading.TradingPlayerReflection.Descriptor, global::POGOProtos.Data.Friends.FriendshipLevelDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Trading.Trading), global::POGOProtos.Data.Trading.Trading.Parser, new[]{ "State", "ExpirationMs", "Player", "Friend", "TradingS2CellId", "TransactionLog", "FriendshipLevelData", "IsSpecialTrading" }, null, new[]{ typeof(global::POGOProtos.Data.Trading.Trading.Types.TradingState) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Trading.Trading), global::POGOProtos.Data.Trading.Trading.Parser, new[]{ "State", "ExpirationMs", "Player", "Friend", "TradingS2CellId", "TransactionLog", "FriendshipLevelData", "IsSpecialTrading", "PreTradingFriendshipLevel" }, null, new[]{ typeof(global::POGOProtos.Data.Trading.Trading.Types.TradingState) }, null)
           }));
     }
     #endregion
@@ -81,6 +83,7 @@ namespace POGOProtos.Data.Trading {
       transactionLog_ = other.transactionLog_;
       friendshipLevelData_ = other.friendshipLevelData_ != null ? other.friendshipLevelData_.Clone() : null;
       isSpecialTrading_ = other.isSpecialTrading_;
+      preTradingFriendshipLevel_ = other.preTradingFriendshipLevel_ != null ? other.preTradingFriendshipLevel_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -177,6 +180,17 @@ namespace POGOProtos.Data.Trading {
       }
     }
 
+    /// <summary>Field number for the "pre_trading_friendship_level" field.</summary>
+    public const int PreTradingFriendshipLevelFieldNumber = 9;
+    private global::POGOProtos.Data.Friends.FriendshipLevelData preTradingFriendshipLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Friends.FriendshipLevelData PreTradingFriendshipLevel {
+      get { return preTradingFriendshipLevel_; }
+      set {
+        preTradingFriendshipLevel_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Trading);
@@ -198,6 +212,7 @@ namespace POGOProtos.Data.Trading {
       if (TransactionLog != other.TransactionLog) return false;
       if (!object.Equals(FriendshipLevelData, other.FriendshipLevelData)) return false;
       if (IsSpecialTrading != other.IsSpecialTrading) return false;
+      if (!object.Equals(PreTradingFriendshipLevel, other.PreTradingFriendshipLevel)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -212,6 +227,7 @@ namespace POGOProtos.Data.Trading {
       if (TransactionLog.Length != 0) hash ^= TransactionLog.GetHashCode();
       if (friendshipLevelData_ != null) hash ^= FriendshipLevelData.GetHashCode();
       if (IsSpecialTrading != false) hash ^= IsSpecialTrading.GetHashCode();
+      if (preTradingFriendshipLevel_ != null) hash ^= PreTradingFriendshipLevel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -257,6 +273,10 @@ namespace POGOProtos.Data.Trading {
         output.WriteRawTag(64);
         output.WriteBool(IsSpecialTrading);
       }
+      if (preTradingFriendshipLevel_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(PreTradingFriendshipLevel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -288,6 +308,9 @@ namespace POGOProtos.Data.Trading {
       }
       if (IsSpecialTrading != false) {
         size += 1 + 1;
+      }
+      if (preTradingFriendshipLevel_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PreTradingFriendshipLevel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -332,6 +355,12 @@ namespace POGOProtos.Data.Trading {
       }
       if (other.IsSpecialTrading != false) {
         IsSpecialTrading = other.IsSpecialTrading;
+      }
+      if (other.preTradingFriendshipLevel_ != null) {
+        if (preTradingFriendshipLevel_ == null) {
+          preTradingFriendshipLevel_ = new global::POGOProtos.Data.Friends.FriendshipLevelData();
+        }
+        PreTradingFriendshipLevel.MergeFrom(other.PreTradingFriendshipLevel);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -383,6 +412,13 @@ namespace POGOProtos.Data.Trading {
           }
           case 64: {
             IsSpecialTrading = input.ReadBool();
+            break;
+          }
+          case 74: {
+            if (preTradingFriendshipLevel_ == null) {
+              preTradingFriendshipLevel_ = new global::POGOProtos.Data.Friends.FriendshipLevelData();
+            }
+            input.ReadMessage(preTradingFriendshipLevel_);
             break;
           }
         }

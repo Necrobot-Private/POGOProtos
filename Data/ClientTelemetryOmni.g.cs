@@ -26,17 +26,104 @@ namespace POGOProtos.Data {
           string.Concat(
             "CilQT0dPUHJvdG9zL0RhdGEvQ2xpZW50VGVsZW1ldHJ5T21uaS5wcm90bxIP",
             "UE9HT1Byb3Rvcy5EYXRhGh5QT0dPUHJvdG9zL0RhdGEvQm9vdFRpbWUucHJv",
-            "dG8aH1BPR09Qcm90b3MvRGF0YS9GcmFtZVJhdGUucHJvdG8aQVBPR09Qcm90",
-            "b3MvTmV0d29ya2luZy9QbGF0Zm9ybS9UZWxlbWV0cnkvUGxhdGZvcm1TZXJ2",
-            "ZXJEYXRhLnByb3RvIscBChNDbGllbnRUZWxlbWV0cnlPbW5pEiwKCWJvb3Rf",
-            "dGltZRgBIAEoCzIZLlBPR09Qcm90b3MuRGF0YS5Cb290VGltZRIuCgpmcmFt",
-            "ZV9yYXRlGAIgASgLMhouUE9HT1Byb3Rvcy5EYXRhLkZyYW1lUmF0ZRJSCgtz",
-            "ZXJ2ZXJfZGF0YRjpByABKAsyPC5QT0dPUHJvdG9zLk5ldHdvcmtpbmcuUGxh",
-            "dGZvcm0uVGVsZW1ldHJ5LlBsYXRmb3JtU2VydmVyRGF0YWIGcHJvdG8z"));
+            "dG8aH1BPR09Qcm90b3MvRGF0YS9GcmFtZVJhdGUucHJvdG8aNVBPR09Qcm90",
+            "b3MvRGF0YS9UZWxlbWV0cnkvR2VuZXJpY0NsaWNrVGVsZW1ldHJ5LnByb3Rv",
+            "GjJQT0dPUHJvdG9zL0RhdGEvVGVsZW1ldHJ5L01hcEV2ZW50c1RlbGVtZXRy",
+            "eS5wcm90bxo1UE9HT1Byb3Rvcy9EYXRhL1RlbGVtZXRyeS9TcGluUG9rZXN0",
+            "b3BUZWxlbWV0cnkucHJvdG8aNFBPR09Qcm90b3MvRGF0YS9UZWxlbWV0cnkv",
+            "UHJvZmlsZVBhZ2VUZWxlbWV0cnkucHJvdG8aNVBPR09Qcm90b3MvRGF0YS9U",
+            "ZWxlbWV0cnkvU2hvcHBpbmdQYWdlVGVsZW1ldHJ5LnByb3RvGjlQT0dPUHJv",
+            "dG9zL0RhdGEvVGVsZW1ldHJ5L0VuY291bnRlclBva2Vtb25UZWxlbWV0cnku",
+            "cHJvdG8aNVBPR09Qcm90b3MvRGF0YS9UZWxlbWV0cnkvQ2F0Y2hQb2tlbW9u",
+            "VGVsZW1ldHJ5LnByb3RvGjZQT0dPUHJvdG9zL0RhdGEvVGVsZW1ldHJ5L0Rl",
+            "cGxveVBva2Vtb25UZWxlbWV0cnkucHJvdG8aNFBPR09Qcm90b3MvRGF0YS9U",
+            "ZWxlbWV0cnkvRmVlZFBva2Vtb25UZWxlbWV0cnkucHJvdG8aNlBPR09Qcm90",
+            "b3MvRGF0YS9UZWxlbWV0cnkvRXZvbHZlUG9rZW1vblRlbGVtZXRyeS5wcm90",
+            "bxo3UE9HT1Byb3Rvcy9EYXRhL1RlbGVtZXRyeS9SZWxlYXNlUG9rZW1vblRl",
+            "bGVtZXRyeS5wcm90bxo4UE9HT1Byb3Rvcy9EYXRhL1RlbGVtZXRyeS9OaWNr",
+            "bmFtZVBva2Vtb25UZWxlbWV0cnkucHJvdG8aMVBPR09Qcm90b3MvRGF0YS9U",
+            "ZWxlbWV0cnkvTmV3c1BhZ2VUZWxlbWV0cnkucHJvdG8aLVBPR09Qcm90b3Mv",
+            "RGF0YS9UZWxlbWV0cnkvSXRlbVRlbGVtZXRyeS5wcm90bxo0UE9HT1Byb3Rv",
+            "cy9EYXRhL1RlbGVtZXRyeS9CYXR0bGVQYXJ0eVRlbGVtZXRyeS5wcm90bxo3",
+            "UE9HT1Byb3Rvcy9EYXRhL1RlbGVtZXRyeS9QYXNzY29kZVJlZGVlbVRlbGVt",
+            "ZXRyeS5wcm90bxoyUE9HT1Byb3Rvcy9EYXRhL1RlbGVtZXRyeS9MaW5rTG9n",
+            "aW5UZWxlbWV0cnkucHJvdG8aLVBPR09Qcm90b3MvRGF0YS9UZWxlbWV0cnkv",
+            "UmFpZFRlbGVtZXRyeS5wcm90bxo5UE9HT1Byb3Rvcy9EYXRhL1RlbGVtZXRy",
+            "eS9QdXNoTm90aWZpY2F0aW9uVGVsZW1ldHJ5LnByb3RvGjxQT0dPUHJvdG9z",
+            "L0RhdGEvVGVsZW1ldHJ5L0F2YXRhckN1c3RvbWl6YXRpb25UZWxlbWV0cnku",
+            "cHJvdG8aR1BPR09Qcm90b3MvRGF0YS9UZWxlbWV0cnkvUmVhZFBvaW50T2ZJ",
+            "bnRlcmVzdERlc2NyaXB0aW9uVGVsZW1ldHJ5LnByb3RvGixQT0dPUHJvdG9z",
+            "L0RhdGEvVGVsZW1ldHJ5L1dlYlRlbGVtZXRyeS5wcm90bxoxUE9HT1Byb3Rv",
+            "cy9EYXRhL1RlbGVtZXRyeS9DaGFuZ2VBclRlbGVtZXRyeS5wcm90bxo7UE9H",
+            "T1Byb3Rvcy9EYXRhL1RlbGVtZXRyeS9XZWF0aGVyRGV0YWlsQ2xpY2tUZWxl",
+            "bWV0cnkucHJvdG8aM1BPR09Qcm90b3MvRGF0YS9QbGF5ZXIvVXNlcklzc3Vl",
+            "V2VhdGhlclJlcG9ydC5wcm90bxo5UE9HT1Byb3Rvcy9EYXRhL1RlbGVtZXRy",
+            "eS9Qb2tlbW9uSW52ZW50b3J5VGVsZW1ldHJ5LnByb3RvGi9QT0dPUHJvdG9z",
+            "L0RhdGEvVGVsZW1ldHJ5L1NvY2lhbFRlbGVtZXRyeS5wcm90bxo/UE9HT1By",
+            "b3Rvcy9EYXRhL1RlbGVtZXRyeS9DaGVja0VuY291bnRlclRyYXlJbmZvVGVs",
+            "ZW1ldHJ5LnByb3RvGkFQT0dPUHJvdG9zL05ldHdvcmtpbmcvUGxhdGZvcm0v",
+            "VGVsZW1ldHJ5L1BsYXRmb3JtU2VydmVyRGF0YS5wcm90byL0EwoTQ2xpZW50",
+            "VGVsZW1ldHJ5T21uaRIsCglib290X3RpbWUYASABKAsyGS5QT0dPUHJvdG9z",
+            "LkRhdGEuQm9vdFRpbWUSLgoKZnJhbWVfcmF0ZRgCIAEoCzIaLlBPR09Qcm90",
+            "b3MuRGF0YS5GcmFtZVJhdGUSUQoXZ2VuZXJpY19jbGlja190ZWxlbWV0cnkY",
+            "AyABKAsyMC5QT0dPUHJvdG9zLkRhdGEuVGVsZW1ldHJ5LkdlbmVyaWNDbGlj",
+            "a1RlbGVtZXRyeRJLChRtYXBfZXZlbnRzX3RlbGVtZXRyeRgEIAEoCzItLlBP",
+            "R09Qcm90b3MuRGF0YS5UZWxlbWV0cnkuTWFwRXZlbnRzVGVsZW1ldHJ5ElEK",
+            "F3NwaW5fcG9rZXN0b3BfdGVsZW1ldHJ5GAUgASgLMjAuUE9HT1Byb3Rvcy5E",
+            "YXRhLlRlbGVtZXRyeS5TcGluUG9rZXN0b3BUZWxlbWV0cnkSTwoWcHJvZmls",
+            "ZV9wYWdlX3RlbGVtZXRyeRgGIAEoCzIvLlBPR09Qcm90b3MuRGF0YS5UZWxl",
+            "bWV0cnkuUHJvZmlsZVBhZ2VUZWxlbWV0cnkSUQoXc2hvcHBpbmdfcGFnZV90",
+            "ZWxlbWV0cnkYByABKAsyMC5QT0dPUHJvdG9zLkRhdGEuVGVsZW1ldHJ5LlNo",
+            "b3BwaW5nUGFnZVRlbGVtZXRyeRJZChtlbmNvdW50ZXJfcG9rZW1vbl90ZWxl",
+            "bWV0cnkYCCABKAsyNC5QT0dPUHJvdG9zLkRhdGEuVGVsZW1ldHJ5LkVuY291",
+            "bnRlclBva2Vtb25UZWxlbWV0cnkSUQoXY2F0Y2hfcG9rZW1vbl90ZWxlbWV0",
+            "cnkYCSABKAsyMC5QT0dPUHJvdG9zLkRhdGEuVGVsZW1ldHJ5LkNhdGNoUG9r",
+            "ZW1vblRlbGVtZXRyeRJTChhkZXBsb3lfcG9rZW1vbl90ZWxlbWV0cnkYCiAB",
+            "KAsyMS5QT0dPUHJvdG9zLkRhdGEuVGVsZW1ldHJ5LkRlcGxveVBva2Vtb25U",
+            "ZWxlbWV0cnkSTwoWZmVlZF9wb2tlbW9uX3RlbGVtZXRyeRgLIAEoCzIvLlBP",
+            "R09Qcm90b3MuRGF0YS5UZWxlbWV0cnkuRmVlZFBva2Vtb25UZWxlbWV0cnkS",
+            "UwoYZXZvbHZlX3Bva2Vtb25fdGVsZW1ldHJ5GAwgASgLMjEuUE9HT1Byb3Rv",
+            "cy5EYXRhLlRlbGVtZXRyeS5Fdm9sdmVQb2tlbW9uVGVsZW1ldHJ5ElUKGXJl",
+            "bGVhc2VfcG9rZW1vbl90ZWxlbWV0cnkYDSABKAsyMi5QT0dPUHJvdG9zLkRh",
+            "dGEuVGVsZW1ldHJ5LlJlbGVhc2VQb2tlbW9uVGVsZW1ldHJ5ElcKGm5pY2tu",
+            "YW1lX3Bva2Vtb25fdGVsZW1ldHJ5GA4gASgLMjMuUE9HT1Byb3Rvcy5EYXRh",
+            "LlRlbGVtZXRyeS5OaWNrbmFtZVBva2Vtb25UZWxlbWV0cnkSSQoTbmV3c19w",
+            "YWdlX3RlbGVtZXRyeRgPIAEoCzIsLlBPR09Qcm90b3MuRGF0YS5UZWxlbWV0",
+            "cnkuTmV3c1BhZ2VUZWxlbWV0cnkSQAoOaXRlbV90ZWxlbWV0cnkYECABKAsy",
+            "KC5QT0dPUHJvdG9zLkRhdGEuVGVsZW1ldHJ5Lkl0ZW1UZWxlbWV0cnkSTwoW",
+            "YmF0dGxlX3BhcnR5X3RlbGVtZXRyeRgRIAEoCzIvLlBPR09Qcm90b3MuRGF0",
+            "YS5UZWxlbWV0cnkuQmF0dGxlUGFydHlUZWxlbWV0cnkSVQoZcGFzc2NvZGVf",
+            "cmVkZWVtX3RlbGVtZXRyeRgSIAEoCzIyLlBPR09Qcm90b3MuRGF0YS5UZWxl",
+            "bWV0cnkuUGFzc2NvZGVSZWRlZW1UZWxlbWV0cnkSSwoUbGlua19sb2dpbl90",
+            "ZWxlbWV0cnkYEyABKAsyLS5QT0dPUHJvdG9zLkRhdGEuVGVsZW1ldHJ5Lkxp",
+            "bmtMb2dpblRlbGVtZXRyeRJACg5yYWlkX3RlbGVtZXRyeRgUIAEoCzIoLlBP",
+            "R09Qcm90b3MuRGF0YS5UZWxlbWV0cnkuUmFpZFRlbGVtZXRyeRJZChtwdXNo",
+            "X25vdGlmaWNhdGlvbl90ZWxlbWV0cnkYFSABKAsyNC5QT0dPUHJvdG9zLkRh",
+            "dGEuVGVsZW1ldHJ5LlB1c2hOb3RpZmljYXRpb25UZWxlbWV0cnkSXwoeYXZh",
+            "dGFyX2N1c3RvbWl6YXRpb25fdGVsZW1ldHJ5GBYgASgLMjcuUE9HT1Byb3Rv",
+            "cy5EYXRhLlRlbGVtZXRyeS5BdmF0YXJDdXN0b21pemF0aW9uVGVsZW1ldHJ5",
+            "EngKLHJlYWRfcG9pbnRfb2ZfaW50ZXJlc3RfZGVzY3JpcHRpb25fdGVsZW1l",
+            "dHJ5GBcgASgLMkIuUE9HT1Byb3Rvcy5EYXRhLlRlbGVtZXRyeS5SZWFkUG9p",
+            "bnRPZkludGVyZXN0RGVzY3JpcHRpb25UZWxlbWV0cnkSPgoNd2ViX3RlbGVt",
+            "ZXRyeRgYIAEoCzInLlBPR09Qcm90b3MuRGF0YS5UZWxlbWV0cnkuV2ViVGVs",
+            "ZW1ldHJ5EkkKE2NoYW5nZV9hcl90ZWxlbWV0cnkYGSABKAsyLC5QT0dPUHJv",
+            "dG9zLkRhdGEuVGVsZW1ldHJ5LkNoYW5nZUFyVGVsZW1ldHJ5El4KHndlYXRo",
+            "ZXJfZGV0YWlsX2NsaWNrX3RlbGVtZXRyeRgaIAEoCzI2LlBPR09Qcm90b3Mu",
+            "RGF0YS5UZWxlbWV0cnkuV2VhdGhlckRldGFpbENsaWNrVGVsZW1ldHJ5ElEK",
+            "GXVzZXJfaXNzdWVfd2VhdGhlcl9yZXBvcnQYGyABKAsyLi5QT0dPUHJvdG9z",
+            "LkRhdGEuUGxheWVyLlVzZXJJc3N1ZVdlYXRoZXJSZXBvcnQSWQobcG9rZW1v",
+            "bl9pbnZlbnRvcnlfdGVsZW1ldHJ5GBwgASgLMjQuUE9HT1Byb3Rvcy5EYXRh",
+            "LlRlbGVtZXRyeS5Qb2tlbW9uSW52ZW50b3J5VGVsZW1ldHJ5EkQKEHNvY2lh",
+            "bF90ZWxlbWV0cnkYHSABKAsyKi5QT0dPUHJvdG9zLkRhdGEuVGVsZW1ldHJ5",
+            "LlNvY2lhbFRlbGVtZXRyeRJiCh5jaGVja19lbmNvdW50ZXJfaW5mb190ZWxl",
+            "bWV0cnkYHiABKAsyOi5QT0dPUHJvdG9zLkRhdGEuVGVsZW1ldHJ5LkNoZWNr",
+            "RW5jb3VudGVyVHJheUluZm9UZWxlbWV0cnkSUgoLc2VydmVyX2RhdGEY6Qcg",
+            "ASgLMjwuUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlBsYXRmb3JtLlRlbGVtZXRy",
+            "eS5QbGF0Zm9ybVNlcnZlckRhdGFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::POGOProtos.Data.BootTimeReflection.Descriptor, global::POGOProtos.Data.FrameRateReflection.Descriptor, global::POGOProtos.Networking.Platform.Telemetry.PlatformServerDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::POGOProtos.Data.BootTimeReflection.Descriptor, global::POGOProtos.Data.FrameRateReflection.Descriptor, global::POGOProtos.Data.Telemetry.GenericClickTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.MapEventsTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.SpinPokestopTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.ProfilePageTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.ShoppingPageTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.EncounterPokemonTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.CatchPokemonTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.DeployPokemonTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.FeedPokemonTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.EvolvePokemonTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.ReleasePokemonTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.NicknamePokemonTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.NewsPageTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.ItemTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.BattlePartyTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.PasscodeRedeemTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.LinkLoginTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.RaidTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.PushNotificationTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.AvatarCustomizationTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.ReadPointOfInterestDescriptionTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.WebTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.ChangeArTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.WeatherDetailClickTelemetryReflection.Descriptor, global::POGOProtos.Data.Player.UserIssueWeatherReportReflection.Descriptor, global::POGOProtos.Data.Telemetry.PokemonInventoryTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.SocialTelemetryReflection.Descriptor, global::POGOProtos.Data.Telemetry.CheckEncounterTrayInfoTelemetryReflection.Descriptor, global::POGOProtos.Networking.Platform.Telemetry.PlatformServerDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.ClientTelemetryOmni), global::POGOProtos.Data.ClientTelemetryOmni.Parser, new[]{ "BootTime", "FrameRate", "ServerData" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.ClientTelemetryOmni), global::POGOProtos.Data.ClientTelemetryOmni.Parser, new[]{ "BootTime", "FrameRate", "GenericClickTelemetry", "MapEventsTelemetry", "SpinPokestopTelemetry", "ProfilePageTelemetry", "ShoppingPageTelemetry", "EncounterPokemonTelemetry", "CatchPokemonTelemetry", "DeployPokemonTelemetry", "FeedPokemonTelemetry", "EvolvePokemonTelemetry", "ReleasePokemonTelemetry", "NicknamePokemonTelemetry", "NewsPageTelemetry", "ItemTelemetry", "BattlePartyTelemetry", "PasscodeRedeemTelemetry", "LinkLoginTelemetry", "RaidTelemetry", "PushNotificationTelemetry", "AvatarCustomizationTelemetry", "ReadPointOfInterestDescriptionTelemetry", "WebTelemetry", "ChangeArTelemetry", "WeatherDetailClickTelemetry", "UserIssueWeatherReport", "PokemonInventoryTelemetry", "SocialTelemetry", "CheckEncounterInfoTelemetry", "ServerData" }, null, null, null)
           }));
     }
     #endregion
@@ -70,6 +157,34 @@ namespace POGOProtos.Data {
     public ClientTelemetryOmni(ClientTelemetryOmni other) : this() {
       bootTime_ = other.bootTime_ != null ? other.bootTime_.Clone() : null;
       frameRate_ = other.frameRate_ != null ? other.frameRate_.Clone() : null;
+      genericClickTelemetry_ = other.genericClickTelemetry_ != null ? other.genericClickTelemetry_.Clone() : null;
+      mapEventsTelemetry_ = other.mapEventsTelemetry_ != null ? other.mapEventsTelemetry_.Clone() : null;
+      spinPokestopTelemetry_ = other.spinPokestopTelemetry_ != null ? other.spinPokestopTelemetry_.Clone() : null;
+      profilePageTelemetry_ = other.profilePageTelemetry_ != null ? other.profilePageTelemetry_.Clone() : null;
+      shoppingPageTelemetry_ = other.shoppingPageTelemetry_ != null ? other.shoppingPageTelemetry_.Clone() : null;
+      encounterPokemonTelemetry_ = other.encounterPokemonTelemetry_ != null ? other.encounterPokemonTelemetry_.Clone() : null;
+      catchPokemonTelemetry_ = other.catchPokemonTelemetry_ != null ? other.catchPokemonTelemetry_.Clone() : null;
+      deployPokemonTelemetry_ = other.deployPokemonTelemetry_ != null ? other.deployPokemonTelemetry_.Clone() : null;
+      feedPokemonTelemetry_ = other.feedPokemonTelemetry_ != null ? other.feedPokemonTelemetry_.Clone() : null;
+      evolvePokemonTelemetry_ = other.evolvePokemonTelemetry_ != null ? other.evolvePokemonTelemetry_.Clone() : null;
+      releasePokemonTelemetry_ = other.releasePokemonTelemetry_ != null ? other.releasePokemonTelemetry_.Clone() : null;
+      nicknamePokemonTelemetry_ = other.nicknamePokemonTelemetry_ != null ? other.nicknamePokemonTelemetry_.Clone() : null;
+      newsPageTelemetry_ = other.newsPageTelemetry_ != null ? other.newsPageTelemetry_.Clone() : null;
+      itemTelemetry_ = other.itemTelemetry_ != null ? other.itemTelemetry_.Clone() : null;
+      battlePartyTelemetry_ = other.battlePartyTelemetry_ != null ? other.battlePartyTelemetry_.Clone() : null;
+      passcodeRedeemTelemetry_ = other.passcodeRedeemTelemetry_ != null ? other.passcodeRedeemTelemetry_.Clone() : null;
+      linkLoginTelemetry_ = other.linkLoginTelemetry_ != null ? other.linkLoginTelemetry_.Clone() : null;
+      raidTelemetry_ = other.raidTelemetry_ != null ? other.raidTelemetry_.Clone() : null;
+      pushNotificationTelemetry_ = other.pushNotificationTelemetry_ != null ? other.pushNotificationTelemetry_.Clone() : null;
+      avatarCustomizationTelemetry_ = other.avatarCustomizationTelemetry_ != null ? other.avatarCustomizationTelemetry_.Clone() : null;
+      readPointOfInterestDescriptionTelemetry_ = other.readPointOfInterestDescriptionTelemetry_ != null ? other.readPointOfInterestDescriptionTelemetry_.Clone() : null;
+      webTelemetry_ = other.webTelemetry_ != null ? other.webTelemetry_.Clone() : null;
+      changeArTelemetry_ = other.changeArTelemetry_ != null ? other.changeArTelemetry_.Clone() : null;
+      weatherDetailClickTelemetry_ = other.weatherDetailClickTelemetry_ != null ? other.weatherDetailClickTelemetry_.Clone() : null;
+      userIssueWeatherReport_ = other.userIssueWeatherReport_ != null ? other.userIssueWeatherReport_.Clone() : null;
+      pokemonInventoryTelemetry_ = other.pokemonInventoryTelemetry_ != null ? other.pokemonInventoryTelemetry_.Clone() : null;
+      socialTelemetry_ = other.socialTelemetry_ != null ? other.socialTelemetry_.Clone() : null;
+      checkEncounterInfoTelemetry_ = other.checkEncounterInfoTelemetry_ != null ? other.checkEncounterInfoTelemetry_.Clone() : null;
       serverData_ = other.serverData_ != null ? other.serverData_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -101,6 +216,314 @@ namespace POGOProtos.Data {
       }
     }
 
+    /// <summary>Field number for the "generic_click_telemetry" field.</summary>
+    public const int GenericClickTelemetryFieldNumber = 3;
+    private global::POGOProtos.Data.Telemetry.GenericClickTelemetry genericClickTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.GenericClickTelemetry GenericClickTelemetry {
+      get { return genericClickTelemetry_; }
+      set {
+        genericClickTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "map_events_telemetry" field.</summary>
+    public const int MapEventsTelemetryFieldNumber = 4;
+    private global::POGOProtos.Data.Telemetry.MapEventsTelemetry mapEventsTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.MapEventsTelemetry MapEventsTelemetry {
+      get { return mapEventsTelemetry_; }
+      set {
+        mapEventsTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "spin_pokestop_telemetry" field.</summary>
+    public const int SpinPokestopTelemetryFieldNumber = 5;
+    private global::POGOProtos.Data.Telemetry.SpinPokestopTelemetry spinPokestopTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.SpinPokestopTelemetry SpinPokestopTelemetry {
+      get { return spinPokestopTelemetry_; }
+      set {
+        spinPokestopTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "profile_page_telemetry" field.</summary>
+    public const int ProfilePageTelemetryFieldNumber = 6;
+    private global::POGOProtos.Data.Telemetry.ProfilePageTelemetry profilePageTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.ProfilePageTelemetry ProfilePageTelemetry {
+      get { return profilePageTelemetry_; }
+      set {
+        profilePageTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "shopping_page_telemetry" field.</summary>
+    public const int ShoppingPageTelemetryFieldNumber = 7;
+    private global::POGOProtos.Data.Telemetry.ShoppingPageTelemetry shoppingPageTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.ShoppingPageTelemetry ShoppingPageTelemetry {
+      get { return shoppingPageTelemetry_; }
+      set {
+        shoppingPageTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "encounter_pokemon_telemetry" field.</summary>
+    public const int EncounterPokemonTelemetryFieldNumber = 8;
+    private global::POGOProtos.Data.Telemetry.EncounterPokemonTelemetry encounterPokemonTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.EncounterPokemonTelemetry EncounterPokemonTelemetry {
+      get { return encounterPokemonTelemetry_; }
+      set {
+        encounterPokemonTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "catch_pokemon_telemetry" field.</summary>
+    public const int CatchPokemonTelemetryFieldNumber = 9;
+    private global::POGOProtos.Data.Telemetry.CatchPokemonTelemetry catchPokemonTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.CatchPokemonTelemetry CatchPokemonTelemetry {
+      get { return catchPokemonTelemetry_; }
+      set {
+        catchPokemonTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "deploy_pokemon_telemetry" field.</summary>
+    public const int DeployPokemonTelemetryFieldNumber = 10;
+    private global::POGOProtos.Data.Telemetry.DeployPokemonTelemetry deployPokemonTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.DeployPokemonTelemetry DeployPokemonTelemetry {
+      get { return deployPokemonTelemetry_; }
+      set {
+        deployPokemonTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "feed_pokemon_telemetry" field.</summary>
+    public const int FeedPokemonTelemetryFieldNumber = 11;
+    private global::POGOProtos.Data.Telemetry.FeedPokemonTelemetry feedPokemonTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.FeedPokemonTelemetry FeedPokemonTelemetry {
+      get { return feedPokemonTelemetry_; }
+      set {
+        feedPokemonTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "evolve_pokemon_telemetry" field.</summary>
+    public const int EvolvePokemonTelemetryFieldNumber = 12;
+    private global::POGOProtos.Data.Telemetry.EvolvePokemonTelemetry evolvePokemonTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.EvolvePokemonTelemetry EvolvePokemonTelemetry {
+      get { return evolvePokemonTelemetry_; }
+      set {
+        evolvePokemonTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "release_pokemon_telemetry" field.</summary>
+    public const int ReleasePokemonTelemetryFieldNumber = 13;
+    private global::POGOProtos.Data.Telemetry.ReleasePokemonTelemetry releasePokemonTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.ReleasePokemonTelemetry ReleasePokemonTelemetry {
+      get { return releasePokemonTelemetry_; }
+      set {
+        releasePokemonTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "nickname_pokemon_telemetry" field.</summary>
+    public const int NicknamePokemonTelemetryFieldNumber = 14;
+    private global::POGOProtos.Data.Telemetry.NicknamePokemonTelemetry nicknamePokemonTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.NicknamePokemonTelemetry NicknamePokemonTelemetry {
+      get { return nicknamePokemonTelemetry_; }
+      set {
+        nicknamePokemonTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "news_page_telemetry" field.</summary>
+    public const int NewsPageTelemetryFieldNumber = 15;
+    private global::POGOProtos.Data.Telemetry.NewsPageTelemetry newsPageTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.NewsPageTelemetry NewsPageTelemetry {
+      get { return newsPageTelemetry_; }
+      set {
+        newsPageTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "item_telemetry" field.</summary>
+    public const int ItemTelemetryFieldNumber = 16;
+    private global::POGOProtos.Data.Telemetry.ItemTelemetry itemTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.ItemTelemetry ItemTelemetry {
+      get { return itemTelemetry_; }
+      set {
+        itemTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "battle_party_telemetry" field.</summary>
+    public const int BattlePartyTelemetryFieldNumber = 17;
+    private global::POGOProtos.Data.Telemetry.BattlePartyTelemetry battlePartyTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.BattlePartyTelemetry BattlePartyTelemetry {
+      get { return battlePartyTelemetry_; }
+      set {
+        battlePartyTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "passcode_redeem_telemetry" field.</summary>
+    public const int PasscodeRedeemTelemetryFieldNumber = 18;
+    private global::POGOProtos.Data.Telemetry.PasscodeRedeemTelemetry passcodeRedeemTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.PasscodeRedeemTelemetry PasscodeRedeemTelemetry {
+      get { return passcodeRedeemTelemetry_; }
+      set {
+        passcodeRedeemTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "link_login_telemetry" field.</summary>
+    public const int LinkLoginTelemetryFieldNumber = 19;
+    private global::POGOProtos.Data.Telemetry.LinkLoginTelemetry linkLoginTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.LinkLoginTelemetry LinkLoginTelemetry {
+      get { return linkLoginTelemetry_; }
+      set {
+        linkLoginTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "raid_telemetry" field.</summary>
+    public const int RaidTelemetryFieldNumber = 20;
+    private global::POGOProtos.Data.Telemetry.RaidTelemetry raidTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.RaidTelemetry RaidTelemetry {
+      get { return raidTelemetry_; }
+      set {
+        raidTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "push_notification_telemetry" field.</summary>
+    public const int PushNotificationTelemetryFieldNumber = 21;
+    private global::POGOProtos.Data.Telemetry.PushNotificationTelemetry pushNotificationTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.PushNotificationTelemetry PushNotificationTelemetry {
+      get { return pushNotificationTelemetry_; }
+      set {
+        pushNotificationTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "avatar_customization_telemetry" field.</summary>
+    public const int AvatarCustomizationTelemetryFieldNumber = 22;
+    private global::POGOProtos.Data.Telemetry.AvatarCustomizationTelemetry avatarCustomizationTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.AvatarCustomizationTelemetry AvatarCustomizationTelemetry {
+      get { return avatarCustomizationTelemetry_; }
+      set {
+        avatarCustomizationTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "read_point_of_interest_description_telemetry" field.</summary>
+    public const int ReadPointOfInterestDescriptionTelemetryFieldNumber = 23;
+    private global::POGOProtos.Data.Telemetry.ReadPointOfInterestDescriptionTelemetry readPointOfInterestDescriptionTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.ReadPointOfInterestDescriptionTelemetry ReadPointOfInterestDescriptionTelemetry {
+      get { return readPointOfInterestDescriptionTelemetry_; }
+      set {
+        readPointOfInterestDescriptionTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "web_telemetry" field.</summary>
+    public const int WebTelemetryFieldNumber = 24;
+    private global::POGOProtos.Data.Telemetry.WebTelemetry webTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.WebTelemetry WebTelemetry {
+      get { return webTelemetry_; }
+      set {
+        webTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "change_ar_telemetry" field.</summary>
+    public const int ChangeArTelemetryFieldNumber = 25;
+    private global::POGOProtos.Data.Telemetry.ChangeArTelemetry changeArTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.ChangeArTelemetry ChangeArTelemetry {
+      get { return changeArTelemetry_; }
+      set {
+        changeArTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "weather_detail_click_telemetry" field.</summary>
+    public const int WeatherDetailClickTelemetryFieldNumber = 26;
+    private global::POGOProtos.Data.Telemetry.WeatherDetailClickTelemetry weatherDetailClickTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.WeatherDetailClickTelemetry WeatherDetailClickTelemetry {
+      get { return weatherDetailClickTelemetry_; }
+      set {
+        weatherDetailClickTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "user_issue_weather_report" field.</summary>
+    public const int UserIssueWeatherReportFieldNumber = 27;
+    private global::POGOProtos.Data.Player.UserIssueWeatherReport userIssueWeatherReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Player.UserIssueWeatherReport UserIssueWeatherReport {
+      get { return userIssueWeatherReport_; }
+      set {
+        userIssueWeatherReport_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pokemon_inventory_telemetry" field.</summary>
+    public const int PokemonInventoryTelemetryFieldNumber = 28;
+    private global::POGOProtos.Data.Telemetry.PokemonInventoryTelemetry pokemonInventoryTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.PokemonInventoryTelemetry PokemonInventoryTelemetry {
+      get { return pokemonInventoryTelemetry_; }
+      set {
+        pokemonInventoryTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "social_telemetry" field.</summary>
+    public const int SocialTelemetryFieldNumber = 29;
+    private global::POGOProtos.Data.Telemetry.SocialTelemetry socialTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.SocialTelemetry SocialTelemetry {
+      get { return socialTelemetry_; }
+      set {
+        socialTelemetry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "check_encounter_info_telemetry" field.</summary>
+    public const int CheckEncounterInfoTelemetryFieldNumber = 30;
+    private global::POGOProtos.Data.Telemetry.CheckEncounterTrayInfoTelemetry checkEncounterInfoTelemetry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::POGOProtos.Data.Telemetry.CheckEncounterTrayInfoTelemetry CheckEncounterInfoTelemetry {
+      get { return checkEncounterInfoTelemetry_; }
+      set {
+        checkEncounterInfoTelemetry_ = value;
+      }
+    }
+
     /// <summary>Field number for the "server_data" field.</summary>
     public const int ServerDataFieldNumber = 1001;
     private global::POGOProtos.Networking.Platform.Telemetry.PlatformServerData serverData_;
@@ -127,6 +550,34 @@ namespace POGOProtos.Data {
       }
       if (!object.Equals(BootTime, other.BootTime)) return false;
       if (!object.Equals(FrameRate, other.FrameRate)) return false;
+      if (!object.Equals(GenericClickTelemetry, other.GenericClickTelemetry)) return false;
+      if (!object.Equals(MapEventsTelemetry, other.MapEventsTelemetry)) return false;
+      if (!object.Equals(SpinPokestopTelemetry, other.SpinPokestopTelemetry)) return false;
+      if (!object.Equals(ProfilePageTelemetry, other.ProfilePageTelemetry)) return false;
+      if (!object.Equals(ShoppingPageTelemetry, other.ShoppingPageTelemetry)) return false;
+      if (!object.Equals(EncounterPokemonTelemetry, other.EncounterPokemonTelemetry)) return false;
+      if (!object.Equals(CatchPokemonTelemetry, other.CatchPokemonTelemetry)) return false;
+      if (!object.Equals(DeployPokemonTelemetry, other.DeployPokemonTelemetry)) return false;
+      if (!object.Equals(FeedPokemonTelemetry, other.FeedPokemonTelemetry)) return false;
+      if (!object.Equals(EvolvePokemonTelemetry, other.EvolvePokemonTelemetry)) return false;
+      if (!object.Equals(ReleasePokemonTelemetry, other.ReleasePokemonTelemetry)) return false;
+      if (!object.Equals(NicknamePokemonTelemetry, other.NicknamePokemonTelemetry)) return false;
+      if (!object.Equals(NewsPageTelemetry, other.NewsPageTelemetry)) return false;
+      if (!object.Equals(ItemTelemetry, other.ItemTelemetry)) return false;
+      if (!object.Equals(BattlePartyTelemetry, other.BattlePartyTelemetry)) return false;
+      if (!object.Equals(PasscodeRedeemTelemetry, other.PasscodeRedeemTelemetry)) return false;
+      if (!object.Equals(LinkLoginTelemetry, other.LinkLoginTelemetry)) return false;
+      if (!object.Equals(RaidTelemetry, other.RaidTelemetry)) return false;
+      if (!object.Equals(PushNotificationTelemetry, other.PushNotificationTelemetry)) return false;
+      if (!object.Equals(AvatarCustomizationTelemetry, other.AvatarCustomizationTelemetry)) return false;
+      if (!object.Equals(ReadPointOfInterestDescriptionTelemetry, other.ReadPointOfInterestDescriptionTelemetry)) return false;
+      if (!object.Equals(WebTelemetry, other.WebTelemetry)) return false;
+      if (!object.Equals(ChangeArTelemetry, other.ChangeArTelemetry)) return false;
+      if (!object.Equals(WeatherDetailClickTelemetry, other.WeatherDetailClickTelemetry)) return false;
+      if (!object.Equals(UserIssueWeatherReport, other.UserIssueWeatherReport)) return false;
+      if (!object.Equals(PokemonInventoryTelemetry, other.PokemonInventoryTelemetry)) return false;
+      if (!object.Equals(SocialTelemetry, other.SocialTelemetry)) return false;
+      if (!object.Equals(CheckEncounterInfoTelemetry, other.CheckEncounterInfoTelemetry)) return false;
       if (!object.Equals(ServerData, other.ServerData)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -136,6 +587,34 @@ namespace POGOProtos.Data {
       int hash = 1;
       if (bootTime_ != null) hash ^= BootTime.GetHashCode();
       if (frameRate_ != null) hash ^= FrameRate.GetHashCode();
+      if (genericClickTelemetry_ != null) hash ^= GenericClickTelemetry.GetHashCode();
+      if (mapEventsTelemetry_ != null) hash ^= MapEventsTelemetry.GetHashCode();
+      if (spinPokestopTelemetry_ != null) hash ^= SpinPokestopTelemetry.GetHashCode();
+      if (profilePageTelemetry_ != null) hash ^= ProfilePageTelemetry.GetHashCode();
+      if (shoppingPageTelemetry_ != null) hash ^= ShoppingPageTelemetry.GetHashCode();
+      if (encounterPokemonTelemetry_ != null) hash ^= EncounterPokemonTelemetry.GetHashCode();
+      if (catchPokemonTelemetry_ != null) hash ^= CatchPokemonTelemetry.GetHashCode();
+      if (deployPokemonTelemetry_ != null) hash ^= DeployPokemonTelemetry.GetHashCode();
+      if (feedPokemonTelemetry_ != null) hash ^= FeedPokemonTelemetry.GetHashCode();
+      if (evolvePokemonTelemetry_ != null) hash ^= EvolvePokemonTelemetry.GetHashCode();
+      if (releasePokemonTelemetry_ != null) hash ^= ReleasePokemonTelemetry.GetHashCode();
+      if (nicknamePokemonTelemetry_ != null) hash ^= NicknamePokemonTelemetry.GetHashCode();
+      if (newsPageTelemetry_ != null) hash ^= NewsPageTelemetry.GetHashCode();
+      if (itemTelemetry_ != null) hash ^= ItemTelemetry.GetHashCode();
+      if (battlePartyTelemetry_ != null) hash ^= BattlePartyTelemetry.GetHashCode();
+      if (passcodeRedeemTelemetry_ != null) hash ^= PasscodeRedeemTelemetry.GetHashCode();
+      if (linkLoginTelemetry_ != null) hash ^= LinkLoginTelemetry.GetHashCode();
+      if (raidTelemetry_ != null) hash ^= RaidTelemetry.GetHashCode();
+      if (pushNotificationTelemetry_ != null) hash ^= PushNotificationTelemetry.GetHashCode();
+      if (avatarCustomizationTelemetry_ != null) hash ^= AvatarCustomizationTelemetry.GetHashCode();
+      if (readPointOfInterestDescriptionTelemetry_ != null) hash ^= ReadPointOfInterestDescriptionTelemetry.GetHashCode();
+      if (webTelemetry_ != null) hash ^= WebTelemetry.GetHashCode();
+      if (changeArTelemetry_ != null) hash ^= ChangeArTelemetry.GetHashCode();
+      if (weatherDetailClickTelemetry_ != null) hash ^= WeatherDetailClickTelemetry.GetHashCode();
+      if (userIssueWeatherReport_ != null) hash ^= UserIssueWeatherReport.GetHashCode();
+      if (pokemonInventoryTelemetry_ != null) hash ^= PokemonInventoryTelemetry.GetHashCode();
+      if (socialTelemetry_ != null) hash ^= SocialTelemetry.GetHashCode();
+      if (checkEncounterInfoTelemetry_ != null) hash ^= CheckEncounterInfoTelemetry.GetHashCode();
       if (serverData_ != null) hash ^= ServerData.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -158,6 +637,118 @@ namespace POGOProtos.Data {
         output.WriteRawTag(18);
         output.WriteMessage(FrameRate);
       }
+      if (genericClickTelemetry_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(GenericClickTelemetry);
+      }
+      if (mapEventsTelemetry_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(MapEventsTelemetry);
+      }
+      if (spinPokestopTelemetry_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SpinPokestopTelemetry);
+      }
+      if (profilePageTelemetry_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(ProfilePageTelemetry);
+      }
+      if (shoppingPageTelemetry_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ShoppingPageTelemetry);
+      }
+      if (encounterPokemonTelemetry_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(EncounterPokemonTelemetry);
+      }
+      if (catchPokemonTelemetry_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(CatchPokemonTelemetry);
+      }
+      if (deployPokemonTelemetry_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(DeployPokemonTelemetry);
+      }
+      if (feedPokemonTelemetry_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(FeedPokemonTelemetry);
+      }
+      if (evolvePokemonTelemetry_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(EvolvePokemonTelemetry);
+      }
+      if (releasePokemonTelemetry_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(ReleasePokemonTelemetry);
+      }
+      if (nicknamePokemonTelemetry_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(NicknamePokemonTelemetry);
+      }
+      if (newsPageTelemetry_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(NewsPageTelemetry);
+      }
+      if (itemTelemetry_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(ItemTelemetry);
+      }
+      if (battlePartyTelemetry_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(BattlePartyTelemetry);
+      }
+      if (passcodeRedeemTelemetry_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(PasscodeRedeemTelemetry);
+      }
+      if (linkLoginTelemetry_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(LinkLoginTelemetry);
+      }
+      if (raidTelemetry_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(RaidTelemetry);
+      }
+      if (pushNotificationTelemetry_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(PushNotificationTelemetry);
+      }
+      if (avatarCustomizationTelemetry_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(AvatarCustomizationTelemetry);
+      }
+      if (readPointOfInterestDescriptionTelemetry_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(ReadPointOfInterestDescriptionTelemetry);
+      }
+      if (webTelemetry_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(WebTelemetry);
+      }
+      if (changeArTelemetry_ != null) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(ChangeArTelemetry);
+      }
+      if (weatherDetailClickTelemetry_ != null) {
+        output.WriteRawTag(210, 1);
+        output.WriteMessage(WeatherDetailClickTelemetry);
+      }
+      if (userIssueWeatherReport_ != null) {
+        output.WriteRawTag(218, 1);
+        output.WriteMessage(UserIssueWeatherReport);
+      }
+      if (pokemonInventoryTelemetry_ != null) {
+        output.WriteRawTag(226, 1);
+        output.WriteMessage(PokemonInventoryTelemetry);
+      }
+      if (socialTelemetry_ != null) {
+        output.WriteRawTag(234, 1);
+        output.WriteMessage(SocialTelemetry);
+      }
+      if (checkEncounterInfoTelemetry_ != null) {
+        output.WriteRawTag(242, 1);
+        output.WriteMessage(CheckEncounterInfoTelemetry);
+      }
       if (serverData_ != null) {
         output.WriteRawTag(202, 62);
         output.WriteMessage(ServerData);
@@ -175,6 +766,90 @@ namespace POGOProtos.Data {
       }
       if (frameRate_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(FrameRate);
+      }
+      if (genericClickTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GenericClickTelemetry);
+      }
+      if (mapEventsTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MapEventsTelemetry);
+      }
+      if (spinPokestopTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SpinPokestopTelemetry);
+      }
+      if (profilePageTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfilePageTelemetry);
+      }
+      if (shoppingPageTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ShoppingPageTelemetry);
+      }
+      if (encounterPokemonTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EncounterPokemonTelemetry);
+      }
+      if (catchPokemonTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CatchPokemonTelemetry);
+      }
+      if (deployPokemonTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DeployPokemonTelemetry);
+      }
+      if (feedPokemonTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FeedPokemonTelemetry);
+      }
+      if (evolvePokemonTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EvolvePokemonTelemetry);
+      }
+      if (releasePokemonTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReleasePokemonTelemetry);
+      }
+      if (nicknamePokemonTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NicknamePokemonTelemetry);
+      }
+      if (newsPageTelemetry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NewsPageTelemetry);
+      }
+      if (itemTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ItemTelemetry);
+      }
+      if (battlePartyTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(BattlePartyTelemetry);
+      }
+      if (passcodeRedeemTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(PasscodeRedeemTelemetry);
+      }
+      if (linkLoginTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LinkLoginTelemetry);
+      }
+      if (raidTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(RaidTelemetry);
+      }
+      if (pushNotificationTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(PushNotificationTelemetry);
+      }
+      if (avatarCustomizationTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AvatarCustomizationTelemetry);
+      }
+      if (readPointOfInterestDescriptionTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ReadPointOfInterestDescriptionTelemetry);
+      }
+      if (webTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(WebTelemetry);
+      }
+      if (changeArTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ChangeArTelemetry);
+      }
+      if (weatherDetailClickTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(WeatherDetailClickTelemetry);
+      }
+      if (userIssueWeatherReport_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(UserIssueWeatherReport);
+      }
+      if (pokemonInventoryTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(PokemonInventoryTelemetry);
+      }
+      if (socialTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(SocialTelemetry);
+      }
+      if (checkEncounterInfoTelemetry_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(CheckEncounterInfoTelemetry);
       }
       if (serverData_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ServerData);
@@ -201,6 +876,174 @@ namespace POGOProtos.Data {
           frameRate_ = new global::POGOProtos.Data.FrameRate();
         }
         FrameRate.MergeFrom(other.FrameRate);
+      }
+      if (other.genericClickTelemetry_ != null) {
+        if (genericClickTelemetry_ == null) {
+          genericClickTelemetry_ = new global::POGOProtos.Data.Telemetry.GenericClickTelemetry();
+        }
+        GenericClickTelemetry.MergeFrom(other.GenericClickTelemetry);
+      }
+      if (other.mapEventsTelemetry_ != null) {
+        if (mapEventsTelemetry_ == null) {
+          mapEventsTelemetry_ = new global::POGOProtos.Data.Telemetry.MapEventsTelemetry();
+        }
+        MapEventsTelemetry.MergeFrom(other.MapEventsTelemetry);
+      }
+      if (other.spinPokestopTelemetry_ != null) {
+        if (spinPokestopTelemetry_ == null) {
+          spinPokestopTelemetry_ = new global::POGOProtos.Data.Telemetry.SpinPokestopTelemetry();
+        }
+        SpinPokestopTelemetry.MergeFrom(other.SpinPokestopTelemetry);
+      }
+      if (other.profilePageTelemetry_ != null) {
+        if (profilePageTelemetry_ == null) {
+          profilePageTelemetry_ = new global::POGOProtos.Data.Telemetry.ProfilePageTelemetry();
+        }
+        ProfilePageTelemetry.MergeFrom(other.ProfilePageTelemetry);
+      }
+      if (other.shoppingPageTelemetry_ != null) {
+        if (shoppingPageTelemetry_ == null) {
+          shoppingPageTelemetry_ = new global::POGOProtos.Data.Telemetry.ShoppingPageTelemetry();
+        }
+        ShoppingPageTelemetry.MergeFrom(other.ShoppingPageTelemetry);
+      }
+      if (other.encounterPokemonTelemetry_ != null) {
+        if (encounterPokemonTelemetry_ == null) {
+          encounterPokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.EncounterPokemonTelemetry();
+        }
+        EncounterPokemonTelemetry.MergeFrom(other.EncounterPokemonTelemetry);
+      }
+      if (other.catchPokemonTelemetry_ != null) {
+        if (catchPokemonTelemetry_ == null) {
+          catchPokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.CatchPokemonTelemetry();
+        }
+        CatchPokemonTelemetry.MergeFrom(other.CatchPokemonTelemetry);
+      }
+      if (other.deployPokemonTelemetry_ != null) {
+        if (deployPokemonTelemetry_ == null) {
+          deployPokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.DeployPokemonTelemetry();
+        }
+        DeployPokemonTelemetry.MergeFrom(other.DeployPokemonTelemetry);
+      }
+      if (other.feedPokemonTelemetry_ != null) {
+        if (feedPokemonTelemetry_ == null) {
+          feedPokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.FeedPokemonTelemetry();
+        }
+        FeedPokemonTelemetry.MergeFrom(other.FeedPokemonTelemetry);
+      }
+      if (other.evolvePokemonTelemetry_ != null) {
+        if (evolvePokemonTelemetry_ == null) {
+          evolvePokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.EvolvePokemonTelemetry();
+        }
+        EvolvePokemonTelemetry.MergeFrom(other.EvolvePokemonTelemetry);
+      }
+      if (other.releasePokemonTelemetry_ != null) {
+        if (releasePokemonTelemetry_ == null) {
+          releasePokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.ReleasePokemonTelemetry();
+        }
+        ReleasePokemonTelemetry.MergeFrom(other.ReleasePokemonTelemetry);
+      }
+      if (other.nicknamePokemonTelemetry_ != null) {
+        if (nicknamePokemonTelemetry_ == null) {
+          nicknamePokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.NicknamePokemonTelemetry();
+        }
+        NicknamePokemonTelemetry.MergeFrom(other.NicknamePokemonTelemetry);
+      }
+      if (other.newsPageTelemetry_ != null) {
+        if (newsPageTelemetry_ == null) {
+          newsPageTelemetry_ = new global::POGOProtos.Data.Telemetry.NewsPageTelemetry();
+        }
+        NewsPageTelemetry.MergeFrom(other.NewsPageTelemetry);
+      }
+      if (other.itemTelemetry_ != null) {
+        if (itemTelemetry_ == null) {
+          itemTelemetry_ = new global::POGOProtos.Data.Telemetry.ItemTelemetry();
+        }
+        ItemTelemetry.MergeFrom(other.ItemTelemetry);
+      }
+      if (other.battlePartyTelemetry_ != null) {
+        if (battlePartyTelemetry_ == null) {
+          battlePartyTelemetry_ = new global::POGOProtos.Data.Telemetry.BattlePartyTelemetry();
+        }
+        BattlePartyTelemetry.MergeFrom(other.BattlePartyTelemetry);
+      }
+      if (other.passcodeRedeemTelemetry_ != null) {
+        if (passcodeRedeemTelemetry_ == null) {
+          passcodeRedeemTelemetry_ = new global::POGOProtos.Data.Telemetry.PasscodeRedeemTelemetry();
+        }
+        PasscodeRedeemTelemetry.MergeFrom(other.PasscodeRedeemTelemetry);
+      }
+      if (other.linkLoginTelemetry_ != null) {
+        if (linkLoginTelemetry_ == null) {
+          linkLoginTelemetry_ = new global::POGOProtos.Data.Telemetry.LinkLoginTelemetry();
+        }
+        LinkLoginTelemetry.MergeFrom(other.LinkLoginTelemetry);
+      }
+      if (other.raidTelemetry_ != null) {
+        if (raidTelemetry_ == null) {
+          raidTelemetry_ = new global::POGOProtos.Data.Telemetry.RaidTelemetry();
+        }
+        RaidTelemetry.MergeFrom(other.RaidTelemetry);
+      }
+      if (other.pushNotificationTelemetry_ != null) {
+        if (pushNotificationTelemetry_ == null) {
+          pushNotificationTelemetry_ = new global::POGOProtos.Data.Telemetry.PushNotificationTelemetry();
+        }
+        PushNotificationTelemetry.MergeFrom(other.PushNotificationTelemetry);
+      }
+      if (other.avatarCustomizationTelemetry_ != null) {
+        if (avatarCustomizationTelemetry_ == null) {
+          avatarCustomizationTelemetry_ = new global::POGOProtos.Data.Telemetry.AvatarCustomizationTelemetry();
+        }
+        AvatarCustomizationTelemetry.MergeFrom(other.AvatarCustomizationTelemetry);
+      }
+      if (other.readPointOfInterestDescriptionTelemetry_ != null) {
+        if (readPointOfInterestDescriptionTelemetry_ == null) {
+          readPointOfInterestDescriptionTelemetry_ = new global::POGOProtos.Data.Telemetry.ReadPointOfInterestDescriptionTelemetry();
+        }
+        ReadPointOfInterestDescriptionTelemetry.MergeFrom(other.ReadPointOfInterestDescriptionTelemetry);
+      }
+      if (other.webTelemetry_ != null) {
+        if (webTelemetry_ == null) {
+          webTelemetry_ = new global::POGOProtos.Data.Telemetry.WebTelemetry();
+        }
+        WebTelemetry.MergeFrom(other.WebTelemetry);
+      }
+      if (other.changeArTelemetry_ != null) {
+        if (changeArTelemetry_ == null) {
+          changeArTelemetry_ = new global::POGOProtos.Data.Telemetry.ChangeArTelemetry();
+        }
+        ChangeArTelemetry.MergeFrom(other.ChangeArTelemetry);
+      }
+      if (other.weatherDetailClickTelemetry_ != null) {
+        if (weatherDetailClickTelemetry_ == null) {
+          weatherDetailClickTelemetry_ = new global::POGOProtos.Data.Telemetry.WeatherDetailClickTelemetry();
+        }
+        WeatherDetailClickTelemetry.MergeFrom(other.WeatherDetailClickTelemetry);
+      }
+      if (other.userIssueWeatherReport_ != null) {
+        if (userIssueWeatherReport_ == null) {
+          userIssueWeatherReport_ = new global::POGOProtos.Data.Player.UserIssueWeatherReport();
+        }
+        UserIssueWeatherReport.MergeFrom(other.UserIssueWeatherReport);
+      }
+      if (other.pokemonInventoryTelemetry_ != null) {
+        if (pokemonInventoryTelemetry_ == null) {
+          pokemonInventoryTelemetry_ = new global::POGOProtos.Data.Telemetry.PokemonInventoryTelemetry();
+        }
+        PokemonInventoryTelemetry.MergeFrom(other.PokemonInventoryTelemetry);
+      }
+      if (other.socialTelemetry_ != null) {
+        if (socialTelemetry_ == null) {
+          socialTelemetry_ = new global::POGOProtos.Data.Telemetry.SocialTelemetry();
+        }
+        SocialTelemetry.MergeFrom(other.SocialTelemetry);
+      }
+      if (other.checkEncounterInfoTelemetry_ != null) {
+        if (checkEncounterInfoTelemetry_ == null) {
+          checkEncounterInfoTelemetry_ = new global::POGOProtos.Data.Telemetry.CheckEncounterTrayInfoTelemetry();
+        }
+        CheckEncounterInfoTelemetry.MergeFrom(other.CheckEncounterInfoTelemetry);
       }
       if (other.serverData_ != null) {
         if (serverData_ == null) {
@@ -231,6 +1074,202 @@ namespace POGOProtos.Data {
               frameRate_ = new global::POGOProtos.Data.FrameRate();
             }
             input.ReadMessage(frameRate_);
+            break;
+          }
+          case 26: {
+            if (genericClickTelemetry_ == null) {
+              genericClickTelemetry_ = new global::POGOProtos.Data.Telemetry.GenericClickTelemetry();
+            }
+            input.ReadMessage(genericClickTelemetry_);
+            break;
+          }
+          case 34: {
+            if (mapEventsTelemetry_ == null) {
+              mapEventsTelemetry_ = new global::POGOProtos.Data.Telemetry.MapEventsTelemetry();
+            }
+            input.ReadMessage(mapEventsTelemetry_);
+            break;
+          }
+          case 42: {
+            if (spinPokestopTelemetry_ == null) {
+              spinPokestopTelemetry_ = new global::POGOProtos.Data.Telemetry.SpinPokestopTelemetry();
+            }
+            input.ReadMessage(spinPokestopTelemetry_);
+            break;
+          }
+          case 50: {
+            if (profilePageTelemetry_ == null) {
+              profilePageTelemetry_ = new global::POGOProtos.Data.Telemetry.ProfilePageTelemetry();
+            }
+            input.ReadMessage(profilePageTelemetry_);
+            break;
+          }
+          case 58: {
+            if (shoppingPageTelemetry_ == null) {
+              shoppingPageTelemetry_ = new global::POGOProtos.Data.Telemetry.ShoppingPageTelemetry();
+            }
+            input.ReadMessage(shoppingPageTelemetry_);
+            break;
+          }
+          case 66: {
+            if (encounterPokemonTelemetry_ == null) {
+              encounterPokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.EncounterPokemonTelemetry();
+            }
+            input.ReadMessage(encounterPokemonTelemetry_);
+            break;
+          }
+          case 74: {
+            if (catchPokemonTelemetry_ == null) {
+              catchPokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.CatchPokemonTelemetry();
+            }
+            input.ReadMessage(catchPokemonTelemetry_);
+            break;
+          }
+          case 82: {
+            if (deployPokemonTelemetry_ == null) {
+              deployPokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.DeployPokemonTelemetry();
+            }
+            input.ReadMessage(deployPokemonTelemetry_);
+            break;
+          }
+          case 90: {
+            if (feedPokemonTelemetry_ == null) {
+              feedPokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.FeedPokemonTelemetry();
+            }
+            input.ReadMessage(feedPokemonTelemetry_);
+            break;
+          }
+          case 98: {
+            if (evolvePokemonTelemetry_ == null) {
+              evolvePokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.EvolvePokemonTelemetry();
+            }
+            input.ReadMessage(evolvePokemonTelemetry_);
+            break;
+          }
+          case 106: {
+            if (releasePokemonTelemetry_ == null) {
+              releasePokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.ReleasePokemonTelemetry();
+            }
+            input.ReadMessage(releasePokemonTelemetry_);
+            break;
+          }
+          case 114: {
+            if (nicknamePokemonTelemetry_ == null) {
+              nicknamePokemonTelemetry_ = new global::POGOProtos.Data.Telemetry.NicknamePokemonTelemetry();
+            }
+            input.ReadMessage(nicknamePokemonTelemetry_);
+            break;
+          }
+          case 122: {
+            if (newsPageTelemetry_ == null) {
+              newsPageTelemetry_ = new global::POGOProtos.Data.Telemetry.NewsPageTelemetry();
+            }
+            input.ReadMessage(newsPageTelemetry_);
+            break;
+          }
+          case 130: {
+            if (itemTelemetry_ == null) {
+              itemTelemetry_ = new global::POGOProtos.Data.Telemetry.ItemTelemetry();
+            }
+            input.ReadMessage(itemTelemetry_);
+            break;
+          }
+          case 138: {
+            if (battlePartyTelemetry_ == null) {
+              battlePartyTelemetry_ = new global::POGOProtos.Data.Telemetry.BattlePartyTelemetry();
+            }
+            input.ReadMessage(battlePartyTelemetry_);
+            break;
+          }
+          case 146: {
+            if (passcodeRedeemTelemetry_ == null) {
+              passcodeRedeemTelemetry_ = new global::POGOProtos.Data.Telemetry.PasscodeRedeemTelemetry();
+            }
+            input.ReadMessage(passcodeRedeemTelemetry_);
+            break;
+          }
+          case 154: {
+            if (linkLoginTelemetry_ == null) {
+              linkLoginTelemetry_ = new global::POGOProtos.Data.Telemetry.LinkLoginTelemetry();
+            }
+            input.ReadMessage(linkLoginTelemetry_);
+            break;
+          }
+          case 162: {
+            if (raidTelemetry_ == null) {
+              raidTelemetry_ = new global::POGOProtos.Data.Telemetry.RaidTelemetry();
+            }
+            input.ReadMessage(raidTelemetry_);
+            break;
+          }
+          case 170: {
+            if (pushNotificationTelemetry_ == null) {
+              pushNotificationTelemetry_ = new global::POGOProtos.Data.Telemetry.PushNotificationTelemetry();
+            }
+            input.ReadMessage(pushNotificationTelemetry_);
+            break;
+          }
+          case 178: {
+            if (avatarCustomizationTelemetry_ == null) {
+              avatarCustomizationTelemetry_ = new global::POGOProtos.Data.Telemetry.AvatarCustomizationTelemetry();
+            }
+            input.ReadMessage(avatarCustomizationTelemetry_);
+            break;
+          }
+          case 186: {
+            if (readPointOfInterestDescriptionTelemetry_ == null) {
+              readPointOfInterestDescriptionTelemetry_ = new global::POGOProtos.Data.Telemetry.ReadPointOfInterestDescriptionTelemetry();
+            }
+            input.ReadMessage(readPointOfInterestDescriptionTelemetry_);
+            break;
+          }
+          case 194: {
+            if (webTelemetry_ == null) {
+              webTelemetry_ = new global::POGOProtos.Data.Telemetry.WebTelemetry();
+            }
+            input.ReadMessage(webTelemetry_);
+            break;
+          }
+          case 202: {
+            if (changeArTelemetry_ == null) {
+              changeArTelemetry_ = new global::POGOProtos.Data.Telemetry.ChangeArTelemetry();
+            }
+            input.ReadMessage(changeArTelemetry_);
+            break;
+          }
+          case 210: {
+            if (weatherDetailClickTelemetry_ == null) {
+              weatherDetailClickTelemetry_ = new global::POGOProtos.Data.Telemetry.WeatherDetailClickTelemetry();
+            }
+            input.ReadMessage(weatherDetailClickTelemetry_);
+            break;
+          }
+          case 218: {
+            if (userIssueWeatherReport_ == null) {
+              userIssueWeatherReport_ = new global::POGOProtos.Data.Player.UserIssueWeatherReport();
+            }
+            input.ReadMessage(userIssueWeatherReport_);
+            break;
+          }
+          case 226: {
+            if (pokemonInventoryTelemetry_ == null) {
+              pokemonInventoryTelemetry_ = new global::POGOProtos.Data.Telemetry.PokemonInventoryTelemetry();
+            }
+            input.ReadMessage(pokemonInventoryTelemetry_);
+            break;
+          }
+          case 234: {
+            if (socialTelemetry_ == null) {
+              socialTelemetry_ = new global::POGOProtos.Data.Telemetry.SocialTelemetry();
+            }
+            input.ReadMessage(socialTelemetry_);
+            break;
+          }
+          case 242: {
+            if (checkEncounterInfoTelemetry_ == null) {
+              checkEncounterInfoTelemetry_ = new global::POGOProtos.Data.Telemetry.CheckEncounterTrayInfoTelemetry();
+            }
+            input.ReadMessage(checkEncounterInfoTelemetry_);
             break;
           }
           case 8010: {

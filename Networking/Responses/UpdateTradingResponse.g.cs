@@ -26,17 +26,17 @@ namespace POGOProtos.Networking.Responses {
           string.Concat(
             "CjtQT0dPUHJvdG9zL05ldHdvcmtpbmcvUmVzcG9uc2VzL1VwZGF0ZVRyYWRp",
             "bmdSZXNwb25zZS5wcm90bxIfUE9HT1Byb3Rvcy5OZXR3b3JraW5nLlJlc3Bv",
-            "bnNlcxolUE9HT1Byb3Rvcy9EYXRhL1RyYWRpbmcvVHJhZGluZy5wcm90byKQ",
+            "bnNlcxolUE9HT1Byb3Rvcy9EYXRhL1RyYWRpbmcvVHJhZGluZy5wcm90byKs",
             "AwoVVXBkYXRlVHJhZGluZ1Jlc3BvbnNlEk0KBnJlc3VsdBgBIAEoDjI9LlBP",
             "R09Qcm90b3MuTmV0d29ya2luZy5SZXNwb25zZXMuVXBkYXRlVHJhZGluZ1Jl",
             "c3BvbnNlLlJlc3VsdBIxCgd0cmFkaW5nGAIgASgLMiAuUE9HT1Byb3Rvcy5E",
-            "YXRhLlRyYWRpbmcuVHJhZGluZyL0AQoGUmVzdWx0EgkKBVVOU0VUEAASCwoH",
+            "YXRhLlRyYWRpbmcuVHJhZGluZyKQAgoGUmVzdWx0EgkKBVVOU0VUEAASCwoH",
             "U1VDQ0VTUxABEhEKDUVSUk9SX1VOS05PV04QAhIaChZFUlJPUl9GUklFTkRf",
             "Tk9UX0ZPVU5EEAMSGwoXRVJST1JfSU5WQUxJRF9QTEFZRVJfSUQQBBIXChNF",
             "UlJPUl9JTlZBTElEX1NUQVRFEAUSFwoTRVJST1JfU1RBVEVfSEFORExFUhAG",
             "EhkKFUVSUk9SX0lOVkFMSURfUE9LRU1PThAHEh4KGkVSUk9SX0lOU1VGRklD",
-            "SUVOVF9QQVlNRU5UEAgSGQoVRVJST1JfVFJBRElOR19FWFBJUkVEEAliBnBy",
-            "b3RvMw=="));
+            "SUVOVF9QQVlNRU5UEAgSGQoVRVJST1JfVFJBRElOR19FWFBJUkVEEAkSGgoW",
+            "RVJST1JfVFJBRElOR19GSU5JU0hFRBAKYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Trading.TradingReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -223,6 +223,7 @@ namespace POGOProtos.Networking.Responses {
         [pbr::OriginalName("ERROR_INVALID_POKEMON")] ErrorInvalidPokemon = 7,
         [pbr::OriginalName("ERROR_INSUFFICIENT_PAYMENT")] ErrorInsufficientPayment = 8,
         [pbr::OriginalName("ERROR_TRADING_EXPIRED")] ErrorTradingExpired = 9,
+        [pbr::OriginalName("ERROR_TRADING_FINISHED")] ErrorTradingFinished = 10,
       }
 
     }

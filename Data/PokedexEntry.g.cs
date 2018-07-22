@@ -28,7 +28,7 @@ namespace POGOProtos.Data {
             "dG9zLkRhdGEaHlBPR09Qcm90b3MvRW51bXMvQ29zdHVtZS5wcm90bxobUE9H",
             "T1Byb3Rvcy9FbnVtcy9Gb3JtLnByb3RvGh1QT0dPUHJvdG9zL0VudW1zL0dl",
             "bmRlci5wcm90bxogUE9HT1Byb3Rvcy9FbnVtcy9Qb2tlbW9uSWQucHJvdG8i",
-            "nAQKDFBva2VkZXhFbnRyeRIvCgpwb2tlbW9uX2lkGAEgASgOMhsuUE9HT1By",
+            "ugQKDFBva2VkZXhFbnRyeRIvCgpwb2tlbW9uX2lkGAEgASgOMhsuUE9HT1By",
             "b3Rvcy5FbnVtcy5Qb2tlbW9uSWQSGQoRdGltZXNfZW5jb3VudGVyZWQYAiAB",
             "KAUSFgoOdGltZXNfY2FwdHVyZWQYAyABKAUSHgoWZXZvbHV0aW9uX3N0b25l",
             "X3BpZWNlcxgEIAEoBRIYChBldm9sdXRpb25fc3RvbmVzGAUgASgFEjQKEWNh",
@@ -40,11 +40,11 @@ namespace POGOProtos.Data {
             "dHVtZRIxChFlbmNvdW50ZXJlZF9mb3JtcxgLIAMoDjIWLlBPR09Qcm90b3Mu",
             "RW51bXMuRm9ybRI1ChNlbmNvdW50ZXJlZF9nZW5kZXJzGAwgAygOMhguUE9H",
             "T1Byb3Rvcy5FbnVtcy5HZW5kZXISGQoRZW5jb3VudGVyZWRfc2hpbnkYDSAB",
-            "KAhiBnByb3RvMw=="));
+            "KAgSHAoUdGltZXNfbHVja3lfcmVjZWl2ZWQYDiABKAViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.CostumeReflection.Descriptor, global::POGOProtos.Enums.FormReflection.Descriptor, global::POGOProtos.Enums.GenderReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.PokedexEntry), global::POGOProtos.Data.PokedexEntry.Parser, new[]{ "PokemonId", "TimesEncountered", "TimesCaptured", "EvolutionStonePieces", "EvolutionStones", "CapturedCostumes", "CapturedForms", "CapturedGenders", "CapturedShiny", "EncounteredCostumes", "EncounteredForms", "EncounteredGenders", "EncounteredShiny" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.PokedexEntry), global::POGOProtos.Data.PokedexEntry.Parser, new[]{ "PokemonId", "TimesEncountered", "TimesCaptured", "EvolutionStonePieces", "EvolutionStones", "CapturedCostumes", "CapturedForms", "CapturedGenders", "CapturedShiny", "EncounteredCostumes", "EncounteredForms", "EncounteredGenders", "EncounteredShiny", "TimesLuckyReceived" }, null, null, null)
           }));
     }
     #endregion
@@ -89,6 +89,7 @@ namespace POGOProtos.Data {
       encounteredForms_ = other.encounteredForms_.Clone();
       encounteredGenders_ = other.encounteredGenders_.Clone();
       encounteredShiny_ = other.encounteredShiny_;
+      timesLuckyReceived_ = other.timesLuckyReceived_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -234,6 +235,17 @@ namespace POGOProtos.Data {
       }
     }
 
+    /// <summary>Field number for the "times_lucky_received" field.</summary>
+    public const int TimesLuckyReceivedFieldNumber = 14;
+    private int timesLuckyReceived_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int TimesLuckyReceived {
+      get { return timesLuckyReceived_; }
+      set {
+        timesLuckyReceived_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PokedexEntry);
@@ -260,6 +272,7 @@ namespace POGOProtos.Data {
       if(!encounteredForms_.Equals(other.encounteredForms_)) return false;
       if(!encounteredGenders_.Equals(other.encounteredGenders_)) return false;
       if (EncounteredShiny != other.EncounteredShiny) return false;
+      if (TimesLuckyReceived != other.TimesLuckyReceived) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -279,6 +292,7 @@ namespace POGOProtos.Data {
       hash ^= encounteredForms_.GetHashCode();
       hash ^= encounteredGenders_.GetHashCode();
       if (EncounteredShiny != false) hash ^= EncounteredShiny.GetHashCode();
+      if (TimesLuckyReceived != 0) hash ^= TimesLuckyReceived.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -326,6 +340,10 @@ namespace POGOProtos.Data {
         output.WriteRawTag(104);
         output.WriteBool(EncounteredShiny);
       }
+      if (TimesLuckyReceived != 0) {
+        output.WriteRawTag(112);
+        output.WriteInt32(TimesLuckyReceived);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -360,6 +378,9 @@ namespace POGOProtos.Data {
       size += encounteredGenders_.CalculateSize(_repeated_encounteredGenders_codec);
       if (EncounteredShiny != false) {
         size += 1 + 1;
+      }
+      if (TimesLuckyReceived != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TimesLuckyReceived);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -398,6 +419,9 @@ namespace POGOProtos.Data {
       encounteredGenders_.Add(other.encounteredGenders_);
       if (other.EncounteredShiny != false) {
         EncounteredShiny = other.EncounteredShiny;
+      }
+      if (other.TimesLuckyReceived != 0) {
+        TimesLuckyReceived = other.TimesLuckyReceived;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -466,6 +490,10 @@ namespace POGOProtos.Data {
           }
           case 104: {
             EncounteredShiny = input.ReadBool();
+            break;
+          }
+          case 112: {
+            TimesLuckyReceived = input.ReadInt32();
             break;
           }
         }

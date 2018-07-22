@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>POGOProtos</RootNamespace>
     <AssemblyName>POGOProtos</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -172,9 +172,13 @@
     <Compile Include="Data\Player\PlayerReputation.g.cs" />
     <Compile Include="Data\Player\PlayerStats.g.cs" />
     <Compile Include="Data\Player\PlayerSummary.g.cs" />
+    <Compile Include="Data\Player\UserAttributes.g.cs" />
+    <Compile Include="Data\Player\UserIssueWeatherReport.g.cs" />
     <Compile Include="Data\PokedexEntry.g.cs" />
     <Compile Include="Data\PokemonData.g.cs" />
     <Compile Include="Data\PokemonDisplay.g.cs" />
+    <Compile Include="Data\PokestopReward.g.cs" />
+    <Compile Include="Data\Quests\AddFriendQuest.g.cs" />
     <Compile Include="Data\Quests\CatchPokemonQuest.g.cs" />
     <Compile Include="Data\Quests\ClientQuest.g.cs" />
     <Compile Include="Data\Quests\DailyQuest.g.cs" />
@@ -188,6 +192,7 @@
     <Compile Include="Data\Quests\Quests.g.cs" />
     <Compile Include="Data\Quests\QuestStamp.g.cs" />
     <Compile Include="Data\Quests\QuestStampCard.g.cs" />
+    <Compile Include="Data\Quests\TradePokemonQuest.g.cs" />
     <Compile Include="Data\Raid\EventInfo.g.cs" />
     <Compile Include="Data\Raid\ExclusiveRaidCancellation.g.cs" />
     <Compile Include="Data\Raid\ExclusiveTicketInfo.g.cs" />
@@ -201,6 +206,36 @@
     <Compile Include="Data\Redeem\PokeCandy.g.cs" />
     <Compile Include="Data\Redeem\RedeemedAvatarItem.g.cs" />
     <Compile Include="Data\Redeem\RedeemedItem.g.cs" />
+    <Compile Include="Data\Telemetry\AvatarCustomizationTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\BattlePartyTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\CatchPokemonTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\ChangeArTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\CheckEncounterTrayInfoTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\DeployPokemonTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\EncounterPokemonTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\EvolvePokemonTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\FavoritePokemonTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\FeedPokemonTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\GenericClickTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\ItemTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\LinkLoginTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\LoginActionTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\MapEventsTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\NewsPageTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\NicknamePokemonTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\PasscodeRedeemTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\PokemonInventoryTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\PokemonTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\ProfilePageTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\PushNotificationTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\RaidTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\ReadPointOfInterestDescriptionTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\ReleasePokemonTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\ShoppingPageTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\SocialTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\SpinPokestopTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\WeatherDetailClickTelemetry.g.cs" />
+    <Compile Include="Data\Telemetry\WebTelemetry.g.cs" />
     <Compile Include="Data\Token\FbToken.g.cs" />
     <Compile Include="Data\Token\GoogleToken.g.cs" />
     <Compile Include="Data\Token\PtcToken.g.cs" />
@@ -211,7 +246,9 @@
     <Compile Include="Data\Trading\TradingPokemon.g.cs" />
     <Compile Include="Data\UncommentAnnotationTest.g.cs" />
     <Compile Include="Enums\ActivityType.g.cs" />
+    <Compile Include="Enums\AvatarCustomizationTelemetryIds.g.cs" />
     <Compile Include="Enums\BadgeType.g.cs" />
+    <Compile Include="Enums\BattlePartyTelemetryIds.g.cs" />
     <Compile Include="Enums\BuddySize.g.cs" />
     <Compile Include="Enums\CameraInterpolation.g.cs" />
     <Compile Include="Enums\CameraTarget.g.cs" />
@@ -221,11 +258,16 @@
     <Compile Include="Enums\Form.g.cs" />
     <Compile Include="Enums\FriendshipLevelMilestone.g.cs" />
     <Compile Include="Enums\Gender.g.cs" />
+    <Compile Include="Enums\GenericClickTelemetryIds.g.cs" />
     <Compile Include="Enums\GymBadgeType.g.cs" />
     <Compile Include="Enums\IapItemCategory.g.cs" />
     <Compile Include="Enums\IdentityProvider.g.cs" />
     <Compile Include="Enums\ItemCategory.g.cs" />
     <Compile Include="Enums\ItemEffect.g.cs" />
+    <Compile Include="Enums\ItemUseTelemetryIds.g.cs" />
+    <Compile Include="Enums\LoginActionTelemetryIds.g.cs" />
+    <Compile Include="Enums\MapEventsTelemetryIds.g.cs" />
+    <Compile Include="Enums\NewsPageTelemetryIds.g.cs" />
     <Compile Include="Enums\NotificationCategory.g.cs" />
     <Compile Include="Enums\NotificationState.g.cs" />
     <Compile Include="Enums\Platform.g.cs" />
@@ -233,18 +275,25 @@
     <Compile Include="Enums\PokemonCreateContext.g.cs" />
     <Compile Include="Enums\PokemonFamilyId.g.cs" />
     <Compile Include="Enums\PokemonId.g.cs" />
+    <Compile Include="Enums\PokemonInventoryTelemetryIds.g.cs" />
     <Compile Include="Enums\PokemonMove.g.cs" />
     <Compile Include="Enums\PokemonMovementType.g.cs" />
     <Compile Include="Enums\PokemonRarity.g.cs" />
     <Compile Include="Enums\PokemonTradingType.g.cs" />
     <Compile Include="Enums\PokemonType.g.cs" />
+    <Compile Include="Enums\ProfilePageTelemetryIds.g.cs" />
+    <Compile Include="Enums\PushNotificationTelemetryIds.g.cs" />
     <Compile Include="Enums\QuestType.g.cs" />
     <Compile Include="Enums\RaidLevel.g.cs" />
+    <Compile Include="Enums\RaidTelemetryIds.g.cs" />
+    <Compile Include="Enums\ShoppingPageTelemetryIds.g.cs" />
     <Compile Include="Enums\SocialAction.g.cs" />
+    <Compile Include="Enums\SocialTelemetryIds.g.cs" />
     <Compile Include="Enums\TeamColor.g.cs" />
     <Compile Include="Enums\TutorialState.g.cs" />
     <Compile Include="Enums\VariableName.g.cs" />
     <Compile Include="Enums\WeatherCondition.g.cs" />
+    <Compile Include="Enums\WebTelemetryIds.g.cs" />
     <Compile Include="Inventory\AppliedItem.g.cs" />
     <Compile Include="Inventory\AppliedItems.g.cs" />
     <Compile Include="Inventory\Candy.g.cs" />
@@ -355,7 +404,6 @@
     <Compile Include="Networking\Requests\Messages\GetAssetDigestMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetBuddyWalkedMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetDownloadUrlsMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GetFriendshipMilestoneRewardsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetGymBadgeDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetGymDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetHatchedEggsMessage.g.cs" />
@@ -370,7 +418,6 @@
     <Compile Include="Networking\Requests\Messages\GetQuestDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetRaidDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GetTradingMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\GiftDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymBattleAttackMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymDeployMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\GymFeedPokemonMessage.g.cs" />
@@ -392,7 +439,6 @@
     <Compile Include="Networking\Requests\Messages\ReleasePokemonMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\RemoveQuestMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SavePlayerSnapshotMessage.g.cs" />
-    <Compile Include="Networking\Requests\Messages\SendGiftMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetAvatarItemAsViewedMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetAvatarMessage.g.cs" />
     <Compile Include="Networking\Requests\Messages\SetBuddyPokemonMessage.g.cs" />
@@ -425,22 +471,28 @@
     <Compile Include="Networking\Requests\Social\AcceptFriendInviteMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\CancelFriendInviteMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\DeclineFriendInviteMessage.g.cs" />
+    <Compile Include="Networking\Requests\Social\DeleteGiftFromInventoryMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\GetFriendCodeMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\GetFriendDetailsMessage.g.cs" />
+    <Compile Include="Networking\Requests\Social\GetFriendshipMilestoneRewardsMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\GetFriendshipRewardsMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\GetFriendsListMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\GetGiftBoxDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\GetIncomingFriendInvitesMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\GetOutgoingFriendInvitesMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\GetUploadUrlMessage.g.cs" />
+    <Compile Include="Networking\Requests\Social\GiftDetailsMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\InviteFacebookFriendMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\IsMyFriendMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\ListFriendsMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\OpenGiftMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\OpenTradingMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\RemoveFriendMessage.g.cs" />
+    <Compile Include="Networking\Requests\Social\SaveSocialPlayerSettingsMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\SearchPlayerMessage.g.cs" />
     <Compile Include="Networking\Requests\Social\SendFriendInviteMessage.g.cs" />
+    <Compile Include="Networking\Requests\Social\SendGiftMessage.g.cs" />
+    <Compile Include="Networking\Requests\Social\SetFriendNicknameMessage.g.cs" />
     <Compile Include="Networking\Responses\AddFortModifierResponse.g.cs" />
     <Compile Include="Networking\Responses\AttackGymResponse.g.cs" />
     <Compile Include="Networking\Responses\AttackRaidBattleResponse.g.cs" />
@@ -475,7 +527,6 @@
     <Compile Include="Networking\Responses\GetAssetDigestResponse.g.cs" />
     <Compile Include="Networking\Responses\GetBuddyWalkedResponse.g.cs" />
     <Compile Include="Networking\Responses\GetDownloadUrlsResponse.g.cs" />
-    <Compile Include="Networking\Responses\GetFriendshipMilestoneRewardsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetGymBadgeDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetGymDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetHatchedEggsResponse.g.cs" />
@@ -490,7 +541,6 @@
     <Compile Include="Networking\Responses\GetQuestDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetRaidDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\GetTradingResponse.g.cs" />
-    <Compile Include="Networking\Responses\GiftDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\GymBattleAttackResponse.g.cs" />
     <Compile Include="Networking\Responses\GymDeployResponse.g.cs" />
     <Compile Include="Networking\Responses\GymFeedPokemonResponse.g.cs" />
@@ -512,7 +562,6 @@
     <Compile Include="Networking\Responses\ReleasePokemonResponse.g.cs" />
     <Compile Include="Networking\Responses\RemoveQuestResponse.g.cs" />
     <Compile Include="Networking\Responses\SavePlayerSnapshotResponse.g.cs" />
-    <Compile Include="Networking\Responses\SendGiftResponse.g.cs" />
     <Compile Include="Networking\Responses\SetAvatarItemAsViewedResponse.g.cs" />
     <Compile Include="Networking\Responses\SetAvatarResponse.g.cs" />
     <Compile Include="Networking\Responses\SetBuddyPokemonResponse.g.cs" />
@@ -526,22 +575,28 @@
     <Compile Include="Networking\Responses\Social\AcceptFriendInviteResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\CancelFriendInviteResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\DeclineFriendInviteResponse.g.cs" />
+    <Compile Include="Networking\Responses\Social\DeleteGiftFromInventoryResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\GetFriendCodeResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\GetFriendDetailsResponse.g.cs" />
+    <Compile Include="Networking\Responses\Social\GetFriendshipMilestoneRewardsResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\GetFriendshipRewardsResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\GetFriendsListResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\GetGiftBoxDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\GetIncomingFriendInvitesResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\GetOutgoingFriendInvitesResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\GetUploadUrlResponse.g.cs" />
+    <Compile Include="Networking\Responses\Social\GiftDetailsResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\InviteFacebookFriendResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\IsMyFriendResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\ListFriendsResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\OpenGiftResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\OpenTradingResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\RemoveFriendResponse.g.cs" />
+    <Compile Include="Networking\Responses\Social\SaveSocialPlayerSettingsResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\SearchPlayerResponse.g.cs" />
     <Compile Include="Networking\Responses\Social\SendFriendInviteResponse.g.cs" />
+    <Compile Include="Networking\Responses\Social\SendGiftResponse.g.cs" />
+    <Compile Include="Networking\Responses\Social\SetFriendNicknameResponse.g.cs" />
     <Compile Include="Networking\Responses\StartGymBattleResponse.g.cs" />
     <Compile Include="Networking\Responses\StartRaidBattleResponse.g.cs" />
     <Compile Include="Networking\Responses\UpdateNotificationResponse.g.cs" />
@@ -598,6 +653,7 @@
     <Compile Include="Settings\Master\Item\PotionAttributes.g.cs" />
     <Compile Include="Settings\Master\Item\ReviveAttributes.g.cs" />
     <Compile Include="Settings\Master\Item\StardustBoostAttributes.g.cs" />
+    <Compile Include="Settings\Master\LuckyPokemonSettings.g.cs" />
     <Compile Include="Settings\Master\MoveSequenceSettings.g.cs" />
     <Compile Include="Settings\Master\MoveSettings.g.cs" />
     <Compile Include="Settings\Master\OnboardingSettings.g.cs" />
@@ -622,6 +678,7 @@
     <Compile Include="Settings\QuestGlobalSettings.g.cs" />
     <Compile Include="Settings\SfidaSettings.g.cs" />
     <Compile Include="Settings\SocialClientSettings.g.cs" />
+    <Compile Include="Settings\SocialPlayerSettings.g.cs" />
     <Compile Include="Settings\TelemetryGlobalSettings.g.cs" />
     <Compile Include="Settings\TradingGlobalSettings.g.cs" />
     <Compile Include="Settings\TranslationSettings.g.cs" />

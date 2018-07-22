@@ -26,17 +26,18 @@ namespace POGOProtos.Data.Friends {
           string.Concat(
             "CjFQT0dPUHJvdG9zL0RhdGEvRnJpZW5kcy9QbGF5ZXJGcmllbmREaXNwbGF5",
             "LnByb3RvEhdQT0dPUHJvdG9zLkRhdGEuRnJpZW5kcxokUE9HT1Byb3Rvcy9E",
-            "YXRhL1Bva2Vtb25EaXNwbGF5LnByb3RvIpQCChNQbGF5ZXJGcmllbmREaXNw",
+            "YXRhL1Bva2Vtb25EaXNwbGF5LnByb3RvIrECChNQbGF5ZXJGcmllbmREaXNw",
             "bGF5Ei4KBWJ1ZGR5GAEgASgLMh8uUE9HT1Byb3Rvcy5EYXRhLlBva2Vtb25E",
             "aXNwbGF5EiAKGGJ1ZGR5X2Rpc3BsYXlfcG9rZW1vbl9pZBgCIAEoBRIeChZi",
             "dWRkeV9wb2tlbW9uX25pY2tuYW1lGAMgASgJEjwKE2xhc3RfcG9rZW1vbl9j",
             "YXVnaHQYBCABKAsyHy5QT0dPUHJvdG9zLkRhdGEuUG9rZW1vbkRpc3BsYXkS",
             "JgoebGFzdF9wb2tlbW9uX2NhdWdodF9kaXNwbGF5X2lkGAUgASgFEiUKHWxh",
-            "c3RfcG9rZW1vbl9jYXVnaHRfdGltZXN0YW1wGAYgASgDYgZwcm90bzM="));
+            "c3RfcG9rZW1vbl9jYXVnaHRfdGltZXN0YW1wGAYgASgDEhsKE2J1ZGR5X2Nh",
+            "bmR5X2F3YXJkZWQYByABKAViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.PokemonDisplayReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Friends.PlayerFriendDisplay), global::POGOProtos.Data.Friends.PlayerFriendDisplay.Parser, new[]{ "Buddy", "BuddyDisplayPokemonId", "BuddyPokemonNickname", "LastPokemonCaught", "LastPokemonCaughtDisplayId", "LastPokemonCaughtTimestamp" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Friends.PlayerFriendDisplay), global::POGOProtos.Data.Friends.PlayerFriendDisplay.Parser, new[]{ "Buddy", "BuddyDisplayPokemonId", "BuddyPokemonNickname", "LastPokemonCaught", "LastPokemonCaughtDisplayId", "LastPokemonCaughtTimestamp", "BuddyCandyAwarded" }, null, null, null)
           }));
     }
     #endregion
@@ -74,6 +75,7 @@ namespace POGOProtos.Data.Friends {
       lastPokemonCaught_ = other.lastPokemonCaught_ != null ? other.lastPokemonCaught_.Clone() : null;
       lastPokemonCaughtDisplayId_ = other.lastPokemonCaughtDisplayId_;
       lastPokemonCaughtTimestamp_ = other.lastPokemonCaughtTimestamp_;
+      buddyCandyAwarded_ = other.buddyCandyAwarded_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -148,6 +150,17 @@ namespace POGOProtos.Data.Friends {
       }
     }
 
+    /// <summary>Field number for the "buddy_candy_awarded" field.</summary>
+    public const int BuddyCandyAwardedFieldNumber = 7;
+    private int buddyCandyAwarded_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int BuddyCandyAwarded {
+      get { return buddyCandyAwarded_; }
+      set {
+        buddyCandyAwarded_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PlayerFriendDisplay);
@@ -167,6 +180,7 @@ namespace POGOProtos.Data.Friends {
       if (!object.Equals(LastPokemonCaught, other.LastPokemonCaught)) return false;
       if (LastPokemonCaughtDisplayId != other.LastPokemonCaughtDisplayId) return false;
       if (LastPokemonCaughtTimestamp != other.LastPokemonCaughtTimestamp) return false;
+      if (BuddyCandyAwarded != other.BuddyCandyAwarded) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -179,6 +193,7 @@ namespace POGOProtos.Data.Friends {
       if (lastPokemonCaught_ != null) hash ^= LastPokemonCaught.GetHashCode();
       if (LastPokemonCaughtDisplayId != 0) hash ^= LastPokemonCaughtDisplayId.GetHashCode();
       if (LastPokemonCaughtTimestamp != 0L) hash ^= LastPokemonCaughtTimestamp.GetHashCode();
+      if (BuddyCandyAwarded != 0) hash ^= BuddyCandyAwarded.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -216,6 +231,10 @@ namespace POGOProtos.Data.Friends {
         output.WriteRawTag(48);
         output.WriteInt64(LastPokemonCaughtTimestamp);
       }
+      if (BuddyCandyAwarded != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(BuddyCandyAwarded);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -241,6 +260,9 @@ namespace POGOProtos.Data.Friends {
       }
       if (LastPokemonCaughtTimestamp != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(LastPokemonCaughtTimestamp);
+      }
+      if (BuddyCandyAwarded != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BuddyCandyAwarded);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -276,6 +298,9 @@ namespace POGOProtos.Data.Friends {
       }
       if (other.LastPokemonCaughtTimestamp != 0L) {
         LastPokemonCaughtTimestamp = other.LastPokemonCaughtTimestamp;
+      }
+      if (other.BuddyCandyAwarded != 0) {
+        BuddyCandyAwarded = other.BuddyCandyAwarded;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -316,6 +341,10 @@ namespace POGOProtos.Data.Friends {
           }
           case 48: {
             LastPokemonCaughtTimestamp = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            BuddyCandyAwarded = input.ReadInt32();
             break;
           }
         }

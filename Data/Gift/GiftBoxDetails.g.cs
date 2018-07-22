@@ -25,18 +25,18 @@ namespace POGOProtos.Data.Gift {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CilQT0dPUHJvdG9zL0RhdGEvR2lmdC9HaWZ0Qm94RGV0YWlscy5wcm90bxIU",
-            "UE9HT1Byb3Rvcy5EYXRhLkdpZnQisQIKDkdpZnRCb3hEZXRhaWxzEhIKCmdp",
+            "UE9HT1Byb3Rvcy5EYXRhLkdpZnQixwIKDkdpZnRCb3hEZXRhaWxzEhIKCmdp",
             "ZnRib3hfaWQYASABKAYSEQoJc2VuZGVyX2lkGAIgASgJEhcKD3NlbmRlcl9j",
             "b2RlbmFtZRgDIAEoCRITCgtyZWNlaXZlcl9pZBgEIAEoCRIZChFyZWNlaXZl",
             "cl9jb2RlbmFtZRgFIAEoCRIPCgdmb3J0X2lkGAYgASgJEhEKCWZvcnRfbmFt",
             "ZRgHIAEoCRIQCghmb3J0X2xhdBgIIAEoARIQCghmb3J0X2xuZxgJIAEoARIW",
             "Cg5mb3J0X2ltYWdlX3VybBgKIAEoCRIaChJjcmVhdGlvbl90aW1lc3RhbXAY",
             "CyABKAMSFgoOc2VudF90aW1lc3RhbXAYDCABKAMSGwoTZGVsaXZlcnlfcG9r",
-            "ZW1vbl9pZBgNIAEoBmIGcHJvdG8z"));
+            "ZW1vbl9pZBgNIAEoBhIUCgxpc19zcG9uc29yZWQYDiABKAhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Gift.GiftBoxDetails), global::POGOProtos.Data.Gift.GiftBoxDetails.Parser, new[]{ "GiftboxId", "SenderId", "SenderCodename", "ReceiverId", "ReceiverCodename", "FortId", "FortName", "FortLat", "FortLng", "FortImageUrl", "CreationTimestamp", "SentTimestamp", "DeliveryPokemonId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Data.Gift.GiftBoxDetails), global::POGOProtos.Data.Gift.GiftBoxDetails.Parser, new[]{ "GiftboxId", "SenderId", "SenderCodename", "ReceiverId", "ReceiverCodename", "FortId", "FortName", "FortLat", "FortLng", "FortImageUrl", "CreationTimestamp", "SentTimestamp", "DeliveryPokemonId", "IsSponsored" }, null, null, null)
           }));
     }
     #endregion
@@ -81,6 +81,7 @@ namespace POGOProtos.Data.Gift {
       creationTimestamp_ = other.creationTimestamp_;
       sentTimestamp_ = other.sentTimestamp_;
       deliveryPokemonId_ = other.deliveryPokemonId_;
+      isSponsored_ = other.isSponsored_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -232,6 +233,17 @@ namespace POGOProtos.Data.Gift {
       }
     }
 
+    /// <summary>Field number for the "is_sponsored" field.</summary>
+    public const int IsSponsoredFieldNumber = 14;
+    private bool isSponsored_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsSponsored {
+      get { return isSponsored_; }
+      set {
+        isSponsored_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GiftBoxDetails);
@@ -258,6 +270,7 @@ namespace POGOProtos.Data.Gift {
       if (CreationTimestamp != other.CreationTimestamp) return false;
       if (SentTimestamp != other.SentTimestamp) return false;
       if (DeliveryPokemonId != other.DeliveryPokemonId) return false;
+      if (IsSponsored != other.IsSponsored) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -277,6 +290,7 @@ namespace POGOProtos.Data.Gift {
       if (CreationTimestamp != 0L) hash ^= CreationTimestamp.GetHashCode();
       if (SentTimestamp != 0L) hash ^= SentTimestamp.GetHashCode();
       if (DeliveryPokemonId != 0UL) hash ^= DeliveryPokemonId.GetHashCode();
+      if (IsSponsored != false) hash ^= IsSponsored.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -342,6 +356,10 @@ namespace POGOProtos.Data.Gift {
         output.WriteRawTag(105);
         output.WriteFixed64(DeliveryPokemonId);
       }
+      if (IsSponsored != false) {
+        output.WriteRawTag(112);
+        output.WriteBool(IsSponsored);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -388,6 +406,9 @@ namespace POGOProtos.Data.Gift {
       }
       if (DeliveryPokemonId != 0UL) {
         size += 1 + 8;
+      }
+      if (IsSponsored != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -438,6 +459,9 @@ namespace POGOProtos.Data.Gift {
       }
       if (other.DeliveryPokemonId != 0UL) {
         DeliveryPokemonId = other.DeliveryPokemonId;
+      }
+      if (other.IsSponsored != false) {
+        IsSponsored = other.IsSponsored;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -500,6 +524,10 @@ namespace POGOProtos.Data.Gift {
           }
           case 105: {
             DeliveryPokemonId = input.ReadFixed64();
+            break;
+          }
+          case 112: {
+            IsSponsored = input.ReadBool();
             break;
           }
         }

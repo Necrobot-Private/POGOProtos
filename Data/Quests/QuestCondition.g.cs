@@ -30,7 +30,7 @@ namespace POGOProtos.Data.Quests {
             "cHJvdG8aIFBPR09Qcm90b3MvRW51bXMvUG9rZW1vbklkLnByb3RvGiJQT0dP",
             "UHJvdG9zL0VudW1zL1Bva2Vtb25UeXBlLnByb3RvGiBQT0dPUHJvdG9zL0Vu",
             "dW1zL1JhaWRMZXZlbC5wcm90bxomUE9HT1Byb3Rvcy9JbnZlbnRvcnkvSXRl",
-            "bS9JdGVtSWQucHJvdG8inhYKDlF1ZXN0Q29uZGl0aW9uEkIKBHR5cGUYASAB",
+            "bS9JdGVtSWQucHJvdG8isxYKDlF1ZXN0Q29uZGl0aW9uEkIKBHR5cGUYASAB",
             "KA4yNC5QT0dPUHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0Q29uZGl0aW9uLkNv",
             "bmRpdGlvblR5cGUSUQoRd2l0aF9wb2tlbW9uX3R5cGUYAiABKAsyNi5QT0dP",
             "UHJvdG9zLkRhdGEuUXVlc3RzLlF1ZXN0Q29uZGl0aW9uLldpdGhQb2tlbW9u",
@@ -82,7 +82,7 @@ namespace POGOProtos.Data.Quests {
             "D0NIQUxMRU5HRV9RVUVTVBACGmQKDVdpdGhCYWRnZVR5cGUSLwoKYmFkZ2Vf",
             "dHlwZRgBIAMoDjIbLlBPR09Qcm90b3MuRW51bXMuQmFkZ2VUeXBlEhIKCmJh",
             "ZGdlX3JhbmsYAiABKAUSDgoGYW1vdW50GAMgASgFGiAKD1dpdGhQbGF5ZXJM",
-            "ZXZlbBINCgVsZXZlbBgBIAEoBRoVChNXaXRoV2luQmF0dGxlU3RhdHVzIt4D",
+            "ZXZlbBINCgVsZXZlbBgBIAEoBRoVChNXaXRoV2luQmF0dGxlU3RhdHVzIvMD",
             "Cg1Db25kaXRpb25UeXBlEgkKBVVOU0VUEAASFQoRV0lUSF9QT0tFTU9OX1RZ",
             "UEUQARIZChVXSVRIX1BPS0VNT05fQ0FURUdPUlkQAhIWChJXSVRIX1dFQVRI",
             "RVJfQk9PU1QQAxIcChhXSVRIX0RBSUxZX0NBUFRVUkVfQk9OVVMQBBIZChVX",
@@ -93,7 +93,8 @@ namespace POGOProtos.Data.Quests {
             "TklRVUVfUE9LRVNUT1AQDBIWChJXSVRIX1FVRVNUX0NPTlRFWFQQDRIcChhX",
             "SVRIX1RIUk9XX1RZUEVfSU5fQV9ST1cQDhITCg9XSVRIX0NVUlZFX0JBTEwQ",
             "DxITCg9XSVRIX0JBREdFX1RZUEUQEBIVChFXSVRIX1BMQVlFUl9MRVZFTBAR",
-            "EhoKFldJVEhfV0lOX0JBVFRMRV9TVEFUVVMQEmIGcHJvdG8z"));
+            "EhoKFldJVEhfV0lOX0JBVFRMRV9TVEFUVVMQEhITCg9XSVRIX05FV19GUklF",
+            "TkQQE2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Enums.ActivityTypeReflection.Descriptor, global::POGOProtos.Enums.BadgeTypeReflection.Descriptor, global::POGOProtos.Enums.PokemonIdReflection.Descriptor, global::POGOProtos.Enums.PokemonTypeReflection.Descriptor, global::POGOProtos.Enums.RaidLevelReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -815,6 +816,7 @@ namespace POGOProtos.Data.Quests {
         [pbr::OriginalName("WITH_BADGE_TYPE")] WithBadgeType = 16,
         [pbr::OriginalName("WITH_PLAYER_LEVEL")] WithPlayerLevel = 17,
         [pbr::OriginalName("WITH_WIN_BATTLE_STATUS")] WithWinBattleStatus = 18,
+        [pbr::OriginalName("WITH_NEW_FRIEND")] WithNewFriend = 19,
       }
 
       public sealed partial class WithPokemonType : pb::IMessage<WithPokemonType> {
